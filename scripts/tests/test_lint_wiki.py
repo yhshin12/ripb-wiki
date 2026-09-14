@@ -158,6 +158,18 @@ def test_cli_all(mini_vault, monkeypatch):
     assert LW.main(["--all"]) == 1
 
 
+def test_non_scalar_frontmatter_values_are_findings_not_crashes(mini_vault, make_note, good_note_body):
+    # `type: {type}` left from templates/note.md parses as a YAML mapping
+    assert ("L04", "error") in lint(mini_vault, make_note("DictType", good_note_body, type={"type": None}))
+    assert ("L04", "error") in lint(mini_vault, make_note("DictStatus", good_note_body, status={"s": None}))
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"], fm["units"] = {"i": None}, [{"unit": "§1", "status": {"s": None}}]
+    N.write_note(p, fm, body)
+    assert lint(mini_vault, p).count(("L04", "error")) == 2
+    assert isinstance(vault_codes(mini_vault), list)
+
+
 def test_index_staleness(mini_vault, make_note, good_note_body):
     assert vault_codes(mini_vault) == []
     make_note("Sample", good_note_body)

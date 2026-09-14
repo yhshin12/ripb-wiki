@@ -77,7 +77,7 @@ def plan_note(note, terms, old, rel, report):
         lines[idx] = line
     body, fm = "\n".join(lines), dict(note.fm)
     tid = fm.get("term")
-    if tid in terms and terms[tid].state == "확정":
+    if isinstance(tid, str) and tid in terms and terms[tid].state == "확정":
         t = terms[tid]
         blines = body.split("\n")
         for i, l in enumerate(blines):

@@ -43,6 +43,12 @@ def test_warnings_become_context_without_block(mini_vault, make_note, good_note_
     assert "L13" in out["hookSpecificOutput"]["additionalContext"]
 
 
+def test_template_shaped_note_is_reported(mini_vault, make_note, good_note_body, monkeypatch, capsys):
+    p = make_note("Template_Like", good_note_body, type={"type": None})
+    out = json.loads(run(monkeypatch, mini_vault, p, capsys))
+    assert out["decision"] == "block" and "L04" in out["reason"]
+
+
 def test_bad_stdin_is_ignored(monkeypatch, capsys, mini_vault):
     monkeypatch.setattr(H, "VAULT", str(mini_vault))
     assert H.main(io.StringIO("not json")) == 0

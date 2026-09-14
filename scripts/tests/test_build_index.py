@@ -16,6 +16,11 @@ def test_render_groups_and_summaries(mini_vault, make_note, good_note_body):
     assert "둘째 문장" not in text
 
 
+def test_non_string_type_is_skipped(mini_vault, make_note, good_note_body):
+    make_note("DictType", good_note_body, type={"type": None})
+    assert "DictType" not in BI.render(str(mini_vault))
+
+
 def test_check_and_write(mini_vault, make_note, good_note_body, monkeypatch):
     monkeypatch.setattr(BI, "VAULT", str(mini_vault))
     (mini_vault / "index.md").unlink()

@@ -62,7 +62,7 @@ def population(vault):
             fm, _ = N.read_note(p)
         except N.NoteError:
             continue
-        if fm.get("status") == "checked" and fm.get("type") not in EXCLUDED:
+        if fm.get("status") == "checked" and isinstance(fm.get("type"), str) and fm.get("type") not in EXCLUDED:
             out.append(p)
     return out
 

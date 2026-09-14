@@ -19,6 +19,11 @@ def test_population_and_deterministic_sample(mini_vault, make_note, good_note_bo
     assert len(AS.sample(str(mini_vault), 10, 7, str(tmp_path / "c"))["notes"]) == 5
 
 
+def test_population_ignores_non_string_type(mini_vault, make_note, good_note_body):
+    make_note("Odd", good_note_body, status="checked", verified="2026-09-20", type={"type": None})
+    assert AS.population(str(mini_vault)) == []
+
+
 def test_prompt_lists_sources_and_citations(mini_vault, make_note, good_note_body, tmp_path):
     checked(make_note, good_note_body, 1)
     AS.sample(str(mini_vault), 1, 1, str(tmp_path))

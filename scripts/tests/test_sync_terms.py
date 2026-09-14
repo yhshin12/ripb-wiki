@@ -97,6 +97,12 @@ def test_term_note_title_and_alias_follow_table(synced, make_note, good_note_bod
     assert b.startswith("# 가닥 (Licensing Basis Event)\n") and fm["aliases"] == ["LBE", "가닥"]
 
 
+def test_non_string_term_field_is_ignored(synced, make_note, good_note_body):
+    p = make_note("Weird", good_note_body, term={"LBE": None})
+    assert ST.main(["--apply"]) == 0
+    assert N.read_note(p)[1].startswith("# 가나 시험 (Sample Concept)")
+
+
 def test_terms_changed(synced):
     assert ST.terms_changed(str(synced)) == []
     set_row(synced, LBE_ROW, LBE_ROW.replace("가나 |", "가닥 |"))

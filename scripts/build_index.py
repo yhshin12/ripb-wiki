@@ -51,7 +51,7 @@ def render(vault, root=None):
         except (N.NoteError, UnicodeDecodeError):
             continue
         typ, status = note.fm.get("type"), note.fm.get("status")
-        if typ not in groups:
+        if not isinstance(typ, str) or typ not in groups:
             continue
         line = f"- [[{note.name}]] — {summary(note)}" + (" (disputed)" if status == "disputed" else "")
         (deprecated if status == "deprecated" else groups[typ]).append(line)

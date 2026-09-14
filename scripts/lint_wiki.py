@@ -68,14 +68,15 @@ def _fields(ctx, note, F):
     if typ == "source":
         if fm.get("key") != note.name:
             F(2, "L04", f"key {fm.get('key')!r} differs from the file name")
-        if fm.get("ingest") not in INGEST:
+        if not isinstance(fm.get("ingest"), str) or fm.get("ingest") not in INGEST:
             F(2, "L04", f"ingest {fm.get('ingest')!r} not in {sorted(INGEST)}")
         for u in fm.get("units") or []:
-            if not isinstance(u, dict) or set(u) - {"unit", "status"} or u.get("status") not in INGEST:
+            if not isinstance(u, dict) or set(u) - {"unit", "status"} or not isinstance(u.get("status"), str) \
+                    or u.get("status") not in INGEST:
                 F(2, "L04", f"bad unit {u!r} (fields: unit, status)")
         return
     st = fm.get("status")
-    if st not in STATUSES:
+    if not isinstance(st, str) or st not in STATUSES:
         F(2, "L04", f"status {st!r} not in {sorted(STATUSES)}")
     if st in ("checked", "reviewed") and not fm.get("verified"):
         F(2, "L04", f"status {st} needs a verified date")
@@ -218,8 +219,10 @@ def lint_file(ctx, path):
     if not note.fm:
         F(1, "L02", "frontmatter missing")
         return out
-    if note.fm.get("type") not in TYPES:
-        F(2, "L04", f"type {note.fm.get('type')!r} not in {sorted(TYPES)}")
+    typ = note.fm.get("type")
+    # frontmatter values can be YAML mappings (e.g. `type: {type}` left from the template): check the type first
+    if not isinstance(typ, str) or typ not in TYPES:
+        F(2, "L04", f"type {typ!r} not in {sorted(TYPES)}")
         return out
     _fields(ctx, note, F)
     _structure(note, F)
