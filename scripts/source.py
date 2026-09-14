@@ -93,7 +93,7 @@ def _all_cards():
             if fn.endswith(".md"):
                 fm, _ = read_note(os.path.join(w, fn))
                 if fm.get("type") == "source":
-                    yield fm
+                    yield r, fm
 
 
 def _new_card(key, title, pdf_path, root):
@@ -116,7 +116,7 @@ def register(pdf, key, title, root=None):
     if not os.path.isfile(pdf):
         raise SourceError(f"not a file: {pdf}")
     digest = sha256(pdf)
-    for fm in _all_cards():
+    for _, fm in _all_cards():
         if fm.get("sha256_pdf") == digest:
             raise SourceError(f"duplicate of {fm['key']} ({fm['pdf']}); left in inbox")
     if os.path.exists(card_path(key, root)):
@@ -243,11 +243,13 @@ def main():
         elif a.cmd == "adopt":
             adopt(a.key, a.root)
         elif a.cmd == "sync":
-            keys = [a.key] if a.key else [fm["key"] for fm in _all_cards()] if a.all else []
-            if not keys:
+            if a.key:
+                sync(a.key, a.root)
+            elif a.all:
+                for k, r in [(fm["key"], r) for r, fm in _all_cards()]:
+                    sync(k, r)
+            else:
                 raise SourceError("sync: give KEY or --all")
-            for k in keys:
-                sync(k, a.root)
         elif a.cmd == "finish":
             finish(a.key, a.root)
         elif a.cmd == "status":

@@ -134,3 +134,18 @@ def test_write_note_is_utf8_lf_without_bom(vault):
     assert not raw.startswith(b"\xef\xbb\xbf") and b"\r" not in raw
     fm, body = source.read_note(str(p))
     assert fm["title"] == "한글" and body == "본문\n"
+
+
+def test_sync_all_uses_each_cards_own_root(vault, monkeypatch):
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    public_card = source.adopt("DOC_A", root=None)
+    internal_pdf = make_pdf(vault / "inbox" / "internal" / "n.pdf")
+    internal_card = source.register(str(internal_pdf), key="HSFR_X", title="Design Note", root="internal")
+    _cleaned(vault, "DOC_A_Some Title")
+    _cleaned(vault, "HSFR_X_Design Note", root="internal")
+    monkeypatch.setattr("sys.argv", ["source.py", "sync", "--all"])
+    source.main()
+    fm_pub, _ = source.read_note(public_card)
+    fm_int, _ = source.read_note(internal_card)
+    assert fm_pub["file"] == "references/DOC_A_Some Title.md"
+    assert fm_int["file"] == "internal/references/HSFR_X_Design Note.md"
