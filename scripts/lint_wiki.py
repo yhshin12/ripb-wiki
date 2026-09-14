@@ -5,8 +5,10 @@ File checks (L01-L20) run on each PATH; --all adds the vault-wide checks (L30-L3
 Errors exit 1; warnings alone exit 0.
 """
 import argparse
+import hashlib
 import os
 import re
+import subprocess
 import sys
 
 import notes as N
@@ -29,6 +31,9 @@ PLACEHOLDER = re.compile(r"\bTBD\b|\bTODO\b|\(작성 예정\)|\{[^{}\n]{1,40}\}"
 CARD_PENDING_TEXT = ("(인제스트 완료 시 작성)", "(sync 전)")
 ABBR = re.compile(r"(?<![A-Za-z0-9_\-])([A-Z]{2,6})s?(?![A-Za-z0-9_\-])")
 SENTINEL = ""
+
+PUBLIC_TRACKED = re.compile(r"^(wiki/|meta/|templates/|\.claude/|log\.md$|index\.md$|CLAUDE\.md$|AGENTS\.md$|README\.md$)")
+LOCAL_ONLY = re.compile(r"(?i)^(internal|references|inbox|raw)/")
 
 
 class Context:
@@ -235,6 +240,111 @@ def lint_file(ctx, path):
     return out
 
 
+def _sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _tracked(vault):
+    if not os.path.isdir(os.path.join(vault, ".git")):
+        return None
+    r = subprocess.run(["git", "-C", vault, "-c", "core.quotepath=false", "ls-files", "-z"], capture_output=True)
+    return [p for p in r.stdout.decode("utf-8").split("\0") if p] if r.returncode == 0 else None
+
+
+def lint_vault(ctx, root=None):
+    """Vault-wide checks. root=None keeps public-tree findings (and L35); root='internal' keeps internal/ findings."""
+    v, out = ctx.vault, []
+
+    def F(path, line, code, msg, level="error"):
+        out.append(N.Finding(path, line, code, msg, level))
+
+    notes_all = list(ctx.public.items()) + list(ctx.internal.items())
+    names = {}
+    for stem, p in notes_all:
+        rel = N.relpath(p, v)
+        if stem.casefold() in names:
+            F(rel, 1, "L30", f"file name collides with {names[stem.casefold()]} (case-insensitive)")
+        else:
+            names[stem.casefold()] = rel
+    refs_present = {}
+    for r in (None, "internal"):
+        d = N.tree(v, r)["refs"]
+        refs_present[r] = os.path.isdir(d)
+        for fn in (sorted(os.listdir(d)) if refs_present[r] else []):
+            if fn.endswith(".md") and fn[:-3].casefold() in names:
+                F(names[fn[:-3].casefold()], 1, "L30",
+                  f"file name equals cleaned file {N.relpath(os.path.join(d, fn), v)}")
+
+    alias_owner, inbound, loaded = {}, {}, {}
+    for stem, p in notes_all:
+        rel = N.relpath(p, v)
+        try:
+            note = N.load(p)
+        except (N.NoteError, UnicodeDecodeError):
+            continue
+        loaded[stem] = (rel, note.fm)
+        aliases = note.fm.get("aliases") if isinstance(note.fm.get("aliases"), list) else []
+        for a in aliases:
+            k = str(a).casefold()
+            if k in names and names[k] != rel:
+                F(rel, 2, "L31", f"alias '{a}' equals the note name {names[k]}")
+            elif k in alias_owner and alias_owner[k] != rel:
+                F(rel, 2, "L31", f"alias '{a}' is also used by {alias_owner[k]}")
+            else:
+                alias_owner.setdefault(k, rel)
+        for m in LINK.finditer(note.body):
+            if not m.group(1) and m.group(2).strip() != stem:
+                inbound.setdefault(m.group(2).strip(), set()).add(stem)
+    for stem, (rel, fm) in loaded.items():
+        if fm.get("type") not in ("source", "map") and not inbound.get(stem):
+            F(rel, 1, "L32", "no other note links here", "warning")
+
+    for r in (None, "internal"):
+        d = N.tree(v, r)["refs"]
+        cards = {k: c for k, c in ctx.cards.items() if c["root"] == r}
+        if not refs_present[r]:
+            if cards:
+                F(N.relpath(d, v), 1, "L34", "references/ not present; source invariants skipped", "warning")
+            continue
+        card_files = {c["fm"].get("file") for c in cards.values()}
+        for fn in sorted(os.listdir(d)):
+            rel = N.relpath(os.path.join(d, fn), v)
+            if fn.endswith(".md") and rel not in card_files:
+                F(rel, 1, "L34", "cleaned file has no source card")
+        for key, c in sorted(cards.items()):
+            fm, crel = c["fm"], N.relpath(c["path"], v)
+            if fm.get("file") and not os.path.isfile(os.path.join(v, fm["file"])):
+                F(crel, 2, "L34", f"cleaned file missing: {fm['file']}")
+            elif fm.get("ingest") == "complete":
+                for fld, sha in (("file", "sha256_md"), ("pdf", "sha256_pdf")):
+                    p = os.path.join(v, fm.get(fld) or "")
+                    if not os.path.isfile(p) or _sha256(p) != fm.get(sha):
+                        F(crel, 2, "L34", f"ingest complete but {fld} is missing or its SHA-256 differs from the card")
+
+    if root is None:
+        tracked = _tracked(v)
+        if tracked is not None:
+            for p in tracked:
+                if LOCAL_ONLY.match(p):
+                    F(p, 1, "L35", "local-only path is tracked by git #1")
+            if os.path.isdir(os.path.join(v, "internal")):
+                import leak_guard as LG
+                inames = LG.internal_names(v)
+                for p in tracked:
+                    full = os.path.join(v, p)
+                    if not PUBLIC_TRACKED.match(p) or not os.path.isfile(full):
+                        continue
+                    with open(full, encoding="utf-8", errors="replace") as fh:
+                        for i, line in enumerate(fh.read().split("\n"), 1):
+                            for _, n in LG.scan([(p, line)], inames):
+                                F(p, i, "L36", f"internal document name \"{n}\" in a public file")
+    return [f for f in out if f.code == "L35" or f.path.startswith("internal/") == (root == "internal")]
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("paths", nargs="*")
@@ -250,6 +360,8 @@ def main(argv=None):
     findings = []
     for p in paths:
         findings += lint_file(ctx, p)
+    if a.all:
+        findings += lint_vault(ctx, a.root)
     for f in findings:
         print(f)
     errors = sum(1 for f in findings if f.level == "error")

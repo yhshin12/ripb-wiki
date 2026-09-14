@@ -85,3 +85,74 @@ def test_cli_file_mode(mini_vault, make_note, good_note_body, monkeypatch, capsy
     assert LW.main([make_note("Bad", good_note_body.replace("## 해설", "## 설명"))]) == 1
     out = capsys.readouterr().out
     assert "wiki/Bad.md" in out and "L06" in out
+
+
+import shutil
+import subprocess
+
+
+def vault_codes(vault, root=None):
+    return [(f.path, f.code, f.level) for f in LW.lint_vault(LW.Context(str(vault)), root)]
+
+
+def test_clean_vault_has_no_vault_findings(mini_vault):
+    assert vault_codes(mini_vault) == []
+
+
+def test_name_collisions(mini_vault, make_note, good_note_body):
+    make_note("Sample", good_note_body)
+    make_note("SAMPLE", good_note_body, root="internal", type="hsfr")
+    make_note("DOC_A_T", good_note_body)
+    assert ("internal/wiki/SAMPLE.md", "L30", "error") in vault_codes(mini_vault, root="internal")
+    assert ("wiki/DOC_A_T.md", "L30", "error") in vault_codes(mini_vault)
+
+
+def test_alias_collisions(mini_vault, make_note, good_note_body):
+    make_note("One", good_note_body, aliases=["공통"])
+    make_note("Two", good_note_body, aliases=["공통", "one"])
+    got = [(p, c) for p, c, _ in vault_codes(mini_vault)]
+    assert got.count(("wiki/Two.md", "L31")) == 2 and ("wiki/One.md", "L31") not in got
+
+
+def test_orphan_warning(mini_vault, make_note, good_note_body):
+    make_note("Lonely", good_note_body)
+    assert ("wiki/Lonely.md", "L32", "warning") in vault_codes(mini_vault)
+    make_note("Hub", good_note_body.replace("- [[DOC_A]]", "- [[Lonely]]"), type="map")
+    assert ("wiki/Lonely.md", "L32", "warning") not in vault_codes(mini_vault)
+
+
+def test_reference_invariants(mini_vault):
+    (mini_vault / "references" / "Orphan_Ref.md").write_text("x\n", encoding="utf-8", newline="\n")
+    assert ("references/Orphan_Ref.md", "L34", "error") in vault_codes(mini_vault)
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"], fm["sha256_md"] = "complete", "0" * 64
+    N.write_note(p, fm, body)
+    assert ("wiki/DOC_A.md", "L34", "error") in vault_codes(mini_vault)
+    (mini_vault / "references" / "DOC_A_T.md").unlink()
+    assert ("wiki/DOC_A.md", "L34", "error") in vault_codes(mini_vault)
+
+
+def test_reference_invariants_skipped_without_references_tree(mini_vault):
+    shutil.rmtree(mini_vault / "references")
+    assert vault_codes(mini_vault) == [("references", "L34", "warning")]
+
+
+def test_git_tracked_local_paths_and_public_names(mini_vault, make_note, good_note_body):
+    run = lambda *a: subprocess.run(["git", "-C", str(mini_vault), *a], check=True, capture_output=True)
+    run("init", "-q")
+    make_note("HSFR_Trial", good_note_body, root="internal", type="hsfr", title="Zeta Loop Pump Trial")
+    (mini_vault / "meta" / "status.md").write_text("다음: Zeta Loop Pump Trial 정리\n", encoding="utf-8", newline="\n")
+    run("add", "meta/status.md", "wiki")
+    run("add", "-f", "internal/wiki/HSFR_Trial.md")
+    got = vault_codes(mini_vault)
+    assert ("internal/wiki/HSFR_Trial.md", "L35", "error") in got
+    assert ("meta/status.md", "L36", "error") in got
+    assert not [g for g in vault_codes(mini_vault, root="internal") if g[1] in ("L35", "L36")]
+
+
+def test_cli_all(mini_vault, monkeypatch):
+    monkeypatch.setattr(LW, "VAULT", str(mini_vault))
+    assert LW.main(["--all"]) == 0
+    (mini_vault / "references" / "Orphan_Ref.md").write_text("x\n", encoding="utf-8", newline="\n")
+    assert LW.main(["--all"]) == 1
