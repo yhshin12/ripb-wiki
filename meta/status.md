@@ -23,4 +23,4 @@ Phase 1 (소스 계층 정합) 완료. 다음 단계는 Phase 2 계획 작성. �
 1. Phase 2 계획 작성 (도구: lint_wiki, verify_quotes, sync_terms, build_index, append_log, session_start, audit_sample, hooks, skills)
 
 ## 미해결
-- 없음
+- ACRS_ML25293A458 정제본: 슬라이드 제목 미추출, 글머리표 문장의 제목 오승격, 캡션 없는 그림 37개 미포함 → 인제스트 전 전용 프로파일 또는 그림 처리 방침 결정 필요 (`wiki/ACRS_ML25293A458.md` 서지 참조)
