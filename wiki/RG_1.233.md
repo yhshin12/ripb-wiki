@@ -2,7 +2,8 @@
 type: source
 key: RG_1.233
 title: Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology
-  for Non-Light-Water Reactors
+  to Inform the Licensing Basis and Content of Applications for Licenses, Certifications,
+  and Approvals for Non-Light-Water Reactors
 file: references/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and
   Performance-Based Methodology for Non-Light-Water Reactors.md
 pdf: references/raw/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and
@@ -19,7 +20,7 @@ ingest: pending
 units: []
 ---
 
-# Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology for Non-Light-Water Reactors (RG_1.233)
+# Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light-Water Reactors (RG_1.233)
 
 > [!abstract] 요약
 > (인제스트 완료 시 작성)

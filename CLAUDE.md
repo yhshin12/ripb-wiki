@@ -61,9 +61,10 @@
 
 - Python: `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`만 쓴다. PATH의 `python`은 쓰지 않는다.
 - 스크립트(`scripts/`): `convert_references.py`, `clean_references.py` + `refclean/`(정제), `source.py`(원문 등록·소스 카드), `lint_wiki.py`, `verify_quotes.py`, `sync_terms.py`, `build_index.py`, `append_log.py`, `session_start.py`, `audit_sample.py`. 어느 것이 이미 있는지는 `meta/status.md`가 말한다.
-- 규칙: 일괄 수정은 dry-run 기본. 어떤 스크립트도 `inbox/`, `references/raw/`의 내용을 바꾸지 않는다. 검사 실패는 0이 아닌 종료 코드. 파일은 내용을 검증한 뒤에만 쓴다.
+- 규칙: 일괄 수정은 dry-run 기본. 원문 파일은 이동만 하고 내용을 바꾸지 않는다(`inbox/` → `references/raw/` 이동은 `source.py register`만 한다). 검사 실패는 0이 아닌 종료 코드. 파일은 내용을 검증한 뒤에만 쓴다.
 - 테스트: `python -m pytest scripts/refclean/tests scripts/tests -q`.
 - hook: git pre-commit(`.githooks/`, 두 저장소)이 원문·내부 경로와 공개 노트의 `[[HSFR_` 링크를 거부한다. Phase 2에서 lint·인용 검증이 추가된다.
+- 클론 직후: 두 저장소에서 `git config core.hooksPath .githooks`를 실행한다. `references/`는 원본 PDF를 `references/raw/`에 두고 파이프라인으로 재생성한다.
 - `log.md`는 추가만 한다(`append_log.py`, Phase 2 전에는 파일 끝에 항목을 덧붙인다). `index.md`는 `build_index.py`가 만든다(Phase 2 전에는 없다).
 
 ## 8. 보안 (설계 §3.3)

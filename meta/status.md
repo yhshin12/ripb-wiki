@@ -15,7 +15,7 @@ Phase 1 (소스 계층 정합) 완료. 다음 단계는 Phase 2 계획 작성. �
 ## 원문
 | 키 | 정제본 | 소스 카드 | ingest |
 |---|---|---|---|
-| PSAR_ch01, ch03, ch04, ch05, ch06, ch07, ch11, RG_1.232, NEI_18-04 | 있음 (2026-09-13 빌드) | 있음 (`wiki/<KEY>.md`) | pending |
+| PSAR_ch01, ch03, ch04, ch05, ch06, ch07, ch11, RG_1.232, NEI_18-04 | 있음 (2026-09-13 빌드 (RG_1.232, PSAR_ch04는 2026-09-14 재빌드)) | 있음 (`wiki/<KEY>.md`) | pending |
 | RG_1.233 | 있음 (2026-09-14 빌드) | 있음 (`wiki/RG_1.233.md`) | pending |
 | ACRS_ML25293A458 | 있음 (2026-09-14 빌드) | 있음 (`wiki/ACRS_ML25293A458.md`) | pending |
 
