@@ -103,3 +103,19 @@ def load_cards(vault):
             if fm.get("type") == "source" and fm.get("key"):
                 cards[str(fm["key"])] = {"root": r, "fm": fm, "path": p}
     return cards
+
+
+@dataclass(frozen=True)
+class Finding:
+    path: str
+    line: int
+    code: str
+    message: str
+    level: str = "error"
+
+    def __str__(self):
+        return f"{self.path}:{self.line}: {self.level} {self.code} {self.message}"
+
+
+def relpath(path, vault):
+    return os.path.relpath(path, vault).replace(os.sep, "/")
