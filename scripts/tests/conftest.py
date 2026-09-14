@@ -142,7 +142,7 @@ def mini_vault(tmp_path):
     for d in ("wiki", "references/raw", "internal/wiki", "internal/references/raw", "inbox", "meta", "templates"):
         os.makedirs(tmp_path / d, exist_ok=True)
     cleaned = tmp_path / "references" / "DOC_A_T.md"
-    cleaned.write_text(MINI_CLEANED, encoding="utf-8")
+    cleaned.write_text(MINI_CLEANED, encoding="utf-8", newline="\n")      # LF on Windows too
     pdf = tmp_path / "references" / "raw" / "DOC_A_T.pdf"
     pdf.write_bytes(b"%PDF fake DOC_A")
     fm = {"type": "source", "key": "DOC_A", "title": "T", "file": "references/DOC_A_T.md",
@@ -150,7 +150,7 @@ def mini_vault(tmp_path):
           "sha256_md": hashlib.sha256(cleaned.read_bytes()).hexdigest(), "pdf_pages": 12, "build": {},
           "ingest": "pending", "units": []}
     notes.write_note(str(tmp_path / "wiki" / "DOC_A.md"), fm, CARD_BODY)
-    (tmp_path / "wiki" / "Terminology.md").write_text(TERMINOLOGY, encoding="utf-8")
+    (tmp_path / "wiki" / "Terminology.md").write_text(TERMINOLOGY, encoding="utf-8", newline="\n")
     return tmp_path
 
 

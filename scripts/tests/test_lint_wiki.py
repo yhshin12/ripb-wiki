@@ -1,0 +1,87 @@
+import pytest
+
+import lint_wiki as LW
+import notes as N
+
+
+def lint(vault, path):
+    return [(f.code, f.level) for f in LW.lint_file(LW.Context(str(vault)), path)]
+
+
+def test_good_note_card_and_terminology_are_clean(mini_vault, make_note, good_note_body):
+    for p in (make_note("Sample", good_note_body), str(mini_vault / "wiki" / "DOC_A.md"),
+              str(mini_vault / "wiki" / "Terminology.md")):
+        assert lint(mini_vault, p) == [], p
+
+
+@pytest.mark.parametrize("old,new,expected", [
+    ("# 가나 시험 (Sample Concept)", "# 가나 시험", ("L06", "error")),
+    ("> [!abstract] 요약\n", "", ("L06", "error")),
+    ("## 해설", "## 설명", ("L06", "error")),
+    ("- [[DOC_A]]", "- [[No_Such_Note]]", ("L08", "error")),
+    ("- [[DOC_A]]", "- ![[missing.png]]", ("L08", "error")),
+    ("- [[DOC_A]]", "- [DOC_A](DOC_A.md)", ("L09", "error")),
+    ("- [[DOC_A]]", "- [[HSFR_Anything]]", ("L10", "error")),
+    ("세 종류이다.", "세 종류이다. TBD", ("L07", "error")),
+    ("세 종류이다.", "{한국어 2–3문장}", ("L07", "error")),
+    ("가나(Licensing Basis Event)%%t:LBE%%에", "LBE%%t:LBE%%에", ("L11", "error")),     # first occurrence form
+    ("LBE%%t:LBE%%는", "LBE%%t:LBE%%은", ("L11", "error")),                            # particle
+    ("LBE%%t:LBE%%는", "LBE%%t:NOPE%%는", ("L11", "error")),                           # unknown ID
+    ("세 종류이다.", "나가 세 종류이다.", ("L12", "error")),
+    ("세 종류이다.", "RAC도 있다.", ("L13", "warning")),
+    ("세 종류이다.", "XYZ도 있다. DL3-RC1은 식별자이다.", ("L14", "error")),
+    ("세 종류이다.", "Reactor Air Cooling System%%t:RAC%%도 있다.", ("L15", "warning")),
+])
+def test_note_findings(mini_vault, make_note, good_note_body, old, new, expected):
+    assert old in good_note_body
+    assert expected in lint(mini_vault, make_note("Sample", good_note_body.replace(old, new)))
+
+
+def test_abbreviation_ids_are_not_terms(mini_vault, make_note, good_note_body):
+    body = good_note_body.replace("세 종류이다.", "DL3-RC1과 DHP-L1PP-BL은 식별자이다.")
+    assert lint(mini_vault, make_note("Sample", body)) == []
+
+
+def test_frontmatter_filename_and_encoding(mini_vault, make_note, good_note_body):
+    assert ("L04", "error") in lint(mini_vault, make_note("Typed", good_note_body, type="essay"))
+    assert ("L04", "error") in lint(mini_vault, make_note("Checked", good_note_body, status="checked"))
+    assert ("L05", "error") in lint(mini_vault, make_note("Keyless", good_note_body, sources=["DOC_Z"]))
+    assert ("L03", "error") in lint(mini_vault, make_note("Bad Name", good_note_body))
+    crlf = mini_vault / "wiki" / "Crlf.md"
+    crlf.write_bytes(open(make_note("Tmp", good_note_body), "rb").read().replace(b"\n", b"\r\n"))
+    assert ("L01", "error") in lint(mini_vault, str(crlf))
+    broken = mini_vault / "wiki" / "Broken.md"
+    broken.write_text("---\ntype: [\n---\n# x\n", encoding="utf-8", newline="\n")
+    assert lint(mini_vault, str(broken)) == [("L02", "error")]
+
+
+def test_card_rules(mini_vault):
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"] = "complete"
+    N.write_note(p, fm, body)
+    assert ("L07", "error") in lint(mini_vault, p)          # (인제스트 완료 시 작성) left after completion
+    fm["ingest"], fm["units"] = "pending", [{"unit": "§1", "status": "complete", "commit": "abc"}]
+    N.write_note(p, fm, body)
+    assert ("L04", "error") in lint(mini_vault, p)          # units carry no commit field (P1)
+
+
+def test_internal_link_rules(mini_vault, make_note, good_note_body):
+    make_note("HSFR_Secret", good_note_body, root="internal", type="hsfr")
+    pub = make_note("Sample", good_note_body.replace("- [[DOC_A]]", "- [[HSFR_Secret]]"))
+    assert ("L10", "error") in lint(mini_vault, pub)
+    assert lint(mini_vault, make_note("HSFR_Other", good_note_body, root="internal", type="hsfr")) == []
+
+
+def test_terminology_format_error(mini_vault):
+    t = mini_vault / "wiki" / "Terminology.md"
+    t.write_text(t.read_text(encoding="utf-8").replace("| 미정 |", "| 보류 |"), encoding="utf-8", newline="\n")
+    assert ("L20", "error") in lint(mini_vault, str(t))
+
+
+def test_cli_file_mode(mini_vault, make_note, good_note_body, monkeypatch, capsys):
+    monkeypatch.setattr(LW, "VAULT", str(mini_vault))
+    assert LW.main([make_note("Sample", good_note_body)]) == 0
+    assert LW.main([make_note("Bad", good_note_body.replace("## 해설", "## 설명"))]) == 1
+    out = capsys.readouterr().out
+    assert "wiki/Bad.md" in out and "L06" in out
