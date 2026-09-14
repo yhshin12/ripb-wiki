@@ -9,3 +9,6 @@
 
 ## [2026-09-14] chore | 새 이력 첫 커밋
 - git #1 첫 커밋. `references/`, `internal/`, `inbox/`는 추적하지 않는다. pre-commit 관문 확인.
+
+## [2026-09-14] feat | 소스 카드 9장
+- `scripts/source.py adopt`로 정제본 9건의 소스 카드를 만들었다(`wiki/<KEY>.md`, `ingest: pending`). RG 1.232 원문 파일명에 제목을 붙였다(재변환, 본문 동일).
