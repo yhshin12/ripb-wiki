@@ -39,3 +39,9 @@
 - 용어: 영어 유지 12건(RSF, PSF, SR, DBEHL, DID, IE, MST, RIPB, LMP, Risk-Significant LBE, Risk-Significant SSC, cumulative risk target), 용어 아님 3건(FMEA, HAZOP, PHA). 미정 용어 0.
 - 검사: lint 오류 0·경고 0, 인용 검증 오류 0, 용어 충돌 0, 조사 확인 20건 모두 올바름.
 - 발견한 도구 결함: 인용 정규화가 [^p23] 형태의 각주 참조를 지우지 않는다. 별도 커밋으로 수정한다.
+
+## [2026-09-15] ingest | NEI 18-04 §3.3
+- 새 노트 5개(PRA_Role_In_LBE_Selection, Non_LWR_PRA_Scope, PRA_Safety_Function, Event_Sequence_Family, Risk_Importance_Measures), 고친 노트 6개(LBE_Risk_Significance 사실 추가, 이전 노트 4개의 용어 풀어쓰기 수정, 소스 카드).
+- 원문 간 모순 1건: SSC가 LBE를 F-C Target 안에 두는지 판정할 때 용어집은 평균값, §3.3.6은 95th percentile 상한. Risk_Importance_Measures와 LBE_Risk_Significance를 disputed로 둠.
+- 용어: 영어 유지 3건(FSF, POS, Event Sequence Family), 용어 아님 15건, 금지 표기 4건 추가. 미정 용어 0.
+- 검사: lint 오류 0·경고 0, 인용 검증 오류 0(노트 23개), 용어 충돌 0.

@@ -24,7 +24,7 @@ terms_pending: []
 | DBA | Design Basis Accident | DBA |  | 약어 |  | [NEI_18-04 Table 3-1 p.14] | 영어 유지 | 2026-09-15 사용자 결정 |
 | FC_TARGET | Frequency-Consequence Target | F-C Target |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | SSC | Structures, Systems, and Components | SSC |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |
-| ES | Event Sequence | ES |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| ES | Event Sequence | ES |  | 약어 | 사건 시퀀스 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | QHO | Quantitative Health Objective | QHO |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | EAB | Exclusion Area Boundary | EAB |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | TLST | Top Level Safety Target | TLST |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
@@ -32,7 +32,7 @@ terms_pending: []
 | PSF | PRA Safety Function | PSF |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | SR | Safety-Related | SR |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | DBEHL | Design Basis External Hazard Level | DBEHL |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
-| DID | Defense-in-Depth | DID |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DID | Defense-in-Depth | DID |  | 약어 | 심층방어; 심층 방어 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | IE | Initiating Event | IE |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | MST | Mechanistic Source Term | MST |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | RIPB | risk-informed and performance-based | RIPB |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |
@@ -40,9 +40,27 @@ terms_pending: []
 | FMEA | failure modes and effects analysis | FMEA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
 | HAZOP | hazard and operability study | HAZOP |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
 | PHA | process hazard analysis | PHA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
-| RS_LBE | Risk-Significant LBE |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RS_LBE | Risk-Significant LBE |  |  |  | 위험 중요도; 위험 중요 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | RS_SSC | Risk-Significant SSC |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
-| CUM_RISK_TARGET | cumulative risk target |  |  |  |  | [NEI_18-04 §3.2.2 Task 7b p.24] | 영어 유지 | 2026-09-15 사용자 결정 |
+| CUM_RISK_TARGET | cumulative risk target |  |  |  | 누적 목표; 누적 위험 목표 | [NEI_18-04 §3.2.2 Task 7b p.24] | 영어 유지 | 2026-09-15 사용자 결정 |
+| FSF | Fundamental Safety Function | FSF |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| POS | Plant Operating State | POS |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| EVENT_SEQ_FAMILY | Event Sequence Family |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| BASIC_EVENT | basic event |  |  |  |  | [NEI_18-04 §3.3.6 p.35] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| MINIMAL_CUT_SET | minimal cut set |  |  |  |  | [NEI_18-04 §3.3.6 p.35] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| RISK_TRIPLET | risk triplet |  |  |  |  | [NEI_18-04 §3.3.1 p.30] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| RISK_IMPORTANCE | risk importance measure |  |  |  |  | [NEI_18-04 §3.3.6 p.35] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| RR | Risk Reduction | RR |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| FV | Fussell-Vesely | FV |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| RRW | Risk Reduction Worth | RRW |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| CR | Criticality Importance | CR |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| RA | Risk Achievement | RA |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| RAW | Risk Achievement Worth | RAW |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| PD | Partial Derivative | PD |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| BI | Birnbaum Importance | BI |  |  |  | [NEI_18-04 Table 3-2 p.36] | 용어 아님 | 2026-09-15 사용자 결정 |
+| IAEA | International Atomic Energy Agency | IAEA |  |  |  | [NEI_18-04 §3.3.4 p.32] | 용어 아님 | 기관 이름, 2026-09-15 사용자 결정 |
+| ASME | ASME (ASME/ANS RA-S-1.4) | ASME |  |  |  | [NEI_18-04 §3.3.3 p.31] | 용어 아님 | 표준 발행 기관, 2026-09-15 사용자 결정 |
+| ANS | ANS (ASME/ANS RA-S-1.4) | ANS |  |  |  | [NEI_18-04 §3.3.3 p.31] | 용어 아님 | 표준 발행 기관, 2026-09-15 사용자 결정 |
 | NRC | Nuclear Regulatory Commission | NRC |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | EPA | Environmental Protection Agency | EPA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | CFR | Code of Federal Regulations | CFR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 규정 이름, 표지 없이 그대로 쓴다 |

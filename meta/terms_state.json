@@ -1,5 +1,13 @@
 {
  "terms": {
+  "ANS": {
+   "abbr": "ANS",
+   "english": "ANS (ASME/ANS RA-S-1.4)",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "AOO": {
    "abbr": "AOO",
    "english": "Anticipated Operational Occurrence",
@@ -7,6 +15,22 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "ASME": {
+   "abbr": "ASME",
+   "english": "ASME (ASME/ANS RA-S-1.4)",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "BASIC_EVENT": {
+   "abbr": "",
+   "english": "basic event",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "BDBE": {
    "abbr": "BDBE",
@@ -16,6 +40,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "BI": {
+   "abbr": "BI",
+   "english": "Birnbaum Importance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "CFR": {
    "abbr": "CFR",
    "english": "Code of Federal Regulations",
@@ -24,10 +56,21 @@
    "later": "",
    "state": "용어 아님"
   },
+  "CR": {
+   "abbr": "CR",
+   "english": "Criticality Importance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "CUM_RISK_TARGET": {
    "abbr": "",
    "english": "cumulative risk target",
-   "forbidden": [],
+   "forbidden": [
+    "누적 목표",
+    "누적 위험 목표"
+   ],
    "korean": "",
    "later": "",
    "state": "영어 유지"
@@ -59,7 +102,10 @@
   "DID": {
    "abbr": "DID",
    "english": "Defense-in-Depth",
-   "forbidden": [],
+   "forbidden": [
+    "심층방어",
+    "심층 방어"
+   ],
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
@@ -83,9 +129,19 @@
   "ES": {
    "abbr": "ES",
    "english": "Event Sequence",
-   "forbidden": [],
+   "forbidden": [
+    "사건 시퀀스"
+   ],
    "korean": "",
    "later": "약어",
+   "state": "영어 유지"
+  },
+  "EVENT_SEQ_FAMILY": {
+   "abbr": "",
+   "english": "Event Sequence Family",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
    "state": "영어 유지"
   },
   "FC_TARGET": {
@@ -104,9 +160,33 @@
    "later": "",
    "state": "용어 아님"
   },
+  "FSF": {
+   "abbr": "FSF",
+   "english": "Fundamental Safety Function",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "FV": {
+   "abbr": "FV",
+   "english": "Fussell-Vesely",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "HAZOP": {
    "abbr": "HAZOP",
    "english": "hazard and operability study",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "IAEA": {
+   "abbr": "IAEA",
+   "english": "International Atomic Energy Agency",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -144,6 +224,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "MINIMAL_CUT_SET": {
+   "abbr": "",
+   "english": "minimal cut set",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "MST": {
    "abbr": "MST",
    "english": "Mechanistic Source Term",
@@ -168,6 +256,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PD": {
+   "abbr": "PD",
+   "english": "Partial Derivative",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "PHA": {
    "abbr": "PHA",
    "english": "process hazard analysis",
@@ -175,6 +271,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "POS": {
+   "abbr": "POS",
+   "english": "Plant Operating State",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "PRA": {
    "abbr": "PRA",
@@ -200,6 +304,22 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "RA": {
+   "abbr": "RA",
+   "english": "Risk Achievement",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RAW": {
+   "abbr": "RAW",
+   "english": "Risk Achievement Worth",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "RIPB": {
    "abbr": "RIPB",
    "english": "risk-informed and performance-based",
@@ -207,6 +327,38 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "RISK_IMPORTANCE": {
+   "abbr": "",
+   "english": "risk importance measure",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RISK_TRIPLET": {
+   "abbr": "",
+   "english": "risk triplet",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RR": {
+   "abbr": "RR",
+   "english": "Risk Reduction",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RRW": {
+   "abbr": "RRW",
+   "english": "Risk Reduction Worth",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "RSF": {
    "abbr": "RSF",
@@ -219,7 +371,10 @@
   "RS_LBE": {
    "abbr": "",
    "english": "Risk-Significant LBE",
-   "forbidden": [],
+   "forbidden": [
+    "위험 중요도",
+    "위험 중요"
+   ],
    "korean": "",
    "later": "",
    "state": "영어 유지"

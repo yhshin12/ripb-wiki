@@ -47,11 +47,11 @@ terms_pending: []
 | Task 10 | Finalize List of LBEs and Safety-Related SSCs | [NEI_18-04 §3.2.2 p.26] |
 
 ## 해설
-절차는 Task 1에서 초기 LBE%%t:LBE%% 목록을 결정론적으로 제안하는 데서 시작한다. 이어 Task 2와 Task 3에서 설계와 PRA를 발전시키고, Task 4에서 PRA가 모델링한 사건 시퀀스를 군으로 묶어 평균 빈도에 따라 LBE%%t:LBE%% 범주에 배정한다. 범주의 빈도 구간은 [[LBE_Frequency_Categories]]에 있다.
+절차는 Task 1에서 초기 LBE%%t:LBE%% 목록을 결정론적으로 제안하는 데서 시작한다. 이어 Task 2와 Task 3에서 설계와 PRA를 발전시키고, Task 4에서 PRA가 모델링한 Event Sequence%%t:ES%%를 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 묶어 평균 빈도에 따라 LBE%%t:LBE%% 범주에 배정한다. 범주의 빈도 구간은 [[LBE_Frequency_Categories]]에 있다.
 
 원문은 과제를 정해진 순서로 수행할 필요가 없다고 적는다. Task 3부터 Task 10까지는 LBE%%t:LBE%% 목록이 안정되어 확정될 때까지 설계 단계나 반복마다 다시 수행될 수 있고, 비슷한 기술 정보를 주는 다른 과제로 대체하는 것도 허용된다. PRA는 설계의 어느 단계에서든 도입할 수 있지만 원문은 이른 도입이 유리하다고 본다.
 
-Task 5a부터 Task 6까지는 Required Safety Function%%t:RSF%%을 정하고 이를 수행할 SR%%t:SR%% SSC%%t:SSC%%를 고르는 과정이며 [[Required_Safety_Function]]에 정리했다. Task 7a부터 Task 7c까지의 평가, 즉 빈도 범주 판정과 발전소 전체 위험, 위험 중요 판정 기준은 [[LBE_Risk_Significance]]에 있다.
+Task 5a부터 Task 6까지는 Required Safety Function%%t:RSF%%을 정하고 이를 수행할 SR%%t:SR%% SSC%%t:SSC%%를 고르는 과정이며 [[Required_Safety_Function]]에 정리했다. Task 7a부터 Task 7c까지의 평가, 즉 빈도 범주 판정과 발전소 전체 위험, Risk-Significant LBE%%t:RS_LBE%% 판정 기준은 [[LBE_Risk_Significance]]에 있다.
 
 Task 7e의 Defense-in-Depth%%t:DID%% 평가는 LBE%%t:LBE%% 선정을 직접 바꾸지 않는다. 평가 결과로 설계나 절차적 관리가 바뀌면 PRA가 바뀌고, 그 경로를 거쳐 선정이나 평가에 영향을 줄 수 있다. Task 10에서 LBE%%t:LBE%%와 SR%%t:SR%% SSC%%t:SSC%% 최종 목록을 확정하면 선정 절차가 끝난다.
 
