@@ -1,0 +1,9 @@
+#!/bin/bash
+# 커밋 메시지도 공개된다 (spec §3.3, R14).
+PY="${RIPB_PY:-/c/Code/Python/pykaeri/.venv12/Scripts/python.exe}"
+ROOT="$(git rev-parse --show-toplevel)"
+if ! "$PY" "$ROOT/scripts/leak_guard.py" --message "$1"; then
+  echo "commit-msg: refused (internal document names; see above)"
+  exit 1
+fi
+exit 0

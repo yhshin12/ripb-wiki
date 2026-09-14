@@ -34,4 +34,12 @@ if [ "${#hits[@]}" -gt 0 ]; then
   printf '%s\n' "${hits[@]}"
   exit 1
 fi
+
+# 공개 커밋의 추가 줄·경로에 내부 문서명이 없어야 한다 (spec §8.2, R14).
+PY="${RIPB_PY:-/c/Code/Python/pykaeri/.venv12/Scripts/python.exe}"
+ROOT="$(git rev-parse --show-toplevel)"
+if ! "$PY" "$ROOT/scripts/leak_guard.py" --staged; then
+  echo "pre-commit: refused (internal document names; see above)"
+  exit 1
+fi
 exit 0
