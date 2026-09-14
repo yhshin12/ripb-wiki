@@ -342,6 +342,15 @@ def lint_vault(ctx, root=None):
                         for i, line in enumerate(fh.read().split("\n"), 1):
                             for _, n in LG.scan([(p, line)], inames):
                                 F(p, i, "L36", f"internal document name \"{n}\" in a public file")
+    import build_index as BI
+    ipath = BI.index_path(v, root)
+    have = None
+    if os.path.isfile(ipath):
+        with open(ipath, encoding="utf-8", newline="") as fh:
+            have = fh.read()
+    if have != BI.render(v, root):
+        F(N.relpath(ipath, v), 1, "L33",
+          "index is missing or stale; run build_index.py" + (f" --root {root}" if root else ""))
     return [f for f in out if f.code == "L35" or f.path.startswith("internal/") == (root == "internal")]
 
 

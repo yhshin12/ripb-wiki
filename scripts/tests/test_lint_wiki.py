@@ -156,3 +156,9 @@ def test_cli_all(mini_vault, monkeypatch):
     assert LW.main(["--all"]) == 0
     (mini_vault / "references" / "Orphan_Ref.md").write_text("x\n", encoding="utf-8", newline="\n")
     assert LW.main(["--all"]) == 1
+
+
+def test_index_staleness(mini_vault, make_note, good_note_body):
+    assert vault_codes(mini_vault) == []
+    make_note("Sample", good_note_body)
+    assert ("index.md", "L33", "error") in vault_codes(mini_vault)

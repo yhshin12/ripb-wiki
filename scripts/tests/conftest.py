@@ -151,6 +151,8 @@ def mini_vault(tmp_path):
           "ingest": "pending", "units": []}
     notes.write_note(str(tmp_path / "wiki" / "DOC_A.md"), fm, CARD_BODY)
     (tmp_path / "wiki" / "Terminology.md").write_text(TERMINOLOGY, encoding="utf-8", newline="\n")
+    import build_index
+    build_index.write(str(tmp_path))
     return tmp_path
 
 
