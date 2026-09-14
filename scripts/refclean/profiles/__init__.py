@@ -12,4 +12,6 @@ DOCS = {
     "RG_1.232": ("RG_1.232_Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors", "rg1232", None),
     "NEI_18-04": ("NEI_18-04_Modernization of Technical Requirements for Licensing of Advanced Non-Light Water Reactors",
                   "nei1804", None),
+    "RG_1.233": ("RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology "
+                 "for Non-Light-Water Reactors", "generic", None),
 }
