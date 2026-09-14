@@ -199,6 +199,7 @@ def _lbe_pairs(rec):
     return pairs
 
 
+@pytest.mark.refs
 def test_real_no_qa_issues(built):
     doc, aux, text, body, failed = built
     assert doc.meta.get("psar_ch05_qa", []) == []
@@ -207,6 +208,7 @@ def test_real_no_qa_issues(built):
     assert sum(1 for e in doc.els if e.kind == "heading" and e.meta.get("numbered")) == 67
 
 
+@pytest.mark.refs
 def test_real_62_psf_records_once_in_order(built):
     body = built[3]
     ids = re.findall(r"^#### (DL\d-[A-Z]+\d+[a-z]?) — ", body, re.M)
@@ -221,6 +223,7 @@ def test_real_62_psf_records_once_in_order(built):
     assert "\n| PSF ID |" not in body and "\n| PSF-ID |" not in body       # no flat grid tables left
 
 
+@pytest.mark.refs
 def test_real_record_headers_verbatim_per_table(built):
     recs = _records(built[3])
     for pid, rec in recs.items():
@@ -238,6 +241,7 @@ def test_real_record_headers_verbatim_per_table(built):
             assert rec.count("| SR SSC(s) | SRDC |") == 1, pid
 
 
+@pytest.mark.refs
 def test_real_lbe_counts_and_type_pairing(built):
     doc, recs = built[0], _records(built[3])
     total, runs = 0, 0
@@ -283,6 +287,7 @@ def _pymupdf_cells():
     return out
 
 
+@pytest.mark.refs
 def test_real_records_match_pymupdf_tables(built):
     recs, ref = _records(built[3]), _pymupdf_cells()
     assert set(ref) == set(recs)
@@ -306,6 +311,7 @@ def test_real_records_match_pymupdf_tables(built):
         assert set(mine) == set(ssc_lines) and all(n in mine for n in ssc_lines), pid
 
 
+@pytest.mark.refs
 def test_real_dl3_rr2_merged(built):
     rec = _records(built[3])["DL3-RR2"]
     assert len(_lbe_pairs(rec)) == 51
@@ -316,6 +322,7 @@ def test_real_dl3_rr2_merged(built):
     assert "IPI-IHEL-1" in rec and "SUD-IHEL-1" in rec                  # continuation sheet (p14) LBEs
 
 
+@pytest.mark.refs
 def test_real_table_notes_after_last_record(built):
     body = built[3]
     note1 = ("- Note 1: DL3-RR10 is added at the CP stage to mitigate radionuclide release from SCG pathways in the "
@@ -333,6 +340,7 @@ def test_real_table_notes_after_last_record(built):
     assert not re.search(r"^application\.$", body, re.M)
 
 
+@pytest.mark.refs
 def test_real_amc_and_restored_ssc_names(built):
     recs = _records(built[3])
     for pid in ("DL4-RR3a", "DL4-RR3b", "DL4-RR4a"):
@@ -342,6 +350,7 @@ def test_real_amc_and_restored_ssc_names(built):
     assert "Auxiliary NI Fire" not in built[3]
 
 
+@pytest.mark.refs
 def test_real_page_anchors(built):
     """One range anchor per merged table (core) plus one anchor per further sheet page (this profile); no page is
     announced twice and no range start is repeated."""
@@ -358,6 +367,7 @@ def test_real_page_anchors(built):
     assert "<!-- page 14 | 5.2-10 -->\n\n#### DL3-RR3 — EVHM Cask barrier" in body
 
 
+@pytest.mark.refs
 def test_real_pdc_headings_and_subheadings(built):
     doc, aux, text, body, failed = built
     pdc = re.findall(r"^#### (5\.3\.\d+\.\d+) (PDC \d+ - .+)$", body, re.M)
@@ -381,6 +391,7 @@ def test_real_pdc_headings_and_subheadings(built):
             "Natrium Advanced Reactor,” NATD-LIC-RPRT-0002-A, Revision 1\n") in body
 
 
+@pytest.mark.refs
 def test_real_no_false_list_markers(built):
     doc, body = built[0], built[3]
     assert not re.search(r"^\s*- \d+\.\s", body, re.M)                    # bullet + number (B21)
@@ -397,6 +408,7 @@ def test_real_no_false_list_markers(built):
     assert "\n- seals and inert gases to prevent oxygen ingress into sodium containing vessels\n" in body  # PDC 73
 
 
+@pytest.mark.refs
 def test_real_paragraph_repairs(built):
     body = built[3]
     for joined in ["as a result of anticipated operational occurrences and (2) safety functions that rely on electric",
@@ -410,6 +422,7 @@ def test_real_paragraph_repairs(built):
     assert len(built[0].meta.get("psar_ch05_para_splits", [])) == 13
 
 
+@pytest.mark.refs
 def test_real_source_wording_kept(built):
     body = built[3]
     assert body.count("Water Fuel Pool Handling System (FHP)") == 3      # DL3-HR10, DL3-HR13, DL5-PAM1 (sic)
@@ -420,6 +433,7 @@ def test_real_source_wording_kept(built):
         assert sic in body, sic
 
 
+@pytest.mark.refs
 def test_real_verify_residual_is_explained(built):
     from refclean.verify import verify
     doc, aux, text = built[0], built[1], built[2]

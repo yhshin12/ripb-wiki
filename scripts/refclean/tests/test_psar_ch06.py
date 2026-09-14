@@ -174,6 +174,7 @@ def _row(section, label):
     return [c.strip() for c in line.strip().strip("|").split("|")]
 
 
+@pytest.mark.refs
 def test_smoke_headings_and_subheading(built):
     doc, aux, text, failed = built
     nums = [e.meta["num"] for e in doc.els if e.kind == "heading" and e.meta.get("numbered")]
@@ -185,6 +186,7 @@ def test_smoke_headings_and_subheading(built):
     assert failed == []
 
 
+@pytest.mark.refs
 def test_smoke_load_factor_counts_match_pdf(built):
     doc, aux, text, failed = built
     qa = doc.meta["ch6_load_tables"]
@@ -196,6 +198,7 @@ def test_smoke_load_factor_counts_match_pdf(built):
             assert qa[tid]["note_numbers"] == list(range(1, n + 1))
 
 
+@pytest.mark.refs
 def test_smoke_load_tables_attributed_by_page(built):
     doc, aux, text, failed = built
     by_id = {e.meta["ch6_load_table"]: e for e in doc.els if e.kind == "table" and e.meta.get("ch6_load_table")}
@@ -223,6 +226,7 @@ def test_smoke_load_tables_attributed_by_page(built):
     assert sse == 6   # 11 SSE factors in total over the six tables
 
 
+@pytest.mark.refs
 def test_smoke_notes_complete_and_attached(built):
     doc, aux, text, failed = built
     t5 = _section(text, "### Table 6.4-5 ")
@@ -244,6 +248,7 @@ def test_smoke_notes_complete_and_attached(built):
     assert not re.search(r"^\(?Sheet \d+ of \d+\)?$", text, re.M)
 
 
+@pytest.mark.refs
 def test_smoke_formulas_legend_lambda(built):
     doc, aux, text, failed = built
     assert doc.meta["ch6_formulas"] == {"ibc_combinations": 7, "legend_entries": 12, "cracked_properties": 4,
@@ -255,6 +260,7 @@ def test_smoke_formulas_legend_lambda(built):
     assert "λ V f" not in text
 
 
+@pytest.mark.refs
 def test_smoke_superscripts_and_transients(built):
     doc, aux, text, failed = built
     for s in ("Motion<sup>1</sup>", "FHB<sup>2</sup>", "RAB<sup>2</sup>", "Yes<sup>1</sup>", "Wind<sup>3</sup>",
@@ -268,6 +274,7 @@ def test_smoke_superscripts_and_transients(built):
     assert doc.meta["ch6_transients"] == 30
 
 
+@pytest.mark.refs
 def test_smoke_source_defects_kept(built):
     doc, aux, text, failed = built
     assert sorted(doc.meta["ch6_source_notes"]) == sorted(["alpha", "xref", "mesh", "6.4-6", "6.4-8", "6.4-9", "6.4-16"])
@@ -280,6 +287,7 @@ def test_smoke_source_defects_kept(built):
     assert text.count("<!-- source:") == 7
 
 
+@pytest.mark.refs
 def test_smoke_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 29 of 22,629 tokens (0.13 %) on 2026-09-13.
 

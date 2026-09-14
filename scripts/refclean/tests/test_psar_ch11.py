@@ -149,6 +149,7 @@ REVIEW_HEADINGS = """11.1 11.1.1 11.1.1.1 11.1.1.2 11.1.1.3 11.1.1.4 11.1.1.5 11
 11.3.9.2.3 11.3.9.3 11.3.10 11.4 11.5 11.5.1 11.5.2 11.5.2.1 11.5.2.2 11.5.2.3 11.5.2.4 11.6 11.6.1 11.6.2""".split()
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_no_warnings_no_failed_patches(built):
     doc, _, _, failed = built
@@ -160,6 +161,7 @@ def test_no_warnings_no_failed_patches(built):
                                    "withheld": ["11.4 Aircraft Impact Assessment (PDF p60-64, SRI)"]}
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_withheld_section_once_with_frontmatter_range(built):
     doc, _, text, _ = built
@@ -173,6 +175,7 @@ def test_withheld_section_once_with_frontmatter_range(built):
     assert pages == [60, 61, 62, 63, 64]
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_merged_tables_get_a_page_range_anchor(built):
     _, _, text, _ = built
@@ -180,6 +183,7 @@ def test_merged_tables_get_a_page_range_anchor(built):
     assert "<!-- page 67-73 | 11.5-3..11.5-9 -->" in text            # Table 11.5-1, 7 sheets
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_all_127_numbered_headings_in_order_with_levels(built):
     _, _, text, _ = built
@@ -188,6 +192,7 @@ def test_all_127_numbered_headings_in_order_with_levels(built):
     assert all(len(h) == len(n.split(".")) for h, n in found)
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_unnumbered_headings(built):
     _, _, text, _ = built
@@ -203,6 +208,7 @@ def test_unnumbered_headings(built):
     assert "\n## 11.4 Aircraft Impact Assessment\n\n> [!withheld] SRI — This information is withheld" in text
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_residue_and_markers(built):
     _, _, text, _ = built
@@ -215,6 +221,7 @@ def test_residue_and_markers(built):
     assert "| 3 | Shutdown | No more than one CRA coupled to CRDM driveline | N/A | > 400 °F (204°C) |" in body
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_false_list_items_are_not_items(built):
     _, _, text, _ = built
@@ -227,6 +234,7 @@ def test_false_list_items_are_not_items(built):
         assert not re.search(r"^\s*- " + re.escape(s), text, re.M), s
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_numbered_list_11_2_1_4(built):
     _, _, text, _ = built
@@ -241,6 +249,7 @@ def test_numbered_list_11_2_1_4(built):
     assert "\n12. Human Performance Monitoring – Continuous monitoring" in text
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_paragraph_splits_from_pdf(built):
     doc, _, text, _ = built
@@ -260,6 +269,7 @@ def test_paragraph_splits_from_pdf(built):
     assert long_lines == []
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_operating_mode_definitions_match_pdf_word_by_word(built):
     _, _, text, _ = built
@@ -273,6 +283,7 @@ def test_operating_mode_definitions_match_pdf_word_by_word(built):
     assert out_seq == pdf_seq
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_table_11_5_2_matches_pdf(built):
     _, _, text, _ = built
@@ -291,6 +302,7 @@ def test_table_11_5_2_matches_pdf(built):
     assert out_seq == note_seq
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_table_11_5_1_rebuilt_against_pdf(built):
     _, _, text, _ = built
@@ -317,6 +329,7 @@ def test_table_11_5_1_rebuilt_against_pdf(built):
     assert _toks("\n".join(rows[:1] + rows[2:])) == pdf
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_table_11_2_2_rebuilt_against_pdf(built):
     _, _, text, _ = built
@@ -337,6 +350,7 @@ def test_table_11_2_2_rebuilt_against_pdf(built):
     assert _toks("\n".join(rows[:1] + rows[2:])) == pdf
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_table_11_2_1_core_render_matches_pdf(built):
     _, _, text, _ = built
@@ -347,6 +361,7 @@ def test_table_11_2_1_core_render_matches_pdf(built):
     assert _toks("\n".join(rows)) == _toks(" ".join(_pdf_words([46], clip_table=True)))
 
 
+@pytest.mark.refs
 @pytestmark_real
 def test_do_not_fix_source_typos_kept(built):
     _, _, text, _ = built
@@ -357,6 +372,7 @@ def test_do_not_fix_source_typos_kept(built):
         assert s in text, s
 
 
+@pytest.mark.refs
 def test_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 168 of 20,417 tokens (0.82 %) on 2026-09-13.
 

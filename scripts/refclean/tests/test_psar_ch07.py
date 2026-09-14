@@ -203,12 +203,14 @@ def test_source_typos_are_kept(tables):
 
 
 # ------------------------------------------------------------------ build ----
+@pytest.mark.refs
 def test_built_tables_are_markdown(built):
     assert built.count("| Function ID | Function Description |") == 27
     assert "| DL3-RR1f | FHI Seal (SR) | The FHI seals to the head perform part of the primary coolant boundary" in built
     assert re.search(r"^Function ID Function Description", built, re.M) is None      # no prose remnants left
 
 
+@pytest.mark.refs
 def test_built_rms_table_sits_under_its_own_section(built):
     dl = built.index("##### 7.6.6.2.1 Defense Line Functions")
     pdc = built.index("##### 7.6.6.2.2 Principal Design Criteria")
@@ -216,6 +218,7 @@ def test_built_rms_table_sits_under_its_own_section(built):
     assert dl < row < pdc                      # the same row text also appears in the UMC table (p255)
 
 
+@pytest.mark.refs
 def test_built_headings_and_lists(built):
     assert len(re.findall(r"^#+ 7(?:\.\d+)+ ", built, re.M)) == 289       # 67 + 76 + 146 numbered sections
     assert "\n- Consistent with PDC" not in built                          # false list markers removed
@@ -223,6 +226,7 @@ def test_built_headings_and_lists(built):
     assert built.count("\n  - Gaseous Radwaste Processing System (Section 7.4.1)") == 1
 
 
+@pytest.mark.refs
 def test_built_numbers_and_note_markers(built):
     assert "3.98E+15 n/cm2-s" in built and "3.98 x 1015" not in built
     assert "| Base Material<sup>*</sup> | Weld Material<sup>**</sup> |" in built
@@ -231,17 +235,20 @@ def test_built_numbers_and_note_markers(built):
     assert "k<sub>eff</sub> ≤ 0.95" in built
 
 
+@pytest.mark.refs
 def test_built_paragraphs_are_not_over_long(built):
     body = [ln for ln in built.splitlines() if not ln.startswith("|")]
     assert max((len(ln) for ln in body), default=0) < 2000
 
 
+@pytest.mark.refs
 def test_built_keeps_source_repeats_and_typos(built):
     assert built.count("Security for I&C systems is addressed") == 6
     assert built.count("Design Reliability Assurance Program") >= 15
     assert "NI Contol Building HVAC" in built and "poistion" in built and "DL3- HR2" in built
 
 
+@pytest.mark.refs
 def test_built_subheadings_after_a_colon_lead_in(built):
     """Subheadings the core leaves in the paragraph because the text before them ends in a colon (p265, p365)."""
     lines = built.splitlines()
@@ -251,6 +258,7 @@ def test_built_subheadings_after_a_colon_lead_in(built):
     assert not any(ln.startswith(") The NCB substructure") for ln in lines)     # ")" stays with the heading
 
 
+@pytest.mark.refs
 def test_built_qa_is_clean(built_doc):
     """Everything the profile computes about its own work must come out empty: the DL-table rebuild is the one step
     that deletes source text, so its two-way token coverage is the gate."""
@@ -265,6 +273,7 @@ def test_built_qa_is_clean(built_doc):
     assert all(x["removed_elements"] > 0 for x in doc.meta["dl_tables"])
 
 
+@pytest.mark.refs
 def test_built_verify_residual_is_pinned(built_doc):
     """The accepted PDF-vs-output residual, 507 of 118,355 tokens (0.43 %) on 2026-09-13.
 

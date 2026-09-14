@@ -74,6 +74,7 @@ def _table_block(body, caption):
     return notes, rows[0], rows[2:]
 
 
+@pytest.mark.refs
 def test_headings_are_the_fifteen_numbered_sections(built):
     doc, aux, text, body, failed = built
     assert failed == []
@@ -87,6 +88,7 @@ def test_headings_are_the_fifteen_numbered_sections(built):
     assert "\n### References (4.1)\n" in body and "\n### References (4.2)\n" in body
 
 
+@pytest.mark.refs
 def test_table_4_2_2_dose_margin_column(built):
     body = built[3]
     notes, hdr, rows = _table_block(body, "Table 4.2-2")
@@ -102,6 +104,7 @@ def test_table_4_2_2_dose_margin_column(built):
                          "- [d] Ratio of the dose in Note [c] to the LBE mean dose (Mean Dose Margin)"]
 
 
+@pytest.mark.refs
 def test_tables_4_2_3_and_4_2_4_two_row_headers_flattened(built):
     """Task 9g: the two-row header becomes 'Parent: Child'; the notes list stays with 4.2-1/4.2-2."""
     body = built[3]
@@ -120,6 +123,7 @@ def test_tables_4_2_3_and_4_2_4_two_row_headers_flattened(built):
     assert hdr[-1] == "Mean Dose Margin[d]" and len(rows) == 3 and notes[0] == "Notes:" and len(notes) == 5
 
 
+@pytest.mark.refs
 def test_exponents_and_no_residue(built):
     body = built[3]
     assert "shall not exceed 5E-07 per plant-year" in body                  # spec D2 example
@@ -131,6 +135,7 @@ def test_exponents_and_no_residue(built):
     assert not re.search(r"(?:\.\s){4,}", body)                             # no dot leaders
 
 
+@pytest.mark.refs
 def test_page_anchors_cover_every_body_page(built):
     doc, body = built[0], built[3]
     # the p7 anchor is indented: it falls inside the bullet list of section 4.2 (emit.render keeps it in the list)
@@ -141,6 +146,7 @@ def test_page_anchors_cover_every_body_page(built):
     assert all(doc.page_labels[p] == lab for p, lab in anchors)
 
 
+@pytest.mark.refs
 def test_verify_is_complete(built):
     """ch4 is the one document the metric can account for entirely: no figure, no withheld section, no merged
     sheet, so `missing_tokens` is 0 of 3,586 (0.00 %) on 2026-09-13. Tolerance +-10 tokens."""

@@ -199,6 +199,7 @@ def _pdf_lbe_items():
     return items
 
 
+@pytest.mark.refs
 def test_lbe_tables_follow_pdf(md):
     got, want = _md_lbe_items(md), _pdf_lbe_items()
     assert collections.Counter(k for k, *_ in want) == {"freq": 45, "dose": 34, "dba": 9}
@@ -223,6 +224,7 @@ def _sections(md, depth=4, prefix=r"3\.[6-9]"):
     return out
 
 
+@pytest.mark.refs
 def test_each_lbe_has_one_table_per_announced_kind(md):
     secs = _sections(md)
     lbe = {k: v for k, v in secs.items() if re.search(r"\([A-Z]{3}-[A-Z0-9]{2,6}-(?:BL|CN|\d)\)$", v.split("\n")[0])}
@@ -235,6 +237,7 @@ def test_each_lbe_has_one_table_per_announced_kind(md):
         assert all(v == 1 for v in tables.values()), num
 
 
+@pytest.mark.refs
 def test_rrs_splx_cn_dose(md):
     secs = _sections(md)
     sec = secs["3.9.4.3"]
@@ -255,6 +258,7 @@ def _table_block(md, caption):
     return pre, rows[0], rows[2:]
 
 
+@pytest.mark.refs
 def test_table_3_5_4_summary_of_dbas(md):
     _, hdr, rows = _table_block(md, "Table 3.5-4")
     assert hdr[-1] == "DBA 30-day Low Population Zone Boundary TEDE (rem)" and len(hdr) == 5
@@ -268,6 +272,7 @@ def test_table_3_5_4_summary_of_dbas(md):
     assert by_dbe["IPI-IHEL-BL"][2] == "Intermediate Heat Exchanger Secondary-to-Primary Leak"
 
 
+@pytest.mark.refs
 def test_tables_3_1_2_and_3_1_3_fill_down(md):
     _, hdr, rows = _table_block(md, "Table 3.1-2")
     assert hdr == ["Screening Category", "Hazard"] and len(rows) == 110
@@ -282,6 +287,7 @@ def test_tables_3_1_2_and_3_1_3_fill_down(md):
     assert len(rows) == 13 and "(Sheet" not in md
 
 
+@pytest.mark.refs
 def test_source_term_tables_single_header(md):
     for n in range(1, 19):
         pre, hdr, rows = _table_block(md, f"Table 3.2-{n} ")
@@ -296,6 +302,7 @@ def test_source_term_tables_single_header(md):
     assert i131 == {"Plenum Release": "1.22E+00", "Non-Plenum Release": "4.71E+00"}
 
 
+@pytest.mark.refs
 def test_criticality_block(md):
     sec = md[md.index("### 3.14.2 Methodology"):md.index("#### 3.14.2.1")]
     for s in ["The computed k<sub>eff</sub> for the system plus twice the Monte Carlo uncertainty (σ) must be less than the USL:",
@@ -315,12 +322,14 @@ def test_criticality_block(md):
     assert "F<sub>ΔH</sub>" in md and "F<sub>Z</sub>" in md and "F<sub>XY</sub>" in md
 
 
+@pytest.mark.refs
 def test_initial_conditions_table_under_3_3_4_2(md):
     sec = md[md.index("#### 3.3.4.2 "):md.index("#### 3.3.4.3 ")]
     assert "used in the LBE analyses:\n\n| Plant Condition | Reactor Power (%) | Core Flow (%) | Core Inlet Temperature (°C) |" in sec
     assert "| Full Power | 100 | 100 | 360.1 |" in sec
 
 
+@pytest.mark.refs
 def test_lbe_internal_order(md):
     for num in ("3.8.1.11", "3.8.2.6"):
         sec = _sections(md)[num]
@@ -328,6 +337,7 @@ def test_lbe_internal_order(md):
         assert a < sec.index("The postulated initiating event") < b < sec.index("The fuel performance acceptance criteria")
 
 
+@pytest.mark.refs
 def test_noise_and_headings(md):
     assert not re.search(r"^\.$", md, re.M)
     assert not re.search(r"^- \(?[A-Z]{3}-[A-Z0-9]{2,6}-(?:BL|CN|\d)\)$|^\([A-Z]{3}-[A-Z0-9]{2,6}-(?:BL|CN|\d)\)$", md, re.M)
@@ -340,6 +350,7 @@ def test_noise_and_headings(md):
     assert "Revision 0 (Reference 3.11-1), which also" in md and "is assumed to occur 2.5 days after" in md
 
 
+@pytest.mark.refs
 def test_repeated_content_kept(md):
     fitz = pytest.importorskip("fitz")
     pdf = fitz.open(PDF_PATH)
@@ -352,6 +363,7 @@ def test_repeated_content_kept(md):
     assert md.count("| 1.00E+01 | 1.40E+01 | 2.10E+01 |") == 3        # RFH-ESWR-3 / RFH-FDBL-2 / RFH-FDPI-1
 
 
+@pytest.mark.refs
 def test_real_no_qa_issues(built):
     doc, aux, text, body, failed = built
     assert failed == []
@@ -361,6 +373,7 @@ def test_real_no_qa_issues(built):
     assert len(aux.headings) == 458
 
 
+@pytest.mark.refs
 def test_real_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 51 of 35,315 tokens (0.14 %) on 2026-09-13.
 

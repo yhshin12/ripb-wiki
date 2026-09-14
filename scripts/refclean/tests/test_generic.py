@@ -31,6 +31,7 @@ def built():
     return doc, aux, text, failed, verify(doc, aux, text)
 
 
+@pytest.mark.refs
 def test_metadata_and_anchors(built):
     doc, aux, text, failed, ver = built
     assert failed == []
@@ -38,6 +39,7 @@ def test_metadata_and_anchors(built):
     assert text.count("<!-- page ") >= 25
 
 
+@pytest.mark.refs
 def test_no_toc_and_headings_present(built):
     _, _, text, _, _ = built
     body = text.split("\n---\n", 1)[1]
@@ -46,6 +48,7 @@ def test_no_toc_and_headings_present(built):
         assert any(line.lstrip("# ").strip().upper().startswith(h) for line in body.splitlines() if line.startswith("#")), h
 
 
+@pytest.mark.refs
 def test_verify_residual_within_gate(built):
     _, _, _, _, ver = built
     assert ver["summary"]["missing_pct"] <= 2.0, ver["summary"]
@@ -72,6 +75,7 @@ def built_acrs():
     return text, failed, verify(doc, aux, text)
 
 
+@pytest.mark.refs
 def test_acrs_deck(built_acrs):
     text, failed, ver = built_acrs
     assert failed == []

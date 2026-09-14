@@ -166,6 +166,7 @@ def test_footnotes_reference_definition_and_ignore_bold_caption():
     assert texts[0].endswith("Adequacy**")            # the '**' of a bold caption is not a footnote marker
 
 
+@pytest.mark.refs
 def test_metadata_keys():
     d = _doc([])
     d.meta["cover"] = {"title": "T", "series": "S"}
@@ -199,6 +200,7 @@ def _table_rows(text, caption):
     return [ln for ln in block.split("\n") if ln.startswith("| ")]
 
 
+@pytest.mark.refs
 def test_smoke_patches_apply_and_no_residue(built):
     doc, aux, text, failed = built
     assert failed == []
@@ -208,6 +210,7 @@ def test_smoke_patches_apply_and_no_residue(built):
     assert "\U0001d445\U0001d445" not in text and "\U0001d465\U0001d465" not in text   # corrupted Cambria Math
 
 
+@pytest.mark.refs
 def test_smoke_heading_tree(built):
     doc, aux, text, failed = built
     assert doc.meta["unmatched_headings"] == [] and doc.meta["unmatched_subheads"] == []
@@ -225,6 +228,7 @@ def test_smoke_heading_tree(built):
     assert "\n##### Purpose of Special Treatment\n\nThe purpose of special treatment" in text
 
 
+@pytest.mark.refs
 def test_smoke_frontmatter_and_page_labels(built):
     doc, aux, text, failed = built
     head = text.split("---\n")[1]
@@ -237,6 +241,7 @@ def test_smoke_frontmatter_and_page_labels(built):
     assert head.count('  - "Table ') == 13 and head.count('  - "Figure ') == 11
 
 
+@pytest.mark.refs
 def test_smoke_sign_lost_exponents_and_notation(built):
     doc, aux, text, failed = built
     # review F01 (H): the three sign-lost exponents, restored from PDF line-end evidence
@@ -249,6 +254,7 @@ def test_smoke_sign_lost_exponents_and_notation(built):
     assert len(re.findall(r"\dE[+-]\d\d", text)) == 50
 
 
+@pytest.mark.refs
 def test_smoke_identifiers_and_source_typos(built):
     doc, aux, text, failed = built
     for broken in ("NEI-0004", "ASME/ANS-Ra-S-1.42013", "RIPBDM", "TIRIPB", "defense-indepth", "Defense-inDepth",
@@ -262,6 +268,7 @@ def test_smoke_identifiers_and_source_typos(built):
         assert typo in text, typo
 
 
+@pytest.mark.refs
 def test_smoke_table_4_1(built):
     doc, aux, text, failed = built
     rows = _table_rows(text, "Table 4-1.")
@@ -276,6 +283,7 @@ def test_smoke_table_4_1(built):
         assert "- <sup>%d</sup> " % n in text
 
 
+@pytest.mark.refs
 def test_smoke_table_5_2_rowspans_filled(built):
     doc, aux, text, failed = built
     rows = _table_rows(text, "Table 5-2.")
@@ -291,6 +299,7 @@ def test_smoke_table_5_2_rowspans_filled(built):
         assert "- [%s] " % n in text
 
 
+@pytest.mark.refs
 def test_smoke_list_tables_and_matrices(built):
     doc, aux, text, failed = built
     assert len(_table_rows(text, "Table 5-3.")) == 14        # 4 attributes x 13 focus items
@@ -310,6 +319,7 @@ def test_smoke_list_tables_and_matrices(built):
     assert len(_table_rows(text, "Table 5-6.")) == 7         # Group column, both pages, 6 focus rows
 
 
+@pytest.mark.refs
 def test_smoke_acronyms_and_glossary(built):
     doc, aux, text, failed = built
     acr = text[text.index("## LIST OF ACRONYMS"):text.index("<!-- page 9 |")]
@@ -326,6 +336,7 @@ def test_smoke_acronyms_and_glossary(built):
     assert "| Terms Associated with Probabilistic Risk Assessment | Mechanistic Source Term | MST |" in gl
 
 
+@pytest.mark.refs
 def test_smoke_formulas_and_where_list(built):
     doc, aux, text, failed = built
     assert "| Fussell-Vesely | FV | [R(base) − R(x<sub>i</sub> = 0)] / R(base) |" in text
@@ -339,6 +350,7 @@ def test_smoke_formulas_and_where_list(built):
     assert "the term x<sub>i</sub> represents the probability" in text     # subscript restored from PDF spans
 
 
+@pytest.mark.refs
 def test_smoke_footnotes(built):
     doc, aux, text, failed = built
     labels = sorted(set(re.findall(r"\[\^(p\d+b?)\]", text)))
@@ -352,6 +364,7 @@ def test_smoke_footnotes(built):
     assert "all non-safety-related SSCs that perform these same functions are assumed to be unavailable" in text
 
 
+@pytest.mark.refs
 def test_smoke_lists(built):
     doc, aux, text, failed = built
     body = text[text.index("<!-- page 9 |"):]
@@ -362,6 +375,7 @@ def test_smoke_lists(built):
     assert "\n1. Mitigate DBEs within the F-C Target" in body
 
 
+@pytest.mark.refs
 def test_smoke_figures(built):
     doc, aux, text, failed = built
     assert len(aux.figures) == 11 and doc.meta["figures_without_caption_element"] == []
@@ -382,6 +396,7 @@ def test_smoke_figures(built):
     assert "\nThe following key points are used to define the different regions on the SSC Venn diagram:\n" in text
 
 
+@pytest.mark.refs
 def test_smoke_struct_tree_cells_present(built):
     """Every struct-tree table cell reaches the output, except where a documented transformation rewrites it."""
     import json
@@ -407,6 +422,7 @@ def test_smoke_struct_tree_cells_present(built):
     assert missing == []
 
 
+@pytest.mark.refs
 def test_smoke_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 385 of 34,001 tokens (1.13 %) on 2026-09-13.
 

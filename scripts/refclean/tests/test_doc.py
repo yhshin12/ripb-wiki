@@ -1,3 +1,4 @@
+import pytest
 import os
 import sys
 
@@ -40,6 +41,7 @@ def test_synthetic_elements():
     assert render_md(t).splitlines()[2:] == ["| A | 1 |", "| A | 2 |"]  # rowspan filled down
 
 
+@pytest.mark.refs
 def test_ch4_smoke():
     d = load_doc("PSAR_ch04", "TP_Natrium_PSAR2025_ch4_integrated evaluations", RAW, os.path.join(VAULT, "references"))
     assert d.n_pages == 16

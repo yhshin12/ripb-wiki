@@ -126,6 +126,7 @@ def _records(text):
     return recs
 
 
+@pytest.mark.refs
 def test_counts_and_nonempty(built):
     _doc, _aux, text = built
     recs = _records(text)
@@ -141,6 +142,7 @@ def test_counts_and_nonempty(built):
     assert sum(1 for r in recs.values() if r["rationale"].strip() == "(none in source)") == 41
 
 
+@pytest.mark.refs
 def test_sfr_dc_4_chemical_consequences(built):
     _doc, _aux, text = built
     r = _records(text)["SFR-DC 4"]
@@ -156,6 +158,7 @@ def test_sfr_dc_4_chemical_consequences(built):
     assert len(paras) >= 2
 
 
+@pytest.mark.refs
 def test_sfr_dc_11_sentence_continuous(built):
     _doc, _aux, text = built
     r = _records(text)["SFR-DC 11"]
@@ -163,6 +166,7 @@ def test_sfr_dc_11_sentence_continuous(built):
             "rapid increase in reactivity." in r["text"])
 
 
+@pytest.mark.refs
 def test_footnotes(built):
     _doc, _aux, text = built
     assert "10 CFR 50.34[^2] states" in text
@@ -173,6 +177,7 @@ def test_footnotes(built):
         assert bad not in text
 
 
+@pytest.mark.refs
 def test_crosswalk_table(built):
     _doc, _aux, text = built
     assert "#### TABLE 1: NON-LIGHT-WATER-REACTOR CROSSWALK" in text
@@ -193,6 +198,7 @@ def test_crosswalk_table(built):
     assert "~~Combined reactivity control systems capability~~ | DELETED and incorporated into ARDC 26" in text
 
 
+@pytest.mark.refs
 def test_heading_tree(built):
     _doc, _aux, text = built
     heads = [ln for ln in text.split("\n") if re.match(r"^#{1,6} ", ln)]
@@ -214,6 +220,7 @@ def test_heading_tree(built):
     assert sum(1 for h in heads if re.match(r"^### Appendix [ABC] \u2014 Section ", h)) == 20
 
 
+@pytest.mark.refs
 def test_acronyms_references_and_emphasis(built):
     _doc, _aux, text = built
     acr = text.split("| Acronym | Definition |", 1)[1].split("\n\n", 1)[0].strip().split("\n")
@@ -229,6 +236,7 @@ def test_acronyms_references_and_emphasis(built):
     assert text.count("*have certain knowledge*") == 3 and text.count("*make decisions*") == 3
 
 
+@pytest.mark.refs
 def test_residue_and_frontmatter(built):
     _doc, _aux, text = built
     fm = text.split("---\n", 2)[1]
@@ -241,6 +249,7 @@ def test_residue_and_frontmatter(built):
     assert "## Document information" in text and "under ADAMS Accession Number (No.) ML17325A611" in text
 
 
+@pytest.mark.refs
 def test_hyphens_in_output(built):
     _doc, _aux, text = built
     for good in ("requirements of SFR-DC 34 and SFR-DC 35", "Refer to SFR-DC17 concerning", "SECY-15-0002", "www.gen-4.org", "INL/EXT-10-17997", "non-LWR",
@@ -255,6 +264,7 @@ def test_hyphens_in_output(built):
         assert keep in text, keep
 
 
+@pytest.mark.refs
 def test_hyphen_list_has_pdf_evidence(built):
     """Every HYPHEN_RESTORE entry must correspond to a line-end 'A-' + 'B' pair found in the PDF."""
     _doc, aux, _text = built
@@ -264,6 +274,7 @@ def test_hyphen_list_has_pdf_evidence(built):
         assert any(key in j or j in key for j in joined), pat
 
 
+@pytest.mark.refs
 def test_computed_qa_is_clean(built):
     """The profile cross-checks every criterion, Table 1 cell and acronym row against the PDF text layer and the
     ODL JSON; the resulting warning list must be empty (it is printed under `warnings` in the build report)."""
@@ -276,6 +287,7 @@ def test_computed_qa_is_clean(built):
     assert (qa["table1_rows"], qa["table1_redline_cells"], qa["acronyms"], qa["references"]) == (65, 29, 42, 39)
 
 
+@pytest.mark.refs
 def test_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 337 of 45,533 tokens (0.74 %) on 2026-09-13.
 

@@ -223,6 +223,7 @@ def _table_after(body, first_line):
     return rows
 
 
+@pytest.mark.refs
 def test_real_no_qa_issues(built):
     doc, aux, text, body, failed = built
     assert not doc.meta.get("psar_ch01_qa")
@@ -231,6 +232,7 @@ def test_real_no_qa_issues(built):
     assert doc.meta.get("psar_ch01_joined") and len(doc.meta["psar_ch01_joined"]) == 2
 
 
+@pytest.mark.refs
 def test_real_acronym_list(built):
     body = built[3]
     assert body.count("LIST OF ACRONYMS AND ABBREVIATIONS") == 1
@@ -242,6 +244,7 @@ def test_real_acronym_list(built):
     assert ["HCI", "hydrochloric acid"] in rows                         # source typo kept (review §5.2)
 
 
+@pytest.mark.refs
 def test_real_table_141(built):
     body = built[3]
     head = "| Guide Number | Title | Revision | Conformance Status | Comments |"
@@ -257,6 +260,7 @@ def test_real_table_141(built):
     assert "accident specific methodologies and assumptions" in r183[4]
 
 
+@pytest.mark.refs
 def test_real_tables_144_145_merged_with_captions(built):
     body = built[3]
     for cap, head, n in [("### Table 1.4-4 Applicability of TMI-Related Requirements",
@@ -268,6 +272,7 @@ def test_real_tables_144_145_merged_with_captions(built):
         assert len(_table_after(body, head)) == n
 
 
+@pytest.mark.refs
 def test_real_site_layout_legend(built):
     body = built[3]
     img = "![Figure 1.2-1 Site Layout](figures/PSAR_ch01/Fig_1.2-1.png)"
@@ -280,6 +285,7 @@ def test_real_site_layout_legend(built):
     assert not re.search(r"^(?:- )?1\.2-[12] Revision 1$", body, re.M)
 
 
+@pytest.mark.refs
 def test_real_bold_status_terms(built):
     body = built[3]
     for term, dash in [("Full Conformance", "–"), ("Partial Conformance", "–"), ("Full Compliance", "–"),
@@ -288,6 +294,7 @@ def test_real_bold_status_terms(built):
     assert body.count("**") == 10                                        # D7: no other emphasis
 
 
+@pytest.mark.refs
 def test_real_value_fixes_and_kept_typos(built):
     body = built[3]
     for good in ["NATD-LIC-RPRT-0002-A", "Initial Test Programs for Water-Cooled Nuclear Power Plants",
@@ -306,6 +313,7 @@ def test_real_value_fixes_and_kept_typos(built):
         assert typo in body, typo
 
 
+@pytest.mark.refs
 def test_real_paragraph_repairs(built):
     body = built[3]
     assert "Utilization Facilities.”\n\nThis preliminary safety analysis report (PSAR)" in body
@@ -316,6 +324,7 @@ def test_real_paragraph_repairs(built):
             "\\*Sub-compartments within building provides additional confinement, depending on event.") in body
 
 
+@pytest.mark.refs
 def test_real_withheld_figures(built):
     body = built[3]
     assert "[[" not in body and "]]" not in body
@@ -327,6 +336,7 @@ def test_real_withheld_figures(built):
         assert [ln for ln in m.group(1).split("\n") if ln.strip() and not ln.startswith("<!--")] == [call], n
 
 
+@pytest.mark.refs
 def test_real_verify_residual_is_pinned(built):
     """The accepted PDF-vs-output residual, 437 of 26,258 tokens (1.66 %) on 2026-09-13.
 
