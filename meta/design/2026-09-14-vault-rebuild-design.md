@@ -115,7 +115,7 @@ Obsidian의 링크·검색·그래프·Bases는 파일명과 속성으로 동작
 
 - `app.json`의 `userIgnoreFilters`: `inbox/`, `references/`, `internal/references/`, `internal/_legacy/`.
 - Shell Commands 플러그인에 용어 동기화(dry-run·apply), lint, index 재생성을 등록한다.
-- Bases 보기 4종: type별, status별, `disputed` 목록, 미정 용어 목록.
+- Bases 보기 4종(`meta/views/*.base`): type별, status별, `disputed` 목록, 미정 용어를 쓰는 노트(`terms_pending`).
 
 ## 4. 소스 파이프라인과 데이터 흐름
 
@@ -126,7 +126,7 @@ Obsidian의 링크·검색·그래프·Bases는 파일명과 속성으로 동작
 - 정제본과 그림은 생성물이다. 손으로 고치지 않는다. 수정은 `profiles/<doc>.py` 또는 `patches/<KEY>.json`을 거쳐 재빌드한다.
 - `references/raw/`는 읽기 전용이다. `_verify/`만 빌드가 쓴다.
 - 원문 오기를 교정하지 않는다(파일별 금지 목록: `meta/references_cleanup/file_reviews/`).
-- 수용 관문은 `--verify`와 `pytest scripts/refclean/tests`(211건) 둘 다이다. 누락률은 회귀 탐지용이지 완전성 증명이 아니다.
+- 수용 관문은 `--verify`와 `pytest scripts/refclean/tests` 둘 다이다(2026-09-14 기준 217건; 원문을 읽는 테스트는 `refs` marker가 붙어 원문이 없는 clone에서 skip된다). 누락률은 회귀 탐지용이지 완전성 증명이 아니다.
 
 정제본 형식 중 인용에 쓰이는 요소:
 
@@ -177,6 +177,7 @@ status: draft          # draft → checked → reviewed; 필요 시 disputed · 
 verified:              # checked가 된 날짜
 term:                  # 개념 노트가 대표하는 용어 ID (선택)
 tags: []
+terms_pending: []      # sync_terms.py가 유지: 이 노트의 미정 용어 표지 ID
 ---
 # 한국어 제목 (English Title)
 
@@ -317,7 +318,7 @@ SessionStart hook이 `session_start.py`를 실행하여 다음을 한 번에 보
 
 ### 7.5 기록
 
-- `log.md`: 작업 1건당 항목 1개. 원문 범위, 새 노트·고친 노트 수, 검사 결과, 미정 용어 수, 커밋 해시.
+- `log.md`: 작업 1건당 항목 1개. 원문 범위, 새 노트·고친 노트 수, 검사 결과, 미정 용어 수. 항목은 그 작업의 커밋에 함께 들어가므로 커밋 해시는 적지 않는다(`git log -- log.md`로 찾는다).
 - `internal/log.md`, `internal/status.md`: 내부 자료 작업은 여기에만 기록한다.
 - `index.md`: `build_index.py`가 `type`과 요약 첫 문장으로 재생성한다.
 - `meta/status.md`: 인제스트마다 갱신. 현재 단계, 다음 작업, 미해결 항목(`disputed`, 미정 용어, 누락 주제).
@@ -329,7 +330,7 @@ SessionStart hook이 `session_start.py`를 실행하여 다음을 한 번에 보
 | 스크립트 | 역할 | 비고 |
 |---|---|---|
 | `convert_references.py`, `clean_references.py`, `refclean/` | 원문 정제 (§4.1) | 기존. `--root` 인자(internal용)만 추가 |
-| `source.py register \| finish \| status` | 등록(해시, 정규화, 이동, 소스 카드), 완료 처리, 현황 | 원문 파일은 이동만 한다 |
+| `source.py register \| adopt \| sync \| finish \| status` | 등록(해시, 정규화, 이동, 소스 카드), 기존 원본의 카드 생성, 빌드 요약 반영, 완료 처리, 현황 | PDF는 `inbox/`에서 `references/raw/`로 옮기기만 하고 내용은 바꾸지 않는다 |
 | `lint_wiki.py` | §5.4의 7과 §6.4 검사, `references/` 불변 조건 | 신규. 파일 1개 또는 전체 |
 | `verify_quotes.py` | §5.4의 1–5 | 정제본 기준 |
 | `sync_terms.py` | §6.2, §6.4 | dry-run 기본 |
@@ -337,8 +338,10 @@ SessionStart hook이 `session_start.py`를 실행하여 다음을 한 번에 보
 | `append_log.py` | log 항목 추가 | 파일 전체를 다시 쓰지 않는다 |
 | `audit_sample.py` | 표본 10개 추출과 대조 프롬프트 생성 | |
 | `session_start.py` | §7.1 보고 | hook이 호출 |
+| `notes.py`, `citations.py`, `terms.py` | 노트 입출력, 인용 구문·쪽 분할·정규화, 용어표·표기·조사 | 보조 모듈 |
+| `leak_guard.py`, `hook_post_edit.py` | 공개 커밋의 내부 문서명 검사, PostToolUse 진입점 | hook이 호출 |
 
-공통: 파이썬은 `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`. 일괄 수정은 dry-run 기본. 어떤 스크립트도 `inbox/`, `references/raw/`의 내용을 바꾸지 않는다. 검사 실패는 0이 아닌 종료 코드로 보고한다. 파일을 쓸 때는 문자열을 검증한 뒤에만 쓴다(정제 세션의 `verify.py` 손실 사례).
+공통: 파이썬은 `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`. 일괄 수정은 dry-run 기본. 어떤 스크립트도 `inbox/`, `references/raw/`의 파일 내용을 바꾸지 않는다(`source.py register`의 이동과 빌드의 `_verify/` 기록만 예외). 검사 실패는 0이 아닌 종료 코드로 보고한다. 파일을 쓸 때는 문자열을 검증한 뒤에만 쓴다(정제 세션의 `verify.py` 손실 사례).
 
 ### 8.2 Hook
 
@@ -377,7 +380,7 @@ SessionStart hook이 `session_start.py`를 실행하여 다음을 한 번에 보
 
 ### 8.6 테스트
 
-`scripts/tests/`의 고정 노트로 테스트를 먼저 쓰고 구현한다. 필수 사례: `verify_quotes.py`의 일치·불일치·쪽 경계·범위 표지·비단조 표지·편집 주석 제외, `sync_terms.py`의 받침 변화에 따른 조사 보정과 첫 등장 규칙, `lint_wiki.py`의 `references/` 불변 조건과 내부 링크 금지, `source.py`의 중복본·개정판 판별.
+`scripts/tests/`의 고정 노트로 테스트를 먼저 쓰고 구현한다. 필수 사례: `verify_quotes.py`의 일치·불일치·쪽 경계·범위 표지·비단조 표지·편집 주석 제외, `sync_terms.py`의 받침 변화에 따른 조사 보정과 첫 등장 규칙, `lint_wiki.py`의 `references/` 불변 조건과 내부 링크 금지, `source.py`의 중복본·개정판 판별, `leak_guard.py`의 내부 문서명 검출, `build_index.py --check`, `append_log.py`의 추가 전용 쓰기.
 
 ## 9. 전환 단계
 
@@ -467,23 +470,18 @@ SessionStart hook이 `session_start.py`를 실행하여 다음을 한 번에 보
 type: source
 key: PSAR_ch03
 title: Licensing Basis Events
-doc_id: Kemmerer Unit 1 PSAR, Chapter 3
-issuer: US SFR Owner, LLC (TerraPower)
-revision: "1"
-date: "2025"
-adams:                 # 있으면
-file: references/TP_Natrium_PSAR2025_ch3_Licensing Basis Events.md
+file: references/TP_Natrium_PSAR2025_ch3_Licensing Basis Events.md   # sync가 채움
 pdf: references/raw/TP_Natrium_PSAR2025_ch3_Licensing Basis Events.pdf
-sha256_pdf: …
-sha256_md: …
-pdf_pages: 132
-build: {converter: opendataloader-pdf 2.5.7, cleaned: 2026-09-13, missing_pct: 0.14}
+sha256_pdf: …          # register/adopt가 채움
+sha256_md: …           # sync가 채움
+pdf_pages: 132         # sync가 정제본 frontmatter에서
+build: {converter: …, cleaned: …, missing_pct: 0.14}   # sync가 정제본 frontmatter와 _verify/<KEY>.json에서
 ingest: pending        # pending | in_progress | complete
-units:                 # 진행표
-  - {unit: "§3.1–3.3", status: pending, commit: }
+units:                 # 진행표 (커밋 해시는 두지 않는다)
+  - {unit: "§3.1–3.3", status: pending}
 ```
 
-본문에는 절 구조 요약, 표·그림 목록(정제본 frontmatter에서), 비공개 표시 위치, 원문 자체의 알려진 모순(예: PSAR ch3 Table 3.5-2와 §3.7.3.3 제목의 RRS-ISPL-BL 불일치)을 적는다.
+서지 필드(`doc_id`, `issuer`, `revision`, `date`, `adams_accession`)는 정제본 frontmatter에만 두고 카드에 복제하지 않는다. 본문은 `templates/source_card.md`를 따른다: `## 서지`(키, 원문 경로), `## 구조`(`<!-- sync:begin -->`…`<!-- sync:end -->` 사이를 `source.py sync`가 다시 씀: PDF 쪽 수, 인쇄 쪽, 표·그림·비공개 목록), `## 알려진 모순`(예: PSAR ch3 Table 3.5-2와 §3.7.3.3 제목의 RRS-ISPL-BL 불일치), `## 관련 문서`.
 
 ## 부록 C. 참조 문서
 
