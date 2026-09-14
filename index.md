@@ -29,6 +29,9 @@
 - [[PRA_Safety_Function]] — PRA Safety Function은 PRA에 모델링된 Structures, Systems, and Components의 기능 가운데 발전소 안의 방사성 물질 원천에서 방출을 막거나 완화하는 기능이다.
 - [[Required_Safety_Function]] — Required Safety Function은 Design Basis Event의 결말이나 결말이 큰 Beyond Design Basis Event의 빈도를 Frequency-Consequence Target 안에 두기 위해 반드시 수행되어야 하는 PRA Safety Function이다.
 - [[Risk_Importance_Measures]] — 표 3-2는 PRA에서 흔히 쓰는 risk importance measure 8가지를 정리한다. (disputed)
+- [[Risk_Significant_SSC]] — Structures, Systems, and Components는 그 기능이 모든 Licensing Basis Event를 Frequency-Consequence Target 안에 두는 데 필요하거나, 세 cumulative risk target 가운데 하나에 한도의 1%를 넘게 기여하면 Risk-Significant SSC로 분류된다. (disputed)
+- [[SSC_Safety_Classification]] — Structures, Systems, and Components는 PRA에 모델링된 기능을 기준으로 Safety-Related, Non-Safety-Related with Special Treatment, Non-Safety-Related with No Special Treatment 세 범주로 분류된다.
+- [[Safety_Significant_SSC]] — Safety-Significant SSC는 Safety-Related와 Non-Safety-Related with Special Treatment로 분류된 Structures, Systems, and Components 전체이다.
 
 ## 지도 (map)
 

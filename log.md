@@ -50,3 +50,9 @@
 - DID를 영어 유지에서 확정(심층방어, 이후 표기 한국어)으로 바꾸고 노트 3개에 전파했다. 금지 표기는 '심층 방어'만 남겼다.
 - source term을 확정(선원항)으로 추가했다. Mechanistic Source Term(MST)은 영어 유지로 둔다.
 - 약어 없는 영어 유지 용어의 노트는 H1을 '# 한국어 서술 (English Title)'로 쓰고 용어 자체는 영어로 둔다(CLAUDE.md §4, 설계 §5.6).
+
+## [2026-09-15] ingest | NEI 18-04 §4 도입, §4.1–§4.3
+- 새 노트 3개(SSC_Safety_Classification, Safety_Significant_SSC, Risk_Significant_SSC), 고친 노트 2개(Risk_Importance_Measures에 §4.2.2 인용 추가, 소스 카드 단위).
+- 원문 간 모순 이어짐: §4.2.2도 95th percentile 상한을 써 용어집(평균값)과 어긋난다. Risk_Significant_SSC를 disputed로 둠(disputed 노트 3개).
+- 용어: 영어 유지 5건(NSRST, NST, Safety-Significant SSC, special treatment, IDP), 용어 아님 3건(reliability target, capability target, NEI), 금지 표기 4개 추가. 미정 용어 0.
+- 검사: lint 오류 0·경고 0, 인용 검증 오류 0(노트 26개), 용어 충돌 0. 다음 세션 인계 메모를 meta/status.md에 적었다.

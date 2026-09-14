@@ -62,6 +62,14 @@ terms_pending: []
 | IAEA | International Atomic Energy Agency | IAEA |  |  |  | [NEI_18-04 §3.3.4 p.32] | 용어 아님 | 기관 이름, 2026-09-15 사용자 결정 |
 | ASME | ASME (ASME/ANS RA-S-1.4) | ASME |  |  |  | [NEI_18-04 §3.3.3 p.31] | 용어 아님 | 표준 발행 기관, 2026-09-15 사용자 결정 |
 | ANS | ANS (ASME/ANS RA-S-1.4) | ANS |  |  |  | [NEI_18-04 §3.3.3 p.31] | 용어 아님 | 표준 발행 기관, 2026-09-15 사용자 결정 |
+| NSRST | Non-Safety-Related with Special Treatment | NSRST |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| NST | Non-Safety-Related with No Special Treatment | NST |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SS_SSC | Safety-Significant SSC |  |  |  | 안전 중요 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SPECIAL_TREATMENT | special treatment |  |  |  | 특별 처리; 특별 취급 | [NEI_18-04 §4.1 Task 7 p.46] | 영어 유지 | 2026-09-15 사용자 결정 |
+| IDP | integrated decision-making process | IDP |  | 약어 | 통합 의사결정 | [NEI_18-04 §4.3 p.48] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RELIABILITY_TARGET | reliability target |  |  |  |  | [NEI_18-04 §4.1 Task 6 p.45] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| CAPABILITY_TARGET | capability target |  |  |  |  | [NEI_18-04 §4.1 Task 6 p.45] | 용어 아님 | 2026-09-15 사용자 결정, 영어 그대로 쓴다 |
+| NEI | Nuclear Energy Institute | NEI |  |  |  | [NEI_18-04 §4.1 Task 7 p.46] | 용어 아님 | 기관 이름, 2026-09-15 사용자 결정 |
 | NRC | Nuclear Regulatory Commission | NRC |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | EPA | Environmental Protection Agency | EPA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | CFR | Code of Federal Regulations | CFR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 규정 이름, 표지 없이 그대로 쓴다 |

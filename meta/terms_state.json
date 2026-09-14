@@ -48,6 +48,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "CAPABILITY_TARGET": {
+   "abbr": "",
+   "english": "capability target",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "CFR": {
    "abbr": "CFR",
    "english": "Code of Federal Regulations",
@@ -191,6 +199,16 @@
    "later": "",
    "state": "용어 아님"
   },
+  "IDP": {
+   "abbr": "IDP",
+   "english": "integrated decision-making process",
+   "forbidden": [
+    "통합 의사결정"
+   ],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "IE": {
    "abbr": "IE",
    "english": "Initiating Event",
@@ -239,6 +257,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "NEI": {
+   "abbr": "NEI",
+   "english": "Nuclear Energy Institute",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "NRC": {
    "abbr": "NRC",
    "english": "Nuclear Regulatory Commission",
@@ -246,6 +272,22 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "NSRST": {
+   "abbr": "NSRST",
+   "english": "Non-Safety-Related with Special Treatment",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "NST": {
+   "abbr": "NST",
+   "english": "Non-Safety-Related with No Special Treatment",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "PAG": {
    "abbr": "PAG",
@@ -314,6 +356,14 @@
   "RAW": {
    "abbr": "RAW",
    "english": "Risk Achievement Worth",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RELIABILITY_TARGET": {
+   "abbr": "",
+   "english": "reliability target",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -394,6 +444,17 @@
    "later": "한국어",
    "state": "확정"
   },
+  "SPECIAL_TREATMENT": {
+   "abbr": "",
+   "english": "special treatment",
+   "forbidden": [
+    "특별 처리",
+    "특별 취급"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "SR": {
    "abbr": "SR",
    "english": "Safety-Related",
@@ -416,6 +477,16 @@
    "forbidden": [],
    "korean": "",
    "later": "약어",
+   "state": "영어 유지"
+  },
+  "SS_SSC": {
+   "abbr": "",
+   "english": "Safety-Significant SSC",
+   "forbidden": [
+    "안전 중요"
+   ],
+   "korean": "",
+   "later": "",
    "state": "영어 유지"
   },
   "TLST": {

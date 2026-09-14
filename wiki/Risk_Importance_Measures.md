@@ -23,6 +23,7 @@ terms_pending: []
 - "A prevention or mitigation function of the SSC is necessary to meet the design objective of keeping all LBEs within the F-C Target." [NEI_18-04 §3.3.6 p.37]
 - "This is determined by assuming failure of the SSC in performing a prevention or mitigation function and checking how the resulting LBE risks compare with the F-C Target." [NEI_18-04 §3.3.6 p.37]
 - "The LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty of the LBE frequency and dose estimates is within the F-C Target." [NEI_18-04 §3.3.6 p.37]
+- "An LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty on both the LBE frequency and dose is within the F-C Target." [NEI_18-04 §4.2.2 p.47]
 - "In the LMP framework, an SSC is regarded as risk-significant if its PRA Safety Function is: a) required to keep one or more LBEs inside the F-C Target based on mean frequencies and consequences" [NEI_18-04 §6 p.90]
 - "A significant contribution to each cumulative risk metric limit is satisfied when the total frequency of all LBEs with failure of the SSC exceeds 1% of the cumulative risk metric limit based on the mean estimates of frequencies and consequences." [NEI_18-04 §3.3.6 p.37]
 - "When the total frequency of LBEs with all the basic events associated with the SSC exceeds the 1% criterion, the SSC is regarded as risk-significant." [NEI_18-04 §3.3.6 p.37]
@@ -43,11 +44,12 @@ terms_pending: []
 
 원문은 이 전통적 방식이 발전소 전체 위험으로 정규화되어 basic event의 상대적 중요도만 준다는 한계를 짚는다. 비경수로에서는 방출을 수반하는 사건의 빈도가 매우 작고 선원항%%t:SOURCE_TERM%%도 경수로 노심 손상 사건보다 매우 작을 수 있으므로, LBE%%t:LBE%%와 SSC%%t:SSC%%의 risk significance를 상대값뿐 아니라 절대값으로도 평가하는 것이 적절하다고 본다. 절대 평가는 기준 위험이 아니라 위험 목표와 비교하는 방식이다.
 
-SSC%%t:SSC%% 판정의 첫 기준은 그 SSC%%t:SSC%%의 예방·완화 기능이 모든 LBE%%t:LBE%%를 Frequency-Consequence Target%%t:FC_TARGET%% 안에 두는 데 필요한가이다. 본문은 그 기능이 고장났다고 가정하고, LBE%%t:LBE%%의 빈도와 선량의 95th percentile 상한 점이 F-C Target%%t:FC_TARGET%% 안에 있는지로 판정한다고 적는다. 반면 용어집의 Risk-Significant SSC%%t:RS_SSC%% 정의는 같은 기준을 평균 빈도와 평균 결말로 적는다. 두 서술이 어긋나므로 이 노트는 disputed로 둔다.
+SSC%%t:SSC%% 판정의 첫 기준은 그 SSC%%t:SSC%%의 예방·완화 기능이 모든 LBE%%t:LBE%%를 Frequency-Consequence Target%%t:FC_TARGET%% 안에 두는 데 필요한가이다. 본문은 그 기능이 고장났다고 가정하고, LBE%%t:LBE%%의 빈도와 선량의 95th percentile 상한 점이 F-C Target%%t:FC_TARGET%% 안에 있는지로 판정한다고 적는다. §4.2.2도 같은 상한 기준을 적는다. 반면 용어집의 Risk-Significant SSC%%t:RS_SSC%% 정의는 같은 기준을 평균 빈도와 평균 결말로 적는다. 두 서술이 어긋나므로 이 노트는 disputed로 둔다.
 
 둘째 기준은 SSC%%t:SSC%%가 고장 난 LBE%%t:LBE%%들의 총 빈도가 cumulative risk target%%t:CUM_RISK_TARGET%% 중 하나의 한도에서 1%를 넘는가이며, 이때는 평균 추정값을 쓴다. 원문은 그 SSC%%t:SSC%%와 관련된 모든 basic event가 고장인 LBE%%t:LBE%%를 합산해 판정한다고 설명한다.
 
 ## 관련 문서
+- [[Risk_Significant_SSC]]
 - [[LBE_Risk_Significance]]
 - [[PRA_Role_In_LBE_Selection]]
 - [[F_C_Target]]
