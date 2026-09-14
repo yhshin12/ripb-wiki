@@ -20,7 +20,10 @@
 
 - [[F_C_Target]] — Frequency-Consequence Target은 빈도–결말 도표 위의 기준선이며, 개별 Licensing Basis Event의 위험 중요도와 여유를 평가하는 데 쓰인다.
 - [[LBE_Frequency_Categories]] — Anticipated Operational Occurrence, Design Basis Event, Beyond Design Basis Event는 평균 빈도 구간으로 구분된다.
+- [[LBE_Risk_Significance]] — Licensing Basis Event는 평균 빈도로 범주를 정하되, 빈도 불확실도 구간이 범주 경계에 걸치면 양쪽 범주에서 모두 평가한다.
+- [[LBE_Selection_Process]] — Licensing Basis Event 선정 절차는 Task 1–10으로 이루어진 논리도로 제시되며, 과제에 정해진 순서가 없고 설계가 진행되는 동안 반복된다.
 - [[Licensing_Basis_Event]] — Licensing Basis Event 정의는 설계와 인허가 기준에서 고려하는 사건 시퀀스 전체를 가리킨다.
+- [[Required_Safety_Function]] — Required Safety Function은 Design Basis Event의 결말이나 결말이 큰 Beyond Design Basis Event의 빈도를 Frequency-Consequence Target 안에 두기 위해 반드시 수행되어야 하는 PRA Safety Function이다.
 
 ## 지도 (map)
 

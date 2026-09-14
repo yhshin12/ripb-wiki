@@ -33,3 +33,9 @@
 ## [2026-09-15] docs | 시범 인제스트 뒤 규칙 보완 2건
 - 영어 유지 용어 노트의 H1은 '# English Name (약어)'로 쓴다(CLAUDE.md §4, 설계 §5.6).
 - 기관·규정 약어 7건(NRC, EPA, CFR, PRA, LWR, SRP, PAG)을 용어표에 '용어 아님'으로 등록했다. lint는 그 상태의 약어에 표지가 없어도 경고하지 않는다(테스트 1건 추가, 389건 통과).
+
+## [2026-09-15] ingest | NEI 18-04 §3.2.2, §3.2.3
+- 새 노트 3개(LBE_Selection_Process, Required_Safety_Function, LBE_Risk_Significance), 고친 노트 2개(F_C_Target 링크, 소스 카드 단위).
+- 용어: 영어 유지 12건(RSF, PSF, SR, DBEHL, DID, IE, MST, RIPB, LMP, Risk-Significant LBE, Risk-Significant SSC, cumulative risk target), 용어 아님 3건(FMEA, HAZOP, PHA). 미정 용어 0.
+- 검사: lint 오류 0·경고 0, 인용 검증 오류 0, 용어 충돌 0, 조사 확인 20건 모두 올바름.
+- 발견한 도구 결함: 인용 정규화가 [^p23] 형태의 각주 참조를 지우지 않는다. 별도 커밋으로 수정한다.

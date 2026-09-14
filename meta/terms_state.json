@@ -24,6 +24,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "CUM_RISK_TARGET": {
+   "abbr": "",
+   "english": "cumulative risk target",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "DBA": {
    "abbr": "DBA",
    "english": "Design Basis Accident",
@@ -35,6 +43,22 @@
   "DBE": {
    "abbr": "DBE",
    "english": "Design Basis Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DBEHL": {
+   "abbr": "DBEHL",
+   "english": "Design Basis External Hazard Level",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DID": {
+   "abbr": "DID",
+   "english": "Defense-in-Depth",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -72,9 +96,41 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "FMEA": {
+   "abbr": "FMEA",
+   "english": "failure modes and effects analysis",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "HAZOP": {
+   "abbr": "HAZOP",
+   "english": "hazard and operability study",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "IE": {
+   "abbr": "IE",
+   "english": "Initiating Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "LBE": {
    "abbr": "LBE",
    "english": "Licensing Basis Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LMP": {
+   "abbr": "LMP",
+   "english": "Licensing Modernization Project",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -87,6 +143,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "MST": {
+   "abbr": "MST",
+   "english": "Mechanistic Source Term",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "NRC": {
    "abbr": "NRC",
@@ -104,6 +168,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PHA": {
+   "abbr": "PHA",
+   "english": "process hazard analysis",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "PRA": {
    "abbr": "PRA",
    "english": "probabilistic risk assessment",
@@ -112,9 +184,57 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PSF": {
+   "abbr": "PSF",
+   "english": "PRA Safety Function",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "QHO": {
    "abbr": "QHO",
    "english": "Quantitative Health Objective",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RIPB": {
+   "abbr": "RIPB",
+   "english": "risk-informed and performance-based",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RSF": {
+   "abbr": "RSF",
+   "english": "Required Safety Function",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RS_LBE": {
+   "abbr": "",
+   "english": "Risk-Significant LBE",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "RS_SSC": {
+   "abbr": "",
+   "english": "Risk-Significant SSC",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "SR": {
+   "abbr": "SR",
+   "english": "Safety-Related",
    "forbidden": [],
    "korean": "",
    "later": "약어",

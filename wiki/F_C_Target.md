@@ -47,4 +47,5 @@ F-C Target%%t:FC_TARGET%%은 빈도축과 선량축을 가진 도표 위의 한 
 ## 관련 문서
 - [[Licensing_Basis_Event]]
 - [[LBE_Frequency_Categories]]
+- [[LBE_Risk_Significance]]
 - [[NEI_18-04]]

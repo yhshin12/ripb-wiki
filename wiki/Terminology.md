@@ -28,6 +28,21 @@ terms_pending: []
 | QHO | Quantitative Health Objective | QHO |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | EAB | Exclusion Area Boundary | EAB |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | TLST | Top Level Safety Target | TLST |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RSF | Required Safety Function | RSF |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PSF | PRA Safety Function | PSF |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SR | Safety-Related | SR |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DBEHL | Design Basis External Hazard Level | DBEHL |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DID | Defense-in-Depth | DID |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| IE | Initiating Event | IE |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| MST | Mechanistic Source Term | MST |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RIPB | risk-informed and performance-based | RIPB |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LMP | Licensing Modernization Project | LMP |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |
+| FMEA | failure modes and effects analysis | FMEA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
+| HAZOP | hazard and operability study | HAZOP |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
+| PHA | process hazard analysis | PHA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 분석 기법 이름, 2026-09-15 사용자 결정(용어로 바꿔도 됨) |
+| RS_LBE | Risk-Significant LBE |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RS_SSC | Risk-Significant SSC |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| CUM_RISK_TARGET | cumulative risk target |  |  |  |  | [NEI_18-04 §3.2.2 Task 7b p.24] | 영어 유지 | 2026-09-15 사용자 결정 |
 | NRC | Nuclear Regulatory Commission | NRC |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | EPA | Environmental Protection Agency | EPA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
 | CFR | Code of Federal Regulations | CFR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 규정 이름, 표지 없이 그대로 쓴다 |
