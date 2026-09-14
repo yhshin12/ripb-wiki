@@ -92,6 +92,14 @@ def test_normalize_removes_editorial_markup():
     assert "supplied by the build" not in pages[9]
 
 
+def test_normalize_removes_labelled_footnote_references():
+    # NEI 18-04 labels its footnotes with page numbers: [^p23]
+    text = "uncertainty bands[^p23] defined by the 5th percentile\n\n[^p23]: It is recognized that the PRA may not"
+    n = C.normalize(text)
+    assert "uncertainty bands defined by the 5th percentile" in n
+    assert "[^p23]" not in n and "It is recognized that the PRA may not" in n
+
+
 def test_quotes_and_fragments():
     item = '"Licensing basis events ... include AOOs, DBEs, and BDBEs." and "second one here"'
     assert C.quotes(item) == ["Licensing basis events ... include AOOs, DBEs, and BDBEs.", "second one here"]

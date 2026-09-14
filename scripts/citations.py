@@ -95,7 +95,7 @@ def normalize(text):
     t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
     t = re.sub(r"<sup>.*?</sup>", "", t, flags=re.S)
     t = re.sub(r"!\[\[[^\]]*\]\]", " ", t)
-    t = re.sub(r"\[\^\d+\]:?", "", t)
+    t = re.sub(r"\[\^[A-Za-z0-9]+\]:?", "", t)          # [^1], and page-labelled [^p23] (NEI 18-04)
     t = re.sub(r"</?[A-Za-z][^>]*>", "", t)
     t = re.sub(r"(?m)\s\^[A-Za-z0-9-]+\s*$", "", t)
     t = re.sub(r"(?m)^\s*#{1,6}\s+", "", t)
