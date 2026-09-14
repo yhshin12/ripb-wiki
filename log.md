@@ -12,3 +12,6 @@
 
 ## [2026-09-14] feat | 소스 카드 9장
 - `scripts/source.py adopt`로 정제본 9건의 소스 카드를 만들었다(`wiki/<KEY>.md`, `ingest: pending`). RG 1.232 원문 파일명에 제목을 붙였다(재변환, 본문 동일).
+
+## [2026-09-14] feat | 대기 원문 2건 등록 (RG 1.233, ACRS ML25293A458)
+- `source.py register` → 변환 → generic 프로파일로 정제 → 소스 카드. 누락률: RG 1.233 0.12 %, ACRS ML25293A458 0.11 %. Phase 1 완료.

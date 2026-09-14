@@ -13,6 +13,13 @@ META = {
                   "Non-Light-Water Reactors"),
         "tags": ["reference", "nrc", "regulatory-guide"], "aliases": ["RG 1.233"],
     },
+    "ACRS_ML25293A458": {
+        "doc_id": "ML25293A458", "doc_type": "NRC staff presentation (ACRS subcommittee meeting)",
+        "issuer": "U.S. Nuclear Regulatory Commission, NRR/DANU/UTB2 (Reed Anzalone)",
+        "revision": "", "date": "2025-10-22/2025-10-23",
+        "title": "NRC Review of Kemmerer Unit 1 Construction Permit Application, Control of Heat Generation",
+        "tags": ["reference", "nrc", "acrs", "natrium"], "aliases": ["ACRS Control of Heat Generation slides"],
+    },
 }
 
 
