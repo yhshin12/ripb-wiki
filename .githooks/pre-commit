@@ -42,4 +42,13 @@ if ! "$PY" "$ROOT/scripts/leak_guard.py" --staged; then
   echo "pre-commit: refused (internal document names; see above)"
   exit 1
 fi
+
+# 전체 검사 (spec §8.2). 작업 트리를 검사하므로 일부만 stage한 경우에도 전체 기준으로 판정된다.
+for check in "lint_wiki.py --all" "verify_quotes.py --all" "build_index.py --check"; do
+  if ! out=$("$PY" "$ROOT/scripts/"$check 2>&1); then
+    printf '%s\n' "$out"
+    echo "pre-commit: refused ($check)"
+    exit 1
+  fi
+done
 exit 0
