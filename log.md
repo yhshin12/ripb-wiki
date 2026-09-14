@@ -15,3 +15,11 @@
 
 ## [2026-09-14] feat | 대기 원문 2건 등록 (RG 1.233, ACRS ML25293A458)
 - `source.py register` → 변환 → generic 프로파일로 정제 → 소스 카드. 누락률: RG 1.233 0.12 %, ACRS ML25293A458 0.11 %. Phase 1 완료.
+
+## [2026-09-15] feat | Phase 2 완료: 도구
+- 검사(lint_wiki L01–L36, verify_quotes V1–V5), 변경(sync_terms, build_index, append_log), 보고(session_start, audit_sample), 보조 모듈(notes, citations, terms, leak_guard, hook_post_edit).
+- 관문: Claude SessionStart·PostToolUse hook, git pre-commit 전체 검사(두 저장소), commit-msg 내부 문서명 검사. 탐침으로 거부 동작 확인.
+- skill 5종(wiki-ingest/terms/query/lint/audit), 템플릿 3종, 빈 용어표, Bases 보기 4종, Obsidian 명령 4종(Gemini 실행 명령 제거).
+- Phase 1 이관 항목 처리: source.py 보강 7건, generic 프로파일 2건, 설계 부록 B·§8.1 수정, refs marker(원문 의존 테스트 109건), internal .gitattributes.
+- 결함 1건 수정: 템플릿의 dict 형 frontmatter 값이 lint·index·audit·sync를 중단시키던 문제. 회귀 테스트 5건 추가.
+- 테스트 388건 통과. lint·인용 검증 오류 0, index 최신, 용어 동기화 변경 0.

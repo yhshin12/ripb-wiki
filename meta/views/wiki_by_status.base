@@ -1,0 +1,15 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+    - file.hasProperty("status")
+views:
+  - type: table
+    name: status별
+    groupBy:
+      property: status
+      direction: DESC
+    order:
+      - file.name
+      - type
+      - status
+      - verified

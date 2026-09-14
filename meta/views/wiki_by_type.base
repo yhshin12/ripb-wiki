@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+views:
+  - type: table
+    name: type별
+    groupBy:
+      property: type
+      direction: DESC
+    order:
+      - file.name
+      - type
+      - status
+      - sources

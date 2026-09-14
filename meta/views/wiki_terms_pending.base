@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+    - file.hasProperty("terms_pending")
+    - "!terms_pending.isEmpty()"
+views:
+  - type: table
+    name: 미정 용어를 쓰는 노트
+    order:
+      - file.name
+      - type
+      - terms_pending

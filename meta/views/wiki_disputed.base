@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+    - status == "disputed"
+views:
+  - type: table
+    name: disputed
+    order:
+      - file.name
+      - type
+      - sources
