@@ -6,3 +6,6 @@
 - 구 이력 전체를 `internal/_legacy/ripb-before-rebuild.bundle`로 보존하고 새 이력을 시작했다.
 - 구 wiki 267개 노트, Gemini 시기 스크립트·설정, 구 `raw/`(압축 보관)를 제거했다. 근거: `meta/design/2026-09-14-vault-rebuild-design.md` §1.
 - 정제 파이프라인(`scripts/refclean/`, 커밋 31f826e)과 그 기록(`meta/references_cleanup/`)은 그대로 승계했다.
+
+## [2026-09-14] chore | 새 이력 첫 커밋
+- git #1 첫 커밋. `references/`, `internal/`, `inbox/`는 추적하지 않는다. pre-commit 관문 확인.

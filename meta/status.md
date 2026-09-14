@@ -1,11 +1,11 @@
 ---
 updated: 2026-09-14
-phase: 0
+phase: 1
 ---
 # 상태
 
 ## 현재 단계
-Phase 0 (안정화, 이력 재시작) 진행 중. 계획: `meta/design/2026-09-14-rebuild-plan-phase0-1.md`.
+Phase 1 (소스 계층 정합) 진행 중. 계획: `meta/design/2026-09-14-rebuild-plan-phase0-1.md`.
 
 ## 존재하는 도구
 - `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (정제 파이프라인, 테스트 211건)
@@ -18,8 +18,11 @@ Phase 0 (안정화, 이력 재시작) 진행 중. 계획: `meta/design/2026-09-1
 | RG 1.233, ACRS ML25293A458 | 없음 (`inbox/`) | 없음 | 대기 |
 
 ## 다음 작업
-1. Phase 0 Task 6: 이력 재시작
-2. Phase 1: `--root`, RG 1.232 이름 변경, `source.py`, 소스 카드 9장, inbox 2건 등록
+1. `convert_references.py`, `clean_references.py`에 `--root` 인자 추가. 기존 테스트 211건 통과 유지.
+2. `source.py` 구현(테스트 포함).
+3. RG 1.232 PDF 이름 변경(§3.2)과 재변환·재빌드·검증.
+4. 정제본 9건의 소스 카드 작성(정제본 frontmatter와 `_verify/` 요약에서 서지·쪽 수·SHA-256·누락률을 가져옴). `ingest: pending`.
+5. `inbox/`의 ACRS 슬라이드(ML25293A458, 22쪽)와 RG 1.233(31쪽)을 등록·변환·정제. 프로파일은 각각 신규(RG 1.233은 RG 1.232 프로파일 기반).
 
 ## 미해결
 - 없음
