@@ -28,6 +28,13 @@ terms_pending: []
 | QHO | Quantitative Health Objective | QHO |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | EAB | Exclusion Area Boundary | EAB |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
 | TLST | Top Level Safety Target | TLST |  | 약어 |  | [NEI_18-04 §3.2.1 p.16] | 영어 유지 | 2026-09-15 사용자 결정 |
+| NRC | Nuclear Regulatory Commission | NRC |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
+| EPA | Environmental Protection Agency | EPA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 기관 이름, 표지 없이 그대로 쓴다 |
+| CFR | Code of Federal Regulations | CFR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 규정 이름, 표지 없이 그대로 쓴다 |
+| PRA | probabilistic risk assessment | PRA |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 표지 없이 그대로 쓴다 |
+| LWR | light water reactor | LWR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 표지 없이 그대로 쓴다 |
+| SRP | Standard Review Plan (NUREG-0800) | SRP |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 문서 이름, 표지 없이 그대로 쓴다 |
+| PAG | Protective Action Guide | PAG |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 표지 없이 그대로 쓴다 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

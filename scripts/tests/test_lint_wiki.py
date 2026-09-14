@@ -42,6 +42,14 @@ def test_abbreviation_ids_are_not_terms(mini_vault, make_note, good_note_body):
     assert lint(mini_vault, make_note("Sample", body)) == []
 
 
+def test_not_a_term_abbreviation_is_silent(mini_vault, make_note, good_note_body):
+    t = mini_vault / "wiki" / "Terminology.md"
+    rac = "| RAC | Reactor Air Cooling System | RAC |  | 약어 |  | [DOC_A §3.2 p.3] | 미정 | |"
+    nrc = "| NRC | U.S. Nuclear Regulatory Commission | NRC |  |  |  | [DOC_A §3.2 p.3] | 용어 아님 | |"
+    t.write_text(t.read_text(encoding="utf-8").replace(rac, rac + "\n" + nrc), encoding="utf-8", newline="\n")
+    assert lint(mini_vault, make_note("Sample", good_note_body.replace("세 종류이다.", "NRC도 있다."))) == []
+
+
 def test_frontmatter_filename_and_encoding(mini_vault, make_note, good_note_body):
     assert ("L04", "error") in lint(mini_vault, make_note("Typed", good_note_body, type="essay"))
     assert ("L04", "error") in lint(mini_vault, make_note("Checked", good_note_body, status="checked"))

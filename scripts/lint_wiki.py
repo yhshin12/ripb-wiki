@@ -184,10 +184,11 @@ def _terms(ctx, note, F):
             if s[m.end():m.end() + 1] == SENTINEL:
                 continue
             base = m.group(1)
-            if any(base in (t.abbr, t.id) for t in ctx.terms.values()):
-                F(i, "L13", f"'{base}' without term marker", "warning")
-            else:
+            match = next((t for t in ctx.terms.values() if base in (t.abbr, t.id)), None)
+            if match is None:
                 F(i, "L14", f"abbreviation '{base}' is not in Terminology")
+            elif match.state != "용어 아님":          # 용어 아님: 표지 없이 그대로 쓰는 약어
+                F(i, "L13", f"'{base}' without term marker", "warning")
     listed = note.fm.get("terms_pending") or []
     if isinstance(listed, list) and sorted(listed) != sorted(pending):
         F(2, "L15", f"terms_pending {sorted(listed)} differs from markers {sorted(pending)}; run sync_terms.py --apply",

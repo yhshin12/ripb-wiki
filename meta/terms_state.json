@@ -16,6 +16,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "CFR": {
+   "abbr": "CFR",
+   "english": "Code of Federal Regulations",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "DBA": {
    "abbr": "DBA",
    "english": "Design Basis Accident",
@@ -39,6 +47,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "EPA": {
+   "abbr": "EPA",
+   "english": "Environmental Protection Agency",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "ES": {
    "abbr": "ES",
@@ -64,6 +80,38 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "LWR": {
+   "abbr": "LWR",
+   "english": "light water reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "NRC": {
+   "abbr": "NRC",
+   "english": "Nuclear Regulatory Commission",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "PAG": {
+   "abbr": "PAG",
+   "english": "Protective Action Guide",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "PRA": {
+   "abbr": "PRA",
+   "english": "probabilistic risk assessment",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "QHO": {
    "abbr": "QHO",
    "english": "Quantitative Health Objective",
@@ -71,6 +119,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "SRP": {
+   "abbr": "SRP",
+   "english": "Standard Review Plan (NUREG-0800)",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "SSC": {
    "abbr": "SSC",
