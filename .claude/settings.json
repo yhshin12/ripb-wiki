@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/c/Code/Python/pykaeri/.venv12/Scripts/python.exe\" \"${CLAUDE_PROJECT_DIR}/scripts/session_start.py\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/c/Code/Python/pykaeri/.venv12/Scripts/python.exe\" \"${CLAUDE_PROJECT_DIR}/scripts/hook_post_edit.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
