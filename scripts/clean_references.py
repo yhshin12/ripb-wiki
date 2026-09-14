@@ -6,6 +6,7 @@ Usage:
   python scripts/clean_references.py --no-figures    # skip PNG rendering (faster)
   python scripts/clean_references.py --verify        # also write references/raw/_verify/<key>.json
   python scripts/clean_references.py --verify --max-missing-pct 1.0   # stricter PDF-coverage gate
+  python scripts/clean_references.py --root internal   # read/write internal/references instead
 
 With --verify the run exits non-zero when a document's `missing_pct` (PDF tokens absent from the output) exceeds
 --max-missing-pct (default 2.0). The current accepted residuals are 0.00-1.66 % and are pinned token-exactly in
@@ -30,9 +31,31 @@ from refclean.profiles import DOCS  # noqa: E402
 from refclean.tables import overlap_warnings  # noqa: E402
 
 VAULT = os.path.dirname(HERE)
-RAW = os.path.join(VAULT, "references", "raw")
-OUT = os.path.join(VAULT, "references")
 PATCH_DIR = os.path.join(HERE, "refclean", "patches")
+
+RAW = OUT = None
+
+
+def set_root(root=None):
+    """Point RAW/OUT at <vault>/references[/raw] or <vault>/<root>/references[/raw]."""
+    global RAW, OUT
+    base = VAULT if not root else os.path.join(VAULT, root)
+    RAW = os.path.join(base, "references", "raw")
+    OUT = os.path.join(base, "references")
+
+
+set_root(None)
+
+PATH_FIELDS = ("source_pdf", "raw_json", "raw_md", "raw_json_tables")
+
+
+def relocate_paths(meta, raw_dir):
+    """Profiles write frontmatter paths as 'references/raw/<file>'; make them true for the actual raw_dir."""
+    for k in PATH_FIELDS:
+        v = meta.get(k)
+        if isinstance(v, str) and v:
+            meta[k] = os.path.relpath(os.path.join(raw_dir, os.path.basename(v)), VAULT).replace(os.sep, "/")
+    return meta
 
 
 def table_regions(doc):
@@ -75,6 +98,7 @@ def build(key, render_figures=True, verify=False):
         step(doc, aux)
     overlap_warnings(doc)          # cells lost to overlapping ODL spans in tables that reached the output
     meta = prof.metadata(doc, chapter, aux) if chapter is not None else prof.metadata(doc, aux)
+    relocate_paths(meta, RAW)
     conv = {}
     cpath = os.path.join(RAW, "_conversion.json")
     if os.path.exists(cpath):
@@ -117,7 +141,9 @@ def main():
     ap.add_argument("--verify", action="store_true")
     ap.add_argument("--max-missing-pct", type=float, default=2.0,
                     help="with --verify: exit non-zero when a document's verify missing_pct exceeds this (default 2.0)")
+    ap.add_argument("--root", default=None, help="sub-vault, e.g. internal")
     args = ap.parse_args()
+    set_root(args.root)
     sys.stdout.reconfigure(encoding="utf-8")
     over = []
     for key in DOCS:

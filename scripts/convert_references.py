@@ -19,6 +19,7 @@ Usage:
   python scripts/convert_references.py            # convert PDFs whose raw .md does not exist yet
   python scripts/convert_references.py --force    # re-convert all (overwrites raw .md and *_images/)
   python scripts/convert_references.py --only ch4 # restrict to file names containing a substring
+  python scripts/convert_references.py --root internal  # convert internal/references/raw instead
 """
 import argparse
 import datetime
@@ -32,7 +33,16 @@ import tempfile
 
 import opendataloader_pdf
 
-RAW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "references", "raw")
+VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def raw_dir_for(root=None):
+    """<vault>/references/raw, or <vault>/<root>/references/raw for a sub-vault such as 'internal'."""
+    base = VAULT if not root else os.path.join(VAULT, root)
+    return os.path.join(base, "references", "raw")
+
+
+RAW_DIR = raw_dir_for(None)
 JDK_BIN_DEFAULT = r"C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin"
 PAGE_SEP = "<!-- page %page-number% -->"
 
@@ -85,13 +95,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--only", default="")
+    ap.add_argument("--root", default=None, help="sub-vault, e.g. internal")
     args = ap.parse_args()
 
+    raw_dir = raw_dir_for(args.root)
     java = ensure_java()
-    manifest_path = os.path.join(RAW_DIR, "_conversion.json")
+    manifest_path = os.path.join(raw_dir, "_conversion.json")
     manifest = json.load(open(manifest_path, encoding="utf-8")) if os.path.exists(manifest_path) else {}
 
-    for pdf in sorted(glob.glob(os.path.join(RAW_DIR, "*.pdf"))):
+    for pdf in sorted(glob.glob(os.path.join(raw_dir, "*.pdf"))):
         name = os.path.basename(pdf)
         if args.only and args.only not in name:
             continue
@@ -100,7 +112,7 @@ def main():
             print(f"skip (exists): {name}")
             continue
         opts = options_for(name)
-        opendataloader_pdf.convert(pdf, output_dir=RAW_DIR, **opts)
+        opendataloader_pdf.convert(pdf, output_dir=raw_dir, **opts)
         manifest[name] = {
             "output": os.path.basename(md),
             "converter": "opendataloader-pdf " + getattr(opendataloader_pdf, "__version__", "2.5.7"),
@@ -114,7 +126,7 @@ def main():
                 continue
             with tempfile.TemporaryDirectory() as tmp:
                 opendataloader_pdf.convert(pdf, output_dir=tmp, **aux_opts)
-                shutil.move(os.path.join(tmp, stem + ".json"), os.path.join(RAW_DIR, f"{stem}.{suffix}.json"))
+                shutil.move(os.path.join(tmp, stem + ".json"), os.path.join(raw_dir, f"{stem}.{suffix}.json"))
             manifest[name].setdefault("aux", {})[suffix] = aux_opts
         print(f"converted: {name}")
 
