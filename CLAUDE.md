@@ -1,6 +1,6 @@
 # CLAUDE.md — ripb vault 운영 규칙
 
-이 vault는 TI-RIPB(Technology-Inclusive, Risk-Informed, Performance-Based) 원자력 안전해석 분야의 LLM wiki이다. 관리 주체는 Claude 하나이다. 설계와 결정 근거는 `meta/design/2026-09-14-vault-rebuild-design.md`(이하 "설계")에 있고, 현재 단계와 다음 작업은 `meta/status.md`에 있다. 절차는 `.claude/skills/`의 skill이 담는다(Phase 2 이후). 본문은 한국어, 경로·명령·식별자는 영어로 쓴다.
+이 vault는 TI-RIPB(Technology-Inclusive, Risk-Informed, Performance-Based) 원자력 안전해석 분야의 LLM wiki이다. 관리 주체는 Claude 하나이다. 설계와 결정 근거는 `meta/design/2026-09-14-vault-rebuild-design.md`(이하 "설계")에 있고, 현재 단계와 다음 작업은 `meta/status.md`에 있다. 절차는 `.claude/skills/`의 skill(`wiki-ingest`, `wiki-terms`, `wiki-query`, `wiki-lint`, `wiki-audit`)이 담는다. 본문은 한국어, 경로·명령·식별자는 영어로 쓴다.
 
 ## 1. 역할과 원칙
 
@@ -37,7 +37,7 @@
 
 ## 4. 노트 규칙과 인용 형식 (설계 §5)
 
-- frontmatter: `type`(source | regulation | concept | natrium | synthesis | map | hsfr), `aliases`, `sources`(소스 키 목록), `status`(draft → checked → reviewed; disputed, deprecated), `verified`, `term`, `tags`.
+- frontmatter: `type`(source | regulation | concept | natrium | synthesis | map | hsfr), `aliases`, `sources`(소스 키 목록), `status`(draft → checked → reviewed; disputed, deprecated), `verified`, `term`, `tags`, `terms_pending`(sync_terms가 유지).
 - 본문: `# 한국어 제목 (English Title)` → `> [!abstract] 요약`(한국어 2–3문장) → `## 원문 사실` → `## 해설` → `## 관련 문서`.
 - 원문 사실 절은 원문 문장(따옴표)과 표 값만 담고 항목마다 인용을 붙인다. 해설은 한국어로 쓰고 원문 사실 절만 근거로 삼는다.
 - 인용: `[KEY §3.7.3.1 p.45]`, `[KEY Table 5.2-1 p.12]`, `[KEY SFR-DC 4 p.64]`, `[KEY §3.2.1 p.16-17]`. `p.N`은 PDF 쪽(쪽 표지의 첫 번호). 쪽이 없는 원문은 `[KEY §제목경로]`.
@@ -60,12 +60,12 @@
 ## 7. 도구 (설계 §8)
 
 - Python: `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`만 쓴다. PATH의 `python`은 쓰지 않는다.
-- 스크립트(`scripts/`): `convert_references.py`, `clean_references.py` + `refclean/`(정제), `source.py`(원문 등록·소스 카드), `lint_wiki.py`, `verify_quotes.py`, `sync_terms.py`, `build_index.py`, `append_log.py`, `session_start.py`, `audit_sample.py`. 어느 것이 이미 있는지는 `meta/status.md`가 말한다.
+- 스크립트(`scripts/`): 정제 `convert_references.py`, `clean_references.py` + `refclean/`; 원문 `source.py`; 검사 `lint_wiki.py`(파일 단위 L01–L20, `--all` L30–L36), `verify_quotes.py`(V1–V5); 변경 `sync_terms.py`(dry-run 기본), `build_index.py`(`--check`), `append_log.py`; 보고 `session_start.py`, `audit_sample.py`; 보조 `notes.py`, `citations.py`, `terms.py`, `leak_guard.py`, `hook_post_edit.py`.
 - 규칙: 일괄 수정은 dry-run 기본. 원문 파일은 이동만 하고 내용을 바꾸지 않는다(`inbox/` → `references/raw/` 이동은 `source.py register`만 한다). 검사 실패는 0이 아닌 종료 코드. 파일은 내용을 검증한 뒤에만 쓴다.
-- 테스트: `python -m pytest scripts/refclean/tests scripts/tests -q`.
-- hook: git pre-commit(`.githooks/`, 두 저장소)이 원문·내부 경로와 공개 노트의 `[[HSFR_` 링크를 거부한다. Phase 2에서 lint·인용 검증이 추가된다.
+- 테스트: `python -m pytest scripts/refclean/tests scripts/tests -q`. 원문을 읽는 테스트는 `@pytest.mark.refs`이며 `references/raw`에 PDF가 없으면 skip된다. 새 테스트가 `references/`를 열면서 표시가 없으면 실패한다.
+- hook: Claude SessionStart → `session_start.py`; PostToolUse(Edit·Write·MultiEdit, `wiki/`·`internal/wiki/`의 `.md`) → `hook_post_edit.py`(lint 파일 단위 + 인용 검증, 오류는 Claude에게 되돌림); git pre-commit(두 저장소) → 경로 관문, 공개 노트 `[[HSFR_` 거부, `leak_guard.py --staged`(공개), `lint_wiki.py --all`, `verify_quotes.py --all`, `build_index.py --check`; git commit-msg(공개) → `leak_guard.py --message`.
 - 클론 직후: 두 저장소에서 `git config core.hooksPath .githooks`를 실행한다. `references/`는 원본 PDF를 `references/raw/`에 두고 파이프라인으로 재생성한다.
-- `log.md`는 추가만 한다(`append_log.py`, Phase 2 전에는 파일 끝에 항목을 덧붙인다). `index.md`는 `build_index.py`가 만든다(Phase 2 전에는 없다).
+- `log.md`는 `append_log.py`로만 추가한다(커밋 해시는 적지 않는다). `index.md`는 `build_index.py`가 만든다.
 
 ## 8. 보안 (설계 §3.3)
 
