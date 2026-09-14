@@ -5,7 +5,7 @@ phase: 3
 # 상태
 
 ## 현재 단계
-Phase 3 인제스트 진행 중. NEI 18-04 §3 전체와 §4 도입·§4.1–§4.3 완료(노트 14개, 소스 카드 단위 5개, 2026-09-15). 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
+Phase 3 인제스트 진행 중. NEI 18-04 §3 전체와 §4 도입·§4.1–§4.3 완료(노트 14개, 소스 카드 단위 4개, 2026-09-15). 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
 
 ## 존재하는 도구
 - 정제: `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (psar·nei1804·rg1232·generic 프로파일, 공용 `levels.py`)
