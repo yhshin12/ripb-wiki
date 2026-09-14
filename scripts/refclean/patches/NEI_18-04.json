@@ -1,0 +1,65 @@
+[
+ {
+  "find": "| Risk Reduction | RR | 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) − 𝑅𝑅(𝑥𝑥𝑖𝑖 = 0) |",
+  "replace": "| Risk Reduction | RR | R(base) − R(x<sub>i</sub> = 0) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Fussell-Vesely | FV | 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) − 𝑅𝑅(𝑥𝑥𝑖𝑖 = 0) 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) |",
+  "replace": "| Fussell-Vesely | FV | [R(base) − R(x<sub>i</sub> = 0)] / R(base) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Risk Reduction Worth | RRW | 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) 𝑅𝑅(𝑥𝑥𝑖𝑖 = 0) |",
+  "replace": "| Risk Reduction Worth | RRW | R(base) / R(x<sub>i</sub> = 0) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Criticality Importance | CR | 𝑅𝑅(𝑥𝑥𝑖𝑖 = 1) − 𝑅𝑅(𝑥𝑥𝑖𝑖 = 0) 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) × 𝑥𝑥𝑖𝑖(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) |",
+  "replace": "| Criticality Importance | CR | {[R(x<sub>i</sub> = 1) − R(x<sub>i</sub> = 0)] / R(base)} × x<sub>i</sub>(base) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Risk Achievement | RA | 𝑅𝑅(𝑥𝑥𝑖𝑖 = 1) − 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) |",
+  "replace": "| Risk Achievement | RA | R(x<sub>i</sub> = 1) − R(base) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Risk Achievement Worth | RAW | 𝑅𝑅(𝑥𝑥𝑖𝑖 = 1) 𝑅𝑅(𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) |",
+  "replace": "| Risk Achievement Worth | RAW | R(x<sub>i</sub> = 1) / R(base) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Partial Derivative | PD | 𝑅𝑅(𝑥𝑥𝑖𝑖 + 𝜕𝜕𝑥𝑥𝑖𝑖) − 𝑅𝑅(𝑥𝑥𝑖𝑖) 𝜕𝜕𝑥𝑥𝑖𝑖 |",
+  "replace": "| Partial Derivative | PD | [R(x<sub>i</sub> + ∂x<sub>i</sub>) − R(x<sub>i</sub>)] / ∂x<sub>i</sub> |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "| Birnbaum Importance | BI | 𝑅𝑅(𝑥𝑥𝑖𝑖 = 1) − 𝑅𝑅(𝑥𝑥𝑖𝑖 = 0) |",
+  "replace": "| Birnbaum Importance | BI | R(x<sub>i</sub> = 1) − R(x<sub>i</sub> = 0) |",
+  "count": 1,
+  "page": 36,
+  "evidence": "Table 3-2 (PDF p36 rendered at 220 dpi): the Cambria Math ToUnicode map of this PDF is broken (base -> 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏) and fraction bars are lost, so the formula is transcribed from the rendered page (review_nei.md §2, Table 3-2 row)"
+ },
+ {
+  "find": "𝑅𝑅𝑗𝑗 = 𝑄𝑄 × 𝐹𝐹𝐼𝐼𝐼𝐼,𝑗𝑗 × 𝑃𝑃𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴,𝑗𝑗 × 𝑃𝑃𝑃𝑃𝐴𝐴𝐴𝐴𝐴𝐴,𝑗𝑗 × 𝑟𝑟𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓,𝑗𝑗 × 𝑟𝑟𝑃𝑃𝑃𝑃,𝑗𝑗 × 𝑟𝑟𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐,𝑗𝑗",
+  "replace": "R<sub>j</sub> = Q × F<sub>IE,j</sub> × P<sub>ASSC,j</sub> × P<sub>PSSC,j</sub> × r<sub>fuel,j</sub> × r<sub>PB,j</sub> × r<sub>cont,j</sub>",
+  "count": 1,
+  "page": 73,
+  "evidence": "Risk model equation on PDF p73 (rendered at 200 dpi): the Cambria Math text layer is corrupt (each glyph doubled, subscripts inline); transcribed from the rendered page (review_nei.md F11)"
+ }
+]

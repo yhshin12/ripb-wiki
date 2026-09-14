@@ -1,0 +1,20 @@
+# 원문 전문 (저작권) — 로컬 전용, 소스 카드의 SHA-256으로 동일성 확인 (spec D11)
+inbox/
+references/
+raw/
+
+# 내부 자료 — 별도 로컬 git (spec D2)
+internal/
+
+# Obsidian 작업 상태 (PC별)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# 도구 산출물
+docs/superpowers/
+.worktrees/
+__pycache__/
+*.pyc
+*.tmp
+.pytest_cache/

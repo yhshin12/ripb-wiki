@@ -1,0 +1,36 @@
+#!/bin/bash
+# Phase 0 관문 (spec §3.3): 원문·내부 경로는 공개 저장소에 들어오지 못한다.
+staged=()
+while IFS= read -r -d '' f; do
+  staged+=("$f")
+done < <(git -c core.quotepath=false diff --cached --name-only -z --diff-filter=ACMR)
+
+bad=()
+for f in "${staged[@]}"; do
+  case "$f" in
+    references/*|internal/*|inbox/*|raw/*) bad+=("$f") ;;
+  esac
+done
+if [ "${#bad[@]}" -gt 0 ]; then
+  echo "pre-commit: refused (local-only paths):"
+  printf '%s\n' "${bad[@]}"
+  exit 1
+fi
+
+# 공개 노트는 내부 노트로 링크하지 않는다.
+hits=()
+for f in "${staged[@]}"; do
+  case "$f" in
+    wiki/*.md)
+      while IFS= read -r line; do
+        hits+=("$line")
+      done < <(git diff --cached --no-color --no-ext-diff -U0 -- "$f" | awk 'h && substr($0,1,1)=="+" {print; next} /^@@/ {h=1}' | grep -F '[[HSFR_')
+      ;;
+  esac
+done
+if [ "${#hits[@]}" -gt 0 ]; then
+  echo "pre-commit: refused ([[HSFR_ link in a public note):"
+  printf '%s\n' "${hits[@]}"
+  exit 1
+fi
+exit 0

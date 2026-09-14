@@ -1,0 +1,12 @@
+{
+  "promptDelete": false,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "userIgnoreFilters": [
+    "inbox/",
+    "references/",
+    "internal/references/",
+    "internal/_legacy/"
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "find": "λ V f = ---\n\nWhere λ V f\n\n= The wavelength\n\n= The lowest shear wave velocity\n\n= The highest frequency of interest (i.e., cutoff frequency)",
+    "replace": "λ = V / f\n\nWhere\n\n- λ = The wavelength\n- V = The lowest shear wave velocity\n- f = The highest frequency of interest (i.e., cutoff frequency)",
+    "page": 33,
+    "count": 1,
+    "evidence": "review_ch6 #11/#24 (class C). Rendered p33 (6.4-20): centred equation 'λ = V over f' (V/f printed as a fraction), then 'Where' and three definition lines 'λ = The wavelength', 'V = The lowest shear wave velocity', 'f = The highest frequency of interest (i.e., cutoff frequency)'. The text layer scatters the symbols ('λ V f = ---', 'Where λ V f', '= ...'); wording kept verbatim, fraction written as 'V / f'."
+  }
+]
