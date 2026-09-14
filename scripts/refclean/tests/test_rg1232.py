@@ -17,7 +17,7 @@ from refclean.profiles import rg1232 as P  # noqa: E402
 VAULT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 RAW = os.path.join(VAULT, "references", "raw")
 OUT = os.path.join(VAULT, "references")
-STEM = "RG_1.232"
+STEM = "RG_1.232_Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors"
 
 
 # ------------------------------------------------------------------ unit tests (no PDF) ----
