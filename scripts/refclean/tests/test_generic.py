@@ -83,3 +83,18 @@ def test_acrs_deck(built_acrs):
     assert text.count("<!-- page ") >= 20          # one anchor per slide that carries text (a blank/cover slide may have none)
     assert "Control of Heat Generation" in text
     assert ver["summary"]["missing_pct"] <= 2.0, ver["summary"]
+
+
+def test_levels_module_is_shared_by_psar_and_generic():
+    from refclean import levels
+    from refclean.profiles import generic, psar
+    assert psar.assign_levels is levels.assign_levels
+    assert levels.assign_levels in generic.steps()
+
+
+def test_generic_metadata_names_the_fix_for_unregistered_key():
+    from refclean.doc import Doc
+    from refclean.profiles import generic
+    d = Doc("NOPE_1", "x", RAW, VAULT, 1, {}, [])
+    with pytest.raises(KeyError, match="no META entry for 'NOPE_1'"):
+        generic.metadata(d, None)

@@ -2,7 +2,7 @@
 steps. Bibliographic fields come from META[key]; add an entry when registering a document with this profile."""
 from .. import structure as S
 from ..figures import figures_step
-from .psar import assign_levels
+from ..levels import assign_levels
 
 META = {
     "RG_1.233": {
@@ -57,6 +57,9 @@ def steps():
 
 
 def metadata(doc, aux):
+    if doc.key not in META:
+        raise KeyError(f"generic profile has no META entry for {doc.key!r}; "
+                       "add one to scripts/refclean/profiles/generic.py")
     m = dict(META[doc.key])
     tables = [e.table.caption for e in doc.els if e.kind == "table" and e.table.caption]
     m.update({
