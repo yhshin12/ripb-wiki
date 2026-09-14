@@ -136,6 +136,54 @@ def test_write_note_is_utf8_lf_without_bom(vault):
     assert fm["title"] == "한글" and body == "본문\n"
 
 
+def test_status_ignores_subdirectories(vault):
+    os.makedirs(vault / "wiki" / "assets")
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    source.adopt("DOC_A", root=None)
+    rows = source.status(root=None)
+    assert any(r[0] == "DOC_A" for r in rows)
+
+
+def test_read_note_bad_frontmatter_raises(tmp_path):
+    unclosed = tmp_path / "unclosed.md"
+    unclosed.write_text("---\ntype: source\n", encoding="utf-8")
+    with pytest.raises(source.SourceError, match="bad frontmatter"):
+        source.read_note(str(unclosed))
+
+    bad_yaml = tmp_path / "bad_yaml.md"
+    bad_yaml.write_text("---\ntags: [a, b\n---\nbody\n", encoding="utf-8")
+    with pytest.raises(source.SourceError, match="bad frontmatter"):
+        source.read_note(str(bad_yaml))
+
+
+def test_malformed_note_does_not_block_register_or_status(vault, capsys):
+    broken = vault / "wiki" / "Broken.md"
+    broken.write_text("---\ntype: source\n", encoding="utf-8")
+    pdf = make_pdf(vault / "inbox" / "new.pdf")
+    source.register(str(pdf), key="DOC_B", title="New Doc", root=None)
+    capsys.readouterr()
+    source.status(root=None)
+    out, err = capsys.readouterr()
+    assert "DOC_B" in out
+    assert "wiki/Broken.md" in err
+
+
+def test_sync_preserves_backslashes_in_captions(vault):
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    card = source.adopt("DOC_A", root=None)
+    cleaned = vault / "references" / "DOC_A_Some Title.md"
+    cleaned.write_text(
+        '---\ndoc_id: "X"\npdf_pages: 12\n'
+        "tables:\n  - 'Table 1 A \\ B \\1 end'\n"
+        "figures: []\nwithheld: []\n"
+        'page_labels: "p1 = i"\nconverter: "odl 2.5.7"\ncleaned: "clean 2026-09-14"\n---\n\nbody\n',
+        encoding="utf-8",
+    )
+    source.sync("DOC_A", root=None)
+    _, body = source.read_note(card)
+    assert "Table 1 A \\ B \\1 end" in body
+
+
 def test_sync_all_uses_each_cards_own_root(vault, monkeypatch):
     make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
     public_card = source.adopt("DOC_A", root=None)

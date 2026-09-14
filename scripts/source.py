@@ -3,7 +3,7 @@
 Usage (run from the vault root with the pykaeri venv python):
   python scripts/source.py register <pdf in inbox/> --key KEY --title "Title" [--root internal]
   python scripts/source.py adopt KEY [--root internal]        # card for a PDF already in references/raw (DOCS entry)
-  python scripts/source.py sync  (KEY | --all) [--root internal]   # build fields + structure block from the cleaned file
+  python scripts/source.py sync KEY [--root internal] | sync --all   # build fields + structure block from the cleaned file
   python scripts/source.py finish KEY [--root internal]       # sync, then ingest: complete
   python scripts/source.py status [--root internal]
 
@@ -67,8 +67,17 @@ def read_note(path):
         text = f.read()
     if not text.startswith("---\n"):
         return {}, text
-    _, fm, body = text.split("---\n", 2)
-    return (yaml.safe_load(fm) or {}), body.lstrip("\n")
+    try:
+        _, fm_text, body = text.split("---\n", 2)
+    except ValueError as exc:
+        raise SourceError(f"{rel(path)}: bad frontmatter ({type(exc).__name__})") from exc
+    try:
+        fm = yaml.safe_load(fm_text)
+    except yaml.YAMLError as exc:
+        raise SourceError(f"{rel(path)}: bad frontmatter ({type(exc).__name__})") from exc
+    if fm is not None and not isinstance(fm, dict):
+        raise SourceError(f"{rel(path)}: bad frontmatter (not a mapping)")
+    return (fm or {}), body.lstrip("\n")
 
 
 def write_note(path, fm, body):
@@ -90,10 +99,16 @@ def _all_cards():
         if not os.path.isdir(w):
             continue
         for fn in os.listdir(w):
-            if fn.endswith(".md"):
-                fm, _ = read_note(os.path.join(w, fn))
-                if fm.get("type") == "source":
-                    yield r, fm
+            if not fn.endswith(".md"):
+                continue
+            path = os.path.join(w, fn)
+            try:
+                fm, _ = read_note(path)
+            except SourceError as exc:
+                print(f"warning: skipped {rel(path)}: {exc}", file=sys.stderr)
+                continue
+            if fm.get("type") == "source":
+                yield r, fm
 
 
 def _new_card(key, title, pdf_path, root):
@@ -182,8 +197,9 @@ def sync(key, root=None):
             with open(vpath, encoding="utf-8") as f:
                 build["missing_pct"] = json.load(f).get("verify", {}).get("summary", {}).get("missing_pct")
         fm["build"] = build
+        block = _sync_block(fmc)
         body = re.sub(r"<!-- sync:begin -->.*?<!-- sync:end -->",
-                      "<!-- sync:begin -->\n" + _sync_block(fmc) + "\n<!-- sync:end -->", body, flags=re.S)
+                      lambda m: "<!-- sync:begin -->\n" + block + "\n<!-- sync:end -->", body, flags=re.S)
     else:
         print(f"{key}: no cleaned file yet ({rel(cleaned)})")
     write_note(path, fm, body)
@@ -208,8 +224,16 @@ def status(root=None):
     d = dirs(root)
     rows = []
     wiki = d["wiki"]
-    for fn in sorted(os.listdir(wiki)) if os.path.isdir(wiki) else []:
-        fm, _ = read_note(os.path.join(wiki, fn))
+    entries = sorted(os.listdir(wiki)) if os.path.isdir(wiki) else []
+    for fn in entries:
+        path = os.path.join(wiki, fn)
+        if not (fn.endswith(".md") and os.path.isfile(path)):
+            continue
+        try:
+            fm, _ = read_note(path)
+        except SourceError as exc:
+            print(f"warning: skipped {rel(path)}: {exc}", file=sys.stderr)
+            continue
         if fm.get("type") != "source":
             continue
         units = fm.get("units", [])
