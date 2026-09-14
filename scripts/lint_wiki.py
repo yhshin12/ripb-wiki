@@ -149,17 +149,9 @@ def _scan_text(line):
     return re.sub(r"\[[^\[\]\n]+\]", " ", s)
 
 
-def _korean_lines(note):
-    out = []
-    for title, _, lines in N.sections(note):
-        if title in ("", "해설"):
-            out += [(i, l) for i, l in lines if not l.startswith("# ")]
-    return out
-
-
 def _terms(ctx, note, F):
     seen, pending = set(), set()
-    for i, l in _korean_lines(note):
+    for i, l in N.korean_lines(note):
         for m in T.MARKER.finditer(l):
             tid, term = m.group(1), ctx.terms.get(m.group(1))
             if term is None:

@@ -119,3 +119,12 @@ class Finding:
 
 def relpath(path, vault):
     return os.path.relpath(path, vault).replace(os.sep, "/")
+
+
+def korean_lines(note):
+    """Korean prose lines that carry term markers (spec §6.2): the block before the first H2 without the H1, and 해설."""
+    out = []
+    for title, _, lines in sections(note):
+        if title in ("", "해설"):
+            out += [(i, l) for i, l in lines if not l.startswith("# ")]
+    return out
