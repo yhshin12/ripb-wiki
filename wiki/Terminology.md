@@ -32,7 +32,8 @@ terms_pending: []
 | PSF | PRA Safety Function | PSF |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | SR | Safety-Related | SR |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | DBEHL | Design Basis External Hazard Level | DBEHL |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
-| DID | Defense-in-Depth | DID |  | 약어 | 심층방어; 심층 방어 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DID | Defense-in-Depth | DID | 심층방어 | 한국어 | 심층 방어 | [NEI_18-04 §6 p.90] | 확정 | 2026-09-15 사용자 결정(영어 유지에서 변경) |
+| SOURCE_TERM | source term |  | 선원항 | 한국어 |  | [NEI_18-04 §6 p.90] | 확정 | 2026-09-15 사용자 결정. Mechanistic Source Term(MST)은 별도 용어로 영어 유지 |
 | IE | Initiating Event | IE |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | MST | Mechanistic Source Term | MST |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | RIPB | risk-informed and performance-based | RIPB |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |

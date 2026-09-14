@@ -103,12 +103,11 @@
    "abbr": "DID",
    "english": "Defense-in-Depth",
    "forbidden": [
-    "심층방어",
     "심층 방어"
    ],
-   "korean": "",
-   "later": "약어",
-   "state": "영어 유지"
+   "korean": "심층방어",
+   "later": "한국어",
+   "state": "확정"
   },
   "EAB": {
    "abbr": "EAB",
@@ -386,6 +385,14 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "SOURCE_TERM": {
+   "abbr": "",
+   "english": "source term",
+   "forbidden": [],
+   "korean": "선원항",
+   "later": "한국어",
+   "state": "확정"
   },
   "SR": {
    "abbr": "SR",

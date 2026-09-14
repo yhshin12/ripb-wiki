@@ -1,13 +1,15 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04]
+sources:
+- NEI_18-04
 status: checked
 verified: 2026-09-15
-term:
+term: null
 tags: []
 terms_pending: []
 ---
+
 # LBE 선정 절차 (LBE Selection Process)
 
 > [!abstract] 요약
@@ -53,7 +55,7 @@ terms_pending: []
 
 Task 5a부터 Task 6까지는 Required Safety Function%%t:RSF%%을 정하고 이를 수행할 SR%%t:SR%% SSC%%t:SSC%%를 고르는 과정이며 [[Required_Safety_Function]]에 정리했다. Task 7a부터 Task 7c까지의 평가, 즉 빈도 범주 판정과 발전소 전체 위험, Risk-Significant LBE%%t:RS_LBE%% 판정 기준은 [[LBE_Risk_Significance]]에 있다.
 
-Task 7e의 Defense-in-Depth%%t:DID%% 평가는 LBE%%t:LBE%% 선정을 직접 바꾸지 않는다. 평가 결과로 설계나 절차적 관리가 바뀌면 PRA가 바뀌고, 그 경로를 거쳐 선정이나 평가에 영향을 줄 수 있다. Task 10에서 LBE%%t:LBE%%와 SR%%t:SR%% SSC%%t:SSC%% 최종 목록을 확정하면 선정 절차가 끝난다.
+Task 7e의 심층방어(Defense-in-Depth)%%t:DID%% 평가는 LBE%%t:LBE%% 선정을 직접 바꾸지 않는다. 평가 결과로 설계나 절차적 관리가 바뀌면 PRA가 바뀌고, 그 경로를 거쳐 선정이나 평가에 영향을 줄 수 있다. Task 10에서 LBE%%t:LBE%%와 SR%%t:SR%% SSC%%t:SSC%% 최종 목록을 확정하면 선정 절차가 끝난다.
 
 설계 단계에 관해 원문은, 설계에 뚜렷한 경계를 가진 단계가 있다는 단순한 인식이 계통 수준에서는 흔하지만 발전소 수준에서는 맞지 않다고 본다. 따라서 LBE%%t:LBE%% 목록도 설계가 성숙하는 동안 계속 다듬어지며, 설계와 PRA가 적용 표준과 규제 지침을 충족할 만큼 발전했을 때 확정되어 인허가 신청서에 들어간다.
 

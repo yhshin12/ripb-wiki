@@ -1,13 +1,15 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04]
+sources:
+- NEI_18-04
 status: checked
 verified: 2026-09-15
-term:
+term: null
 tags: []
 terms_pending: []
 ---
+
 # LBE 선정에서 PRA의 역할 (Role of the PRA in LBE Selection)
 
 > [!abstract] 요약
@@ -32,9 +34,9 @@ terms_pending: []
 ## 해설
 원문은 기존 방식의 한계에서 출발한다. General Design Criteria나 SRP가 반영하는 전통적 LBE%%t:LBE%% 선정 방식에는 설계 고유 사건을 찾는 체계적 절차가 없다. 반면 PRA는 새 설계에 고유한 사건을 체계적으로 찾을 수 있는 유일한 도구이고, FMEA나 HAZOP 같은 기존 계통 분석 기법도 이미 Initiating Event%%t:IE%% 선정과 Event Sequence%%t:ES%% 모델 개발 방법에 흡수되어 있다. PRA는 내부 사건, 발전소 내부 재해, 외부 사건을 포함한 ES%%t:ES%%를 열거하고 각각의 빈도와 결말을 평가한다. 원문은 PRA 도입을 뒤로 미루면 비용 효율적인 위험 관리 기회가 줄어든다고 적는다.
 
-그러나 원문은 LBE%%t:LBE%% 선정 절차가 risk-based가 아니라 risk-informed라고 명시한다. 근거는 세 가지다. 첫째, PRA 개발 자체가 공학적 판단이 많이 들어가는 결정론적 계통공학 분석에 기대고 있다. 둘째, Design Basis Accident%%t:DBA%%는 규정된 규칙으로 선정하고 보수적 가정으로 해석한다. 셋째, 선정 결과와 평가 결과가 Defense-in-Depth%%t:DID%% 적절성 지침을 만족하는지 검토한다. PRA에 대한 peer review와 규제 검토도 완전성과 불확실도 처리를 따지는 기회가 된다.
+그러나 원문은 LBE%%t:LBE%% 선정 절차가 risk-based가 아니라 risk-informed라고 명시한다. 근거는 세 가지다. 첫째, PRA 개발 자체가 공학적 판단이 많이 들어가는 결정론적 계통공학 분석에 기대고 있다. 둘째, Design Basis Accident%%t:DBA%%는 규정된 규칙으로 선정하고 보수적 가정으로 해석한다. 셋째, 선정 결과와 평가 결과가 심층방어(Defense-in-Depth)%%t:DID%% 적절성 지침을 만족하는지 검토한다. PRA에 대한 peer review와 규제 검토도 완전성과 불확실도 처리를 따지는 기회가 된다.
 
-PRA는 risk triplet의 세 질문, 즉 무엇이 잘못될 수 있는지, 얼마나 일어나기 쉬운지, 결말이 무엇인지를 다루면서 ES%%t:ES%% 정의, 빈도 추정, 결말 정량화에 걸친 여러 불확실도를 드러낸다. 이 불확실도 정보는 보호 전략 선택과 DID%%t:DID%% 적절성 평가의 입력이 된다. PRA 정보는 또 Structures, Systems, and Components%%t:SSC%%의 신뢰도 목표와 성능 요건을 정하는 입력이 되어 special treatment requirements 선정의 바탕이 된다. 원문은 이런 쓰임이 전통적 결정론적 방법을 대체하지 않고 보완한다고 정리한다.
+PRA는 risk triplet의 세 질문, 즉 무엇이 잘못될 수 있는지, 얼마나 일어나기 쉬운지, 결말이 무엇인지를 다루면서 ES%%t:ES%% 정의, 빈도 추정, 결말 정량화에 걸친 여러 불확실도를 드러낸다. 이 불확실도 정보는 보호 전략 선택과 심층방어%%t:DID%% 적절성 평가의 입력이 된다. PRA 정보는 또 Structures, Systems, and Components%%t:SSC%%의 신뢰도 목표와 성능 요건을 정하는 입력이 되어 special treatment requirements 선정의 바탕이 된다. 원문은 이런 쓰임이 전통적 결정론적 방법을 대체하지 않고 보완한다고 정리한다.
 
 ## 관련 문서
 - [[Non_LWR_PRA_Scope]]

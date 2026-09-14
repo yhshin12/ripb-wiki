@@ -45,3 +45,8 @@
 - 원문 간 모순 1건: SSC가 LBE를 F-C Target 안에 두는지 판정할 때 용어집은 평균값, §3.3.6은 95th percentile 상한. Risk_Importance_Measures와 LBE_Risk_Significance를 disputed로 둠.
 - 용어: 영어 유지 3건(FSF, POS, Event Sequence Family), 용어 아님 15건, 금지 표기 4건 추가. 미정 용어 0.
 - 검사: lint 오류 0·경고 0, 인용 검증 오류 0(노트 23개), 용어 충돌 0.
+
+## [2026-09-15] terms | 용어 반영: 심층방어, 선원항; H1 규칙 보완
+- DID를 영어 유지에서 확정(심층방어, 이후 표기 한국어)으로 바꾸고 노트 3개에 전파했다. 금지 표기는 '심층 방어'만 남겼다.
+- source term을 확정(선원항)으로 추가했다. Mechanistic Source Term(MST)은 영어 유지로 둔다.
+- 약어 없는 영어 유지 용어의 노트는 H1을 '# 한국어 서술 (English Title)'로 쓰고 용어 자체는 영어로 둔다(CLAUDE.md §4, 설계 §5.6).

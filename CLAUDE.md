@@ -38,7 +38,7 @@
 ## 4. 노트 규칙과 인용 형식 (설계 §5)
 
 - frontmatter: `type`(source | regulation | concept | natrium | synthesis | map | hsfr), `aliases`, `sources`(소스 키 목록), `status`(draft → checked → reviewed; disputed, deprecated), `verified`, `term`, `tags`, `terms_pending`(sync_terms가 유지).
-- 본문: `# 한국어 제목 (English Title)` → `> [!abstract] 요약`(한국어 2–3문장) → `## 원문 사실` → `## 해설` → `## 관련 문서`. 노트가 대표하는 용어(`term`)가 용어표에서 "영어 유지"이면 H1을 `# English Name (약어)`로 쓴다. 한국어 표기를 지어내지 않기 위해서다.
+- 본문: `# 한국어 제목 (English Title)` → `> [!abstract] 요약`(한국어 2–3문장) → `## 원문 사실` → `## 해설` → `## 관련 문서`. 노트가 대표하는 용어(`term`)가 용어표에서 "영어 유지"이면 H1을 `# English Name (약어)`로 쓴다. 약어가 없으면 `# 한국어 서술 (English Title)` 형식을 쓰되, 용어 자체는 영어로 둔다. 한국어 표기를 지어내지 않기 위해서다.
 - 원문 사실 절은 원문 문장(따옴표)과 표 값만 담고 항목마다 인용을 붙인다. 해설은 한국어로 쓰고 원문 사실 절만 근거로 삼는다.
 - 인용: `[KEY §3.7.3.1 p.45]`, `[KEY Table 5.2-1 p.12]`, `[KEY SFR-DC 4 p.64]`, `[KEY §3.2.1 p.16-17]`. `p.N`은 PDF 쪽(쪽 표지의 첫 번호). 쪽이 없는 원문은 `[KEY §제목경로]`.
 - 원문끼리 모순되면 둘 다 인용하고 `status: disputed`로 둔다.
