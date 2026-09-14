@@ -17,14 +17,11 @@ import re
 import shutil
 import sys
 
-import yaml
+from notes import NoteError as SourceError, read_note, write_note  # noqa: F401  (SourceError kept as the CLI name)
 
-VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCRIPTS = os.path.dirname(os.path.abspath(__file__))
+VAULT = os.path.dirname(SCRIPTS)
 FORBIDDEN = re.compile(r'[\\/:*?"<>|]')
-
-
-class SourceError(Exception):
-    pass
 
 
 def dirs(root=None):
@@ -39,7 +36,8 @@ def dirs(root=None):
 
 
 def load_docs():
-    sys.path.insert(0, os.path.join(VAULT, "scripts"))
+    if SCRIPTS not in sys.path:
+        sys.path.insert(0, SCRIPTS)
     from refclean.profiles import DOCS
     return DOCS
 
@@ -62,35 +60,15 @@ def rel(path):
     return os.path.relpath(path, VAULT).replace(os.sep, "/")
 
 
-def read_note(path):
-    with open(path, encoding="utf-8") as f:
-        text = f.read()
-    if not text.startswith("---\n"):
-        return {}, text
-    try:
-        _, fm_text, body = text.split("---\n", 2)
-    except ValueError as exc:
-        raise SourceError(f"{rel(path)}: bad frontmatter ({type(exc).__name__})") from exc
-    try:
-        fm = yaml.safe_load(fm_text)
-    except yaml.YAMLError as exc:
-        raise SourceError(f"{rel(path)}: bad frontmatter ({type(exc).__name__})") from exc
-    if fm is not None and not isinstance(fm, dict):
-        raise SourceError(f"{rel(path)}: bad frontmatter (not a mapping)")
-    return (fm or {}), body.lstrip("\n")
-
-
-def write_note(path, fm, body):
-    text = "---\n" + yaml.safe_dump(fm, allow_unicode=True, sort_keys=False) + "---\n\n" + body
-    if not text.endswith("\n"):
-        text += "\n"
-    assert "\r" not in text
-    with open(path, "w", encoding="utf-8", newline="\n") as f:
-        f.write(text)
-
-
 def card_path(key, root=None):
     return os.path.join(dirs(root)["wiki"], f"{key}.md")
+
+
+def _existing_card(key):
+    for r in (None, "internal"):
+        if os.path.exists(card_path(key, r)):
+            return card_path(key, r)
+    return None
 
 
 def _all_cards():
@@ -113,8 +91,9 @@ def _all_cards():
 
 def _new_card(key, title, pdf_path, root):
     path = card_path(key, root)
-    if os.path.exists(path):
-        raise SourceError(f"card exists: {rel(path)}")
+    taken = _existing_card(key)
+    if taken:
+        raise SourceError(f"card exists: {rel(taken)}")
     with open(os.path.join(VAULT, "templates", "source_card.md"), encoding="utf-8") as f:
         body = f.read().format(title=title, key=key, pdf=rel(pdf_path))
     fm = {"type": "source", "key": key, "title": title, "file": "", "pdf": rel(pdf_path),
@@ -131,17 +110,28 @@ def register(pdf, key, title, root=None):
     if not os.path.isfile(pdf):
         raise SourceError(f"not a file: {pdf}")
     digest = sha256(pdf)
+    for r in (None, "internal"):
+        raw = dirs(r)["raw"]
+        for fn in (sorted(os.listdir(raw)) if os.path.isdir(raw) else []):
+            p = os.path.join(raw, fn)
+            if fn.lower().endswith(".pdf") and os.path.isfile(p) and sha256(p) == digest:
+                raise SourceError(f"duplicate of {rel(p)}; left in inbox")
     for _, fm in _all_cards():
         if fm.get("sha256_pdf") == digest:
             raise SourceError(f"duplicate of {fm['key']} ({fm['pdf']}); left in inbox")
-    if os.path.exists(card_path(key, root)):
-        raise SourceError(f"card exists: {rel(card_path(key, root))}")
+    taken = _existing_card(key)
+    if taken:
+        raise SourceError(f"card exists: {rel(taken)}")
     dest = os.path.join(d["raw"], safe_stem(key, title) + ".pdf")
     if os.path.exists(dest):
         raise SourceError(f"target exists: {rel(dest)}")
     os.makedirs(d["raw"], exist_ok=True)
     shutil.move(pdf, dest)
-    path = _new_card(key, title, dest, root)
+    try:
+        path = _new_card(key, title, dest, root)
+    except Exception:
+        shutil.move(dest, pdf)
+        raise
     print(f"registered {key}: {rel(dest)}\n  card: {rel(path)}\n  next: convert_references.py"
           f"{' --root ' + root if root else ''} --only \"{os.path.basename(dest)[:20]}\" ; add DOCS['{key}'] ; "
           f"clean_references.py --only {key} --verify ; source.py sync {key}")
@@ -197,6 +187,8 @@ def sync(key, root=None):
             with open(vpath, encoding="utf-8") as f:
                 build["missing_pct"] = json.load(f).get("verify", {}).get("summary", {}).get("missing_pct")
         fm["build"] = build
+        if "<!-- sync:begin -->" not in body or "<!-- sync:end -->" not in body:
+            raise SourceError(f"{rel(path)}: sync markers missing")
         block = _sync_block(fmc)
         body = re.sub(r"<!-- sync:begin -->.*?<!-- sync:end -->",
                       lambda m: "<!-- sync:begin -->\n" + block + "\n<!-- sync:end -->", body, flags=re.S)
@@ -239,9 +231,14 @@ def status(root=None):
         units = fm.get("units", [])
         done = sum(1 for u in units if u.get("status") == "complete")
         cleaned = os.path.join(VAULT, fm["file"]) if fm.get("file") else ""
-        sha_ok = bool(cleaned) and os.path.isfile(cleaned) and sha256(cleaned) == fm.get("sha256_md")
-        rows.append((fm["key"], fm.get("ingest", "?"), f"{done}/{len(units)}", "yes" if fm.get("file") else "no",
-                     "ok" if sha_ok else ("-" if not cleaned else "CHANGED")))
+        if not cleaned:
+            sha = "-"
+        elif not os.path.isfile(cleaned):
+            sha = "MISSING"
+        else:
+            sha = "ok" if sha256(cleaned) == fm.get("sha256_md") else "CHANGED"
+        rows.append((fm["key"], fm.get("ingest", "?"), f"{done}/{len(units)}",
+                     "yes" if fm.get("file") else "no", sha))
     inbox = d["inbox"]
     waiting = [f for f in os.listdir(inbox) if f.lower().endswith(".pdf")] if os.path.isdir(inbox) else []
     print(f"{'key':<22}{'ingest':<12}{'units':<8}{'cleaned':<9}sha")

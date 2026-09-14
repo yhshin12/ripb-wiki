@@ -47,7 +47,7 @@ def test_register_refuses_duplicate_by_hash(vault):
     # same bytes except the trailing file name -> make them truly identical
     with open(b, "wb") as f, open(vault / "references" / "raw" / "DOC_A_T.pdf", "rb") as g:
         f.write(g.read())
-    with pytest.raises(source.SourceError, match="duplicate of DOC_A"):
+    with pytest.raises(source.SourceError, match="duplicate of references/raw/DOC_A_T.pdf"):
         source.register(str(b), key="DOC_B", title="T2", root=None)
     assert b.exists()
 
@@ -197,3 +197,74 @@ def test_sync_all_uses_each_cards_own_root(vault, monkeypatch):
     fm_int, _ = source.read_note(internal_card)
     assert fm_pub["file"] == "references/DOC_A_Some Title.md"
     assert fm_int["file"] == "internal/references/HSFR_X_Design Note.md"
+
+
+import sys
+
+
+def test_source_error_is_note_error():
+    import notes
+    assert source.SourceError is notes.NoteError
+
+
+def test_register_rolls_back_when_card_creation_fails(vault, monkeypatch):
+    pdf = make_pdf(vault / "inbox" / "a.pdf")
+
+    def boom(*a, **k):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(source, "_new_card", boom)
+    with pytest.raises(OSError):
+        source.register(str(pdf), key="DOC_A", title="T", root=None)
+    assert pdf.exists()
+    assert not (vault / "references" / "raw" / "DOC_A_T.pdf").exists()
+
+
+def test_load_docs_inserts_scripts_dir_once():
+    # other test modules may already have put scripts/ on sys.path; load_docs must not add another copy
+    before = sys.path.count(source.SCRIPTS)
+    source.load_docs()
+    source.load_docs()
+    assert sys.path.count(source.SCRIPTS) == max(before, 1)
+
+
+def test_register_refuses_key_used_in_other_tree(vault):
+    source.register(str(make_pdf(vault / "inbox" / "internal" / "n.pdf")), key="HSFR_X", title="Design Note",
+                    root="internal")
+    with pytest.raises(source.SourceError, match="card exists"):
+        source.register(str(make_pdf(vault / "inbox" / "p.pdf")), key="HSFR_X", title="Other", root=None)
+
+
+def test_sync_raises_when_markers_missing(vault):
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    card = source.adopt("DOC_A", root=None)
+    fm, body = source.read_note(card)
+    source.write_note(card, fm, body.replace("<!-- sync:end -->", ""))
+    _cleaned(vault, "DOC_A_Some Title")
+    with pytest.raises(source.SourceError, match="sync markers missing"):
+        source.sync("DOC_A", root=None)
+
+
+def test_write_note_rejects_cr(vault):
+    with pytest.raises(source.SourceError, match="CR"):
+        source.write_note(str(vault / "wiki" / "N.md"), {"type": "source"}, "a\r\nb\n")
+
+
+def test_status_reports_missing_cleaned_file(vault):
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    source.adopt("DOC_A", root=None)
+    cleaned = _cleaned(vault, "DOC_A_Some Title")
+    source.sync("DOC_A", root=None)
+    cleaned.unlink()
+    rows = source.status(root=None)
+    assert [r[4] for r in rows if r[0] == "DOC_A"] == ["MISSING"]
+
+
+def test_register_detects_duplicate_even_if_card_is_malformed(vault):
+    source.register(str(make_pdf(vault / "inbox" / "a.pdf", b"SAME")), key="DOC_A", title="T", root=None)
+    (vault / "wiki" / "DOC_A.md").write_text("---\ntype: source\n", encoding="utf-8")
+    second = vault / "inbox" / "b.pdf"
+    second.write_bytes((vault / "references" / "raw" / "DOC_A_T.pdf").read_bytes())
+    with pytest.raises(source.SourceError, match="duplicate of references/raw/DOC_A_T.pdf"):
+        source.register(str(second), key="DOC_B", title="T2", root=None)
+    assert second.exists()
