@@ -23,3 +23,9 @@
 - Phase 1 이관 항목 처리: source.py 보강 7건, generic 프로파일 2건, 설계 부록 B·§8.1 수정, refs marker(원문 의존 테스트 109건), internal .gitattributes.
 - 결함 1건 수정: 템플릿의 dict 형 frontmatter 값이 lint·index·audit·sync를 중단시키던 문제. 회귀 테스트 5건 추가.
 - 테스트 388건 통과. lint·인용 검증 오류 0, index 최신, 용어 동기화 변경 0.
+
+## [2026-09-15] ingest | NEI 18-04 §3.1, §3.2.1 (시범)
+- 새 노트 3개(Licensing_Basis_Event, LBE_Frequency_Categories, F_C_Target), 고친 노트 1개(소스 카드 NEI_18-04 단위 등록·완료).
+- 용어 11건을 영어 유지로 확정(LBE, AOO, DBE, BDBE, DBA, F-C Target, SSC, ES, QHO, EAB, TLST). 미정 용어 0.
+- 검사: lint 오류 0·경고 0, 인용 검증 오류 0, 용어 충돌 0, 조사 확인 5건 중 2건 수정. 작성 중 PostToolUse hook이 링크·용어 첫 등장·해설 수치 문제 8건을 잡아 고쳤다.
+- 시범에서 드러난 규칙 보완 2건은 meta/status.md 다음 작업에 적었다: 영어 유지 용어 노트의 H1 형식, 기관·규정 약어의 용어표 등록과 lint 경고 처리.

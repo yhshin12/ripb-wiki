@@ -1,3 +1,92 @@
 {
- "terms": {}
+ "terms": {
+  "AOO": {
+   "abbr": "AOO",
+   "english": "Anticipated Operational Occurrence",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "BDBE": {
+   "abbr": "BDBE",
+   "english": "Beyond Design Basis Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DBA": {
+   "abbr": "DBA",
+   "english": "Design Basis Accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DBE": {
+   "abbr": "DBE",
+   "english": "Design Basis Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "EAB": {
+   "abbr": "EAB",
+   "english": "Exclusion Area Boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "ES": {
+   "abbr": "ES",
+   "english": "Event Sequence",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "FC_TARGET": {
+   "abbr": "F-C Target",
+   "english": "Frequency-Consequence Target",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LBE": {
+   "abbr": "LBE",
+   "english": "Licensing Basis Event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "QHO": {
+   "abbr": "QHO",
+   "english": "Quantitative Health Objective",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "SSC": {
+   "abbr": "SSC",
+   "english": "Structures, Systems, and Components",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "TLST": {
+   "abbr": "TLST",
+   "english": "Top Level Safety Target",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  }
+ }
 }

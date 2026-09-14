@@ -5,7 +5,7 @@ phase: 3
 # 상태
 
 ## 현재 단계
-Phase 2 (도구) 완료. 다음은 Phase 3 시범 인제스트(NEI 18-04 §3). 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
+Phase 3 인제스트 진행 중. 시범 단위 NEI 18-04 §3.1·§3.2.1 완료(노트 3개, 2026-09-15). 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
 
 ## 존재하는 도구
 - 정제: `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (psar·nei1804·rg1232·generic 프로파일, 공용 `levels.py`)
@@ -27,9 +27,11 @@ Phase 2 (도구) 완료. 다음은 Phase 3 시범 인제스트(NEI 18-04 §3). �
 | ACRS_ML25293A458 | 있음 (2026-09-14 빌드) | 있음 (`wiki/ACRS_ML25293A458.md`) | pending |
 
 ## 다음 작업
-1. Phase 3 시범 인제스트 계획: NEI 18-04 §3 (LBE 정의, 빈도 구분, F-C Target). `wiki-ingest` skill과 접점 ①②, 용어 질문 형식, 검사 관문을 시범으로 점검하고 CLAUDE.md·skill을 보정한다.
-2. 본 인제스트: 설계 부록 A 순서. 원문 1건마다 `wiki-lint`, 2건마다 `wiki-audit`.
+1. 규칙 보완 2건 (2026-09-15 시범에서 드러남): 영어 유지 용어 노트의 H1 형식(`# English (약어)`)을 CLAUDE.md §4와 설계 §5.1에 추가. 기관·규정 약어(NRC, EPA, CFR 등)를 용어표에 `용어 아님`으로 등록하고, 그 상태의 약어는 lint L13 경고를 내지 않도록 고친다.
+2. NEI 18-04 §3 나머지 인제스트: §3.2.2 LBE 선정 절차(그림 3-2), §3.2.3 단계별 변화, §3.3 PRA의 역할.
+3. 본 인제스트: 설계 부록 A 순서. 원문 1건마다 `wiki-lint`, 2건마다 `wiki-audit`.
 
 ## 미해결
 - ACRS_ML25293A458: 전용 프로파일 `acrs_slides.py` (2026-09-15 결정: 슬라이드 제목 `##`, 글머리표 제목 승격 방지, 캡션 없는 그림 37개를 `[!figure] Slide N`으로 포함). Phase 3에서 인제스트 순서 10번 전에 구현.
 - `meta/metrics.md`는 첫 표본 재검증(`wiki-audit`) 때 만든다. 목표 오류율은 그때 사용자와 정한다(설계 §10).
+- 그림 처리 방침 미정: 정제본의 PNG를 노트에 embed할지, 문서별로 파일 이름이 겹치지 않는지 확인이 필요하다. NEI 18-04 Figure 3-1은 이번 단위에서 넣지 않았다.
