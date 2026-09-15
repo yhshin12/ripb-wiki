@@ -32,13 +32,15 @@ terms_pending: []
 ## 해설
 원문은 safety-significant의 뜻을 NRC 규제에서 쓰는 뜻과 같다고 밝히고, 위험 분석이든 다른 수단이든 미리 정한 기준을 넘는 안전 영향을 가진 대상을 가리키는 NRC 용어집 정의를 인용한다. 이 개념은 10 CFR 50.69의 SSC%%t:SSC%% safety significance 개념을 따르되, SR%%t:SR%%도 아니고 risk-significant도 아닌 SSC%%t:SSC%%가 심층방어%%t:DID%% 고려로 safety-significant가 될 가능성까지 다룬다. 이 절차에서 Safety-Significant SSC%%t:SS_SSC%%는 SR%%t:SR%%이나 NSRST%%t:NSRST%%로 분류된 SSC%%t:SSC%% 전체와 같고, Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 하나도 여기에 들지 않는다.
 
-범위는 PRA 모델 SSC%%t:SSC%%의 부분집합이다. PRA 모델은 발전소의 모든 SSC%%t:SSC%%를 포함하지 않지만 PRA 범위 안의 방사성 물질 원천에 대한 예방·완화 기능을 하는 SSC%%t:SSC%%는 모두 포함한다. Safety-Significant SSC%%t:SS_SSC%%는 그 안에서 risk-significant 기능을 수행하는 것과 심층방어%%t:DID%% 기준에 필요한 것으로 이루어진다.
+범위는 PRA 모델 SSC%%t:SSC%%의 부분집합이다. PRA 모델은 발전소의 모든 SSC%%t:SSC%%를 포함하지 않지만 PRA 범위 안의 방사성 물질 원천에 대한 예방하거나 완화하는 기능을 하는 SSC%%t:SSC%%는 모두 포함한다. Safety-Significant SSC%%t:SS_SSC%%는 그 안에서 risk-significant 기능을 수행하는 것과 심층방어%%t:DID%% 기준에 필요한 것으로 이루어진다.
 
-SR%%t:SR%% SSC%%t:SSC%%는 risk significance 기준을 만족할 수도 있고 아닐 수도 있다. 같은 Required Safety Function%%t:RSF%%을 수행하는 다른 설비가 충분히 중복되거나 다양하면 개별 SR%%t:SR%% SSC%%t:SSC%%는 risk-significant가 아닐 수 있다. 그래도 모든 SR%%t:SR%% SSC%%t:SSC%%는 방어 층에 기여하고 RSF%%t:RSF%%를 수행하는 주된 수단이므로, 기준 충족 여부와 무관하게 safety-significant로 분류된다.
+SR%%t:SR%% SSC%%t:SSC%%는 risk significance 기준을 만족할 수도 있고 아닐 수도 있다. 같은 Required Safety Function%%t:RSF%%을 수행하는 다른 설비가 충분히 중복되거나 다양하면 개별 SR%%t:SR%% SSC%%t:SSC%%는 risk-significant가 아닐 수 있다. 그래도 모든 SR%%t:SR%% SSC%%t:SSC%%는 Layers of Defense%%t:LAYERS_OF_DEFENSE%%에 기여하고 RSF%%t:RSF%%를 수행하는 주된 수단이므로, 기준 충족 여부와 무관하게 safety-significant로 분류된다.
 
 risk significance 기준을 넘지 않는 SSC%%t:SSC%%는 IDP%%t:IDP%%가 심층방어%%t:DID%% 적절성을 위해 어떤 형태의 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판단할 때에만 safety-significant로 분류된다. 원문은 그 이유를, 공학적 판단을 담은 심층방어%%t:DID%% 평가가 PRA에서 다 풀리지 않은 불확실도까지 고려하기 때문이라고 설명한다. 이렇게 분류된 SSC%%t:SSC%%에는 special treatment%%t:SPECIAL_TREATMENT%%를 적용해야 한다.
 
 ## 관련 문서
 - [[SSC_Safety_Classification]]
 - [[Risk_Significant_SSC]]
+- [[Special_Treatment]]
+- [[SSC_Reliability_And_Capability]]
 - [[NEI_18-04]]

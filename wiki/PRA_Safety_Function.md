@@ -24,7 +24,7 @@ terms_pending: []
 - "Safety functions common to all reactor technologies and designs; includes control heat generation, control heat removal and confinement of radioactive material" [NEI_18-04 §6 p.90]
 
 ## 해설
-PSF%%t:PSF%%는 PRA에 모델링된 SSC%%t:SSC%% 기능 가운데, 발전소 안 어느 방사성 물질 원천에서든 방출을 막거나 완화하는 기능 전부를 가리킨다. 방벽을 보호해 방벽에 대한 부담을 막거나 방벽의 효과를 높이는 기능도 여기에 들어간다.
+PSF%%t:PSF%%는 PRA에 모델링된 SSC%%t:SSC%% 기능 가운데, 발전소 안 어느 방사성 물질 원천에서든 방출을 막거나 완화하는 기능 전부를 가리킨다. barrier%%t:BARRIER%%를 보호해 barrier%%t:BARRIER%%에 대한 부담을 막거나 barrier%%t:BARRIER%%의 효과를 높이는 기능도 여기에 들어간다.
 
 PSF%%t:PSF%% 가운데 모든 DBE%%t:DBE%% 선량을 F-C Target%%t:FC_TARGET%% 안에 두고, Design Basis Accident%%t:DBA%% 선량이 보수적 가정에서 10 CFR 50.34 요건을 만족하도록 하는 데 필요한 기능이 RSF%%t:RSF%%로 분류된다. 설계자는 이 기능을 수행할 수 있는 SSC%%t:SSC%% 가운데서 Safety-Related%%t:SR%% SSC%%t:SSC%%를 고른다. 선정 절차는 [[Required_Safety_Function]]에 있다.
 

@@ -36,7 +36,7 @@ terms_pending: []
 | individual risk of latent cancer fatalities | 2E-08/plant-year | [NEI_18-04 §4.2.2 p.47] |
 
 ## 해설
-§4.2.2는 두 기준 중 하나라도 만족하면 SSC%%t:SSC%%를 risk-significant로 분류한다. 첫째는 그 SSC%%t:SSC%%의 예방·완화 기능이 모든 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 설계 목표에 필요한 경우이다. 여기서 LBE%%t:LBE%%가 F-C Target%%t:FC_TARGET%% 안에 있다는 것은 빈도와 선량의 95th percentile 상한 점이 그 안에 있다는 뜻이다. Safety-Related%%t:SR%%가 아닌 SSC%%t:SSC%%라도 Anticipated Operational Occurrence%%t:AOO%%나 결말이 큰 Design Basis Event%%t:DBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 기능을 하면 risk-significant이며 Non-Safety-Related with Special Treatment%%t:NSRST%%로 분류된다.
+§4.2.2는 두 기준 중 하나라도 만족하면 SSC%%t:SSC%%를 risk-significant로 분류한다. 첫째는 그 SSC%%t:SSC%%가 예방하거나 완화하는 기능이 모든 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 설계 목표에 필요한 경우이다. 여기서 LBE%%t:LBE%%가 F-C Target%%t:FC_TARGET%% 안에 있다는 것은 빈도와 선량의 95th percentile 상한 점이 그 안에 있다는 뜻이다. Safety-Related%%t:SR%%가 아닌 SSC%%t:SSC%%라도 Anticipated Operational Occurrence%%t:AOO%%나 결말이 큰 Design Basis Event%%t:DBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 기능을 하면 risk-significant이며 Non-Safety-Related with Special Treatment%%t:NSRST%%로 분류된다.
 
 둘째는 SSC%%t:SSC%%가 고장 난 LBE%%t:LBE%%들의 총 빈도가 cumulative risk target%%t:CUM_RISK_TARGET%% 한도의 1%를 넘는 경우이며, 평균 추정값을 쓴다. 절대값으로는 100 mrem 초과 빈도가 1E-02/plant-year, 조기 사망 개인 위험이 5E-09/plant-year, 잠복 암 사망 개인 위험이 2E-08/plant-year를 넘으면 기여가 크다고 본다. 이 기준은 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 기능이 없는 SSC%%t:SSC%%에도 적용된다.
 

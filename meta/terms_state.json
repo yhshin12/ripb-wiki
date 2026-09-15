@@ -24,6 +24,16 @@
    "later": "",
    "state": "용어 아님"
   },
+  "BARRIER": {
+   "abbr": "",
+   "english": "barrier",
+   "forbidden": [
+    "방벽"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "BASIC_EVENT": {
    "abbr": "",
    "english": "basic event",
@@ -63,6 +73,26 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "CLIFF_EDGE_EFFECT": {
+   "abbr": "",
+   "english": "cliff edge effects",
+   "forbidden": [
+    "절벽 효과"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "COMPENSATORY_ACTION": {
+   "abbr": "",
+   "english": "compensatory action",
+   "forbidden": [
+    "보상 조치"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "CR": {
    "abbr": "CR",
@@ -105,6 +135,16 @@
    "forbidden": [],
    "korean": "",
    "later": "약어",
+   "state": "영어 유지"
+  },
+  "DESIGN_MARGIN": {
+   "abbr": "",
+   "english": "design margin",
+   "forbidden": [
+    "설계 여유"
+   ],
+   "korean": "",
+   "later": "",
    "state": "영어 유지"
   },
   "DID": {
@@ -209,6 +249,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "IDPP": {
+   "abbr": "IDPP",
+   "english": "Integrated Decision-Making Process Panel",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "IE": {
    "abbr": "IE",
    "english": "Initiating Event",
@@ -217,12 +265,42 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "LAYERS_OF_DEFENSE": {
+   "abbr": "",
+   "english": "Layers of Defense",
+   "forbidden": [
+    "방어 층",
+    "방어층",
+    "방어 계층"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "LBE": {
    "abbr": "LBE",
    "english": "Licensing Basis Event",
    "forbidden": [],
    "korean": "",
    "later": "약어",
+   "state": "영어 유지"
+  },
+  "LER": {
+   "abbr": "",
+   "english": "Licensee Event Reports",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "LEVELS_OF_DEFENSE": {
+   "abbr": "",
+   "english": "levels of defense",
+   "forbidden": [
+    "방어 수준"
+   ],
+   "korean": "",
+   "later": "",
    "state": "영어 유지"
   },
   "LMP": {
@@ -241,9 +319,35 @@
    "later": "",
    "state": "용어 아님"
   },
+  "MHTGR": {
+   "abbr": "MHTGR",
+   "english": "MHTGR",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "MINIMAL_CUT_SET": {
    "abbr": "",
    "english": "minimal cut set",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "MITIGATION_FUNCTION": {
+   "abbr": "",
+   "english": "Mitigation Function",
+   "forbidden": [
+    "완화 기능"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "MR": {
+   "abbr": "MR",
+   "english": "Maintenance Rule (10 CFR 50.65)",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -297,6 +401,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PB": {
+   "abbr": "PB",
+   "english": "Performance-Based",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "PD": {
    "abbr": "PD",
    "english": "Partial Derivative",
@@ -312,6 +424,24 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "PIRT": {
+   "abbr": "PIRT",
+   "english": "phenomena identification ranking table",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "PLANT_CAPABILITY_DID": {
+   "abbr": "",
+   "english": "Plant Capability Defense-in-Depth",
+   "forbidden": [
+    "발전소 능력 심층방어"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "POS": {
    "abbr": "POS",
@@ -329,6 +459,36 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PREVENTION_FUNCTION": {
+   "abbr": "",
+   "english": "Prevention Function",
+   "forbidden": [
+    "예방 기능"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "PROGRAMMATIC_DID": {
+   "abbr": "",
+   "english": "Programmatic Defense-in-Depth",
+   "forbidden": [
+    "프로그램 심층방어"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "PROTECTIVE_MEASURE": {
+   "abbr": "",
+   "english": "protective measure",
+   "forbidden": [
+    "방호 수단"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "PSF": {
    "abbr": "PSF",
    "english": "PRA Safety Function",
@@ -336,6 +496,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "QA": {
+   "abbr": "QA",
+   "english": "Quality Assurance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "QHO": {
    "abbr": "QHO",
@@ -353,6 +521,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "RAP": {
+   "abbr": "RAP",
+   "english": "Reliability Assurance Program",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "RAW": {
    "abbr": "RAW",
    "english": "Risk Achievement Worth",
@@ -369,9 +545,49 @@
    "later": "",
    "state": "용어 아님"
   },
+  "REL_AVAIL_MISSION": {
+   "abbr": "",
+   "english": "reliability/availability mission",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "RFDC": {
+   "abbr": "RFDC",
+   "english": "Required Functional Design Criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RI": {
+   "abbr": "RI",
+   "english": "Risk-Informed",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "RIPB": {
    "abbr": "RIPB",
    "english": "risk-informed and performance-based",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RIPB_DM": {
+   "abbr": "RIPB-DM",
+   "english": "Risk-Informed and Performance-Based Integrated Decision-Making",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RISC": {
+   "abbr": "RISC",
+   "english": "RISC-1, RISC-2",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -384,6 +600,16 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "RISK_MARGIN": {
+   "abbr": "",
+   "english": "risk margin",
+   "forbidden": [
+    "위험 여유"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "RISK_TRIPLET": {
    "abbr": "",
@@ -436,6 +662,43 @@
    "later": "",
    "state": "영어 유지"
   },
+  "SAFETY_DESIGN_APPROACH": {
+   "abbr": "",
+   "english": "Safety Design Approach",
+   "forbidden": [
+    "안전 설계 접근"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "SAFETY_MARGIN": {
+   "abbr": "",
+   "english": "safety margin",
+   "forbidden": [
+    "안전 여유",
+    "안전여유"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "SAMG": {
+   "abbr": "",
+   "english": "Severe Accident Management Guidelines",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "SEISMIC_II_I": {
+   "abbr": "",
+   "english": "Seismic II/I",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "SOURCE_TERM": {
    "abbr": "",
    "english": "source term",
@@ -463,6 +726,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "SRDC": {
+   "abbr": "SRDC",
+   "english": "Safety-Related Design Criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "SRP": {
    "abbr": "SRP",
    "english": "Standard Review Plan (NUREG-0800)",
@@ -479,6 +750,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "SSE": {
+   "abbr": "",
+   "english": "Safe Shutdown Earthquake",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "SS_SSC": {
    "abbr": "",
    "english": "Safety-Significant SSC",
@@ -487,6 +766,22 @@
    ],
    "korean": "",
    "later": "",
+   "state": "영어 유지"
+  },
+  "TECH_SPECS": {
+   "abbr": "",
+   "english": "Technical Specifications",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "TI_RIPB": {
+   "abbr": "TI-RIPB",
+   "english": "technology-inclusive, risk-informed, and performance-based",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
    "state": "영어 유지"
   },
   "TLST": {

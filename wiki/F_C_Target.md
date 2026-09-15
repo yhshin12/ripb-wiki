@@ -45,7 +45,7 @@ F-C Target%%t:FC_TARGET%%은 빈도축과 선량축을 가진 도표 위의 한 
 
 원문이 거듭 강조하는 점은 이 선이 합격과 불합격을 가르지 않는다는 것이다. 이 선은 사건과 Structures, Systems, and Components%%t:SSC%%, 절차적 관리 수단을 민감도와 여유의 관점에서 보는 기준이다. 구 wiki가 "선 위는 수용 불가"로 적었던 서술은 원문과 어긋난다.
 
-전체 구간에서 빈도가 낮아질수록 위험(빈도와 결말의 곱)이 커지지 않도록 선이 잡혀 있다. 빈도가 5E-07/plant-year보다 낮은 Event Sequence%%t:ES%%도 버리지 않고 남겨 절벽 효과가 없는지 확인하는 데 쓴다. 개별 사건에 대한 이 기준과 별도로, 100 mrem을 넘는 빈도의 합이 연 1을 넘지 않도록 하는 cumulative risk target%%t:CUM_RISK_TARGET%%이 있다.
+전체 구간에서 빈도가 낮아질수록 위험(빈도와 결말의 곱)이 커지지 않도록 선이 잡혀 있다. 빈도가 5E-07/plant-year보다 낮은 Event Sequence%%t:ES%%도 버리지 않고 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없는지 확인하는 데 쓴다. 개별 사건에 대한 이 기준과 별도로, 100 mrem을 넘는 빈도의 합이 연 1을 넘지 않도록 하는 cumulative risk target%%t:CUM_RISK_TARGET%%이 있다.
 
 ## 관련 문서
 - [[Licensing_Basis_Event]]

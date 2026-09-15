@@ -77,6 +77,39 @@ terms_pending: []
 | LWR | light water reactor | LWR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 표지 없이 그대로 쓴다 |
 | SRP | Standard Review Plan (NUREG-0800) | SRP |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 문서 이름, 표지 없이 그대로 쓴다 |
 | PAG | Protective Action Guide | PAG |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 표지 없이 그대로 쓴다 |
+| RFDC | Required Functional Design Criteria | RFDC |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SRDC | Safety-Related Design Criteria | SRDC |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PREVENTION_FUNCTION | Prevention Function |  |  |  | 예방 기능 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| MITIGATION_FUNCTION | Mitigation Function |  |  |  | 완화 기능 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LAYERS_OF_DEFENSE | Layers of Defense |  |  |  | 방어 층; 방어층; 방어 계층 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| BARRIER | barrier |  |  |  | 방벽 | [NEI_18-04 §4.4.4 p.50] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SAFETY_MARGIN | safety margin |  |  |  | 안전 여유; 안전여유 | [NEI_18-04 §4.4.5 p.55] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RAP | Reliability Assurance Program | RAP |  | 약어 |  | [NEI_18-04 §4.4.5 p.56] | 영어 유지 | 2026-09-15 사용자 결정 |
+| IDPP | Integrated Decision-Making Process Panel | IDPP |  | 약어 |  | [NEI_18-04 Table 4-1 p.52] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RISC | RISC-1, RISC-2 | RISC |  | 약어 |  | [NEI_18-04 Table 4-1 p.52] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SSE | Safe Shutdown Earthquake |  |  |  |  | [NEI_18-04 Table 4-1 p.52] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SEISMIC_II_I | Seismic II/I |  |  |  |  | [NEI_18-04 Table 4-1 p.52] | 영어 유지 | 2026-09-15 사용자 결정 |
+| MR | Maintenance Rule (10 CFR 50.65) | MR |  |  |  | [NEI_18-04 Table 4-1 p.52] | 용어 아님 | 규정 이름, 2026-09-15 사용자 결정 |
+| LER | Licensee Event Reports |  |  |  |  | [NEI_18-04 Table 4-1 p.52] | 용어 아님 | 2026-09-15 사용자 결정 |
+| QA | Quality Assurance | QA |  |  |  | [NEI_18-04 Table 4-1 p.52] | 용어 아님 | 2026-09-15 사용자 결정 |
+| MHTGR | MHTGR | MHTGR |  |  |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 용어 아님 | 원자로 설계 이름, 2026-09-15 사용자 결정 |
+| PLANT_CAPABILITY_DID | Plant Capability Defense-in-Depth |  |  |  | 발전소 능력 심층방어 | [NEI_18-04 §5.2 p.58] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PROGRAMMATIC_DID | Programmatic Defense-in-Depth |  |  |  | 프로그램 심층방어 | [NEI_18-04 §5.2 p.58] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RIPB_DM | Risk-Informed and Performance-Based Integrated Decision-Making | RIPB-DM |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| TI_RIPB | technology-inclusive, risk-informed, and performance-based | TI-RIPB |  | 약어 |  | [NEI_18-04 §LIST OF ACRONYMS p.8] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PB | Performance-Based | PB |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RI | Risk-Informed | RI |  | 약어 |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SAFETY_DESIGN_APPROACH | Safety Design Approach |  |  |  | 안전 설계 접근 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LEVELS_OF_DEFENSE | levels of defense |  |  |  | 방어 수준 | [NEI_18-04 §5.1 p.57] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PROTECTIVE_MEASURE | protective measure |  |  |  | 방호 수단 | [NEI_18-04 Figure 5-1 p.57] | 영어 유지 | 2026-09-15 사용자 결정 |
+| COMPENSATORY_ACTION | compensatory action |  |  |  | 보상 조치 | [NEI_18-04 §5.5 p.68] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RISK_MARGIN | risk margin |  |  |  | 위험 여유 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DESIGN_MARGIN | design margin |  |  |  | 설계 여유 | [NEI_18-04 §5.2 p.58] | 영어 유지 | 2026-09-15 사용자 결정 |
+| REL_AVAIL_MISSION | reliability/availability mission |  |  |  |  | [NEI_18-04 §5.7 p.71] | 영어 유지 | 2026-09-15 사용자 결정 |
+| CLIFF_EDGE_EFFECT | cliff edge effects |  |  |  | 절벽 효과 | [NEI_18-04 §5.7.2 p.74] | 영어 유지 | 2026-09-15 사용자 결정 |
+| TECH_SPECS | Technical Specifications |  |  |  |  | [NEI_18-04 Table 5-7 p.81] | 용어 아님 | 2026-09-15 사용자 결정 |
+| SAMG | Severe Accident Management Guidelines |  |  |  |  | [NEI_18-04 Table 5-7 p.81] | 용어 아님 | 2026-09-15 사용자 결정 |
+| PIRT | phenomena identification ranking table | PIRT |  | 약어 |  | [NEI_18-04 Table 5-6 p.77] | 영어 유지 | 2026-09-15 사용자 결정. 원문에 풀이 없음, 풀이는 사용자 제공 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

@@ -56,3 +56,12 @@
 - 원문 간 모순 이어짐: §4.2.2도 95th percentile 상한을 써 용어집(평균값)과 어긋난다. Risk_Significant_SSC를 disputed로 둠(disputed 노트 3개).
 - 용어: 영어 유지 5건(NSRST, NST, Safety-Significant SSC, special treatment, IDP), 용어 아님 3건(reliability target, capability target, NEI), 금지 표기 4개 추가. 미정 용어 0.
 - 검사: lint 오류 0·경고 0, 인용 검증 오류 0(노트 26개), 용어 충돌 0. 다음 세션 인계 메모를 meta/status.md에 적었다.
+
+## [2026-09-15] ingest | NEI 18-04 §4.4, §5
+- 새 노트 12 (§4.4: SSC 설계 요건, RFDC, special treatment, 신뢰도·능력·safety margin; §5: DID 적절성 체계, 통합 절차, Plant Capability DID, LBE와 Layers of Defense 대조, risk margin, Programmatic DID, IDP, DID baseline), 고친 노트 12 (금지 표기 제거 11곳, 링크 추가)
+- 검사: lint 오류 0·경고 0, verify_quotes 오류 0, sync_terms 충돌 0, 서브에이전트 원문 대조 뒤 한정 표현·귀속 수정
+- 미정 용어 0; §6 용어집 확인과 finish 남음
+
+## [2026-09-15] terms | 용어 반영: §4.4·§5 용어
+- 영어 유지 26 (RFDC, SRDC, Prevention/Mitigation Function, Layers of Defense, barrier, safety margin, RAP, IDPP, RISC, SSE, Seismic II/I, Plant Capability DID, Programmatic DID, RIPB-DM, TI-RIPB, PB, RI, Safety Design Approach, levels of defense, protective measure, compensatory action, risk margin, design margin, reliability/availability mission, cliff edge effects, PIRT)
+- 용어 아님 6 (MR, LER, QA, MHTGR, Technical Specifications, SAMG)

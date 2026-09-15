@@ -33,7 +33,7 @@ terms_pending: []
 ## 해설
 LBE%%t:LBE%%는 개별 ES%%t:ES%% 하나가 아니라, 발전소의 safety function에 비슷한 부담을 주는 ES%%t:ES%%를 묶은 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 정의된다. 한 군에는 ES%%t:ES%%가 하나일 수도 여럿일 수도 있다. 원문은 이렇게 묶는 목적을 수많은 개별 사건을 다룰 수 있는 수로 줄여 LBE%%t:LBE%% 선정을 쉽게 하는 데 둔다.
 
-원문이 드는 묶음 기준은 Initiating Event 시점의 POS%%t:POS%%, IE%%t:IE%%에 대한 발전소 응답과 그 과정에서 방벽과 PRA Safety Function%%t:PSF%%을 지원하는 설비가 받는 부담, end state, 영향받는 모듈과 방사성 물질 원천의 조합, 방출이 있을 때의 MST%%t:MST%%이다. 용어집 정의는 hazard group과 방벽별 응답까지 들어 조금 더 넓게 적으며, 방출이 있는 군은 release category 하나에만 대응한다고 명시한다.
+원문이 드는 묶음 기준은 Initiating Event 시점의 POS%%t:POS%%, IE%%t:IE%%에 대한 발전소 응답과 그 과정에서 barrier%%t:BARRIER%%와 PRA Safety Function%%t:PSF%%을 지원하는 설비가 받는 부담, end state, 영향받는 모듈과 방사성 물질 원천의 조합, 방출이 있을 때의 MST%%t:MST%%이다. 용어집 정의는 hazard group과 radionuclide transport barrier%%t:BARRIER%%별 응답까지 들어 조금 더 넓게 적으며, 방출이 있는 군은 release category 하나에만 대응한다고 명시한다.
 
 방출이 있는 경우 같은 군 안의 ES%%t:ES%%는 MST%%t:MST%%와 부지 밖 결말이 같거나 비슷하다. 원문은 많은 LBE%%t:LBE%%가 방출을 수반하지 않으며, 방출을 막는 발전소 능력을 이해하는 것이 설계에 되돌려 줄 매우 중요한 통찰이라고 강조한다.
 
