@@ -114,6 +114,49 @@ terms_pending: []
 | END_STATE | End State |  |  |  | 종료 상태; 최종 상태 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | PRA_TECH_ADEQUACY | PRA Technical Adequacy |  |  |  | 기술적 적정성 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | PIRT | phenomena identification ranking table | PIRT |  | 약어 |  | [NEI_18-04 Table 5-6 p.77] | 영어 유지 | 2026-09-15 사용자 결정. 원문에 풀이 없음, 풀이는 사용자 제공 |
+| GDC | general design criteria | GDC |  | 약어 |  | [RG_1.232 §A Applicable Regulations p.1] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PDC | principal design criteria | PDC |  | 약어 |  | [RG_1.232 §B Role of the GDC in the Regulatory Framework p.6] | 영어 유지 | 2026-09-15 사용자 결정 |
+| ARDC | advanced reactor design criteria | ARDC |  |  |  | [RG_1.232 §B DOE-NRC Initiative Phase 1 p.8] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SFR_DC | sodium-cooled fast reactor design criteria | SFR-DC |  |  |  | [RG_1.232 App.B intro p.62] | 용어 아님 | 2026-09-16 사용자 결정 |
+| MHTGR_DC | MHTGR design criteria | MHTGR-DC |  |  |  | [RG_1.232 §B DOE-NRC Initiative Phase 1 p.8] | 용어 아님 | 2026-09-16 사용자 결정 |
+| NON_LWR_DC | non-LWR design criteria |  |  |  |  | [RG_1.232 §C Intended Use p.11] | 용어 아님 | 2026-09-16 사용자 결정 |
+| NON_LWR | non-light-water reactor | non-LWR | 비경수형원전 | 한국어 |  | [RG_1.232 §A Purpose p.1] | 확정 | 2026-09-16 사용자 결정 |
+| SFR | sodium-cooled fast reactor | SFR |  | 약어 |  | [RG_1.232 §A Purpose p.1] | 영어 유지 | 2026-09-15 사용자 결정 |
+| IMPORTANT_TO_SAFETY | important to safety |  |  |  |  | [RG_1.232 §B Role of the GDC in the Regulatory Framework p.6] | 용어 아님 | 2026-09-16 사용자 결정 |
+| CORE_DISRUPTIVE_ACCIDENT | core disruptive accident |  |  |  |  | [RG_1.232 §B Key Assumptions p.9] | 용어 아님 | 2026-09-16 사용자 결정 |
+| PRIMARY_COOLANT_BOUNDARY | primary coolant boundary |  |  |  |  | [RG_1.232 SFR-DC 14 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
+| RCPB | reactor coolant pressure boundary | RCPB |  |  |  | [RG_1.232 SFR-DC 14 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
+| REACTOR_COOLANT_BOUNDARY | reactor coolant boundary |  |  |  |  | [RG_1.232 ARDC 14 p.33] | 용어 아님 | 2026-09-16 사용자 결정 |
+| COVER_GAS | cover gas |  | 커버가스 | 한국어 |  | [RG_1.232 SFR-DC 14 p.66] | 확정 | 2026-09-15 사용자 결정 |
+| ICS | intermediate coolant system | ICS |  |  |  | [RG_1.232 SFR-DC 70 p.96] | 용어 아님 | 2026-09-16 사용자 결정 |
+| INTERMEDIATE_COOLANT_BOUNDARY | intermediate coolant boundary |  |  |  |  | [RG_1.232 Table 1 p.13-20] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SAFDL | specified acceptable fuel design limits | SAFDL |  | 약어 |  | [RG_1.232 MHTGR-DC 10 p.108] | 영어 유지 | 약어 SAFDL: 2026-09-15, 영어 유지: 2026-09-16 사용자 결정 |
+| SARRDL | specified acceptable system radionuclide release design limit | SARRDL |  | 약어 |  | [RG_1.232 MHTGR-DC 10 p.108] | 영어 유지 | 2026-09-15 사용자 결정 |
+| INDEPENDENT_AND_DIVERSE | independent and diverse |  |  |  |  | [RG_1.232 SFR-DC 26 p.76] | 용어 아님 | 2026-09-16 사용자 결정 |
+| FOLLOWING_POSTULATED_ACCIDENT | following a postulated accident |  |  |  |  | [RG_1.232 SFR-DC 26 p.77] | 용어 아님 | 2026-09-16 사용자 결정 |
+| LMR | liquid-metal reactor | LMR |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LOCA | loss of coolant accident | LOCA |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| ECCS | emergency core cooling system | ECCS |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DRACS | direct reactor auxiliary cooling system | DRACS |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LPZ | low-population zone | LPZ |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| FUNCTIONAL_CONTAINMENT | functional containment |  |  |  |  | [RG_1.232 MHTGR-DC 16 p.111] | 용어 아님 | 2026-09-16 사용자 결정 |
+| HTGR | high-temperature gas-cooled reactor | HTGR |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| TRISO | tristructural isotropic fuel | TRISO |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RCCS | reactor cavity cooling system | RCCS |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| LFR | lead fast reactor | LFR |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| FHR | fluoride high-temperature reactor | FHR |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| MSR | molten salt reactor | MSR |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DOE | U.S. Department of Energy | DOE |  | 약어 |  | [RG_1.232 §ACRONYMS/ABBREVIATIONS p.23] | 영어 유지 | 2026-09-15 사용자 결정 |
+| RG | regulatory guide | RG |  | 약어 |  | [RG_1.232 §A Purpose p.1] | 영어 유지 | 2026-09-15 사용자 결정 |
+| DL | Defense Line | DL |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-09-15 사용자 결정 |
+| OL | operating license | OL |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-09-15 사용자 결정 |
+| CP | construction permit | CP |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-09-15 사용자 결정 |
+| SINGLE_FAILURE_CRITERION | single-failure criterion |  |  |  |  | [RG_1.233 §C.1.d p.15] | 용어 아님 | 2026-09-16 사용자 결정 |
+| EPZ | emergency planning zone | EPZ |  | 약어 |  | [RG_1.233 §C.4 Emergency Preparedness p.22] | 영어 유지 | 약어 EPZ: 2026-09-15, 영어 유지: 2026-09-16 사용자 결정 |
+| OQE | other quantified events | OQE |  | 약어 |  | [PSAR_ch04 §4.1 p.4] | 영어 유지 | 2026-09-16 사용자 결정 |
+| PIE | postulated initiating event | PIE |  | 약어 |  | [PSAR_ch04 §4.2.1 p.7] | 영어 유지 | 2026-09-16 사용자 결정 |
+| CCF | common cause failure | CCF |  | 약어 |  | [PSAR_ch04 §4.2.1 p.7] | 영어 유지 | 2026-09-16 사용자 결정 |
+| DBHL | design-basis hazard level | DBHL |  | 약어 |  | [PSAR_ch06 §6.1 p.4] | 영어 유지 | 2026-09-16 사용자 결정; DBEHL과 다른 용어 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

@@ -74,3 +74,8 @@
 
 ## [2026-09-15] terms | 용어 반영: 용어집 용어
 - 영어 유지 4 (Plant, Multi-Reactor Module Plant, End State, PRA Technical Adequacy)
+
+## [2026-09-16] terms | 용어 반영: 2026-09-15–16 결정
+- 영어 유지: RG 1.232·RG 1.233·PSAR 약어(GDC, PDC, SFR, SARRDL, LOCA, DL, OL, CP 등), OQE, PIE, CCF, DBHL(DBEHL과 별개), SAFDL, EPZ
+- 확정 한국어: cover gas=커버가스, non-LWR=비경수형원전
+- 용어 아님: ARDC, SFR-DC, MHTGR-DC, primary coolant boundary, functional containment, independent and diverse 등 15

@@ -16,6 +16,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "ARDC": {
+   "abbr": "ARDC",
+   "english": "advanced reactor design criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "ASME": {
    "abbr": "ASME",
    "english": "ASME (ASME/ANS RA-S-1.4)",
@@ -66,6 +74,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "CCF": {
+   "abbr": "CCF",
+   "english": "common cause failure",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "CFR": {
    "abbr": "CFR",
    "english": "Code of Federal Regulations",
@@ -92,6 +108,30 @@
    ],
    "korean": "",
    "later": "",
+   "state": "영어 유지"
+  },
+  "CORE_DISRUPTIVE_ACCIDENT": {
+   "abbr": "",
+   "english": "core disruptive accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "COVER_GAS": {
+   "abbr": "",
+   "english": "cover gas",
+   "forbidden": [],
+   "korean": "커버가스",
+   "later": "한국어",
+   "state": "확정"
+  },
+  "CP": {
+   "abbr": "CP",
+   "english": "construction permit",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
    "state": "영어 유지"
   },
   "CR": {
@@ -137,6 +177,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "DBHL": {
+   "abbr": "DBHL",
+   "english": "design-basis hazard level",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "DESIGN_MARGIN": {
    "abbr": "",
    "english": "design margin",
@@ -157,9 +205,41 @@
    "later": "한국어",
    "state": "확정"
   },
+  "DL": {
+   "abbr": "DL",
+   "english": "Defense Line",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DOE": {
+   "abbr": "DOE",
+   "english": "U.S. Department of Energy",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "DRACS": {
+   "abbr": "DRACS",
+   "english": "direct reactor auxiliary cooling system",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "EAB": {
    "abbr": "EAB",
    "english": "Exclusion Area Boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "ECCS": {
+   "abbr": "ECCS",
+   "english": "emergency core cooling system",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -183,6 +263,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "EPZ": {
+   "abbr": "EPZ",
+   "english": "emergency planning zone",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "ES": {
    "abbr": "ES",
@@ -210,9 +298,25 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "FHR": {
+   "abbr": "FHR",
+   "english": "fluoride high-temperature reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "FMEA": {
    "abbr": "FMEA",
    "english": "failure modes and effects analysis",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "FOLLOWING_POSTULATED_ACCIDENT": {
+   "abbr": "",
+   "english": "following a postulated accident",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -226,6 +330,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "FUNCTIONAL_CONTAINMENT": {
+   "abbr": "",
+   "english": "functional containment",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "FV": {
    "abbr": "FV",
    "english": "Fussell-Vesely",
@@ -233,6 +345,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "GDC": {
+   "abbr": "GDC",
+   "english": "general design criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "HAZOP": {
    "abbr": "HAZOP",
@@ -242,9 +362,25 @@
    "later": "",
    "state": "용어 아님"
   },
+  "HTGR": {
+   "abbr": "HTGR",
+   "english": "high-temperature gas-cooled reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "IAEA": {
    "abbr": "IAEA",
    "english": "International Atomic Energy Agency",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "ICS": {
+   "abbr": "ICS",
+   "english": "intermediate coolant system",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -275,6 +411,30 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "IMPORTANT_TO_SAFETY": {
+   "abbr": "",
+   "english": "important to safety",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "INDEPENDENT_AND_DIVERSE": {
+   "abbr": "",
+   "english": "independent and diverse",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "INTERMEDIATE_COOLANT_BOUNDARY": {
+   "abbr": "",
+   "english": "intermediate coolant boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "LAYERS_OF_DEFENSE": {
    "abbr": "",
@@ -314,9 +474,41 @@
    "later": "",
    "state": "영어 유지"
   },
+  "LFR": {
+   "abbr": "LFR",
+   "english": "lead fast reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "LMP": {
    "abbr": "LMP",
    "english": "Licensing Modernization Project",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LMR": {
+   "abbr": "LMR",
+   "english": "liquid-metal reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LOCA": {
+   "abbr": "LOCA",
+   "english": "loss of coolant accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LPZ": {
+   "abbr": "LPZ",
+   "english": "low-population zone",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -333,6 +525,14 @@
   "MHTGR": {
    "abbr": "MHTGR",
    "english": "MHTGR",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "MHTGR_DC": {
+   "abbr": "MHTGR-DC",
+   "english": "MHTGR design criteria",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -364,6 +564,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "MSR": {
+   "abbr": "MSR",
+   "english": "molten salt reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "MST": {
    "abbr": "MST",
    "english": "Mechanistic Source Term",
@@ -383,6 +591,22 @@
   "NEI": {
    "abbr": "NEI",
    "english": "Nuclear Energy Institute",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "NON_LWR": {
+   "abbr": "non-LWR",
+   "english": "non-light-water reactor",
+   "forbidden": [],
+   "korean": "비경수형원전",
+   "later": "한국어",
+   "state": "확정"
+  },
+  "NON_LWR_DC": {
+   "abbr": "",
+   "english": "non-LWR design criteria",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -412,6 +636,22 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "OL": {
+   "abbr": "OL",
+   "english": "operating license",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "OQE": {
+   "abbr": "OQE",
+   "english": "other quantified events",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "PAG": {
    "abbr": "PAG",
    "english": "Protective Action Guide",
@@ -436,6 +676,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "PDC": {
+   "abbr": "PDC",
+   "english": "principal design criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "PHA": {
    "abbr": "PHA",
    "english": "process hazard analysis",
@@ -443,6 +691,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "PIE": {
+   "abbr": "PIE",
+   "english": "postulated initiating event",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "PIRT": {
    "abbr": "PIRT",
@@ -505,6 +761,14 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "PRIMARY_COOLANT_BOUNDARY": {
+   "abbr": "",
+   "english": "primary coolant boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "PROGRAMMATIC_DID": {
    "abbr": "",
@@ -574,6 +838,30 @@
    "later": "",
    "state": "용어 아님"
   },
+  "RCCS": {
+   "abbr": "RCCS",
+   "english": "reactor cavity cooling system",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RCPB": {
+   "abbr": "RCPB",
+   "english": "reactor coolant pressure boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "REACTOR_COOLANT_BOUNDARY": {
+   "abbr": "",
+   "english": "reactor coolant boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "RELIABILITY_TARGET": {
    "abbr": "",
    "english": "reliability target",
@@ -593,6 +881,14 @@
   "RFDC": {
    "abbr": "RFDC",
    "english": "Required Functional Design Criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "RG": {
+   "abbr": "RG",
+   "english": "regulatory guide",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -699,6 +995,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "SAFDL": {
+   "abbr": "SAFDL",
+   "english": "specified acceptable fuel design limits",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "SAFETY_DESIGN_APPROACH": {
    "abbr": "",
    "english": "Safety Design Approach",
@@ -728,6 +1032,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "SARRDL": {
+   "abbr": "SARRDL",
+   "english": "specified acceptable system radionuclide release design limit",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "SEISMIC_II_I": {
    "abbr": "",
    "english": "Seismic II/I",
@@ -735,6 +1047,30 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "SFR": {
+   "abbr": "SFR",
+   "english": "sodium-cooled fast reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "SFR_DC": {
+   "abbr": "SFR-DC",
+   "english": "sodium-cooled fast reactor design criteria",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "SINGLE_FAILURE_CRITERION": {
+   "abbr": "",
+   "english": "single-failure criterion",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "SOURCE_TERM": {
    "abbr": "",
@@ -824,6 +1160,14 @@
   "TLST": {
    "abbr": "TLST",
    "english": "Top Level Safety Target",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "TRISO": {
+   "abbr": "TRISO",
+   "english": "tristructural isotropic fuel",
    "forbidden": [],
    "korean": "",
    "later": "약어",
