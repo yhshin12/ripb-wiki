@@ -107,3 +107,8 @@
 - 새 노트 2 (노심 설계 검토, 반응도 제어 검토)
 - AST 약어 불일치를 meta/contradictions.md C7에 모음
 - ACRS_ML25293A458 ingest complete; status.md 갱신
+
+## [2026-09-16] feat | 그림 정책: figures/ 폴더와 검사 도구
+- references/figures의 렌더링 그림 73개를 figures/<KEY>_<name>.png로 복사 (scripts/collect_figures.py, withheld 그림은 PNG가 없어 제외)
+- lint L08이 figures/의 embed를 찾도록 수정, verify_quotes V1이 원문 사실의 그림 embed 줄을 허용 (테스트 추가)
+- CLAUDE.md §2 구조표와 §4 그림 규칙 갱신 (2026-09-16 사용자 결정)

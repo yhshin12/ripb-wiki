@@ -138,6 +138,8 @@ def verify_note(vault, path, src):
         else:
             if re.match(r"^\s*- ", line):
                 out += _item(ln, s[2:], src, rel, fact_text)
+            elif re.match(r"^!\[\[[^\[\]]+\]\]$", s):
+                pass  # figure embed from figures/ (CLAUDE.md §4); the caption item above carries the citation
             else:
                 out.append(N.Finding(rel, ln, "V1", "원문 사실 holds list items and table rows only"))
             i += 1

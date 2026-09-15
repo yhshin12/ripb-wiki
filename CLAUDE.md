@@ -17,6 +17,7 @@
 | `wiki/Terminology.md` | 용어표 (단일 진실 원천) | #1 |
 | `meta/` | 설계, 상태, 점검 보고, 정제 파이프라인 기록, 인수인계 | #1 |
 | `templates/`, `scripts/`, `.claude/` | 노트 틀, 스크립트, hook·skill | #1 |
+| `figures/` | 노트가 참조하는 그림. `references/figures/<KEY>/<name>.png`의 복사본을 `<KEY>_<name>.png`로 모은다(`scripts/collect_figures.py`, withheld 그림은 PNG가 없어 제외) | #1 |
 | `inbox/`, `inbox/internal/` | 새 원문 투입구 (공개 / 내부) | 제외 |
 | `references/raw/` | 원본 PDF와 변환 원시 출력. `convert_references.py`만 쓴다 | 제외 |
 | `references/<stem>.md`, `references/figures/` | 정제본 = 인용 대상. 생성물이며 손으로 고치지 않는다 | 제외 |
@@ -43,7 +44,7 @@
 - 인용: `[KEY §3.7.3.1 p.45]`, `[KEY Table 5.2-1 p.12]`, `[KEY SFR-DC 4 p.64]`, `[KEY §3.2.1 p.16-17]`. `p.N`은 PDF 쪽(쪽 표지의 첫 번호). 쪽이 없는 원문은 `[KEY §제목경로]`.
 - 원문끼리 모순되면 둘 다 인용하고 `status: disputed`로 둔다.
 - 파일명: ASCII `Snake_Case`, vault 전체에서 유일, `references/`의 파일명과 다르게. UTF-8(BOM 없음), LF.
-- 그림은 원문에서 렌더링한 PNG만. 재구성 도식은 `synthesis` 노트에서만, "재구성" 표시와 요소별 출처 필수.
+- 그림은 원문에서 렌더링한 PNG만. vault 루트 `figures/`의 `<KEY>_<name>.png`를 `![[<KEY>_<name>.png]]`로 참조하고, 바로 아래 줄에 그림 번호·제목과 인용(`[KEY Figure 5-3 p.59]`)을 적는다(2026-09-16 결정). 재구성 도식은 `synthesis` 노트에서만, "재구성" 표시와 요소별 출처 필수.
 
 ## 5. 용어 규칙 (설계 §6)
 

@@ -50,7 +50,7 @@ class Context:
             except T.TermError as exc:
                 self.terms_error = str(exc)
         self.assets = set()
-        for d in (os.path.join(vault, "wiki", "assets"), os.path.join(vault, "references", "figures"),
+        for d in (os.path.join(vault, "figures"), os.path.join(vault, "wiki", "assets"), os.path.join(vault, "references", "figures"),
                   os.path.join(vault, "internal", "references", "figures")):
             for _, _, files in os.walk(d):
                 self.assets.update(files)

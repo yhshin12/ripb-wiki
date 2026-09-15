@@ -60,6 +60,13 @@ def test_table_needs_source_column_and_prose_is_refused(mini_vault, make_note):
     assert [f.code for f in run(mini_vault, make_note("Tbl", body_with(facts)))] == ["V1", "V1"]
 
 
+def test_figure_embed_line_is_allowed_in_facts(mini_vault, make_note):
+    facts = f'- {LBE} [DOC_A §3.2 p.3]\n\n![[DOC_A_Fig_1.png]]'
+    assert run(mini_vault, make_note("Fig", body_with(facts))) == []
+    facts = f'- {LBE} [DOC_A §3.2 p.3]\n\n![[DOC_A_Fig_1.png]] 설명'
+    assert [f.code for f in run(mini_vault, make_note("Fig2", body_with(facts)))] == ["V1"]
+
+
 def test_commentary_numbers_must_appear_in_facts(mini_vault, make_note):
     facts = "| 항목 | 값 | 출처 |\n|---|---|---|\n| AOO | 1E-02/plant-year | [DOC_A Table x p.2] |"
     assert run(mini_vault, make_note("N1", body_with(facts, "값은 1E-2/plant-year이다."))) == []
