@@ -12,18 +12,19 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
   missing_pct: 0.0
-ingest: in_progress
+ingest: complete
 units:
-- unit: "U1 §4.1, §4.2.1.1, Tables 4.2-1 and 4.2-2 (integrated risk, LBE margins)"
+- unit: U1 §4.1, §4.2.1.1, Tables 4.2-1 and 4.2-2 (integrated risk, LBE margins)
   status: complete
-- unit: "U2 §4.2 remainder, Tables 4.2-3 to 4.2-5 (Defense Lines, plant capability, programmatic and integrated DID)"
+- unit: U2 §4.2 remainder, Tables 4.2-3 to 4.2-5 (Defense Lines, plant capability,
+    programmatic and integrated DID)
   status: complete
 ---
 
 # Integrated Evaluations (PSAR_ch04)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 4장은 발전소 통합 위험을 NEI 18-04의 세 cumulative risk target%%t:CUM_RISK_TARGET%%과 비교하고, risk-significant Licensing Basis Event%%t:LBE%%의 margin, Defense Line%%t:DL%% 전략, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가를 요약한다. Programmatic 쪽 평가와 통합 평가 결과, baseline 확립은 operating license%%t:OL%% 단계로 넘긴다.
 
 ## 서지
 - 키: `PSAR_ch04`

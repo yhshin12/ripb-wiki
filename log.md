@@ -117,3 +117,6 @@
 - 새 노트 4 (Cumulative_Risk_Targets, Deterministic_Safety_Analysis_Task_7d, Layers_Of_Defense, Uncertainty_Treatment), 서브에이전트 원문 대조 뒤 수정
 - A9: NEI 18-04 Task 7a의 과업 번호 불일치를 meta/contradictions.md C17로 기록; A1·A4·A6은 disputed 판정과 함께 보류
 - 그림 삽입: NEI 18-04 Figure 3-1–5-4, PSAR ch1 Figure 1.1-1–1.1-4·1.3-1, ch3 Figure 3.5-1, ACRS 슬라이드 7장 (노트 13)
+
+## [2026-09-16] ingest | PSAR_ch04, PSAR_ch05 (finish)
+- 소스 카드 요약 작성, ingest complete

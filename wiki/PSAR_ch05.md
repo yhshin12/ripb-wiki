@@ -14,18 +14,18 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 1.07
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§5.1, §5.2, Tables 5.2-1 to 5.2-4, §5.4, §5.5"
+- unit: §5.1, §5.2, Tables 5.2-1 to 5.2-4, §5.4, §5.5
   status: complete
-- unit: "§5.3 PDC 1-82 and comparison with RG 1.232"
+- unit: §5.3 PDC 1-82 and comparison with RG 1.232
   status: complete
 ---
 
 # Safety Functions, Design Criteria, and SSC Safety Classification (PSAR_ch05)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 5장은 Structures, Systems, and Components%%t:SSC%% 안전 분류와 safety-significant PRA Safety Function%%t:PSF%%을 Safety-Related%%t:SR%% 기능과 Non-Safety-Related with Special Treatment%%t:NSRST%% 기능의 표로 제시하고, `RG 1.232`의 SFR-DC를 바탕으로 개발한 principal design criteria%%t:PDC%% `1`–`82`와 그 적용을 기술한다.
 
 ## 서지
 - 키: `PSAR_ch05`

@@ -8,8 +8,8 @@
 - [[NEI_18-04]] — NEI 18-04는 비경수로의 Licensing Basis Event 선정(3장), Structures, Systems, and Components 안전 분류와 special treatment(4장), 심층방어(Defense-in-Depth) 적절성 평가(5장)를 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시하는 지침이며, 6장은 용어집이다.
 - [[PSAR_ch01]] — General Plant and Site Description
 - [[PSAR_ch03]] — Licensing Basis Events
-- [[PSAR_ch04]] — Integrated Evaluations
-- [[PSAR_ch05]] — Safety Functions, Design Criteria, and SSC Safety Classification
+- [[PSAR_ch04]] — Kemmerer Unit 1 `PSAR` 4장은 발전소 통합 위험을 NEI 18-04의 세 cumulative risk target과 비교하고, risk-significant Licensing Basis Event의 margin, Defense Line 전략, 심층방어(Defense-in-Depth) 적절성 평가를 요약한다.
+- [[PSAR_ch05]] — Kemmerer Unit 1 `PSAR` 5장은 Structures, Systems, and Components 안전 분류와 safety-significant PRA Safety Function을 Safety-Related 기능과 Non-Safety-Related with Special Treatment 기능의 표로 제시하고, `RG 1.232`의 SFR-DC를 바탕으로 개발한 principal design criteria `1`–`82`와 그 적용을 기술한다.
 - [[PSAR_ch06]] — Safety-Significant SSC Criteria and Capabilities
 - [[PSAR_ch07]] — Descriptions for Safety-Significant SSCs
 - [[PSAR_ch11]] — Conduct of Operations
@@ -46,10 +46,12 @@
 
 ## 개념 (concept)
 
+- [[Cumulative_Risk_Targets]] — NEI 18-04 `Task 7b`는 모든 Licensing Basis Event의 `integrated risk`를 세 cumulative risk target과 비교한다.
 - [[DID_Adequacy_Framework]] — NEI 18-04는 NRC가 주로 일반 철학으로 정의해 온 심층방어(Defense-in-Depth)의 적절성을 객관적으로 평가하는 절차를 제시한다.
 - [[DID_Baseline]] — 심층방어(Defense-in-Depth) 적절성 평가는 설계가 성숙함에 따라 되풀이되며, 불확실도와 compensatory action의 적절성을 함께 검토한다.
 - [[DID_Integrated_Process]] — 원자로 설계자는 integrated decision-making process를 통해 설계의 모든 단계에 심층방어(Defense-in-Depth)를 반영하고 그 적절성을 평가하며 baseline을 문서화한다.
 - [[DID_Risk_Margins]] — Frequency-Consequence Target은 Licensing Basis Event의 risk significance 평가와 함께, 적절한 심층방어(Defense-in-Depth)의 증거가 되는 risk margin 평가에 쓰인다.
+- [[Deterministic_Safety_Analysis_Task_7d]] — NEI 18-04 `Task 7d`는 인허가 신청서의 Design Basis Accident 해석에 있는 전통적인 결정론적 안전해석에 해당하는 과업으로, 보수적 가정으로 수행되며 PRA의 일부인 Mechanistic Source Term·선량 불확실도 해석을 그 보수적 가정에 정보를 주는 데 쓸 수 있다(`are available to inform`).
 - [[Event_Sequence_Family]] — Licensing Basis Event는 PRA에 모델링된 개별 Event Sequence를 비슷한 특성으로 묶은 Event Sequence Family로 정의된다.
 - [[F_C_Target]] — Frequency-Consequence Target은 빈도–결말 도표 위의 기준선이며, 개별 Licensing Basis Event의 risk significance와 risk margin을 평가하는 데 쓰인다.
 - [[Integrated_Decision_Making_Process]] — integrated decision-making process는 심층방어(Defense-in-Depth) 적절성을 평가하는 과정으로, 설계 관리 과정의 일부로 수행하거나 운영 단계 검토처럼 상설 Integrated Decision-Making Process Panel로 수행할 수 있다.
@@ -57,6 +59,7 @@
 - [[LBE_Layers_Of_Defense_Review]] — 심층방어(Defense-in-Depth) 평가의 중심 요소 가운데 하나는 integrated decision-making process가 Licensing Basis Event를 Layers of Defense와 체계적으로 대조하는 검토이다.
 - [[LBE_Risk_Significance]] — Licensing Basis Event는 평균 빈도로 범주를 정하되, 빈도 불확실도 구간이 범주 경계에 걸치면 양쪽 범주에서 모두 평가한다. (disputed)
 - [[LBE_Selection_Process]] — Licensing Basis Event 선정 절차는 Task 1–10으로 이루어진 논리도로 제시되며, 과제에 정해진 순서가 없고 설계가 진행되는 동안 반복된다.
+- [[Layers_Of_Defense]] — NEI 18-04가 인용하는 NRC 용어집은 심층방어(Defense-in-Depth)의 핵심을 여러 독립적이고 중복된 Layers of Defense를 만들어 어느 한 layer도 배타적으로 의존되지 않게 하는 것으로 적는다.
 - [[Licensing_Basis_Event]] — Licensing Basis Event 정의는 설계와 인허가 기준에서 고려하는 Event Sequence 전체를 가리킨다.
 - [[Non_LWR_PRA_Scope]] — 비경수로의 PRA는 고유·피동 특성에 더 의존하는 설계를 반영해 내부 사건과 외부 재해의 전 범위를 다뤄야 하지만, 상세 수준은 설계의 크기·복잡도·잠재 위험에 맞출 수 있다.
 - [[PRA_Role_In_LBE_Selection]] — Licensing Basis Event 선정에 PRA를 쓰는 주된 이유는 PRA가 새 설계에 고유한 사건을 체계적으로 찾아낼 수 있는 유일한 도구라는 데 있다.
@@ -124,6 +127,10 @@
 - [[Natrium_Seismic_Classification]] — `PSAR` Chapter 6은 safety-significant Structures, Systems, and Components의 `seismic design bases`를 safety classification과 일관된 seismic classification 형태의 지진 special treatment로 정한다.
 - [[Natrium_Special_Treatment_Process]] — `PSAR` Chapter 6은 special treatment를 safety-significant Structures, Systems, and Components가 `design basis functions`를 수행한다는 보증을 일반 산업 관행 이상으로 높이는 요건으로 정의한다.
 - [[Natrium_Technical_Specifications_Scope]] — `PSAR` Chapter 11은 `10 CFR 50.34(a)(5)`에 따라 예비 안전해석에서 technical specifications의 개연성 있는 대상이 되는 변수와 조건을 `Table 11.5-1`에 제시하고, 전체 technical specifications는 operating license 단계에 제출한다고 적는다.
+
+## 종합 (synthesis)
+
+- [[Uncertainty_Treatment]] — NEI 18-04는 불확실도를 Licensing Basis Event 범주 지정, F-C Target 비교, 결정론적 안전해석, 심층방어(Defense-in-Depth) 적절성 평가에 걸쳐 다룬다.
 
 ## 지도 (map)
 
