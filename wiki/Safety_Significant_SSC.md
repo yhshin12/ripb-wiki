@@ -29,6 +29,14 @@ terms_pending: []
 - "If a non-risk-significant SSC is classified as safety-significant, it means that some type of special treatment should be applied to support the adequacy of DID." [NEI_18-04 §4.3 p.48]
 - "All safety-significant SSCs are classified as SR or NSRST. All NST SSCs are not safety-significant." [NEI_18-04 §4.3 p.48]
 
+- "Figure 4-2. Definition of Risk-Significant and Safety-Significant SSCs" [NEI_18-04 Figure 4-2 p.43]
+
+![[NEI_18-04_Fig_4-2.png]]
+
+- "Figure 4-3. LMP SSC Safety Categories and Safety Significant SSCs" [NEI_18-04 Figure 4-3 p.45]
+
+![[NEI_18-04_Fig_4-3.png]]
+
 ## 해설
 원문은 safety-significant의 뜻을 NRC 규제에서 쓰는 뜻과 같다고 밝히고, 위험 분석이든 다른 수단이든 미리 정한 기준을 넘는 안전 영향을 가진 대상을 가리키는 NRC 용어집 정의를 인용한다. 이 개념은 10 CFR 50.69의 SSC%%t:SSC%% safety significance 개념을 따르되, SR%%t:SR%%도 아니고 risk-significant도 아닌 SSC%%t:SSC%%가 심층방어%%t:DID%% 고려로 safety-significant가 될 가능성까지 다룬다. 이 절차에서 Safety-Significant SSC%%t:SS_SSC%%는 SR%%t:SR%%이나 NSRST%%t:NSRST%%로 분류된 SSC%%t:SSC%% 전체와 같고, Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 하나도 여기에 들지 않는다.
 

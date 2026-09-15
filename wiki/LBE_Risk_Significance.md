@@ -39,6 +39,10 @@ terms_pending: []
 - "In the LMP framework, an SSC is regarded as risk-significant if its PRA Safety Function is: a) required to keep one or more LBEs inside the F-C Target based on mean frequencies and consequences" [NEI_18-04 §6 p.90]
 - "The LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty of the LBE frequency and dose estimates is within the F-C Target." [NEI_18-04 §3.3.6 p.37]
 
+- "Figure 3-4. Use of the F-C Target to Define Risk-Significant LBEs" [NEI_18-04 Figure 3-4 p.34]
+
+![[NEI_18-04_Fig_3-4.png]]
+
 ## 해설
 범주 배정에는 빈도의 평균값을 쓴다. 다만 5th percentile과 95th percentile로 정한 불확실도 구간이 범주 경계에 걸치면 그 LBE%%t:LBE%%는 두 범주에서 모두 평가된다. 평균이 1E-02/plant-year를 넘고 5th percentile이 그보다 낮으면 Anticipated Operational Occurrence%%t:AOO%%이자 Design Basis Event%%t:DBE%%로, 평균이 1E-04/plant-year보다 낮고 95th percentile이 그보다 높으면 Beyond Design Basis Event%%t:BDBE%%이자 DBE%%t:DBE%%로 평가한다. 평균이 5E-07/plant-year보다 낮아도 95th percentile이 그 위면 BDBE%%t:BDBE%%로 평가한다.
 

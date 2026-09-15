@@ -23,14 +23,26 @@ terms_pending: []
 - "DL4-RC3 CRD driveline scram follow" [ACRS_ML25293A458 Reactor core components (RCC) p.3]
 - "DL3-RR2 cladding barrier" [ACRS_ML25293A458 Reactor core components (RCC) p.3]
 - "DL3-HR5 - HR10, DL3-HR13 passive heat removal in various SSCs" [ACRS_ML25293A458 Reactor core components (RCC) p.3]
+
+![[ACRS_ML25293A458_Slide_3.png]]
+
 - "PSAR section 3.11 incorporates by reference TR NAT-2806-A, “Fuel and Control Assembly Qualification” (ML24354A191) which was reviewed by ACRS in May and June 2024" [ACRS_ML25293A458 Fuel assemblies p.4]
 - "U-10Zr in HT9 cladding, with wire wrap in hexagonal assemblies" [ACRS_ML25293A458 Fuel assemblies p.4]
 - "Assemblies in hexagonal HT9 ducts with inlets that interface with lower core plate and load pads that interface with adjacent assemblies" [ACRS_ML25293A458 Fuel assemblies p.4]
+
+![[ACRS_ML25293A458_Slide_4.png]]
+
 - "Primary and secondary control assemblies" [ACRS_ML25293A458 Control assemblies p.5]
 - "Control rod assemblies (CRAs) move up and down in ducts in locations shown" [ACRS_ML25293A458 Control assemblies p.5]
 - "Geometric differences to account for CCF of assembly-to-duct binding" [ACRS_ML25293A458 Control assemblies p.5]
 - "Either primary or secondary assemblies sufficient to shut down reactor" [ACRS_ML25293A458 Control assemblies p.5]
+
+![[ACRS_ML25293A458_Slide_5.png]]
+
 - "Reactor internal structures are part of reactor enclosure system (RES) and described in PSAR section 7.1.2" [ACRS_ML25293A458 Interfacing components p.7]
+
+![[ACRS_ML25293A458_Slide_7.png]]
+
 - "DANU-ISG-2022-01, “Review of Risk-Informed, Technology-Inclusive Advanced Reactor Applications—Roadmap” (ML23297A158) states that staff review at CP stage should focus on the role of the fuel in the safety analysis and adequacy of the fuel qualification plan" [ACRS_ML25293A458 Review of fuel design (PSAR section 3.11) p.8]
 - "These issues were covered by the approved TR NAT-2806-A" [ACRS_ML25293A458 Review of fuel design (PSAR section 3.11) p.8]
 - "Fuel cladding integrity is used as a surrogate to ensure SARRDLs are met for AOOs" [ACRS_ML25293A458 Review of fuel design (PSAR section 3.11) p.8]
@@ -46,6 +58,9 @@ terms_pending: []
 - "Described in PSAR sections 3.12 and 3.13 and TP-LIC-RPT-0011, “Core Design and Thermal Hydraulic Technical Report”" [ACRS_ML25293A458 Core Design p.10]
 - "Staff’s review at CP stage focused on ensuring core design supports applicable PDCs and that associated analytical methods are appropriate" [ACRS_ML25293A458 Core Design p.10]
 - "Staff review was supported by ... contractors from ANL" [ACRS_ML25293A458 Core Design p.10]
+
+![[ACRS_ML25293A458_Slide_10.png]]
+
 - "PDC 10 – core designed with appropriate margin to assure SARRDLs are not exceeded during normal operation and AOOs" [ACRS_ML25293A458 Applicable PDCs p.11]
 - "Demonstrated through PSAR chapter 3 safety analysis of AOOs" [ACRS_ML25293A458 Applicable PDCs p.11]
 - "PDC 11 – prompt inherent feedback must compensate for increase in reactivity in the power operating range" [ACRS_ML25293A458 Applicable PDCs p.11]

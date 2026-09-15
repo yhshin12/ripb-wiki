@@ -60,6 +60,10 @@ terms_pending: []
 | 50.34(f)(3)(iv) | Provide one or more dedicated containment penetrations, equivalent in size to a single 3-foot-diameter opening. (II.B.8) | Not Applicable. The design uses functional containment and not a single containment structure. | Not Applicable | [PSAR_ch01 Table 1.4-4 p.97] |
 | 50.34(f)(3)(v) | Preliminary Design Information - Containment Integrity. (II.B.8) | Not Applicable. The design does not utilize a containment structure and does not produce hydrogen from clad-coolant interaction. | Not Applicable | [PSAR_ch01 Table 1.4-4 p.97] |
 
+- "Figure 1.3-1 Diverse Barriers in Functional Containment" [PSAR_ch01 Figure 1.3-1 p.65]
+
+![[PSAR_ch01_Fig_1.3-1.png]]
+
 ## 해설
 이 보고서는 retaining radionuclides라는 FSF%%t:FSF%%를 다양한 피동 barrier%%t:BARRIER%%를 쓰는 functional containment 전략으로 수행한다고 적는다. 전략의 목표는 세 가지이다. 첫째는 방사성 핵종 선원을 담은 피복·배관·용기 밖에, Licensing Basis Event%%t:LBE%%와 Design Basis Accident%%t:DBA%% 조건을 신뢰성 있게 견디고 누설이 설계 요건이나 시험으로 규정되는 barrier%%t:BARRIER%%를 적어도 하나 유지하는 것이다. 둘째는 정해진 성능 요건을 만족하도록 선원과 환경 사이에 필요한 barrier%%t:BARRIER%%의 최소 총수를 유지하는 것이다. 셋째는 LBE%%t:LBE%%와 DBA%%t:DBA%%에 대한 방사성 핵종 보유 barrier%%t:BARRIER%%의 선정과 분류를 최적화하도록 안전해석, 설계, PRA 사이에 필요한 반복의 틀을 제공하는 것이다. 다양한 피동 barrier%%t:BARRIER%%는 방사성 핵종 선원에서 시작해 선원과 환경 사이의 모든 Structures, Systems, and Components%%t:SSC%%를 포함한다.
 

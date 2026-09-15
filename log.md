@@ -112,3 +112,8 @@
 - references/figures의 렌더링 그림 73개를 figures/<KEY>_<name>.png로 복사 (scripts/collect_figures.py, withheld 그림은 PNG가 없어 제외)
 - lint L08이 figures/의 embed를 찾도록 수정, verify_quotes V1이 원문 사실의 그림 embed 줄을 허용 (테스트 추가)
 - CLAUDE.md §2 구조표와 §4 그림 규칙 갱신 (2026-09-16 사용자 결정)
+
+## [2026-09-16] lint | lint 조치 A7·A9와 그림 삽입
+- 새 노트 4 (Cumulative_Risk_Targets, Deterministic_Safety_Analysis_Task_7d, Layers_Of_Defense, Uncertainty_Treatment), 서브에이전트 원문 대조 뒤 수정
+- A9: NEI 18-04 Task 7a의 과업 번호 불일치를 meta/contradictions.md C17로 기록; A1·A4·A6은 disputed 판정과 함께 보류
+- 그림 삽입: NEI 18-04 Figure 3-1–5-4, PSAR ch1 Figure 1.1-1–1.1-4·1.3-1, ch3 Figure 3.5-1, ACRS 슬라이드 7장 (노트 13)

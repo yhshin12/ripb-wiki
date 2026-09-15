@@ -29,6 +29,9 @@ terms_pending: []
 - "DL3-RC2 Reactor scram on loss of power" [ACRS_ML25293A458 Control rod drive system (CRD) p.14]
 - "DL4-RC3 CRD driveline scram follow" [ACRS_ML25293A458 Control rod drive system (CRD) p.14]
 - "DL3-RR1 Primary coolant boundary" [ACRS_ML25293A458 Control rod drive system (CRD) p.14]
+
+![[ACRS_ML25293A458_Slide_14.png]]
+
 - "Normal scram (DL3-RC1)" [ACRS_ML25293A458 Gravity scram functions p.15]
 - "Reactor trip breakers are opened by RPS, scram SOVs de-energize , pressure from scram cylinder vents, gripper disengages from CRA, CRA falls into core by gravity" [ACRS_ML25293A458 Gravity scram functions p.15]
 - "Scram on loss of power (DL3-RC2)" [ACRS_ML25293A458 Gravity scram functions p.15]
@@ -64,6 +67,9 @@ terms_pending: []
 - "Limit on CRA withdrawal rate is provided by physical design of CRD motor drives and interlocks that only enable one rod to be withdrawn from the core at a time" [ACRS_ML25293A458 PDC 28 – Reactivity Limits p.20]
 - "CRDM housing attaches to rotatable plug assembly (RPA) on reactor head (RH) and forms portion of primary coolant boundary" [ACRS_ML25293A458 Primary coolant boundary PDCs (14, 15, 30, 31, 32) p.21]
 - "CRDM housing is designed consistent with III-5, with overpressure protection provided by sodium cover gas system (SCG)" [ACRS_ML25293A458 Primary coolant boundary PDCs (14, 15, 30, 31, 32) p.21]
+
+![[ACRS_ML25293A458_Slide_21.png]]
+
 - "AST - Alternative Shunt Trip" [ACRS_ML25293A458 Acronyms p.22]
 
 | PSF ID | PSF Description | NSRST SSC Safety Significance Criteria (Risk-Significant or DID) | 출처 |

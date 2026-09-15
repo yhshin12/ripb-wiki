@@ -34,6 +34,22 @@ terms_pending: []
 - "The reactor uses sodium-bonded metallic fuel with high chromium martensitic steel (HT9) cladding." [PSAR_ch01 §1.1.4.1 p.20]
 - "The intermediate sodium loop transfers heat to the NSS via Sodium-Salt Heat Exchangers (SHXs) for normal steady state operations, and to the atmosphere via the Intermediate Air Cooling System (IAC) sodium-air heat exchanger during startup and shutdown." [PSAR_ch01 §1.1.4.1 p.20]
 
+- "Figure 1.1-1 Heat Transport Systems Overview Highlighting Operational Interface" [PSAR_ch01 Figure 1.1-1 p.41]
+
+![[PSAR_ch01_Fig_1.1-1.png]]
+
+- "Figure 1.1-2 Plant Layout" [PSAR_ch01 Figure 1.1-2 p.42]
+
+![[PSAR_ch01_Fig_1.1-2.png]]
+
+- "Figure 1.1-3 Heat Removal" [PSAR_ch01 Figure 1.1-3 p.43]
+
+![[PSAR_ch01_Fig_1.1-3.png]]
+
+- "Figure 1.1-4 Safety Features" [PSAR_ch01 Figure 1.1-4 p.44]
+
+![[PSAR_ch01_Fig_1.1-4.png]]
+
 ## 해설
 `US SFR Owner, LLC`는 `TerraPower, LLC`의 자회사로, Wyoming주 Lincoln County의 Kemmerer 남서쪽에 들어설 Kemmerer Power Station Unit 1의 CP%%t:CP%% 승인을 신청한다. 발전소는 `10 CFR Part 50`에 따라 인허가되며, 이 `PSAR`은 `10 CFR 50.34(a)`가 요구하는 정보를 담고 `10 CFR 50.35(a)`에 따라 공중의 건강과 안전에 과도한 위험 없이 제안 부지에서 건설·운전될 수 있음을 보인다. Kemmerer Unit 1은 TerraPower가 공급하는 Natrium 원자로이며, `U.S. Department of Energy`의 Advanced Reactor Demonstration Program에 참여해 Natrium 기술을 실증하고 PacifiCorp 공급 지역에 발전 용량을 제공한다. 내장 방사성 물질의 성질과 재고량은 `Section 3.2`에 있다.
 

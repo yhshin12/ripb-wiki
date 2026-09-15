@@ -89,6 +89,10 @@ terms_pending: []
 | SSC Safety Classification and Performance Requirements | Classification of NSRST and NST SSCs; Selection of SSC Required Functional Design Criteria; Selection of design requirements for SR SSCs; Selection of PB reliability, availability, and capability targets for safety-significant SSCs; Selection of Special Treatment Requirements for safety-significant SSCs | [NEI_18-04 Table 5-1 p.67] |
 | Risk-Informed Evaluation of DID Adequacy | Evaluation of DID attributes for DID; Input to identification of safety-significant SSCs; Input to the selection of SR SSCs; Evaluation of roles of SSCs in the prevention and mitigation of LBEs; Evaluation of the LBEs to assure adequate functional independence of each layer of defense; Evaluation of single features that have a high level of risk importance to assure no overdependence on that feature and appropriate special treatment to provide greater assurance of performance; Input to SSC performance requirements for reliability and capability of risk-significant prevention and mitigation functions; Input to SSC performance and special treatment requirements; Integrated evaluation of the plant capability DID; Integrated evaluation of programmatic measures for DID | [NEI_18-04 Table 5-1 p.67] |
 
+- "Figure 5-2. Framework for Establishing DID Adequacy" [NEI_18-04 Figure 5-2 p.58]
+
+![[NEI_18-04_Fig_5-2.png]]
+
 ## 해설
 원문은 심층방어%%t:DID%%를 원자로 운전의 잠재적 위해로부터 공중을 보호하는, 서로 독립적이면서 보완적인 여러 수단의 철학으로 소개한다. NRC는 이를 주로 일반 철학으로 정의해 왔고 적절성을 객관적으로 평가할 수 있는 공식 정의는 없었다. 이 절차는 원자력 시설의 설계·건설·정비·운전에서 심층방어%%t:DID%%를 확립하는 방법을 제시한다. 설계자, 인허가 신청자, 규제기관 같은 모든 이해관계자가 설계 과정의 일부로 적절성에 관해 명확하고 일관된 결정을 내릴 때 심층방어%%t:DID%%가 달성된다. 적절성 확립에는 심층방어%%t:DID%% 설계 특성, 운전·비상 절차, 그 밖의 프로그램 요소의 반영이 포함되고, 적절성 평가는 설계, 발전소 위험 평가, Licensing Basis Event%%t:LBE%% 선정·평가, Structures, Systems, and Components%%t:SSC%% 안전 분류, SSC%%t:SSC%% 성능 요건, 그 요건을 수명 동안 유지하는 프로그램에 관한 일련의 risk-informed and performance-based%%t:RIPB%% 결정으로 이루어진다.
 

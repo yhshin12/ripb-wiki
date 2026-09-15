@@ -40,6 +40,10 @@ terms_pending: []
 | 1E-04/plant-year | 25 rem | [NEI_18-04 §3.2.1 p.16] |
 | 5E-07/plant-year | 750 rem | [NEI_18-04 §3.2.1 p.16] |
 
+- "Figure 3-1. Frequency-Consequence Target" [NEI_18-04 Figure 3-1 p.15]
+
+![[NEI_18-04_Fig_3-1.png]]
+
 ## 해설
 F-C Target%%t:FC_TARGET%%은 빈도축과 선량축을 가진 도표 위의 한 선이다. 원문이 정의하는 쓰임은 두 가지로, 개별 LBE%%t:LBE%%의 risk significance를 판정하는 것과 심층방어(Defense-in-Depth)%%t:DID%%가 충분하다는 근거가 되는 risk margin을 평가하는 것이다.
 

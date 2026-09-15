@@ -23,4 +23,5 @@
 | C13 | RG 1.233: C.1.b 95th vs mean; C.2.a support SSC 범위 vs NEI; PRA standard 상태 | RG_1.233 §C | RG_1233_* |
 | C14 | RG 1.232 내부: SFR-DC 35 문언/근거, SFR-DC 56 문언/근거, Table 1 row 26 capacity/capability, SFR-DC 26 (2)/(3), SFR-DC 75 문구, SFR-DC 55 IHX tubing, Section VII 70–77 | RG_1.232 App.B, Table 1 | SFR_DC_*, Non_LWR_Design_Criteria_Crosswalk |
 | C15 | ch1 IAC 열교환기 이름: 안전 개요 "Intermediate Heat Exchanger", 계통 설명 "Sodium-Air Heat Exchanger" | PSAR_ch01 §1.3.2.3, §1.1.4.1.5 | Natrium_Control_Heat_Removal |
+| C17 | NEI 18-04 과업 번호: Task 7a 본문이 "the deterministic safety analysis in Task 7a"와 "evaluation of DID adequacy in Task 7d"라고 적으나, 결정론적 안전해석은 Task 7d, DID 평가는 Task 7e 제목에 있다 (2026-09-15 lint A9) | [NEI_18-04 §3.2.2 Task 7a p.22-23], [NEI_18-04 §3.2.2 Task 7d p.25] | LBE_Selection_Process, Deterministic_Safety_Analysis_Task_7d |
 | C16 | ch11 EPZ 방법 RG 1.242 App. A vs RG 1.233 §C.4의 NEI 18-04 LBE 기반 기대; ch11에 선량 계산 기간 없음 | [PSAR_ch11 §11.3.3.1 p.53], [RG_1.233 §C.4 Emergency Preparedness p.22] | Natrium_Emergency_Preparedness_EPZ |

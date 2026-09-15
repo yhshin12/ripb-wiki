@@ -45,6 +45,10 @@ terms_pending: []
 | Task 6 | SSC Reliability and Capability Targets | [NEI_18-04 §4.1 p.45] |
 | Task 7 | Determine SSC Specific Design Criteria and Special Treatment Requirements | [NEI_18-04 §4.1 p.46] |
 
+- "Figure 4-1. SSC Function Safety Classification Process" [NEI_18-04 Figure 4-1 p.40]
+
+![[NEI_18-04_Fig_4-1.png]]
+
 ## 해설
 원문은 SSC%%t:SSC%%를 세 범주로 나눈다. SR%%t:SR%%은 두 경우로, Design Basis Event%%t:DBE%%의 결말을 Frequency-Consequence Target%%t:FC_TARGET%% 안으로 완화하고 Design Basis Accident%%t:DBA%%에서 10 CFR 50.34 선량 한도를 만족시키도록 설계자가 고른 SSC%%t:SSC%%와, 결말이 그 한도를 넘는 Beyond Design Basis Event%%t:BDBE%%의 빈도가 DBE%%t:DBE%% 영역으로 올라오지 않게 하는 데 의지하는 SSC%%t:SSC%%이다. NSRST%%t:NSRST%%는 risk-significant 기능이나 심층방어%%t:DID%% 적절성에 special treatment%%t:SPECIAL_TREATMENT%%가 필요한 기능을 수행하는 비안전 등급 SSC%%t:SSC%%이고, 나머지는 모두 NST%%t:NST%%이다. §6 용어집의 NST%%t:NST%% 정의는 같은 내용이고, NSRST%%t:NSRST%% 정의는 심층방어%%t:DID%% 적절성에 필요한 기능을 special treatment%%t:SPECIAL_TREATMENT%% 조건 없이 적는다.
 

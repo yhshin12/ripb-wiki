@@ -49,6 +49,10 @@ terms_pending: []
 | Task 9 | Proceed to Next Stage of Design Development | [NEI_18-04 §3.2.2 p.26] |
 | Task 10 | Finalize List of LBEs and Safety-Related SSCs | [NEI_18-04 §3.2.2 p.26] |
 
+- "Figure 3-2. Process for Selecting and Evaluating Licensing Basis Events" [NEI_18-04 Figure 3-2 p.19]
+
+![[NEI_18-04_Fig_3-2.png]]
+
 ## 해설
 절차는 Task 1에서 초기 LBE%%t:LBE%% 목록을 결정론적으로 제안하는 데서 시작한다. 이어 Task 2와 Task 3에서 설계와 PRA를 발전시키고, Task 4에서 PRA가 모델링한 Event Sequence%%t:ES%%를 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 묶어 평균 빈도에 따라 LBE%%t:LBE%% 범주에 배정한다. 범주의 빈도 구간은 [[LBE_Frequency_Categories]]에 있다.
 

@@ -75,6 +75,10 @@ terms_pending: []
 |---|---|---|---|---|
 | RFH-ESWR-2 | BDBE | 1.31E-04 | 5.05 | [PSAR_ch04 Table 4.2-2 p.13] |
 
+- "Figure 3.5-1 F-C Chart for LBEs with Uncertainty Bands" [PSAR_ch03 Figure 3.5-1 p.62]
+
+![[PSAR_ch03_Fig_3.5-1.png]]
+
 ## 해설
 판정 문장은 NEI 18-04 Task 7c 본문과 거의 같고 1%를 one percent로 적으며, 빈도와 선량에 평균과 95th percentile 가운데 어느 추정값을 쓰는지 적지 않는다. NEI 18-04는 불확실도를 고려해 빈도와 선량 모두 상위 95th percentile 추정값을 쓰라고 하고 용어집도 상한 추정값의 조합으로 정의하지만, Design Basis Event%%t:DBE%% 선량은 결말의 평균 추정값으로 F-C Target%%t:FC_TARGET%%과 비교한다고도 적는다.
 

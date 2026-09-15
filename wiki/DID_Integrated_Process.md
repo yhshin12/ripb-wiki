@@ -83,6 +83,10 @@ terms_pending: []
 | Task 17 | Confirm Programmatic DID Adequacy | [NEI_18-04 §5.3 p.66] |
 | Task 18 | DID Adequacy Established; Document/Update DID Baseline Evaluation | [NEI_18-04 §5.3 p.66] |
 
+- "Figure 5-4. Integrated Process for Incorporation and Evaluation of Defense-in-Depth" [NEI_18-04 Figure 5-4 p.61]
+
+![[NEI_18-04_Fig_5-4.png]]
+
 ## 해설
 원문은 심층방어%%t:DID%%를 설계 요건 정의, 설계 개발, 결정론적·확률론적 설계 평가, 공중 보호 프로그램 정의의 모든 단계에서 고려하고 반영해야 한다고 적는다. 원자로 설계자는 설계 단계에서 심층방어%%t:DID%% 특성과 프로그램을 반영하고, 적절한 심층방어%%t:DID%%가 달성되었는지 판단하는 평가를 수행할 책임을 진다. 설계자는 이 책임을 IDP%%t:IDP%%로 이행하며, IDP%%t:IDP%%는 전체 설계를 이끌고 결과 설계의 적절성을 평가하며 심층방어%%t:DID%% baseline을 문서화한다. 설계 개발 중인 비경수로에서는 그림 5-4의 과업을 맡는 여러 분야의 설계팀이 IDP%%t:IDP%%를 수행할 수 있다.
 
