@@ -93,3 +93,7 @@
 - 새 노트 16 (PDC 역할, 기준 대조표, SFR-DC 기준군 14)
 - 검사: lint 0, verify_quotes 0, 서브에이전트 원문 대조
 - 원문 내부 불일치는 meta/contradictions.md C14에 모음
+
+## [2026-09-16] ingest | RG_1.233 본문
+- 새 노트 9 (배경, NEI 18-04 endorsement, LBE·SSC·DID 직원 입장, 신청서 내용, PRA 역할, MST, 단일 고장 기준)
+- 검사: lint 0, verify_quotes 0

@@ -9,15 +9,17 @@ file: references/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, an
 pdf: references/raw/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and
   Performance-Based Methodology for Non-Light-Water Reactors.pdf
 sha256_pdf: 1960692c431f9d32a8bf41df8745ab08d4622ca2925e2c0db90a44f4e46de7a0
-sha256_md: 92c50ced41ac128fdbca0a356befef5c45678a1492d3a23b0f9e958835667a7c
+sha256_md: c8435d806a4d34243ef4cfdf278d8205374727ef5f84baacafcdd2492b9ec533
 pdf_pages: 31
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
-  missing_pct: 0.12
-ingest: pending
-units: []
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-15
+  missing_pct: 0.2
+ingest: in_progress
+units:
+- unit: "§A-§D, footnotes (acronyms and references not ingested)"
+  status: complete
 ---
 
 # Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light-Water Reactors (RG_1.233)
@@ -42,4 +44,12 @@ units: []
 - 없음
 
 ## 관련 문서
-- 없음
+- [[NRC_Endorsement_Of_NEI_18-04]]
+- [[Advanced_Reactor_Licensing_Background]]
+- [[RG_1233_LBE_Staff_Position]]
+- [[Single_Failure_Criterion_Non_LWR]]
+- [[Non_LWR_PRA_Regulatory_Role]]
+- [[RG_1233_SSC_Classification_Staff_Position]]
+- [[RG_1233_DID_Staff_Position]]
+- [[Mechanistic_Source_Term_Conditions]]
+- [[Non_LWR_Application_Content]]
