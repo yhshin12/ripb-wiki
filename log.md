@@ -102,3 +102,8 @@
 - 새 노트 46, 고친 노트 3 (Fundamental Safety Functions, DID Approach, Risk-Significant LBEs)
 - 검사: lint 0, verify_quotes 0, 서브에이전트 원문 대조 뒤 수정
 - 원문 모순 16건을 meta/contradictions.md에 모음 (disputed 판정은 전체 인제스트 뒤)
+
+## [2026-09-16] ingest | ACRS_ML25293A458 (finish)
+- 새 노트 2 (노심 설계 검토, 반응도 제어 검토)
+- AST 약어 불일치를 meta/contradictions.md C7에 모음
+- ACRS_ML25293A458 ingest complete; status.md 갱신
