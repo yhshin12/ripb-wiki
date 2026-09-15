@@ -5,7 +5,7 @@ phase: 3
 # 상태
 
 ## 현재 단계
-Phase 3 인제스트 진행 중. NEI 18-04 §3·§4·§5 전체 완료(노트 26개, 소스 카드 단위 7개, 2026-09-15). §6 용어집 확인과 finish가 남았다. 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
+Phase 3 인제스트 진행 중. NEI 18-04 인제스트 완료(`ingest: complete`, 노트 27개, 소스 카드 단위 9개, 2026-09-15). 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
 
 ## 존재하는 도구
 - 정제: `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (psar·nei1804·rg1232·generic 프로파일, 공용 `levels.py`)
@@ -27,8 +27,9 @@ Phase 3 인제스트 진행 중. NEI 18-04 §3·§4·§5 전체 완료(노트 26
 | ACRS_ML25293A458 | 있음 (2026-09-14 빌드) | 있음 (`wiki/ACRS_ML25293A458.md`) | pending |
 
 ## 다음 작업
-1. NEI 18-04 §6 용어집 확인: 노트에 인용되지 않은 정의는 Plant, Multi-Reactor Module Plant, End State, PRA Technical Adequacy, Performance-Based, Risk-Informed, Safety Design Approach, NSRST·NST SSC 정의, DBEHL 정의, AOO·DBE·BDBE·DBA·LBE 용어집 정의(Table 3-1로 인용된 것과 대조). 처리 방식(기존 노트에 추가 / 새 노트 / 생략)을 사용자에게 묻고, 소스 카드 요약(abstract)을 쓴 뒤 `source.py finish NEI_18-04`와 `wiki-lint`.
-2. 본 인제스트: 설계 부록 A 순서(다음은 RG 1.233). 원문 1건마다 `wiki-lint`, 2건마다 `wiki-audit`.
+1. NEI 18-04 원문 1건 완료에 따른 `wiki-lint`(보고서 `meta/lint/2026-09-15.md` 또는 실행일).
+2. 본 인제스트: 설계 부록 A 순서(다음은 RG 1.233). 원문 1건마다 `wiki-lint`, 2건마다 `wiki-audit`(RG 1.233을 마치면 첫 `wiki-audit`).
+3. 용어집 정의 중 인용하지 않은 세부 문장(Risk-Significant SSC (b)항, IE의 reactor trip 기준·원인별 명칭, POS의 phased-mission 설명, ESF의 "not required to be explicitly modeled")은 필요할 때 보완한다.
 
 ### 인계 메모 (2026-09-15 세션)
 - 용어 결정 흐름: 사용자는 대부분 "영어 유지"를 고른다. 기관·문서·분석 기법 약어는 "용어 아님". 확정 한국어는 DID=심층방어, source term=선원항 두 건뿐이다.
@@ -44,6 +45,8 @@ Phase 3 인제스트 진행 중. NEI 18-04 §3·§4·§5 전체 완료(노트 26
 - ACRS_ML25293A458: 전용 프로파일 `acrs_slides.py` (2026-09-15 결정: 슬라이드 제목 `##`, 글머리표 제목 승격 방지, 캡션 없는 그림 37개를 `[!figure] Slide N`으로 포함). Phase 3에서 인제스트 순서 10번 전에 구현.
 - `meta/metrics.md`는 첫 표본 재검증(`wiki-audit`) 때 만든다. 목표 오류율은 그때 사용자와 정한다(설계 §10).
 - 원문 간 모순(disputed): SSC가 LBE를 F-C Target 안에 두는지 판정할 때 본문(§3.3.6 p.37, §4.2.2 p.47)은 95th percentile 상한, 용어집(§6 p.90)은 평균값. `Risk_Importance_Measures`, `LBE_Risk_Significance`, `Risk_Significant_SSC`가 disputed.
+- 원문 간 모순(disputed): BDBE 빈도 하한을 표 3-1(p.14)은 평균 빈도로, §3.2.1(p.16)·§3.2.2 Task 4(p.21)는 상한 빈도로 적는다. `LBE_Frequency_Categories`가 disputed(2026-09-15 사용자 결정).
+- NEI 18-04 용어집 RI 항목의 출처 칸이 "definition of performance-based regulation"을 가리킨다(원문 오기 가능성, 고치지 않음).
 - 그림 처리 방침 미정: 정제본의 PNG를 노트에 embed할지, 문서별로 파일 이름이 겹치지 않는지 확인이 필요하다. NEI 18-04 Figure 3-1, 5-1–5-4는 넣지 않았다.
 - lint L14가 `Seismic II/I`의 "II"를 미등록 약어로 잡는다. Special_Treatment 해설은 표지 없이 백틱으로 적었다. 검사 규칙 보완 여부 미정.
 - NEI 18-04 §5.6.1의 "Task 7"은 §5.3 Task 7(F-C Target 비교)이 아니라 §3.2.2 LBE 선정 절차의 Task 7(7e DID 평가)로 읽고, Plant_Capability_DID에 두 번호 체계를 병기했다(disputed 아님, 2026-09-15 승인).

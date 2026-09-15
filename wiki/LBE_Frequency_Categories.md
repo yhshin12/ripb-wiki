@@ -2,8 +2,8 @@
 type: concept
 aliases: []
 sources: [NEI_18-04]
-status: checked
-verified: 2026-09-15
+status: disputed
+verified:
 term:
 tags: []
 terms_pending: []
@@ -20,7 +20,20 @@ terms_pending: []
 - "Postulated event sequences that are used to set design criteria and performance objectives for the design of Safety Related SSCs. DBAs are derived from DBEs based on the capabilities and reliabilities of Safety-Related SSCs needed to mitigate and prevent event sequences, respectively." [NEI_18-04 Table 3-1 p.14]
 - "DBAs are derived from the DBEs by prescriptively assuming that only Safety Related SSCs are available to mitigate postulated event sequence consequences to within the 10 CFR 50.34 dose limits." [NEI_18-04 Table 3-1 p.14]
 - "AOOs take into account the expected response of all SSCs within the plant, regardless of safety classification." [NEI_18-04 Table 3-1 p.14]
+- "DBEs take into account the expected response of all SSCs within the plant regardless of safety classification." [NEI_18-04 Table 3-1 p.14]
+- "BDBEs take into account the expected response of all SSCs within the plant regardless of safety classification." [NEI_18-04 Table 3-1 p.14]
+- "LBE categories are based on mean event sequence frequency of occurrence per plant-year." [NEI_18-04 §3.2.1 p.16]
 - "BDBEs are rare events with frequencies less than 1E-04/plant-year but with upper bound frequencies greater than 5E-07/plant-year." [NEI_18-04 §3.2.1 p.16]
+- "Each of these families is assigned to an LBE category based on mean event sequence frequency of occurrence per plant-year summed over all the event sequences in the LBE family." [NEI_18-04 §3.2.2 Task 4 p.20]
+- "BDBEs are rare events with frequencies less than 1E-04/plant-year but with upper bound frequencies greater than 5E-07/plant-year." [NEI_18-04 §3.2.2 Task 4 p.21]
+- "Event sequences with upper 95th percentile frequencies less than 5E-07/plant-year are retained in the PRA results and used to confirm that there are no cliff-edge effects." [NEI_18-04 §3.2.2 Task 4 p.21]
+- "Event sequences with mean frequencies of 1E-02/plant-year and greater are classified as AOOs. AOOs take into account the expected response of all SSCs within the plant, regardless of safety classification." [NEI_18-04 §6 p.90]
+- "DBEs take into account the expected response of all SSCs within the plant regardless of safety classification." [NEI_18-04 §6 p.90]
+- "The objective and scope of DBEs form the safety design basis of the plant." [NEI_18-04 §6 p.90]
+- "Event sequences with frequencies of 5E-07/plant-year to 1E-04/plant -year are classified as BDBEs." [NEI_18-04 §6 p.90]
+- "BDBEs take into account the expected response of all SSCs within the plant regardless of safety classification." [NEI_18-04 §6 p.90]
+- "Postulated accidents that are used to set design criteria and performance objectives for the design of Safety-Related SSCs." [NEI_18-04 §6 p.90]
+- "DBAs are derived from DBEs based on the capabilities and reliabilities of Safety-Related SSCs needed to mitigate and prevent accidents, respectively." [NEI_18-04 §6 p.90]
 
 | 항목 | 값 | 출처 |
 |---|---|---|
@@ -30,11 +43,15 @@ terms_pending: []
 | DBA | derived from DBEs based on the capabilities and reliabilities of Safety-Related SSCs | [NEI_18-04 Table 3-1 p.14] |
 
 ## 해설
-세 범주는 평균 빈도 하나로 갈린다. AOO%%t:AOO%%는 1E-02/plant-year 이상, DBE%%t:DBE%%는 1E-04/plant-year에서 1E-02/plant-year 사이, BDBE%%t:BDBE%%는 5E-07/plant-year에서 1E-04/plant-year 사이이다. 구간이 맞닿아 있으므로 빈도 추정값이 경계 근처면 범주가 바뀔 수 있다.
+표 3-1에서 세 범주는 평균 빈도로 갈린다. AOO%%t:AOO%%는 1E-02/plant-year 이상, DBE%%t:DBE%%는 1E-04/plant-year에서 1E-02/plant-year 사이, BDBE%%t:BDBE%%는 5E-07/plant-year에서 1E-04/plant-year 사이이다. 구간이 맞닿아 있으므로 빈도 추정값이 경계 근처면 범주가 바뀔 수 있다.
 
-범주를 가르는 빈도는 안전 등급과 무관하게 계통 전체의 예상 거동을 반영한 값이다. 원문은 AOO%%t:AOO%%에 대해 이 점을 명시하며, DBE%%t:DBE%%와 BDBE%%t:BDBE%% 정의에도 같은 문장이 붙어 있다. 따라서 빈도는 안전 등급이 있는 설비만으로 계산한 값이 아니다.
+범주를 가르는 빈도는 안전 등급과 무관하게 발전소 안의 모든 SSC%%t:SSC%%의 예상 응답을 반영한 값이다. 표 3-1과 용어집은 모두 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%% 정의에 이 문장을 둔다. 따라서 빈도는 안전 등급이 있는 설비만으로 계산한 값이 아니다.
 
 DBA%%t:DBA%%는 성격이 다르다. 빈도 구간으로 정의되지 않고 DBE%%t:DBE%%에서 유도되며, 완화에 동원되는 설비를 Safety-Related SSC%%t:SSC%%로 한정한다고 가정한다. 즉 같은 ES%%t:ES%%를 보수적으로 다시 평가한 것이 DBA%%t:DBA%%이고, 그 목적은 설계 기준과 성능 목표를 정하는 데 있다.
+
+§6 용어집의 정의는 표 3-1과 대체로 같지만 세 곳에서 표현이 다르다. DBE%%t:DBE%% 정의에는 DBE%%t:DBE%%의 목적과 범위가 발전소의 안전 설계기준을 이룬다는 문장이 더 있다. BDBE%%t:BDBE%% 정의는 구간을 5E-07/plant-year에서 1E-04/plant-year로 같게 적되, 표 3-1의 mean이라는 한정어 없이 frequencies로만 적는다. DBA%%t:DBA%% 정의는 표 3-1의 event sequences 대신 accidents라는 말을 쓴다. 구간 수치는 두 곳이 같다.
+
+BDBE%%t:BDBE%% 빈도 하한의 기준은 원문 안에서 어긋난다. 표 3-1은 평균 빈도 5E-07/plant-year 이상을 BDBE%%t:BDBE%%로 정의하고, §3.2.1과 §3.2.2의 Licensing Basis Event%%t:LBE%% 범주 지정 과업도 범주가 평균 빈도에 기반한다고 적는다. 그러나 같은 두 곳은 BDBE%%t:BDBE%%를 빈도가 1E-04/plant-year보다 낮지만 상한 빈도가 5E-07/plant-year보다 높은 사건으로 적는다. §3.2.2의 그 과업은 이어서 95th percentile 상한 빈도가 5E-07/plant-year보다 낮은 ES%%t:ES%%를 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는다. 하한을 평균값으로 보는지 상한값으로 보는지가 다르므로 이 노트는 disputed로 둔다.
 
 ## 관련 문서
 - [[Licensing_Basis_Event]]

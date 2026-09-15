@@ -30,9 +30,11 @@ terms_pending: []
 - "The PRA process, in the course of addressing the three questions of the risk triplet—1) What can go wrong? 2) How likely is it? and 3) What are the consequences?—exposes many sources of uncertainty in the definition of event sequences, the estimation of their frequencies, and the quantification of the consequences." [NEI_18-04 §3.3.1 p.30]
 - "This information on uncertainties is important input in the selection of protective strategies and in the evaluation of DID adequacy." [NEI_18-04 §3.3.1 p.30]
 - "The above uses of the PRA complement the use of deterministic methods traditionally employed in the development of the design and licensing bases as part of a risk-informed, rather than risk-based, process." [NEI_18-04 §3.3.1 p.30]
+- "A perturbation to the plant during a plant operating state (POS) that challenges plant control and safety systems whose failure could potentially lead to an undesirable end state and/or radioactive material release." [NEI_18-04 §6 p.90]
+- "These events include human-caused perturbations and failure of equipment from either internal plant causes (such as hardware faults, floods, or fires) or external plant causes (such as earthquakes or high winds)." [NEI_18-04 §6 p.90]
 
 ## 해설
-원문은 기존 방식의 한계에서 출발한다. General Design Criteria나 SRP가 반영하는 전통적 LBE%%t:LBE%% 선정 방식에는 설계 고유 사건을 찾는 체계적 절차가 없다. 반면 PRA는 새 설계에 고유한 사건을 체계적으로 찾을 수 있는 유일한 도구이고, FMEA나 HAZOP 같은 기존 계통 분석 기법도 이미 Initiating Event%%t:IE%% 선정과 Event Sequence%%t:ES%% 모델 개발 방법에 흡수되어 있다. PRA는 내부 사건, 발전소 내부 재해, 외부 사건을 포함한 ES%%t:ES%%를 열거하고 각각의 빈도와 결말을 평가한다. 원문은 PRA 도입을 뒤로 미루면 비용 효율적인 위험 관리 기회가 줄어든다고 적는다.
+원문은 기존 방식의 한계에서 출발한다. General Design Criteria나 SRP가 반영하는 전통적 LBE%%t:LBE%% 선정 방식에는 설계 고유 사건을 찾는 체계적 절차가 없다. 반면 PRA는 새 설계에 고유한 사건을 체계적으로 찾을 수 있는 유일한 도구이고, FMEA나 HAZOP 같은 기존 계통 분석 기법도 이미 Initiating Event%%t:IE%% 선정과 Event Sequence%%t:ES%% 모델 개발 방법에 흡수되어 있다. 용어집은 IE%%t:IE%%를 Plant Operating State%%t:POS%% 동안 발전소 제어·안전 계통에 부담을 주어, 그 계통이 고장 나면 원하지 않는 End State%%t:END_STATE%%나 방사성 물질 방출로 이어질 수 있는 교란으로 정의하고, 인적 원인의 교란과 내부 원인(하드웨어 결함, 침수, 화재 등)이나 외부 원인(지진, 강풍 등)에 의한 설비 고장을 포함한다고 적는다. PRA는 내부 사건, 발전소 내부 재해, 외부 사건을 포함한 ES%%t:ES%%를 열거하고 각각의 빈도와 결말을 평가한다. 원문은 PRA 도입을 뒤로 미루면 비용 효율적인 위험 관리 기회가 줄어든다고 적는다.
 
 그러나 원문은 LBE%%t:LBE%% 선정 절차가 risk-based가 아니라 risk-informed라고 명시한다. 근거는 세 가지다. 첫째, PRA 개발 자체가 공학적 판단이 많이 들어가는 결정론적 계통공학 분석에 기대고 있다. 둘째, Design Basis Accident%%t:DBA%%는 규정된 규칙으로 선정하고 보수적 가정으로 해석한다. 셋째, 선정 결과와 평가 결과가 심층방어(Defense-in-Depth)%%t:DID%% 적절성 지침을 만족하는지 검토한다. PRA에 대한 peer review와 규제 검토도 완전성과 불확실도 처리를 따지는 기회가 된다.
 

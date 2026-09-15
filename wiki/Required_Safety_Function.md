@@ -17,6 +17,7 @@ terms_pending: []
 - "A PRA Safety Function that is required to be fulfilled to maintain the consequence of one or more DBEs or the frequency of one or more high-consequence BDBEs inside the F-C Target" [NEI_18-04 §6 p.90]
 - "Reactor design specific SSC functions modeled in a PRA that serve to prevent and/or mitigate a release of radioactive material or to protect one or more barriers to release." [NEI_18-04 §6 p.90]
 - "SSCs that are credited in the fulfillment of RSFs and are capable to perform their RSFs in response to any Design Basis External Hazard Level" [NEI_18-04 §6 p.90]
+- "A design specification of the level of severity or intensity of an external hazard for which the Safety-Related SSCs are designed to withstand with no adverse impact on their capability to perform their RSFs" [NEI_18-04 §6 p.90]
 - "In Task 5a, the full set of DBEs are examined to identify the PSFs that are necessary and sufficient to meet the F-C Target for all DBEs and high-consequence BDBEs, and to conservatively ensure that 10 CFR 50.34 dose requirements can be met." [NEI_18-04 §3.2.2 Task 5a p.21]
 - "High consequence BDBEs are those with consequences that exceed 10 CFR 50.34 dose criteria." [NEI_18-04 §3.2.2 Task 5a p.21]
 - "RSFs for any high-consequence BDBEs are responsible for preventing them from increasing in frequency into the DBE region and outside the F-C Target by exhibiting sufficient reliability performance to keep the BDBE frequency sufficiently low." [NEI_18-04 §3.2.2 Task 5a p.21]
@@ -34,7 +35,7 @@ RSF%%t:RSF%%는 DBE%%t:DBE%% 전체를 검토해 도출한다. DBE%%t:DBE%%에�
 
 Task 4에서 찾은 DBE%%t:DBE%% 하나마다 결정론적 DBA%%t:DBA%%를 하나씩 정의한다. DBA%%t:DBA%%는 그 DBE%%t:DBE%%의 RSF%%t:RSF%% 부담을 그대로 두되, 그 기능을 SR%%t:SR%% SSC%%t:SSC%%만 수행하고 같은 기능을 하는 비안전 등급 설비는 쓸 수 없다고 가정한다. 원문은 여러 Layers of Defense%%t:LAYERS_OF_DEFENSE%%에 걸쳐 고유·피동·능동 설계 특성을 조합한다는 점 등을 들어 단일 고장 기준이 필요하지 않다고 본다.
 
-외부 재해에 대해서는 Design Basis External Hazard Level%%t:DBEHL%%을 정한다. SR%%t:SR%% SSC%%t:SSC%%는 DBEHL%%t:DBEHL%% 안의 외부 사건에서도 RSF%%t:RSF%%를 수행해야 하므로, 외부 재해 때문에 새 DBA%%t:DBA%%가 생기지는 않는다.
+외부 재해에 대해서는 Design Basis External Hazard Level%%t:DBEHL%%을 정한다. 용어집은 DBEHL%%t:DBEHL%%을 SR%%t:SR%% SSC%%t:SSC%%가 RSF%%t:RSF%% 수행 능력에 악영향 없이 견디도록 설계되는 외부 재해의 심각도나 강도의 수준에 대한 설계 사양으로 정의한다. SR%%t:SR%% SSC%%t:SSC%%는 DBEHL%%t:DBEHL%% 안의 외부 사건에서도 RSF%%t:RSF%%를 수행해야 하므로, 외부 재해 때문에 새 DBA%%t:DBA%%가 생기지는 않는다.
 
 ## 관련 문서
 - [[LBE_Selection_Process]]

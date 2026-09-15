@@ -109,6 +109,10 @@ terms_pending: []
 | CLIFF_EDGE_EFFECT | cliff edge effects |  |  |  | 절벽 효과 | [NEI_18-04 §5.7.2 p.74] | 영어 유지 | 2026-09-15 사용자 결정 |
 | TECH_SPECS | Technical Specifications |  |  |  |  | [NEI_18-04 Table 5-7 p.81] | 용어 아님 | 2026-09-15 사용자 결정 |
 | SAMG | Severe Accident Management Guidelines |  |  |  |  | [NEI_18-04 Table 5-7 p.81] | 용어 아님 | 2026-09-15 사용자 결정 |
+| PLANT | Plant |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정. 일반 명사 "발전소"는 표지 없이 쓴다 |
+| MULTI_MODULE_PLANT | Multi-Reactor Module Plant |  |  |  |  | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| END_STATE | End State |  |  |  | 종료 상태; 최종 상태 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
+| PRA_TECH_ADEQUACY | PRA Technical Adequacy |  |  |  | 기술적 적정성 | [NEI_18-04 §6 p.90] | 영어 유지 | 2026-09-15 사용자 결정 |
 | PIRT | phenomena identification ranking table | PIRT |  | 약어 |  | [NEI_18-04 Table 5-6 p.77] | 영어 유지 | 2026-09-15 사용자 결정. 원문에 풀이 없음, 풀이는 사용자 제공 |
 
 ## 표기 규칙

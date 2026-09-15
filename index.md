@@ -5,7 +5,7 @@
 ## 원문 (source)
 
 - [[ACRS_ML25293A458]] — NRC Review of Kemmerer Unit 1 Construction Permit Application, Control of Heat Generation
-- [[NEI_18-04]] — Risk-Informed Performance-Based Technology Inclusive Guidance for Non-Light Water Reactor Licensing Basis Development
+- [[NEI_18-04]] — NEI 18-04는 비경수로의 Licensing Basis Event 선정(3장), Structures, Systems, and Components 안전 분류와 special treatment(4장), 심층방어(Defense-in-Depth) 적절성 평가(5장)를 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시하는 지침이며, 6장은 용어집이다.
 - [[PSAR_ch01]] — General Plant and Site Description
 - [[PSAR_ch03]] — Licensing Basis Events
 - [[PSAR_ch04]] — Integrated Evaluations
@@ -25,7 +25,7 @@
 - [[Event_Sequence_Family]] — Licensing Basis Event는 PRA에 모델링된 개별 Event Sequence를 비슷한 특성으로 묶은 Event Sequence Family로 정의된다.
 - [[F_C_Target]] — Frequency-Consequence Target은 빈도–결말 도표 위의 기준선이며, 개별 Licensing Basis Event의 risk significance와 risk margin을 평가하는 데 쓰인다.
 - [[Integrated_Decision_Making_Process]] — integrated decision-making process는 심층방어(Defense-in-Depth) 적절성을 평가하는 과정으로, 설계 관리 과정의 일부로 수행하거나 운영 단계 검토처럼 상설 Integrated Decision-Making Process Panel로 수행할 수 있다.
-- [[LBE_Frequency_Categories]] — Anticipated Operational Occurrence, Design Basis Event, Beyond Design Basis Event는 평균 빈도 구간으로 구분된다.
+- [[LBE_Frequency_Categories]] — Anticipated Operational Occurrence, Design Basis Event, Beyond Design Basis Event는 평균 빈도 구간으로 구분된다. (disputed)
 - [[LBE_Layers_Of_Defense_Review]] — 심층방어(Defense-in-Depth) 평가의 중심 요소 가운데 하나는 integrated decision-making process가 Licensing Basis Event를 Layers of Defense와 체계적으로 대조하는 검토이다.
 - [[LBE_Risk_Significance]] — Licensing Basis Event는 평균 빈도로 범주를 정하되, 빈도 불확실도 구간이 범주 경계에 걸치면 양쪽 범주에서 모두 평가한다. (disputed)
 - [[LBE_Selection_Process]] — Licensing Basis Event 선정 절차는 Task 1–10으로 이루어진 논리도로 제시되며, 과제에 정해진 순서가 없고 설계가 진행되는 동안 반복된다.
@@ -44,6 +44,7 @@
 - [[SSC_Safety_Classification]] — Structures, Systems, and Components는 PRA에 모델링된 기능을 기준으로 Safety-Related, Non-Safety-Related with Special Treatment, Non-Safety-Related with No Special Treatment 세 범주로 분류된다.
 - [[Safety_Significant_SSC]] — Safety-Significant SSC는 Safety-Related와 Non-Safety-Related with Special Treatment로 분류된 Structures, Systems, and Components 전체이다.
 - [[Special_Treatment]] — special treatment는 Regulatory Guide 1.201에서 Structures, Systems, and Components가 설계기준 기능을 수행한다는 확신을 통상의 산업 관행 이상으로 높이는 요건으로 정의되며, 이 절차에서는 Licensing Basis Event에 반영된 기능 수행에 대한 합리적 확신을 주는 조치이다.
+- [[TI_RIPB_Process_Overview]] — NEI 18-04는 비경수로의 Licensing Basis Event 선정, Structures, Systems, and Components 안전 분류와 risk-informed special treatment, 심층방어(Defense-in-Depth) 적절성 판단을 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시한다.
 
 ## 지도 (map)
 

@@ -65,3 +65,12 @@
 ## [2026-09-15] terms | 용어 반영: §4.4·§5 용어
 - 영어 유지 26 (RFDC, SRDC, Prevention/Mitigation Function, Layers of Defense, barrier, safety margin, RAP, IDPP, RISC, SSE, Seismic II/I, Plant Capability DID, Programmatic DID, RIPB-DM, TI-RIPB, PB, RI, Safety Design Approach, levels of defense, protective measure, compensatory action, risk margin, design margin, reliability/availability mission, cliff edge effects, PIRT)
 - 용어 아님 6 (MR, LER, QA, MHTGR, Technical Specifications, SAMG)
+
+## [2026-09-15] ingest | NEI 18-04 ABSTRACT, §1–§2, §6 (finish)
+- 새 노트 1 (TI_RIPB_Process_Overview), 고친 노트 10 (용어집 정의 추가: LBE 범주, LBE, NSRST·NST, DBEHL, ES·End State·POS·Plant·Multi-Reactor Module Plant, PRA Technical Adequacy·MST, IE, RI·PB, Safety Design Approach)
+- 검사: lint 오류 0·경고 0, verify_quotes 오류 0, sync_terms 충돌 0, 서브에이전트 원문 대조 뒤 수정
+- disputed 추가: LBE_Frequency_Categories (BDBE 빈도 하한, 평균값 대 상한값)
+- NEI_18-04 ingest complete
+
+## [2026-09-15] terms | 용어 반영: 용어집 용어
+- 영어 유지 4 (Plant, Multi-Reactor Module Plant, End State, PRA Technical Adequacy)

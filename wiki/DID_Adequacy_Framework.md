@@ -54,6 +54,8 @@ terms_pending: []
 - "The IDP uses information and insights in each of these elements to support a risk-informed and performance-based evaluation of DID adequacy." [NEI_18-04 §5.4 p.66]
 - "As indicated in Figure 5-2, RIPB decisions that are made in this evaluation feedback any necessary changes to the DID attributes reflected in the plant capability and programmatic elements of DID." [NEI_18-04 §5.4 p.66]
 - "Because the design, safety analyses, and PRA will be developed in phases and in an iterative fashion, the DID adequacy evaluation and baseline, including compensatory action selection and sufficiency, is updated as the design matures." [NEI_18-04 §5.5 p.68]
+- "The strategies that are implemented in the design of a nuclear power plant that are intended to support safe operation of the plant and control the risks associated with unplanned releases of radioactive material and protection of the public and plant workers." [NEI_18-04 §6 p.90]
+- "These strategies normally include the use of robust barriers, multiple layers of defense, redundancy, and diversity, and the use of inherent and passive design features to perform safety functions." [NEI_18-04 §6 p.90]
 
 | Figure 5-2 요소 | 항목 | 출처 |
 |---|---|---|
@@ -98,7 +100,7 @@ Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%는 Plant Capability Defense-
 
 세 번째 요소인 RI%%t:RI%% 평가는 앞의 두 요소의 조합으로 얻은 적절성을 체계적으로 검토한다. 이 평가는 RI%%t:RI%% integrated decision-making process%%t:IDP%%가 수행하며, 심층방어%%t:DID%%의 충분성을 판단하고 더 적은 부담으로 같은 수준의 안전을 얻는 대안을 검토할 수 있게 한다. 그 결과는 발전소 수명 동안 위험을 관리하는 심층방어%%t:DID%% baseline도 확립한다. IAEA 접근을 바탕으로 한 그림 5-3의 틀은 각 LBE%%t:LBE%%를 평가하고, Event Sequence%%t:ES%%를 예방·완화하도록 설계에 반영된 심층방어%%t:DID%% attribute가 적절한 SSC%%t:SSC%% 신뢰도와 능력을 반영하는지 확인하는 맥락을 제공하며, risk significance가 가장 높은 LBE%%t:LBE%%에 더 주의를 둔다. 이때 PRA는 전통적인 결정론적 안전 접근과 함께 risk-informed 과정을 이루며, 수치 위험 지표를 계산하는 데 그치지 않고 설계에 대한 위험 통찰을 얻고 PRA 모델과 자료의 불확실도 원천을 찾는 데 쓰인다. 심층방어%%t:DID%% 평가는 빈도와 결말 추정의 risk-significant 불확실도 원천에 대응하는 compensating protective measure%%t:PROTECTIVE_MEASURE%%를 식별한다.
 
-표 5-1은 technology-inclusive, risk-informed, and performance-based%%t:TI_RIPB%% 체계의 다섯 주요 요소, 즉 설계자의 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%% 개발, 원자로별 PRA, LBE%%t:LBE%% 선정·평가, SSC%%t:SSC%% 안전 분류와 성능 요건, 심층방어%%t:DID%% 적절성의 RI%%t:RI%% 평가가 각각 적절성 확립에서 맡는 역할을 정리한다. IDP%%t:IDP%%는 이 요소들의 정보와 통찰을 써서 적절성을 평가하고, 그림 5-2처럼 평가에서 내린 RIPB%%t:RIPB%% 결정은 발전소 능력과 프로그램 요소에 반영된 심층방어%%t:DID%% attribute에 필요한 변경을 되돌려 준다. 설계, 안전해석, PRA는 단계적·반복적으로 개발되므로, compensatory action%%t:COMPENSATORY_ACTION%%의 선정과 충분성을 포함한 적절성 평가와 baseline은 설계가 성숙함에 따라 갱신된다.
+표 5-1은 technology-inclusive, risk-informed, and performance-based%%t:TI_RIPB%% 체계의 다섯 주요 요소, 즉 설계자의 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%% 개발, 원자로별 PRA, LBE%%t:LBE%% 선정·평가, SSC%%t:SSC%% 안전 분류와 성능 요건, 심층방어%%t:DID%% 적절성의 RI%%t:RI%% 평가가 각각 적절성 확립에서 맡는 역할을 정리한다. 용어집은 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%%를 발전소의 안전한 운전을 뒷받침하고 계획되지 않은 방사성 물질 방출의 위험과 공중·작업자 보호를 관리하려고 설계에 구현하는 전략으로 정의하며, 통상 견고한 barrier%%t:BARRIER%%, 여러 Layers of Defense%%t:LAYERS_OF_DEFENSE%%, 중복성과 다양성, safety function을 수행하는 고유·피동 설계 특성을 포함한다고 적는다. IDP%%t:IDP%%는 이 요소들의 정보와 통찰을 써서 적절성을 평가하고, 그림 5-2처럼 평가에서 내린 RIPB%%t:RIPB%% 결정은 발전소 능력과 프로그램 요소에 반영된 심층방어%%t:DID%% attribute에 필요한 변경을 되돌려 준다. 설계, 안전해석, PRA는 단계적·반복적으로 개발되므로, compensatory action%%t:COMPENSATORY_ACTION%%의 선정과 충분성을 포함한 적절성 평가와 baseline은 설계가 성숙함에 따라 갱신된다.
 
 ## 관련 문서
 - [[DID_Integrated_Process]]

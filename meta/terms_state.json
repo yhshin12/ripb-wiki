@@ -165,6 +165,17 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "END_STATE": {
+   "abbr": "",
+   "english": "End State",
+   "forbidden": [
+    "종료 상태",
+    "최종 상태"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "EPA": {
    "abbr": "EPA",
    "english": "Environmental Protection Agency",
@@ -361,6 +372,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "MULTI_MODULE_PLANT": {
+   "abbr": "",
+   "english": "Multi-Reactor Module Plant",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "NEI": {
    "abbr": "NEI",
    "english": "Nuclear Energy Institute",
@@ -433,6 +452,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "PLANT": {
+   "abbr": "",
+   "english": "Plant",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "PLANT_CAPABILITY_DID": {
    "abbr": "",
    "english": "Plant Capability Defense-in-Depth",
@@ -458,6 +485,16 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "PRA_TECH_ADEQUACY": {
+   "abbr": "",
+   "english": "PRA Technical Adequacy",
+   "forbidden": [
+    "기술적 적정성"
+   ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "PREVENTION_FUNCTION": {
    "abbr": "",
