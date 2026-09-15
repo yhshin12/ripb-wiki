@@ -1,0 +1,366 @@
+[
+ {
+  "find": "as a 1 The chapter- and section-level organization of safety analysis reports for LWRs is described in guidance such as RG 1.70, RG 1.206, and NUREG-0800.\n\n<!-- page 10 -->\n\nrequirement, then licensees and applicants must comply with that standard as set forth in the regulation. If the secondary reference has been endorsed in a RG as an acceptable approach for meeting an NRC requirement, then the standard constitutes a method acceptable to the NRC staff for meeting that regulatory requirement as described in the specific RG. If the secondary reference has neither been incorporated by reference into NRC regulations nor endorsed in a RG, then the secondary reference is neither a legally-binding requirement nor a “generic” NRC approved acceptable approach for meeting an NRC requirement. However, licensees and applicants may consider and use the information in the secondary reference, if appropriately justified, consistent with current regulatory practice, and consistent with applicable NRC requirements.\n",
+  "replace": "as a requirement, then licensees and applicants must comply with that standard as set forth in the regulation. If the secondary reference has been endorsed in a RG as an acceptable approach for meeting an NRC requirement, then the standard constitutes a method acceptable to the NRC staff for meeting that regulatory requirement as described in the specific RG. If the secondary reference has neither been incorporated by reference into NRC regulations nor endorsed in a RG, then the secondary reference is neither a legally-binding requirement nor a “generic” NRC approved acceptable approach for meeting an NRC requirement. However, licensees and applicants may consider and use the information in the secondary reference, if appropriately justified, consistent with current regulatory practice, and consistent with applicable NRC requirements.\n\n[^1]: The chapter- and section-level organization of safety analysis reports for LWRs is described in guidance such as RG 1.70, RG 1.206, and NUREG-0800.\n\n<!-- page 10 -->\n",
+  "count": 1,
+  "page": 9,
+  "evidence": "Footnote 1 body (PDF p9 bottom, 9 pt, below the separator) was inserted mid-sentence 'as a' / 'requirement, then' (p9-p10); restored as a [^1] definition at the end of p9 and the sentence rejoined"
+ },
+ {
+  "find": "appropriate to early\n\n###### 2 The definitions of some phrases used in NEI 18-04 are different from the same phrases used in NRC regulations and guidance developed for LWRs. The terms “AOO” and “DBE” are examples of similar terms having different definitions. The methodology in NEI 18-04 also includes a different definition and means to identify SR SSCs from those used in the deterministic approaches for LWRs. NEI 18-04 includes a glossary to help alleviate some of the issues that will arise because of differences in terminology. Applicants referencing this RG are expected to use the terminology in NEI 18-04 and, as needed, identify exceptions to and exemptions needed from NRC regulations.\n\n<!-- page 12 -->\n\nstages of design, such as failure modes and effects analyses and process hazard analyses. Designers may likewise use the design criteria from RG 1.232 and confirm or refine them throughout the design process to develop the final PDC provided in an application. These techniques provide industry-standardized practices to ensure that such early-stage evaluations are systematic, reproducible, and as complete as the current stage of design permits. The subsequent use of the PRA by the designer is used to develop or confirm the events, safety functions, key SSCs, and adequacy of DID; and provides a structured framework to risk-inform the application for the specific reactor design. The designer’s quantification of frequencies and consequences of event sequences in the PRA, and the associated quantification of uncertainties, provides an objective means of comparing the likelihood and consequence of different scenarios in relation to the F-C target. The scope of the PRA, when completed, should cover internal and external hazards and provide an estimate of radiological consequences when the design is completed and site characteristics are defined. Designers seeking certifications or approvals prior to site selection may make assumptions related to site characteristics and external hazards, which would be confirmed or adjusted for licensing an advanced non-LWR at a specific site. Figure 3-2, “Process for Selecting and Evaluating Licensing Basis Events,” in NEI 18-04 depicts the iterative process needed to identify and evaluate LBEs and reflects that PRA models are expected to be developed by the designer and refined as the design process progresses and the licensing-basis documents are developed.3\n",
+  "replace": "appropriate to early stages of design, such as failure modes and effects analyses and process hazard analyses. Designers may likewise use the design criteria from RG 1.232 and confirm or refine them throughout the design process to develop the final PDC provided in an application. These techniques provide industry-standardized practices to ensure that such early-stage evaluations are systematic, reproducible, and as complete as the current stage of design permits. The subsequent use of the PRA by the designer is used to develop or confirm the events, safety functions, key SSCs, and adequacy of DID; and provides a structured framework to risk-inform the application for the specific reactor design. The designer’s quantification of frequencies and consequences of event sequences in the PRA, and the associated quantification of uncertainties, provides an objective means of comparing the likelihood and consequence of different scenarios in relation to the F-C target. The scope of the PRA, when completed, should cover internal and external hazards and provide an estimate of radiological consequences when the design is completed and site characteristics are defined. Designers seeking certifications or approvals prior to site selection may make assumptions related to site characteristics and external hazards, which would be confirmed or adjusted for licensing an advanced non-LWR at a specific site. Figure 3-2, “Process for Selecting and Evaluating Licensing Basis Events,” in NEI 18-04 depicts the iterative process needed to identify and evaluate LBEs and reflects that PRA models are expected to be developed by the designer and refined as the design process progresses and the licensing-basis documents are developed.3\n\n[^2]: The definitions of some phrases used in NEI 18-04 are different from the same phrases used in NRC regulations and guidance developed for LWRs. The terms “AOO” and “DBE” are examples of similar terms having different definitions. The methodology in NEI 18-04 also includes a different definition and means to identify SR SSCs from those used in the deterministic approaches for LWRs. NEI 18-04 includes a glossary to help alleviate some of the issues that will arise because of differences in terminology. Applicants referencing this RG are expected to use the terminology in NEI 18-04 and, as needed, identify exceptions to and exemptions needed from NRC regulations.\n\n<!-- page 12 -->\n",
+  "count": 1,
+  "page": 11,
+  "evidence": "Footnote 2 body (PDF p11 bottom, 9 pt) was emitted as an H6 heading between 'appropriate to early' (p11) and 'stages of design' (p12); restored as a [^2] definition at the end of p11 and the paragraph rejoined"
+ },
+ {
+  "find": "BDBEs for 3 NEI 18-04 points out that applications made under 10 CFR Part 52 are required to include a description of PRA results. SRM-SECY-15-002, “Proposed Updates of Licensing Policies, Rules, and Guidance for Future New Reactor Applications, dated September 22, 2015 (ADAMS Accession No. ML15266A023) confirmed the Commission’s expectations that PRAs would be developed and described in new reactor applications under 10 CFR Part 50.\n\n<!-- page 13 -->\n\nnon-LWRs. A deterministic DBA is associated with each DBE that includes the required safety function challenges, but the DBA analysis is performed with the assumption that the required safety functions are performed by SR SSCs. Applicants typically describe these DBAs in Chapter 15 of a safety analysis report to support the deterministic safety analysis and show that the offsite consequences are below the reference values included in NRC regulations (e.g., 10 CFR 50.34). Although developed for LWRs, NRC RG 1.203, “Transient and Accident Analysis Methods,” provides additional guidance that would be generally applicable for analyzing DBAs for non-LWRs.\n",
+  "replace": "BDBEs for non-LWRs. A deterministic DBA is associated with each DBE that includes the required safety function challenges, but the DBA analysis is performed with the assumption that the required safety functions are performed by SR SSCs. Applicants typically describe these DBAs in Chapter 15 of a safety analysis report to support the deterministic safety analysis and show that the offsite consequences are below the reference values included in NRC regulations (e.g., 10 CFR 50.34). Although developed for LWRs, NRC RG 1.203, “Transient and Accident Analysis Methods,” provides additional guidance that would be generally applicable for analyzing DBAs for non-LWRs.\n\n[^3]: NEI 18-04 points out that applications made under 10 CFR Part 52 are required to include a description of PRA results. SRM-SECY-15-002, “Proposed Updates of Licensing Policies, Rules, and Guidance for Future New Reactor Applications, dated September 22, 2015 (ADAMS Accession No. ML15266A023) confirmed the Commission’s expectations that PRAs would be developed and described in new reactor applications under 10 CFR Part 50.\n\n<!-- page 13 -->\n",
+  "count": 1,
+  "page": 12,
+  "evidence": "Footnote 3 body (PDF p12 bottom, 9 pt) was inserted mid-sentence 'BDBEs for' / 'non-LWRs. A deterministic DBA' (p12-p13); restored as a [^3] definition at the end of p12 and the sentence rejoined. Source wording kept: 'SRM-SECY-15-002', missing closing quote after 'Applications'"
+ },
+ {
+  "find": "\n\n4 An example is the anchor point at an event sequence frequency of 5E-07per plant year",
+  "replace": "\n\n[^4]: An example is the anchor point at an event sequence frequency of 5E-07 per plant year",
+  "count": 1,
+  "page": 14,
+  "evidence": "Footnote 4 body (PDF p14 bottom). Text layer: '5x10-7 per plant year' (space present; converter output '5x10-7per'); exponent in E-notation per decision D2 (cleanup_review_2026-09-11 §D2)"
+ },
+ {
+  "find": "SSCs are 5 The methodology in NEI 18-04 includes a different definition and means to identify SR SSCs for non-LWRs from those used in the deterministic approaches for LWRs. Additionally, “nonsafety-related” is used in NEI 18-04 but is not a defined term in NRC regulations and has different meanings depending on the context in which it has been used in guidance documents and specific applications. As used in this RG and NEI 18-04, the term “nonsafety-related” means SSCs or an SSC that is not safety-related. NEI 18-04 includes a glossary to help alleviate some of the issues that will arise because of differences in terminology. Applicants referencing this RG are expected to use the terminology in NEI 18-04 and, as needed, identify exceptions to and exemptions needed from NRC regulations.\n\n<!-- page 17 -->\n\nclassified as safety significant, but they may have requirements to ensure that failures following a design-basis internal or external event do not adversely impact SR or NSRST SSCs in their performance of safety-significant functions.\n",
+  "replace": "SSCs are classified as safety significant, but they may have requirements to ensure that failures following a design-basis internal or external event do not adversely impact SR or NSRST SSCs in their performance of safety-significant functions.\n\n[^5]: The methodology in NEI 18-04 includes a different definition and means to identify SR SSCs for non-LWRs from those used in the deterministic approaches for LWRs. Additionally, “nonsafety-related” is used in NEI 18-04 but is not a defined term in NRC regulations and has different meanings depending on the context in which it has been used in guidance documents and specific applications. As used in this RG and NEI 18-04, the term “nonsafety-related” means SSCs or an SSC that is not safety-related. NEI 18-04 includes a glossary to help alleviate some of the issues that will arise because of differences in terminology. Applicants referencing this RG are expected to use the terminology in NEI 18-04 and, as needed, identify exceptions to and exemptions needed from NRC regulations.\n\n<!-- page 17 -->\n",
+  "count": 1,
+  "page": 16,
+  "evidence": "Footnote 5 body (PDF p16 bottom, 9 pt) was inserted mid-sentence 'SSCs are' / 'classified as safety significant' (p16-p17); restored as a [^5] definition at the end of p16 and the sentence rejoined"
+ },
+ {
+  "find": "\n\n6 This guidance focuses on the design features",
+  "replace": "\n\n[^6]: This guidance focuses on the design features",
+  "count": 1,
+  "page": 23,
+  "evidence": "Footnote 6 body (PDF p23 bottom, 9 pt); already at the end of p23, only the label is converted"
+ },
+ {
+  "find": "\n\n7 Publicly available NRC published documents",
+  "replace": "\n\n[^7]: Publicly available NRC published documents",
+  "count": 1,
+  "page": 29,
+  "evidence": "Footnote 7 body (PDF p29 bottom, 9 pt); already at the end of p29, only the label is converted"
+ },
+ {
+  "find": "of its safety analysis report.1 Information",
+  "replace": "of its safety analysis report.[^1] Information",
+  "count": 1,
+  "page": 9,
+  "evidence": "PDF p9 y=84: 7 pt superscript '1' after 'safety analysis report.'"
+ },
+ {
+  "find": "(BDBEs) for non-LWRs.2 The primary",
+  "replace": "(BDBEs) for non-LWRs.[^2] The primary",
+  "count": 1,
+  "page": 11,
+  "evidence": "PDF p11 y=378: 7 pt superscript '2' after 'non-LWRs.'"
+ },
+ {
+  "find": "licensing-basis documents are developed.3\n",
+  "replace": "licensing-basis documents are developed.[^3]\n",
+  "count": 1,
+  "page": 12,
+  "evidence": "PDF p12 y=274: 7 pt superscript '3' after 'documents are developed.'"
+ },
+ {
+  "find": "included in the methodology.4 The F-C target",
+  "replace": "included in the methodology.[^4] The F-C target",
+  "count": 1,
+  "page": 14,
+  "evidence": "PDF p14 y=122: 7 pt superscript '4' after 'methodology.'"
+ },
+ {
+  "find": "categories used in NEI 18-045 for non-LWRs",
+  "replace": "categories used in NEI 18-04[^5] for non-LWRs",
+  "count": 1,
+  "page": 16,
+  "evidence": "PDF p16 y=312: 7 pt superscript '5' after 'NEI 18-04' (false identifier 'NEI 18-045')"
+ },
+ {
+  "find": "10 CFR 52.157.6 The staff finds",
+  "replace": "10 CFR 52.157.[^6] The staff finds",
+  "count": 1,
+  "page": 23,
+  "evidence": "PDF p23 y=389: 7 pt superscript '6' after '10 CFR 52.157.'"
+ },
+ {
+  "find": "## REFERENCES7\n",
+  "replace": "## REFERENCES[^7]\n",
+  "count": 1,
+  "page": 29,
+  "evidence": "PDF p29 y=71.5: heading 'REFERENCES' 14 pt bold + 9 pt bold '7' (footnote mark; same form as RG_1.232 'REFERENCES[^7]')"
+ },
+ {
+  "find": "Washington, DC 205550001, or by",
+  "replace": "Washington, DC 20555-0001, or by",
+  "count": 1,
+  "page": 5,
+  "evidence": "PDF p5 line end 'Washington, DC 20555-' / next line '0001, or by e-mail' (line-end hyphen removed by the converter). 'DC20503; e- mail:' on the same page is source text and is not changed"
+ },
+ {
+  "find": "Reactor Near-Term\n\nImplementation Action Plans” (Ref. 23)",
+  "replace": "Reactor Near-Term Implementation Action Plans” (Ref. 23)",
+  "count": 1,
+  "page": 7,
+  "evidence": "PDF p7 y=161-174: one paragraph; the converter broke it at two line ends inside the quoted titles"
+ },
+ {
+  "find": "Mid-Term and Long-Term\n\nImplementation Action Plans” (Ref. 24)",
+  "replace": "Mid-Term and Long-Term Implementation Action Plans” (Ref. 24)",
+  "count": 1,
+  "page": 7,
+  "evidence": "PDF p7 y=174-186: same paragraph as above"
+ },
+ {
+  "find": "policy statement states the following: To provide for more timely",
+  "replace": "policy statement states the following:\n\nTo provide for more timely",
+  "count": 1,
+  "page": 8,
+  "evidence": "PDF p8: lead-in line (y=110) and the indented block quotation are separate paragraphs"
+ },
+ {
+  "find": "licensing and regulation of advanced reactors. The NRC has interacted",
+  "replace": "licensing and regulation of advanced reactors.\n\nThe NRC has interacted",
+  "count": 1,
+  "page": 8,
+  "evidence": "PDF p8: the block quotation ends at 'regulation of advanced reactors.'; 'The NRC has interacted' starts a new body paragraph"
+ },
+ {
+  "find": "the applicability of\n\nWritten suggestions regarding this guide or development of new guides may be submitted through the NRC’s public Web site in the NRC Library at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/, under Document Collections, in Regulatory Guides, at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/contactus.html.\n\nElectronic copies of this RG, previous versions of RGs, and other recently issued guides are also available through the NRC’s public Web site in the NRC Library at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/, under Document Collections, in Regulatory Guides. This RG is also available through the NRC’s Agencywide Documents Access and Management System (ADAMS) at http://www.nrc.gov/reading-rm/adams.html, under ADAMS Accession Number (No.) ML20091L698. The regulatory analysis may be found in ADAMS under Accession No. ML18325A214. The associated draft guide DG-1353 may be found in ADAMS under Accession No. ML18312A242, and the staff responses to the public comments on DG-1353 may be found under ADAMS Accession No. ML20091L696.\n\n<!-- page 2 -->\n\nspecific technical requirements in NRC regulations or the need to define additional technical requirements arising from the safety evaluations is made on a case-by-case basis for each non-LWR design.\n\n",
+  "replace": "the applicability of specific technical requirements in NRC regulations or the need to define additional technical requirements arising from the safety evaluations is made on a case-by-case basis for each non-LWR design.\n\nWritten suggestions regarding this guide or development of new guides may be submitted through the NRC’s public Web site in the NRC Library at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/, under Document Collections, in Regulatory Guides, at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/contactus.html.\n\nElectronic copies of this RG, previous versions of RGs, and other recently issued guides are also available through the NRC’s public Web site in the NRC Library at https://nrcweb.nrc.gov/reading-rm/doc-collections/reg-guides/, under Document Collections, in Regulatory Guides. This RG is also available through the NRC’s Agencywide Documents Access and Management System (ADAMS) at http://www.nrc.gov/reading-rm/adams.html, under ADAMS Accession Number (No.) ML20091L698. The regulatory analysis may be found in ADAMS under Accession No. ML18325A214. The associated draft guide DG-1353 may be found in ADAMS under Accession No. ML18312A242, and the staff responses to the public comments on DG-1353 may be found under ADAMS Accession No. ML20091L696.\n\n<!-- page 2 -->\n\n",
+  "count": 1,
+  "page": 1,
+  "evidence": "PDF p1: the cover text box (9 pt, y=623-729) was emitted between 'the applicability of' (p1 last body line) and 'specific technical requirements' (p2 first line); the sentence is rejoined and the box follows the paragraph, still under the p1 anchor"
+ },
+ {
+  "find": "- 10 CFR Part 50 provides regulations for licensing production and utilization facilities.\n\no 10 CFR 50.34, “Contents of applications; technical information,” describes the minimum information required for (a) preliminary safety analysis reports supporting applications for a construction permit and (b) final safety analysis reports supporting applications for operating licenses.\n\n- 10 CFR Part 52 governs the issuance of early site permits, standard design certifications (DCs), combined licenses (COLs), standard design approvals (SDAs), and manufacturing licenses (MLs) for nuclear power facilities.\n",
+  "replace": "- 10 CFR Part 50 provides regulations for licensing production and utilization facilities.\n  - 10 CFR 50.34, “Contents of applications; technical information,” describes the minimum information required for (a) preliminary safety analysis reports supporting applications for a construction permit and (b) final safety analysis reports supporting applications for operating licenses.\n- 10 CFR Part 52 governs the issuance of early site permits, standard design certifications (DCs), combined licenses (COLs), standard design approvals (SDAs), and manufacturing licenses (MLs) for nuclear power facilities.\n",
+  "count": 1,
+  "page": 2,
+  "evidence": "PDF p2: 'o' second-level bullet under '• 10 CFR Part 50' (raw glyph emitted as a paragraph); list re-nested, text unchanged"
+ },
+ {
+  "find": "\n- o 10 CFR 52.",
+  "replace": "\n  - 10 CFR 52.",
+  "count": 4,
+  "page": 2,
+  "evidence": "PDF p2: four 'o' second-level bullets under '• 10 CFR Part 52' (52.47, 52.79, 52.137, 52.157) emitted as first-level items with the raw glyph"
+ },
+ {
+  "find": "  - o SSCs selected by the reactor designer from the SSCs that are available to perform the required safety functions to mitigate the consequences of DBEs to within the LBE F-C target and to mitigate DBAs that only rely on the SR SSCs to meet the 10 CFR 50.34 dose limits using conservative assumptions o SSCs selected by the reactor designer and relied on to perform required safety functions to prevent the frequency of BDBE with consequences greater than the 10 CFR 50.34 dose limits from increasing into the DBE region and beyond the F-C target\n",
+  "replace": "  - SSCs selected by the reactor designer from the SSCs that are available to perform the required safety functions to mitigate the consequences of DBEs to within the LBE F-C target and to mitigate DBAs that only rely on the SR SSCs to meet the 10 CFR 50.34 dose limits using conservative assumptions\n  - SSCs selected by the reactor designer and relied on to perform required safety functions to prevent the frequency of BDBE with consequences greater than the 10 CFR 50.34 dose limits from increasing into the DBE region and beyond the F-C target\n",
+  "count": 1,
+  "page": 16,
+  "evidence": "PDF p16 y=~470-520: two 'o' sub-bullets under 'safety related:' merged into one item with raw glyphs"
+ },
+ {
+  "find": "  - o non-SR SSCs relied on to perform risk significant functions; risk-significant SSCs are those that perform functions that prevent or mitigate any LBE from exceeding the F-C target or that make significant contributions to the cumulative risk metrics selected for evaluating the total risk from all analyzed LBEs o non-SR SSCs relied on to perform functions requiring special treatment for DID adequacy\n",
+  "replace": "  - non-SR SSCs relied on to perform risk significant functions; risk-significant SSCs are those that perform functions that prevent or mitigate any LBE from exceeding the F-C target or that make significant contributions to the cumulative risk metrics selected for evaluating the total risk from all analyzed LBEs\n  - non-SR SSCs relied on to perform functions requiring special treatment for DID adequacy\n",
+  "count": 1,
+  "page": 16,
+  "evidence": "PDF p16: two 'o' sub-bullets under 'nonsafety-related with special treatment (NSRST):' merged into one item with raw glyphs"
+ },
+ {
+  "find": "introduced by external hazards. NEI 18-04 states the following:",
+  "replace": "introduced by external hazards.\n\nNEI 18-04 states the following:",
+  "count": 1,
+  "page": 14,
+  "evidence": "PDF p14 y=439: 'NEI 18-04 states the following:' is a separate paragraph after item c, followed by the indented quotation"
+ },
+ {
+  "find": "\nAOO anticipated operational occurrence BDBE beyond-design-basis event CFR Code of Federal Regulations COL combined license DC design certification DBA design-basis accident DBE design-basis event DBEHL design-basis external hazard level DG draft regulatory guide DID defense in depth DOE U.S. Department of Energy F-C frequency-consequence IAEA International Atomic Energy Agency IDP integrated decision process IDPP integrated decision process panel ITAAC inspections, tests, analyses, and acceptance criteria ITP Initial Test Program LBE licensing-basis event LMP Licensing Modernization Project LWR light-water reactor MHTGR modular high-temperature gas-cooled reactor ML manufacturing license mrem millirem NEI Nuclear Energy Institute NRC U.S. Nuclear Regulatory Commission NSRST nonsafety-related with special treatment OMB Office of Management and Budget PRA probabilistic risk assessment PRISM Power Reactor Innovative Small Module RFDC required functional design criteria RG regulatory guide RTNSS regulatory treatment of nonsafety systems SDA standard design approval SR safety related SRM staff requirements memorandum SSC structure, system, and component TS technical specification U.S.C. United States Code\n",
+  "replace": "\n<!-- header row supplied: the PDF prints this table without one (p.28) -->\n\n| Acronym | Definition |\n|---|---|\n| AOO | anticipated operational occurrence |\n| BDBE | beyond-design-basis event |\n| CFR | Code of Federal Regulations |\n| COL | combined license |\n| DC | design certification |\n| DBA | design-basis accident |\n| DBE | design-basis event |\n| DBEHL | design-basis external hazard level |\n| DG | draft regulatory guide |\n| DID | defense in depth |\n| DOE | U.S. Department of Energy |\n| F-C | frequency-consequence |\n| IAEA | International Atomic Energy Agency |\n| IDP | integrated decision process |\n| IDPP | integrated decision process panel |\n| ITAAC | inspections, tests, analyses, and acceptance criteria |\n| ITP | Initial Test Program |\n| LBE | licensing-basis event |\n| LMP | Licensing Modernization Project |\n| LWR | light-water reactor |\n| MHTGR | modular high-temperature gas-cooled reactor |\n| ML | manufacturing license |\n| mrem | millirem |\n| NEI | Nuclear Energy Institute |\n| NRC | U.S. Nuclear Regulatory Commission |\n| NSRST | nonsafety-related with special treatment |\n| OMB | Office of Management and Budget |\n| PRA | probabilistic risk assessment |\n| PRISM | Power Reactor Innovative Small Module |\n| RFDC | required functional design criteria |\n| RG | regulatory guide |\n| RTNSS | regulatory treatment of nonsafety systems |\n| SDA | standard design approval |\n| SR | safety related |\n| SRM | staff requirements memorandum |\n| SSC | structure, system, and component |\n| TS | technical specification |\n| U.S.C. | United States Code |\n",
+  "count": 1,
+  "page": 28,
+  "evidence": "PDF p28: 38 acronym/definition pairs in two columns (x=72 / x=126, one row per 12.6 pt) were fused into one paragraph; rendered as a two-column table like RG_1.232 ACRONYMS/ABBREVIATIONS, header row supplied"
+ },
+ {
+  "find": "# U.S. NUCLEAR REGULATORY COMMISSION\n\n## REGULATORY GUIDE 1.233 REVISION 0\n\n###### Issue Date: June 2020 Technical Lead: William Reckley\n\nGUIDANCE FOR A TECHNOLOGY-INCLUSIVE, RISK-INFORMED, AND PERFORMANCE-BASED METHODOLOGY TO INFORM THE LICENSING BASIS AND CONTENT OF APPLICATIONS FOR LICENSES, CERTIFICATIONS, AND APPROVALS FOR NON-LIGHT-WATER REACTORS\n",
+  "replace": "U.S. NUCLEAR REGULATORY COMMISSION\n\nREGULATORY GUIDE 1.233 REVISION 0\n\nIssue Date: June 2020\n\nTechnical Lead: William Reckley\n\n# GUIDANCE FOR A TECHNOLOGY-INCLUSIVE, RISK-INFORMED, AND PERFORMANCE-BASED METHODOLOGY TO INFORM THE LICENSING BASIS AND CONTENT OF APPLICATIONS FOR LICENSES, CERTIFICATIONS, AND APPROVALS FOR NON-LIGHT-WATER REACTORS\n",
+  "count": 1,
+  "page": 1,
+  "evidence": "PDF p1 cover: masthead 18/14 pt, two 9 pt bold fields on separate lines, document title 16 pt bold; title becomes the only H1 (RG_1.232 outline)"
+ },
+ {
+  "find": "## A. INTRODUCTION\n\nPurpose\n\n",
+  "replace": "## A. INTRODUCTION\n\n### Purpose\n\n",
+  "count": 1,
+  "page": 1,
+  "evidence": "PDF p1 y=310: 'Purpose' 11 pt bold subsection heading emitted as a paragraph"
+ },
+ {
+  "find": "\n##### Applicability\n",
+  "replace": "\n### Applicability\n",
+  "count": 1,
+  "page": 2,
+  "evidence": "PDF p2: 'Applicability' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Applicable Regulations\n",
+  "replace": "\n### Applicable Regulations\n",
+  "count": 1,
+  "page": 2,
+  "evidence": "PDF p2: 'Applicable Regulations' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Related Guidance\n",
+  "replace": "\n### Related Guidance\n",
+  "count": 1,
+  "page": 2,
+  "evidence": "PDF p2: 'Related Guidance' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Paperwork Reduction Act\n",
+  "replace": "\n### Paperwork Reduction Act\n",
+  "count": 1,
+  "page": 5,
+  "evidence": "PDF p5: 'Paperwork Reduction Act' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Public Protection Notification\n",
+  "replace": "\n### Public Protection Notification\n",
+  "count": 1,
+  "page": 5,
+  "evidence": "PDF p5: 'Public Protection Notification' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Background\n",
+  "replace": "\n### Background\n",
+  "count": 1,
+  "page": 6,
+  "evidence": "PDF p6: 'Background' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Intended Use of This Regulatory Guide\n",
+  "replace": "\n### Intended Use of This Regulatory Guide\n",
+  "count": 1,
+  "page": 8,
+  "evidence": "PDF p8: 'Intended Use of This Regulatory Guide' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Harmonization with International Standards\n",
+  "replace": "\n### Harmonization with International Standards\n",
+  "count": 1,
+  "page": 9,
+  "evidence": "PDF p9: 'Harmonization with International Standards' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n##### Documents Discussed in Staff Regulatory Guidance\n",
+  "replace": "\n### Documents Discussed in Staff Regulatory Guidance\n",
+  "count": 1,
+  "page": 9,
+  "evidence": "PDF p9: 'Documents Discussed in Staff Regulatory Guidance' 11 pt bold, sibling of 'Purpose' -> H3"
+ },
+ {
+  "find": "\n#### Purpose of Regulatory Guides\n",
+  "replace": "\n### Purpose of Regulatory Guides\n",
+  "count": 1,
+  "page": 4,
+  "evidence": "PDF p4 y=558: 12 pt bold, sibling of the other A subsections -> H3"
+ },
+ {
+  "find": "\n##### Reason for Revision\n\n## B. DISCUSSION\n",
+  "replace": "\n## B. DISCUSSION\n\n### Reason for Revision\n",
+  "count": 1,
+  "page": 6,
+  "evidence": "PDF p6: 'B. DISCUSSION' (y<101) precedes 'Reason for Revision' (y=101); reading order swapped by the converter"
+ },
+ {
+  "find": "\n## Regulatory Framework\n",
+  "replace": "\n#### Regulatory Framework\n",
+  "count": 1,
+  "page": 6,
+  "evidence": "PDF p6: 'Regulatory Framework' 11 pt regular, underlined (sub-subsection of Background) -> H4"
+ },
+ {
+  "find": "\n## Policy on Advanced Reactors\n",
+  "replace": "\n#### Policy on Advanced Reactors\n",
+  "count": 1,
+  "page": 7,
+  "evidence": "PDF p7: 'Policy on Advanced Reactors' 11 pt regular, underlined (sub-subsection of Background) -> H4"
+ },
+ {
+  "find": "\n## Guidance on Contents of Applications\n",
+  "replace": "\n#### Guidance on Contents of Applications\n",
+  "count": 1,
+  "page": 7,
+  "evidence": "PDF p7: 'Guidance on Contents of Applications' 11 pt regular, underlined (sub-subsection of Background) -> H4"
+ },
+ {
+  "find": "\n##### 1. Selection of Licensing-Basis Events\n",
+  "replace": "\n### 1. Selection of Licensing-Basis Events\n",
+  "count": 1,
+  "page": 11,
+  "evidence": "PDF p11 y=303: '1.' + title 11 pt bold italic -> H3 under C"
+ },
+ {
+  "find": "\n##### 2.\n\n## Safety Classification and Performance Criteria for Structures, Systems, and Components\n",
+  "replace": "\n### 2. Safety Classification and Performance Criteria for Structures, Systems, and Components\n",
+  "count": 1,
+  "page": 15,
+  "evidence": "PDF p15 y=540: number '2.' and title on one line (11 pt bold italic) were split into an H5 and an H2"
+ },
+ {
+  "find": "\n- 3. Evaluation of Defense-in-Depth Adequacy\n",
+  "replace": "\n\n### 3. Evaluation of Defense-in-Depth Adequacy\n",
+  "count": 1,
+  "page": 18,
+  "evidence": "PDF p18 y=401: '3.' + title 11 pt bold italic emitted as a list item"
+ },
+ {
+  "find": "\n##### Plant Capability Defense in Depth\n",
+  "replace": "\n#### Plant Capability Defense in Depth\n",
+  "count": 1,
+  "page": 20,
+  "evidence": "PDF p20: 'Plant Capability Defense in Depth' 11 pt bold inside a numbered C section -> H4"
+ },
+ {
+  "find": "\n##### Programmatic Defense in Depth\n",
+  "replace": "\n#### Programmatic Defense in Depth\n",
+  "count": 1,
+  "page": 21,
+  "evidence": "PDF p21: 'Programmatic Defense in Depth' 11 pt bold inside a numbered C section -> H4"
+ },
+ {
+  "find": "\n##### Risk-Informed and Performance-Based Evaluation of DID Adequacy\n",
+  "replace": "\n#### Risk-Informed and Performance-Based Evaluation of DID Adequacy\n",
+  "count": 1,
+  "page": 21,
+  "evidence": "PDF p21: 'Risk-Informed and Performance-Based Evaluation of DID Adequacy' 11 pt bold inside a numbered C section -> H4"
+ },
+ {
+  "find": "\n##### Mechanistic Source Term\n",
+  "replace": "\n#### Mechanistic Source Term\n",
+  "count": 1,
+  "page": 22,
+  "evidence": "PDF p22: 'Mechanistic Source Term' 11 pt bold inside a numbered C section -> H4"
+ },
+ {
+  "find": "\n##### Informing the Content of Applications\n",
+  "replace": "\n#### Informing the Content of Applications\n",
+  "count": 1,
+  "page": 23,
+  "evidence": "PDF p23: 'Informing the Content of Applications' 11 pt bold inside a numbered C section -> H4"
+ },
+ {
+  "find": "\n##### 4. Other Considerations Emergency Preparedness\n",
+  "replace": "\n### 4. Other Considerations\n\n#### Emergency Preparedness\n",
+  "count": 1,
+  "page": 22,
+  "evidence": "PDF p22: '4. Other Considerations' (y=237, bold italic) and 'Emergency Preparedness' (y=262, bold) are two headings"
+ },
+ {
+  "find": "\n### D. IMPLEMENTATION\n",
+  "replace": "\n## D. IMPLEMENTATION\n",
+  "count": 1,
+  "page": 27,
+  "evidence": "PDF p27: 14 pt bold, sibling of A-C -> H2"
+ }
+]

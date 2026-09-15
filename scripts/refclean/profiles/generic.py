@@ -1,5 +1,5 @@
-"""Generic profile: the core pipeline only, for plain documents (guides, slide decks) that need no document-specific
-steps. Bibliographic fields come from META[key]; add an entry when registering a document with this profile."""
+"""Generic profile: the core pipeline only, for plain documents (guides) that need no document-specific steps
+(the ACRS slide deck has its own profile, acrs_slides). Bibliographic fields come from META[key]; add an entry when registering a document with this profile."""
 from .. import structure as S
 from ..figures import figures_step
 from ..levels import assign_levels
@@ -12,13 +12,6 @@ META = {
                   "the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for "
                   "Non-Light-Water Reactors"),
         "tags": ["reference", "nrc", "regulatory-guide"], "aliases": ["RG 1.233"],
-    },
-    "ACRS_ML25293A458": {
-        "doc_id": "ML25293A458", "doc_type": "NRC staff presentation (ACRS subcommittee meeting)",
-        "issuer": "U.S. Nuclear Regulatory Commission, NRR/DANU/UTB2 (Reed Anzalone)",
-        "revision": "", "date": "2025-10-22/2025-10-23",
-        "title": "NRC Review of Kemmerer Unit 1 Construction Permit Application, Control of Heat Generation",
-        "tags": ["reference", "nrc", "acrs", "natrium"], "aliases": ["ACRS Control of Heat Generation slides"],
     },
 }
 

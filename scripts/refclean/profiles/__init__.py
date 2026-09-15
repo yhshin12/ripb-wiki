@@ -15,5 +15,5 @@ DOCS = {
     "RG_1.233": ("RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology "
                  "for Non-Light-Water Reactors", "generic", None),
     "ACRS_ML25293A458": ("ACRS_ML25293A458_NRC Review of Kemmerer Unit 1 Construction Permit Application, "
-                          "Control of Heat Generation", "generic", None),
+                          "Control of Heat Generation", "acrs_slides", None),
 }

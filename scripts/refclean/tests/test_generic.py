@@ -54,37 +54,6 @@ def test_verify_residual_within_gate(built):
     assert ver["summary"]["missing_pct"] <= 2.0, ver["summary"]
 
 
-@pytest.fixture(scope="module")
-def built_acrs():
-    import clean_references as CR
-    from refclean.doc import load_doc
-    from refclean.emit import render
-    from refclean.pdfaux import build_aux
-    from refclean.profiles import DOCS, generic
-    from refclean.verify import verify
-    key = "ACRS_ML25293A458"
-    stem = DOCS[key][0]
-    if not os.path.exists(os.path.join(RAW, stem + ".json")):
-        pytest.skip("ACRS conversion not available")
-    doc = load_doc(key, stem, CR.RAW, CR.OUT)
-    aux = build_aux(doc.pdf_path, chapter=None, exclude=CR.table_regions(doc))
-    aux.meta["render_figures"] = False
-    for step in generic.steps():
-        step(doc, aux)
-    text, failed = CR.apply_patches(key, render(doc, generic.metadata(doc, aux)))
-    return text, failed, verify(doc, aux, text)
-
-
-@pytest.mark.refs
-def test_acrs_deck(built_acrs):
-    text, failed, ver = built_acrs
-    assert failed == []
-    assert 'doc_id: "ML25293A458"' in text and "pdf_pages: 22" in text
-    assert text.count("<!-- page ") >= 20          # one anchor per slide that carries text (a blank/cover slide may have none)
-    assert "Control of Heat Generation" in text
-    assert ver["summary"]["missing_pct"] <= 2.0, ver["summary"]
-
-
 def test_levels_module_is_shared_by_psar_and_generic():
     from refclean import levels
     from refclean.profiles import generic, psar

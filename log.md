@@ -79,3 +79,8 @@
 - 영어 유지: RG 1.232·RG 1.233·PSAR 약어(GDC, PDC, SFR, SARRDL, LOCA, DL, OL, CP 등), OQE, PIE, CCF, DBHL(DBEHL과 별개), SAFDL, EPZ
 - 확정 한국어: cover gas=커버가스, non-LWR=비경수형원전
 - 용어 아님: ARDC, SFR-DC, MHTGR-DC, primary coolant boundary, functional containment, independent and diverse 등 15
+
+## [2026-09-16] feat | 정제: ACRS 슬라이드 프로파일, RG 1.233 패치, generic 보완
+- acrs_slides 프로파일과 테스트 추가
+- RG_1.233 패치 52건
+- generic 프로파일·테스트 수정
