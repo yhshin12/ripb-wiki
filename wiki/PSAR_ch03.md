@@ -12,8 +12,10 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 0.14
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "§3.1-§3.9 (PRA, MST, LBE methods, selection, AOO/DBE/BDBE/DBA)"
+  status: complete
 ---
 
 # Licensing Basis Events (PSAR_ch03)
@@ -64,4 +66,13 @@ units: []
 - Table 3.5-2 titles RRS-ISPL-BL "SPS-I Leak at the Cold Trap with Reactor Auxiliary Building Barrier Fails to Retain Release" [PSAR_ch03 Table 3.5-2 p.55-56]; §3.7.3.3 heading says "SPS Leak at the Cold Trap with RAB Barrier Successfully Retains Release" [PSAR_ch03 §3.7.3.3 p.73]
 
 ## 관련 문서
-- 없음
+- [[Natrium_AOO_List]]
+- [[Natrium_BDBE_List]]
+- [[Natrium_DBA_List]]
+- [[Natrium_DBE_List]]
+- [[Natrium_Hazard_Screening]]
+- [[Natrium_LBE_Evaluation_Methods]]
+- [[Natrium_LBE_Selection]]
+- [[Natrium_MST_Methodology]]
+- [[Natrium_PRA_Scope]]
+- [[Natrium_Risk_Significant_LBEs]]

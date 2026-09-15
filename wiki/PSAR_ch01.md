@@ -12,8 +12,12 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 1.66
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "§1.3, §1.1.3 (NI/EI), Table 1.4-1 RIPB rows, Table 1.4-4 containment and PRA rows"
+  status: complete
+- unit: "U2 §1.1.1-§1.1.4.1 (plant overview, NI/EI, reactor and heat transport, I&C)"
+  status: complete
 ---
 
 # General Plant and Site Description (PSAR_ch01)
@@ -75,4 +79,13 @@ units: []
 - 없음
 
 ## 관련 문서
-- 없음
+- [[Natrium_Control_Heat_Generation]]
+- [[Natrium_Control_Heat_Removal]]
+- [[Natrium_DID_Approach]]
+- [[Natrium_Functional_Containment]]
+- [[Natrium_Fundamental_Safety_Functions]]
+- [[Natrium_IC_Systems]]
+- [[Natrium_Licensing_Basis_Methodology]]
+- [[Natrium_NI_EI_Interface]]
+- [[Natrium_Plant_Overview]]
+- [[Natrium_Reactor_Heat_Transport_Systems]]

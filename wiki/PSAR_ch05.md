@@ -14,8 +14,12 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 1.07
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "§5.1, §5.2, Tables 5.2-1 to 5.2-4, §5.4, §5.5"
+  status: complete
+- unit: "§5.3 PDC 1-82 and comparison with RG 1.232"
+  status: complete
 ---
 
 # Safety Functions, Design Criteria, and SSC Safety Classification (PSAR_ch05)
@@ -44,4 +48,15 @@ units: []
 - 없음
 
 ## 관련 문서
-- 없음
+- [[Natrium_NSRST_Functions]]
+- [[Natrium_PDC_Additional]]
+- [[Natrium_PDC_Development]]
+- [[Natrium_PDC_Fluid_Heat_Transport]]
+- [[Natrium_PDC_Fuel_Reactivity_Control]]
+- [[Natrium_PDC_Multiple_Barriers]]
+- [[Natrium_PDC_Overall_Requirements]]
+- [[Natrium_PDC_Reactivity_Control]]
+- [[Natrium_SR_Functions_Heat_Generation]]
+- [[Natrium_SR_Functions_Heat_Removal]]
+- [[Natrium_SR_Functions_Retaining_Radionuclides]]
+- [[Natrium_SSC_Safety_Classification]]

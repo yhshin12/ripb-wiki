@@ -12,8 +12,10 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 0.13
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "U1 §6.1-§6.3, §6.4.1 intro, §6.4.1.1, Tables 6.1-1, 6.4-1A, 6.4-1B"
+  status: complete
 ---
 
 # Safety-Significant SSC Criteria and Capabilities (PSAR_ch06)
@@ -58,4 +60,9 @@ units: []
 - 없음
 
 ## 관련 문서
-- 없음
+- [[Natrium_Design_Basis_Hazard_Levels]]
+- [[Natrium_Hazard_Interaction_Requirements]]
+- [[Natrium_Reliability_Capability_Targets]]
+- [[Natrium_SRDC_Summary]]
+- [[Natrium_Seismic_Classification]]
+- [[Natrium_Special_Treatment_Process]]

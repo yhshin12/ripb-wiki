@@ -97,3 +97,8 @@
 ## [2026-09-16] ingest | RG_1.233 본문
 - 새 노트 9 (배경, NEI 18-04 endorsement, LBE·SSC·DID 직원 입장, 신청서 내용, PRA 역할, MST, 단일 고장 기준)
 - 검사: lint 0, verify_quotes 0
+
+## [2026-09-16] ingest | PSAR ch1 (U1–U2), ch3, ch4, ch5, ch6 (U1), ch7 (§7.6.8 일부), ch11 (U1)
+- 새 노트 46, 고친 노트 3 (Fundamental Safety Functions, DID Approach, Risk-Significant LBEs)
+- 검사: lint 0, verify_quotes 0, 서브에이전트 원문 대조 뒤 수정
+- 원문 모순 16건을 meta/contradictions.md에 모음 (disputed 판정은 전체 인제스트 뒤)

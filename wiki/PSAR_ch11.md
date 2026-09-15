@@ -12,8 +12,10 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
   missing_pct: 0.82
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "U1 §11.3 (EP approach, PEP EPZ), §11.5 (technical specifications, operating modes)"
+  status: complete
 ---
 
 # Conduct of Operations (PSAR_ch11)
@@ -47,4 +49,6 @@ units: []
 - 없음
 
 ## 관련 문서
-- 없음
+- [[Natrium_Emergency_Preparedness_EPZ]]
+- [[Natrium_Operating_Modes]]
+- [[Natrium_Technical_Specifications_Scope]]
