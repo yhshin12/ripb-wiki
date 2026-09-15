@@ -105,4 +105,7 @@ Task 15에서 원문은 심층방어%%t:DID%% attribute를 쓰는 주된 동기�
 - [[LBE_Selection_Process]]
 - [[Required_Functional_Design_Criteria]]
 - [[Special_Treatment]]
+- [[LBE_Layers_Of_Defense_Review]]
+- [[DID_Baseline]]
+- [[SSC_Safety_Classification]]
 - [[NEI_18-04]]

@@ -134,4 +134,6 @@ Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%는 Plant Capability Defense-
 - [[Special_Treatment]]
 - [[Integrated_Decision_Making_Process]]
 - [[DID_Integrated_Process]]
+- [[LBE_Layers_Of_Defense_Review]]
+- [[DID_Baseline]]
 - [[NEI_18-04]]

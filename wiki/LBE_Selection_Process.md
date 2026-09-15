@@ -25,6 +25,7 @@ terms_pending: []
 - "Each of these families is assigned to an LBE category based on mean event sequence frequency of occurrence per plant-year summed over all the event sequences in the LBE family." [NEI_18-04 §3.2.2 Task 4 p.20]
 - "It is noted that this DID evaluation does not change the selection of LBEs directly." [NEI_18-04 §3.2.2 Task 7e p.25]
 - "This evaluation could lead to compensatory actions that change the design capability or programmatic controls on the design, which in turn would lead to changes in the PRA and thereby affect the selection or evaluation of LBEs." [NEI_18-04 §3.2.2 Task 7e p.25]
+- "the compensatory action can take on different forms, including changes to design and operation, refinements to the PRA, revisions to the selection of LBEs and safety classification of SSCs, and enhancements to the programmatic elements of DID." [NEI_18-04 §5.7.2 p.74]
 - "Establishing the final list of LBEs and SR SSCs signifies the completion of the LBE selection process and the selection of the SR SSCs." [NEI_18-04 §3.2.2 Task 10 p.26]
 - "an initial set of LBEs is proposed based on engineering judgment in Task 1 of the process." [NEI_18-04 §3.2.3 p.26]
 - "The simplifying perception that a design has stages that contain bright lines is a frequent description at the system level but is not correct at the plant level." [NEI_18-04 §3.2.3 p.27]
@@ -55,7 +56,7 @@ terms_pending: []
 
 Task 5a부터 Task 6까지는 Required Safety Function%%t:RSF%%을 정하고 이를 수행할 SR%%t:SR%% SSC%%t:SSC%%를 고르는 과정이며 [[Required_Safety_Function]]에 정리했다. Task 7a부터 Task 7c까지의 평가, 즉 빈도 범주 판정과 발전소 전체 위험, Risk-Significant LBE%%t:RS_LBE%% 판정 기준은 [[LBE_Risk_Significance]]에 있다.
 
-Task 7e의 심층방어(Defense-in-Depth)%%t:DID%% 평가는 LBE%%t:LBE%% 선정을 직접 바꾸지 않는다. 평가 결과로 설계나 절차적 관리가 바뀌면 PRA가 바뀌고, 그 경로를 거쳐 선정이나 평가에 영향을 줄 수 있다. Task 10에서 LBE%%t:LBE%%와 SR%%t:SR%% SSC%%t:SSC%% 최종 목록을 확정하면 선정 절차가 끝난다.
+Task 7e의 심층방어(Defense-in-Depth)%%t:DID%% 평가는 LBE%%t:LBE%% 선정을 직접 바꾸지 않는다. 평가 결과로 설계나 절차적 관리가 바뀌면 PRA가 바뀌고, 그 경로를 거쳐 선정이나 평가에 영향을 줄 수 있다. §5.7.2도 LBE%%t:LBE%% 검토에서 수용할 수 없는 답이 나오면 compensatory action%%t:COMPENSATORY_ACTION%%의 한 형태로 LBE%%t:LBE%% 선정의 개정을 든다([[LBE_Layers_Of_Defense_Review]]). Task 10에서 LBE%%t:LBE%%와 SR%%t:SR%% SSC%%t:SSC%% 최종 목록을 확정하면 선정 절차가 끝난다.
 
 설계 단계에 관해 원문은, 설계에 뚜렷한 경계를 가진 단계가 있다는 단순한 인식이 계통 수준에서는 흔하지만 발전소 수준에서는 맞지 않다고 본다. 따라서 LBE%%t:LBE%% 목록도 설계가 성숙하는 동안 계속 다듬어지며, 설계와 PRA가 적용 표준과 규제 지침을 충족할 만큼 발전했을 때 확정되어 인허가 신청서에 들어간다.
 
@@ -64,4 +65,9 @@ Task 7e의 심층방어(Defense-in-Depth)%%t:DID%% 평가는 LBE%%t:LBE%% 선정
 - [[LBE_Frequency_Categories]]
 - [[Required_Safety_Function]]
 - [[LBE_Risk_Significance]]
+- [[Event_Sequence_Family]]
+- [[PRA_Role_In_LBE_Selection]]
+- [[DID_Integrated_Process]]
+- [[LBE_Layers_Of_Defense_Review]]
+- [[TI_RIPB_Process_Overview]]
 - [[NEI_18-04]]

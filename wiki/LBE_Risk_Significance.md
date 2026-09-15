@@ -46,9 +46,9 @@ DBE%%t:DBE%% 선량은 평균 결말로 F-C Target%%t:FC_TARGET%%과 비교한�
 
 cumulative risk target%%t:CUM_RISK_TARGET%%은 세 가지이다. 모든 LBE%%t:LBE%%에서 부지 경계 선량 100 mrem을 넘을 총 평균 빈도가 1/plant-year를 넘지 않을 것, EAB%%t:EAB%%에서 1마일 안의 조기 사망 개인 위험이 5E-07/plant-year를 넘지 않을 것, 10마일 안의 잠복 암 사망 개인 위험이 2E-06/plant-year를 넘지 않을 것이다. 뒤의 두 목표는 Quantitative Health Objective%%t:QHO%%를 만족시키기 위한 것이다. 원문은 이 cumulative risk target%%t:CUM_RISK_TARGET%%들이 F-C Target%%t:FC_TARGET%%이 보수적으로 정의되었음을 보장하는 장치라고 설명한다.
 
-LBE%%t:LBE%%는 부지 경계 선량이 30일 동안 2.5 mrem을 넘고 그 빈도가 F-C Target%%t:FC_TARGET%%의 1% 이내에 들면 Risk-Significant LBE%%t:RS_LBE%%로 분류된다. 용어집은 같은 기준을 더 구체적으로 적어, 빈도와 결말의 상한(95%tile) 추정값과 EAB%%t:EAB%%의 30일 선량을 쓴다고 명시한다. SSC%%t:SSC%%는 그 기능이 어떤 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 데 필요하거나, 그 SSC%%t:SSC%%가 고장 난 LBE%%t:LBE%%들의 총 빈도가 세 cumulative risk target%%t:CUM_RISK_TARGET%% 가운데 하나의 1% 이내이면 Risk-Significant SSC%%t:RS_SSC%%로 분류된다.
+LBE%%t:LBE%%는 부지 경계 선량이 30일 동안 2.5 mrem을 넘고 그 빈도가 원문 표현으로 F-C Target%%t:FC_TARGET%%의 within 1% of 범위에 들면 Risk-Significant LBE%%t:RS_LBE%%로 분류된다. 용어집은 같은 기준을 더 구체적으로 적어, 빈도와 결말의 상한(95%tile) 추정값과 EAB%%t:EAB%%의 30일 선량을 쓴다고 명시한다. SSC%%t:SSC%%는 그 기능이 어떤 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 데 필요하거나, 그 SSC%%t:SSC%%가 고장 난 LBE%%t:LBE%%들의 총 빈도가 원문 표현으로 세 cumulative risk target%%t:CUM_RISK_TARGET%% 가운데 하나의 within 1% of이면 Risk-Significant SSC%%t:RS_SSC%%로 분류된다. 기여를 판정하는 수치 기준은 [[Risk_Significant_SSC]]에 있다.
 
-본문의 뒤 절은 Risk-Significant LBE%%t:RS_LBE%% 판정에 빈도와 선량 모두 95th percentile 상한을 쓰라고 명시해 용어집과 같다. 1%는 PRA 표준이 risk-significant event sequence를 정하는 방식과 같고, 2.5 mrem은 부지 경계의 평균적인 사람이 배경 방사선으로 30일 동안 받는 선량의 약 10%이다. 한편 SSC%%t:SSC%%가 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는지 볼 때, 용어집은 평균값을 쓴다고 적고 본문의 뒤 절은 95th percentile 상한을 쓴다고 적어 서로 어긋난다. 이 노트는 그 판정을 담고 있으므로 disputed로 둔다. 상세는 [[Risk_Importance_Measures]]에 있다.
+§3.3.5는 Risk-Significant LBE%%t:RS_LBE%% 판정에 빈도와 선량 모두 95th percentile 상한을 쓰라고 적어 용어집과 같다. 반면 Task 7a는 risk significance 판정에 일반적으로 불확실도 분석이 뒷받침하는 평균 추정값을 쓴다고 적어, 두 서술이 어긋난다. 1%는 PRA 표준이 risk-significant event sequence를 정하는 방식과 같고, 2.5 mrem은 부지 경계의 평균적인 사람이 배경 방사선으로 30일 동안 받는 선량의 약 10%이다. 한편 SSC%%t:SSC%%가 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는지 볼 때, 용어집은 평균값을 쓴다고 적고 본문의 뒤 절은 95th percentile 상한을 쓴다고 적어 서로 어긋난다. 이 노트는 그 판정을 담고 있으므로 disputed로 둔다. 상세는 [[Risk_Importance_Measures]]에 있다.
 
 ## 관련 문서
 - [[Risk_Importance_Measures]]
@@ -56,4 +56,5 @@ LBE%%t:LBE%%는 부지 경계 선량이 30일 동안 2.5 mrem을 넘고 그 빈�
 - [[F_C_Target]]
 - [[LBE_Frequency_Categories]]
 - [[Required_Safety_Function]]
+- [[Risk_Significant_SSC]]
 - [[NEI_18-04]]

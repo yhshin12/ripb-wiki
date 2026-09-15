@@ -19,6 +19,7 @@ terms_pending: []
 ## 원문 사실
 - "In this process, an integrated decision-making process is used to evaluate the design and risk-informed decision to ensure adequacy of design and DID." [NEI_18-04 §4.3 p.48]
 - "Any SSCs that do not meet the risk-significance criteria should be classified as safety-significant only if the integrated decision-making process determines that some form of special treatment is necessary to establish the adequacy of DID." [NEI_18-04 §4.3 p.48]
+- "all SR SSCs are classified as safety-significant whether or not they meet the risk significance criteria." [NEI_18-04 §4.1 Task 3 p.43]
 - "The Integrated Decision-Making Process is discussed more fully in this guidance document; see Section 5.9." [NEI_18-04 Table 4-1 p.52]
 - "An Integrated Decision-Making Process Panel (IDPP) is one means of completing the Integrated Decision-making Process (IDP)." [NEI_18-04 Table 4-1 p.52]
 - "For advanced non-LWRs that are currently in various stages of design development, the IDP may be implemented by a cross-functional design team responsible for the process tasks shown in Figure 5-4." [NEI_18-04 §5.3 p.62]
@@ -89,7 +90,7 @@ terms_pending: []
 | Action Refinement | Cost/Risk/Benefit Considerations | [NEI_18-04 Table 5-8 p.83] |
 
 ## 해설
-§4.3은 IDP%%t:IDP%%가 설계와 risk-informed 결정을 평가해 설계와 심층방어%%t:DID%%의 적절성을 보장한다고 적고, risk significance 기준을 충족하지 않는 Structures, Systems, and Components%%t:SSC%%는 IDP%%t:IDP%%가 적절성 확립에 어떤 형태의 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판단할 때에만 safety-significant로 분류된다고 적는다. 원문은 IDP%%t:IDP%%가 10 CFR 50.69의 risk-informed 안전 분류처럼 운전 중인 발전소가 인허가 기준을 risk-informed 방식으로 바꿀 때 쓰는 과정과 비슷하다고 본다. 각주는 산업계가 그런 패널의 구성과 책임에 관한 절차·지침을 개발했고, NRC가 개별 인허가 소지자의 10 CFR 50.69 프로그램에서 이를 수용했다고 적는다.
+§4.3은 IDP%%t:IDP%%가 설계와 risk-informed 결정을 평가해 설계와 심층방어%%t:DID%%의 적절성을 보장한다고 적고, risk significance 기준을 충족하지 않는 Structures, Systems, and Components%%t:SSC%%는 IDP%%t:IDP%%가 적절성 확립에 어떤 형태의 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판단할 때에만 safety-significant로 분류된다고 적는다. 다만 §4.1의 분류 과업 설명에 따르면 Safety-Related%%t:SR%% SSC%%t:SSC%%는 risk significance 기준 충족 여부와 무관하게 safety-significant로 분류된다. 원문은 IDP%%t:IDP%%가 10 CFR 50.69의 risk-informed 안전 분류처럼 운전 중인 발전소가 인허가 기준을 risk-informed 방식으로 바꿀 때 쓰는 과정과 비슷하다고 본다. 각주는 산업계가 그런 패널의 구성과 책임에 관한 절차·지침을 개발했고, NRC가 개별 인허가 소지자의 10 CFR 50.69 프로그램에서 이를 수용했다고 적는다.
 
 §5.9.1에 따르면 과정의 구현 방식은 설계 개발, 건설, 운전 상태에 따라 달라질 수 있다. IDP%%t:IDP%%의 결정은 품질 기록으로 문서화·보존해야 하며, 원문은 이 기능이 심층방어%%t:DID%%에 영향을 줄 수 있는 향후 발전소 변경 결정에 결정적이라고 본다. Table 4-1 주석은 IDPP%%t:IDPP%%를 IDP%%t:IDP%%를 수행하는 한 가지 수단으로 적고, §5.3은 설계 개발 중인 비경수로에서 여러 분야의 설계팀이 IDP%%t:IDP%%를 수행할 수 있다고 적는다. §5.9.1에 따르면 설계 개발 중인 비경수로에서 IDPP%%t:IDPP%%는 그림 5-4의 통합 과업을 맡는 팀으로 구성되며, 설계·운전·정비 프로그램 개발자와 필요한 결정론적·확률론적 평가를 수행하는 사람들이 포함된다. 운전 중인 발전소의 10 CFR 50.69 적용에서도 패널이 risk-informed 의사결정을 이끌며, 원문은 NEI 00-04의 9절과 11절이 패널 구성과 산출 문서에 유용한 지침을 준다고 적는다.
 
@@ -99,7 +100,7 @@ terms_pending: []
 
 설계의 적절성 평가는 한 번으로 끝나지 않는다. 설계자는 설계 후반의 개정 가능성을 줄이도록 필요한 만큼 자주 이 과정을 쓸 것으로 기대되며, 통합 적절성 평가는 개념·예비·상세·최종 설계의 각 주요 단계 완료와 함께, 그리고 어느 설계·인허가 단계에서든 중요한 설계 변경이나 새로운 risk-significant 정보가 생기면 수행될 것으로 기대된다.
 
-§5.9.3은 IDP%%t:IDP%%로 다음 조치와 결정이 완료되면 적절성이 확인된다고 적는다. Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%가 적절하다고 판단되려면 표 5-2 지침이 충족되고 LBE%%t:LBE%% 검토가 만족스럽게 완료되어야 한다. LBE%%t:LBE%% 검토에는 Frequency-Consequence Target%%t:FC_TARGET%%에 대한 risk margin%%t:RISK_MARGIN%%의 충분성과 cumulative risk target%%t:CUM_RISK_TARGET%%에 대한 risk margin%%t:RISK_MARGIN%%의 충족, 각 LBE%%t:LBE%%가 부담을 주는 층마다 SSC%%t:SSC%%의 예방·완화 역할에 대한 이해, 예방·완화 균형의 충분성, Safety-Related%%t:SR%%·Non-Safety-Related with Special Treatment%%t:NSRST%%·Non-Safety-Related with No Special Treatment%%t:NST%% 분류와 LBE%%t:LBE%%·SSC%%t:SSC%% risk significance 분류의 적절성, 층마다 설계 특성 간 독립성, PRA에서 식별된 불확실도에 대응하는 발전소 능력의 design margin%%t:DESIGN_MARGIN%% 적절성이 포함된다. Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%가 적절하다고 판단되려면 SSC%%t:SSC%% 신뢰도·능력 성능 목표가 설정되고, LBE%%t:LBE%% 위험 선정·평가의 불확실도 원천이 식별되며, 모든 SR%%t:SR%%·NSRST%%t:NSRST%% SSC%%t:SSC%%의 special treatment%%t:SPECIAL_TREATMENT%%가 충분해야 한다. 불확실도 원천 식별에는 Initiating Event%%t:IE%%와 Event Sequence%%t:ES%% 선정의 완전성, LBE%%t:LBE%% 빈도·사건에 대한 발전소 응답·Mechanistic Source Term%%t:MST%% 추정의 불확실도 평가, 남은 불확실도에 대응하는 design margin%%t:DESIGN_MARGIN%%의 적절성이 포함된다.
+§5.9.3은 IDP%%t:IDP%%로 다음 조치와 결정이 완료되면 적절성이 확인된다고 적는다. Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%가 적절하다고 판단되려면 표 5-2 지침이 충족되고 LBE%%t:LBE%% 검토가 만족스럽게 완료되어야 한다. LBE%%t:LBE%% 검토에는 Frequency-Consequence Target%%t:FC_TARGET%%에 대한 risk margin%%t:RISK_MARGIN%%의 충분성과 cumulative risk target%%t:CUM_RISK_TARGET%%에 대한 risk margin%%t:RISK_MARGIN%%의 충족, 각 LBE%%t:LBE%%가 부담을 주는 층마다 SSC%%t:SSC%%의 예방·완화 역할에 대한 이해, 예방·완화 균형의 충분성, SR%%t:SR%%·Non-Safety-Related with Special Treatment%%t:NSRST%%·Non-Safety-Related with No Special Treatment%%t:NST%% 분류와 LBE%%t:LBE%%·SSC%%t:SSC%% risk significance 분류의 적절성, 층마다 설계 특성 간 독립성, PRA에서 식별된 불확실도에 대응하는 발전소 능력의 design margin%%t:DESIGN_MARGIN%% 적절성이 포함된다. Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%가 적절하다고 판단되려면 SSC%%t:SSC%% 신뢰도·능력 성능 목표가 설정되고, LBE%%t:LBE%% 위험 선정·평가의 불확실도 원천이 식별되며, 모든 SR%%t:SR%%·NSRST%%t:NSRST%% SSC%%t:SSC%%의 special treatment%%t:SPECIAL_TREATMENT%%가 충분해야 한다. 불확실도 원천 식별에는 Initiating Event%%t:IE%%와 Event Sequence%%t:ES%% 선정의 완전성, LBE%%t:LBE%% 빈도·사건에 대한 발전소 응답·Mechanistic Source Term%%t:MST%% 추정의 불확실도 평가, 남은 불확실도에 대응하는 design margin%%t:DESIGN_MARGIN%%의 적절성이 포함된다.
 
 ## 관련 문서
 - [[DID_Adequacy_Framework]]
@@ -108,4 +109,7 @@ terms_pending: []
 - [[LBE_Layers_Of_Defense_Review]]
 - [[Safety_Significant_SSC]]
 - [[Special_Treatment]]
+- [[Plant_Capability_DID]]
+- [[Programmatic_DID]]
+- [[DID_Risk_Margins]]
 - [[NEI_18-04]]

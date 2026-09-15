@@ -11,7 +11,7 @@ terms_pending: []
 # PRA Safety Function (PSF)
 
 > [!abstract] 요약
-> PRA Safety Function%%t:PSF%%은 PRA에 모델링된 Structures, Systems, and Components%%t:SSC%%의 기능 가운데 발전소 안의 방사성 물질 원천에서 방출을 막거나 완화하는 기능이다. 그중 Design Basis Event%%t:DBE%% 선량을 Frequency-Consequence Target%%t:FC_TARGET%% 안에 두는 데 필요한 것이 Required Safety Function%%t:RSF%%이며, 그 정의는 IAEA의 Fundamental Safety Function%%t:FSF%%에서 출발해 원자로별로 구체화된다.
+> PRA Safety Function%%t:PSF%%은 PRA에 모델링된 Structures, Systems, and Components%%t:SSC%%의 기능 가운데 발전소 안의 방사성 물질 원천에서 방출을 막거나 완화하는 기능이다. 그중 Design Basis Event%%t:DBE%%의 결말이나 결말이 큰 Beyond Design Basis Event%%t:BDBE%%의 빈도를 Frequency-Consequence Target%%t:FC_TARGET%% 안에 두는 데 필요한 것이 Required Safety Function%%t:RSF%%이며, 그 정의는 IAEA의 Fundamental Safety Function%%t:FSF%%에서 출발해 원자로별로 구체화된다.
 
 ## 원문 사실
 - "Reactor design specific SSC functions modeled in a PRA that serve to prevent and/or mitigate a release of radioactive material or to protect one or more barriers to release." [NEI_18-04 §6 p.90]
@@ -21,6 +21,7 @@ terms_pending: []
 - "From these sets of SSCs, the designer selects a set of SR SSCs to perform each RSF." [NEI_18-04 §3.3.4 p.31]
 - "RSFs are defined starting with generic Fundamental Safety Functions (FSFs) defined by the International Atomic Energy Agency (IAEA) of controlling heat generation, controlling heat removal, and retaining radionuclides." [NEI_18-04 §3.3.4 p.32]
 - "These are refined as necessary into reactor technology-specific safety functions that reflect the reactor concept and unique characteristics of the reactors." [NEI_18-04 §3.3.4 p.32]
+- "A PRA Safety Function that is required to be fulfilled to maintain the consequence of one or more DBEs or the frequency of one or more high-consequence BDBEs inside the F-C Target" [NEI_18-04 §6 p.90]
 - "Safety functions common to all reactor technologies and designs; includes control heat generation, control heat removal and confinement of radioactive material" [NEI_18-04 §6 p.90]
 
 ## 해설

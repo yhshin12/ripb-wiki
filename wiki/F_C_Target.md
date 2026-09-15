@@ -29,6 +29,8 @@ terms_pending: []
 - "Event sequences with frequencies less than 5E-07/plant-year are retained in the PRA results and used to confirm there are no cliff edge effects." [NEI_18-04 §3.2.1 p.17]
 - "the F-C Target is selected such that the risk, defined as the product of the frequency and consequence, does not increase as the frequency decreases." [NEI_18-04 §3.2.1 p.17]
 - "the LBE process includes an activity to assure that the total frequency of exceeding 100 mrem summed over all the AOOs, DBEs, and BDBEs does not exceed 1/year." [NEI_18-04 §3.2.1 p.17]
+- "A prevention or mitigation function of the SSC is necessary to meet the design objective of keeping all LBEs within the F-C Target." [NEI_18-04 §4.2.2 p.47]
+- "Meet F-C Target for all LBEs and cumulative risk metric targets with sufficient margins" [NEI_18-04 Table 5-2 p.69]
 
 | 항목 | 값 | 출처 |
 |---|---|---|
@@ -43,12 +45,15 @@ F-C Target%%t:FC_TARGET%%은 빈도축과 선량축을 가진 도표 위의 한 
 
 선의 모양은 구간마다 다른 근거에서 나온다. 빈도가 높은 Anticipated Operational Occurrence%%t:AOO%% 구역은 연간 선량 한도 100 mrem에서 나온 등위험 곡선을 따르고, 1E-01/plant-year에서 1E-02/plant-year 구간은 1 rem을 기준값으로 삼는다. Design Basis Event%%t:DBE%% 구역은 1E-02/plant-year의 1 rem에서 1E-04/plant-year의 25 rem까지, Beyond Design Basis Event%%t:BDBE%% 구역은 거기서 5E-07/plant-year의 750 rem까지 이어진다. 앵커 점 사이는 로그–로그 도표에서 직선이다. 선량은 Exclusion Area Boundary%%t:EAB%%에서 방출이 시작된 뒤의 기간에 대해 계산하며, 그 기간은 원문 사실의 인용에 있다.
 
-원문이 거듭 강조하는 점은 이 선이 합격과 불합격을 가르지 않는다는 것이다. 이 선은 사건과 Structures, Systems, and Components%%t:SSC%%, 절차적 관리 수단을 민감도와 여유의 관점에서 보는 기준이다. 구 wiki가 "선 위는 수용 불가"로 적었던 서술은 원문과 어긋난다.
+원문이 거듭 강조하는 점은 이 선이 합격과 불합격을 가르지 않는다는 것이다. 이 선은 사건과 Structures, Systems, and Components%%t:SSC%%, 절차적 관리 수단을 민감도와 여유의 관점에서 보는 기준이다. 다만 뒤 절은 모든 LBE%%t:LBE%%를 이 선 안에 두는 것을 설계 목표로 쓰고(§4.2.2), 표 5-2의 전체 지침도 모든 LBE%%t:LBE%%에 대해 F-C Target%%t:FC_TARGET%%과 누적 위험 지표 목표를 충분한 여유로 만족하는 것을 든다. 여유 평가는 [[DID_Risk_Margins]]에 있다.
 
-전체 구간에서 빈도가 낮아질수록 위험(빈도와 결말의 곱)이 커지지 않도록 선이 잡혀 있다. 빈도가 5E-07/plant-year보다 낮은 Event Sequence%%t:ES%%도 버리지 않고 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없는지 확인하는 데 쓴다. 개별 사건에 대한 이 기준과 별도로, 100 mrem을 넘는 빈도의 합이 연 1을 넘지 않도록 하는 cumulative risk target%%t:CUM_RISK_TARGET%%이 있다.
+전체 구간에서 빈도가 낮아질수록 위험(빈도와 결말의 곱)이 커지지 않도록 선이 잡혀 있다. 빈도가 5E-07/plant-year보다 낮은 Event Sequence%%t:ES%%도 버리지 않고 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없는지 확인하는 데 쓴다. 개별 사건에 대한 이 기준과 별도로, 100 mrem을 넘는 빈도의 합이 연 1을 넘지 않도록 하는 cumulative risk target%%t:CUM_RISK_TARGET%%이 있다. cumulative risk target%%t:CUM_RISK_TARGET%%은 이것을 포함해 세 가지이며 [[LBE_Risk_Significance]]에 있다.
 
 ## 관련 문서
 - [[Licensing_Basis_Event]]
 - [[LBE_Frequency_Categories]]
 - [[LBE_Risk_Significance]]
+- [[DID_Risk_Margins]]
+- [[Risk_Significant_SSC]]
+- [[Plant_Capability_DID]]
 - [[NEI_18-04]]

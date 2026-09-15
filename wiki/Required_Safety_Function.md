@@ -42,4 +42,6 @@ Task 4에서 찾은 DBE%%t:DBE%% 하나마다 결정론적 DBA%%t:DBA%%를 하�
 - [[LBE_Frequency_Categories]]
 - [[F_C_Target]]
 - [[Required_Functional_Design_Criteria]]
+- [[PRA_Safety_Function]]
+- [[SSC_Safety_Classification]]
 - [[NEI_18-04]]

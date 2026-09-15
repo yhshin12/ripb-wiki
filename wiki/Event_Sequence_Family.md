@@ -13,7 +13,7 @@ terms_pending: []
 # LBE와 Event Sequence Family (LBEs as Event Sequence Families)
 
 > [!abstract] 요약
-> Licensing Basis Event%%t:LBE%%는 PRA에 모델링된 개별 Event Sequence%%t:ES%%를 비슷한 특성으로 묶은 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 정의된다. 묶는 기준은 Plant Operating State%%t:POS%%, Initiating Event%%t:IE%%, 발전소 응답, end state, 영향받는 모듈과 원천, Mechanistic Source Term%%t:MST%%이며, 빈도는 다중 모듈 발전소 전체의 plant-year당 사건 수로 표현한다.
+> Licensing Basis Event%%t:LBE%%는 PRA에 모델링된 개별 Event Sequence%%t:ES%%를 비슷한 특성으로 묶은 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 정의된다. 묶는 기준은 Plant Operating State%%t:POS%%, Initiating Event%%t:IE%%, 발전소 응답, End State%%t:END_STATE%%, 영향받는 모듈과 원천, Mechanistic Source Term%%t:MST%%이며, 빈도는 다중 모듈 발전소 전체의 plant-year당 사건 수로 표현한다.
 
 ## 원문 사실
 - "A grouping of event sequences with a common or similar POS, Initiating Event, hazard group, challenges to the plant safety functions, response of the plant in the performance of each safety function, response of each radionuclide transport barrier, and end state." [NEI_18-04 §6 p.90]
@@ -47,7 +47,7 @@ terms_pending: []
 ## 해설
 LBE%%t:LBE%%는 개별 ES%%t:ES%% 하나가 아니라, 발전소의 safety function에 비슷한 부담을 주는 ES%%t:ES%%를 묶은 Event Sequence Family%%t:EVENT_SEQ_FAMILY%%로 정의된다. 한 군에는 ES%%t:ES%%가 하나일 수도 여럿일 수도 있다. 원문은 이렇게 묶는 목적을 수많은 개별 사건을 다룰 수 있는 수로 줄여 LBE%%t:LBE%% 선정을 쉽게 하는 데 둔다.
 
-원문이 드는 묶음 기준은 Initiating Event 시점의 POS%%t:POS%%, IE%%t:IE%%에 대한 발전소 응답과 그 과정에서 barrier%%t:BARRIER%%와 PRA Safety Function%%t:PSF%%을 지원하는 설비가 받는 부담, End State%%t:END_STATE%%, 영향받는 모듈과 방사성 물질 원천의 조합, 방출이 있을 때의 MST%%t:MST%%이다. 용어집 정의는 기준 항목이 일부 다르다. 용어집에는 hazard group, safety function별 발전소 응답, radionuclide transport barrier%%t:BARRIER%%별 응답이 더 있고, 모듈·원천 조합과 MST%%t:MST%%는 없다. 용어집은 방출이 있는 군이 release category 하나에만 대응한다고 명시한다.
+원문이 드는 묶음 기준은 IE%%t:IE%% 시점의 POS%%t:POS%%, IE%%t:IE%%에 대한 발전소 응답과 그 과정에서 barrier%%t:BARRIER%%와 PRA Safety Function%%t:PSF%%을 지원하는 설비가 받는 부담, End State%%t:END_STATE%%, 영향받는 모듈과 방사성 물질 원천의 조합, 방출이 있을 때의 MST%%t:MST%%이다. 용어집 정의는 기준 항목이 일부 다르다. 용어집에는 hazard group, safety function별 발전소 응답, radionuclide transport barrier%%t:BARRIER%%별 응답이 더 있고, 모듈·원천 조합과 MST%%t:MST%%는 없다. 용어집은 방출이 있는 군이 release category 하나에만 대응한다고 명시한다.
 
 방출이 있는 경우 같은 군 안의 ES%%t:ES%%는 MST%%t:MST%%와 부지 밖 결말이 같거나 비슷하다. 원문은 많은 LBE%%t:LBE%%가 방출을 수반하지 않으며, 방출을 막는 발전소 능력을 이해하는 것이 설계에 되돌려 줄 매우 중요한 통찰이라고 강조한다.
 
@@ -60,4 +60,5 @@ LBE%%t:LBE%%는 개별 ES%%t:ES%% 하나가 아니라, 발전소의 safety funct
 - [[PRA_Role_In_LBE_Selection]]
 - [[Non_LWR_PRA_Scope]]
 - [[PRA_Safety_Function]]
+- [[LBE_Selection_Process]]
 - [[NEI_18-04]]

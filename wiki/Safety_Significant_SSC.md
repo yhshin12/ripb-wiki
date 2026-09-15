@@ -36,11 +36,13 @@ terms_pending: []
 
 SR%%t:SR%% SSC%%t:SSC%%는 risk significance 기준을 만족할 수도 있고 아닐 수도 있다. 같은 Required Safety Function%%t:RSF%%을 수행하는 다른 설비가 충분히 중복되거나 다양하면 개별 SR%%t:SR%% SSC%%t:SSC%%는 risk-significant가 아닐 수 있다. 그래도 모든 SR%%t:SR%% SSC%%t:SSC%%는 Layers of Defense%%t:LAYERS_OF_DEFENSE%%에 기여하고 RSF%%t:RSF%%를 수행하는 주된 수단이므로, 기준 충족 여부와 무관하게 safety-significant로 분류된다.
 
-risk significance 기준을 넘지 않는 SSC%%t:SSC%%는 IDP%%t:IDP%%가 심층방어%%t:DID%% 적절성을 위해 어떤 형태의 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판단할 때에만 safety-significant로 분류된다. 원문은 그 이유를, 공학적 판단을 담은 심층방어%%t:DID%% 평가가 PRA에서 다 풀리지 않은 불확실도까지 고려하기 때문이라고 설명한다. 이렇게 분류된 SSC%%t:SSC%%에는 special treatment%%t:SPECIAL_TREATMENT%%를 적용해야 한다.
+SR%%t:SR%% SSC%%t:SSC%%를 제외하면, risk significance 기준을 넘지 않는 SSC%%t:SSC%%는 IDP%%t:IDP%%가 심층방어%%t:DID%% 적절성을 위해 어떤 형태의 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판단할 때에만 safety-significant로 분류된다. 원문은 그 이유를, 공학적 판단을 담은 심층방어%%t:DID%% 평가가 PRA에서 다 풀리지 않은 불확실도까지 고려하기 때문이라고 설명한다. 이렇게 분류된 SSC%%t:SSC%%에는 special treatment%%t:SPECIAL_TREATMENT%%를 적용해야 한다.
 
 ## 관련 문서
 - [[SSC_Safety_Classification]]
 - [[Risk_Significant_SSC]]
 - [[Special_Treatment]]
 - [[SSC_Reliability_And_Capability]]
+- [[Integrated_Decision_Making_Process]]
+- [[Plant_Capability_DID]]
 - [[NEI_18-04]]

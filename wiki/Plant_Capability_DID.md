@@ -97,4 +97,5 @@ Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%의 확립은 Safety 
 - [[DID_Risk_Margins]]
 - [[Programmatic_DID]]
 - [[Safety_Significant_SSC]]
+- [[Integrated_Decision_Making_Process]]
 - [[NEI_18-04]]

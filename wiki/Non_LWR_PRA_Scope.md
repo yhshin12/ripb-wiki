@@ -10,7 +10,7 @@ tags: []
 terms_pending: []
 ---
 
-# 비경수로 PRA의 범위와 적정성 (Non-LWR PRA Scope and Adequacy)
+# 비경수로 PRA의 범위와 PRA Technical Adequacy (Non-LWR PRA Scope and Adequacy)
 
 > [!abstract] 요약
 > 비경수로의 PRA는 고유·피동 특성에 더 의존하는 설계를 반영해 내부 사건과 외부 재해의 전 범위를 다뤄야 하지만, 상세 수준은 설계의 크기·복잡도·잠재 위험에 맞출 수 있다. 빈도와 결말은 평균 점추정값과 불확실도 분포로 정량화하며, 원문은 ASME/ANS RA-S-1.4를 PRA의 범위와 PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%를 정하는 수용 가능한 수단으로 든다.
@@ -42,7 +42,7 @@ terms_pending: []
 
 정량화는 평균 점추정값과 불확실도 확률 분포의 형태로 이루어진다. 분포에는 사건 빈도, Mechanistic Source Term%%t:MST%%, 부지 밖 방사선학적 결말의 모수·모델 불확실도를 반영하고, 위험과 성능 불확실도의 주요 기여 요인을 찾도록 민감도 분석을 함께 수행한다.
 
-다중 모듈 발전소는 모듈에 따로 영향을 주는 ES%%t:ES%%와 둘 이상의 모듈에 동시에 영향을 주는 ES%%t:ES%%를 모두 고려해야 하며, 둘 이상의 방사성 물질 원천이 관련된 ES%%t:ES%%도 포함한다. 적정성의 기준으로 원문은 ASME/ANS RA-S-1.4를 들고, 설계가 성숙함에 따라 PRA 범위를 넓혀 간다고 적는다. 설계자가 핵분열생성물 barrier%%t:BARRIER%% 평가로 절차의 일부나 전부를 대신하려 해도, barrier%%t:BARRIER%%에 대한 부담과 barrier%%t:BARRIER%% 사이 의존성을 찾는 데는 PRA 정보가 여전히 쓸모 있다고 원문은 본다.
+다중 모듈 발전소는 모듈에 따로 영향을 주는 ES%%t:ES%%와 둘 이상의 모듈에 동시에 영향을 주는 ES%%t:ES%%를 모두 고려해야 하며, 둘 이상의 방사성 물질 원천이 관련된 ES%%t:ES%%도 포함한다. PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%의 기준으로 원문은 ASME/ANS RA-S-1.4를 들고, 설계가 성숙함에 따라 PRA 범위를 넓혀 간다고 적는다. 설계자가 핵분열생성물 barrier%%t:BARRIER%% 평가로 절차의 일부나 전부를 대신하려 해도, barrier%%t:BARRIER%%에 대한 부담과 barrier%%t:BARRIER%% 사이 의존성을 찾는 데는 PRA 정보가 여전히 쓸모 있다고 원문은 본다.
 
 용어집은 PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%를 risk-informed 의사결정에 목적에 맞는 통찰을 주는 PRA 능력의 기술적 적합성을 규정하는 속성 집합으로 정의한다. 여기에는 현실성, 완전성, 투명성, 설계·건설된 발전소에 대한 PRA 모델의 충실도, 위험 수준에 대비한 불확실도의 식별·평가에 대한 고려가 포함되며, 달성 전략으로 합의된 PRA 표준 준수, PRA peer review, PRA 모델의 형상 관리·유지·갱신과 새 증거 반영을 위한 구조화된 절차를 든다. 또 용어집은 MST%%t:MST%%를 방사성 핵종 재고와, 선원항(source term)%%t:SOURCE_TERM%% 예측에 필요충분한 시간에 따른 방사성 핵종 이동 기구를 기술하는 물리·화학 과정을 모사하는 모델과 뒷받침 과학 자료로 계산한 선원항%%t:SOURCE_TERM%%으로 정의한다.
 
