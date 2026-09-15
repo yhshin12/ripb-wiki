@@ -14,8 +14,10 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
   missing_pct: 0.74
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "§A-C, Table 1, Appendix B (SFR-DC)"
+  status: complete
 ---
 
 # Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors (RG_1.232)
@@ -42,7 +44,23 @@ units: []
 <!-- sync:end -->
 
 ## 알려진 모순
-- 없음
+- SFR-DC 35: 표 1은 상태를 `Same as ARDC`로 적지만, 부록 B 조문에는 같은 번호의 ARDC 조문에 없는 단일 고장 가정 문단이 있다. [[SFR_DC_Residual_Heat_Removal_And_ECC]]
+- SFR-DC 56: 근거는 reactor라는 말을 지웠다고 적지만, 조문에는 reactor containment structure가 남아 있다. [[SFR_DC_Reactor_Containment]]
 
 ## 관련 문서
-- 없음
+- [[Principal_Design_Criteria_Non_LWR]]
+- [[Non_LWR_Design_Criteria_Crosswalk]]
+- [[SFR_DC_Overall_Requirements]]
+- [[SFR_DC_Reactor_Design_And_Coolant_Boundary]]
+- [[SFR_DC_Electric_Power_And_Control_Room]]
+- [[SFR_DC_Protection_Systems]]
+- [[SFR_DC_Reactivity_Control]]
+- [[SFR_DC_Primary_Coolant_Boundary]]
+- [[SFR_DC_Residual_Heat_Removal_And_ECC]]
+- [[SFR_DC_Containment_Heat_Removal_And_Cleanup]]
+- [[SFR_DC_Structural_And_Equipment_Cooling]]
+- [[SFR_DC_Reactor_Containment]]
+- [[SFR_DC_Fuel_And_Reactivity_Control]]
+- [[SFR_DC_Intermediate_Coolant_System]]
+- [[SFR_DC_Sodium_Specific_Criteria]]
+- [[SFR_DC_Primary_Coolant_And_Cover_Gas]]
