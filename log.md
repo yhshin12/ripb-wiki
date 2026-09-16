@@ -132,3 +132,10 @@
 - 영어 유지 1건: Operating Basis Earthquake(OBE), 이후 표기 약어
 - 용어 아님 26건: FIRS, ISRS, SSI, SSSI, seismic anchor motion, accidental torsion, equivalent static load method, dynamic amplification factor, maximum considered earthquake, limit state design method, Lateral Force Resisting System, stay-in-place formwork, steel embedment, extraordinary events, Risk Category, design transient, Service Loading, service stress limit, core support structure, design-by-rule, design-by-analysis, conformance/compliance 상태 표기, topical report, technical report, consensus codes and standards
 - 표지 12곳 부착(노트 4개), sync_terms conflict 0, lint 0, verify 0
+
+## [2026-09-16] lint | 모순 57건 판정과 보류 lint 조치
+- disputed 28건: 노트 38개의 status를 disputed로
+- 기록만 25건(표기·개정판·하위 ID·교차참조 결함), 공백 4건
+- A1: LBE_Risk_Significance 해설에 평균·상한 병기
+- A4: Integrated_Decision_Making_Process 해설에 SR 예외 명시
+- 검사: lint 0, verify_quotes 0, index 176

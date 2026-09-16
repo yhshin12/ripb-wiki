@@ -6,7 +6,7 @@ sources:
 - PSAR_ch01
 - NEI_18-04
 - RG_1.233
-status: checked
+status: disputed
 verified: 2026-09-16
 term: null
 tags:

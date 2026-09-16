@@ -2,7 +2,7 @@
 type: natrium
 aliases: []
 sources: [PSAR_ch07, PSAR_ch03, PSAR_ch04, PSAR_ch05]
-status: checked
+status: disputed
 verified: 2026-09-16
 term:
 tags: [natrium, psar-ch7]

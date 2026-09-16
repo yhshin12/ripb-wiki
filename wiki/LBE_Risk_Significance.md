@@ -46,7 +46,7 @@ terms_pending: []
 ## 해설
 범주 배정에는 빈도의 평균값을 쓴다. 다만 5th percentile과 95th percentile로 정한 불확실도 구간이 범주 경계에 걸치면 그 LBE%%t:LBE%%는 두 범주에서 모두 평가된다. 평균이 1E-02/plant-year를 넘고 5th percentile이 그보다 낮으면 Anticipated Operational Occurrence%%t:AOO%%이자 Design Basis Event%%t:DBE%%로, 평균이 1E-04/plant-year보다 낮고 95th percentile이 그보다 높으면 Beyond Design Basis Event%%t:BDBE%%이자 DBE%%t:DBE%%로 평가한다. 평균이 5E-07/plant-year보다 낮아도 95th percentile이 그 위면 BDBE%%t:BDBE%%로 평가한다.
 
-DBE%%t:DBE%% 선량은 평균 결말로 F-C Target%%t:FC_TARGET%%과 비교한다. 원문은 불확실도 분석을 거친 평균값으로 판단하는 것이 일반적 관행이라는 점을 근거로 든다. 반면 각 Design Basis Accident%%t:DBA%%의 상한 결말(95th percentile)은 Exclusion Area Boundary%%t:EAB%%에서 10 CFR 50.34 선량 한도를 만족해야 한다. 원문은 F-C Target%%t:FC_TARGET%% 그림 자체가 합격 기준이 아니라 중요한 사건에 주의를 모으는 도구라고 적는다.
+DBE%%t:DBE%% 선량은 평균 결말로 F-C Target%%t:FC_TARGET%%과 비교한다. 원문은 불확실도 분석을 거친 평균값으로 판단하는 것이 일반적 관행이라는 점을 근거로 든다. 다만 같은 원문의 다른 절은 불확실도의 영향을 고려하기 위해 빈도와 선량 모두의 상한 95th percentile 추정값을 써야 한다고 적어, risk significance 판정에 쓰는 통계량이 절마다 다르다. 이 노트는 두 서술을 모두 담고 판정하지 않는다. 반면 각 Design Basis Accident%%t:DBA%%의 상한 결말(95th percentile)은 Exclusion Area Boundary%%t:EAB%%에서 10 CFR 50.34 선량 한도를 만족해야 한다. 원문은 F-C Target%%t:FC_TARGET%% 그림 자체가 합격 기준이 아니라 중요한 사건에 주의를 모으는 도구라고 적는다.
 
 cumulative risk target%%t:CUM_RISK_TARGET%%은 세 가지이다. 모든 LBE%%t:LBE%%에서 부지 경계 선량 100 mrem을 넘을 총 평균 빈도가 1/plant-year를 넘지 않을 것, EAB%%t:EAB%%에서 1마일 안의 조기 사망 개인 위험이 5E-07/plant-year를 넘지 않을 것, 10마일 안의 잠복 암 사망 개인 위험이 2E-06/plant-year를 넘지 않을 것이다. 뒤의 두 목표는 Quantitative Health Objective%%t:QHO%%를 만족시키기 위한 것이다. 원문은 이 cumulative risk target%%t:CUM_RISK_TARGET%%들이 F-C Target%%t:FC_TARGET%%이 보수적으로 정의되었음을 보장하는 장치라고 설명한다.
 

@@ -65,3 +65,14 @@
 | C55 | ch1 Table 1.4-4의 50.34(f)(2)(xvii)(격납 계측) 행은 Section 칸을 `11.2`로 두나 ch11 §11.2 본문에는 격납 계측에 관한 서술이 없다 | [PSAR_ch01 Table 1.4-4 p.97], [PSAR_ch11 §11.2 p.20] | Natrium_TMI_Requirements |
 | C56 | 열전달 경로 표현: ch1 §1.1.3은 NSS가 열을 `Energy Island (EI) hot salt storage tank`로 보낸다고 적고 §1.1.4.2는 NSS→ESS→TSS hot tank로 ESS를 사이에 둔다. 열교환기 표기도 `sodium-salt heat exchangers`, `Sodium-Salt Heat Exchangers (SHXs)`, `sodium to salt heat exchangers`로 다르다 | [PSAR_ch01 §1.1.3 p.12], [PSAR_ch01 §1.1.4.2 p.28] | Natrium_Energy_Island_Systems, Natrium_Plant_Overview |
 | C57 | RG 1.232 부록 C의 Section VI 제목은 `Fuel and Reactivity Control`이고 부록 A와 Table 1 머리 목록은 `Fuel and Radioactivity Control`이다 | [RG_1.232 App.C intro p.105], [RG_1.232 Table 1 p.13-20] | MHTGR_DC_Fuel_And_Radioactivity_Control |
+
+## 판정 (2026-09-16 사용자 결정)
+
+세 갈래로 나누어 판정했다. 기준은 "독자가 이 차이를 모르고 노트를 쓰면 잘못된 결론에 이르는가"이다.
+
+- **갈래 A — `status: disputed` (28건)**: C1, C2, C3, C5, C6, C7, C12, C13, C16, C20, C21, C23, C24, C25, C26, C27, C30, C32, C33, C34, C35, C36, C38, C39, C40, C44, C52, C53. 수치·개수·기준값·분류·요건 수가 직접 충돌하거나, 같은 대상에 대한 서술이 서로를 배제한다. 관련 노트 38개를 `status: disputed`로 두었다.
+- **갈래 B — 기록만, 상태 변경 없음 (25건)**: C4, C8, C9, C10, C11, C14, C15, C17, C18, C19, C22, C28, C29, C31, C37, C41, C42, C43, C45, C47, C48, C49, C50, C51, C56, C57. 이름·제목·개정판 표기 차이, 하위 ID 세분화 차이, 원문 교차참조 결함이다. 원문 오기는 고치지 않는다.
+- **갈래 C — 공백, 판정 불가 (4건)**: C46(설계 과도와 LBE의 대응표가 원문에 없음), C54·C55(Table 1.4-4의 Section 칸이 가리키는 ch11 절에 해당 내용이 없거나 비공개), C13의 PRA standard 상태. 자료가 vault에 없으므로 "vault에 없음"으로 남긴다.
+
+갈래 A의 노트는 모순이 해소될 새 원문이 들어오기 전까지 `disputed`를 유지한다.
+

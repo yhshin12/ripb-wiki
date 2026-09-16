@@ -5,7 +5,7 @@ sources:
 - ACRS_ML25293A458
 - PSAR_ch05
 - PSAR_ch07
-status: checked
+status: disputed
 verified: 2026-09-16
 term: null
 tags:

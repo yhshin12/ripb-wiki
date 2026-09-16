@@ -2,7 +2,7 @@
 type: natrium
 aliases: []
 sources: [PSAR_ch03, NEI_18-04]
-status: checked
+status: disputed
 verified: 2026-09-16
 term:
 tags: [natrium, lbe]

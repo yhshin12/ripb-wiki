@@ -35,8 +35,8 @@ Phase 3 인제스트 단위 전부 작성 완료(커밋 승인 대기). 남은 �
 
 ## 다음 작업
 1. 변경 요약 승인 → `status: checked`·`verified` 부여, `source.py finish`(PSAR ch1·ch6·RG 1.232·RG 1.233), `append_log.py`, `build_index.py`, 커밋.
-2. `meta/contradictions.md`의 모순 57건을 한꺼번에 판정(disputed)하고 보류한 lint 조치 A1·A4·A6을 함께 처리.
-3. 미정 용어 질문 배치(아래 후보 목록)를 한 번에 묻고 `wiki-terms`로 반영.
+2. lint 조치 A6 결정(`Risk_Significant_SSC` 단일 기록처화와 `Risk_Importance_Measures` disputed 해제).
+3. 남은 미정 용어 후보(낮은 우선순위 40여 건) 질문.
 4. `wiki-lint` 의미 점검(이번 배치 전체)과 `wiki-audit` 첫 표본 재검증.
 
 ### 인계 메모
@@ -51,9 +51,9 @@ Phase 3 인제스트 단위 전부 작성 완료(커밋 승인 대기). 남은 �
 ## 미해결
 - `meta/metrics.md`는 첫 `wiki-audit` 때 만든다.
 - 원문 간 모순(disputed, 이전 결정): NEI 18-04 SSC risk significance 평균/상한(`Risk_Importance_Measures`, `LBE_Risk_Significance`, `Risk_Significant_SSC`), BDBE 빈도 하한(`LBE_Frequency_Categories`).
-- 새 모순 57건: `meta/contradictions.md`.
+- 모순 57건 판정 완료(2026-09-16): disputed 28건(노트 38개), 기록만 25건, 공백 4건. `meta/contradictions.md` §판정.
 - 다음 용어 질문 후보(노트에는 영어로 둠): redundant/redundancy, partially·fully conform, margin(setpoint margin 등), qualified(seismically/environmentally), PEP, LBE family, plant functional/physical capability DID, DID baseline, severe accident, Design Reliability Assurance Program, seismic classification, SCS1/SCS2/SCN1–SCN3, Seismic Category I, maximum considered earthquake, OBE, LCO, LSSS, SL, COLR, ERO, ERF, technical specifications, emergency preparedness, protective action, emergency response functions, control rod assembly, refueling, downpower, passive, design basis ~, reasonable assurance/confidence, stylized scenarios, uncertainty bands, permanent uncertainties, integrated risk, plant challenges; 낮은 우선순위: 결정론적 안전해석, 보수적 가정, 미지 요소, 불리한 사건, 보호 전략, 모델링 불확실도. 2026-09-16 배치에서 더한 후보: steel embedment, extraordinary events, consensus codes and standards, design transient, Level A–D Service Loading, service stress limit, core support structure, design-by-rule/design-by-analysis, Foundation Input Response Spectra, in-structure response spectra, seismic anchor motion, accidental torsion, Lateral Force Resisting System, limit state design method, stay-in-place formwork, dynamic amplification factor, factors of safety, functional containment, radionuclide retention, stack.
-- 2026-09-16 완료한 lint 조치: A7(새 노트 4), A9(C17 기록). 보류: A1, A4, A6(disputed 판정과 함께).
+- 2026-09-16 완료한 lint 조치: A7(새 노트 4), A9(C17 기록), A1(LBE_Risk_Significance 해설에 평균·상한 병기), A4(Integrated_Decision_Making_Process 해설에 SR 예외 명시). 남은 결정: A6(Risk_Significant_SSC를 단일 기록처로 두고 Risk_Importance_Measures의 disputed 해제).
 - NEI 18-04 용어집 RI 항목의 출처 칸 오기 가능성(고치지 않음).
 - lint L14가 로마 숫자(`Seismic II/I`, `Seismic Risk Category III/IV`)를 약어로 잡는다. 백틱으로 피하고 있음.
 - ACRS 정제본에서 한 글머리표가 두 문단으로 갈라진 곳 2곳(p.5, p.10): `acrs_slides.py` 보완 대상.
