@@ -12,16 +12,19 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 0.14
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§3.1-§3.9 (PRA, MST, LBE methods, selection, AOO/DBE/BDBE/DBA)"
+- unit: §3.1-§3.9 (PRA, MST, LBE methods, selection, AOO/DBE/BDBE/DBA)
+  status: complete
+- unit: §3.11-§3.14 (fuel system, nuclear design, thermal-hydraulic design, criticality
+    safety)
   status: complete
 ---
 
 # Licensing Basis Events (PSAR_ch03)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 3장은 Licensing Basis Event%%t:LBE%% 선정과 평가 방법을 제시하고, Anticipated Operational Occurrence%%t:AOO%%·Design Basis Event%%t:DBE%%·Beyond Design Basis Event%%t:BDBE%%·Design Basis Accident%%t:DBA%% 목록과 각 사건의 해석 결과를 담는다. 노심 핵설계와 열수력 설계, 연료 임계 안전도 기술도 이 장에 있다.
 
 ## 서지
 - 키: `PSAR_ch03`
@@ -76,3 +79,6 @@ units:
 - [[Natrium_MST_Methodology]]
 - [[Natrium_PRA_Scope]]
 - [[Natrium_Risk_Significant_LBEs]]
+- [[Natrium_Nuclear_Design]]
+- [[Natrium_Core_Thermal_Hydraulic_Design]]
+- [[Natrium_Fuel_Criticality_Safety]]

@@ -12,16 +12,18 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 0.13
-ingest: in_progress
+ingest: complete
 units:
-- unit: "U1 §6.1-§6.3, §6.4.1 intro, §6.4.1.1, Tables 6.1-1, 6.4-1A, 6.4-1B"
+- unit: U1 §6.1-§6.3, §6.4.1 intro, §6.4.1.1, Tables 6.1-1, 6.4-1A, 6.4-1B
+  status: complete
+- unit: U2 §6.4.1.2-§6.4.5, Tables 6.4-2-6.4-18
   status: complete
 ---
 
 # Safety-Significant SSC Criteria and Capabilities (PSAR_ch06)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 6장은 safety-significant SSC%%t:SSC%%의 설계 기준과 능력을 정한다. design-basis hazard level%%t:DBHL%%과 재해 선별, 상호작용 요건, 신뢰도·능력 목표, 지진 분류와 지진 해석 방법, 구조물의 설계 코드·하중·하중조합, 그리고 `ASME` 기기와 배관의 설계 과도·하중조합·응력 한계를 다룬다.
 
 ## 서지
 - 키: `PSAR_ch06`
@@ -66,3 +68,10 @@ units:
 - [[Natrium_SRDC_Summary]]
 - [[Natrium_Seismic_Classification]]
 - [[Natrium_Special_Treatment_Process]]
+- [[Natrium_Seismic_Analysis_Methods]]
+- [[Natrium_Safety_Significant_Structures]]
+- [[Natrium_Structural_Loads_And_Combinations]]
+- [[Natrium_Tornado_Winter_Precipitation_Design]]
+- [[Natrium_ASME_Design_Transients]]
+- [[Natrium_ASME_Component_Loads_And_Limits]]
+- [[Natrium_Piping_And_Industrial_Codes]]

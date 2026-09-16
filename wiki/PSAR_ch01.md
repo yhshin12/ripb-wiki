@@ -12,18 +12,23 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 1.66
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§1.3, §1.1.3 (NI/EI), Table 1.4-1 RIPB rows, Table 1.4-4 containment and PRA rows"
+- unit: §1.3, §1.1.3 (NI/EI), Table 1.4-1 RIPB rows, Table 1.4-4 containment and PRA
+    rows
   status: complete
-- unit: "U2 §1.1.1-§1.1.4.1 (plant overview, NI/EI, reactor and heat transport, I&C)"
+- unit: U2 §1.1.1-§1.1.4.1 (plant overview, NI/EI, reactor and heat transport, I&C)
+  status: complete
+- unit: U3 §1.1.4.2-§1.2 (secondary and support systems, major structures, site)
+  status: complete
+- unit: U4 §1.4 and Tables 1.4-1-1.4-5 (regulatory guidance, reports, TMI items, codes)
   status: complete
 ---
 
 # General Plant and Site Description (PSAR_ch01)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 1장은 발전소와 부지를 개관한다. Nuclear Island와 Energy Island의 구분과 경계, 원자로와 열수송 계통, 계측제어 계통, 2차 계통과 지원 계통, Reactor Building을 비롯한 다섯 주요 건물, 그리고 Wyoming주 Lincoln County의 부지를 기술하고, §1.4에서 regulatory guide%%t:RG%% 부합 상태, topical·technical report, Three Mile Island 관련 요건, consensus code와 standard의 목록을 표로 제시한다.
 
 ## 서지
 - 키: `PSAR_ch01`
@@ -89,3 +94,11 @@ units:
 - [[Natrium_NI_EI_Interface]]
 - [[Natrium_Plant_Overview]]
 - [[Natrium_Reactor_Heat_Transport_Systems]]
+- [[Natrium_Energy_Island_Systems]]
+- [[Natrium_Support_Systems]]
+- [[Natrium_Major_Structures]]
+- [[Natrium_Kemmerer_Site]]
+- [[Natrium_RG_Conformance]]
+- [[Natrium_Topical_Technical_Reports]]
+- [[Natrium_TMI_Requirements]]
+- [[Natrium_Codes_Standards]]

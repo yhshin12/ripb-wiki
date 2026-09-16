@@ -5,7 +5,7 @@ phase: 3
 # 상태
 
 ## 현재 단계
-Phase 3 인제스트 진행 중. 완료: NEI 18-04(2026-09-15), ACRS_ML25293A458(2026-09-16). 진행 중(단위 완료, 원문 남음): RG 1.232, RG 1.233, PSAR ch1·ch3·ch4·ch5·ch6·ch7·ch11. 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
+Phase 3 인제스트 단위 전부 작성 완료(커밋 승인 대기). 남은 범위는 PSAR ch11 §11.4(withheld)와 RG 1.232 부록 A(사용자 결정으로 인제스트하지 않음)뿐이다. 도구 계획: `meta/design/2026-09-14-rebuild-plan-phase2.md`.
 
 ## 존재하는 도구
 - 정제: `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (psar·nei1804·rg1232·generic·acrs_slides 프로파일, 공용 `levels.py`, `patches/RG_1.233.json`)
@@ -23,22 +23,21 @@ Phase 3 인제스트 진행 중. 완료: NEI 18-04(2026-09-15), ACRS_ML25293A458
 |---|---|---|---|
 | NEI_18-04 | complete | 전체 | 없음 |
 | ACRS_ML25293A458 | complete | 22쪽 | 없음 |
-| RG_1.232 | in_progress | 본문, App. B | App. A, App. C |
-| RG_1.233 | in_progress | 전체 본문 | 남은 부분 확인 |
-| PSAR_ch01 | in_progress | §1.3, §1.1.1–§1.1.4.1 | §1.1.4.2–§1.2(계통·부지), §1.4(RG 부합, TMI, 규격) |
-| PSAR_ch03 | in_progress | §3.1–§3.10 | §3.11–§3.14 |
-| PSAR_ch04 | in_progress | 전체 | 없음(요약 작성 후 finish) |
-| PSAR_ch05 | in_progress | 전체 | 없음(요약 작성 후 finish) |
-| PSAR_ch06 | in_progress | §6.1–§6.4.1.1 | §6.4.1.2–§6.4.5, 구조·기계 설계 표 |
-| PSAR_ch07 | in_progress | §7.6.8 일부 | 전체 계통 27개(2026-09-16 결정: 전체) |
-| PSAR_ch11 | in_progress | §11.3, §11.5 | §11.1, §11.2(HFE), §11.4(withheld), §11.6 |
+| RG_1.232 | in_progress | 본문, App. B, App. C | App. A(사용자 결정으로 인제스트하지 않음) |
+| RG_1.233 | in_progress | §A–§D 전체 본문 | 없음(약어 목록·참고문헌은 인제스트 대상 아님) |
+| PSAR_ch01 | in_progress | §1.1–§1.4 전체 | 없음 |
+| PSAR_ch03 | complete | 전체 | 없음 |
+| PSAR_ch04 | complete | 전체 | 없음 |
+| PSAR_ch05 | complete | 전체 | 없음 |
+| PSAR_ch06 | in_progress | §6.1–§6.4.5 전체 | 없음 |
+| PSAR_ch07 | complete | §7.1–§7.8 전체 | 없음 |
+| PSAR_ch11 | in_progress | §11.1, §11.2, §11.3, §11.5, §11.6 | §11.4(withheld만 남음) |
 
 ## 다음 작업
-1. `wiki-lint`: 2026-09-15 보고서의 조치 가운데 disputed와 무관한 것(A7 새 노트, A9 기록)과 이번 배치 전체의 의미 점검.
-2. 그림 정책 구현(2026-09-16 결정): vault 루트 `figures/`에 `KEY_그림명.png`로 모으고 노트에서 참조한다. withheld 그림은 제외.
-3. 남은 인제스트: 위 표의 남은 범위. PSAR ch7은 전체 계통.
-4. 모든 원문 인제스트 뒤 `meta/contradictions.md`의 모순을 한꺼번에 판정(disputed).
-5. `wiki-audit` 첫 표본 재검증.
+1. 변경 요약 승인 → `status: checked`·`verified` 부여, `source.py finish`(PSAR ch1·ch6·RG 1.232·RG 1.233), `append_log.py`, `build_index.py`, 커밋.
+2. `meta/contradictions.md`의 모순 57건을 한꺼번에 판정(disputed)하고 보류한 lint 조치 A1·A4·A6을 함께 처리.
+3. 미정 용어 질문 배치(아래 후보 목록)를 한 번에 묻고 `wiki-terms`로 반영.
+4. `wiki-lint` 의미 점검(이번 배치 전체)과 `wiki-audit` 첫 표본 재검증.
 
 ### 인계 메모
 - 용어 결정 흐름: 사용자는 대부분 "영어 유지"를 고른다. 기관·문서·분석 기법 약어는 "용어 아님". 확정 한국어는 DID=심층방어, source term=선원항, cover gas=커버가스, non-LWR=비경수형원전.
@@ -52,7 +51,9 @@ Phase 3 인제스트 진행 중. 완료: NEI 18-04(2026-09-15), ACRS_ML25293A458
 ## 미해결
 - `meta/metrics.md`는 첫 `wiki-audit` 때 만든다.
 - 원문 간 모순(disputed, 이전 결정): NEI 18-04 SSC risk significance 평균/상한(`Risk_Importance_Measures`, `LBE_Risk_Significance`, `Risk_Significant_SSC`), BDBE 빈도 하한(`LBE_Frequency_Categories`).
-- 새 모순 16건: `meta/contradictions.md`.
+- 새 모순 57건: `meta/contradictions.md`.
+- 다음 용어 질문 후보(노트에는 영어로 둠): redundant/redundancy, partially·fully conform, margin(setpoint margin 등), qualified(seismically/environmentally), PEP, LBE family, plant functional/physical capability DID, DID baseline, severe accident, Design Reliability Assurance Program, seismic classification, SCS1/SCS2/SCN1–SCN3, Seismic Category I, maximum considered earthquake, OBE, LCO, LSSS, SL, COLR, ERO, ERF, technical specifications, emergency preparedness, protective action, emergency response functions, control rod assembly, refueling, downpower, passive, design basis ~, reasonable assurance/confidence, stylized scenarios, uncertainty bands, permanent uncertainties, integrated risk, plant challenges; 낮은 우선순위: 결정론적 안전해석, 보수적 가정, 미지 요소, 불리한 사건, 보호 전략, 모델링 불확실도. 2026-09-16 배치에서 더한 후보: steel embedment, extraordinary events, consensus codes and standards, design transient, Level A–D Service Loading, service stress limit, core support structure, design-by-rule/design-by-analysis, Foundation Input Response Spectra, in-structure response spectra, seismic anchor motion, accidental torsion, Lateral Force Resisting System, limit state design method, stay-in-place formwork, dynamic amplification factor, factors of safety, functional containment, radionuclide retention, stack.
+- 2026-09-16 완료한 lint 조치: A7(새 노트 4), A9(C17 기록). 보류: A1, A4, A6(disputed 판정과 함께).
 - NEI 18-04 용어집 RI 항목의 출처 칸 오기 가능성(고치지 않음).
 - lint L14가 로마 숫자(`Seismic II/I`, `Seismic Risk Category III/IV`)를 약어로 잡는다. 백틱으로 피하고 있음.
 - ACRS 정제본에서 한 글머리표가 두 문단으로 갈라진 곳 2곳(p.5, p.10): `acrs_slides.py` 보완 대상.

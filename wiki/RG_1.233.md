@@ -16,16 +16,16 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-15
   missing_pct: 0.2
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§A-§D, footnotes (acronyms and references not ingested)"
+- unit: §A-§D, footnotes (acronyms and references not ingested)
   status: complete
 ---
 
 # Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light-Water Reactors (RG_1.233)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> `RG 1.233`은 non-light-water reactor의 licensing basis와 신청서 내용을 정하는 technology-inclusive, risk-informed, performance-based 방법론에 관한 지침이다. NEI 18-04 Revision 1의 방법론을 승인하면서 Licensing Basis Event%%t:LBE%% 선정, SSC%%t:SSC%% 안전 분류와 성능 기준, 심층방어 적절성 평가, 그리고 그 밖의 고려사항에 관한 직원 규제 지침을 제시한다.
 
 ## 서지
 - 키: `RG_1.233`

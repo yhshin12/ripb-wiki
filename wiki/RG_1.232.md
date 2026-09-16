@@ -14,16 +14,18 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
   missing_pct: 0.74
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§A-C, Table 1, Appendix B (SFR-DC)"
+- unit: §A-C, Table 1, Appendix B (SFR-DC)
+  status: complete
+- unit: Appendix C (MHTGR-DC, Criteria 1-72); Appendix A not ingested by user decision
   status: complete
 ---
 
 # Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors (RG_1.232)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> `RG 1.232`는 non-light-water reactor의 principal design criteria%%t:PDC%% 개발 지침이다. `10 CFR Part 50` Appendix A의 general design criteria%%t:GDC%%를 신형로에 맞추어 적응한 advanced reactor design criteria를 본문과 부록 A에, sodium-cooled fast reactor%%t:SFR%% 기준을 부록 B에, modular high-temperature gas-cooled reactor 기준을 부록 C에 담고, Table 1이 세 기준 집합의 대조표를 준다.
 
 ## 서지
 - 키: `RG_1.232`
@@ -64,3 +66,11 @@ units:
 - [[SFR_DC_Intermediate_Coolant_System]]
 - [[SFR_DC_Sodium_Specific_Criteria]]
 - [[SFR_DC_Primary_Coolant_And_Cover_Gas]]
+- [[MHTGR_DC_Overall_Requirements]]
+- [[MHTGR_DC_Reactor_Design_And_Functional_Containment]]
+- [[MHTGR_DC_Electric_Power_And_Control_Room]]
+- [[MHTGR_DC_Reactivity_Control]]
+- [[MHTGR_DC_Heat_Transport_Systems]]
+- [[MHTGR_DC_Reactor_Containment_Not_Applicable]]
+- [[MHTGR_DC_Fuel_And_Radioactivity_Control]]
+- [[MHTGR_DC_Reactor_Building_Criteria]]

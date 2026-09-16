@@ -120,3 +120,10 @@
 
 ## [2026-09-16] ingest | PSAR_ch04, PSAR_ch05 (finish)
 - 소스 카드 요약 작성, ingest complete
+
+## [2026-09-16] ingest | PSAR ch6 §6.4.1.2-§6.4.5, PSAR ch1 §1.1.4.2-§1.2·§1.4, RG 1.232 App. C
+- 새 노트 23(ch6 7, ch1 8, MHTGR-DC 8), 이번 커밋의 미커밋 새 노트 60
+- 검사: lint_wiki --all 오류 0(index 재생성 포함), verify_quotes --all 오류 0, sync_terms conflict 0
+- 읽기 전용 검토 4회: 인용문·쪽번호·표 값 불일치 0, 해설 오류 16건 수정
+- 새 모순 18건(C40-C57, 누계 57)
+- 미정 용어 후보 20건 추가(meta/status.md)

@@ -12,16 +12,22 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
   missing_pct: 0.43
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§7.6.8 AST (partial: 7.6.8.1, 7.6.8.2)"
+- unit: '§7.6.8 AST (partial: 7.6.8.1, 7.6.8.2)'
+  status: complete
+- unit: §7.3–§7.5 fuel handling, gaseous radwaste, NI HVAC, NI fire protection
+  status: complete
+- unit: §7.6–§7.8 I&C, NI auxiliary electrical, NI buildings
+  status: complete
+- unit: §7.1–§7.2 nuclear heat supply and reactor auxiliary systems
   status: complete
 ---
 
 # Descriptions for Safety-Significant SSCs (PSAR_ch07)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 7장은 Nuclear Island의 계통과 건물을 계통별로 기술한다. 원자로 노심·격납·열수송 계통, 원자로 보조 계통, 핵연료 취급 계통, 계측제어 계통, 지원 계통, 그리고 Reactor Building·Fuel Handling Building·Reactor Auxiliary Building·`NI` Control Building의 설계 근거와 안전 분류를 담는다.
 
 ## 서지
 - 키: `PSAR_ch07`
@@ -121,4 +127,32 @@ units:
 - 없음
 
 ## 관련 문서
+- [[Natrium_System_Reactor_Core]]
+- [[Natrium_System_Reactor_Enclosure]]
+- [[Natrium_System_Primary_Heat_Transport]]
+- [[Natrium_System_Intermediate_Heat_Transport]]
+- [[Natrium_System_Reactor_Air_Cooling]]
+- [[Natrium_System_Intermediate_Air_Cooling]]
+- [[Natrium_System_Sodium_Cover_Gas]]
+- [[Natrium_System_Sodium_Processing]]
+- [[Natrium_System_Control_Rod_Drive]]
+- [[Natrium_System_Water_Pool_Fuel_Handling]]
+- [[Natrium_System_Ex_Vessel_Fuel_Handling]]
+- [[Natrium_System_In_Vessel_Fuel_Handling]]
+- [[Natrium_System_Gaseous_Radwaste_Processing]]
+- [[Natrium_System_NI_HVAC]]
+- [[Natrium_System_NI_Fire_Protection]]
+- [[Natrium_System_IC_Architecture]]
+- [[Natrium_System_NI_Control]]
+- [[Natrium_System_Reactor_Protection]]
+- [[Natrium_System_Nuclear_Instrumentation]]
+- [[Natrium_System_Reactor_Instrumentation]]
+- [[Natrium_System_Radiation_Monitoring]]
+- [[Natrium_System_Control_Room_Indications]]
+- [[Natrium_System_Anticipatory_Seismic_Trip]]
+- [[Natrium_System_NI_Auxiliary_Electrical]]
+- [[Natrium_Building_Reactor]]
+- [[Natrium_Building_Fuel_Handling]]
+- [[Natrium_Building_Reactor_Auxiliary]]
+- [[Natrium_Building_NI_Control]]
 - [[Natrium_NRC_Review_Reactivity_Control]]
