@@ -1,5 +1,13 @@
 {
  "terms": {
+  "ACCIDENTAL_TORSION": {
+   "abbr": "",
+   "english": "accidental torsion",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "ANS": {
    "abbr": "ANS",
    "english": "ANS (ASME/ANS RA-S-1.4)",
@@ -110,9 +118,41 @@
    "later": "",
    "state": "영어 유지"
   },
+  "COMPLIANCE_STATUS": {
+   "abbr": "",
+   "english": "Full Compliance / Partial Compliance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "CONFORMANCE_STATUS": {
+   "abbr": "",
+   "english": "Full Conformance / Partial Conformance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "CONSENSUS_CODES": {
+   "abbr": "",
+   "english": "consensus codes and standards",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "CORE_DISRUPTIVE_ACCIDENT": {
    "abbr": "",
    "english": "core disruptive accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "CORE_SUPPORT_STRUCTURE": {
+   "abbr": "",
+   "english": "core support structure",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -153,6 +193,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "DAF": {
+   "abbr": "",
+   "english": "dynamic amplification factor",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "DBA": {
    "abbr": "DBA",
    "english": "Design Basis Accident",
@@ -185,6 +233,22 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "DESIGN_BY_ANALYSIS": {
+   "abbr": "",
+   "english": "design-by-analysis",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "DESIGN_BY_RULE": {
+   "abbr": "",
+   "english": "design-by-rule",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "DESIGN_MARGIN": {
    "abbr": "",
    "english": "design margin",
@@ -194,6 +258,14 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "DESIGN_TRANSIENT": {
+   "abbr": "",
+   "english": "design transient",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "DID": {
    "abbr": "DID",
@@ -272,6 +344,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "EQUIV_STATIC_LOAD": {
+   "abbr": "",
+   "english": "equivalent static load method",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "ES": {
    "abbr": "ES",
    "english": "Event Sequence",
@@ -290,6 +370,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "EXTRAORDINARY_EVENTS": {
+   "abbr": "",
+   "english": "extraordinary events",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "FC_TARGET": {
    "abbr": "F-C Target",
    "english": "Frequency-Consequence Target",
@@ -305,6 +393,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "FIRS": {
+   "abbr": "FIRS",
+   "english": "Foundation Input Response Spectra",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "FMEA": {
    "abbr": "FMEA",
@@ -436,6 +532,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "ISRS": {
+   "abbr": "ISRS",
+   "english": "In-Structure Response Spectra",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "LAYERS_OF_DEFENSE": {
    "abbr": "",
    "english": "Layers of Defense",
@@ -482,6 +586,22 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "LFRS": {
+   "abbr": "",
+   "english": "Lateral Force Resisting System",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "LIMIT_STATE_DESIGN": {
+   "abbr": "",
+   "english": "limit state design method",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "LMP": {
    "abbr": "LMP",
    "english": "Licensing Modernization Project",
@@ -517,6 +637,14 @@
   "LWR": {
    "abbr": "LWR",
    "english": "light water reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "MCE": {
+   "abbr": "",
+   "english": "maximum considered earthquake",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -631,6 +759,14 @@
   "NST": {
    "abbr": "NST",
    "english": "Non-Safety-Related with No Special Treatment",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "OBE": {
+   "abbr": "OBE",
+   "english": "Operating Basis Earthquake",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -926,6 +1062,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "RISK_CATEGORY": {
+   "abbr": "",
+   "english": "Risk Category",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "RISK_IMPORTANCE": {
    "abbr": "",
    "english": "risk importance measure",
@@ -1040,6 +1184,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "SEISMIC_ANCHOR_MOTION": {
+   "abbr": "",
+   "english": "seismic anchor motion",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "SEISMIC_II_I": {
    "abbr": "",
    "english": "Seismic II/I",
@@ -1047,6 +1199,22 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "SERVICE_LOADING": {
+   "abbr": "",
+   "english": "Service Loading",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "SERVICE_STRESS_LIMIT": {
+   "abbr": "",
+   "english": "service stress limit",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "SFR": {
    "abbr": "SFR",
@@ -1131,6 +1299,22 @@
    "later": "",
    "state": "영어 유지"
   },
+  "SSI": {
+   "abbr": "SSI",
+   "english": "Soil-Structure Interaction",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "SSSI": {
+   "abbr": "SSSI",
+   "english": "Structure-Soil-Structure Interaction",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "SS_SSC": {
    "abbr": "",
    "english": "Safety-Significant SSC",
@@ -1140,6 +1324,30 @@
    "korean": "",
    "later": "",
    "state": "영어 유지"
+  },
+  "STAY_IN_PLACE_FORMWORK": {
+   "abbr": "",
+   "english": "stay-in-place formwork",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "STEEL_EMBEDMENT": {
+   "abbr": "",
+   "english": "steel embedment",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "TECHNICAL_REPORT": {
+   "abbr": "",
+   "english": "technical report",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "TECH_SPECS": {
    "abbr": "",
@@ -1164,6 +1372,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "TOPICAL_REPORT": {
+   "abbr": "",
+   "english": "topical report",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "TRISO": {
    "abbr": "TRISO",

@@ -157,6 +157,33 @@ terms_pending: []
 | PIE | postulated initiating event | PIE |  | 약어 |  | [PSAR_ch04 §4.2.1 p.7] | 영어 유지 | 2026-09-16 사용자 결정 |
 | CCF | common cause failure | CCF |  | 약어 |  | [PSAR_ch04 §4.2.1 p.7] | 영어 유지 | 2026-09-16 사용자 결정 |
 | DBHL | design-basis hazard level | DBHL |  | 약어 |  | [PSAR_ch06 §6.1 p.4] | 영어 유지 | 2026-09-16 사용자 결정; DBEHL과 다른 용어 |
+| DESIGN_TRANSIENT | design transient |  |  |  |  | [PSAR_ch06 §6.4.3.1.1 p.38] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SERVICE_LOADING | Service Loading |  |  |  |  | [PSAR_ch06 §6.4.3.1.1 p.38] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SERVICE_STRESS_LIMIT | service stress limit |  |  |  |  | [PSAR_ch06 §6.4.3 p.37] | 용어 아님 | 2026-09-16 사용자 결정 |
+| CORE_SUPPORT_STRUCTURE | core support structure |  |  |  |  | [PSAR_ch06 §6.4.3 p.37] | 용어 아님 | 2026-09-16 사용자 결정 |
+| EXTRAORDINARY_EVENTS | extraordinary events |  |  |  |  | [PSAR_ch06 §6.4.2.2.5 p.30] | 용어 아님 | 2026-09-16 사용자 결정 |
+| STEEL_EMBEDMENT | steel embedment |  |  |  |  | [PSAR_ch06 §6.4.2.3.1 p.31] | 용어 아님 | 2026-09-16 사용자 결정 |
+| CONSENSUS_CODES | consensus codes and standards |  |  |  |  | [PSAR_ch01 §1.4.4 p.67] | 용어 아님 | 2026-09-16 사용자 결정 |
+| FIRS | Foundation Input Response Spectra | FIRS |  |  |  | [PSAR_ch06 §6.4.1.2.2 p.15] | 용어 아님 | 2026-09-16 사용자 결정 |
+| ISRS | In-Structure Response Spectra | ISRS |  |  |  | [PSAR_ch06 §6.4.1.3.5 p.20] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SEISMIC_ANCHOR_MOTION | seismic anchor motion |  |  |  |  | [PSAR_ch06 §6.4.1.3.2 p.20] | 용어 아님 | 2026-09-16 사용자 결정 |
+| ACCIDENTAL_TORSION | accidental torsion |  |  |  |  | [PSAR_ch06 §6.4.1.3.6 p.21] | 용어 아님 | 2026-09-16 사용자 결정 |
+| EQUIV_STATIC_LOAD | equivalent static load method |  |  |  |  | [PSAR_ch06 §6.4.1.3.1 p.17] | 용어 아님 | 2026-09-16 사용자 결정 |
+| LIMIT_STATE_DESIGN | limit state design method |  |  |  |  | [PSAR_ch06 §6.4.2.3.1 p.30] | 용어 아님 | 2026-09-16 사용자 결정 |
+| LFRS | Lateral Force Resisting System |  |  |  |  | [PSAR_ch06 §6.4.2.3.4 p.36] | 용어 아님 | 2026-09-16 사용자 결정 |
+| STAY_IN_PLACE_FORMWORK | stay-in-place formwork |  |  |  |  | [PSAR_ch06 §6.4.2.3.1 p.31] | 용어 아님 | 2026-09-16 사용자 결정 |
+| DAF | dynamic amplification factor |  |  |  |  | [PSAR_ch06 §6.4.1.3.1 p.17] | 용어 아님 | 2026-09-16 사용자 결정 |
+| OBE | Operating Basis Earthquake | OBE |  | 약어 |  | [PSAR_ch06 §6.4.2.2.2 p.27] | 영어 유지 | 2026-09-16 사용자 결정 |
+| SSI | Soil-Structure Interaction | SSI |  |  |  | [PSAR_ch06 §6.4.1.3.1 p.16] | 용어 아님 | 2026-09-16 사용자 결정 |
+| SSSI | Structure-Soil-Structure Interaction | SSSI |  |  |  | [PSAR_ch06 §6.4.1.3.1 p.18] | 용어 아님 | 2026-09-16 사용자 결정 |
+| MCE | maximum considered earthquake |  |  |  |  | [PSAR_ch06 §6.4.1.1 p.14] | 용어 아님 | 2026-09-16 사용자 결정 |
+| RISK_CATEGORY | Risk Category |  |  |  |  | [PSAR_ch06 §6.4.2.2.2 p.27] | 용어 아님 | 2026-09-16 사용자 결정 |
+| CONFORMANCE_STATUS | Full Conformance / Partial Conformance |  |  |  |  | [PSAR_ch01 §1.4.1 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
+| COMPLIANCE_STATUS | Full Compliance / Partial Compliance |  |  |  |  | [PSAR_ch01 §1.4.3 p.67] | 용어 아님 | 2026-09-16 사용자 결정 |
+| TOPICAL_REPORT | topical report |  |  |  |  | [PSAR_ch01 §1.4.2 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
+| TECHNICAL_REPORT | technical report |  |  |  |  | [PSAR_ch01 §1.4.2 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
+| DESIGN_BY_RULE | design-by-rule |  |  |  |  | [PSAR_ch06 §6.4.5.1 p.48] | 용어 아님 | 2026-09-16 사용자 결정 |
+| DESIGN_BY_ANALYSIS | design-by-analysis |  |  |  |  | [PSAR_ch06 §6.4.5.1 p.48] | 용어 아님 | 2026-09-16 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

@@ -127,3 +127,8 @@
 - 읽기 전용 검토 4회: 인용문·쪽번호·표 값 불일치 0, 해설 오류 16건 수정
 - 새 모순 18건(C40-C57, 누계 57)
 - 미정 용어 후보 20건 추가(meta/status.md)
+
+## [2026-09-16] terms | 용어 반영 2026-09-16 배치 (27건)
+- 영어 유지 1건: Operating Basis Earthquake(OBE), 이후 표기 약어
+- 용어 아님 26건: FIRS, ISRS, SSI, SSSI, seismic anchor motion, accidental torsion, equivalent static load method, dynamic amplification factor, maximum considered earthquake, limit state design method, Lateral Force Resisting System, stay-in-place formwork, steel embedment, extraordinary events, Risk Category, design transient, Service Loading, service stress limit, core support structure, design-by-rule, design-by-analysis, conformance/compliance 상태 표기, topical report, technical report, consensus codes and standards
+- 표지 12곳 부착(노트 4개), sync_terms conflict 0, lint 0, verify 0

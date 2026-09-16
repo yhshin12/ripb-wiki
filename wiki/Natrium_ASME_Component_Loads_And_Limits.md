@@ -1,19 +1,22 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch06]
+sources:
+- PSAR_ch06
 status: checked
 verified: 2026-09-16
-term:
-tags: [natrium]
+term: null
+tags:
+- natrium
 terms_pending: []
 ---
+
 # Natrium ASME 기기 하중과 응력 한계 (Natrium ASME Component Loads and Stress Limits)
 
 > [!abstract] 요약
 > `PSAR` §6.4.3은 `ASME` Code `Section III`, Division 5 기기·지지물·노심지지구조물의 구조 건전성을 정해진 하중과 하중조합에 대한 service stress limit 만족으로 보증한다고 적는다.
 > Table 6.4-17은 적용 하중 14종을, Table 6.4-18은 Design부터 Test까지 아홉 조건의 하중조합과 service stress limit을 담는다.
-> Operating Basis Earthquake는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되어 `10 CFR 50` Appendix S에 따른 명시적 응답·설계 해석이 필요 없고 피로해석에만 반영되며, 해석에 쓰는 프로그램에는 `ANSYS`, `TP RELAP5-3D`, `STAR-CCM+`가 있다.
+> Operating Basis Earthquake%%t:OBE%%는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되어 `10 CFR 50` Appendix S에 따른 명시적 응답·설계 해석이 필요 없고 피로해석에만 반영되며, 해석에 쓰는 프로그램에는 `ANSYS`, `TP RELAP5-3D`, `STAR-CCM+`가 있다.
 
 ## 원문 사실
 - "This section addresses the design and analysis of ASME Code Section III, Division 5 mechanical components, supports, and core support structures." [PSAR_ch06 §6.4.3 p.37]
@@ -89,11 +92,11 @@ terms_pending: []
 - "OBE loads are only applicable for fatigue analysis when OBE is less than or equal to one-third of SSE." [PSAR_ch06 Table 6.4-18 Note 4 p.80]
 
 ## 해설
-구조 건전성은 정해진 하중과 하중조합에 대해 `ASME` `Section III`, Division 5의 service stress limit을 만족하는 것으로 보증하고, 응력은 같은 코드의 방법과 식으로 계산한다. 적용 하중은 설계온도와 설계압력, 플랜트 과도의 온도·압력·유량, Safe Shutdown Earthquake%%t:SSE%%와 Operating Basis Earthquake, 자중과 내용물 무게, 부력, 볼트 preload, 연결 배관, 배관 외 기기의 기계적 반력, 유동유발 진동과 펌프 같은 기기에서 전달되는 진동, 정압시험, 지지물의 열이동에 따른 support motion이다. 노심지지구조물에는 설계 압력차와 Service Level A–D의 운전 압력차를 고려한다.
+구조 건전성은 정해진 하중과 하중조합에 대해 `ASME` `Section III`, Division 5의 service stress limit을 만족하는 것으로 보증하고, 응력은 같은 코드의 방법과 식으로 계산한다. 적용 하중은 설계온도와 설계압력, 플랜트 과도의 온도·압력·유량, Safe Shutdown Earthquake%%t:SSE%%와 OBE%%t:OBE%%, 자중과 내용물 무게, 부력, 볼트 preload, 연결 배관, 배관 외 기기의 기계적 반력, 유동유발 진동과 펌프 같은 기기에서 전달되는 진동, 정압시험, 지지물의 열이동에 따른 support motion이다. 노심지지구조물에는 설계 압력차와 Service Level A–D의 운전 압력차를 고려한다.
 
-Operating Basis Earthquake는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되므로 `10 CFR 50` Appendix S에 따른 명시적 응답·설계 해석이 필요 없고, 그 반복 효과만 피로해석에 넣는다. Table 6.4-18의 주석도 Operating Basis Earthquake 하중이 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1 이하일 때 피로해석에만 적용된다고 적고, 지진 사건의 과도 조건은 정상상태 100% power로 둔다고 적는다. 진동하중 역시 피로해석에만 적용하며, 설계온도는 재료 물성 결정에만 쓴다.
+OBE%%t:OBE%%는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되므로 `10 CFR 50` Appendix S에 따른 명시적 응답·설계 해석이 필요 없고, 그 반복 효과만 피로해석에 넣는다. Table 6.4-18의 주석도 OBE%%t:OBE%% 하중이 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1 이하일 때 피로해석에만 적용된다고 적고, 지진 사건의 과도 조건은 정상상태 100% power로 둔다고 적는다. 진동하중 역시 피로해석에만 적용하며, 설계온도는 재료 물성 결정에만 쓴다.
 
-하중조합은 Design, Service Level A–D 과도, Service Level B Operating Basis Earthquake, Service Level D Safe Shutdown Earthquake%%t:SSE%%, Static Pressure Test, 그 밖의 시험의 아홉 조건으로 나뉜다. service stress limit은 Design 조건이 Design, Service Level A 과도가 A, Service Level B 과도와 Service Level B Operating Basis Earthquake가 B, Service Level C 과도가 C, Service Level D 과도와 Service Level D Safe Shutdown Earthquake%%t:SSE%%가 D, Static Pressure Test가 Test, 그 밖의 시험이 B이다. Table 6.4-18의 조합 기호와 Table 6.4-17의 하중 이름의 대응은 원문에 없다. 정압시험은 `HBB-6000` 또는 `HCB-6000`에 따르고 Test 한계로 평가하며, 그 밖의 시험 사건은 `HBB-3113.7`에 따라 Level B Service Limit으로 평가한다. Service stress limit만으로 기능을 보증할 수 없는 기기와 지지물에는 functional limit을 따로 설정한다.
+하중조합은 Design, Service Level A–D 과도, Service Level B OBE%%t:OBE%%, Service Level D Safe Shutdown Earthquake%%t:SSE%%, Static Pressure Test, 그 밖의 시험의 아홉 조건으로 나뉜다. service stress limit은 Design 조건이 Design, Service Level A 과도가 A, Service Level B 과도와 Service Level B OBE%%t:OBE%%가 B, Service Level C 과도가 C, Service Level D 과도와 Service Level D Safe Shutdown Earthquake%%t:SSE%%가 D, Static Pressure Test가 Test, 그 밖의 시험이 B이다. Table 6.4-18의 조합 기호와 Table 6.4-17의 하중 이름의 대응은 원문에 없다. 정압시험은 `HBB-6000` 또는 `HCB-6000`에 따르고 Test 한계로 평가하며, 그 밖의 시험 사건은 `HBB-3113.7`에 따라 Level B Service Limit으로 평가한다. Service stress limit만으로 기능을 보증할 수 없는 기기와 지지물에는 functional limit을 따로 설정한다.
 
 압력 방출 장치의 방출 반력은 `ASME` Code `Section III` Appendix O의 지침으로 해석하고, 더 낮은 값의 정당화나 동적해석이 없으면 dynamic load factor 2.0의 정적해석으로 반력과 모멘트를 정한다. 정적·동적 해석에 쓰는 프로그램에는 유한요소 해석의 `ANSYS`, 설계 과도의 열수력 조건을 만드는 `TP RELAP5-3D`, 상세 열수력 해석의 `STAR-CCM+`가 있다.
 
