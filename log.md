@@ -144,3 +144,7 @@
 - 노트 오류율 20 % (2/10), 원문 사실 항목 오류 0/417; 목표 ≤ 10 %
 - 수정: MHTGR_DC_Reactor_Building_Criteria(Section VII 위치), Mechanistic_Source_Term_Conditions(원문 사실 추가), Natrium_Topical_Technical_Reports(과잉 일반화 삭제)
 - 원인 조치: wiki-ingest 작성 뒤 대조 지시에 문장별 근거 줄과 배타 표현 확인 추가
+
+## [2026-10-14] terms | 용어 반영 2026-10-14 보완 인제스트 (10건)
+- 영어 유지: ERO, ERF, ED, EAL, emergency classification, emergency response functions, ingestion pathway, GV, cold trap, cesium trap
+- sync_terms: 갱신 노트 0, 충돌 0

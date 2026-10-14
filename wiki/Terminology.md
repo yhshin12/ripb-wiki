@@ -184,6 +184,16 @@ terms_pending: []
 | TECHNICAL_REPORT | technical report |  |  |  |  | [PSAR_ch01 §1.4.2 p.66] | 용어 아님 | 2026-09-16 사용자 결정 |
 | DESIGN_BY_RULE | design-by-rule |  |  |  |  | [PSAR_ch06 §6.4.5.1 p.48] | 용어 아님 | 2026-09-16 사용자 결정 |
 | DESIGN_BY_ANALYSIS | design-by-analysis |  |  |  |  | [PSAR_ch06 §6.4.5.1 p.48] | 용어 아님 | 2026-09-16 사용자 결정 |
+| ERO | Emergency Response Organization | ERO |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-10-14 사용자 결정 |
+| ERF | Emergency Response Facility | ERF |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-10-14 사용자 결정 |
+| ED | emergency director | ED |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-10-14 사용자 결정 |
+| EAL | Emergency Action Level | EAL |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-10-14 사용자 결정 |
+| EMERGENCY_CLASSIFICATION | emergency classification |  |  |  |  | [PSAR_ch11 §11.3.6.2 p.56] | 영어 유지 | 2026-10-14 사용자 결정 |
+| EMERGENCY_RESPONSE_FUNCTION | emergency response functions |  |  |  |  | [PSAR_ch11 §11.3 p.51] | 영어 유지 | 2026-10-14 사용자 결정 |
+| INGESTION_PATHWAY | ingestion pathway |  |  |  |  | [PSAR_ch11 §11.3.3.2 p.54] | 영어 유지 | 2026-10-14 사용자 결정 |
+| GV | Guard Vessel | GV |  | 약어 |  | [PSAR_ch07 §7.1.2.1.3 p.24] | 영어 유지 | 2026-10-14 사용자 결정 |
+| COLD_TRAP | cold trap |  |  |  |  | [PSAR_ch07 §7.2.4.3.6 p.144] | 영어 유지 | 2026-10-14 사용자 결정 |
+| CESIUM_TRAP | cesium trap |  |  |  |  | [PSAR_ch07 §7.2.4.3.7 p.144] | 영어 유지 | 2026-10-14 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.
