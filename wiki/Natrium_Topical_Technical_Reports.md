@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch01]
 status: checked
-verified: 2026-09-16
+verified: 2026-10-14
 term:
 tags: [natrium]
 terms_pending: []
@@ -46,7 +46,7 @@ terms_pending: []
 | NAT-13603 | 241412-CA-01 - Probabilistic Site Response Analysis Calculation of GMRS and SSE Spectra | 2.6 | [PSAR_ch01 Table 1.4-3 p.96] |
 
 ## 해설
-§1.4.2는 두 표의 성격을 가른다. Table 1.4-2의 topical report는 `NRC`에 제출되어 검토되며 safety evaluation report를 받은 것은 그 accession number가 표에 적힌다. Table 1.4-3의 technical report는 별도 승인 경로가 아니라 신청서의 일부로 검토된다. 두 표의 referenced section 칸은 해당 보고서를 더 다루는 `PSAR` 절을 가리키며, 참조로 포함되는 정보도 그 절에 있다.
+§1.4.2는 두 표의 성격을 가른다. Table 1.4-2의 topical report는 `NRC`에 제출되어 검토되며 safety evaluation report를 받은 것은 그 accession number가 표에 적힌다. Table 1.4-3의 technical report는 신청서의 일부로 검토된다. 두 표의 referenced section 칸은 해당 보고서를 더 다루는 `PSAR` 절을 가리키며, 참조로 포함되는 정보도 그 절에 있다.
 
 이 노트는 표의 목록 자체를 담는다. 보고서 원문은 vault에 없으므로 제목과 문서번호, accession number, 참조 절만 확인할 수 있다. 본문은 이 칸을 safety evaluation report의 accession number로 설명하나 표 머리는 `Submittal Accession Number`로 적는다. 원문이 두 가지로 부르므로 어느 쪽인지는 §1.4.2만으로 판정할 수 없다.
 

@@ -4,7 +4,7 @@ aliases: []
 sources:
 - RG_1.233
 status: checked
-verified: 2026-09-16
+verified: 2026-10-14
 term: MST
 tags:
 - rg-1233
@@ -17,6 +17,7 @@ terms_pending: []
 > Mechanistic Source Term%%t:MST%%은 LWR의 기존 선원항(source term)%%t:SOURCE_TERM%% 방법 대신 비경수형원전(non-light-water reactor)%%t:NON_LWR%%의 사고 선원항%%t:SOURCE_TERM%%을 기계론적 해석으로 정하는 접근이다. Commission이 승인한 네 조건은 NEI 18-04의 Event Sequence%%t:ES%% 해석에서도 유효하며, NRC 직원은 신청서가 barrier%%t:BARRIER%%의 방사성 핵종 보유와 모든 barrier%%t:BARRIER%%·경로의 이동을 포함해 MST%%t:MST%%를 기술하기를 기대한다.
 
 ## 원문 사실
+- "An evaluation of events, plant features and programs, and related uncertainties must address the state of knowledge related to the behavior of reactor systems, fuel, and the way in which radionuclides may move within and be released from a facility." [RG_1.233 §C.4 Mechanistic Source Term p.22]
 - "The established methods for addressing radiological source terms for LWRs have limited applicability to non-LWR designs, and more mechanistic approaches have been proposed." [RG_1.233 §C.4 Mechanistic Source Term p.22]
 - "The NRC will validate analytical tools and computer codes by comparing results to information available from operating experience and experiments." [RG_1.233 §C.4 Mechanistic Source Term p.22]
 - "In SRM-SECY-93-092, the Commission approved the NRC staff’s recommendation that source terms for non-LWRs be based upon a mechanistic analysis and that the acceptability of the applicant’s analysis will rely on the staff’s assurance that the following conditions are met:" [RG_1.233 §C.4 Mechanistic Source Term p.22]

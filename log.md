@@ -139,3 +139,8 @@
 - A1: LBE_Risk_Significance 해설에 평균·상한 병기
 - A4: Integrated_Decision_Making_Process 해설에 SR 예외 명시
 - 검사: lint 0, verify_quotes 0, index 176
+
+## [2026-10-14] audit | 첫 표본 재검증 (seed 20261014, 10/122)
+- 노트 오류율 20 % (2/10), 원문 사실 항목 오류 0/417; 목표 ≤ 10 %
+- 수정: MHTGR_DC_Reactor_Building_Criteria(Section VII 위치), Mechanistic_Source_Term_Conditions(원문 사실 추가), Natrium_Topical_Technical_Reports(과잉 일반화 삭제)
+- 원인 조치: wiki-ingest 작성 뒤 대조 지시에 문장별 근거 줄과 배타 표현 확인 추가

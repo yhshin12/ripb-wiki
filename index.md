@@ -24,7 +24,7 @@
 - [[MHTGR_DC_Heat_Transport_Systems]] — Criteria 30–46은 reactor helium pressure boundary의 품질·파괴 방지·점검, 피동 잔열제거와 그 점검·시험, 구조물과 기기 냉각을 다룬다.
 - [[MHTGR_DC_Overall_Requirements]] — `RG 1.232` 부록 C는 modular high-temperature gas-cooled reactor design criteria를 담으며, tristructural isotropic fuel 피복입자 연료와 흑연 감속재, 헬륨 냉각재, 저출력밀도 노심의 피동 열제거를 쓰는 노형을 대상으로 한다.
 - [[MHTGR_DC_Reactivity_Control]] — Criteria 20–29는 보호계통의 기능·신뢰도·독립성·고장 모드, 보호계통과 제어계통의 분리, 반응도 제어 계통과 그 한계를 다룬다.
-- [[MHTGR_DC_Reactor_Building_Criteria]] — `Section VII`의 기준 70–72는 부록 C에만 있는 MHTGR 고유 기준이다.
+- [[MHTGR_DC_Reactor_Building_Criteria]] — 기준 70–72는 `Section VII`의 Additional MHTGR-DC이며, 조문은 부록 C에 있다.
 - [[MHTGR_DC_Reactor_Containment_Not_Applicable]] — `Section V`의 여덟 기준 50–57은 모두 `Not applicable to MHTGR.`이다.
 - [[MHTGR_DC_Reactor_Design_And_Functional_Containment]] — Criteria 10–16은 원자로 설계와 고유 보호, 출력 진동 억제, 계측제어, reactor helium pressure boundary, functional containment를 다룬다.
 - [[Mechanistic_Source_Term_Conditions]] — Mechanistic Source Term은 LWR의 기존 선원항(source term) 방법 대신 비경수형원전(non-light-water reactor)의 사고 선원항을 기계론적 해석으로 정하는 접근이다.
