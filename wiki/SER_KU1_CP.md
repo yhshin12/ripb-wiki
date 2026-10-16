@@ -15,8 +15,10 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
   missing_pct: 0.32
-ingest: pending
-units: []
+ingest: in_progress
+units:
+- unit: "§3.2-§3.4 (MST, LBE 평가 방법론, LBE 요약)"
+  status: complete
 ---
 
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)

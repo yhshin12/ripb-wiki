@@ -162,3 +162,9 @@
 - 용어 아님: LIMITATIONS_AND_CONDITIONS, EVALUATION_MODEL, RELEASE_FRACTION, CONFIRMATORY_CALCULATION
 - 영어 유지: EMDAP, BEPU, MATERIAL_AT_RISK, TEDE
 - sync_terms: 갱신 노트 0, 충돌 0
+
+## [2026-10-16] ingest | SER_KU1_CP §3.2-§3.4
+- 새 노트 5, 고친 노트 1 (소스 카드)
+- 검사: lint 0, verify_quotes 0, 작성 후 대조 오류 5·근거 누락 11 반영
+- C58 유지 (SER은 PSAR §3.3.3 문장을 판정하지 않음)
+- 미정 용어 0
