@@ -74,6 +74,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "BEPU": {
+   "abbr": "BEPU",
+   "english": "best-estimate plus uncertainty",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "BI": {
    "abbr": "BI",
    "english": "Birnbaum Importance",
@@ -145,6 +153,14 @@
   "COMPLIANCE_STATUS": {
    "abbr": "",
    "english": "Full Compliance / Partial Compliance",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "CONFIRMATORY_CALCULATION": {
+   "abbr": "",
+   "english": "confirmatory calculation",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -365,6 +381,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "EMDAP": {
+   "abbr": "EMDAP",
+   "english": "Evaluation Model Development and Assessment Process",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "EMERGENCY_CLASSIFICATION": {
    "abbr": "",
    "english": "emergency classification",
@@ -441,6 +465,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "EVALUATION_MODEL": {
+   "abbr": "EM",
+   "english": "evaluation model",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
   },
   "EVENT_SEQ_FAMILY": {
    "abbr": "",
@@ -690,6 +722,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "LIMITATIONS_AND_CONDITIONS": {
+   "abbr": "L&C",
+   "english": "limitations and conditions",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "LIMIT_STATE_DESIGN": {
    "abbr": "",
    "english": "limit state design method",
@@ -745,6 +785,14 @@
    "korean": "주요사고",
    "later": "한국어",
    "state": "확정"
+  },
+  "MATERIAL_AT_RISK": {
+   "abbr": "MAR",
+   "english": "material at risk",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "MCE": {
    "abbr": "",
@@ -1105,6 +1153,14 @@
   "REACTOR_COOLANT_BOUNDARY": {
    "abbr": "",
    "english": "reactor coolant boundary",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
+  "RELEASE_FRACTION": {
+   "abbr": "",
+   "english": "release fraction",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -1476,6 +1532,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "TEDE": {
+   "abbr": "TEDE",
+   "english": "total effective dose equivalent",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "TI_RIPB": {
    "abbr": "TI-RIPB",

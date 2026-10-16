@@ -200,6 +200,14 @@ terms_pending: []
 | MAJOR_ACCIDENT | Major Accident |  | 주요사고 | 한국어 |  | [PSAR_ch03 §3.3.3 p.47] | 확정 | 2026-10-16 사용자 결정 |
 | POOL_SCRUBBING | pool scrubbing |  |  |  |  | [PSAR_ch03 §3.7.5.1.2 p.82] | 영어 유지 | 2026-10-16 사용자 결정(적절한 한국어 없음) |
 | UNCERTAINTY_BAND | uncertainty band |  | 불확도범위 | 한국어 |  | [NEI_18-04 §3.2.2 p.22] | 확정 | 2026-10-16 사용자 결정 |
+| LIMITATIONS_AND_CONDITIONS | limitations and conditions | L&C |  |  |  | [SER_KU1_CP §1.3.3.4 p.45] | 용어 아님 | 2026-10-16 사용자 결정 |
+| EVALUATION_MODEL | evaluation model | EM |  |  |  | [SER_KU1_CP §3.2.1 p.188] | 용어 아님 | 2026-10-16 사용자 결정 |
+| EMDAP | Evaluation Model Development and Assessment Process | EMDAP |  | 약어 |  | [SER_KU1_CP §3.2.1 p.188] | 영어 유지 | 2026-10-16 사용자 결정 |
+| BEPU | best-estimate plus uncertainty | BEPU |  | 약어 |  | [SER_KU1_CP §3.2.1 p.188] | 영어 유지 | 2026-10-16 사용자 결정 |
+| MATERIAL_AT_RISK | material at risk | MAR |  | 약어 |  | [SER_KU1_CP §3.2.1 p.190] | 영어 유지 | 2026-10-16 사용자 결정 |
+| RELEASE_FRACTION | release fraction |  |  |  |  | [SER_KU1_CP §3.2.1.1 p.193] | 용어 아님 | 2026-10-16 사용자 결정 |
+| CONFIRMATORY_CALCULATION | confirmatory calculation |  |  |  |  | [SER_KU1_CP §2.4.1.4.2 p.92] | 용어 아님 | 2026-10-16 사용자 결정 |
+| TEDE | total effective dose equivalent | TEDE |  | 약어 |  | [SER_KU1_CP §2.5.1.3.2.2 p.107] | 영어 유지 | 2026-10-16 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

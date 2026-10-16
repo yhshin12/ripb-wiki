@@ -157,3 +157,8 @@
 ## [2026-10-16] docs | 원문 모순 C58 기록과 다음 작업 갱신
 - C58: PSAR §3.3.3 주요사고 선정 근거와 Table 3.5-4 DBA 선량의 불일치
 - 다음 작업: 공개 원문 3건(RG 1.247, RG 1.253, CP Safety Evaluation) 등록
+
+## [2026-10-16] terms | 용어 반영 2026-10-16 (2차, 8건)
+- 용어 아님: LIMITATIONS_AND_CONDITIONS, EVALUATION_MODEL, RELEASE_FRACTION, CONFIRMATORY_CALCULATION
+- 영어 유지: EMDAP, BEPU, MATERIAL_AT_RISK, TEDE
+- sync_terms: 갱신 노트 0, 충돌 0
