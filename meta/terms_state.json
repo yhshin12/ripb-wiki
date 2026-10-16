@@ -8,6 +8,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "ALTERNATIVE_SHUNT_TRIP": {
+   "abbr": "",
+   "english": "alternative shunt trip",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "ANS": {
    "abbr": "ANS",
    "english": "ANS (ASME/ANS RA-S-1.4)",
@@ -90,6 +98,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "CESIUM_TRAP": {
+   "abbr": "",
+   "english": "cesium trap",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "CFR": {
    "abbr": "CFR",
    "english": "Code of Federal Regulations",
@@ -104,6 +120,14 @@
    "forbidden": [
     "절벽 효과"
    ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "COLD_TRAP": {
+   "abbr": "",
+   "english": "cold trap",
+   "forbidden": [],
    "korean": "",
    "later": "",
    "state": "영어 유지"
@@ -233,6 +257,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "DECONTAMINATION_FACTOR": {
+   "abbr": "",
+   "english": "decontamination factor",
+   "forbidden": [],
+   "korean": "제염계수",
+   "later": "한국어",
+   "state": "확정"
+  },
   "DESIGN_BY_ANALYSIS": {
    "abbr": "",
    "english": "design-by-analysis",
@@ -309,12 +341,44 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "EAL": {
+   "abbr": "EAL",
+   "english": "Emergency Action Level",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "ECCS": {
    "abbr": "ECCS",
    "english": "emergency core cooling system",
    "forbidden": [],
    "korean": "",
    "later": "약어",
+   "state": "영어 유지"
+  },
+  "ED": {
+   "abbr": "ED",
+   "english": "emergency director",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "EMERGENCY_CLASSIFICATION": {
+   "abbr": "",
+   "english": "emergency classification",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "EMERGENCY_RESPONSE_FUNCTION": {
+   "abbr": "",
+   "english": "emergency response functions",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
    "state": "영어 유지"
   },
   "END_STATE": {
@@ -351,6 +415,22 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "ERF": {
+   "abbr": "ERF",
+   "english": "Emergency Response Facility",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "ERO": {
+   "abbr": "ERO",
+   "english": "Emergency Response Organization",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "ES": {
    "abbr": "ES",
@@ -450,6 +530,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "GV": {
+   "abbr": "GV",
+   "english": "Guard Vessel",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "HAZOP": {
    "abbr": "HAZOP",
    "english": "hazard and operability study",
@@ -523,6 +611,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "INGESTION_PATHWAY": {
+   "abbr": "",
+   "english": "ingestion pathway",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "INTERMEDIATE_COOLANT_BOUNDARY": {
    "abbr": "",
@@ -641,6 +737,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "MAJOR_ACCIDENT": {
+   "abbr": "",
+   "english": "Major Accident",
+   "forbidden": [],
+   "korean": "주요사고",
+   "later": "한국어",
+   "state": "확정"
   },
   "MCE": {
    "abbr": "",
@@ -858,6 +962,14 @@
    "forbidden": [
     "발전소 능력 심층방어"
    ],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "POOL_SCRUBBING": {
+   "abbr": "",
+   "english": "pool scrubbing",
+   "forbidden": [],
    "korean": "",
    "later": "",
    "state": "영어 유지"
@@ -1341,6 +1453,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "TATNF": {
+   "abbr": "TATNF",
+   "english": "time-at-temperature no-failure",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "TECHNICAL_REPORT": {
    "abbr": "",
    "english": "technical report",
@@ -1388,6 +1508,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "UNCERTAINTY_BAND": {
+   "abbr": "",
+   "english": "uncertainty band",
+   "forbidden": [],
+   "korean": "불확도범위",
+   "later": "한국어",
+   "state": "확정"
   }
  }
 }
