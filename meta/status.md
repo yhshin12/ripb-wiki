@@ -1,5 +1,5 @@
 ---
-updated: 2026-10-14
+updated: 2026-10-16
 phase: 3
 ---
 # 상태
@@ -32,9 +32,13 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 | PSAR_ch06 | complete | §6.1–§6.4.5 전체 | 없음 |
 | PSAR_ch07 | complete | §7.1–§7.8 전체 | 없음 |
 | PSAR_ch11 | in_progress | §11.1, §11.2, §11.3, §11.5, §11.6 | §11.4(withheld만 남음) |
+| SER_KU1_CP | in_progress | 1, 3–7, 11, 13장, 부록 A–B(노트 23개) | 3–7·11장 등의 미인용 하위 절(PDC·기능별 정합성 판단 등, 약 370절). 2, 8–10, 12, 14장은 대응 PSAR 장이 vault에 없어 제외 |
+| RG_1.253 | complete | 전체 | 없음(Table A-2·A-3은 정제본 표가 깨져 주석 문단만 인용) |
+| RG_1.247 | pending | 등록·정제 완료 | 전체 |
 
 ## 다음 작업
-0. 공개 원문 3건 등록·인제스트: `RG_1.247`, `RG_1.253`, `SER_KU1_CP`(NRC의 Kemmerer Unit 1 CP Safety Evaluation, 768쪽, 장 단위; 첫 단위 Chapter 3). 내부 자료 작업 상태는 `internal/status.md`.
+0. `RG_1.247` 인제스트(본문 C.1–C.4, 부록 A의 Qualification 21·Clarification 38, 부록 B). 그 뒤 `SER_KU1_CP` 잔여 하위 절의 처리 방침(노트 보강 또는 coverage 제외)을 사용자와 정한다. 내부 자료 작업 상태는 `internal/status.md`.
+0a. 원문 2건(RG_1.253, SER 2026-10-16 배치)마다 `wiki-audit`, 원문 1건마다 `wiki-lint` 의미 점검.
 1. lint 조치 A6 결정(`Risk_Significant_SSC` 단일 기록처화와 `Risk_Importance_Measures` disputed 해제).
 2. NEI 18-04 내부 불일치 3건(§5.3 Task 1의 "Task 14" 참조, 용어집 RI 출처 칸, Task 7c "within 1%"와 §4.2.2 "exceeds 1%")을 `meta/contradictions.md`에 기록할지 결정.
 3. 남은 미정 용어 후보 질문.

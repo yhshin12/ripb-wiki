@@ -48,8 +48,8 @@ staff는 사업자가 정한 DBHL%%t:DBHL%% 집합을 `RG 1.233`과 일치한다
 - **배관 파단:** 고에너지 액체 배관은 safety-significant 구조물에 설치하지 않을 계획이다.
 - **지진:** DBHL%%t:DBHL%%에 명시되지는 않았으나, Beyond Design Basis Event%%t:BDBE%%에 대한 Licensing Modernization Project%%t:LMP%% 위험 목표를 맞추는 지진 설계 margin을 OL%%t:OL%% 단계에서 보여야 한다.
 - **내부 화재:** OL%%t:OL%% 단계에서 완전히 평가된다.
-- **외부 화재:** PRA 스크리닝이 비경수로 PRA 표준과 `RG 1.247`에 맞는지 OL%%t:OL%% 단계에서 재평가해야 한다.
-- **항공기 충돌:** 사업자가 OL%%t:OL%%을 신청하면, PRA에서 정량적으로 스크리닝된 항공기 충돌 사고의 스크리닝이 비경수로 PRA에 맞는지 재평가해야 한다.
+- **외부 화재:** PRA 스크리닝이 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA 표준과 `RG 1.247`에 맞는지 OL%%t:OL%% 단계에서 재평가해야 한다.
+- **항공기 충돌:** 사업자가 OL%%t:OL%%을 신청하면, PRA에서 정량적으로 스크리닝된 항공기 충돌 사고의 스크리닝이 비경수형원전%%t:NON_LWR%% PRA에 맞는지 재평가해야 한다.
 
 비SR%%t:SR%% SSC%%t:SSC%%와 SR%%t:SR%% SSC%%t:SSC%%의 상호작용을 막기 위해, 지진 상호작용 방지 요건이 있는 NSRST%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 `ASCE/SEI 7-16`의 `SCN1` 등급으로 설계된다. 소듐을 담은 SSC%%t:SSC%%는 Safe Shutdown Earthquake%%t:SSE%% 뒤에도 소듐 재고를 유지하도록 설계된다. 이 접근은 OL%%t:OL%% 단계 지진 PRA로 확인되어야 한다. staff는 사업자가 DBHL%%t:DBHL%%을 합리적으로 특성화했고, 설계 접근이 SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%가 자연·인위 위험요인에 기능을 잃지 않고 견딘다는 확신을 준다고 결론지었다.
 

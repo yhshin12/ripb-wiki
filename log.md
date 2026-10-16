@@ -184,3 +184,15 @@
 - 새 노트 4 (SSC 분류, PDC·SR·NSRST, DBHL, 신뢰도·특수 처리·설계), 고친 노트 1 (소스 카드)
 - 검사: lint 0, verify_quotes 0, 작성 후 대조 지적 19건 반영 (오류 9)
 - 미정 용어 0
+
+## [2026-10-16] ingest | SER_KU1_CP Chapter 7, Chapters 1, 11, 13, Appendices A-B
+- 새 노트 8 (Natrium_SER_Nuclear_Heat_Supply_Review 외), 소스 카드 단위 2개 complete, 잔여 단위(미인용 하위 절) pending
+- 검사: lint·인용 검증 0, 작성 뒤 원문 대조 2회(1차 지적 반영 후 재대조), coverage 제외 6건(2, 8-10, 12, 14장과 앞·뒤 부분)
+- 모순 C60 기록(SCG 방사성핵종 보유 기능 seven vs 목록 6)
+- 미정 용어 0
+
+## [2026-10-16] ingest | RG_1.253 전체
+- 새 노트 4 (RG_1253_SAR_Content_Endorsement, _Methodology_And_LBE_Positions, _Integrated_Evaluation_And_SSC_Positions, _CP_PRA_Acceptability), source.py finish
+- 검사: lint·인용 검증 0, 원문 대조 1회 지적 반영, coverage 미인용 0(목록·참고문헌 제외)
+- Appendix A Table A-2·A-3은 정제본 표 구조가 깨져 주석 문단만 인용
+- 용어: 기존 노트 12개를 포함해 '비경수로'를 확정 표기 비경수형원전%%t:NON_LWR%%로 정리

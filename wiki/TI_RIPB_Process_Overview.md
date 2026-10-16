@@ -11,7 +11,7 @@ terms_pending: []
 # Technology-Inclusive, Risk-Informed, and Performance-Based Process (TI-RIPB)
 
 > [!abstract] 요약
-> NEI 18-04는 비경수로의 Licensing Basis Event%%t:LBE%% 선정, Structures, Systems, and Components%%t:SSC%% 안전 분류와 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 판단을 위한 technology-inclusive, risk-informed, and performance-based%%t:TI_RIPB%% 절차를 제시한다. 원문은 이 지침을 이 주제들을 다루는 수용 가능한 한 가지 방법으로 제시하며, 절차는 기존 규정을 면제하지 않고 신청자가 규제 요건 준수 입증에 쓸 입력을 만들도록 돕는다.
+> NEI 18-04는 비경수형원전(non-light-water reactor)%%t:NON_LWR%%의 Licensing Basis Event%%t:LBE%% 선정, Structures, Systems, and Components%%t:SSC%% 안전 분류와 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 판단을 위한 technology-inclusive, risk-informed, and performance-based%%t:TI_RIPB%% 절차를 제시한다. 원문은 이 지침을 이 주제들을 다루는 수용 가능한 한 가지 방법으로 제시하며, 절차는 기존 규정을 면제하지 않고 신청자가 규제 요건 준수 입증에 쓸 입력을 만들도록 돕는다.
 
 ## 원문 사실
 - "This guidance document provides one acceptable means for addressing the aforementioned topics as part of demonstrating a specific design provides reasonable assurance of adequate radiological protection." [NEI_18-04 §ABSTRACT p.3]
@@ -65,7 +65,7 @@ terms_pending: []
 | 10 CFR 52.157 | describes the required information for a FSAR associated with a Manufacturing License application. | [NEI_18-04 §1.3 p.10] |
 
 ## 해설
-NEI 18-04는 비경수로의 LBE%%t:LBE%% 선정, SSC%%t:SSC%% 안전 분류와 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어%%t:DID%% 적절성 판단을 위한 TI-RIPB%%t:TI_RIPB%% 절차를 제시한다. 대상은 용융염로, 고온가스로, 여러 고속로를 포함하되 이에 한정되지 않으며 열출력 규모도 제한하지 않는다. 원문은 이 지침이 특정 설계가 적절한 방사선 방호에 대한 합리적 보증을 준다는 것을 입증하는 과정에서 쓸 수 있는 수용 가능한 한 가지 방법이라고 적는다.
+NEI 18-04는 비경수형원전%%t:NON_LWR%%의 LBE%%t:LBE%% 선정, SSC%%t:SSC%% 안전 분류와 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어%%t:DID%% 적절성 판단을 위한 TI-RIPB%%t:TI_RIPB%% 절차를 제시한다. 대상은 용융염로, 고온가스로, 여러 고속로를 포함하되 이에 한정되지 않으며 열출력 규모도 제한하지 않는다. 원문은 이 지침이 특정 설계가 적절한 방사선 방호에 대한 합리적 보증을 준다는 것을 입증하는 과정에서 쓸 수 있는 수용 가능한 한 가지 방법이라고 적는다.
 
 배경으로 원문은 두 정책성명을 든다. NRC는 2008년 신형로 규제 정책성명에서 신형로가 향상된 margins of safety를 제공하고/하거나, 단순화·고유·피동 또는 그 밖의 혁신적 수단으로 안전·보안 기능을 수행하기를 기대한다고 밝혔다. 원문은 NRC가 독립성, 개방성, 효율성, 명확성, 신뢰성이라는 좋은 규제의 원칙을 따라 임무를 달성하려 한다고 적는다. 1995년의 PRA 정책성명은 PRA 기법과 자료의 수준이 뒷받침하는 범위에서 모든 규제 사안에 PRA 활용을 늘리되, NRC의 결정론적 접근을 보완하고 전통적 심층방어%%t:DID%% 철학을 뒷받침하는 방식으로 하라고 밝혔다. 원문은 이 정책성명들 위에서 더 온전한 risk-informed and performance-based%%t:RIPB%% 기술 인허가 환경의 토대를 마련하면서, 초기 사업자(early movers)는 현행 규제 체계를 쓸 수 있게 한다고 적는다.
 

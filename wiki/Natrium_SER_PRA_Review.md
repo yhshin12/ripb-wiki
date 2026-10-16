@@ -62,7 +62,7 @@ terms_pending: []
 | SF PRA | the staff determined the SF PRA analysis to be reasonable | [SER_KU1_CP §3.1.3 p.174] |
 
 ## 해설
-staff는 PRA를 `RG 1.253` Appendix A의 CP%%t:CP%% 단계 기대(범위, 상세도, 품질)에 비추어 검토했다. 이 PRA가 내부 기시사건만 다루므로, 비경수로 PRA 표준을 단서와 함께 승인하는 `RG 1.247`의 해당 입장을 함께 적용했다. 검토의 일부로 가상 audit과 3일간의 현장 audit을 했고, `CAFTA`로 만든 PRA 모델과 선택된 민감도 해석도 audit 대상이었다.
+staff는 PRA를 `RG 1.253` Appendix A의 CP%%t:CP%% 단계 기대(범위, 상세도, 품질)에 비추어 검토했다. 이 PRA가 내부 기시사건만 다루므로, 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA 표준을 단서와 함께 승인하는 `RG 1.247`의 해당 입장을 함께 적용했다. 검토의 일부로 가상 audit과 3일간의 현장 audit을 했고, `CAFTA`로 만든 PRA 모델과 선택된 민감도 해석도 audit 대상이었다.
 
 staff는 PRA 요소 열두 개와 사용후연료 PRA를 각각 "reasonable"로 판정했다. 판정 문장은 대체로 `PSAR`의 해당 서술이 `RG 1.253`의 CP%%t:CP%% 단계 지침에 맞는다는 근거를 들며, Plant Operating State%%t:POS%% 판정처럼 해석이 `RG 1.247` 지침에 따라 수행되었다는 근거를 함께 드는 경우가 있다. 동시에 요소별 한계와 OL%%t:OL%% 단계 과제를 적었다.
 - 일부 Structures, Systems, and Components%%t:SSC%%는 설계 정보가 없어 모델링되지 않았다. 이들이 추가되면 새 고장 모드 때문에 일부 사건의 빈도가 커질 수 있다.

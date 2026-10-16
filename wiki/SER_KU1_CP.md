@@ -27,6 +27,12 @@ units:
   status: complete
 - unit: "Chapters 5-6 (SSC classification, PDC, SR/NSRST, DBHL, reliability, special treatment, design)"
   status: complete
+- unit: "Chapter 7 (system-level reviews: NHS, reactor auxiliary, fuel handling, radwaste, ancillary, I&C, electrical, buildings)"
+  status: complete
+- unit: "Chapters 1, 11, 13, Appendices A-B (facility, conduct of operations, R&D, permit conditions, exemptions)"
+  status: complete
+- unit: "잔여: 1, 3-7, 11장의 미인용 하위 절(계통별 PDC·기능별 정합성 판단 등)"
+  status: pending
 ---
 
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)
@@ -66,3 +72,11 @@ units:
 - [[Natrium_SER_PDC_SR_NSRST_Review]]
 - [[Natrium_SER_DBHL_Review]]
 - [[Natrium_SER_SSC_Design_Review]]
+- [[Natrium_SER_Nuclear_Heat_Supply_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_Review]]
+- [[Natrium_SER_Fuel_Handling_And_Ancillary_Review]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_SER_Facility_Overview_Review]]
+- [[Natrium_SER_Conduct_Of_Operations_Review]]
+- [[Natrium_SER_RD_And_Permit_Conditions]]
+- [[Natrium_SER_Exemptions_Review]]

@@ -13,6 +13,18 @@
   "PSAR_ch07": [
     {"heading": "^Table 7\\.(3\\.1-2|3\\.2-2|3\\.3-2|4\\.1-1|5\\.1-1) .*Codes and Standards", "reason": "codes and standards lists not ingested (2026-10-14 user decision; Table 7.5.2-1 is ingested)"}
   ],
+  "RG_1.253": [
+    {"heading": "^(Applicable Regulations|Related Guidance)[0-9]*$", "reason": "lists of applicable regulations and related documents"},
+    {"heading": "^(REFERENCES|References)[0-9]*$", "reason": "reference lists"}
+  ],
+  "SER_KU1_CP": [
+    {"pages": "1-23", "reason": "front matter: abstract, list of abbreviations and acronyms"},
+    {"pages": "55-151", "reason": "chapter 2 Site Characteristics; the corresponding PSAR chapter 2 is not in the vault"},
+    {"pages": "609-651", "reason": "chapters 8-10 (plant programs, QA, effluents, radiation protection); the corresponding PSAR chapters are not in the vault"},
+    {"pages": "710-712", "reason": "chapter 12 post-construction inspection, testing, and analysis program; the corresponding PSAR chapter is not in the vault"},
+    {"pages": "725-731", "reason": "chapter 14 financial qualifications; only the exemption outcome (14.1, 14.1.2) is cited, the financial and ownership review is outside vault scope"},
+    {"pages": "753-768", "reason": "back matter: references and list of contributors"}
+  ],
   "RG_1.232": [
     {"pages": "29-61", "reason": "Appendix A (ARDC) not ingested by user decision"},
     {"heading": "^Related Guidance, Communications, and Policy Statements$", "reason": "list of related documents"}

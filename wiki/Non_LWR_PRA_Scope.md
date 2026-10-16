@@ -13,7 +13,7 @@ terms_pending: []
 # 비경수로 PRA의 범위와 PRA Technical Adequacy (Non-LWR PRA Scope and Adequacy)
 
 > [!abstract] 요약
-> 비경수로의 PRA는 고유·피동 특성에 더 의존하는 설계를 반영해 내부 사건과 외부 재해의 전 범위를 다뤄야 하지만, 상세 수준은 설계의 크기·복잡도·잠재 위험에 맞출 수 있다. 빈도와 결말은 평균 점추정값과 불확실도 분포로 정량화하며, 원문은 ASME/ANS RA-S-1.4를 PRA의 범위와 PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%를 정하는 수용 가능한 수단으로 든다.
+> 비경수형원전(non-light-water reactor)%%t:NON_LWR%%의 PRA는 고유·피동 특성에 더 의존하는 설계를 반영해 내부 사건과 외부 재해의 전 범위를 다뤄야 하지만, 상세 수준은 설계의 크기·복잡도·잠재 위험에 맞출 수 있다. 빈도와 결말은 평균 점추정값과 불확실도 분포로 정량화하며, 원문은 ASME/ANS RA-S-1.4를 PRA의 범위와 PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%를 정하는 수용 가능한 수단으로 든다.
 
 ## 원문 사실
 - "Since the non-LWRs are expected to make greater use of inherent and passive capabilities to achieve safety, the PRA model used for applications described in this document should address the full spectrum of internal events and external hazards that pose challenges to the capabilities of the plant." [NEI_18-04 §3.3.2 p.31]
@@ -36,7 +36,7 @@ terms_pending: []
 - "A source term that is calculated using models and supporting scientific data that simulate the physical and chemical processes that describe the radionuclide inventories and the time-dependent radionuclide transport mechanisms that are necessary and sufficient to predict the source term." [NEI_18-04 §6 p.90]
 
 ## 해설
-원문은 비경수로가 안전을 달성하는 데 고유·피동 특성을 더 많이 쓸 것으로 보고, PRA가 내부 사건과 외부 재해의 전 범위를 다뤄야 한다고 적는다. 동시에 상세 수준은 설계의 크기, 복잡도, 잠재 위험에 따라 달라지며, 방사성 물질 재고가 작고 Structures, Systems, and Components%%t:SSC%% 수가 적으며 교란에 본질적으로 안전하게 반응하는 설계는 단순하지만 목적에 맞는 PRA를 써도 된다. 원문은 많은 비경수로에 필요한 PRA가 운전 중인 경수로보다 훨씬 덜 복잡할 것이라고 본다.
+원문은 비경수형원전%%t:NON_LWR%%이 안전을 달성하는 데 고유·피동 특성을 더 많이 쓸 것으로 보고, PRA가 내부 사건과 외부 재해의 전 범위를 다뤄야 한다고 적는다. 동시에 상세 수준은 설계의 크기, 복잡도, 잠재 위험에 따라 달라지며, 방사성 물질 재고가 작고 Structures, Systems, and Components%%t:SSC%% 수가 적으며 교란에 본질적으로 안전하게 반응하는 설계는 단순하지만 목적에 맞는 PRA를 써도 된다. 원문은 많은 비경수형원전%%t:NON_LWR%%에 필요한 PRA가 운전 중인 경수로보다 훨씬 덜 복잡할 것이라고 본다.
 
 다만 원자로 크기와 무관하게 일부 PRA 요소가 필요할 수 있다. 원문은 10 CFR 50.47과 10 CFR 52.79가 Anticipated Operational Occurrence%%t:AOO%%부터 가정한 Event Sequence%%t:ES%%까지 빈도와 결말을 다루도록 요구한다고 지적한다.
 
