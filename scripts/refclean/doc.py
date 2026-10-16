@@ -47,6 +47,8 @@ LABEL_PATTERNS = [
     re.compile(r"^Appendix [ABC] to RG 1\.232, Rev\. 0, Page ([A-C]-\d+)$"),   # RG appendices
     re.compile(r"^RG 1\.232, Rev\. 0, Page (\d+)$"),                            # RG body
     re.compile(r"^©\s*NEI 2019\. All rights reserved\. nei\.org\s+(\S+)$"),     # NEI front matter
+    re.compile(r"^RG 1\.247, Appendix [AB], Page ([AB]-\d+)$"),               # RG 1.247 appendices
+    re.compile(r"^RG 1\.247, Page (\d+)$"),                                   # RG 1.247 body
 ]
 HEADER_PREFIX = re.compile(r"^\s*Kemmerer Unit 1 PSAR\b\s*")
 

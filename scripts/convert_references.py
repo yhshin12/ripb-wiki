@@ -10,6 +10,8 @@ Per-document options were selected in the 2026-09-11 review of the opendataloade
 - include_header_footer (PSAR only): table captions (Sheet n of m) and underlined subheadings sit in the header band
   and are otherwise deleted. The added boilerplate is removed by the cleanup script.
 - detect_strikethrough (RG 1.232): marks the red strike-out words of the Table 1 redline as ~~...~~.
+- include_header_footer (RG 1.247): the Appendix A table captions and "Appendix A, Page A-n" labels are in the
+  header band.
 - space_ratio 0.12 (NEI 18-04): restores 89 lost inter-word spaces without false splits.
 - markdown_with_html is NOT used: opendataloader-pdf 2.5.7 escapes the opening <td> tags.
 
@@ -58,6 +60,7 @@ COMMON = dict(
 PROFILES = [
     # (file-name prefix, extra options)
     ("TP_Natrium_PSAR", dict(include_header_footer=True)),
+    ("RG_1.247", dict(include_header_footer=True)),   # Table A-n captions sit in the header band
     ("RG_", dict(detect_strikethrough=True)),
     ("NEI_", dict(space_ratio="0.12")),
 ]

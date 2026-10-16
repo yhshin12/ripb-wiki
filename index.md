@@ -15,6 +15,9 @@
 - [[PSAR_ch11]] — Conduct of Operations
 - [[RG_1.232]] — `RG 1.232`는 non-light-water reactor의 principal design criteria 개발 지침이다.
 - [[RG_1.233]] — `RG 1.233`은 non-light-water reactor의 licensing basis와 신청서 내용을 정하는 technology-inclusive, risk-informed, performance-based 방법론에 관한 지침이다.
+- [[RG_1.247]] — Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water Reactor Risk-Informed Activities
+- [[RG_1.253]] — Guidance for a Technology-Inclusive Content-of-Application Methodology for Non-Light-Water Reactors
+- [[SER_KU1_CP]] — Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application
 
 ## 규제 (regulation)
 

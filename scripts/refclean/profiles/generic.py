@@ -13,6 +13,28 @@ META = {
                   "Non-Light-Water Reactors"),
         "tags": ["reference", "nrc", "regulatory-guide"], "aliases": ["RG 1.233"],
     },
+    "RG_1.247": {
+        "doc_id": "RG 1.247", "doc_type": "Regulatory Guide (for trial use)", "issuer": "U.S. Nuclear Regulatory Commission",
+        "revision": "Trial", "date": "2022-03",
+        "title": ("Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water Reactor "
+                  "Risk-Informed Activities"),
+        "tags": ["reference", "nrc", "regulatory-guide"], "aliases": ["RG 1.247"],
+    },
+    "RG_1.253": {
+        "doc_id": "RG 1.253", "doc_type": "Regulatory Guide", "issuer": "U.S. Nuclear Regulatory Commission",
+        "revision": "0", "date": "2024-03",
+        "title": ("Guidance for a Technology-Inclusive Content-of-Application Methodology to Inform the Licensing "
+                  "Basis and Content of Applications for Licenses, Certifications, and Approvals for "
+                  "Non-Light-Water Reactors"),
+        "tags": ["reference", "nrc", "regulatory-guide"], "aliases": ["RG 1.253"],
+    },
+    "SER_KU1_CP": {
+        "doc_id": "ML25329A252", "doc_type": "NRC Safety Evaluation (construction permit)",
+        "issuer": "U.S. Nuclear Regulatory Commission", "revision": "", "date": "2025-11",
+        "title": ("Safety Evaluation Related to the U.S. SFR Owner, LLC Construction Permit Application for the "
+                  "Kemmerer Power Station, Unit 1 (EPID L-2024-CPS-0000)"),
+        "tags": ["reference", "nrc", "safety-evaluation", "natrium"], "aliases": ["Kemmerer Unit 1 CP SER"],
+    },
 }
 
 

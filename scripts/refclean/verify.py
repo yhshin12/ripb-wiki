@@ -13,7 +13,9 @@ scripts/refclean/tests/test_*.py), not a proof of completeness. Its blind spots:
    (e.g. the ch1 p17 acronym row).
 3. Global sheet credit. `_sheet_credit` adds the repeated header row and running caption of every merged
    multi-page table to the output side once per extra sheet. The credit is document-wide, so it can mask an equal
-   number of tokens genuinely lost somewhere else.
+   number of tokens genuinely lost somewhere else. A profile may add strings to `doc.meta["sheet_credit"]` for page
+   furniture it drops on purpose (RG 1.247: the per-page column header row and the repeated caption of the Appendix A
+   tables); the same masking caveat applies.
 4. Bag of words, not order or attribution. A token moved to the wrong section, a duplicated sentence, a wrong
    number pairing or a scrambled table row is invisible; only the profile tests check placement.
 5. Tokenisation. A line-end hyphen split (`risk-` + `significant` vs `risk-significant`) and `<sub>`/`<sup>`
@@ -99,6 +101,8 @@ def _sheet_credit(doc):
             for _ in range(rep):
                 credit.update(_tokens(hdr))
                 credit.update(_tokens(t.caption))
+    for text in doc.meta.get("sheet_credit", []):   # repeated page furniture a profile drops on purpose (RG 1.247)
+        credit.update(_tokens(text))
     return credit
 
 

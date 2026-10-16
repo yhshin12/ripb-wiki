@@ -22,6 +22,12 @@ DOCS = {
                  "for Non-Light-Water Reactors", "generic", None),
     "ACRS_ML25293A458": ("ACRS_ML25293A458_NRC Review of Kemmerer Unit 1 Construction Permit Application, "
                           "Control of Heat Generation", "acrs_slides", None),
+    "RG_1.247": ("RG_1.247_Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water "
+                 "Reactor Risk-Informed Activities", "rg1247", None),
+    "RG_1.253": ("RG_1.253_Guidance for a Technology-Inclusive Content-of-Application Methodology for "
+                 "Non-Light-Water Reactors", "generic", None),
+    "SER_KU1_CP": ("SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application",
+                   "ser", None),
 }
 
 INTERNAL_REGISTRY = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
