@@ -194,6 +194,12 @@ terms_pending: []
 | GV | Guard Vessel | GV |  | 약어 |  | [PSAR_ch07 §7.1.2.1.3 p.24] | 영어 유지 | 2026-10-14 사용자 결정 |
 | COLD_TRAP | cold trap |  |  |  |  | [PSAR_ch07 §7.2.4.3.6 p.144] | 영어 유지 | 2026-10-14 사용자 결정 |
 | CESIUM_TRAP | cesium trap |  |  |  |  | [PSAR_ch07 §7.2.4.3.7 p.144] | 영어 유지 | 2026-10-14 사용자 결정 |
+| TATNF | time-at-temperature no-failure | TATNF |  | 약어 |  | [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5] | 영어 유지 | 2026-10-16 사용자 결정(적절한 한국어 없음) |
+| DECONTAMINATION_FACTOR | decontamination factor |  | 제염계수 | 한국어 |  | [PSAR_ch03 §3.7.4.4.2 p.79] | 확정 | 2026-10-16 사용자 결정 |
+| ALTERNATIVE_SHUNT_TRIP | alternative shunt trip |  |  |  |  | [PSAR_ch03 §3.8.1.3 p.84] | 영어 유지 | 2026-10-16 사용자 결정(적절한 한국어 없음) |
+| MAJOR_ACCIDENT | Major Accident |  | 주요사고 | 한국어 |  | [PSAR_ch03 §3.3.3 p.47] | 확정 | 2026-10-16 사용자 결정 |
+| POOL_SCRUBBING | pool scrubbing |  |  |  |  | [PSAR_ch03 §3.7.5.1.2 p.82] | 영어 유지 | 2026-10-16 사용자 결정(적절한 한국어 없음) |
+| UNCERTAINTY_BAND | uncertainty band |  | 불확도범위 | 한국어 |  | [NEI_18-04 §3.2.2 p.22] | 확정 | 2026-10-16 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

@@ -148,3 +148,8 @@
 ## [2026-10-14] terms | 용어 반영 2026-10-14 보완 인제스트 (10건)
 - 영어 유지: ERO, ERF, ED, EAL, emergency classification, emergency response functions, ingestion pathway, GV, cold trap, cesium trap
 - sync_terms: 갱신 노트 0, 충돌 0
+
+## [2026-10-16] terms | 용어 반영 2026-10-16 (6건)
+- 확정: DECONTAMINATION_FACTOR=제염계수, MAJOR_ACCIDENT=주요사고, UNCERTAINTY_BAND=불확도범위
+- 영어 유지: TATNF, ALTERNATIVE_SHUNT_TRIP, POOL_SCRUBBING (적절한 한국어 없음)
+- sync_terms: 갱신 노트 0, 충돌 0
