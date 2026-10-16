@@ -33,7 +33,7 @@ def test_check_and_write(mini_vault, make_note, good_note_body, monkeypatch):
 
 def test_internal_index(mini_vault, make_note, good_note_body, monkeypatch):
     monkeypatch.setattr(BI, "VAULT", str(mini_vault))
-    make_note("HSFR_Trial", good_note_body, root="internal", type="hsfr")
+    make_note("HELIOS_Trial", good_note_body, root="internal", type="helios")
     assert BI.main(["--root", "internal"]) == 0
     text = (mini_vault / "internal" / "index.md").read_text(encoding="utf-8")
-    assert "[[HSFR_Trial]]" in text and "[[DOC_A]]" not in text
+    assert "[[HELIOS_Trial]]" in text and "[[DOC_A]]" not in text

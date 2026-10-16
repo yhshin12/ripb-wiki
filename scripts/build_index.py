@@ -16,7 +16,7 @@ import terms as T
 SCRIPTS = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.dirname(SCRIPTS)
 ORDER = [("source", "원문"), ("regulation", "규제"), ("concept", "개념"), ("natrium", "Natrium"),
-         ("synthesis", "종합"), ("map", "지도"), ("hsfr", "H-SFR")]
+         ("synthesis", "종합"), ("map", "지도"), ("helios", "HELIOS")]
 HEADER = "# index\n\n<!-- build_index.py가 생성한다. 손으로 고치지 않는다. -->\n"
 TEMPLATE_SUMMARY = "(인제스트 완료 시 작성)"
 

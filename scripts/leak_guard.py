@@ -41,7 +41,7 @@ def internal_names(vault):
     for sub in ("references", os.path.join("references", "raw")):
         d = os.path.join(base, sub)
         for fn in (os.listdir(d) if os.path.isdir(d) else []):
-            if os.path.isfile(os.path.join(d, fn)):
+            if os.path.isfile(os.path.join(d, fn)) and not fn.startswith("_"):   # _conversion.json etc.
                 raw.add(os.path.splitext(fn)[0])
     for sub in ("wiki", "meetings"):
         d = os.path.join(base, sub)

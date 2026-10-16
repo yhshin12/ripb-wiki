@@ -81,7 +81,7 @@ ripb/                            Obsidian vault = git #1 (새 이력, GitHub 비
 │                                append_log.py, session_start.py, audit_sample.py, tests/
 └── internal/                    git #1 제외; git #2 (로컬 전용, 원격 없음)
     ├── references/              raw/, <stem>.md, figures/  (같은 파이프라인, --root 인자)
-    ├── wiki/                    내부 자료 기반 노트 (파일명 접두어 HSFR_)
+    ├── wiki/                    내부 자료 기반 노트 (파일명 접두어 HELIOS_)
     ├── meetings/                회의록 (구 conversations/)
     ├── log.md  status.md        내부 작업 기록
     └── _legacy/                 구 .git bundle, 구 raw/ 압축본, 구 log
@@ -94,7 +94,7 @@ Obsidian의 링크·검색·그래프·Bases는 파일명과 속성으로 동작
 ### 3.2 파일명
 
 - 영어 `Snake_Case`, ASCII만 쓰며 vault 전체(`wiki/`, `internal/wiki/`)에서 유일하다.
-- 설계 특정 노트는 `Natrium_`, `HSFR_` 접두어를 붙인다.
+- 설계 특정 노트는 `Natrium_`, `HELIOS_` 접두어를 붙인다.
 - 소스 카드는 문서 키로 짓는다: `NEI_18-04`, `RG_1.232`, `PSAR_ch03`.
 - wiki 파일명은 `references/`·`internal/references/`의 파일명과 달라야 한다(링크 모호성 방지). 현재 `RG_1.232.md`가 충돌하므로 Phase 1에서 PDF 이름을 `RG_1.232_Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors.pdf`로 바꾸고 재변환한다(NEI와 같은 `<KEY>_<title>` 형식).
 - 인코딩은 UTF-8(BOM 없음), 줄 끝은 LF.
@@ -106,7 +106,7 @@ Obsidian의 링크·검색·그래프·Bases는 파일명과 속성으로 동작
 | git #1 (`ripb/`) | CLAUDE.md, meta/, wiki/, templates/, scripts/, .claude/, .obsidian/(workspace 제외), index.md, log.md | `inbox/`, `references/`, `internal/`, `docs/superpowers/`, `.obsidian/workspace*.json`, `.obsidian/graph.json`, `*.pyc`, `__pycache__/` |
 | git #2 (`internal/`) | references와 압축본을 제외한 전부 | `references/`, `_legacy/*.zip` (크기). bundle은 추적 |
 
-- git #1의 log·status·노트에는 내부 문서의 이름조차 쓰지 않는다. 공개 노트는 `[[HSFR_…]]`로 링크하지 않는다. 내부 노트가 공개 노트로 링크하는 것은 허용한다. lint가 검사한다.
+- git #1의 log·status·노트에는 내부 문서의 이름조차 쓰지 않는다. 공개 노트는 `[[HELIOS_…]]`(구 접두어 `[[HSFR_…]]` 포함)로 링크하지 않는다. 내부 노트가 공개 노트로 링크하는 것은 허용한다. lint가 검사한다.
 - `.gitattributes`: `* text=auto eol=lf`, PNG·PDF는 binary.
 - 두 저장소 모두 `core.hooksPath=.githooks`로 pre-commit 관문을 둔다.
 - push는 요청 시에만 한다.
@@ -170,7 +170,7 @@ wiki/ (소스 카드 ingest: complete)              internal/wiki/
 
 ```markdown
 ---
-type: concept          # source | regulation | concept | natrium | synthesis | map | hsfr
+type: concept          # source | regulation | concept | natrium | synthesis | map | helios
 aliases: [LBE]
 sources: [NEI_18-04]   # 소스 카드 키
 status: draft          # draft → checked → reviewed; 필요 시 disputed · deprecated
@@ -206,7 +206,7 @@ terms_pending: []      # sync_terms.py가 유지: 이 노트의 미정 용어 �
 | 표·그림 | `[KEY Table x p.N]`, `[KEY Figure x p.N]` | `[PSAR_ch05 Table 5.2-1 p.12]` |
 | 레코드 | `[KEY <레코드 ID> p.N]` | `[RG_1.232 SFR-DC 4 p.64]`, `[PSAR_ch05 DL3-RC1 p.12]` |
 | 쪽 범위 | `p.N-M` | `[NEI_18-04 §3.2.1 p.16-17]` |
-| 쪽 없는 원문 | `[KEY §제목경로]` | `[HSFR_MTG_2026-05-22 §반응도 LBE]` |
+| 쪽 없는 원문 | `[KEY §제목경로]` | `[HELIOS_MTG_2026-05-22 §반응도 LBE]` |
 
 `p.N`은 PDF 쪽(쪽 표지의 첫 번호)이다. 인쇄 쪽은 사람이 PDF를 열 때 참고용이며 인용에는 쓰지 않는다.
 

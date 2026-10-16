@@ -11,9 +11,9 @@ def ivault(tmp_path):
     """A vault whose internal/ tree holds fictitious documents."""
     for d in ("internal/references/raw", "internal/wiki", "internal/meetings", "wiki"):
         os.makedirs(tmp_path / d)
-    (tmp_path / "internal/references/raw/HSFR_X_Design Note.pdf").write_bytes(b"%PDF fake")
-    (tmp_path / "internal/wiki/HSFR_Pump_Trial.md").write_text(
-        "---\ntype: hsfr\ntitle: Zeta Loop Pump Trial\naliases: [ZLP, Zeta Loop Trial]\n---\n\n"
+    (tmp_path / "internal/references/raw/HELIOS_X_Design Note.pdf").write_bytes(b"%PDF fake")
+    (tmp_path / "internal/wiki/HELIOS_Pump_Trial.md").write_text(
+        "---\ntype: helios\ntitle: Zeta Loop Pump Trial\naliases: [ZLP, Zeta Loop Trial]\n---\n\n"
         "# 가상 시험 (Zeta Loop Pump Trial)\n", encoding="utf-8")
     (tmp_path / "internal/meetings/2026-01-02_kickoff.md").write_text("# Omega Kickoff Meeting\n", encoding="utf-8")
     return tmp_path
@@ -21,7 +21,7 @@ def ivault(tmp_path):
 
 def test_internal_names_collects_stems_titles_h1_aliases(ivault):
     names = LG.internal_names(str(ivault))
-    assert "hsfr_x_design note" in names
+    assert "helios_x_design note" in names
     assert "zeta loop pump trial" in names and "zeta loop trial" in names
     assert "가상 시험 (zeta loop pump trial)" in names and "가상 시험" not in names  # 5 chars < 8
     assert "omega kickoff meeting" in names and "2026-01-02_kickoff" in names
@@ -74,3 +74,9 @@ def test_extra_probe_names_from_environment(tmp_path, monkeypatch):
     monkeypatch.setenv("RIPB_LEAK_EXTRA", "zz-leak-probe-4711")
     os.makedirs(tmp_path / "internal")
     assert "zz-leak-probe-4711" in LG.internal_names(str(tmp_path))
+
+
+def test_pipeline_artifacts_are_not_document_names(ivault):
+    (ivault / "internal/references/raw/_conversion.json").write_text("{}", encoding="utf-8")
+    names = LG.internal_names(str(ivault))
+    assert "_conversion" not in names and "helios_x_design note" in names

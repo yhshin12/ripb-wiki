@@ -13,7 +13,7 @@
 
 | 경로 | 내용 | git |
 |---|---|---|
-| `wiki/` | 노트. 단일 폴더, 범주는 frontmatter `type`과 접두어(`Natrium_`, `HSFR_`) | #1 |
+| `wiki/` | 노트. 단일 폴더, 범주는 frontmatter `type`과 접두어(`Natrium_`, `HELIOS_`) | #1 |
 | `wiki/Terminology.md` | 용어표 (단일 진실 원천) | #1 |
 | `meta/` | 설계, 상태, 점검 보고, 정제 파이프라인 기록, 인수인계 | #1 |
 | `templates/`, `scripts/`, `.claude/` | 노트 틀, 스크립트, hook·skill | #1 |
@@ -38,7 +38,7 @@
 
 ## 4. 노트 규칙과 인용 형식 (설계 §5)
 
-- frontmatter: `type`(source | regulation | concept | natrium | synthesis | map | hsfr), `aliases`, `sources`(소스 키 목록), `status`(draft → checked → reviewed; disputed, deprecated), `verified`, `term`, `tags`, `terms_pending`(sync_terms가 유지).
+- frontmatter: `type`(source | regulation | concept | natrium | synthesis | map | helios), `aliases`, `sources`(소스 키 목록), `status`(draft → checked → reviewed; disputed, deprecated), `verified`, `term`, `tags`, `terms_pending`(sync_terms가 유지).
 - 본문: `# 한국어 제목 (English Title)` → `> [!abstract] 요약`(한국어 2–3문장) → `## 원문 사실` → `## 해설` → `## 관련 문서`. 노트가 대표하는 용어(`term`)가 용어표에서 "영어 유지"이면 H1을 `# English Name (약어)`로 쓴다. 약어가 없으면 `# 한국어 서술 (English Title)` 형식을 쓰되, 용어 자체는 영어로 둔다. 한국어 표기를 지어내지 않기 위해서다.
 - 원문 사실 절은 원문 문장(따옴표)과 표 값만 담고 항목마다 인용을 붙인다. 해설은 한국어로 쓰고 원문 사실 절만 근거로 삼는다.
 - 인용: `[KEY §3.7.3.1 p.45]`, `[KEY Table 5.2-1 p.12]`, `[KEY SFR-DC 4 p.64]`, `[KEY §3.2.1 p.16-17]`. `p.N`은 PDF 쪽(쪽 표지의 첫 번호). 쪽이 없는 원문은 `[KEY §제목경로]`.
@@ -64,12 +64,12 @@
 - 스크립트(`scripts/`): 정제 `convert_references.py`, `clean_references.py` + `refclean/`; 원문 `source.py`; 검사 `lint_wiki.py`(파일 단위 L01–L20, `--all` L30–L36), `verify_quotes.py`(V1–V5); 변경 `sync_terms.py`(dry-run 기본), `build_index.py`(`--check`), `append_log.py`; 보고 `session_start.py`, `audit_sample.py`; 보조 `notes.py`, `citations.py`, `terms.py`, `leak_guard.py`, `hook_post_edit.py`.
 - 규칙: 일괄 수정은 dry-run 기본. 원문 파일은 이동만 하고 내용을 바꾸지 않는다(`inbox/` → `references/raw/` 이동은 `source.py register`만 한다). 검사 실패는 0이 아닌 종료 코드. 파일은 내용을 검증한 뒤에만 쓴다.
 - 테스트: `python -m pytest scripts/refclean/tests scripts/tests -q`. 원문을 읽는 테스트는 `@pytest.mark.refs`이며 `references/raw`에 PDF가 없으면 skip된다. 새 테스트가 `references/`를 열면서 표시가 없으면 실패한다.
-- hook: Claude SessionStart → `session_start.py`; PostToolUse(Edit·Write·MultiEdit, `wiki/`·`internal/wiki/`의 `.md`) → `hook_post_edit.py`(lint 파일 단위 + 인용 검증, 오류는 Claude에게 되돌림); git pre-commit(두 저장소) → 경로 관문, 공개 노트 `[[HSFR_` 거부, `leak_guard.py --staged`(공개), `lint_wiki.py --all`, `verify_quotes.py --all`, `build_index.py --check`; git commit-msg(공개) → `leak_guard.py --message`.
+- hook: Claude SessionStart → `session_start.py`; PostToolUse(Edit·Write·MultiEdit, `wiki/`·`internal/wiki/`의 `.md`) → `hook_post_edit.py`(lint 파일 단위 + 인용 검증, 오류는 Claude에게 되돌림); git pre-commit(두 저장소) → 경로 관문, 공개 노트 `[[HELIOS_`·`[[HSFR_` 거부, `leak_guard.py --staged`(공개), `lint_wiki.py --all`, `verify_quotes.py --all`, `build_index.py --check`; git commit-msg(공개) → `leak_guard.py --message`.
 - 클론 직후: 두 저장소에서 `git config core.hooksPath .githooks`를 실행한다. `references/`는 원본 PDF를 `references/raw/`에 두고 파이프라인으로 재생성한다.
 - `log.md`는 `append_log.py`로만 추가한다(커밋 해시는 적지 않는다). `index.md`는 `build_index.py`가 만든다.
 
 ## 8. 보안 (설계 §3.3)
 
 - git #1은 `inbox/`, `references/`, `internal/`, `raw/`를 추적하지 않는다. `git add -f`로 우회하지 않는다.
-- 공개 파일(`wiki/`, `meta/`, `log.md`, `index.md`)에는 내부 문서의 이름도 쓰지 않는다. 공개 노트는 `[[HSFR_…]]`로 링크하지 않는다. 내부 작업은 `internal/log.md`, `internal/status.md`에만 기록한다.
+- 공개 파일(`wiki/`, `meta/`, `log.md`, `index.md`)에는 내부 문서의 이름도 쓰지 않는다. 공개 노트는 `[[HELIOS_…]]`(구 접두어 `[[HSFR_…]]` 포함)로 링크하지 않는다. 내부 작업은 `internal/log.md`, `internal/status.md`에만 기록한다.
 - 구 이력과 구 자료는 `internal/_legacy/`에 있다(`git clone ripb-before-rebuild.bundle`로 복원).

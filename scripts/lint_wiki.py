@@ -16,7 +16,9 @@ import terms as T
 
 SCRIPTS = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.dirname(SCRIPTS)
-TYPES = {"source", "regulation", "concept", "natrium", "synthesis", "map", "hsfr"}
+# HELIOS_ is the internal-note prefix; HSFR_ is its former name and stays guarded.
+INTERNAL_PREFIXES = ("HELIOS_", "HSFR_")
+TYPES = {"source", "regulation", "concept", "natrium", "synthesis", "map", "helios"}
 STATUSES = {"draft", "checked", "reviewed", "disputed", "deprecated"}
 INGEST = {"pending", "in_progress", "complete"}
 NOTE_FIELDS = ("type", "aliases", "sources", "status", "verified", "term", "tags", "terms_pending")
@@ -132,7 +134,7 @@ def _links(ctx, note, is_internal, F):
                     F(i, "L08", f"embedded file not found: {target}")
             elif target in ctx.public:
                 continue
-            elif target in ctx.internal or target.startswith("HSFR_"):
+            elif target in ctx.internal or target.startswith(INTERNAL_PREFIXES):
                 if not is_internal:
                     F(i, "L10", f"public note links to internal note [[{target}]]")
                 elif target not in ctx.internal:

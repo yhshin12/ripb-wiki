@@ -33,11 +33,11 @@ def test_register_moves_pdf_and_writes_card(vault):
 
 def test_register_internal_goes_to_internal_tree(vault):
     pdf = make_pdf(vault / "inbox" / "internal" / "secret.pdf")
-    card = source.register(str(pdf), key="HSFR_X", title="Design Note", root="internal")
-    assert (vault / "internal" / "references" / "raw" / "HSFR_X_Design Note.pdf").exists()
+    card = source.register(str(pdf), key="HELIOS_X", title="Design Note", root="internal")
+    assert (vault / "internal" / "references" / "raw" / "HELIOS_X_Design Note.pdf").exists()
     assert card.startswith(str(vault / "internal" / "wiki"))
     fm, _ = source.read_note(card)
-    assert fm["pdf"] == "internal/references/raw/HSFR_X_Design Note.pdf"
+    assert fm["pdf"] == "internal/references/raw/HELIOS_X_Design Note.pdf"
 
 
 def test_register_refuses_duplicate_by_hash(vault):
@@ -188,15 +188,15 @@ def test_sync_all_uses_each_cards_own_root(vault, monkeypatch):
     make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
     public_card = source.adopt("DOC_A", root=None)
     internal_pdf = make_pdf(vault / "inbox" / "internal" / "n.pdf")
-    internal_card = source.register(str(internal_pdf), key="HSFR_X", title="Design Note", root="internal")
+    internal_card = source.register(str(internal_pdf), key="HELIOS_X", title="Design Note", root="internal")
     _cleaned(vault, "DOC_A_Some Title")
-    _cleaned(vault, "HSFR_X_Design Note", root="internal")
+    _cleaned(vault, "HELIOS_X_Design Note", root="internal")
     monkeypatch.setattr("sys.argv", ["source.py", "sync", "--all"])
     source.main()
     fm_pub, _ = source.read_note(public_card)
     fm_int, _ = source.read_note(internal_card)
     assert fm_pub["file"] == "references/DOC_A_Some Title.md"
-    assert fm_int["file"] == "internal/references/HSFR_X_Design Note.md"
+    assert fm_int["file"] == "internal/references/HELIOS_X_Design Note.md"
 
 
 import sys
@@ -229,10 +229,10 @@ def test_load_docs_inserts_scripts_dir_once():
 
 
 def test_register_refuses_key_used_in_other_tree(vault):
-    source.register(str(make_pdf(vault / "inbox" / "internal" / "n.pdf")), key="HSFR_X", title="Design Note",
+    source.register(str(make_pdf(vault / "inbox" / "internal" / "n.pdf")), key="HELIOS_X", title="Design Note",
                     root="internal")
     with pytest.raises(source.SourceError, match="card exists"):
-        source.register(str(make_pdf(vault / "inbox" / "p.pdf")), key="HSFR_X", title="Other", root=None)
+        source.register(str(make_pdf(vault / "inbox" / "p.pdf")), key="HELIOS_X", title="Other", root=None)
 
 
 def test_sync_raises_when_markers_missing(vault):

@@ -21,7 +21,8 @@ def test_good_note_card_and_terminology_are_clean(mini_vault, make_note, good_no
     ("- [[DOC_A]]", "- [[No_Such_Note]]", ("L08", "error")),
     ("- [[DOC_A]]", "- ![[missing.png]]", ("L08", "error")),
     ("- [[DOC_A]]", "- [DOC_A](DOC_A.md)", ("L09", "error")),
-    ("- [[DOC_A]]", "- [[HSFR_Anything]]", ("L10", "error")),
+    ("- [[DOC_A]]", "- [[HELIOS_Anything]]", ("L10", "error")),
+    ("- [[DOC_A]]", "- [[HSFR_Anything]]", ("L10", "error")),     # former prefix
     ("세 종류이다.", "세 종류이다. TBD", ("L07", "error")),
     ("세 종류이다.", "{한국어 2–3문장}", ("L07", "error")),
     ("가나(Licensing Basis Event)%%t:LBE%%에", "LBE%%t:LBE%%에", ("L11", "error")),     # first occurrence form
@@ -75,10 +76,10 @@ def test_card_rules(mini_vault):
 
 
 def test_internal_link_rules(mini_vault, make_note, good_note_body):
-    make_note("HSFR_Secret", good_note_body, root="internal", type="hsfr")
-    pub = make_note("Sample", good_note_body.replace("- [[DOC_A]]", "- [[HSFR_Secret]]"))
+    make_note("HELIOS_Secret", good_note_body, root="internal", type="helios")
+    pub = make_note("Sample", good_note_body.replace("- [[DOC_A]]", "- [[HELIOS_Secret]]"))
     assert ("L10", "error") in lint(mini_vault, pub)
-    assert lint(mini_vault, make_note("HSFR_Other", good_note_body, root="internal", type="hsfr")) == []
+    assert lint(mini_vault, make_note("HELIOS_Other", good_note_body, root="internal", type="helios")) == []
 
 
 def test_terminology_format_error(mini_vault):
@@ -109,7 +110,7 @@ def test_clean_vault_has_no_vault_findings(mini_vault):
 
 def test_name_collisions(mini_vault, make_note, good_note_body):
     make_note("Sample", good_note_body)
-    make_note("SAMPLE", good_note_body, root="internal", type="hsfr")
+    make_note("SAMPLE", good_note_body, root="internal", type="helios")
     make_note("DOC_A_T", good_note_body)
     assert ("internal/wiki/SAMPLE.md", "L30", "error") in vault_codes(mini_vault, root="internal")
     assert ("wiki/DOC_A_T.md", "L30", "error") in vault_codes(mini_vault)
@@ -149,12 +150,12 @@ def test_reference_invariants_skipped_without_references_tree(mini_vault):
 def test_git_tracked_local_paths_and_public_names(mini_vault, make_note, good_note_body):
     run = lambda *a: subprocess.run(["git", "-C", str(mini_vault), *a], check=True, capture_output=True)
     run("init", "-q")
-    make_note("HSFR_Trial", good_note_body, root="internal", type="hsfr", title="Zeta Loop Pump Trial")
+    make_note("HELIOS_Trial", good_note_body, root="internal", type="helios", title="Zeta Loop Pump Trial")
     (mini_vault / "meta" / "status.md").write_text("다음: Zeta Loop Pump Trial 정리\n", encoding="utf-8", newline="\n")
     run("add", "meta/status.md", "wiki")
-    run("add", "-f", "internal/wiki/HSFR_Trial.md")
+    run("add", "-f", "internal/wiki/HELIOS_Trial.md")
     got = vault_codes(mini_vault)
-    assert ("internal/wiki/HSFR_Trial.md", "L35", "error") in got
+    assert ("internal/wiki/HELIOS_Trial.md", "L35", "error") in got
     assert ("meta/status.md", "L36", "error") in got
     assert not [g for g in vault_codes(mini_vault, root="internal") if g[1] in ("L35", "L36")]
 

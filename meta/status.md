@@ -15,7 +15,7 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 - 보고: `scripts/session_start.py`, `scripts/audit_sample.py`
 - 보조: `scripts/notes.py`, `scripts/citations.py`, `scripts/terms.py`, `scripts/leak_guard.py`, `scripts/hook_post_edit.py`
 - 생성물·설정: `index.md`, `internal/index.md`, `wiki/Terminology.md`, `meta/terms_state.json`, `templates/`, `.claude/settings.json`, `.claude/skills/`, `meta/views/*.base`, Obsidian Shell Commands 4종
-- 관문: git pre-commit(두 저장소: 경로, `[[HSFR_`, 내부 문서명, lint, 인용 검증, index), git commit-msg(내부 문서명), Claude SessionStart·PostToolUse hook
+- 관문: git pre-commit(두 저장소: 경로, `[[HELIOS_`, 내부 문서명, lint, 인용 검증, index), git commit-msg(내부 문서명), Claude SessionStart·PostToolUse hook
 - 테스트: 395건 (`python -m pytest scripts/refclean/tests scripts/tests -q`)
 
 ## 원문

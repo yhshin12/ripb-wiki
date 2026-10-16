@@ -25,12 +25,12 @@ for f in "${staged[@]}"; do
     wiki/*.md)
       while IFS= read -r line; do
         hits+=("$line")
-      done < <(git diff --cached --no-color --no-ext-diff -U0 -- "$f" | awk 'h && substr($0,1,1)=="+" {print; next} /^@@/ {h=1}' | grep -F '[[HSFR_')
+      done < <(git diff --cached --no-color --no-ext-diff -U0 -- "$f" | awk 'h && substr($0,1,1)=="+" {print; next} /^@@/ {h=1}' | grep -F -e '[[HELIOS_' -e '[[HSFR_')
       ;;
   esac
 done
 if [ "${#hits[@]}" -gt 0 ]; then
-  echo "pre-commit: refused ([[HSFR_ link in a public note):"
+  echo "pre-commit: refused ([[HELIOS_ or [[HSFR_ link in a public note):"
   printf '%s\n' "${hits[@]}"
   exit 1
 fi
