@@ -65,6 +65,7 @@
 | C55 | ch1 Table 1.4-4의 50.34(f)(2)(xvii)(격납 계측) 행은 Section 칸을 `11.2`로 두나 ch11 §11.2 본문에는 격납 계측에 관한 서술이 없다 | [PSAR_ch01 Table 1.4-4 p.97], [PSAR_ch11 §11.2 p.20] | Natrium_TMI_Requirements |
 | C56 | 열전달 경로 표현: ch1 §1.1.3은 NSS가 열을 `Energy Island (EI) hot salt storage tank`로 보낸다고 적고 §1.1.4.2는 NSS→ESS→TSS hot tank로 ESS를 사이에 둔다. 열교환기 표기도 `sodium-salt heat exchangers`, `Sodium-Salt Heat Exchangers (SHXs)`, `sodium to salt heat exchangers`로 다르다 | [PSAR_ch01 §1.1.3 p.12], [PSAR_ch01 §1.1.4.2 p.28] | Natrium_Energy_Island_Systems, Natrium_Plant_Overview |
 | C57 | RG 1.232 부록 C의 Section VI 제목은 `Fuel and Reactivity Control`이고 부록 A와 Table 1 머리 목록은 `Fuel and Radioactivity Control`이다 | [RG_1.232 App.C intro p.105], [RG_1.232 Table 1 p.13-20] | MHTGR_DC_Fuel_And_Radioactivity_Control |
+| C58 | 주요사고 선정 근거와 DBA 선량: §3.3.3은 LFF-SAO-CN이 `not exceeded by any other in-vessel design basis event or in-vessel DBA`라서 선정했다고 적으나, Table 3.5-4에서 용기 내 연료취급 DBA RFH-FDIV-CN의 30-day LPZ TEDE 3.19E+00 rem이 LFF-SAO-CN의 9.60E-01 rem보다 크다. 선정 기준으로 함께 적힌 "maximum core damage"가 이 차이를 해소하는지는 원문에서 판단할 수 없다 | [PSAR_ch03 §3.3.3 p.47], [PSAR_ch03 Table 3.5-4 p.60-61] | Natrium_DBA_List |
 
 ## 판정 (2026-09-16 사용자 결정)
 

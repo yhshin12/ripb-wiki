@@ -153,3 +153,7 @@
 - 확정: DECONTAMINATION_FACTOR=제염계수, MAJOR_ACCIDENT=주요사고, UNCERTAINTY_BAND=불확도범위
 - 영어 유지: TATNF, ALTERNATIVE_SHUNT_TRIP, POOL_SCRUBBING (적절한 한국어 없음)
 - sync_terms: 갱신 노트 0, 충돌 0
+
+## [2026-10-16] docs | 원문 모순 C58 기록과 다음 작업 갱신
+- C58: PSAR §3.3.3 주요사고 선정 근거와 Table 3.5-4 DBA 선량의 불일치
+- 다음 작업: 공개 원문 3건(RG 1.247, RG 1.253, CP Safety Evaluation) 등록
