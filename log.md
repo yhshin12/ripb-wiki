@@ -196,3 +196,10 @@
 - 검사: lint·인용 검증 0, 원문 대조 1회 지적 반영, coverage 미인용 0(목록·참고문헌 제외)
 - Appendix A Table A-2·A-3은 정제본 표 구조가 깨져 주석 문단만 인용
 - 용어: 기존 노트 12개를 포함해 '비경수로'를 확정 표기 비경수형원전%%t:NON_LWR%%로 정리
+
+## [2026-10-16] ingest | RG_1.247 전체
+- 새 노트 6 (RG_1247_PRA_Acceptability_Framework, _PRA_Elements_Internal_Events, _PRA_Elements_Hazards, _Standards_Peer_Review_Documentation, _Appendix_A_Staff_Positions, _Hazard_List), source.py finish
+- 검사: lint·인용 검증 0, 원문 대조 2회(부록 A는 PDF의 굵은 글씨·취소선 대조 포함), coverage 미인용 0(관련 지침·행정 문구·참고문헌 제외)
+- 모순 C61 기록(NEI 20-09 승인 범위 표현)
+- 정제 한계: Table 1(PRA Elements) 내용 누락, 부록 A의 굵은 글씨·취소선 소실, C.1.3.8 쪽 표지 위치 한 곳 어긋남
+- 미정 용어 0

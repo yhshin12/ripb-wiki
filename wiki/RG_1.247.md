@@ -15,14 +15,16 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
   missing_pct: 0.44
-ingest: pending
-units: []
+ingest: complete
+units:
+- unit: A-D, C.1-C.4, Appendix A (qualifications, clarifications), Appendix B
+  status: complete
 ---
 
 # Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water Reactor Risk-Informed Activities (RG_1.247)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> `RG 1.247`(2022년 3월, 시험 사용)은 비경수형원전 PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다. vault는 수용성의 틀(C.1, C.1.1, C.1.2, C.1.4), PRA 요소(C.1.3), 표준·peer review·문서화(C.2–C.4), 부록 A의 qualification과 주요 clarification, 부록 B의 hazard 목록을 노트로 옮겼다. 부록 A의 "No objection" 레코드는 개별 노트로 옮기지 않았고, Table 1(PRA Elements)은 정제본에서 표 내용이 빠져 인용하지 못했다.
 
 ## 서지
 - 키: `RG_1.247`
@@ -38,7 +40,12 @@ units: []
 <!-- sync:end -->
 
 ## 알려진 모순
-- 없음
+- C61: `NEI 20-09` 승인 범위를 §C.2 도입 문단은 "with exceptions", §B·§C.2.2는 "without exception"으로 적는다(`meta/contradictions.md`)
 
 ## 관련 문서
-- 없음
+- [[RG_1247_PRA_Acceptability_Framework]]
+- [[RG_1247_PRA_Elements_Internal_Events]]
+- [[RG_1247_PRA_Elements_Hazards]]
+- [[RG_1247_Standards_Peer_Review_Documentation]]
+- [[RG_1247_Appendix_A_Staff_Positions]]
+- [[RG_1247_Hazard_List]]

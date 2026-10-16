@@ -54,7 +54,8 @@ units:
 <!-- sync:end -->
 
 ## 알려진 모순
-- 없음
+- C59: §3.7.1.1의 `AST` 표기와 alternative shunt trip(DL4-RC6)의 불일치
+- C60: §7.2.3.1.15.1의 "seven functions"와 여섯 항목 목록(`meta/contradictions.md`)
 
 ## 관련 문서
 - [[Natrium_SER_MST_Methodology_Review]]

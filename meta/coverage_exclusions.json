@@ -13,6 +13,10 @@
   "PSAR_ch07": [
     {"heading": "^Table 7\\.(3\\.1-2|3\\.2-2|3\\.3-2|4\\.1-1|5\\.1-1) .*Codes and Standards", "reason": "codes and standards lists not ingested (2026-10-14 user decision; Table 7.5.2-1 is ingested)"}
   ],
+  "RG_1.247": [
+    {"heading": "^(Related Guidance|Purpose of Regulatory Guides|Paperwork Reduction Act|Public Protection Notification)$", "reason": "list of related documents and administrative boilerplate"},
+    {"heading": "^(REFERENCES|References)[0-9]*$", "reason": "reference lists"}
+  ],
   "RG_1.253": [
     {"heading": "^(Applicable Regulations|Related Guidance)[0-9]*$", "reason": "lists of applicable regulations and related documents"},
     {"heading": "^(REFERENCES|References)[0-9]*$", "reason": "reference lists"}

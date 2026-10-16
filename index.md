@@ -15,7 +15,7 @@
 - [[PSAR_ch11]] — Kemmerer Unit 1 `PSAR` 11장은 운영 조직(§11.1), 인적 요소 공학(§11.2), 비상 대비(§11.3), 항공기 충돌 평가(§11.4), 기술지침서(§11.5), 직무 적합성과 보안(§11.6)을 다룬다.
 - [[RG_1.232]] — `RG 1.232`는 non-light-water reactor의 principal design criteria 개발 지침이다.
 - [[RG_1.233]] — `RG 1.233`은 non-light-water reactor의 licensing basis와 신청서 내용을 정하는 technology-inclusive, risk-informed, performance-based 방법론에 관한 지침이다.
-- [[RG_1.247]] — Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water Reactor Risk-Informed Activities
+- [[RG_1.247]] — `RG 1.247`(2022년 3월, 시험 사용)은 비경수형원전 PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다.
 - [[RG_1.253]] — `RG 1.253`(2024년 3월, Revision 0)은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여 비경수형원전 인허가 신청서 `SAR` 앞 여덟 장의 작성 방법으로 승인하고, NRC가 제안한 12장 `SAR` 구조를 제시한다.
 - [[SER_KU1_CP]] — Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application
 
@@ -39,6 +39,12 @@
 - [[RG_1233_DID_Staff_Position]] — 직원 입장 C.3은 NEI 18-04가 plant capability와 programmatic controls로 제공되는 심층방어(Defense-in-Depth) 적절성을 평가하는 수용 가능한 방법이라고 보며, 인허가 발급 뒤의 변경 관리 과정에 대해서는 판단하지 않는다는 명확화 하나만 둔다.
 - [[RG_1233_LBE_Staff_Position]] — 직원 입장 C.1은 NEI 18-04가 사건을 식별·분류하는 수용 가능한 방법이라고 보고 Licensing Basis Event 선정에 명확화를 붙인다. (disputed)
 - [[RG_1233_SSC_Classification_Staff_Position]] — 직원 입장 C.2는 NEI 18-04가 비경수형원전(non-light-water reactor)의 Structures, Systems, and Components를 Safety-Related, Non-Safety-Related with Special Treatment, special treatment가 없는 비안전 등급으로 분류하는 수용 가능한 방법이라고 본다. (disputed)
+- [[RG_1247_Appendix_A_Staff_Positions]] — `RG 1.247` 부록 A는 `ASME/ANS RA-S-1.4-2021`의 요건마다 "no objection", "no objection with clarification", "no objection subject to the following qualification" 가운데 하나로 staff 입장을 정하고, 표준의 nonmandatory appendix는 승인하지 않는다.
+- [[RG_1247_Hazard_List]] — `RG 1.247` 부록 B는 PRA가 넓은 범위의 hazard를 체계적으로 조사해 중요한 위험 기여 요인이 빠지지 않게 하도록, 고려할 hazard 목록(Table B-1)과 hazard의 원인·조건 목록(Table B-2)을 제시한다.
+- [[RG_1247_PRA_Acceptability_Framework]] — 시험 사용 지침인 `RG 1.247`은 신청을 뒷받침하는 비경수형원전(non-light-water reactor) PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 한 가지 수용 가능한 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다(원문 일부는 peer review 지침을 예외와 함께 승인한다고 적는다).
+- [[RG_1247_PRA_Elements_Hazards]] — `RG 1.247` C.1.3.8–C.1.3.14는 내부 침수, 내부 화재, 지진, hazard 스크리닝, 강풍, 외부 침수, other hazards PRA 요소의 목적과 특성을 정한다.
+- [[RG_1247_PRA_Elements_Internal_Events]] — `RG 1.247` C.1.3은 모든 방사성 원천, hazard, Plant Operating State, 분석 수준을 다루는 비경수형원전(non-light-water reactor) PRA에 필요한 요소를 정하고, 하나라도 빠진 PRA는 완전하지 않다고 본다.
+- [[RG_1247_Standards_Peer_Review_Documentation]] — 직원 입장 C.2–C.4는 NRC가 승인한 national consensus PRA 표준을 쓰고 승인된 절차로 peer review를 받는 것을 PRA 수용성을 보이는 한 가지 방법으로 두고, capability category, peer review 팀 구성과 판정, newly developed method의 처리, 신청서의 PRA 정보와 문서화 요건을 정한다.
 - [[RG_1253_CP_PRA_Acceptability]] — `RG 1.253` 부록 A는 Licensing Modernization Project 방법론에 근거한 비경수형원전(non-light-water reactor) construction permit 신청에서 PRA(`CP PRA`)에 대해, 수용 가능한 한 가지 접근으로서 범위, 요소, 상세도, 발전소 표현과 형상 관리, 문서화, 수용성 입증 방법을 제시한다.
 - [[RG_1253_Integrated_Evaluation_And_SSC_Positions]] — 직원 입장 C.5–C.9는 NEI 21-07의 `SAR` 4–8장 지침을 통합 평가, 안전 기능과 설계 기준, Safety-Related과 Non-Safety-Related with Special Treatment Structures, Systems, and Components, 발전소 프로그램의 작성 방법으로 승인한다.
 - [[RG_1253_Methodology_And_LBE_Positions]] — 직원 입장 C.2–C.4는 NEI 21-07의 `SAR` 1–3장 지침을 승인하면서 명확화와 추가 사항을 붙인다.
