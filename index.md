@@ -154,14 +154,18 @@
 - [[Natrium_SER_AOO_DBE_Review]] — NRC staff는 Kemmerer Unit 1의 Anticipated Operational Occurrence와 Design Basis Event 해석이 construction permit 발급을 뒷받침한다고 판단했다.
 - [[Natrium_SER_BDBE_DBA_Review]] — NRC staff는 Kemmerer Unit 1의 Beyond Design Basis Event와 Design Basis Accident 결과가 10 CFR 50.34를 충족한다고 판단했고, DBA는 보수적 결정론 해석으로 적절히 식별·해석되었다고 보았다.
 - [[Natrium_SER_Core_Fuel_Design_Review]] — NRC staff는 연료 인증 `TR` NAT-2806-A의 L&C가 construction permit 단계에서 적용되지 않거나 적절히 다루어졌다고 보고 참조 포함을 수용했다.
+- [[Natrium_SER_DBHL_Review]] — NRC staff는 Kemmerer Unit 1이 정한 design-basis hazard level 집합이 `RG 1.233`과 일치한다고 판단했다.
 - [[Natrium_SER_Event_Source_Terms_Review]] — NRC staff는 `PSAR` Table 3.2-1~3.2-18의 선원항(source term)을 네 사건군(용기 내 출력운전, 용기 내 연료취급, 용기 외 연료취급, 용기 외 계통 방출)으로 나누어 검토하고, 각 군의 선원항이 사건을 합리적으로 대표한다고 판단했다.
 - [[Natrium_SER_Integrated_Evaluation_Review]] — NRC staff는 Kemmerer Unit 1의 누적 위험도 지표 결과가 판정 기준을 충족하고 여유가 커서 불확실성을 합리적으로 반영한다고 판단했다.
 - [[Natrium_SER_LBE_Methodologies_Review]] — NRC staff는 Kemmerer Unit 1 `PSAR`이 참조로 포함한 해석 방법론 `TR` 다섯 건 가운데 NAT-9390-A, NAT-9394-A, NAT-9395-A, NAT-9391-A의 L&C가 construction permit 단계에서 모두 충족되거나 적절히 다루어졌다고 판단했다.
 - [[Natrium_SER_LBE_Summary_Review]] — NRC staff는 Kemmerer Unit 1의 Licensing Basis Event 식별·분류가 NEI 18-04와 `RG 1.233`에 맞는다고 보면서 두 가지 이탈을 지적했다.
 - [[Natrium_SER_MST_Methodology_Review]] — NRC staff는 Kemmerer Unit 1 `PSAR`이 승인된 방법론 NAT-9392-A로 Mechanistic Source Term을 만들었고, construction permit 단계에서 MST 해석이 적절하다고 판단했다.
 - [[Natrium_SER_Major_Accident_Review]] — 사업자는 `RG 1.253` Option 1에 따라 Design Basis Accident 결과로 주요사고(Major Accident)를 정하고, 용기 내 DBA로 범위를 좁혀 core blockage and local faults DBA를 선정했다.
+- [[Natrium_SER_PDC_SR_NSRST_Review]] — NRC staff는 principal design criteria `TR`(NATD-LIC-RPRT-0002-A)의 L&C 두 개가 다루어졌고 Kemmerer Unit 1 `PSAR`의 PDC 서술이 충분하다고 판단했다.
 - [[Natrium_SER_PRA_OL_Expectations]] — NRC staff는 `RG 1.247`과 `RG 1.253`에 따라 사업자가 operating license를 신청할 경우 수행하기를 기대하는 PRA 과제 열한 가지를 나열했다.
 - [[Natrium_SER_PRA_Review]] — NRC staff는 `RG 1.253` Appendix A와 `RG 1.247`의 해당 입장을 적용해 Kemmerer Unit 1의 construction permit 단계 PRA를 검토했다.
+- [[Natrium_SER_SSC_Classification_Review]] — NRC staff는 Kemmerer Unit 1의 Structures, Systems, and Components 안전 분류 과정이 construction permit 신청에 수용 가능하다고 판단했다.
+- [[Natrium_SER_SSC_Design_Review]] — NRC staff는 D-RAP을 통해 신뢰도·능력 목표를 정하는 사업자의 일반 접근과 특수 처리 식별 과정이 construction permit 단계에 합리적이라고 판단했다.
 - [[Natrium_SRDC_Summary]] — `PSAR` Chapter 6은 Safety-Related Design Criteria를 Safety-Related 기능을 수행하도록 선정된 Structures, Systems, and Components의 Required Functional Design Criteria 충족에 필요한 설계 기준으로 설명하고, SRDC 자체는 `PSAR` Chapter 5의 SR 기능 표에 둔다.
 - [[Natrium_SR_Functions_Heat_Generation]] — controlling heat generation을 뒷받침하는 Safety-Related 기능은 DL3-RC1과 DL3-RC2 두 개이다.
 - [[Natrium_SR_Functions_Heat_Removal]] — controlling heat removal을 뒷받침하는 Safety-Related 기능은 DL3-HR1부터 DL3-HR13까지 열세 개이다.

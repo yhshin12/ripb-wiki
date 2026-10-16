@@ -179,3 +179,8 @@
 - 검사: lint 0, verify_quotes 0, 작성 후 대조 지적 37건 반영 (오류 16)
 - 새 모순 C59 (SER의 AST 표기)
 - 미정 용어 0
+
+## [2026-10-16] ingest | SER_KU1_CP Chapters 5-6
+- 새 노트 4 (SSC 분류, PDC·SR·NSRST, DBHL, 신뢰도·특수 처리·설계), 고친 노트 1 (소스 카드)
+- 검사: lint 0, verify_quotes 0, 작성 후 대조 지적 19건 반영 (오류 9)
+- 미정 용어 0

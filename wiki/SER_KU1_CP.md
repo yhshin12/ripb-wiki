@@ -25,6 +25,8 @@ units:
   status: complete
 - unit: "Chapter 4 (plant risk, DID, IDP)"
   status: complete
+- unit: "Chapters 5-6 (SSC classification, PDC, SR/NSRST, DBHL, reliability, special treatment, design)"
+  status: complete
 ---
 
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)
@@ -60,3 +62,7 @@ units:
 - [[Natrium_SER_BDBE_DBA_Review]]
 - [[Natrium_SER_Core_Fuel_Design_Review]]
 - [[Natrium_SER_Integrated_Evaluation_Review]]
+- [[Natrium_SER_SSC_Classification_Review]]
+- [[Natrium_SER_PDC_SR_NSRST_Review]]
+- [[Natrium_SER_DBHL_Review]]
+- [[Natrium_SER_SSC_Design_Review]]
