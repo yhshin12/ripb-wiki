@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch07
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -99,6 +99,43 @@ terms_pending: []
 - "Design Reliability Assurance Program" [PSAR_ch07 §7.8.2.2.4 p.354]
 - "Post-Construction Inspection, Testing and Analysis Program (see Chapter 12)" [PSAR_ch07 §7.8.2.2.4 p.354]
 - "The SR FHB (Section 7.8.2) substructure is located approximately 40 feet east of the RXB substructure and does not affect the RXB substructure design." [PSAR_ch07 §7.8.1.1.1 p.337]
+- "The FHB superstructure is approximately 76 feet above grade at its highest point." [PSAR_ch07 §7.8.2.2.1 p.349]
+- "An overhead bridge crane is supported by the FHB superstructure for movement of spent fuel casks and equipment for maintenance within the facility." [PSAR_ch07 §7.8.2.2.1 p.349]
+- "The superstructure also includes an enclosed corridor located on the west side of the FHB that aligns with an opening in the Reactor Building with tracks for the rail-mounted Ex-Vessel Handling Machine that supports core assembly handling operations from the Reactor Building to the Ex-Vessel Storage Tank in the FHB. The FHB main building is supported on the FHB substructure reinforced concrete slab and the transfer corridor and the FHB north wing are supported on separate concrete slabs." [PSAR_ch07 §7.8.2.2.1 p.349]
+- "The FHB superstructure north wing is approximately 50 feet above grade at its highest point and houses Liquid Radwaste Processing System and Solid Radioactive Waste System equipment, within shielded reinforced concrete enclosures, along with a truck bay for receipt of unirradiated fuel and removal of spent fuel and radwaste." [PSAR_ch07 §7.8.2.2.1 p.349]
+- "The north wing of the superstructure has a second elevation that houses NI Water System and NI Heating, Ventilation, and Air Conditioning System equipment." [PSAR_ch07 §7.8.2.2.1 p.349]
+- "The FHB superstructure is divided into two separate models to represent the main building and the north wing." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "For both models GT STRUDL® Version 40 (Reference 7.8.2-6) is used as the primary analysis tool." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "The GT STRUDL analytical model is a representation of the primary lateral force resisting system and gravity load resisting systems that contribute to the stability of the FHB structure." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "The primary members include columns, girders, beams, and horizontal and vertical braces that are critical to the stability and load path of the structure." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "Secondary members, that do not contribute to stability of the structure, including girt systems, roof purlins, and construction aids are not explicitly modeled." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "Instead, equivalent member loads are applied to the explicitly modeled structural members to account for their weight." [PSAR_ch07 §7.8.2.2.3 p.351]
+- "The main building of the FHB superstructure is comprised of steel moment frame in both the north-south and east-west directions with a roof diaphragm composed of horizontal trusses." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The north wing of the FHB superstructure is comprised of concrete shear walls for the Liquid Radwaste Processing System and Gaseous Radwaste Processing System rooms and braced frames supporting the steel superstructure with horizontal roof bracing serving as the roof diaphragm." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The FHB superstructure is analyzed for normal, severe and extreme load conditions as described in Section 6.4.2." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The loadings considered include site-specific snow, wind, and seismic environmental conditions in combination with dead and live loads that exist as part of normal activities within the FHB. The code requirements of ASCE 7-16 are followed for the development of crane, wind, snow, and seismic loadings." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The static loads calculated in the FHB design load calculation are applied to the analytical model based on tributary widths of the analytical members." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "For analytical members within GT STRUDL the self-weight is calculated based on densities and section properties of the analytical members." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The FHB superstructure seismic classification is SCN1 as described in Section 6.4.1." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The following design parameters are used for developing seismic demands of SCN1 structures using ASCE 7-16 modal response spectrum analysis procedures:" [PSAR_ch07 §7.8.2.2.3 p.352]
+- "Since the FHB superstructure is founded on a SR substructure, the risk targeted maximum considered earthquake is taken as the in-structure floor response spectra developed by the method described in Section 6.4.1." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "Seismic risk category is set to IV, and seismic importance factor is set to 1.5 from Table 1.5-2 of ASCE 7-16." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "Per FHB occupancy considerations, Chapter 12 of ASCE 7-16 is used to establish seismic design requirements treating FHB superstructure as a “Building Structure.”" [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The enveloping response spectrum curves are input into GT STRUDL for both horizontal directions." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The vertical component of the seismic effect is determined by scaling the dead load in accordance with Equation 12.4-4a of ASCE 7-16." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "Modal response spectrum analysis is performed per Section 12.9.1 of ASCE 7-16 for seismic loading." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "Both seismic and non-seismic loads are analyzed using the direct analysis method from AISC 360-16, Chapter C. For load combinations comprised of exclusively of non-seismic loads GT STRUDL’s built-in nonlinear (second-order) analysis function is used to meet the analysis and design requirements of Chapter C of AISC 360-16 for the direct analysis method." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "For load combinations that include seismic loads, the approximate second-order analysis procedure from Appendix 8 of AISC 360-16 is used to meet the analysis and design requirements of Chapter C of AISC 360-16 for the direct analysis method." [PSAR_ch07 §7.8.2.2.3 p.352]
+- "The FHB superstructure members are designed by using the load and resistance factor design of AISC 360-16 for steel and limit state method of ACI 318-19 for concrete." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "As described in Section 6.4.2, in addition members subjected to tornado-generated missile impacts are designed based on the energy balance method to obtain an upper limit estimate of structural elasto-plastic response." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "The strain energy of the target at maximum response is used to balance the residual kinetic energy of the target (or target-missile combination) resulting from missile impact." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "Structural members are shown to possess adequate ductility and deflection capacity to absorb the strain energy due to impact of the external hazard tornado-generated missiles." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "Permissible ductility and displacements for steel structures are obtained from Table NB3.1 of AISC N690-18 and permissible ductility and displacements limits for concrete structures are obtained from Appendix F of ACI 349-13." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "The FHB main building superstructure provides support for the NI Cranes and Hoists overhead bridge crane and the crane rails and column supports are designed to the maximum wheel loads as described in Section 4.9 of ASCE 7-16." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "The maximum vertical wheel load is increased by an impact factor of 25 percent per Section 4.9.3 of ASCE 7-16 to account for the remotely operated powered bridge crane." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "For the FHB substructure crane rail support design, additional crane test loads and load combinations are included in accordance with Section 4140 of ASME NOG-1-2020, “Rules for Construction of Overhead and Gantry Cranes (Top Running Bridge, Multiple Girder),” (Reference 7.8.2-7)." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "The acceptance criteria for the concrete portions of the FHB superstructure are in accordance with the limits defined in ACI 318-19 for the load combinations, as applicable, in Table 6.4-11 for NSRST concrete structures." [PSAR_ch07 §7.8.2.2.3 p.353]
+- "The acceptance criteria for the FHB steel superstructure are in accordance with the limits defined in AISC 360-16 for the load combinations, as applicable, in Table 6.4-12 for NSRST steel structures." [PSAR_ch07 §7.8.2.2.3 p.353]
 
 ## 해설
 Fuel Handling Building(`FHB`)은 핵연료 반입, 재장전, 핵연료 저장, 방사성폐기물 계통, Spent Fuel Pool(`SFP`) 관련 장비를 수용한다. 직사각형 구조물은 약 103 feet × 293 feet이고 철근콘크리트 하부구조와 강골조·철근콘크리트 상부구조로 이루어진다. SR%%t:SR%%로 분류된 지표 아래 부분은 분리된 철근콘크리트 enclosure 안의 SR%%t:SR%%·NSRST%%t:NSRST%% 계통을 지지·차폐한다. NSRST%%t:NSRST%%로 분류된 지상 부분은 단층 main building, 북쪽 wing, Reactor Building과 `FHB`를 잇는 서쪽 transfer corridor로 이루어진다. §7.8.2는 `FHB`가 Reactor Building 동쪽 약 28 feet, Fuel Auxiliary Building 북쪽 약 40 feet에 있다고 적고, §7.8.1.1.1은 `FHB` 하부구조가 `RXB` 하부구조 동쪽 약 40 feet에 있다고 적는다.
@@ -110,6 +147,10 @@ principal design criteria%%t:PDC%% 2와 4에 따라 하부구조는 Section 6.4.
 상부구조는 PDC%%t:PDC%% 2와 4에 따라 외부 재해와 동적 영향을 견디고 `NI Cranes and Hoists` 크레인을 포함한 내부 계통을 보호하며, PDC%%t:PDC%% 3에 따라 불연성 또는 내화 재료를 쓴다. PDC%%t:PDC%% 16에 따라 상부구조는 Section 7.5.1에 기술된 radionuclide retention을 위한 음압 유지를 지원하는 enveloping barrier%%t:BARRIER%%로 설계되고, `DL4-RR7`의 enveloping barrier%%t:BARRIER%% 요건에 따른 음압에 대해 설계된다. 상부구조가 지원하는 NSRST%%t:NSRST%% 기능은 `DL4-RR7`(`Fuel Handling Building Barrier`), transfer corridor grade slab가 SR%%t:SR%% PSF%%t:PSF%%를 수행하는 `EVHM`에 제공하는 임시 하중 경로, NSRST%%t:NSRST%% SSC%%t:SSC%%의 외부 재해 방호와 하중 경로이다. 원문은 `DL4-RR7`에 대해 상부구조가 enveloping barrier%%t:BARRIER%%의 일부로 약한 음압을 갖도록 설계되어 fuel drop 사건에서 빠져나가는 방사성 핵종 양을 줄이며, 이 기능이 `SFP` 가상 fuel drop에 대한 `MCR` 거주성 유지에 credit된다고 적는다.
 
 상부구조는 NSRST%%t:NSRST%%이고 지진 분류는 `SCN1`이다. 강골조 주 설계 규격은 `AISC 360-16`과 `ACI 318-19`이고, Liquid Radwaste Processing System과 Solid Radwaste Processing System 구성품이 있는 지상 부분은 `RG 1.143`을 따른다. 크레인 레일 지지 강재를 포함한 설계는 `ASCE 7-16`에 따라, 내부 계통의 risk-significant 기능과 심층방어(Defense-in-Depth)%%t:DID%% 기능이 외부 재해에 영향받지 않게 한다. 하중은 시공, 기동, 운전, 정지, 지진 상호작용과 토네이도 영향이고, 조합은 `Table 6.4-11`(콘크리트)과 `Table 6.4-12`(강재)에 있다. 상부구조 절의 특별 시공 기법 문장은 대상이 `FHB substructure`로 적혀 있다. 하부구조와 상부구조 모두 Quality Assurance Program Description, Design Reliability Assurance Program, Post-Construction Inspection, Testing and Analysis Program이 예비 programmatic special treatment로 식별된다.
+
+Fuel Handling Building 상부구조는 가장 높은 지점이 지상 약 76 feet이고, 사용후핵연료 cask와 정비 장비를 옮기는 천장 크레인을 지지하며, Ex-Vessel Handling Machine 궤도가 있는 폐쇄 통로로 Reactor Building과 이어진다. north wing은 약 50 feet이고 액체·고체 방사성 폐기물 설비와 truck bay를 수용한다. 상부구조는 주 건물과 north wing의 두 모델로 나누어 `GT` `STRUDL`로 해석한다. 주 건물의 횡력 저항 계통은 양 방향 강재 모멘트 골조이고, north wing은 콘크리트 전단벽과 가새 골조이다.
+
+하중은 `ASCE 7-16`에 따라 크레인, 바람, 눈, 지진 하중을 만들고, 지진 분류는 SCN1이다. 상부구조가 SR%%t:SR%% 하부구조 위에 있으므로 risk targeted maximum considered earthquake로 구조물 내 응답 스펙트럼을 쓰고, seismic risk category `IV`와 importance factor 1.5를 적용하며, 건물 구조로 보아 `ASCE 7-16` Chapter 12의 요건을 쓴다. 해석은 `AISC 360-16` Chapter C의 direct analysis method를 따르고, 크레인 바퀴 하중은 원격 운전 크레인을 고려해 25 percent의 충격 계수로 늘린다.
 
 ## 관련 문서
 - [[Natrium_System_Water_Pool_Fuel_Handling]]

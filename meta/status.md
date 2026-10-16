@@ -10,7 +10,7 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 ## 존재하는 도구
 - 정제: `scripts/convert_references.py`, `scripts/clean_references.py`, `scripts/refclean/` (psar·nei1804·rg1232·generic·acrs_slides 프로파일, 공용 `levels.py`, `patches/RG_1.233.json`)
 - 원문: `scripts/source.py` (`register`/`adopt`/`sync`/`finish`/`status`)
-- 검사: `scripts/lint_wiki.py` (파일 단위 L01–L20, `--all` L30–L36), `scripts/verify_quotes.py` (V1–V5)
+- 검사: `scripts/lint_wiki.py` (파일 단위 L01–L20, `--all` L30–L36), `scripts/verify_quotes.py` (V1–V5), `scripts/coverage_sections.py` (절 단위 누락, 제외 목록 `meta/coverage_exclusions.json`)
 - 변경: `scripts/sync_terms.py` (dry-run 기본), `scripts/build_index.py` (`--check`), `scripts/append_log.py`
 - 보고: `scripts/session_start.py`, `scripts/audit_sample.py`
 - 보조: `scripts/notes.py`, `scripts/citations.py`, `scripts/terms.py`, `scripts/leak_guard.py`, `scripts/hook_post_edit.py`

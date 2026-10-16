@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch07, PSAR_ch03, PSAR_ch04, PSAR_ch05]
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -251,6 +251,9 @@ terms_pending: []
 - "Figure 7.3.2-3 Ex-Vessel Storage Tank Primary Components" [PSAR_ch07 Figure 7.3.2-3 p.202]
 
 ![[PSAR_ch07_Fig_7.3.2-3.png]]
+- "The EVST cover gas supports the EVST by providing an argon gas inert barrier between the EVST vessel and the liquid sodium." [PSAR_ch07 §7.3.2.1.4 p.185]
+- "The equipment supplies fresh argon into the EVST main and guard vessels and provides direct control of contaminants and pressure control within the main vessel." [PSAR_ch07 §7.3.2.1.4 p.185]
+- "The equipment allows for radiological monitoring, sodium filtration, impurity monitoring, pressure relief, and constant pressure to the EVST buffer seals." [PSAR_ch07 §7.3.2.1.4 p.185]
 
 ## 해설
 Ex-Vessel Fuel Handling System(`FHE`)은 노심 집합체의 인수, 검사, conditioning, 저장, 노심 제거를 돕는 설비이며, In-Vessel Fuel Handling System(`FHI`)과 Water Pool Fuel Handling System(`FHP`)과 연결된다. `FHE`는 New Assembly Preconditioning Station(`NAPS`)에 놓인 때부터 원자로 용기로 옮길 때까지, 그리고 원자로 용기에서 꺼낸 때부터 Pool Immersion Cell을 거쳐 spent fuel pool에 내릴 때까지 노심 집합체를 불활성 환경에서 운반하며, 차폐된 불활성 환경의 운반이 방사선 차폐, 방사성 핵종 보유, 붕괴열 제거 매체를 제공한다. 새 집합체는 pre-conditioning, 저장, 원자로 용기 운반을, spent 집합체는 원자로 용기에서 Ex-Vessel Storage Tank(`EVST`)로, `EVST`에서 `FHP`로의 운반을 거친다.
@@ -264,6 +267,8 @@ principal design criteria%%t:PDC%% 적용에서 `FHB`와 `RXB` substructure 안�
 `EVHM` 냉각이 부족해 피복 온도 한계를 넘는 경우 복사 열전달이 `EVHM` 압력 경계 온도를 설계 온도 아래로 유지해 `EVHM` radionuclide barrier와 냉각 계통 사이에 심층방어(Defense-in-Depth)%%t:DID%%를 제공함을 보이는 해석은 OL%%t:OL%%을 뒷받침하도록 제공되며(`will`), `ARIS` 임계 관리도 OL%%t:OL%%을 뒷받침하도록 제공될 예정이다(`will`). `RG 1.31`은 부분 부합으로, 설계 온도가 `800 degrees Fahrenheit`를 넘을 때 delta ferrite를 ferrite number `3`–`10`으로 제한하는 `Regulatory Position C.4`를 예외로 한다. `RG 1.87`과 `RG 1.244`는 완전 부합, `RG 1.97`은 부분 부합이다. `Table 7.3.2-1`에서 `EVHM`·`BLTC` shielded cask assembly, `EVST` pressure vessel·rotating carousel, fueling floor valve, core assembly transfer tube, pin removal cell, core assembly pot는 SR%%t:SR%%·`SCS1`이고, `EVHM`·`BLTC` transporter는 NSRST%%t:NSRST%%·`SCN1`, `EVST` guard vessel과 pin extraction machine은 NSRST%%t:NSRST%%·`SCN3`이다.
 
 `PSAR` Chapter 3 요약표에는 피동 냉각 없이 `EVHM` 능동 냉각이 상실되고 `EVHM` barrier가 방출을 막지 못하는 사건과, `EVHM` 안에서 핵연료를 옮기는 중 취급 사건이 일어나고 `EVHM` barrier가 방출을 막지 못하는 사건이 있고([[Natrium_Risk_Significant_LBEs]]), Chapter 5는 `EVHM`이 spent fuel assembly의 붕괴열을 피동 제거해야 한다(`shall`)고 적는다. `DL3-RR3a`의 이름은 Chapter 4에서 `Ex-Vessel Handling Machine to Head Barrier Function`, Chapter 7에서 `EVHM Transfer Barrier Function`이고, 인용한 Chapter 5 표 부분에는 이 식별자 대신 `DL3-RR3`(`EVHM Cask barrier`)의 기준 하나가 원자로 헤드 결합을 다룬다. 이 차이는 `meta/contradictions.md` C4에 모았다. Chapter 5는 PDC%%t:PDC%% 63 적용 계통에 `FHE`를 넣고, `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 핵연료 저장·취급 계통이 기하학적으로 안전한 배치와 고정 중성자 흡수체 같은(`such as`) 설계 속성으로 비의도적 임계를 막는다고 적는다. Chapter 7의 `FHE` PDC%%t:PDC%% 62 기술은 기하학적 미임계 배치만 적는다.
+
+Ex-Vessel Storage Tank 커버가스(cover gas)%%t:COVER_GAS%%는 용기와 액체 소듐 사이에 argon 불활성 barrier를 제공하고, 주 용기와 guard vessel에 새 argon을 공급하며, 주 용기의 오염물과 압력을 직접 제어한다. 이 설비는 방사선 감시, 소듐 여과, 불순물 감시, 압력 방출, buffer seal 정압 공급도 수행한다.
 
 ## 관련 문서
 - [[Natrium_SR_Functions_Heat_Removal]]

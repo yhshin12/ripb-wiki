@@ -1,0 +1,23 @@
+{
+  "ACRS_ML25293A458": [
+    {"heading": "^Topics$", "reason": "agenda slide"},
+    {"heading": "^Other reactor core assemblies$", "reason": "figure-only slide; points to PSAR 7.1.1"}
+  ],
+  "NEI_18-04": [
+    {"heading": "^NOTICE$", "reason": "legal notice"},
+    {"heading": "^6 GLOSSARY OF TERMS$", "reason": "heading page only; the glossary table (p.90-95) is cited"}
+  ],
+  "PSAR_ch03": [
+    {"heading": "^3\\.[6-9](\\.\\d+)+ Radiological Consequences$", "reason": "boilerplate 'no radiological release' text for LBEs without release; the LBE Description is cited instead"}
+  ],
+  "PSAR_ch07": [
+    {"heading": "^Table 7\\.(3\\.1-2|3\\.2-2|3\\.3-2|4\\.1-1|5\\.1-1) .*Codes and Standards", "reason": "codes and standards lists not ingested (2026-10-14 user decision; Table 7.5.2-1 is ingested)"}
+  ],
+  "RG_1.232": [
+    {"pages": "29-61", "reason": "Appendix A (ARDC) not ingested by user decision"},
+    {"heading": "^Related Guidance, Communications, and Policy Statements$", "reason": "list of related documents"}
+  ],
+  "RG_1.233": [
+    {"heading": "^(Paperwork Reduction Act|Public Protection Notification)$", "reason": "administrative boilerplate"}
+  ]
+}

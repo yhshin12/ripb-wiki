@@ -61,7 +61,7 @@
 ## 7. 도구 (설계 §8)
 
 - Python: `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`만 쓴다. PATH의 `python`은 쓰지 않는다.
-- 스크립트(`scripts/`): 정제 `convert_references.py`, `clean_references.py` + `refclean/`; 원문 `source.py`; 검사 `lint_wiki.py`(파일 단위 L01–L20, `--all` L30–L36), `verify_quotes.py`(V1–V5); 변경 `sync_terms.py`(dry-run 기본), `build_index.py`(`--check`), `append_log.py`; 보고 `session_start.py`, `audit_sample.py`; 보조 `notes.py`, `citations.py`, `terms.py`, `leak_guard.py`, `hook_post_edit.py`.
+- 스크립트(`scripts/`): 정제 `convert_references.py`, `clean_references.py` + `refclean/`; 원문 `source.py`; 검사 `lint_wiki.py`(파일 단위 L01–L20, `--all` L30–L36), `verify_quotes.py`(V1–V5), `coverage_sections.py`(인용되지 않은 절, 제외 목록 `meta/coverage_exclusions.json`); 변경 `sync_terms.py`(dry-run 기본), `build_index.py`(`--check`), `append_log.py`; 보고 `session_start.py`, `audit_sample.py`; 보조 `notes.py`, `citations.py`, `terms.py`, `leak_guard.py`, `hook_post_edit.py`.
 - 규칙: 일괄 수정은 dry-run 기본. 원문 파일은 이동만 하고 내용을 바꾸지 않는다(`inbox/` → `references/raw/` 이동은 `source.py register`만 한다). 검사 실패는 0이 아닌 종료 코드. 파일은 내용을 검증한 뒤에만 쓴다.
 - 테스트: `python -m pytest scripts/refclean/tests scripts/tests -q`. 원문을 읽는 테스트는 `@pytest.mark.refs`이며 `references/raw`에 PDF가 없으면 skip된다. 새 테스트가 `references/`를 열면서 표시가 없으면 실패한다.
 - hook: Claude SessionStart → `session_start.py`; PostToolUse(Edit·Write·MultiEdit, `wiki/`·`internal/wiki/`의 `.md`) → `hook_post_edit.py`(lint 파일 단위 + 인용 검증, 오류는 Claude에게 되돌림); git pre-commit(두 저장소) → 경로 관문, 공개 노트 `[[HELIOS_`·`[[HSFR_` 거부, `leak_guard.py --staged`(공개), `lint_wiki.py --all`, `verify_quotes.py --all`, `build_index.py --check`; git commit-msg(공개) → `leak_guard.py --message`.

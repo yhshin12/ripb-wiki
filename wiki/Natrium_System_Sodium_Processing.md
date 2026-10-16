@@ -6,7 +6,7 @@ sources:
 - PSAR_ch05
 - PSAR_ch01
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -275,6 +275,20 @@ terms_pending: []
 - "Figure 7.2.4-3 Block Flow Diagram of the EVST SPS" [PSAR_ch07 Figure 7.2.4-3 p.149]
 
 ![[PSAR_ch07_Fig_7.2.4-3.png]]
+- "Process radiation monitors only apply to SPS-P. Leaks or other failures of fuel pins may be noticeable in the SPS-P liquid sodium through the presence of cesium fission products." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "The SPS-P deploys two adjacent-to-line gamma spectrometers to identify and measure radioactive isotopes in the primary sodium: one spectrometer on the main bypass line and one spectrometer on the sodium return line downstream of the cesium trap." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "To detect cesium, a single-channel gamma monitor is tuned to detect a narrow range of gamma energies specific to Cs-137 decay." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "The monitor on the bypass line measures the cesium content of the process sodium, indicating whether the cesium trap may need to be brought online to lower the cesium content in the sodium." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "The gamma spectrometer downstream of the cesium trap has the same measurement functionality and is used to monitor the effectiveness of the cesium trap." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "The radiation monitors are designed to detect cesium against the normal background of Na-24 gamma rays, the dominant radionuclide in the SPS-P system." [PSAR_ch07 §7.2.4.3.3 p.143]
+- "The multi purpose sampler (MPS) collects sodium samples that can be sent to a laboratory for analysis of impurities." [PSAR_ch07 §7.2.4.3.4 p.143]
+- "The MPS can accommodate different sampling techniques such as overflow sampling, equilibration sampling, and filtration sampling." [PSAR_ch07 §7.2.4.3.4 p.143]
+- "MPS sampling can provide point-in-time sodium chemistry characterization for comparison against PTI monitoring data as well as independent trending of elemental and isotopic constituents in the sodium." [PSAR_ch07 §7.2.4.3.4 p.143]
+- "The MPS provides a complimentary monitoring feature that works in conjunction with other chemistry analyses to provide detailed sodium chemistry." [PSAR_ch07 §7.2.4.3.4 p.143]
+- "Cold traps purify sodium by decreasing the oxygen and hydrogen impurity content that has been introduced into the sodium." [PSAR_ch07 §7.2.4.3.6 p.144]
+- "The cold trap removes hydrogen and oxygen from the sodium via precipitation at reduced temperature." [PSAR_ch07 §7.2.4.3.6 p.144]
+- "Primary sodium may contain radioactive cesium isotopes from failed fuel." [PSAR_ch07 §7.2.4.3.7 p.144]
+- "Cesium is removed from the primary coolant using reticulated vitreous carbon traps as part of the SPS-P process equipment." [PSAR_ch07 §7.2.4.3.7 p.144]
 
 ## 해설
 Sodium Processing System(`SPS`)은 primary sodium, intermediate sodium, Ex-Vessel Storage Tank(`EVST`) sodium의 불순물(cesium, 산소 화합물, 수소 화합물, debris, 부식 생성물)을 감시·제거하며, 원문은 이 감시와 불순물 제거 기능이 NST%%t:NST%% 기능이라고 적는다. 공정은 `SPS-P`, `SPS-I`, `SPS-E`로 나뉜다.
@@ -288,6 +302,8 @@ PDC%%t:PDC%% 61과 63에 따라 `SPS-E`는 `EVST` 소듐의 산소·수소 농�
 regulatory guide%%t:RG%% 부합은 `RG 1.22`, `RG 1.34`, `RG 1.36`, `RG 1.44`, `RG 1.50`, `RG 1.61`, `RG 1.84`, `RG 1.87`, `RG 1.89`, `RG 1.153`, `RG 1.189`, `RG 1.193`, `RG 8.19` 완전 부합과 `RG 1.31`(고온 조건에 `ASME Section III, Division 5`를 쓰는 예외), `RG 1.45`, `RG 1.100`, `RG 4.21` 부분 부합이다. `RG 1.100`에서는 NSRST%%t:NSRST%% 구성품을 예외로 하고 `IEEE 344-2013` 대신 `IEEE 344-2020`을 쓰며, `RG 1.189`는 section 4.1만 쓴다. `SPS`는 오염물 감시나 처리가 필요하면 연속 운전할 수 있고(`may`), `SPS-P`와 `SPS-I`는 네 원자로 모드 각각에서 운전할 수 있다. `RES` 안 `SPS-P` SSC%%t:SSC%%는 primary coolant boundary가 아니며 `ASME Section VIII`와 `ASME B31.1` 구성품이다. plugging temperature indicator는 온도 범위, 감도, 정확도, 수력 변수를 확정하기 위한 추가 설계·시험이 필요하며 Section 13.1의 `SPS-P` Technology Maturation Plan에 포함되고, 용존 수소 센서가 수소 농도 감시에 쓰일 예정이다(`will`). programmatic special treatment는 Quality Assurance Program, Design Reliability Assurance Program, `RIM` Program, In-service Testing Program, Equipment Qualification Program, Post-construction Inspection, Testing, and Analysis Program으로 예비 식별된다. 모든 `SPS` SR%%t:SR%% 기능은 피동이거나 전원 상실 시 수행되며 운전원 조치가 필요 없다. `Table 7.2.4-1`에서 `SPS-P` `EM pump` 전원 차단기는 SR%%t:SR%%, primary coolant boundary 배관·주 격리 밸브와 `SPS-E` 배관·격리 밸브는 연관 압력 경계 건전성에 한한 SR%%t:SR%%이다.
 
 `PSAR` Chapter 5 표는 `DL4-RR8`을 `Manual SPS Pump Trip on Leak Indication`으로 적어 Chapter 7의 `Manual SPS Pump Trip on Low Primary Sodium Level`과 다르다. Chapter 1은 `SPS-I`가 `SPS-P`와 `same equipment and function`을 가진다고, Chapter 7은 `similar equipment and functions`를 가진다고 적는다.
+
+process radiation monitor는 primary Sodium Processing System에만 해당한다. 주 bypass line과 cesium trap%%t:CESIUM_TRAP%% 하류 귀환 line에 gamma spectrometer를 하나씩 두고, Cs-137 붕괴에 특유한 gamma 에너지로 cesium을 검출하며, 하류 spectrometer로 cesium trap%%t:CESIUM_TRAP%%의 효과를 감시한다. multi purpose sampler는 실험실 분석용 소듐 시료를 채취하며, 그 분석은 `PTI` 감시 자료와 비교할 수 있는 시점별 소듐 화학 특성을 제공한다. cold trap%%t:COLD_TRAP%%은 낮은 온도에서 석출시켜 소듐의 산소와 수소 불순물을 줄이고, 파손 핵연료에서 나온 방사성 cesium 동위원소는 reticulated vitreous carbon trap으로 일차 냉각재에서 제거한다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]

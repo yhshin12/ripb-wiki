@@ -5,7 +5,7 @@ sources:
 - PSAR_ch07
 - PSAR_ch05
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -301,6 +301,42 @@ terms_pending: []
 - "Figure 7.1.2-11 Simplified Seismic Isolation System Arrangement" [PSAR_ch07 Figure 7.1.2-11 p.56]
 
 ![[PSAR_ch07_Fig_7.1.2-11.png]]
+- "Internal structures within the RV provide structural support for reactor core assemblies and primary heat transport components, guide primary coolant flow through the core, define sodium pool regions (hot pool, cold pool, and warm pool), and provide in-vessel core assembly storage." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The reactor internal structures consist of the UIS, Reactor Fixed Internals (RFI), and Core Barrel Structures (CBS)." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The UIS is a vertical, cylindrical assembly mounted to the bottom of the rotatable plug (Figure 7.1.2-3)" [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The UIS is located above the reactor core and provides shroud tubes as guides to locate control rod drive mechanism (CRDM) drivelines for alignment with the control rod assemblies within the reactor and drywells to control placement of core exit temperature monitoring instrumentation." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "With the RPA locked and mounted to the reactor head in the plant operation position, the vertical axis of the UIS is aligned with the reactor core central vertical axis and the UIS is stationary." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "With the RPA in the refueling position, and the CRDM drivelines unlatched and fully retracted, the UIS rotates with the rotatable plug." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The cylindrical geometry of the UIS is interrupted to provide a space (cutout) for installation of the In-Vessel Transfer Machine (IVTM)" [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The UIS provides vertical and lateral support to the IVTM during refueling operations." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The location of the IVTM in the cutout space in the UIS, along with the eccentric center location of the rotatable plug in the reactor head, allows the IVTM to reach assembly locations within the core and the In-Vessel Storage (IVS)." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The RFI structures provide support for internal reactor components and direct the flow of primary sodium coolant in the heat removal circuit." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The RFI provide the separation between the hot, cold, and warm pools and provide neutron shielding to limit activation of intermediate coolant within the Intermediate Heat Exchanger (IHX)" [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The general arrangement of the RFI is shown in Figure 7.1.2-4." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The CBS support core assemblies installed in the reactor core and IVS locations, and provide separation between the hot and cold pools." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The CBS also provide a load path from RFI structures and fixed in-vessel shielding to the RV. The CBS consist of the inner and outer core barrels, the core former ring, the core inlet plenum including upper and lower grid plate, core inlet receptacles, core strainer, support gussets, and the IVS. The CBS transmits loads from the reactor core, permanent shielding, and the IVS to the RV to sustain deadweight and dynamic loads." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The preliminary general arrangement of the CBS is illustrated in Figure 7.1.2-5." [PSAR_ch07 §7.1.2.1.2 p.24]
+- "The RV is surrounded by a GV, which provides a defense-in-depth coolant and functional containment boundary in the unlikely occurrence of RV leakage." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The GV is a vertical, right-circular cylindrical shell design with an integrally-welded, torispherical bottom head similar in shape to the RV. There are no penetrations through the GV wall or bottom head." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The GV is supported by the RSS through an integral flange at the top of the shell." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The GV is larger in diameter than the RV, forming an annular space between the GV and RV. The annular space is inerted with argon gas minimizing the potential for sodium-air reaction." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The geometry of the annular space is maintained by the Reactor Support Blocks (RSBs) described in Section 7.1.2.1.4." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The GV provides a heat transfer surface that supports reactor decay heat removal to the RAC, as further described in Section 7.1.2.3." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The preliminary general arrangement of the GV is illustrated in Figure 7.1.2-6." [PSAR_ch07 §7.1.2.1.3 p.24]
+- "The RES is supported by the RSS, which transmits loads to the RXB substructure." [PSAR_ch07 §7.1.2.1.4 p.25]
+- "The RSS structural load path consists of RSBs, a Modular Isolated Reactor Support Structure (MIRSS), and seismic isolators." [PSAR_ch07 §7.1.2.1.4 p.25]
+- "The preliminary configuration of the RSS is illustrated in Figure 7.1.2-7." [PSAR_ch07 §7.1.2.1.4 p.25]
+
+| Dimension | Value (in) | 출처 |
+|---|---|---|
+| RV outside diameter | 415.5 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| Reactor Head outside diameter | 453 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| GV outside diameter | 433.5 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| RV and Reactor Head Assembly height | 797 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| RV wall thickness | 2 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| GV wall thickness | 1 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+| Reactor Head thickness | 12 | [PSAR_ch07 Table 7.1.2-3 p.44] |
+
 
 ## 해설
 Reactor Enclosure System(`RES`)은 reactor vessel과 head, reactor internal structures, guard vessel(`GV`), reactor support structures를 포함하며, 노심을 지지하고 primary sodium 냉각재를 담는다. `RES`는 철근콘크리트 `RXB` 하부구조 안에 있다. 원문이 드는 강화 안전 특성은 primary coolant 운전 수위 아래 경계 관통부가 없는 저압 pool-type 설계, `RV` 안에 담긴 일체형 primary heat transport system, 지지 구조물로부터의 원자로 지진 격리, 지하 철근콘크리트 구조물 안의 위치, primary coolant 자연 순환과 자연 대류 공기 냉각에 의한 피동 비상 노심 냉각이다. `RES`는 functional containment barrier%%t:BARRIER%%와 primary coolant boundary 구성품으로 radionuclide retention을, `CRD` 구성품에 대한 control assembly 위치 설정으로 반응도 제어를, `RV` 안 냉각재 순환 형상 유지로 열제거를 지원한다. `RES` primary coolant boundary 구성품은 `RV`와 헤드(seal, 용접부, 관통부, plug 포함), Rotatable Plug Assembly(`RPA`)와 그 seal, reactor instrumentation drywell이고, 이 구성품은 functional containment 경계의 일부이기도 하다. primary sodium의 높은 끓는점 때문에 거의 대기압에서 운전하며, Sodium Cover Gas System(`SCG`)이 순양압 불활성 커버가스(cover gas)%%t:COVER_GAS%%를 제공한다.
@@ -314,6 +350,10 @@ PDC%%t:PDC%% 33에 따라 `RV` 경계 누설 시 `GV`가 소듐을 담고 `RV`-`
 regulatory guide%%t:RG%% 부합은 `RG 1.20`, `RG 1.31`, `RG 1.44` 부분 부합과 `RG 1.36`, `RG 1.69`, `RG 1.87`, `RG 1.124`, `RG 1.130` 완전 부합이다. `RG 1.20`에서 원자로 내부 구성품은 `prototype`으로 분류되고, `RG 1.31`에서는 설계 온도가 425 degrees Celsius를 넘는 Class A 구성품 용접에 delta ferrite 한계를 둔다. 구성품 지진 분류는 `SCS1`이고 Safe Shutdown Earthquake%%t:SSE%% 하중에서 SR%%t:SR%% 기능을 잃지 않도록 검증되며, seismic isolator는 `ASME QME-1`로 검증되고 방법론은 `NAT-8922`에 있다. programmatic special treatment는 Quality Assurance Program Description, Design Reliability Assurance Program, Reliability and Integrity Management Program, Equipment Qualification Program, Comprehensive Vibration Assessment Program, Post-Construction Inspection, Testing, and Analysis Program이다. `Table 7.1.2-1`의 구성품은 모두 SR%%t:SR%%이다.
 
 `PSAR` Chapter 5 표는 `DL4-RR1`(`Ex-RES Functional Containment Barrier`), `DL4-RR1a`(`HAA barrier`), `DL4-RR1b`(`Guard Vessel Leak Prevention Function`)를 따로 적는 반면, Chapter 7 `RES` 기능 표는 `HAA` barrier%%t:BARRIER%%와 `GV` 누설 방지를 한 행의 `DL4-RR1`로 적는다.
+
+원자로 내부 구조물은 노심 집합체와 primary heat transport 기기를 지지하고, 노심을 지나는 일차 냉각재 흐름을 안내하며, hot pool·cold pool·warm pool을 나누고, 용기 안 노심 집합체 저장(In-Vessel Storage)을 제공한다. 내부 구조물은 `UIS`, Reactor Fixed Internals, Core Barrel Structures로 이루어진다. `UIS`는 rotatable plug 아래에 달린 원통형 조립체로 control rod drive mechanism driveline의 shroud tube와 노심 출구 온도 계측 drywell을 제공하며, `RPA`가 재장전 위치에 있고 control rod drive mechanism driveline이 풀려 완전히 인출되면 rotatable plug와 함께 회전하고 In-Vessel Transfer Machine이 들어갈 cutout을 둔다. Reactor Fixed Internals는 pool을 나누고 Intermediate Heat Exchanger 안 중간 냉각재의 방사화를 제한하는 중성자 차폐를 제공하며, Core Barrel Structures는 노심, 영구 차폐, In-Vessel Storage의 하중을 원자로 용기로 전달한다.
+
+Guard Vessel%%t:GV%%은 원자로 용기를 둘러싸 원자로 용기 누설 시 심층방어%%t:DID%% 차원의 냉각재·functional containment 경계를 제공한다. GV%%t:GV%% 벽과 바닥 헤드에는 관통부가 없고, 원자로 용기와의 환형 공간은 소듐-공기 반응 가능성을 줄이도록 argon으로 불활성화된다. GV%%t:GV%%는 Reactor Air Cooling System으로의 붕괴열 제거를 뒷받침하는 열전달면이기도 하다. Reactor Enclosure System은 Reactor Support Structure가 지지하며, 그 하중 경로는 Reactor Support Block, Modular Isolated Reactor Support Structure, seismic isolator로 이루어진다. 예비 치수 표는 원자로 용기 외경 415.5 in, GV%%t:GV%% 외경 433.5 in, 원자로 용기 벽 두께 2 in, GV%%t:GV%% 벽 두께 1 in를 적는다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Core]]

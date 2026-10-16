@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch07
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -204,6 +204,10 @@ terms_pending: []
 - "Figure 7.6.4-1 XIS Overview" [PSAR_ch07 Figure 7.6.4-1 p.292]
 
 ![[PSAR_ch07_Fig_7.6.4-1.png]]
+- "The XIS detectors are located in individual drywells external and adjacent to the core." [PSAR_ch07 §7.6.4.1.2 p.282]
+- "The XIS detectors are wired to the XIS field amplifier enclosures located in the Reactor Building (RXB) Head Access Area." [PSAR_ch07 §7.6.4.1.2 p.282]
+- "The amplified signals are wired to the XIS electronics enclosures located in the Nuclear Island Control Building (NCB) Substructure." [PSAR_ch07 §7.6.4.1.2 p.282]
+- "The XIS Audible Count Rate monitors are located in both the MCR and FHCR." [PSAR_ch07 §7.6.4.1.2 p.282]
 
 ## 해설
 아날로그 Nuclear Instrumentation System(`XIS`)은 핵연료 이동, 원자로 기동, 출력 운전, 정지, 사고 조건에서 노심에서 누설되는 neutron flux를 감지하며, 신호가 안전해석이 가정한 시간 안에 `RPS`로 가도록 설계된다. wide range neutron flux 신호는 `IEEE 497-2016`의 Type B·D `PAM` 변수로 `RPS`와 `NIC`에 보내진다. `XIS`는 division별 flux 검출기와 신호 조정을 갖춘 네 이중화 division으로 이루어지고, 각 division은 대응하는 `RPS` division하고만 연결되어 division 분리를 유지한다. 검출기는 division마다 High Temperature Fission Chamber 한 개(총 `four`)이고 검출기와 전자 장치는 power range, wide range, source range 세 신호 범위를 내며, source range 신호에는 audible count rate 변수가 있다. `NIC`에는 Non-Safety-Related with No Special Treatment%%t:NST%% 제어 기능을 위한 신호를 주며, 실시간 제어에 쓰는 `Rod Monitoring and Control System`과 `NI Coolant Temperature Monitoring and Control System`은 격리된 hardwired 신호를 받는다.
@@ -217,6 +221,8 @@ principal design criteria%%t:PDC%% 2와 4에 따라 safety-significant 부분은
 `IEEE 603-2018` Clause 5.12에 따라 SR%%t:SR%% Structures, Systems, and Components%%t:SSC%%의 special treatment는 NSRST%%t:NSRST%%·NST%%t:NST%% SSC%%t:SSC%%에도 적용된다. programmatic special treatment는 Quality Assurance Program Description, Human Factors Engineering Program Plan, Equipment Qualification Program, Post-Construction Inspection, Testing, and Acceptance Program, Design Reliability Assurance Program으로 예비 식별되고, 규격 special treatment는 `IEEE 338-2022`, `IEEE 379-2014`, `IEEE 384-2018`, `IEEE 420-2013`, `IEEE 603-2018`, `IEEE 7-4.3.2-2016`이다. 구성품 지진 분류는 `SCS1`이며 Safe Shutdown Earthquake%%t:SSE%% 하중에서 기능을 잃지 않도록 검증된다. power range와 wide range channel은 주기적 calorimetric 조정이 필요하고, 조정은 `XIS` 캐비닛에서 range별 gain과 offset으로 한다. `XIS`는 `NI Uninterruptible AC Power Supply System`(`NUP`)의 네 NSRST%%t:NSRST%% division에서 전원을 받고, SR%%t:SR%% `XIS`와 NSRST%%t:NSRST%% 계통 사이 격리 장치는 SR%%t:SR%% `XIS`의 일부로 분류된다.
 
 `XIS`는 현재 SR%%t:SR%% 기능을 수행하는 소프트웨어가 없는 아날로그 계통으로 설계되어, 원문은 `IEEE 603-2018` Clause 5.16이 요구하는 신뢰할 만한 CCF%%t:CCF%%나 안전 기능 저하 가능성이 없다고 적는다. 조달 구성품에 embedded digital device가 있으면 산업 표준과 규제 지침을 따라야 하고, SR%%t:SR%%·NSRST%%t:NSRST%% 기능에 쓰이면 `SECY-22-0076`과 `SRM-SECY-22-0076` 지침으로 CCF%%t:CCF%% 분석을 한다. `XIS` 입력에 의존하는 `DL3` 기능의 수동 제어는 `RPS` 안에 있다. 운전 정보는 `RPS`와 `NIC`로 표시되고, `MCR`과 `FHCR`의 NST%%t:NST%% audible count rate 장치가 source range를 소리로 알린다.
+
+Nuclear Instrumentation System 검출기는 노심 바깥에 인접한 개별 drywell에 있고, field amplifier enclosure는 Reactor Building head access area에, electronics enclosure는 `NI` Control Building 하부구조에 있으며, audible count rate monitor는 주제어실과 `FHCR`에 모두 있다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch07, PSAR_ch05]
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -119,6 +119,10 @@ terms_pending: []
 - "Figure 7.4.1-1 Gaseous Radwaste Processing System Overview" [PSAR_ch07 Figure 7.4.1-1 p.225]
 
 ![[PSAR_ch07_Fig_7.4.1-1.png]]
+- "RWG equipment and components are designed, constructed, and tested to the requirements set forth in the applicable codes and standards listed in RG 1.143." [PSAR_ch07 §7.4.1.3.3 p.222]
+- "Conformance with RG 1.143 ensures that RWG equipment and components are compatible with the chemical, physical, and radioactive environments expected during normal conditions and AOOs." [PSAR_ch07 §7.4.1.3.3 p.222]
+- "RWG materials for pressure retaining components conform to the requirements of the specifications for materials listed in Section II of the ASME Boiler and Pressure Vessel Code (Reference 7.4.1-3), except that malleable, wrought, or cast-iron materials and plastic pipe are not used." [PSAR_ch07 §7.4.1.3.3 p.222]
+- "Major components of the RWG are fabricated of stainless steel for corrosion protection." [PSAR_ch07 §7.4.1.3.3 p.222]
 
 ## 해설
 `PSAR` Chapter 7의 방사성 폐기물 처리 계통은 `RG 1.143`의 적용 가능한(`applicable`) 지침을 만족하도록 설계되며, Gaseous Radwaste Processing System(`RWG`)은 NSRST%%t:NSRST%%, 액체·고체 방사성 폐기물 처리 계통은 Non-Safety-Related with No Special Treatment%%t:NST%%로 분류된다. `RWG`는 primary Sodium Cover Gas System과 그 exhaust distribution cabinet의 기체 폐기물을 처리하고, `argon-41` 같은 단수명 동위원소의 붕괴를 위한 `holdup`과, `filtration medium`과 `activated charcoal adsorption bed`로 xenon·krypton 같이 상대적으로 수명이 긴(`longer lived`) 동위원소의 붕괴를 촉진한 뒤 plant stack으로 배출한다. 배출은 Nuclear Island Heating, Ventilation, and Air Conditioning System(`NHV`) 공기로 희석되고, 합산 배기는 행정·연방 선량 한도 준수를 위해 감시·기록된다.
@@ -130,6 +134,8 @@ principal design criteria%%t:PDC%% 적용에서 `RWG` 설비는 Fuel Handling Bu
 `RWG`는 `FHB` 지하의 `once-through` 상온 `charcoal adsorber delay system`이다. 모든 원자로 운전 모드에서 운전할 수 있지만 Design Basis Event%%t:DBE%%나 Design Basis Accident%%t:DBA%%의 결과를 완화할 필요는 없고, 정상 운전과 AOO%%t:AOO%% 중 운전하도록 설계된다. `RG 1.110`은 `Full Conformance`로 적혀 있으나 cost-benefit analysis는 operating license%%t:OL%% 단계에서 수행될 예정이고(`will`), `RG 1.143` 부합은 부분 부합이며 `Section 5.1`과 `Section 6.1.3`의 방법이 `Regulatory Positions C.5 and C.6`을 대체한다. 자동 방출 종료에 쓰는 밸브는 fail closed로 설계되고, `RWG` 제어는 중복성, `Class 1E`, harsh environment qualification이 필요 없지만 지진 검증된다.
 
 `PSAR` Chapter 5는 `DL2-RR4`를 `Gaseous Radwaste Barrier`로 적어 Chapter 7의 기능 이름(`Retain Radionuclide - RWG Radionuclide Boundary`)과 다르다(`meta/contradictions.md` C19). Chapter 5의 PDC%%t:PDC%% 60 구현 요약은 `SCG`가 원자로 용기와 guard vessel에서 `RWG`로 가는 배기 기체를 제어·여과한다고 적고, Chapter 7은 primary Sodium Cover Gas System과 exhaust distribution cabinet의 기체를 처리한다고 적는다.
+
+Gaseous Radwaste Processing System 설비는 `RG 1.143`에 열거된 codes and standards에 따라 설계·제작·시험되며, 이 부합으로 정상 조건과 AOO%%t:AOO%%에서 예상되는 화학적·물리적·방사선 환경과의 양립성이 보장된다. 압력 유지 기기 재료는 ASME Boiler and Pressure Vessel Code Section `II`의 재료 사양을 따르되, 가단·단조·주철 재료와 플라스틱 배관은 쓰지 않고, 주요 기기는 부식 방지를 위해 stainless steel로 만든다.
 
 ## 관련 문서
 - [[Natrium_NSRST_Functions]]

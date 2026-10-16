@@ -5,7 +5,7 @@ sources:
 - PSAR_ch11
 - RG_1.233
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -34,6 +34,8 @@ terms_pending: []
 - "The PRA development and methodology is discussed in Chapter 3." [PSAR_ch11 §11.3.1 p.51]
 - "10 CFR 50.160 and the guidance in RG 1.242 provide for a performance-based, technology-inclusive, risk-informed, and consequence-oriented emergency preparedness approach for small modular reactors and other new technologies, and also a scalable PEP EPZ size." [PSAR_ch11 §11.3.1 p.51]
 - "No unique physical site characteristics were identified per 10 CFR 100.21(g) that would significantly impede implementation of the Kemmerer Unit 1 emergency plan proposed in this section." [PSAR_ch11 §11.3.2.1 p.53]
+- "Section 2.3 identifies nearby facilities that may pose potential hazards to the site." [PSAR_ch11 §11.3.2.2 p.53]
+- "An analysis of the potential adverse impact from any credible hazard from these facilities on implementation of emergency response plans will be addressed in the emergency preparedness plan." [PSAR_ch11 §11.3.2.2 p.53]
 - "The guidance in RG 1.242, Appendix A, was used to determine the PEP EPZ size." [PSAR_ch11 §11.3.3.1 p.53]
 - "Information describing the PEP EPZ methodology was submitted to the NRC as “TerraPower, LLC (TerraPower) Natrium Topical Report:" [PSAR_ch11 §11.3.3.1 p.53]
 - "Plume Exposure Pathway Emergency Planning Zone Sizing Methodology,” herein referred to as the PEP EPZ Topical Report (Reference 11.3-1)." [PSAR_ch11 §11.3.3.1 p.53]
@@ -60,6 +62,7 @@ terms_pending: []
 NRC regulatory guide%%t:RG%%의 `§C.4`는 EPZ%%t:EPZ%%를 일부 원자력 시설을 둘러싼 구역으로, 방사성 물질 방출로부터 공중을 보호할 `protective actions`가 필요할 경우에 대비해 특별한 고려와 관리 관행을 사전에 계획·연습하는 곳으로 설명한다. 또 `non-LWRs`에서 zone 필요성을 평가하는 사건 범위를 NEI 18-04의 LBE%%t:LBE%%로 예상하되, 필요에 따라(`as necessary`) 비상 계획 결정 과정의 기준을 반영하도록 조정한다고 적고, 그 예로 `DG-1350`의 `96 hours` 선량 계산 기간과 Frequency-Consequence Target%%t:FC_TARGET%% 도시용 NEI 18-04의 `30-day` 기간을 든다. `PSAR` Chapter 11은 크기 결정 지침을 `RG 1.242, Appendix A`에, 방법론을 `PEP EPZ Topical Report`에, 예비 결과를 `Preliminary Emergency Planning Zone Determination Analysis`에 두며, 인용한 문장들에는 선량 계산 기간이 없다. `RG 1.242`와 두 보고서의 원문은 vault에 없다.
 
 ## 관련 문서
+- [[Natrium_Emergency_Response_Organization_And_Facilities]]
 - [[Non_LWR_Application_Content]]
 - [[Natrium_PRA_Scope]]
 - [[Programmatic_DID]]

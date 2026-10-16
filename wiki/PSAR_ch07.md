@@ -22,6 +22,8 @@ units:
   status: complete
 - unit: §7.1–§7.2 nuclear heat supply and reactor auxiliary systems
   status: complete
+- unit: '보완: §7.1-§7.8 누락 절 26개'
+  status: complete
 ---
 
 # Descriptions for Safety-Significant SSCs (PSAR_ch07)

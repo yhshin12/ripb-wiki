@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch03
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -40,6 +40,10 @@ terms_pending: []
 - "The ES analysis determines the combinations of POSs, IEs, safety functions, system failures and successes, and end states that may involve a release of radioactive material." [PSAR_ch03 §3.1.1.8 p.11]
 - "Each event tree provides a time independent, system-based response to each initiating event." [PSAR_ch03 §3.1.1.8 p.11]
 - "The Success Criteria (SC) analysis determines the success criteria for barriers to radionuclide release and key safety functions that must be satisfied to prevent damage to the radionuclide release barriers." [PSAR_ch03 §3.1.1.9 p.11]
+- "The systems analysis develops the fault trees needed to support quantification of the event trees during the ES analysis." [PSAR_ch03 §3.1.1.10 p.12]
+- "The systems analysis considers those models needed for each top event on the event trees (frontline systems) as well as those systems needed to support the functioning of the frontline systems (support systems)." [PSAR_ch03 §3.1.1.10 p.12]
+- "Fault tree models for relevant initiating events were also developed as part of some of the system analysis." [PSAR_ch03 §3.1.1.10 p.12]
+- "The purpose of the Human Reliability Analysis is to evaluate human interactions that play a role in the event sequences, and to provide an estimate of the probabilities for the human failure events corresponding to those interactions." [PSAR_ch03 §3.1.1.11 p.12]
 - "All failure estimates are based on available generic industry data sources or via engineering judgment." [PSAR_ch03 §3.1.1.12 p.12]
 - "The ES end-states result in either a safe, stable plant state or a radionuclide release." [PSAR_ch03 §3.1.1.13 p.12]
 - "The radionuclide releases are referred to as release categories and are grouped together based on similar timing and severity of release." [PSAR_ch03 §3.1.1.13 p.12]
@@ -141,6 +145,8 @@ Plant Operating State%%t:POS%% 범위는 방출 barrier%%t:BARRIER%%나 안전 �
 ES%%t:ES%%의 끝은 안전·안정 상태이거나 방사성 핵종 방출이며, 방출은 시점과 심각도가 비슷한 release categories로 묶인다. 각 범주에는 적절한 Mechanistic Source Term%%t:MST%%을 배정해 NEI 18-04 Task 7a와 7b에 필요한 방사선 결말을 계산한다. 정량화에는 `Phoenix Architect 2.0`과 `FTREX` Version 1.8을 쓰고, `UNCERT`로 Licensing Basis Event%%t:LBE%% 빈도의 5th와 95th percentile을 계산하며, 정량화 도구와 방법에 특정한 한계는 식별되지 않았다. CP%%t:CP%% 단계 PRA는 내부 사건 출력 운전과 저출력 정지만 다룬다. 이 보고서의 PRA 결과와 위험 통찰은 final safety analysis report의 것에 비해 예비적이며, `Chapter 3`은 PRA에서 도출된 LBE%%t:LBE%%를, `Chapter 4`는 통합 위험 결과와 NEI 18-04의 세 cumulative plant performance metrics 비교 및 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가를, `Chapter 5`는 risk-significant Structures, Systems, and Components%%t:SSC%%를, `Chapter 6`은 Safety-Related%%t:SR%%과 Non-Safety-Related with Special Treatment%%t:NSRST%% SSC%%t:SSC%%의 reliability·capability target을 다룬다.
 
 결과에 more-than-minor 영향이 있을 수 있는 가정 표는 local core blockage의 IE%%t:IE%% 빈도를 1E-03 per year로 두고 오차 인자 10의 lognormal 분포를 가정하며, 일반 자료가 일곱 자릿수 범위에 걸쳐 그 중간을 골랐다고 적는다. 표에는 또 `NI Control System` 채널의 분기별 시험, 디지털 공통원인 인자 1E-04, Ex-Vessel Handling Machine 피동 냉각 고장률 1E-04 per demand, 원자로 헤드에서 head access area로의 누설률(헤드 격리 성공 시 하루 체적의 1%, 실패 시 100%)과 head access area에서 환경으로의 누설률(격리 성공 시 10%, 실패 시 100%)이 있다. 이 표는 head access area를 containment라고 부른다.
+
+systems analysis는 ES%%t:ES%% 분석에서 event tree 정량화에 필요한 fault tree를 만들며, event tree의 각 top event에 필요한 frontline system과 그 기능을 뒷받침하는 support system을 다룬다. Human Reliability Analysis는 ES%%t:ES%%에 관여하는 인적 상호작용을 평가하고 그에 대응하는 human failure event의 확률을 추정한다.
 
 ## 관련 문서
 - [[Non_LWR_PRA_Scope]]

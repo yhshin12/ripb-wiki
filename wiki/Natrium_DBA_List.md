@@ -5,7 +5,7 @@ sources:
 - PSAR_ch03
 - NEI_18-04
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -90,6 +90,14 @@ terms_pending: []
 | SUD-IHEL-CN | The final conditions result in the reactor in safe shutdown with decay heat removal provided by the RAC. | [PSAR_ch03 §3.9.2.5.1 p.110] |
 | SEV-SSE-CN | The final conditions result in the reactor in safe shutdown with the RAC providing decay heat removal. | [PSAR_ch03 §3.9.3.1.1 p.111] |
 
+| LBE ID | LBE Description (원문) | 출처 |
+|---|---|---|
+| RRS-RWG-CN | The postulated initiating event is a leak from a radioactive waste gas holdup tank during full power, low power, shutdown, or refueling operating conditions. A radionuclide release occurs. | [PSAR_ch03 §3.9.4.5.1 p.113] |
+| RFH-FDIV-CN | The postulated initiating event is the drop of a fuel assembly in the reactor vessel during in-vessel fuel moves. The dropped fuel assembly and the impacted fuel assembly are damaged. Functional containment barriers successfully perform their radionuclide retention functions. | [PSAR_ch03 §3.9.5.1.1 p.114] |
+| RFH-FDSP-CN | The postulated initiating event is the drop of a fuel assembly in the spent fuel pool during fuel moves. The dropped fuel assembly is damaged, but there is no damage to fuel assemblies impacted by the dropped fuel assembly. | [PSAR_ch03 §3.9.5.2.1 p.115] |
+| RFH-LBCA-CN | The postulated initiating event is a loss of bottom loading transfer cask active cooling with spent fuel in the bottom loading transfer cask. Passive cooling is maintained during this event. Fuel cladding is not damaged, and no radionuclide release occurs. | [PSAR_ch03 §3.9.5.5.1 p.117] |
+| RFH-LMCA-CN | The postulated initiating event is a loss of EVHM active cooling with spent fuel or a Lead Test Assembly (LTA) or Lead Demonstration Assembly (LDA) in the EVHM. Passive cooling is maintained during this event. Fuel cladding is not damaged, and no radionuclide release occurs. | [PSAR_ch03 §3.9.5.6.1 p.117] |
+
 - "Postulated SCG leaks downstream of the SCG vapor trap cell are inside the HAA." [PSAR_ch03 §3.9.4.1.2 p.111]
 - "The mechanistic source term is modeled as an instantaneous release of the radionuclide inventory from the cover gas volume contained in the reactor vessel into the HAA compartment at the initiation of the event." [PSAR_ch03 §3.9.4.1.2 p.111]
 - "The HAA releases directly to the environment through the Nuclear Island Heating, Ventilation, and Air Conditioning System (NHV) with no credit for filtration, and a two-hour full compartment exhaust time." [PSAR_ch03 §3.9.4.1.2 p.111]
@@ -165,6 +173,8 @@ DBA%%t:DBA%%는 Licensing Basis Event%%t:LBE%% 평가 방법 절의 보수적 �
 방출이 있는 DBA%%t:DBA%%의 enveloping 선량(`2-hour` EAB%%t:EAB%%, `30-day` LPZ%%t:LPZ%%)은 Sodium Cover Gas System 누설이 7.75E+00과 7.77E+00 rem으로 가장 크고, Spent Fuel Pool 핵연료 취급이 7.33E+00 rem, 원자로 용기 안 핵연료 취급이 1.74E+00과 3.19E+00 rem, local fuel fault가 1.33E-01과 9.60E-01 rem, intermediate Sodium Processing System cold trap이 1.34E-01과 5.30E-01 rem, Gaseous Radwaste Processing System이 9.59E-02 rem, primary Sodium Processing System이 8.13E-02와 2.78E-01 rem, Pool Immersion Cell 소듐-물 반응이 2.01E-02와 6.09E-01 rem이다. 10 CFR 50.34 선량 한도의 수치는 이 노트가 인용한 원문에 없다. NEI 18-04는 각 DBA%%t:DBA%%의 95th percentile 상한 결말이 EAB%%t:EAB%%에서 10 CFR 50.34 선량 한도를 만족해야 한다고 적는데, 이 보고서의 DBA%%t:DBA%% 결과는 enveloping 단일 값이다.
 
 해석 가정을 보면 Sodium Cover Gas System 누설 DBA%%t:DBA%%는 여과 credit 없이 head access area 전체를 두 시간 동안 환경으로 배기하고, primary Sodium Processing System 누설 DBA%%t:DBA%%는 cell 누설을 저하 조건의 하루 체적 50 percent로 두며 Reactor Auxiliary Building이 여과 없이 즉시 배기된다고 가정한다. cold trap DBA%%t:DBA%%는 Reactor Auxiliary Building holdup을, Gaseous Radwaste Processing System DBA%%t:DBA%%는 Fuel Handling Building의 가둠을 credit하지 않는다. 원자로 용기 안 핵연료 취급 DBA%%t:DBA%%는 정지 뒤 적어도 2.5일에 두 고연소 집합체의 모든 핀 파손을 가정하고, 커버가스(cover gas)%%t:COVER_GAS%% 영역·이송관·Ex-Vessel Handling Machine이 연결된 체적의 하루 one percent가 환경으로 직접 방출되며 원자로 건물 holdup과 붕괴를 고려하지 않는다. Spent Fuel Pool DBA%%t:DBA%%는 정지 뒤 최소 310일을 가정해 요오드와 대부분의 희귀기체 방출의 영향이 작고, 여과와 Fuel Handling Building holdup을 credit하지 않는다. Pool Immersion Cell DBA%%t:DBA%%는 결합된 cell과 cask보다 Ex-Vessel Handling Machine 안의 파손이 결말이 더 크므로 그 선원항(source term)%%t:SOURCE_TERM%%을 쓰고 정지 뒤 210일을 가정한다. local fuel fault DBA%%t:DBA%%는 운전원이 원자로를 정지하지 못해 전출력이 계속되고 급격한 가열로 한 집합체 모든 핀의 피복이 파손되며, 하루 커버가스%%t:COVER_GAS%% 체적의 one percent가 head access area로, head access area 체적의 100 percent가 환경으로 누설된다고 가정한다. 원자로 용기 안 핵연료 취급과 local fuel fault DBA%%t:DBA%% 선량에는 DL3-RR10이 완화할 Sodium Cover Gas System 경로의 방출이 포함되지 않았다.
+
+LBE%%t:LBE%% Description 표 가운데 Gaseous Radwaste Processing System 누설은 holdup tank 누설로 방출이 생긴다. 원자로 용기 안 핵연료 취급은 낙하한 집합체와 부딪힌 집합체가 파손되고 functional containment barrier%%t:BARRIER%%가 retention 기능을 수행하며, Spent Fuel Pool 핵연료 취급은 낙하한 집합체만 파손된다. bottom loading transfer cask와 Ex-Vessel Handling Machine의 능동 냉각 상실 DBA%%t:DBA%%는 피동 냉각이 유지되어 피복이 손상되지 않고 방출이 없다.
 
 ## 관련 문서
 - [[Natrium_DBE_List]]

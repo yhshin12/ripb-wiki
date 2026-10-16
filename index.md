@@ -12,7 +12,7 @@
 - [[PSAR_ch05]] — Kemmerer Unit 1 `PSAR` 5장은 Structures, Systems, and Components 안전 분류와 safety-significant PRA Safety Function을 Safety-Related 기능과 Non-Safety-Related with Special Treatment 기능의 표로 제시하고, `RG 1.232`의 SFR-DC를 바탕으로 개발한 principal design criteria `1`–`82`와 그 적용을 기술한다.
 - [[PSAR_ch06]] — Kemmerer Unit 1 `PSAR` 6장은 safety-significant SSC의 설계 기준과 능력을 정한다.
 - [[PSAR_ch07]] — Kemmerer Unit 1 `PSAR` 7장은 Nuclear Island의 계통과 건물을 계통별로 기술한다.
-- [[PSAR_ch11]] — Conduct of Operations
+- [[PSAR_ch11]] — Kemmerer Unit 1 `PSAR` 11장은 운영 조직(§11.1), 인적 요소 공학(§11.2), 비상 대비(§11.3), 항공기 충돌 평가(§11.4), 기술지침서(§11.5), 직무 적합성과 보안(§11.6)을 다룬다.
 - [[RG_1.232]] — `RG 1.232`는 non-light-water reactor의 principal design criteria 개발 지침이다.
 - [[RG_1.233]] — `RG 1.233`은 non-light-water reactor의 licensing basis와 신청서 내용을 정하는 technology-inclusive, risk-informed, performance-based 방법론에 관한 지침이다.
 - [[RG_1.247]] — Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water Reactor Risk-Informed Activities
@@ -108,6 +108,7 @@
 - [[Natrium_Defense_Lines]] — `PSAR` Chapter 4는 NEI 18-04의 다섯 Layers of Defense를 Defense Line `DL1`–`DL5`로 정의하고, DL 사이의 독립성을 보장하는 다섯 항목 전략을 둔다. (disputed)
 - [[Natrium_Design_Basis_Hazard_Levels]] — `PSAR` Chapter 6은 Safety-Related Structures, Systems, and Components가 SR 기능 수행 능력에 악영향 없이 견디도록 설계되는 재해의 심각도나 강도 규격을 design-basis hazard level로 정의하고, `Table 6.1-1`의 재해(`Wind Loadings`, `Tornadoes`, `External Flooding`, `Internal Flooding`, `Missiles`, `Rupture of Piping`, `Seismic`, `Extreme Winter Precipitation`, `Internal Fire`)에 대한 수준과 근거를 요약한다.
 - [[Natrium_Emergency_Preparedness_EPZ]] — `PSAR` Chapter 11은 `10 CFR 50.160`과 `RG 1.242`에 따른 `performance-based` emergency preparedness 계획을 operating license 단계에 제출한다고 적고, 예비 크기 분석이 Exclusion Area Boundary 안의 plume exposure pathway emergency planning zone을 뒷받침하며, `10 CFR 50.160`과 `RG 1.242`에 따르면 그런 부지에는 부지 밖 계획 활동이 요구되지 않으므로 계획이 주로 부지 내 활동에 초점을 둔다고 적는다. (disputed)
+- [[Natrium_Emergency_Response_Organization_And_Facilities]] — `PSAR` Chapter 11 §11.3의 하위 절은 비상 대응 체계에 관한 계획을 적으며, 여러 세부를 emergency preparedness plan과 이행 절차에서 정한다고 적는다.
 - [[Natrium_Energy_Island_Systems]] — `PSAR` §1.1.4.2는 2차 계통이 원자로에서 낸 열을 전력으로 바꾸는 경로를 `NSS`–`ESS`–`TSS`–`SGS` 염 순환과 동력 사이클로 서술하고, 뒤따르는 절들이 서술하는 Energy Island 계통과 기능을 모두 Non-Safety-Related with No Special Treatment로 분류한다.
 - [[Natrium_Fuel_Criticality_Safety]] — `PSAR` Chapter 3 §3.14는 principal design criteria 62와 `10 CFR 50.68`(`10 CFR 50.68(b)(7)` 농축도 한계 제외) 부합을 다루며, 핵연료는 Water Pool·Ex-Vessel·In-Vessel Fuel Handling System과 Reactor Enclosure System이 저장·취급한다. (disputed)
 - [[Natrium_Functional_Containment]] — Kemmerer Unit 1은 Fundamental Safety Function 가운데 retaining radionuclides를 다양한 피동 barrier로 이루어진 functional containment 전략으로 수행한다.

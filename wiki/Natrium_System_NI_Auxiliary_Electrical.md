@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch07
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -96,6 +96,27 @@ terms_pending: []
 - "Figure 7.7.1-2 Simplified NSRST Electrical Systems Single Line Diagram - Divisions C and D" [PSAR_ch07 Figure 7.7.1-2 p.335]
 
 ![[PSAR_ch07_Fig_7.7.1-2.png]]
+- "The NDC and NUP include integrated voltmeters and ammeters to provide continuous monitoring locally in the equipment rooms and remotely via the UMC." [PSAR_ch07 §7.7.1.5 p.332]
+- "Electrical protection and metering are provided for NUP equipment." [PSAR_ch07 §7.7.1.5 p.332]
+- "Protection and alarms are provided to identify RVT and inverter faults." [PSAR_ch07 §7.7.1.5 p.332]
+- "Protective devices have the ability to isolate the faults." [PSAR_ch07 §7.7.1.5 p.332]
+- "Operation of a protection or monitoring device sends a common trouble signal to the UMC." [PSAR_ch07 §7.7.1.5 p.332]
+- "Electrical protection and metering are provided for NDC equipment, including adequate protection against overload and short circuit conditions under normal operation and off-normal operation." [PSAR_ch07 §7.7.1.5 p.332]
+- "The statuses of the normal battery chargers, swing battery chargers, battery transfer switches, and DC switchboards are monitored through the UMC." [PSAR_ch07 §7.7.1.5 p.332]
+- "Protection and alarms are provided to identify normal and swing battery charger faults." [PSAR_ch07 §7.7.1.5 p.332]
+- "Protective devices have the ability to isolate the faults." [PSAR_ch07 §7.7.1.5 p.332]
+- "Operation of a protection or monitoring device sends a common trouble signal to the UMC." [PSAR_ch07 §7.7.1.5 p.332]
+- "The battery chargers serve as isolation devices between the AC input power from the NST NI AC electrical power system and NDC, consistent with IEEE 384-1992." [PSAR_ch07 §7.7.1.5 p.332]
+- "The battery chargers are designed so that they do not become a load on the battery due to power feedback during loss of AC power to the chargers." [PSAR_ch07 §7.7.1.5 p.332]
+- "The battery charger output current is limited for overload protection." [PSAR_ch07 §7.7.1.5 p.332]
+- "Each battery charger has one AC input circuit breaker and two DC output disconnect switches (normal output and output to BTS) for charger protection and isolation." [PSAR_ch07 §7.7.1.5 p.332]
+- "The two output disconnect switches are mechanically interlocked to prevent the switches from being closed concurrently." [PSAR_ch07 §7.7.1.5 p.332]
+- "Overvoltage protection coordination is provided between the battery chargers and the NUP inverters; the DC overvoltage protection in the battery charger shuts down the charger automatically before the inverter overvoltage protection is activated." [PSAR_ch07 §7.7.1.5 p.333]
+- "The battery charger design prevents propagation of AC input power temporary overvoltage/undervoltage to DC battery circuits, DC-connected loads, and to the inverter." [PSAR_ch07 §7.7.1.5 p.333]
+- "When input voltage and frequency to the battery chargers are outside the operating limits, resulting in unacceptable output voltages, the battery chargers shut down and provide electrical isolation to the NDC. The battery chargers return to operation automatically when the input voltage and frequency are restored within the normal operating limits." [PSAR_ch07 §7.7.1.5 p.333]
+- "Protection and alarms for the DC switchboards are provided to identify faults." [PSAR_ch07 §7.7.1.5 p.333]
+- "Protective devices have the ability to isolate the faults." [PSAR_ch07 §7.7.1.5 p.333]
+- "Operation of a protection or monitoring device sends a common trouble signal to the UMC." [PSAR_ch07 §7.7.1.5 p.333]
 
 ## 해설
 전기 계통은 Nuclear Island(`NI`) Auxiliary Electrical Systems, `NI` Ancillary Electrical System, Energy Island Auxiliary Electrical System이며, `NI` Auxiliary Electrical Systems 일부만 NSRST%%t:NSRST%%이고 나머지는 NST%%t:NST%%이다. `NI` 보조 전기 계통에는 `Nuclear Island Uninterruptible AC Power Supply System`(`NUP`)과 `Nuclear Island DC Power Supply System`(`NDC`)이 포함되고, 두 계통은 모든 운전 모드에서 `NI` 계통에 전원을 준다. `NUP`·`NDC`의 Division A, B, C, D 일부가 NSRST%%t:NSRST%% Structures, Systems, and Components%%t:SSC%% 기능 요건을 지원하므로 NSRST%%t:NSRST%%로 분류되며, 각 계통의 NST%%t:NST%% 부분은 NST%%t:NST%% breaker 제어와 제어 계통에 전원을 준다. 원문은 `NUP`나 `NDC` 고장이 SR%%t:SR%% 기능 수행 능력에 영향을 주지 않는다고 적는다.
@@ -107,6 +128,8 @@ principal design criteria%%t:PDC%% 2에 따라 safety-significant 구성품은 �
 `NUP`는 `RPS` division마다 하나씩 네 독립 division(A, B, C, D)으로 이루어지며, `IEEE 603-1991`과 `IEEE 379-2000`에 맞춘다. 모든 `AC` 전원을 잃으면 inverter는 전지로 Divisions A와 B에서 72 hours, Divisions C와 D에서 2 hours 동안 `120 VAC UPS panelboard`와 NSRST%%t:NSRST%% 부하를 유지한다. `NDC`도 `RPS` division마다 하나씩 네 독립 `250 VDC` division이며, Divisions A·B 전지는 72 hours, Divisions C·D 전지는 2 hours 동안 부하를 공급하도록 크기가 정해진다. 두 계통 모두 division 사이, NST%%t:NST%%와 NSRST%%t:NSRST%% SSC%%t:SSC%% 사이의 물리적 분리와 전기적 격리를 `IEEE 384-1992`에 맞춰 유지해 단일 고장이 한 division에만 영향을 주게 한다. 전지실은 온도 제어되어 고온에 의한 가속 노화를 줄이고 전지 크기 산정의 온도 보정 계수 안에서 운전하게 한다.
 
 special treatment는 Section 6.3에 따라 초기 선정되며, 신뢰도 목표와 성능 요건을 위한 산업 규격 special treatment는 operating license%%t:OL%% 단계에서 확정·제공된다. programmatic special treatment는 Design Reliability Assurance Program, Equipment Qualification Program, Post Construction Inspection, Testing, and Analysis Program, Quality Assurance Program Description이다.
+
+계측 요건 절에 따르면 직류 전원 계통과 무정전 교류 전원 계통은 전압계와 전류계를 갖추어 기기실에서 국부적으로, `UMC`를 통해 원격으로 상시 감시된다. 보호·감시 장치가 동작하면 공통 trouble 신호가 `UMC`로 간다. 축전지 충전기는 NST%%t:NST%% 교류 전원과 직류 전원 계통 사이의 격리 장치 역할을 `IEEE 384-1992`에 맞게 하고, 교류 전원 상실 시 축전지의 부하가 되지 않으며, 입력 전압·주파수가 운전 한계를 벗어나면 정지해 직류 계통을 격리하고 정상으로 돌아오면 자동으로 운전을 재개한다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

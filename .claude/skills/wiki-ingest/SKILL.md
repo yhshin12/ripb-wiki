@@ -29,6 +29,7 @@ description: ripb vault에 원문 1단위(절 묶음 또는 장)를 인제스트
 ## 3. 검사
 - 편집마다 PostToolUse hook이 검사 결과를 돌려준다. 오류는 바로 고친다.
 - 단위 끝: `lint_wiki.py --all`, `verify_quotes.py --all`, `sync_terms.py`(충돌 0 확인, 필요하면 `--apply`), `build_index.py`. 해소하지 못한 항목은 변경 요약에 적는다. 원문의 오기는 고치지 않는다.
+- 원문의 마지막 단위를 닫기 전: `coverage_sections.py --only KEY`로 노트가 인용하지 않은 절을 확인한다. 남은 절은 노트에 넣거나, 반영 대상이 아니면 사유와 함께 `meta/coverage_exclusions.json`에 넣고 변경 요약에 적는다.
 
 ## 4. 접점 ② — 변경 요약 (`templates/change_summary.md`)
 직접 볼 노트 2–3개를 이유와 함께 고른다. 반려되면 고친 뒤 이 단계부터 다시 한다.

@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch07
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -95,6 +95,42 @@ terms_pending: []
 - "Quality Assurance Program Description" [PSAR_ch07 §7.8.4.2.4 p.372]
 - "Design Reliability Assurance Program" [PSAR_ch07 §7.8.4.2.4 p.372]
 - "Post-Construction Inspection, Testing and Analysis Program (see Chapter 12)" [PSAR_ch07 §7.8.4.2.4 p.372]
+- "An analysis and design of the NSRST NCB superstructure is performed using the structural analysis software GT STRUDL® Version 40 (Reference 7.8.4-4) as the primary analysis tool." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "This analysis includes the following items:" [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The geometry and dimensions of the NCB superstructure are modeled using nodal coordinates and design loads calculated are applied as distributed line loads to the structural members according to their tributary widths." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Where load-bearing members are not modeled (e.g., girts), the calculated reaction from such a member are applied as a load to the next member along the load path (e.g., columns)." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The NCB superstructure design has a lateral force resisting system comprised of steel concentrically braced frames and steel moment frames, in the north-south and east-west directions, respectively." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The NCB roof is constructed of untopped steel decking with vertical steel braced frames in the north-south direction and is idealized as a flexible diaphragm in accordance with Section 12.3.1.1(a) of ASCE 7-16." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "In the east-west direction ordinary moment frames are utilized." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Per Section 12.8.4.2 of ASCE 7-16, application of accidental torsion is not required since the NCB structure does not possess Type 1a or Type 1b horizontal structural irregularities." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The NSRST NCB superstructure is also analyzed for seismic interaction effects to ensure that its failure does not impact the SR NCB substructure in case of a seismic event." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Enveloping response spectrum acceleration curves are used as input into GT STRUDL and the seismic analysis is performed using the response spectrum analysis methodology in Section 12.9 of ASCE 7-16." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The effective seismic mass is calculated in accordance with Section 12.7.2 of ASCE 7-16 and includes dead load only." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Live load and roof snow load are not considered applicable in the calculation of seismic effective mass, since the NCB is a single-story structure and the flat roof snow load does not exceed 30 pounds per square foot." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Modal response spectrum analysis is performed for all modes with natural frequency less than 100 hertz (cycles per second) using the enveloped response spectra as input." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Modal responses are combined using the Complete Quadratic Combination Method in accordance with methodologies described in Section 12.9.1.3 of ASCE 7-16 with a total combined modal mass participation greater than 90 percent being obtained in each orthogonal horizontal direction." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "The equivalent lateral force procedure as delineated in Section 12.8 of ASCE 7-16 is used to calculate the seismic base shears for the NCB superstructure." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Member forces and moments from the modal response spectra analysis are scaled by the equivalent lateral force base shear factor as required by Section 12.9.1.4.1 of ASCE 7-16." [PSAR_ch07 §7.8.4.2.3 p.370]
+- "Horizontal seismic forces are determined based on Section 12.3.4 criteria in ASCE 7-16 and the vertical seismic load is determined in accordance with the provisions in Section 12.4 of ASCE 7-16 for input to the seismic load combinations, including the effects of other loads." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The seismic load effects are combined with the effects of other loads in accordance with the provisions of Section 2.3.6 of ASCE 7-16." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "In addition, seismic load effects are evaluated for both the positive and negative directions in the load combinations for strength and stability." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The NCB superstructure analysis accounts for second-order effects due to member curvature and structure sidesway in accordance with Appendix 7 and Appendix 8 of AISC 360-16." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "A first-order elastic analysis with amplification factors is applied to first-order forces and moments and used to obtain an estimate of the second-order forces and moments." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The NCB superstructure design for stability is governed by the lateral forces due to the seismic condition and envelope the lateral sway forces due to design wind and tornado load cases." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The calculational results from the GT STRUDL analyses are compared to the specified code criteria and the output reactions at the column supports are used in the design of the NCB substructure and foundation." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "In accordance with RG 1.76, the automobile missile is considered to impact at all altitudes less than 30 feet above grade level; thus, the NCB steel superstructure roof framing that is 21 feet above grade is also evaluated for tornado missile impact effects, in addition to support columns, edge beams and vertical bracing." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "Therefore, multiple impact locations are postulated in order to examine the effects of tornado missile impacts on the NCB steel frame superstructure." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "Analysis and design of the NCB steel superstructure primary structural elements subjected to tornado-generated missile impact effects are based on the energy balance method and procedures, to obtain an upper limit estimate of structural elasto-plastic response." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The strain energy of the target at maximum response is used to balance the residual kinetic energy of the target (or target-missile combination) resulting from missile impact." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The primary components of the NCB steel superstructure are shown to possess adequate ductility and deflection capacity to absorb the strain energy due to impact of the external hazard tornado-generated missiles on the exterior wall and roof surfaces." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The MCRE reinforced enclosure is designed for tornado wind loads and associated missile effects in accordance with ACI 318-08 working with ACI 349-13, Appendix F special provisions for impactive effects." [PSAR_ch07 §7.8.4.2.3 p.371]
+
+| 해석 항목 (원문 목록) | 출처 |
+|---|---|
+| Structural Member Design | [PSAR_ch07 §7.8.4.2.3 p.370] |
+| Deflection Checks | [PSAR_ch07 §7.8.4.2.3 p.370] |
+| Support Reactions | [PSAR_ch07 §7.8.4.2.3 p.370] |
+| Dynamic Response Characteristics | [PSAR_ch07 §7.8.4.2.3 p.370] |
 
 ## 해설
 Nuclear Island Control Building(`NCB`)은 두 구조 부분으로 이루어진다. 지표 아래 하부구조는 Reactor Protection System(`RPS`), Intermediate Sodium Pump와 Primary Sodium Pump breaker 같은 SR%%t:SR%% 전기 계통, NSRST%%t:NSRST%% 전기 장비, Remote Shutdown Complex(`RSC`)를 수용하므로 SR%%t:SR%%로 분류되고, 외부 design-basis hazard level%%t:DBHL%%을 견디도록 설계된다. 지상 상부구조는 SR%%t:SR%% 장비가 없고 Main Control Room(`MCR`)과 관련 장비를 수용하는 정상 운전 주 제어 중심이며 NSRST%%t:NSRST%%로 분류된다.
@@ -106,6 +142,10 @@ principal design criteria%%t:PDC%% 2에 따라 하부구조는 Section 6.1.1의 
 상부구조는 PDC%%t:PDC%% 2, 3, 4에 따라 외부 재해와 동적 영향을 견디고 불연성 또는 내화 재료를 쓴다. PDC%%t:PDC%% 19에 따라 상부구조에는 안전 운전 조치를 하는 `MCR`이 있고, `MCR`은 Section 5.3.2.10의 적절한 방사선 방호와 외부 재해 방호를 주는 reinforced enclosure 안에 있다. `MCRE` reinforced enclosure는 충격 영향에 대한 `ACI 349-13` Appendix F 특별 조항과 함께 `ACI 318-08`로 설계되어 화학, 방사선, 기상 외부 사건에서 보호하며, 원문은 이 적용이 NSRST%%t:NSRST%% 기능 보호에 더해 제어실 거주자 보호를 위한 것이라고 적는다. 상부구조가 지원하는 NSRST%%t:NSRST%% 기능은 NSRST%%t:NSRST%% SSC%%t:SSC%%의 외부 재해 방호와, 상부구조와 `MCRE`가 제공하는 하중 경로이다.
 
 상부구조의 지진 분류는 `SCN1`이고 주 설계 규격은 `ANSI/AISC 360-16`이다. 하중은 시공, 기동, 운전, 정지, 지진 상호작용과 토네이도 영향이며, 조합은 `Table 6.4-11`(콘크리트)과 `Table 6.4-12`(강재)에 있다. 상부구조는 지진이나 토네이도 하중에서 붕괴하지 않도록 설계되고, `RG 1.76, Revision 1` 지침에 따라 토네이도 풍하중과 자동차 미사일 충돌을 견뎌 그 파손이 SR%%t:SR%% `NCB` 하부구조에 영향을 주지 않게 한다. 원문은 콘크리트 부분 허용 기준을 `Table 6.4-11`에 대한 `ACI 318-19` 한계로 적고, 강재 상부구조 허용 기준도 `Table 6.4-12`에 대한 `ACI 318-19` 한계로 적는다. 하부구조와 상부구조 모두 Quality Assurance Program Description, Design Reliability Assurance Program, Post-Construction Inspection, Testing, and Analysis Program이 예비 programmatic special treatment로 식별된다.
+
+`NI` Control Building 상부구조는 `GT` `STRUDL` Version 40으로 부재 설계, 처짐, 지점 반력, 동적 응답 특성을 해석한다. 횡력 저항 계통은 남북 방향 중심 가새 골조와 동서 방향 모멘트 골조이고, 지붕은 `ASCE 7-16`에 따라 유연 diaphragm으로 이상화되며, Type 1a·1b 수평 비정형성이 없어 accidental torsion 적용이 필요 없다. 상부구조는 붕괴하여 SR%%t:SR%% 하부구조에 영향을 주지 않는지 지진 상호작용을 해석하며, 단층 구조이고 평지붕 적설 하중이 30 pounds per square foot를 넘지 않으므로 유효 지진 질량에는 고정 하중만 넣는다.
+
+modal response spectrum analysis는 고유진동수 100 hertz 미만의 모든 모드에 대해 수행하고 직교 수평 방향마다 90 percent를 넘는 질량 참여를 얻으며, 모드 응답은 Complete Quadratic Combination Method로 조합한다. 토네이도 비산물 해석은 `RG 1.76`에 따라 지상 30 feet 아래의 모든 높이에서 자동차 비산물 충격을 고려하므로 지상 21 feet의 지붕 골조도 평가하며, 에너지 균형법으로 탄소성 응답의 상한을 추정한다.
 
 ## 관련 문서
 - [[Natrium_System_Control_Room_Indications]]

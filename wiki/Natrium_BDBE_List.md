@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch03
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -143,6 +143,10 @@ terms_pending: []
 | RPD-SS-4 | The final conditions result in the reactor in safe shutdown with the IAC in non-passive mode providing decay heat removal. | [PSAR_ch03 §3.8.3.8.1 p.92] |
 | LFF-SAO-1 | The final conditions result in the reactor in safe shutdown with the IAC non-passive mode providing decay heat removal. | [PSAR_ch03 §3.8.6.1.1 p.105] |
 | LFF-SAO-2 | The final conditions result in the reactor in safe shutdown with the IAC non-passive mode providing decay heat removal. | [PSAR_ch03 §3.8.6.2.1 p.106] |
+
+| LBE ID | LBE Description (원문) | 출처 |
+|---|---|---|
+| RFH-LMCA-1 | The postulated initiating event is a loss of EVHM active and passive cooling during refueling while handling a fuel assembly or a Lead Test Assembly (LTA) or Lead Demonstration Assembly (LDA). The EVHM boundary provides radionuclide retention. Fuel cladding is damaged, and a radionuclide release occurs. | [PSAR_ch03 §3.8.5.6.1 p.98] |
 
 - "The fuel performance acceptance criteria are not met for this event. Fuel cladding is failed, and a radionuclide release occurs." [PSAR_ch03 §3.8.1.6.1 p.85]
 - "The normal spent fuel pool cooling system is not restored, but emergency makeup is successfully implemented." [PSAR_ch03 §3.8.7.1.1 p.107]
@@ -309,6 +313,8 @@ terms_pending: []
 원자로 용기 안 핵연료 취급 두 건은 functional containment barrier%%t:BARRIER%%가 실패하는 사건으로, 단일 집합체 파손 사건에도 두 고연소 집합체의 재고를 가정해 보수적이라고 적고, 커버가스%%t:COVER_GAS%% 체적과 원자로 건물 체적의 하루 100 percent가 저하 조건으로 방출된다고 가정하며, 두 사건의 평균 선량은 모두 6.74E-01 rem이다. Spent Fuel Pool 두 집합체 파손 사건은 단일 집합체 사건의 결말을 두 배로 늘린다. Pool Immersion Cell 소듐-물 반응 사건은 Fuel Handling Building이 credit되는 경우 여과 제거 효율로 Spent Fuel Pool 단일 집합체 사건의 결과를 늘리고(평균 3.31E+00 rem), credit되지 않는 경우 bottom loading transfer cask 사건의 결과를 누설률과 방출 분율로 조정한다(평균 1.40E+01 rem).
 
 local fuel fault BDBE%%t:BDBE%% 두 건은 운전원이 파손 핵연료 방사능 한도 초과로 원자로를 수동 정지하며, 원자로 헤드는 건재하지만 원자로 건물이 실패하는 경우와 헤드가 실패하고 원자로 건물이 가두는 경우로 나뉜다. 두 경우 모두 한 고연소 집합체 모든 핀의 파손, 하루 커버가스%%t:COVER_GAS%% 영역 체적 1 percent의 head access area 누설, head access area 체적 100 percent의 환경 방출을 가정하며, 두 번째 경우는 head access area 건전성이 유지되어도 같은 누설률을 가정한다. 평균 선량은 1.48E-01 rem이다. 기타 BDBE%%t:BDBE%%인 Spent Fuel Pool 냉각 상실은 정상 냉각이 복구되지 않지만 비상 보충이 이루어지는 사건이다. 소외 전원 상실 방출 사건과 local fuel fault 사건의 선량에는 DL3-RR10이 완화할 Sodium Cover Gas System 경로의 방출이 포함되지 않았고, operating license%%t:OL%% 단계에서 평가한다.
+
+Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%%t:BDBE%%는 재장전 중 핵연료 집합체나 Lead Test Assembly, Lead Demonstration Assembly를 다루는 동안 일어나며, 피복이 손상되어 방출이 생기지만 Ex-Vessel Handling Machine 경계가 방사성 핵종 retention을 제공한다.
 
 ## 관련 문서
 - [[Natrium_LBE_Selection]]

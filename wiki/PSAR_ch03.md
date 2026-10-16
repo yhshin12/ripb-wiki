@@ -19,6 +19,8 @@ units:
 - unit: §3.11-§3.14 (fuel system, nuclear design, thermal-hydraulic design, criticality
     safety)
   status: complete
+- unit: '보완: §3.7.3-§3.9.5 방출 LBE의 LBE Description 13개'
+  status: complete
 ---
 
 # Licensing Basis Events (PSAR_ch03)

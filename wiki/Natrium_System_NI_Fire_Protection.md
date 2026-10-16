@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch07, PSAR_ch05, PSAR_ch06]
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -111,6 +111,73 @@ terms_pending: []
 - "Water-based fire suppression systems in the FHB are separated from sodium-containing systems and components." [PSAR_ch05 §5.3.6.5 p.46]
 - "PIC sodium removal is performed in a physically isolated cleaning vessel and uses a combination of control system permissives, software integrity level, and passive engineered controls to preclude excess sodium-water reactions." [PSAR_ch05 §5.3.6.5 p.46]
 - "SCN1 should be assigned to impose seismic qualification for active components" [PSAR_ch06 §6.4.1.1 p.14]
+- "The NFD consists of fire hydrants and piping necessary to distribute fire water to the required locations around the NI. The system begins at the connections from the EFP, which provides fire water for the NFP. The water then flows through the underground piping system and is distributed throughout the yard for hydrants and buildings for sprinkler and standpipe systems." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The fire water supply from the EFP is in full conformance with guidance provided in RG 1.189." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "NFD materials are noncombustible and fire-resistant wherever possible." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The EFP water supply starts at the two fire water storage tanks in accordance with NFPA 22 (Reference 7.5.2-1) with a minimum of 300,000 gallons each." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "Water supply capacity is capable of refilling either tank in 8 hours or less." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "There are two fire pumps in accordance with NFPA 20 (Reference 7.5.2-2): a primary electric motor pump and a backup diesel engine driven pump." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "A jockey pump is also installed in the system to ensure the required pressure is maintained during normal conditions before a fire pump is activated." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The fire pumps are in a sprinklered fire pump house with a 3-hour fire rated separation between the pumps." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The diesel fuel tank is located in the room with the diesel fire pump and is sized in accordance with NFPA 20." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The fire water distribution loop around the Energy Island supplies NFD in two separate locations for reliability." [PSAR_ch07 §7.5.2.3.1 p.238]
+- "The NFS consists of water-based fire suppression systems, such as sprinkler and standpipe systems, clean agent suppression systems, and fire extinguishers." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "NFS materials are noncombustible and fire-resistant wherever possible." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "The water-based suppression systems include a series of valves and piping that control and distribute the water throughout the system coverage areas beginning where the fire water distribution system enters the building and ending at the sprinkler heads in a sprinkler system or hose connections in a standpipe system." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Fire protection valves are located within heated enclosures." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Portions of the fire protection piping exposed to or potentially exposed to freezing temperatures are protected from freezing via insulation or heat tracing." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Wet pipe sprinkler systems are not installed where temperatures fall below 40 degrees Fahrenheit (4.4 degrees Celsius)." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "The water-based suppression systems are located in buildings where sodium is not present." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Buildings containing sodium that are not sprinklered and do not contain fire water are the Reactor Building and the Reactor Auxiliary Building." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "The FHB contains sodium but also includes separated areas that have sprinkler protection, such as radwaste handling areas and truck bays." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Preaction water-based suppression systems reduce the risk of accidental water damage and are used where water-filled piping is not desirable." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Preaction systems rely on air or nitrogen to keep the system pressurized while a valve holds water back from the distribution piping." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Water enters the pipe when a fire is detected and then flows from activated sprinkler heads." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "The Main Control Room (MCR) in the NI Control Building superstructure is equipped with a preaction suppression system." [PSAR_ch07 §7.5.2.3.2 p.238]
+- "Clean agent fire suppression systems are located where fire suppression is required but water would be detrimental to the contents of the area." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "Clean agent suppression systems start at the pressurized agent cylinders." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "Upon receiving the designated signal from the NFA for activation, the pressurized gas flows through a piping distribution network and is released from nozzles at the end of the piping network." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "There are four independent clean agent systems in the NI Control Building substructure where the Reactor Protection System is located." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "One system is provided for each Reactor Protection System division." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "Fire extinguishers are located throughout the NI with firefighting contents appropriate for the identified hazard where they are installed." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "Class D fire extinguishers are provided in areas containing sodium in addition to fire extinguishers for typical hazard types." [PSAR_ch07 §7.5.2.3.2 p.239]
+- "The NFA consists of initiation devices (e.g., smoke detectors, heat detectors, manual pull stations, and suppression system monitor modules), notification appliances (speakers and strobes), control equipment (fire alarm control panels and notification appliance panels), and connecting wiring." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "NFA materials are noncombustible and fire-resistant wherever possible." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "The NFA is connected to the suppression systems within NFS and interfaces with other systems as necessary to meet code requirements." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "Signals are sent to the MCR NFA workstation for continuous centralized monitoring in accordance with NFPA 72 (Reference 7.5.2-3)." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "Electronic components have primary AC power and secondary power from the NI Alternating Current Electrical Power Low Voltage System." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "The NFA has internal system storage batteries to operate in the event that power is not available." [PSAR_ch07 §7.5.2.3.3 p.239]
+- "The NFP operation is the same throughout all phases of plant operation." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "Normal system operation is standby mode with all NFP system components ready to be activated." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "Passive components do not need to be activated to perform their functions." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "Upon activation by fire, smoke, or heat, the NFA goes into alarm mode and alerts personnel of a fire condition." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "When smoke is detected in a duct, the associated NHV air handling unit is shut down and local smoke dampers (where installed) close to prevent the spread of smoke." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "The NFA also has trouble and supervisory modes which alert personnel of an issue that requires attention within the fire alarm system or within a fire suppression system." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "The NFS consists of both automatic and manual suppression systems." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "Automatic sprinklers activate individually when the heat activated sprinkler component reaches its designated temperature." [PSAR_ch07 §7.5.2.3.5 p.242]
+- "Automatic clean agent suppression systems are activated upon receiving the designated signal from the NFA. Manual fire suppression is applied by trained personnel on an as needed basis." [PSAR_ch07 §7.5.2.3.5 p.242]
+
+| Document Number | Title | 출처 |
+|---|---|---|
+| IBC | International Building Code 2021 | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| IEEE 515 | IEEE Standard for the Testing, Design, Installation, and Maintenance of Electrical Resistance Trace Heating for Industrial Applications | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| IEEE 622 | Recommended Practice for the Design and Installation of Electric Heat Tracing Systems for Nuclear Power Generating Stations | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 10 | Standard for Portable Fire Extinguishers | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 13 | Standard for the Installation of Sprinkler Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 14 | Standard for the Installation of Standpipe and Hose Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 20 | Standard for the Installation of Stationary Pumps for Fire Protection | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 22 | Standard for Water Tanks for Private Fire Protection | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 24 | Standard for the Installation of Private Fire Service Mains and Their Appurtenances | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 25 | Standard for the Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 70® | National Electrical Code® | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 72® | National Fire Alarm and Signaling Code® | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 75 | Standard for the Fire Protection of Information Technology Equipment | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 90A | Standard for the Installation of Air-Conditioning and Ventilating Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 90B | Standard for the Installation of Warm Air Heating and Air-Conditioning Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 1961 | Standard on Fire Hose | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 1962 | Standard for the Care, Use, Inspection, Service Testing, and Replacement of Fire Hose, Couplings, Nozzles, and Fire Hose Appliances | [PSAR_ch07 Table 7.5.2-1 p.244] |
+| NFPA 2001 | Standard on Clean Agent Fire Extinguishing Systems | [PSAR_ch07 Table 7.5.2-1 p.244] |
+
 
 ## 해설
 Nuclear Island Fire Protection System(`NFP`)은 Nuclear Island 전반에 있는 네 계통의 모음이며, 주목적은 `NI` 시설 안팎의 화재 영향 완화이다. `NI Fire Water Distribution System`(`NFD`), `NI Fire Suppression System`(`NFS`), `NI Fire Detection and Alarm System`(`NFA`)은 NST%%t:NST%%이고, `NNA`는 NSRST%%t:NSRST%%이다. `NFD` 물은 Energy Island Fire Protection System(`EFP`)에서 공급된다. `NNA`의 `design basis strategy`는 누설이 일어난 뒤 소듐 화재 영향을 완화하는 것이며 누설 방지는 `NNA` 범위 밖이다. `NNA` Structures, Systems, and Components%%t:SSC%%는 현재 PRA에서 고려한 사건에 기반해 분류되며, 화재 해석과 PRA가 성숙하면 OL%%t:OL%% 단계에서 안전 분류와 Defense Line%%t:DL%% 배정이 바뀔 수 있다(`may`).
@@ -122,6 +189,12 @@ principal design criteria%%t:PDC%% 3에 따라 `NFP`는 safety-significant SSC%%
 Fire Protection Program과 Fire Hazards Analysis는 OL%%t:OL%% 단계에서 제공될 예정이다(`will`). 소듐 화재 전략은 피동 예방·완화 특성(예: 강판, 상시 불활성 환경)을 쓰고 필요한 곳에만 능동 특성(예: 불활성 기체 flooding)을 더하는 것이며, `RAB`의 primary `SPS` 일부에는 inerted cell, `IHT` 일부에는 non-inerted cell이 설정되며, 누설 소듐은 process cell 안에 담길 예정이다(`will`). `HAA`처럼 소듐 누설과 safety-significant 구성품의 상호작용을 허용할 수 없는 곳에는 guard enclosure를 적용하고, clamshell 설계의 `first-of-a-kind` 측면은 시험되며 시험 방법과 합격 기준은 OL%%t:OL%% 단계를 뒷받침하도록 정해질 예정이다(`will`). 가정 파단은 처음에 moderate energy 배관의 `Dt/4` 크기 누설 균열과 비지진 배관의 전 원주 파단을 포함하며, 설계가 성숙하면 다른 방법이 고려될 수 있고(`may`), 그 방법은 OL%%t:OL%% 단계에서 기술될 예정이다(`will`). `Table 7.5.2-2`에서 `IHX` nozzle clamshell과 guard enclosure, 그 누설 탐지와 배수관, `SPS-P` 소듐 누설 탐지기는 NSRST%%t:NSRST%%이다.
 
 `PSAR` Chapter 5는 safety-significant 소듐 계통을 `PHT`, `IHT`, `IAC`, `CRD`, `RES`, `SPS`, `SCG`, `FHE`로, 소듐-공기·소듐-콘크리트 반응을 탐지하거나 제한하는 수단을 갖춘 계통을 `PHT`, `IHT`, `IAC`, `RES`, `SPS`, `SCG`, `FHE`로 적고, `FHB`의 물 기반 소화설비가 소듐 계통과 분리되며 `PIC` 소듐 제거가 `software integrity level` 등을 써서 과도한 소듐-물 반응을 막는다고 적는다. Chapter 6은 능동 구성품에 지진 검증을 부과하려면 `SCN1`을 부여해야 한다(`should`)고 적는다.
+
+화재 용수 분배 계통은 Energy Island 화재 방호 계통의 연결부에서 시작해 지하 배관으로 hydrant와 건물의 sprinkler·standpipe에 물을 보낸다. 용수 공급은 각각 최소 300,000 gallons인 화재 용수 저장 tank 두 개에서 시작하고, 어느 tank든 8시간 이내에 다시 채울 수 있으며, 전동기 주 펌프와 디젤 구동 예비 펌프, 그리고 jockey pump가 있다. 펌프 사이는 3-hour 내화 분리가 되어 있다.
+
+소화 계통은 sprinkler·standpipe 같은 수계 계통, clean agent 계통, 소화기로 이루어진다. 수계 소화 계통은 소듐이 없는 건물에 있으며, 원문은 Reactor Building과 Reactor Auxiliary Building을 sprinkler가 없고 화재 용수를 담지 않는 소듐 포함 건물로 적고, Fuel Handling Building은 소듐을 포함하지만 radwaste 취급 구역과 truck bay처럼 분리된 구역에 sprinkler를 둔다고 적는다. 주제어실에는 preaction 계통이 있고, Reactor Protection System이 있는 `NI` Control Building 하부구조에는 Reactor Protection System division마다 하나씩 독립된 clean agent 계통 네 개가 있다. 소듐이 있는 구역에는 Class D 소화기를 둔다.
+
+화재 감지·경보 계통은 initiation device, 통보 장치, 제어 장비, 연결 배선으로 이루어지고 `NFPA` 72에 따라 주제어실 workstation에서 상시 감시되며, 전원이 없을 때를 대비한 내부 축전지를 갖는다. 화재 방호 계통의 운전은 모든 운전 단계에서 같고 평상시에는 대기 상태이며, 덕트에서 연기가 감지되면 해당 공조기가 정지하고 설치된 곳의 국부 smoke damper가 닫힌다. 설계 규격 표는 `IBC`, `IEEE` 515·622, `NFPA` 10에서 `NFPA` 2001까지의 규격을 적는다.
 
 ## 관련 문서
 - [[Natrium_NSRST_Functions]]

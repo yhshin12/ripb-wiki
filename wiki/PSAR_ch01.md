@@ -23,6 +23,8 @@ units:
   status: complete
 - unit: U4 §1.4 and Tables 1.4-1-1.4-5 (regulatory guidance, reports, TMI items, codes)
   status: complete
+- unit: '보완: §1.1.4.1.18-§1.1.4.1.19'
+  status: complete
 ---
 
 # General Plant and Site Description (PSAR_ch01)

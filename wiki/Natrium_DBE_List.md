@@ -5,7 +5,7 @@ sources:
 - PSAR_ch03
 - NEI_18-04
 status: checked
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -124,6 +124,16 @@ terms_pending: []
 | SUD-IHEL-BL | The final conditions result in the reactor in safe shutdown with decay heat removal provided by the unaffected IAC train in non-passive mode. | [PSAR_ch03 §3.7.2.7.1 p.71] |
 | LFF-SAO-BL | The final conditions result in the reactor in safe shutdown with the IAC non-passive mode providing decay heat removal. | [PSAR_ch03 §3.7.5.1.1 p.81] |
 
+| LBE ID | LBE Description (원문) | 출처 |
+|---|---|---|
+| RRS-SPLX-BL | The postulated initiating event is a leak in the SPS system inboard of the SPS isolation valves within the HAA during full power, low power, or shutdown operating conditions. The SPS pump trips on low primary sodium level, terminating the loss of primary sodium inventory. Functional containment barriers successfully perform their radionuclide retention functions. | [PSAR_ch03 §3.7.3.4.1 p.74] |
+| RRS-SPLA-BL | The postulated initiating event is a leak in the SPS system within the RAB during full power, low power, or shutdown operating conditions. The SPS pump trips on low primary sodium level, terminating the loss of primary sodium inventory. Functional containment barriers successfully perform their radionuclide retention functions. | [PSAR_ch03 §3.7.3.5.1 p.74] |
+| RRS-RWG-2 | The postulated initiating event is a leak from a radioactive waste gas holdup tank to the plant stack during full power, low power, shutdown, or refueling operating conditions. All released fission products are discharged via the plant stack. | [PSAR_ch03 §3.7.3.7.1 p.76] |
+| RFH-FDIV-BL | The postulated initiating event is the drop of a non-fuel core assembly in the reactor vessel during in-vessel fuel moves. Fuel cladding integrity is maintained and there is no radiological release. | [PSAR_ch03 §3.7.4.1.1 p.76] |
+| RFH-FDIV-1 | The postulated initiating event is the drop of a fuel assembly in the reactor vessel during in-vessel fuel moves. The dropped fuel assembly is damaged, and a radionuclide release occurs, but there is no damage to fuel assemblies impacted by the dropped fuel assembly. Functional containment barriers successfully perform their radionuclide retention functions. | [PSAR_ch03 §3.7.4.2.1 p.77] |
+| RFH-FDIV-3 | The postulated initiating event is the drop of a fuel assembly in the reactor vessel during in-vessel fuel moves. The dropped fuel assembly and the impacted fuel assembly are damaged, and a radionuclide release occurs. Functional containment barriers successfully perform their radionuclide retention functions. | [PSAR_ch03 §3.7.4.3.1 p.77] |
+| RFH-ESWR-BL | The postulated initiating event is a sodium-water reaction in the Pool Immersion Cell (PIC) during fuel handling operations while the PIC and BLTC are mated. The fuel cladding integrity is maintained. | [PSAR_ch03 §3.7.4.5.1 p.79] |
+
 - "The mechanistic source term is modeled as an instantaneous release of the radionuclide inventory from the cover gas volume in the reactor vessel into the HAA compartment at the initiation of the event." [PSAR_ch03 §3.7.3.1.2 p.72]
 - "For the first 30 minutes of the event, the HAA is slowly exhausted to the environment through the Nuclear Island Heating, Ventilation, and Air Conditioning System (NHV) at a rate of 400 cfm with NHV filtration." [PSAR_ch03 §3.7.3.1.2 p.72]
 - "At 30 minutes, the HAA NHV system is isolated and the HAA begins to leak to the RXB at a rate of 10 percent volume per day." [PSAR_ch03 §3.7.3.1.2 p.72]
@@ -203,6 +213,8 @@ terms_pending: []
 원자로 용기 안 핵연료 취급 중 집합체 하나 또는 둘이 파손되는 사건은 고연소 집합체 모든 핀의 재고가 즉시 방출되고 primary functional containment 경계에서 하루 커버가스%%t:COVER_GAS%% 체적의 one percent가 환경으로 방출된다고 모델링한다. Spent Fuel Pool 집합체 낙하는 In-Vessel Storage 저장 310일 뒤를 가정한다. 피복이 손상되면 핀의 sodium bond 물질이 물과 발열·기체 생성 반응을 일으키므로, `RG 1.183`을 참고하되 제염 계수를 낮춘 예비 가정을 쓰고 이 반응의 성격은 연구 중이며, Fuel Handling Building 체적은 여과 credit 없이 즉시 환경으로 방출된다. Pool Immersion Cell 소듐-물 반응 사건은 cell과 bottom loading transfer cask의 결합 경계가 파손되지 않고 설계 누설로 방출되며, 부분 confinement를 가정하되 Spent Fuel Pool 사건의 선량 결과를 보수적으로 적용한다. 피동 냉각 없는 Ex-Vessel Storage Tank 능동 냉각 상실은 경계가 파손되지 않고 적어도 72시간 동안 핵연료 손상이 없다. local fuel fault는 한 집합체 모든 핀의 재고가 primary sodium으로 즉시 방출되고, 비희귀기체 핵종의 `Eighty percent`가 기포에 실려 pool scrubbing 없이 커버가스%%t:COVER_GAS%%로 들어가며, 하루 커버가스%%t:COVER_GAS%% 체적의 1 percent가 head access area로, 하루 head access area 체적의 10 percent가 환경으로 방출된다고 모델링한다. 운전원은 파손 핵연료 방사능 한도 초과로 원자로를 수동 정지한다.
 
 요약표와 대응 문장에 따르면 여러 DBE%%t:DBE%%가 가장 제한적인 DBE%%t:DBE%%를 통해 같은 Design Basis Accident%%t:DBA%%로 묶인다. NEI 18-04는 각 DBE%%t:DBE%%마다 결정론적 DBA%%t:DBA%%를 정의한다고 적는다. 원자로 용기 안 핵연료 취급 사건과 local fuel fault의 선량에는 DL3-RR10이 완화할 Sodium Cover Gas System 경로의 방출이 포함되지 않았고, operating license%%t:OL%% 단계에서 평가한다.
+
+final conditions 표에 없던 누설·핵연료 취급 DBE%%t:DBE%% 가운데 일곱 건(RRS-SPLX-BL, RRS-SPLA-BL, RRS-RWG-2, RFH-FDIV-BL, RFH-FDIV-1, RFH-FDIV-3, RFH-ESWR-BL)의 기시사건과 사건 진행은 사건 기술 표에 원문 그대로 있다. 나머지 누설·핵연료 취급 DBE%%t:DBE%%의 Licensing Basis Event%%t:LBE%% Description은 이 노트에 싣지 않았다. primary Sodium Processing System 누설은 head access area 안에서 격리 밸브 안쪽에 생기는 누설과 Reactor Auxiliary Building 안의 누설이며, 두 사건 모두 펌프가 low primary sodium level로 정지해 primary sodium 재고 손실이 끝나고 functional containment barrier%%t:BARRIER%%가 방사성 핵종 retention 기능을 수행한다. Gaseous Radwaste Processing System holdup tank에서 plant stack으로 가는 누설은 방출된 핵분열생성물이 모두 plant stack으로 배출된다. 원자로 용기 안 핵연료 취급 사건은 비핵연료 집합체 낙하(피복 건전성 유지, 방출 없음), 낙하한 핵연료 집합체만 파손, 낙하한 집합체와 부딪힌 집합체가 함께 파손되는 경우로 나뉜다. Pool Immersion Cell 소듐-물 반응은 Pool Immersion Cell과 bottom loading transfer cask가 결합된 핵연료 취급 중에 일어나며 피복 건전성은 유지된다.
 
 ## 관련 문서
 - [[Natrium_LBE_Selection]]

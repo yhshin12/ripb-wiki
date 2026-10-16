@@ -12,16 +12,19 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
   missing_pct: 0.82
-ingest: in_progress
+ingest: complete
 units:
-- unit: "U1 §11.3 (EP approach, PEP EPZ), §11.5 (technical specifications, operating modes)"
+- unit: U1 §11.3 (EP approach, PEP EPZ), §11.5 (technical specifications, operating
+    modes)
+  status: complete
+- unit: '보완: §11.3.3.2-§11.3.10 (ERO, 기관, 방호 조치, ERF, 훈련, 성능 감시)'
   status: complete
 ---
 
 # Conduct of Operations (PSAR_ch11)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> Kemmerer Unit 1 `PSAR` 11장은 운영 조직(§11.1), 인적 요소 공학(§11.2), 비상 대비(§11.3), 항공기 충돌 평가(§11.4), 기술지침서(§11.5), 직무 적합성과 보안(§11.6)을 다룬다. vault는 비상 대비 접근법과 비상계획구역, 비상 대응 조직과 시설, 기술지침서와 운전 모드를 노트로 옮겼고, §11.4의 비공개 처리된 내용은 인용하지 않았다.
 
 ## 서지
 - 키: `PSAR_ch11`

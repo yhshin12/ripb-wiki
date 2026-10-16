@@ -5,7 +5,7 @@ sources:
 - PSAR_ch07
 - PSAR_ch05
 status: disputed
-verified: 2026-09-16
+verified: 2026-10-16
 term: null
 tags:
 - natrium
@@ -295,6 +295,105 @@ terms_pending: []
 - "Figure 7.2.3-2 Intermediate Cover Gas System Block Diagram" [PSAR_ch07 Figure 7.2.3-2 p.132]
 
 ![[PSAR_ch07_Fig_7.2.3-2.png]]
+- "The Intermediate SCG also receives purified argon gas from the NGA within the RAB, adjusts pressure, and controls flow as required by the downstream processes." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The argon supplied to Intermediate SCG from NGA has a design pressure and temperature of 250 psig (1700 kPa) and 110°F (43°C)" [PSAR_ch07 §7.2.3.1.2 p.115]
+- "Local argon accumulators are located directly downstream of the NGA supply and provide additional inventory in the event of a disruption of NGA supply." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The Intermediate SCG distributes the gas to the required locations:" [PSAR_ch07 §7.2.3.1.2 p.115]
+
+| Intermediate SCG 분배 위치 (원문 목록) | 출처 |
+|---|---|
+| Intermediate Sodium Pump (ISP) tanks | [PSAR_ch07 §7.2.3.1.2 p.115] |
+| Intermediate Heat Transport System (IHT) drain tanks | [PSAR_ch07 §7.2.3.1.2 p.115] |
+| IHT tank bubbler tubes | [PSAR_ch07 §7.2.3.1.2 p.115] |
+| ISP gas barriers | [PSAR_ch07 §7.2.3.1.2 p.115] |
+| ISP lube oil skids | [PSAR_ch07 §7.2.3.1.2 p.115] |
+| Aerosol filter purges and sample line purges | [PSAR_ch07 §7.2.3.1.2 p.115] |
+
+- "Gas is introduced through the ISP gas barrier to prevent sodium deposition." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "Additional gas is introduced directly into the ISP tank as needed to maintain a minimum gas flow for monitoring and pressure control." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The gas from the ISP tanks and ISP gas barriers passes to the expansion tanks and then to the drain tanks via equalization lines." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "A portion of the flow within the equalization lines is diverted to the intermediate sampling and monitoring through a set of filters." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The remaining gas then passes through the drain tanks, which allows some aerosol settling, and then through aerosol filters, which remove the remainder of the sodium vapors and aerosols." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The gas is then discharged through an oil bubbler to NHV. The oil bubbler provides a minimum back-pressure and additional gas filtering." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "Intermediate SCG design pressures accommodate elevated pressures necessary for pneumatic sodium fill of the IHT loops from the drain tanks." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "Intermediate SCG design temperatures accommodate elevated temperatures associated with heating of the intermediate cover gas from the intermediate sodium." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "A simplified block flow diagram of the Intermediate SCG is shown in Figure 7.2.3-2." [PSAR_ch07 §7.2.3.1.2 p.115]
+- "The SCG controls, monitors, and supplies inert argon gas to various systems and components and includes the Primary SCG and Intermediate SCG. The major process functions of the Primary SCG include:" [PSAR_ch07 §7.2.3.3 p.125]
+- "Maintaining coolant purity by preventing oxygen, water, nitrogen, and other contaminants from entering the sodium coolant." [PSAR_ch07 §7.2.3.3 p.125]
+- "Maintaining a slight positive pressure within the RV cover gas relative to the HAA." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing overpressure protection for the RV." [PSAR_ch07 §7.2.3.3 p.125]
+- "Retaining RV overpressure discharge." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing a boundary to primary coolant leakage under normal and off normal conditions." [PSAR_ch07 §7.2.3.3 p.125]
+- "Preventing solid sodium deposition on movable reactor head components." [PSAR_ch07 §7.2.3.3 p.125]
+- "Removing sodium vapor and aerosols from the cover gas effluent." [PSAR_ch07 §7.2.3.3 p.125]
+- "Removing cesium vapor from the cover gas effluent." [PSAR_ch07 §7.2.3.3 p.125]
+- "Monitoring primary cover gas for general radiological conditions and fission products indicative of fuel failures." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing isolation of the Primary SCG." [PSAR_ch07 §7.2.3.3 p.125]
+- "Maintaining the RV cover gas activity below specified limits using a purge flow." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing constant pressure and leak detection to seals in the FTL, IVTM, and RPA." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing constant pressure and leak detection to the CRDMs for scram cylinders, drivelines, and housings." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing supply and exhaust connections for temporary maintenance equipment." [PSAR_ch07 §7.2.3.3 p.125]
+- "Providing constant flow to purge the CRDM, FTL, IVTM, and RPA annuli." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing overpressure protection for the CRDM housings and drivelines." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing constant pressure gas to the PSP gas barriers." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing pressure-controlled gas to the PSP lube oil systems." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing overpressure protection for the GV." [PSAR_ch07 §7.2.3.3 p.126]
+- "Maintaining GV pressure above HAA pressure and below reactor pressure." [PSAR_ch07 §7.2.3.3 p.126]
+- "Circulating gas through the RV-GV annulus to monitor for RV leak indicators such as drop in oxygen, increase in filter pressure drop, and/or increased radioactivity." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing purge gas to aerosol filters for backflushing." [PSAR_ch07 §7.2.3.3 p.126]
+- "Monitoring for impurities and general radiological conditions." [PSAR_ch07 §7.2.3.3 p.126]
+- "Providing a grab sample point for primary cover gas." [PSAR_ch07 §7.2.3.3 p.126]
+- "Analyzing isotopic tag gas ratios following fuel failure to identify specific failed fuel assemblies." [PSAR_ch07 §7.2.3.3 p.126]
+- "The Primary SCG monitoring consists of five sealed cabinets located on grade level in the RXB and services both primary cover gas and RV-GV gas." [PSAR_ch07 §7.2.3.3 p.126]
+- "Each of these cabinets performs a separate monitoring function of the effluent streams." [PSAR_ch07 §7.2.3.3 p.126]
+- "The functions of primary cover gas monitoring include:" [PSAR_ch07 §7.2.3.3 p.126]
+
+| primary cover gas monitoring 기능 (원문 목록) | 출처 |
+|---|---|
+| Gas filtration. | [PSAR_ch07 §7.2.3.3 p.126] |
+| Impurity monitoring for hydrogen, oxygen, nitrogen, and methane. | [PSAR_ch07 §7.2.3.3 p.126] |
+| Gas sampling. | [PSAR_ch07 §7.2.3.3 p.126] |
+| Gamma spectroscopy and radiation monitoring for failed fuel monitoring. | [PSAR_ch07 §7.2.3.3 p.126] |
+| Tag gas monitoring for failed fuel localization. | [PSAR_ch07 §7.2.3.3 p.126] |
+
+- "A sample line draws a portion of the Primary SCG gas into the gas filtration impurities monitoring and sampling (GFIMS) cabinet after it has passed through the filtration equipment in the primary filter skid." [PSAR_ch07 §7.2.3.3 p.126]
+- "After the sampled gas is further filtered, a portion of the sample gas is routed into the failed fuel monitoring cabinet which contains redundant equipment for radiation monitoring for general activity and for the presence of failed fuel." [PSAR_ch07 §7.2.3.3 p.126]
+- "The gamma spectroscopy analysis cabinet contains a gamma spectroscopy unit that is used for periodic spectral analysis of the cover gas to identify isotopes indicative of failed fuel." [PSAR_ch07 §7.2.3.3 p.126]
+- "The cover gas exhaust stream is monitored for fission products to determine if a fuel cladding breach has occurred." [PSAR_ch07 §7.2.3.3 p.126]
+- "If no fission gas is detected, the gas is discharged directly to the RWG vacuum tank." [PSAR_ch07 §7.2.3.3 p.126]
+- "If an increase in fission gas is detected, indicating a new breach, the gas stream is routed to the tag gas analysis cabinet where xenon and krypton isotopes in the gas stream are stripped out and concentrated." [PSAR_ch07 §7.2.3.3 p.126]
+- "The tag gas analysis cabinet analyzes the xenon and krypton isotopic ratios present with a mass spectrometer, and the specific fuel assembly, or fuel assembly candidates, which contains the breach can be identified." [PSAR_ch07 §7.2.3.3 p.126]
+- "The balance of gas is discharged to the RWG vacuum tank." [PSAR_ch07 §7.2.3.3 p.126]
+- "The functions of RV-GV annulus gas monitoring include:" [PSAR_ch07 §7.2.3.3 p.126]
+- "Oxygen monitoring for sodium leak indication." [PSAR_ch07 §7.2.3.3 p.126]
+- "Radiation monitoring for sodium or primary cover gas leak indication." [PSAR_ch07 §7.2.3.3 p.126]
+- "Absolute filter differential pressure monitoring for sodium leak indication." [PSAR_ch07 §7.2.3.3 p.127]
+- "The RV-GV annulus module initially adjusts the RV-GV annulus gas oxygen content to the several part per million range while being recirculated via the GV leakage detection and recirculation skid blower." [PSAR_ch07 §7.2.3.3 p.127]
+- "The RV-GV annulus exhaust is routed to a portion of the primary GFIMS cabinet that is dedicated to oxygen and radiation monitoring." [PSAR_ch07 §7.2.3.3 p.127]
+- "The argon gas is monitored continuously during operation for oxygen content, radioactivity, and pressure drop across a filter as it is circulated to determine if a potential RV leak exists." [PSAR_ch07 §7.2.3.3 p.127]
+- "If a leak occurs, the diatomic oxygen content is expected to drop as sodium or sodium vapor oxidizes." [PSAR_ch07 §7.2.3.3 p.127]
+- "Additionally, activity in the annulus may increase if Argon-41, Neon-23, fission products, and/or sodium radioisotopes leak into the RV-GV annulus." [PSAR_ch07 §7.2.3.3 p.127]
+- "Finally, an increase in pressure drop across a filter may also indicate a leak as sodium aerosols and/or sodium oxide accumulates on it." [PSAR_ch07 §7.2.3.3 p.127]
+- "The major functions of the Intermediate SCG include the following:" [PSAR_ch07 §7.2.3.3 p.127]
+- "Maintaining coolant purity by preventing oxygen, water, nitrogen, and other contaminants from entering the intermediate sodium loop via the gas stream." [PSAR_ch07 §7.2.3.3 p.127]
+- "Maintaining the ISP tank, IHT expansion tank, and IHT drain tank cover gas pressures above atmospheric pressure." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing constant pressure gas to the ISP gas barriers." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing pressure-controlled gas to the ISP lube oil systems." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing flow-controlled gas to IHT expansion tank and drain tank bubbler tubes for level indication." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing overpressure protection for each IHT tank." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing overpressure protection for each IHT loop." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing a boundary to intermediate coolant leakage under normal and off normal conditions." [PSAR_ch07 §7.2.3.3 p.127]
+- "Removing sodium vapor and aerosols from the intermediate cover gas effluent." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing isolation of the Intermediate SCG during plant events." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing gas transfer from drain tanks to expansion tanks during loop drain." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing gas pressure to the drain tanks for pneumatic loop fill." [PSAR_ch07 §7.2.3.3 p.127]
+- "Monitoring for gas impurities." [PSAR_ch07 §7.2.3.3 p.127]
+- "Providing a grab sample point for intermediate cover gas." [PSAR_ch07 §7.2.3.3 p.127]
+- "The intermediate gas monitoring system, located in the RAB, provides dedicated, identical monitoring systems for each intermediate loop." [PSAR_ch07 §7.2.3.3 p.127]
+- "Each loop provides a gas stream drawn from the equalization lines that is passed into an intermediate GFIMS cabinet." [PSAR_ch07 §7.2.3.3 p.127]
+- "In the cabinet, it is drawn through a HEPA filter before being routed through gas monitoring instruments." [PSAR_ch07 §7.2.3.3 p.127]
+- "Dedicated instruments for the measurement of methane, oxygen, hydrogen, and nitrogen are included." [PSAR_ch07 §7.2.3.3 p.127]
+- "Grab samples can also be taken in the intermediate GFIMS cabinets." [PSAR_ch07 §7.2.3.3 p.127]
 
 ## 해설
 Sodium Cover Gas System(`SCG`)은 Reactor Building(`RXB`), Reactor Auxiliary Building(`RAB`), Fuel Handling Building(`FHB`) 전반의 계통과 구성품에 불활성 argon을 공급하고 감시·제어하며, Primary `SCG`와 Intermediate `SCG`로 이루어진다. Primary `SCG`는 `RV` feed line, `RV`-`GV` annulus, 원자로 헤드 seal과 gas barrier, `PSP` 윤활유·gas barrier sealing, purge gas에 argon을 공급하고, Intermediate `SCG`는 `IHT` 기체 공간, `ISP` 윤활유·gas barrier sealing, `IHT` tank bubbler tube, purge gas에 공급한다. failed assembly lift test와 재장전 조건을 위한 별도 배기 경로는 `FTL`에서 filter를 거쳐 `RWG`로 간다.
@@ -308,6 +407,10 @@ PDC%%t:PDC%% 60에 따라 `RV`와 `GV` 배기 기체를 방사성 유출물 처�
 regulatory guide%%t:RG%% 부합은 `RG 1.44`, `RG 1.61`, `RG 1.84`, `RG 1.87`, `RG 1.97`, `RG 1.124`, `RG 1.199` 완전 부합과 `RG 1.36`, `RG 1.45`, `RG 1.68.3`, `RG 1.100`, `RG 1.147`, `RG 1.153` 부분 부합이다. `RG 1.100`은 NSRST%%t:NSRST%% SSC%%t:SSC%%에 사례별로 적용될 예정이고(`will`), `RG 1.153`에서는 `IEEE Std. 603-2018`을 1991년판 대신 쓴다. 이 절은 `RG 1.100`을 `Rev. 1, 2020`, `RG 1.87`을 `Rev. 2, 2021`로 적는다. `SCG` SSC%%t:SSC%%에 적용되는 코드·표준은 `ASME Section III, Division 5`, `ASME B31.3`, `ASME Section VIII, Division 1`, `ASME BPVC V`, `ASME BPVC III Division 1`, `AISC N690`, `ASME AG-1`, `ASME B16.34`, `ASME PTC-25`, `IEEE 382`, `IEEE 497`이다. programmatic special treatment는 Quality Assurance Program, Design Reliability Assurance Program, `RIM` Program, In-service Testing Program, Equipment Qualification Program, Post-construction Inspection, Testing, and Analysis Program으로 예비 식별된다. `Table 7.2.3-1`에서 `RV` 과압 보호 rupture disk·relief valve, `RV`/`GV` annulus relief valve, `CRDM` housing relief valve는 SR%%t:SR%%이고, primary coolant boundary 격리 밸브와 vapor trap은 연관 압력 경계 건전성에 한한 SR%%t:SR%%이며, 나머지 주요 장비는 NSRST%%t:NSRST%%이며, 그중 일부도 마찬가지로 연관 압력 경계 건전성에 한한 분류다.
 
 `PSAR` Chapter 5 표 주석은 `SCG` 경로의 방사성 핵종 방출을 완화하는 SR%%t:SR%% 기능 `DL3-RR10`이 construction permit 단계에 추가되었고 fail safe이며 탐지·작동 신호가 SR%%t:SR%%일 예정이지만 아직 설계에 반영되지 않았다고 적는다. Chapter 7 `SCG` 기능 표에는 `DL3-RR10`이 없고, 격리 밸브 닫힘은 SR%%t:SR%% 기능이 아니라고 적는다.
+
+intermediate 커버가스(cover gas)%%t:COVER_GAS%% 계통은 Reactor Auxiliary Building 안의 `NGA`에서 정제 argon을 받아 압력과 유량을 조절하고, Intermediate Sodium Pump tank, Intermediate Heat Transport System drain tank, bubbler tube, gas barrier, lube oil skid, aerosol filter와 sample line purge로 분배한다. 기체는 expansion tank와 drain tank를 거쳐 aerosol filter에서 소듐 증기와 aerosol이 제거된 뒤 oil bubbler를 지나 `NHV`로 배출된다. 설계 압력은 drain tank에서 Intermediate Heat Transport System loop를 공압으로 채우는 데 필요한 높은 압력을 수용한다.
+
+계통 설계·성능 평가 절은 primary 계통의 기능으로 냉각재 순도 유지, 원자로 용기 커버가스%%t:COVER_GAS%%를 head access area보다 약간 높은 압력으로 유지, 원자로 용기·control rod drive mechanism·Guard Vessel%%t:GV%% 과압 보호, 커버가스%%t:COVER_GAS%% 배기에서 소듐 증기·aerosol과 cesium 증기 제거, 파손 핵연료 감시, 계통 격리 등을 나열한다. primary 감시는 Reactor Building 지상층의 밀폐 cabinet에서 이루어지며, 배기에서 fission gas가 검출되지 않으면 `RWG` vacuum tank로 보내고, 새 파손을 뜻하는 증가가 검출되면 tag gas 분석 cabinet에서 xenon과 krypton 동위원소비를 질량분석기로 분석해 파손 집합체 또는 후보를 찾는다. 원자로 용기와 GV%%t:GV%% 사이 환형 공간의 기체는 산소 감소, 방사능 증가, filter 차압 증가로 원자로 용기 누설을 감시한다. intermediate 계통은 loop마다 전용 감시 계통을 두고 methane, oxygen, hydrogen, nitrogen을 측정한다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]
