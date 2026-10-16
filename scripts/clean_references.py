@@ -27,7 +27,7 @@ from refclean import VERSION  # noqa: E402
 from refclean.doc import load_doc  # noqa: E402
 from refclean.emit import page_label_ranges, render  # noqa: E402
 from refclean.pdfaux import build_aux  # noqa: E402
-from refclean.profiles import DOCS  # noqa: E402
+from refclean.profiles import DOCS, INTERNAL_KEYS  # noqa: E402
 from refclean.tables import overlap_warnings  # noqa: E402
 
 VAULT = os.path.dirname(HERE)
@@ -91,7 +91,7 @@ def apply_patches(key, text):
 def build(key, render_figures=True, verify=False):
     stem, prof_name, chapter = DOCS[key]
     prof = importlib.import_module(f"refclean.profiles.{prof_name}")
-    doc = load_doc(key, stem, RAW, OUT)
+    doc = load_doc(key, stem, RAW, OUT, getattr(prof, "FLATTEN_TEXT_BLOCKS", False))
     aux = build_aux(doc.pdf_path, chapter=chapter, exclude=table_regions(doc))
     aux.meta["render_figures"] = render_figures
     for step in (prof.steps(chapter) if chapter is not None else prof.steps()):
@@ -149,6 +149,8 @@ def main():
     for key in DOCS:
         if args.only and args.only not in key:
             continue
+        if (key in INTERNAL_KEYS) != (args.root == "internal"):
+            continue                # each tree builds only its own documents
         try:
             prof = DOCS[key][1]
             importlib.import_module(f"refclean.profiles.{prof}")

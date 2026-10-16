@@ -105,11 +105,20 @@ def _label_from_footer(node):
     return None
 
 
-def elements_from_json(tree, warn=None):
-    """Return (els, page_labels) from an opendataloader JSON tree; `warn` collects dropped-node messages."""
+def elements_from_json(tree, warn=None, flatten_text_blocks=False):
+    """Return (els, page_labels) from an opendataloader JSON tree; `warn` collects dropped-node messages.
+
+    A 'text block' node groups the text of one drawn box. In the reports and guides its text is diagram labelling
+    inside a rendered figure and is skipped; a slide profile sets flatten_text_blocks to read it as body content.
+    """
     els, labels = [], {}
     for node in tree.get("kids", []):
         t = node.get("type")
+        if t == "text block" and flatten_text_blocks:
+            sub_els, sub_labels = elements_from_json(node, warn, flatten_text_blocks)
+            els += sub_els
+            labels.update(sub_labels)
+            continue
         page = node.get("page number", 0)
         bbox = tuple(node.get("bounding box", ()))
         if t == "footer":
@@ -146,11 +155,11 @@ def elements_from_json(tree, warn=None):
     return els, labels
 
 
-def load_doc(key, stem, raw_dir, out_dir):
+def load_doc(key, stem, raw_dir, out_dir, flatten_text_blocks=False):
     with open(os.path.join(raw_dir, stem + ".json"), encoding="utf-8") as f:
         tree = json.load(f)
     warn = []
-    els, labels = elements_from_json(tree, warn)
+    els, labels = elements_from_json(tree, warn, flatten_text_blocks)
     meta = {"pdf_title": tree.get("title", ""), "pdf_author": tree.get("author", "")}
     if warn:
         meta["doc_warnings"] = warn

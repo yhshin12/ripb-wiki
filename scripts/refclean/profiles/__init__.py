@@ -1,4 +1,10 @@
-"""Document profiles: metadata + ordered cleanup steps per source document."""
+"""Document profiles: metadata + ordered cleanup steps per source document.
+
+Internal documents are registered in internal/refclean/docs.json (private repo), never here, so that their keys and
+titles stay out of the public repo: {"KEY": {"stem": ..., "profile": ..., "chapter": null, "meta": {...}}}.
+"""
+import json
+import os
 
 DOCS = {
     # key: (stem, profile module, chapter number)
@@ -17,3 +23,25 @@ DOCS = {
     "ACRS_ML25293A458": ("ACRS_ML25293A458_NRC Review of Kemmerer Unit 1 Construction Permit Application, "
                           "Control of Heat Generation", "acrs_slides", None),
 }
+
+INTERNAL_REGISTRY = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))))), "internal", "refclean", "docs.json")
+INTERNAL_KEYS = set()
+INTERNAL_META = {}
+
+
+def load_internal(path=INTERNAL_REGISTRY):
+    """Merge the private registry into DOCS (no-op when internal/ is absent, e.g. in a public clone)."""
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        reg = json.load(f)
+    for key, d in reg.items():
+        if key in DOCS and key not in INTERNAL_KEYS:
+            raise ValueError(f"internal registry key {key!r} collides with a public document")
+        DOCS[key] = (d["stem"], d["profile"], d.get("chapter"))
+        INTERNAL_META[key] = d.get("meta", {})
+        INTERNAL_KEYS.add(key)
+
+
+load_internal()
