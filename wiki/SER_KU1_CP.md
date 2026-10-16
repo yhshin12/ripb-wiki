@@ -19,6 +19,12 @@ ingest: in_progress
 units:
 - unit: "§3.2-§3.4 (MST, LBE 평가 방법론, LBE 요약)"
   status: complete
+- unit: "§3.1 (PRA)"
+  status: complete
+- unit: "§3.5-§3.13 (AOO, DBE, BDBE, DBA, 10 CFR 50.155, fuel, nuclear, T-H, criticality)"
+  status: complete
+- unit: "Chapter 4 (plant risk, DID, IDP)"
+  status: complete
 ---
 
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)
@@ -43,4 +49,14 @@ units:
 - 없음
 
 ## 관련 문서
-- 없음
+- [[Natrium_SER_MST_Methodology_Review]]
+- [[Natrium_SER_Event_Source_Terms_Review]]
+- [[Natrium_SER_LBE_Methodologies_Review]]
+- [[Natrium_SER_Major_Accident_Review]]
+- [[Natrium_SER_LBE_Summary_Review]]
+- [[Natrium_SER_PRA_Review]]
+- [[Natrium_SER_PRA_OL_Expectations]]
+- [[Natrium_SER_AOO_DBE_Review]]
+- [[Natrium_SER_BDBE_DBA_Review]]
+- [[Natrium_SER_Core_Fuel_Design_Review]]
+- [[Natrium_SER_Integrated_Evaluation_Review]]

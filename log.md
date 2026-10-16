@@ -173,3 +173,9 @@
 - coverage_sections.py로 찾은 미인용 절을 기존 노트 19개와 새 노트 1개에 보완; 네 원문 모두 미인용 절 0
 - 작성 후 대조: 추가 문장 107개 중 오류 1(DBE 범위 서술) 수정
 - 네 원문 ingest complete
+
+## [2026-10-16] ingest | SER_KU1_CP §3.1, §3.5-§3.13, Chapter 4
+- 새 노트 6 (PRA 2, AOO·DBE, BDBE·DBA, 연료·노심, 통합 평가), 고친 노트 1 (소스 카드)
+- 검사: lint 0, verify_quotes 0, 작성 후 대조 지적 37건 반영 (오류 16)
+- 새 모순 C59 (SER의 AST 표기)
+- 미정 용어 0

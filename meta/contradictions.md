@@ -66,6 +66,7 @@
 | C56 | 열전달 경로 표현: ch1 §1.1.3은 NSS가 열을 `Energy Island (EI) hot salt storage tank`로 보낸다고 적고 §1.1.4.2는 NSS→ESS→TSS hot tank로 ESS를 사이에 둔다. 열교환기 표기도 `sodium-salt heat exchangers`, `Sodium-Salt Heat Exchangers (SHXs)`, `sodium to salt heat exchangers`로 다르다 | [PSAR_ch01 §1.1.3 p.12], [PSAR_ch01 §1.1.4.2 p.28] | Natrium_Energy_Island_Systems, Natrium_Plant_Overview |
 | C57 | RG 1.232 부록 C의 Section VI 제목은 `Fuel and Reactivity Control`이고 부록 A와 Table 1 머리 목록은 `Fuel and Radioactivity Control`이다 | [RG_1.232 App.C intro p.105], [RG_1.232 Table 1 p.13-20] | MHTGR_DC_Fuel_And_Radioactivity_Control |
 | C58 | 주요사고 선정 근거와 DBA 선량: §3.3.3은 LFF-SAO-CN이 `not exceeded by any other in-vessel design basis event or in-vessel DBA`라서 선정했다고 적으나, Table 3.5-4에서 용기 내 연료취급 DBA RFH-FDIV-CN의 30-day LPZ TEDE 3.19E+00 rem이 LFF-SAO-CN의 9.60E-01 rem보다 크다. 선정 기준으로 함께 적힌 "maximum core damage"가 이 차이를 해소하는지는 원문에서 판단할 수 없다 | [PSAR_ch03 §3.3.3 p.47], [PSAR_ch03 Table 3.5-4 p.60-61] | Natrium_DBA_List |
+| C59 | `AST` 표기: SER §3.7.1.1은 DHP-L1PP-4를 사건 목록과 Table 3.7-1에서 "Alternative Shunt Trip"으로 적으나, 본문은 정지 차단기를 "anticipatory automatic seismic trip system (AST)"가 트립한다고 적는다(같은 표현이 DHS-ISTL-4, RPD-CW1ACS-4, RPD-SS-4에도 나온다). SER의 다른 곳에서 alternative shunt trip(DL4-RC6)과 automatic seismic trip(DL4-RC4)은 별개 기능이다. C7(PSAR의 AST 약어 전개)과 관련 | [SER_KU1_CP §3.7.1.1 p.262], [SER_KU1_CP Table 3.7-1 p.276] | Natrium_SER_BDBE_DBA_Review |
 
 ## 판정 (2026-09-16 사용자 결정)
 
