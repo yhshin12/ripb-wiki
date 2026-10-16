@@ -40,6 +40,7 @@ terms_pending: []
 - "Because the F-C target is met for the DBE and the dose criteria are met for the DBA as discussed in PSAR sections 3.7.3.3 and 3.9.4.2 and sections 3.6.1.3 and 3.8.1.4 of this SE, the staff does not consider the function to be relied on for the purposes of the DID adequacy evaluation." [SER_KU1_CP §4.2.1.1.3 p.330]
 - "The staff recommends that the CP include the following permit conditions:" [SER_KU1_CP §4.3.4 p.333]
 - "Based on its review of the PSAR, the staff finds that USO’s IDP and IDPP implementation for the KU1 CP application is consistent with the methodology described in NEI 18-04" [SER_KU1_CP §4.3.5 p.333]
+- "Therefore, the staff determined that the key assumption of no bulk sodium boiling in the OQEs does not negatively affect the integrated risk assessment and evaluation against the cumulative risk metrics" [SER_KU1_CP §4.1.1 p.324]
 
 ## 해설
 **누적 위험도.** 판정 기준은 다음 세 가지이다.

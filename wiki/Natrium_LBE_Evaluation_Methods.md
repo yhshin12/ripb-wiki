@@ -11,7 +11,7 @@ terms_pending: []
 # Natrium LBE 평가 방법 (Natrium Licensing Methods for Evaluation of LBEs)
 
 > [!abstract] 요약
-> Design Basis Accident%%t:DBA%%는 보수적 경계 변수와 네 방법론 보고서로 평가하고, Anticipated Operational Occurrence%%t:AOO%%·Design Basis Event%%t:DBE%%·Beyond Design Basis Event%%t:BDBE%%는 모든 Structures, Systems, and Components%%t:SSC%%의 예상 응답을 고려해 같은 보수적 방법이나 best-estimate plus uncertainty 방법으로 평가한다. 방법론은 예비적이며, chronic phase는 construction permit%%t:CP%% 단계에서 평가하지 않았다.
+> Design Basis Accident%%t:DBA%%는 보수적 경계 변수와 네 방법론 보고서로 평가하고, Anticipated Operational Occurrence%%t:AOO%%·Design Basis Event%%t:DBE%%·Beyond Design Basis Event%%t:BDBE%%는 모든 Structures, Systems, and Components%%t:SSC%%의 예상 응답을 고려해 같은 보수적 방법이나 best-estimate plus uncertainty 방법으로 평가한다. 방법론은 예비적이며, AOO%%t:AOO%%·DBE%%t:DBE%%·BDBE%%t:BDBE%%의 long-term(chronic) phase는 construction permit%%t:CP%% 단계에서 평가하지 않았다.
 
 ## 원문 사실
 - "The methodologies discussed in this section are preliminary." [PSAR_ch03 §3.3 p.44]

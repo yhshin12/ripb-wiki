@@ -14,7 +14,7 @@ terms_pending: []
 # Natrium의 functional containment 전략 (Natrium Functional Containment Strategy)
 
 > [!abstract] 요약
-> Kemmerer Unit 1은 Fundamental Safety Function%%t:FSF%% 가운데 retaining radionuclides를 다양한 피동 barrier%%t:BARRIER%%로 이루어진 functional containment 전략으로 수행한다. 핵연료 피복, Reactor Enclosure System의 원자로 헤드·원자로 용기와 guard vessel, 핵연료 취급 설비가 차례로 barrier%%t:BARRIER%%가 되고, 소듐의 높은 끓는점과 낮은 운전 압력 같은 고유 특성이 이를 보완한다. 단일 격납 구조물이 없으므로 격납 구조를 전제한 여러 규제 요건은 적용되지 않는다고 적는다.
+> Kemmerer Unit 1은 Fundamental Safety Function%%t:FSF%% 가운데 retaining radionuclides를 다양한 피동 barrier%%t:BARRIER%%로 이루어진 functional containment 전략으로 수행한다. 핵연료 피복 다음에는 Reactor Enclosure System의 원자로 헤드·원자로 용기와 guard vessel이 barrier%%t:BARRIER%%가 되고, 조사 핵연료가 원자로 용기 밖에 있을 때 피복이 파손되면 핵연료 취급 설비가 다음 barrier%%t:BARRIER%%가 되며, 소듐의 높은 끓는점과 낮은 운전 압력 같은 고유 특성이 이를 보완한다. 단일 격납 구조물이 없으므로 격납 구조를 전제한 여러 규제 요건은 적용되지 않는다고 적는다.
 
 ## 원문 사실
 - "The FSF of retaining radionuclides is performed using a functional containment strategy that employs diverse passive barriers." [PSAR_ch01 §1.3.2.1 p.61]
@@ -51,6 +51,7 @@ terms_pending: []
 - "Sub-compartments within building provides additional confinement, depending on event." [PSAR_ch01 Figure 1.3-1 p.65]
 - "The RES provides one of the functional containment boundaries for the primary sodium coolant and sodium cover gas as described in Section 1.3.2.1." [PSAR_ch01 §1.1.4.1.2 p.21]
 - "Together, these components manipulate the positions of core assemblies during refueling operations and maintain the primary functional containment boundary during all reactor modes when the equipment is installed." [PSAR_ch01 §1.1.4.3.1 p.30]
+- "When irradiated fuel is not located within the reactor vessel, the fuel cladding continues to provide the first SR radionuclide retention barrier." [PSAR_ch01 §1.3.2.1 p.62]
 
 | Regulation | Description | Compliance Status | Section | 출처 |
 |---|---|---|---|---|
@@ -67,7 +68,7 @@ terms_pending: []
 ## 해설
 이 보고서는 retaining radionuclides라는 FSF%%t:FSF%%를 다양한 피동 barrier%%t:BARRIER%%를 쓰는 functional containment 전략으로 수행한다고 적는다. 전략의 목표는 세 가지이다. 첫째는 방사성 핵종 선원을 담은 피복·배관·용기 밖에, Licensing Basis Event%%t:LBE%%와 Design Basis Accident%%t:DBA%% 조건을 신뢰성 있게 견디고 누설이 설계 요건이나 시험으로 규정되는 barrier%%t:BARRIER%%를 적어도 하나 유지하는 것이다. 둘째는 정해진 성능 요건을 만족하도록 선원과 환경 사이에 필요한 barrier%%t:BARRIER%%의 최소 총수를 유지하는 것이다. 셋째는 LBE%%t:LBE%%와 DBA%%t:DBA%%에 대한 방사성 핵종 보유 barrier%%t:BARRIER%%의 선정과 분류를 최적화하도록 안전해석, 설계, PRA 사이에 필요한 반복의 틀을 제공하는 것이다. 다양한 피동 barrier%%t:BARRIER%%는 방사성 핵종 선원에서 시작해 선원과 환경 사이의 모든 Structures, Systems, and Components%%t:SSC%%를 포함한다.
 
-핵연료에 대해서는 피복이 첫 Safety-Related%%t:SR%% 방사성 핵종 보유 barrier%%t:BARRIER%%이며, 운전 중 파손된 핵연료 집합체는 Spent Fuel Pool에 저장하기 전에 SR%%t:SR%% canister에 밀봉한다. 피복 다음 barrier%%t:BARRIER%%는 Reactor Enclosure System이고, 그 SR%%t:SR%% 부분은 원자로 헤드, 원자로 용기, 관련 기기 접속부이다. 같은 계통의 guard vessel은 원자로 헤드와 원자로 용기의 SR%%t:SR%% 경계 밖에 있는 추가 barrier%%t:BARRIER%%이다. 핵연료가 노심에 장전된 뒤에는 두 용기의 동시 누설을 LBE%%t:LBE%%로 가정하지 않으며, 두 용기 어느 쪽에도 관통부가 없다. 피복이 파손된 경우에는 핵연료 취급 설비와 관련 SSC%%t:SSC%%가 다음 핵분열생성물 barrier%%t:BARRIER%%가 되고, 핵연료 안에 보유되지 않은 방사성 핵종을 담은 계통에도 functional containment barrier%%t:BARRIER%%를 둔다. 계통 설명 절은 Reactor Enclosure System이 primary sodium coolant와 소듐 커버가스(cover gas)%%t:COVER_GAS%%에 대한 functional containment 경계 가운데 하나를 제공하고, 원자로 내 핵연료 취급 기기가 설치되어 있는 동안에는 모든 원자로 모드에서 primary functional containment boundary를 유지한다고 적는다.
+핵연료에 대해서는 피복이 첫 Safety-Related%%t:SR%% 방사성 핵종 보유 barrier%%t:BARRIER%%이며, 운전 중 파손된 핵연료 집합체는 Spent Fuel Pool에 저장하기 전에 SR%%t:SR%% canister에 밀봉한다. 피복 다음 barrier%%t:BARRIER%%는 Reactor Enclosure System이고, 그 SR%%t:SR%% 부분은 원자로 헤드, 원자로 용기, 관련 기기 접속부이다. 같은 계통의 guard vessel은 원자로 헤드와 원자로 용기의 SR%%t:SR%% 경계 밖에 있는 추가 barrier%%t:BARRIER%%이다. 핵연료가 노심에 장전된 뒤에는 두 용기의 동시 누설을 LBE%%t:LBE%%로 가정하지 않으며, 두 용기 어느 쪽에도 관통부가 없다. 조사 핵연료가 원자로 용기 밖에 있을 때에도 피복이 첫 SR%%t:SR%% barrier%%t:BARRIER%%이고, 이때 피복이 파손된 경우에는 핵연료 취급 설비와 관련 SSC%%t:SSC%%가 다음 핵분열생성물 barrier%%t:BARRIER%%가 되고, 핵연료 안에 보유되지 않은 방사성 핵종을 담은 계통에도 functional containment barrier%%t:BARRIER%%를 둔다. 계통 설명 절은 Reactor Enclosure System이 primary sodium coolant와 소듐 커버가스(cover gas)%%t:COVER_GAS%%에 대한 functional containment 경계 가운데 하나를 제공하고, 원자로 내 핵연료 취급 기기가 설치되어 있는 동안에는 모든 원자로 모드에서 primary functional containment boundary를 유지한다고 적는다.
 
 물리적 barrier%%t:BARRIER%% 외에 발전소 설계의 고유 특성도 규제 선량 기준과 Quantitative Health Objective%%t:QHO%%의 만족을 돕는다. 소듐의 높은 끓는점은 LBE%%t:LBE%% 동안 노심이 대기압 근처에서 과냉 소듐에 잠겨 있게 하고, primary system과 소듐 커버가스%%t:COVER_GAS%%의 낮은 운전 압력은 방사성 핵종을 옮길 큰 구동력이 없게 한다. 중간 냉각재 압력이 primary coolant 압력보다 높으므로, 가정한 중간 냉각재 누설은 primary coolant가 중간 계통으로 나가는 대신 소듐이 primary system으로 들어오는 결과가 된다. functional containment 전략에 관련된 SSC%%t:SSC%%로는 금속 핵연료 기지와 피복, Reactor Enclosure System·Head Access Area·primary coolant boundary, Sodium Processing System, Sodium Cover Gas System, Intermediate Heat Transport System, Reactor Building, Reactor Auxiliary Building, Fuel Handling Building, 세 핵연료 취급 계통, Nuclear Island Heating, Ventilation, and Air Conditioning System, Gaseous Radwaste Processing System이 열거되며, 각 항목에는 설명하는 절이 붙어 있다. Figure 1.3-1의 주석은 건물 안의 하위 구획이 사건에 따라 추가 confinement를 제공한다고 적는다.
 

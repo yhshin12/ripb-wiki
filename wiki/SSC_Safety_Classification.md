@@ -54,7 +54,7 @@ terms_pending: []
 
 원문은 이 과정을 SSC%%t:SSC%% 분류가 아니라 SSC%%t:SSC%% 기능 분류라고 부른다. LBE%%t:LBE%%에 나타나는 예방하거나 완화하는 기능만 관심 대상이기 때문이다. 따라서 SSC%%t:SSC%% 단위로 등급을 매기더라도 성능 요건과 special treatment%%t:SPECIAL_TREATMENT%% 요건은 LBE%%t:LBE%%에서 식별된 특정 기능에 적용된다. 분류에 필요한 정보는 LBE%%t:LBE%% 선정 절차의 Task 10이 끝나면 갖춰진다.
 
-기능은 두 성격으로 나뉜다. Initiating Event%%t:IE%%의 결말을 성공적으로 완화하는 SSC%%t:SSC%%에서는 대응 능력과 safety margin%%t:SAFETY_MARGIN%%이 분류와 special treatment%%t:SPECIAL_TREATMENT%%의 초점이 된다. 반대로 사건 전개 중에 고장 나는 SSC%%t:SSC%%에서는 LBE%%t:LBE%% 빈도를 낮춰 예방에 기여하는 신뢰도가 초점이 되며, 이것이 reliability target으로 이어진다.
+Task 1은 두 경우의 초점을 구분한다. Initiating Event%%t:IE%%의 결말을 성공적으로 완화하는 SSC%%t:SSC%%에서는 대응 능력과 safety margin%%t:SAFETY_MARGIN%%이 분류와 special treatment%%t:SPECIAL_TREATMENT%%의 초점이 된다. 반대로 사건 전개 중에 고장 나는 SSC%%t:SSC%%에서는 LBE%%t:LBE%% 빈도를 낮춰 예방에 기여하는 신뢰도가 초점이 되며, 이것이 reliability target으로 이어진다.
 
 판정 순서는 세 단계이다. 먼저 DBE%%t:DBE%%와 결말이 큰 BDBE%%t:BDBE%%마다 Required Safety Function%%t:RSF%%을 수행할 수 있는 SSC%%t:SSC%%를 찾고, 설계자가 그중 한 조합을 골라 SR%%t:SR%%로 분류한다. 이 SSC%%t:SSC%%만 DBA%%t:DBA%% 해석에 포함된다. 다음으로 나머지 비안전 등급 SSC%%t:SSC%% 가운데 risk-significant인 것을 NSRST%%t:NSRST%%로 분류한다. 마지막으로 남은 SSC%%t:SSC%% 중 심층방어%%t:DID%% 기준을 위해 special treatment%%t:SPECIAL_TREATMENT%%가 필요한 것을 NSRST%%t:NSRST%%로, 나머지를 NST%%t:NST%%로 분류한다. 판정 기준은 [[Risk_Significant_SSC]]와 [[Safety_Significant_SSC]]에 있다.
 
