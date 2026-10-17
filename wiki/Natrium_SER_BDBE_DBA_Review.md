@@ -2,7 +2,7 @@
 type: natrium
 aliases: []
 sources: [SER_KU1_CP]
-status: checked
+status: disputed
 verified: 2026-10-17
 term:
 tags: [natrium, lbe, dba, nrc-review]
@@ -16,6 +16,7 @@ terms_pending: []
 ## 원문 사실
 - "This is because USO used the mean frequency when categorizing events as BDBEs against the 5E-07 lower bound." [SER_KU1_CP §3.7.1 p.261]
 - "The staff intends to continue to evaluate BDBEs based on the 95th percentile frequency when reviewing the OL application." [SER_KU1_CP §3.7.1 p.261]
+- "Loss of one primary sodium pump with alternative shunt trip (DHP-L1PP-4)" [SER_KU1_CP §3.7.1.1 p.262]
 - "In DHP-L1PP-4, the normal scram system fails to function and the scram breakers are tripped by the anticipatory automatic seismic trip system (AST), causing the control rods to fall into the core by gravity." [SER_KU1_CP §3.7.1.1 p.262]
 - "Fuel cladding integrity is maintained for DHP-LOOP-2, but DHP-LOOP-3 and -4 result in fuel failures." [SER_KU1_CP §3.7.1.1 p.263]
 - "Several of the events have 95th percentile frequencies that extend into the DBE range and should have DBAs identified per footnote 37 of Appendix A to NEI 21-07, including DHP-L1PP-1, DHP-L1PP-4, and OTH-LMAC-1." [SER_KU1_CP §3.7.1.1 p.263]
@@ -36,6 +37,7 @@ terms_pending: []
 - "The staff determined that the DBAs were properly identified and analyzed using conservative deterministic safety analysis. The staff finds that the DBA results meet the requirements in 10 CFR 50.34." [SER_KU1_CP §3.8.2 p.298]
 - "The staff finds that the review of the requirements found in 10 CFR 50.155 can be deferred to the operating licensing phase of the KU1 review consistent with the regulation and guidance." [SER_KU1_CP §3.9.2 p.299]
 - "Loss of One Primary Sodium Pump with Alternative Shunt Trip" [SER_KU1_CP Table 3.7-1 p.276]
+- "The RPS supports the NSRST function DL4-RC4, “Automatic seismic trip,” by opening the RTBs upon receipt of a seismic trip demand signal from the anticipatory automatic seismic trip system (AST)." [SER_KU1_CP §7.6.3.1.11.4 p.562]
 - "However, the description for the mechanistic source term for LFF-SAO-2 in the PSAR states that the primary coolant boundary is intact and the HAA is failed." [SER_KU1_CP §3.7.1.6 p.274]
 - "The staff noted in the audit that the specific scenario of DHS-RNBK-2, with passive IAC, was not analyzed but was considered bounded by analyses that considered only RAC heat removal and demonstrated fuel failure limits were not exceeded." [SER_KU1_CP §3.7.1.2 p.265]
 - "Because RAC is less capable of removing heat quickly than passive IAC, the staff determined this is reasonable for a preliminary analysis but notes that a full analysis or appropriate justification would be needed for final analysis at the OL." [SER_KU1_CP §3.7.1.2 p.265]
@@ -80,6 +82,10 @@ terms_pending: []
 - "As described in PSAR section 3.8.7.1, RFH-LSPC-1 represents a loss of SFP cooling." [SER_KU1_CP §3.7.1.7 p.275]
 - "The discussion in section 3.6.1.5 of this SE for the DBE LFF-SAO-BL is also relevant to the DBA analysis." [SER_KU1_CP §3.8.1.6 p.298]
 
+| PSAR Section | Name of the Transient | Alphanumeric Identifier | Functions Responsible for Controlling Heat Generation | PSF of Heat Generation Control Functions | 출처 |
+|---|---|---|---|---|---|
+| 3.8.1.3 | Loss of One Primary Sodium Pump with Alternative Shunt Trip | DHP-L1PP-4 | Reactor scram on high high power-to-flow ratio (fails), alternative shunt trip | DL3-RC1, DL4-RC6 | [SER_KU1_CP Table 3.7-1 p.276] |
+
 ## 해설
 **BDBE%%t:BDBE%%.** staff는 사업자가 BDBE%%t:BDBE%% 하한 판정에 mean 빈도를 썼다는 점을 다시 적고, OL%%t:OL%% 검토에서는 계속 95th percentile로 평가하겠다고 밝혔다. 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 들어가는 BDBE%%t:BDBE%%(DHP-L1PP-1, DHP-L1PP-4, OTH-LMAC-1 등)에는 NEI 21-07에 따라 DBA%%t:DBA%%가 식별되어야 한다고 지적했다.
 
@@ -98,11 +104,11 @@ DHP-L1PP-4는 출력-유량비 정지가 실패하는 사건이어서 기존 DHP
 - RFH-ESWR-1 선원항(source term)%%t:SOURCE_TERM%%을 DBA%%t:DBA%% 방법으로 계산하면 약 7.3 rem으로, 보고된 0.609 rem보다 크지만 25 rem 기준 안에 있다.
 - 10 CFR 50.155 요건 검토는 OL%%t:OL%% 단계로 미루어졌다.
 
-**원문 내부 불일치.** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 "with Alternative Shunt Trip"으로 적지만, 본문은 정지 차단기를 `anticipatory automatic seismic trip system (AST)`가 트립한다고 적는다. 같은 `SER`의 다른 곳에서 alternative shunt trip%%t:ALTERNATIVE_SHUNT_TRIP%%(DL4-RC6)과 자동 지진 트립은 별개 기능으로 다루어지므로, 이 문장은 `SER` 내부의 불일치이다. 이 불일치는 `meta/contradictions.md`에 기록한다.
-
 **열제거 증감·반응도 BDBE%%t:BDBE%%(보강).** DHS-RNBK-2의 피동 `IAC` 시나리오는 직접 해석되지 않고 `RAC` 열제거만 고려한 해석으로 포괄되었으며, staff는 예비 해석으로는 합리적이지만 OL%%t:OL%%에서는 완전한 해석이나 정당화가 필요하다고 보았다. SUD-IACA-2에는 DBA%%t:DBA%%로 한 번 해석한 결과를 함께 적용했다. 중간 열교환기 누설 사건(IPI-IHEL-1·2, SUD-IHEL-1)의 용기 과충전은 primary sodium pump 하류의 high point와 expansion tank의 siphon break로 제한되며, 이 사건들이 credit하는 anti-siphon 기능은 SR%%t:SR%% `ISP` trip(`DL3-HR12`)에 의존한다. RPD-CW1ACS 계열에서 staff는 가정한 반응도 삽입 곡선이 제어봉 worth와 구동 장치 용량에 대해 보수적임을 확인했다. RPD-SS-2는 95th percentile 빈도가 DBE%%t:DBE%% 영역에 있으나 SR%%t:SR%% SSC%%t:SSC%% 고장을 가정하지 않고, 같은 SR%%t:SR%% SSC%%t:SSC%%에 의존하는 더 가혹한 과도가 다른 DBA%%t:DBA%%에서 다루어지므로 staff는 그 성능이 충분히 포괄된다고 판단했다.
 
 **용기 외 방출·기타 BDBE%%t:BDBE%%와 DBA%%t:DBA%%(보강).** SUD-CGR-1은 `SCG` 재고 전량이 `HAA`로 순간 방출되어 `NHV` 여과를 거쳐 400 cfm으로 배기된다고 가정하고, SUD-CGR-2는 방출 위치가 `VTC`인 점만 달라 SUD-CGR-1의 결과를 적용한다. Spent Fuel Pool 냉각 상실 사건 RFH-LSPC-1에서는 `SFP` 정상 냉각이 복구되지 않지만 끓기 전에 비상 보충이 이루어진다. DHS-ISTL-1의 DBA%%t:DBA%%에서는 이 사건이 의존하는 피동 `IAC` 한 계열을 non-SR이므로 실패로 가정하되 남은 loop의 열용량은 쓸 수 있다고 보며, DHS-RNBK-CN은 DBE%%t:DBE%% 영역에 걸치는 DHS-RNBK-2도 포괄한다. 국부 핵연료 결함 DBA%%t:DBA%%는 집합체 하나의 고장을 가정하고, DBE%%t:DBE%% LFF-SAO-BL과의 주된 차이는 `HAA`가 `RXB`의 지연이나 붕괴 credit 없이 하루 100 percent로 환경에 직접 누설된다는 선원항%%t:SOURCE_TERM%% 가정이다. staff는 방법론의 완전한 검증이 construction permit%%t:CP%% 단계에 기대되지 않고 해석이 집합체 전체 고장을 가정해 결과를 보수적으로 포괄하므로 남은 문제를 `FSAR` 검토로 미룰 수 있다고 보았다. 10 CFR 50.155에 따른 설계기준 초과 사건 완화는 그 요건이 Part 50 OL%%t:OL%%에만 적용되므로 OL%%t:OL%% 단계로 미루는 것이 수용되었다.
+
+**규정 대비 메모(C59, 상위 dispute).** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 alternative shunt trip 사건으로 적고, Table 3.7-1은 이 사건이 credit하는 기능을 DL3-RC1과 DL4-RC6으로 적으며, 같은 절의 다른 문장도 이 사건이 alternative shunt trip을 credit한다고 적는다. 그러나 같은 절의 사건 서술은 정지 차단기를 `AST`가 트립한다고 적고, `SER` §7.6.3.1.11.4는 `AST`의 지진 트립 신호로 차단기를 여는 기능을 DL4-RC4 "Automatic seismic trip"으로 다룬다. 따라서 이 사건에서 어느 기능이 credit되는지가 권위 문서인 `SER` 안에서 모호하다. 자동 지진 트립 기능은 [[Natrium_System_Anticipatory_Seismic_Trip]]에 정리되어 있다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

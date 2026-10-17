@@ -3,8 +3,11 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch06
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+- PSAR_ch01
+- PSAR_ch07
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -32,6 +35,13 @@ terms_pending: []
 - "Applicable regulatory guidance documents are listed in Section 1.4.1." [PSAR_ch06 §6.4.2.1 p.24]
 - "The RGs applicable to the design and construction of safety-significant structures are listed in Table 6.4-4." [PSAR_ch06 §6.4.2.1 p.24]
 - "Design Codes and Standards for Safety-Significant Structures" [PSAR_ch06 Table 6.4-2 p.56-57]
+- "Concrete works follow ACI 301-16." [SER_KU1_CP §6.4.1.2.1 p.398]
+- "The staff determined that the applicant’s information on the concrete and steel material properties is acceptable because it conforms to applicable design and ASTM codes and standards." [SER_KU1_CP §6.4.1.2.1 p.398]
+- "The staff will verify materials used in the final design at the OL stage." [SER_KU1_CP §6.4.1.2.1 p.398]
+- "The design codes for SR substructures are ACI 349-13 for reinforced concrete and ANSI/AISC N690-18 for structural steel." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "The RXB building consists of an embedded concrete substructure and above grade steel-framed superstructure." [SER_KU1_CP §7.8.1 p.590]
+- "The RXB superstructure is supported by structural steel columns founded on concrete foundations that are decoupled from the below-grade reinforced concrete and steel RXB substructure which has a separate foundation." [PSAR_ch01 §1.1.4.4.2 p.37]
+- "The Reactor Building (RXB) is composed of two main structural sections: a steel framed above-grade superstructure (described in Section 1.1.4.4.2) and a reinforced concrete and steel substructure below grade." [PSAR_ch07 §7.8.1 p.336]
 
 | Design Code | Title | 출처 |
 |---|---|---|
@@ -242,6 +252,10 @@ safety-significant 구조물의 안전 분류는 하부구조와 상부구조가
 NSRST%%t:NSRST%% 상부구조는 강구조이며 `AISC 325-17`의 Load and Resistance Factor Design으로 설계하고 `AISC 360-16`·`AISC 341-16`으로 부재를 점검한다. 해석 모델은 주 Lateral Force Resisting System과 중력계를 대표하며 girt, roof purlin 같은 2차 부재는 모델에 넣지 않고 등가 부재하중으로 대신한 뒤 따로 점검한다. 시공 중 설계하중은 `ASCE 37-14`를 따른다.
 
 재료는 `ACI 301-16`에 따른 구조용 콘크리트로 28일 압축강도 5,000 pounds per square inch, 철근은 `ASTM A615-09b` 또는 `ASTM A706-09b`의 Grade 60, Fuel Handling Building의 SR%%t:SR%% Spent Fuel Pool 라이너는 `ASTM A240-16a`를 쓴다. 품질관리는 Quality Assurance Program Description을 따르고, 특수 시공기법은 쓰지 않는다.
+
+**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다.
+
+**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 1·7의 "steel"이 Chapter 6이 적는 stay-in-place formwork나 steel embedment를 가리키는지는 vault에 없다.
 
 ## 관련 문서
 - [[Natrium_SSC_Safety_Classification]]

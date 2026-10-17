@@ -4,8 +4,10 @@ aliases: []
 sources:
 - PSAR_ch03
 - PSAR_ch05
-status: disputed
-verified: 2026-09-16
+- RG_1.232
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -43,10 +45,13 @@ terms_pending: []
 - "Long-duration testing is also planned to provide information on hydraulic performance of the orifice plates from high-velocity sodium flow, and to determine velocity limits based on the results of erosion testing." [PSAR_ch03 §3.13.4 p.126]
 - "Additional detail is described in Section 5.2 of TP-LIC-RPT-0011." [PSAR_ch03 §3.13.4 p.126]
 - "TerraPower, LLC “Core Design and Thermal Hydraulic Technical Report,” TP-LIC-RPT-0011, Revision 0" [PSAR_ch03 §References (3.13) p.126]
-- "the thermal hydraulic design provides adequate transfer of heat from the fuel to the coolant to ensure that the Specified Acceptable System Radionuclide Release Design Limits will not be exceeded during normal operation and unplanned transients." [PSAR_ch03 §3.13.2 p.125]
 - "are not exceeded during any condition of normal operation, including the effects of anticipated operational occurrences." [PSAR_ch05 §5.3.2.1 p.24]
-- "the thermal hydraulic design provides adequate margin such that critical parameters of the safety-significant elements of the primary coolant boundary will not be exceeded during normal operation and anticipated operational occurrences." [PSAR_ch03 §3.13.2 p.125]
 - "shall be designed with sufficient margin to ensure that the design conditions of the safety-significant elements of the primary coolant boundary are not exceeded during any condition of normal operation, including anticipated operational occurrences." [PSAR_ch05 §5.3.2.6 p.27]
+- "The reactor core and associated coolant, control, and protection systems shall be designed with appropriate margin to assure that specified acceptable fuel design limits are not exceeded during any condition of normal operation, including the effects of anticipated operational occurrences." [RG_1.232 SFR-DC 10 p.65]
+- "The primary coolant system and associated auxiliary, control, and protection systems shall be designed with sufficient margin to ensure that the design conditions of the primary coolant boundary are not exceeded during any condition of normal operation, including anticipated operational occurrences." [RG_1.232 SFR-DC 15 p.67]
+- "PDC 10 requires the reactor core and associated coolant, control, and protection systems to be designed with appropriate margin to ensure that specified acceptable system radionuclide release design limits (SARRDLs) are not exceeded during normal operation or AOOs." [SER_KU1_CP §7.1.1.1.3 p.411]
+- "PDC 15 requires the design conditions of the primary coolant boundary to not be exceeded during conditions of normal operation, including AOOs." [SER_KU1_CP §7.1.2.1.6 p.425]
+- "The staff found the PDC for the Natrium plant to be acceptable, as documented in its SE included with the approved version of NATD-LIC-RPRT-0002-A." [SER_KU1_CP §5.3 p.344]
 
 ## 해설
 `PSAR` Chapter 3 §3.13의 노심 열수력 설계는 Reactor Core System(Section 7.1.1), Reactor Enclosure System(Section 7.1.2), Primary Heat Transport System(Section 7.1.3) 설계와 본질적으로 결합되어 있고, 이 절의 범위는 노심에서 primary sodium 냉각재로의 열수송이다. 평가 모형, 전산 코드, 해석은 `TP-LIC-RPT-0011`(`Core Design and Thermal Hydraulic Technical Report`, Revision 0)에 기술된다.
@@ -58,6 +63,8 @@ terms_pending: []
 사용 코드와 열수력 평가 모형, 코드 Validation and Verification 계획은 `TP-LIC-RPT-0011`에 있다. 시험은 노심 집합체를 지나는 소듐 거동과 Reactor Core System 안 열전달을 추가로 특성화하고 열수력 성능 모형 코드의 validation을 뒷받침하도록 계획되며, 집합체 안 온도 분포, 고압 입구에서 노심 집합체를 지나는 유량 분포, 압력 강하 손실 계수, 노심 집합체 hold-down force의 특성화를 포함한다. 고속 소듐 유동에 대한 orifice plate 수력 성능과 erosion 시험 결과에 기반한 속도 한계를 정하는 장시간 시험도 계획되어 있고, 시험 결과는 OL%%t:OL%% 단계에 반영된다.
 
 `PSAR` Chapter 5의 PDC%%t:PDC%% 10은 적용 범위를 `any condition of normal operation, including the effects of anticipated operational occurrences`로, PDC%%t:PDC%% 15는 대상을 `design conditions`로 적는 반면, 이 절은 각각 `unplanned transients`와 `critical parameters`로 적는다.
+
+**규정 대비 메모(C33, 규정 불일치).** `PSAR` Chapter 3 §3.13.2는 PDC%%t:PDC%% 10의 적용 범위를 "unplanned transients"로, PDC%%t:PDC%% 15의 대상을 "critical parameters"로 적는 반면, Chapter 5는 PDC%%t:PDC%% 10의 범위를 AOO%%t:AOO%%를 포함한 정상 운전으로, PDC%%t:PDC%% 15의 대상을 design conditions로 적는다. 권위 문서인 [[RG_1.232]] SFR-DC 10·15와 `SER`의 PDC%%t:PDC%% 기술은 Chapter 5와 같이 AOO%%t:AOO%%와 design conditions를 쓰며, `SER`은 Natrium PDC%%t:PDC%%를 승인된 토픽 보고서를 통해 수용했다. SFR-DC 10의 specified acceptable fuel design limits%%t:SAFDL%%이 Natrium PDC%%t:PDC%% 10에서 SARRDL%%t:SARRDL%%로 바뀐 것은 `SER`이 수용한 PDC%%t:PDC%%의 문언이므로 차이가 아니다. 따라서 Chapter 3 §3.13.2의 두 표현만 `SER`이 수용한 PDC%%t:PDC%% 문언과 다르다.
 
 ## 관련 문서
 - [[Natrium_Nuclear_Design]]

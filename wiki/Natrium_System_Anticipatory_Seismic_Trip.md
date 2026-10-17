@@ -6,8 +6,9 @@ sources:
 - PSAR_ch01
 - PSAR_ch05
 - ACRS_ML25293A458
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -64,6 +65,14 @@ terms_pending: []
 - "The AST fully conforms to RG 1.180, Revision 2." [PSAR_ch07 §7.6.8.2 p.321]
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.6.8.2.1 p.321]
 - "The safety-significant PSFs are identified as safety-related (SR) functions or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.6.8.2.1 p.321]
+- "AST Anticipatory automatic seismic trip system" [SER_KU1_CP Abbreviations and Acronyms p.10]
+- "Based on the independence of the motor drive function from the gravity scram function, the diversity of CRA designs to mitigate common cause failures, and the use of AST, staff found the approach to PDC 26 acceptable." [ACRS_ML25293A458 PDC 26 – Reactivity Control Systems p.19]
+- "The staff determined that the preliminary CRD design is consistent with PDC 26 because it provides separate gravity scram and motor drive-in functions and uses different primary and secondary CRA designs to mitigate common-cause failure mechanism and ensure sufficient independence and diversity." [SER_KU1_CP §7.2.5.1.8 p.496]
+- "The staff also considered potential failures in the protection system that could prevent control rod insertion." [SER_KU1_CP §7.2.5.1.8 p.496]
+- "This is mitigated by the CRD driveline scram follow function (DL4-RC3), which is actuated by a separate signal from RPS than the scram, as well as by the alternative shunt trip (DL4-RC6), which provides an alternate means of tripping the reactor trip breakers." [SER_KU1_CP §7.2.5.1.8 p.496]
+- "The following are NSRST alternative shunt trips that are identified as risk-significant defense line functions in PSAR table 5.2-4, but are not described in detail within the PSAR due to the timing of when USO added them to the PRA relative to the submittal of the PSAR:" [SER_KU1_CP §5.5 p.354]
+- "Therefore, the staff determined that the finalization of this aspect of the design can be left to the OL stage" [SER_KU1_CP §5.5 p.354]
+- "The AST supports the NSRST function DL4-RC4, “Automatic seismic trip,” by continuously monitoring signal inputs from triaxial accelerometers and sending an isolated signal to the shunt trip feature in the RTBs when the signal inputs exceed a bi-stable setpoint." [SER_KU1_CP §7.6.8.1.7 p.584]
 
 | Function ID | Function Description | AST Functional Support | 출처 |
 |---|---|---|---|
@@ -130,7 +139,13 @@ PDC%%t:PDC%% 2에 따라 `AST`는 가상 지진에 대해 지진 검증을 받�
 
 `IEEE 379-2014`와 `IEEE 384-2018`이 설계 special treatment이며, 각각 single failure와 독립성·식별에 적용된다. 구성품 지진 분류는 `SCN1`이다. 신뢰성은 Design Reliability Assurance Program으로, 시험·교정 능력은 `IEEE 338-2022` 부합으로, 인간공학은 Human Factors Engineering Program Plan으로 다룬다.
 
-약어 `AST`의 뜻은 원문마다 다르다. `PSAR` Chapter 1 약어표와 Chapter 7은 Anticipatory Automatic Seismic Trip System으로 적고, `ACRS_ML25293A458` 발표 약어표는 `Alternative Shunt Trip`으로 적으며 `AST`가 shunt trip feature로 `RTB`를 trip하는 대체 수단을 제공한다고 적는다. `PSAR` Chapter 5 표에는 `Alternative Shunt Trip on High Core Exit Temperature`가 있고, `DL4-RC6(a-d)`가 최신 `PRA` 개정에서 defense line 기능으로 식별되었으나 그 요건이 아직 설계에 반영되지 않았다는 주석이 있다. `ACRS` 발표도 alternative shunt trip을 `DL4-RC6`과 그 하위 기능으로 묶으므로, Chapter 7의 `AST`가 수행하는 `DL4-RC4`와는 다른 기능이다. 이 차이는 `meta/contradictions.md` C7에 모았다.
+약어 `AST`의 뜻은 원문마다 다르다. `PSAR` Chapter 1 약어표와 Chapter 7은 Anticipatory Automatic Seismic Trip System으로 적고, `ACRS` 발표 약어표는 `Alternative Shunt Trip`으로 적으며 `AST`가 shunt trip feature로 `RTB`를 trip하는 대체 수단을 제공한다고 적는다. `PSAR` Chapter 5 표에는 `Alternative Shunt Trip on High Core Exit Temperature`가 있고, `DL4-RC6(a-d)`가 최신 `PRA` 개정에서 defense line 기능으로 식별되었으나 그 요건이 아직 설계에 반영되지 않았다는 주석이 있다. `ACRS` 발표도 alternative shunt trip을 `DL4-RC6`과 그 하위 기능으로 묶으므로, Chapter 7의 `AST`가 수행하는 `DL4-RC4`와는 다른 기능이다.
+
+**규정 대비 메모(C7-a, 권위 문서 표기 차이(기록만)).** 두 권위 문서가 같은 약어를 다른 기능에 쓴다: `ACRS` 발표는 `AST`를 alternative shunt trip(DL4-RC6)으로, `SER`은 anticipatory automatic seismic trip system(DL4-RC4)으로 정의하고, `PSAR` Chapter 7은 `SER`과 같다. 그러나 PDC%%t:PDC%% 26 판단의 내용은 같다: `ACRS`가 근거로 드는 `AST` 사용의 `AST`는 alternative shunt trip이고, `SER` §7.2.5.1.8도 alternative shunt trip(DL4-RC6)을 reactor trip breaker를 여는 대체 수단으로 든다. 요건 내용이 같으므로 기록만 한다.
+
+**규정 대비 메모(C7-b, 규정 불일치).** `SER`은 PDC%%t:PDC%% 26 절에서 예비 설계가 PDC%%t:PDC%% 26과 일관된다고 판단한 뒤, 제어봉 삽입을 막을 수 있는 보호계통 고장의 완화 수단으로 alternative shunt trip(DL4-RC6)을 든다. `PSAR` Chapter 5 주석은 DL4-RC6이 최신 `PRA` 개정에서 defense line 기능으로 식별되었으나 그 요건이 아직 설계에 반영되지 않았다고 적고, `SER`도 이 기능이 `PSAR`에 상세히 기술되지 않았다고 적는다. `SER`은 이 부분의 설계 확정을 OL%%t:OL%% 단계로 미루었다.
+
+**규정 대비 메모(C7-c, 규정과 일치).** Chapter 7의 `AST` 서술은 `SER`과 같다. Chapter 7의 shunt trip feature가 `ACRS` 발표의 alternative shunt trip 설명과 겹쳐 보이는 것은 위 약어 차이에서 생기므로 독립된 차이가 아니다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Protection]]

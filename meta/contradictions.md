@@ -1,6 +1,6 @@
 # 원문 모순 모음
 
-모든 원문의 인제스트를 마친 뒤 disputed 여부를 한꺼번에 판정한다(2026-09-16 사용자 결정). 그때까지 새로 발견한 모순은 여기에 모으고, 노트의 `status`는 바꾸지 않는다. 이전에 사용자가 결정한 disputed(NEI 18-04: LBE_Frequency_Categories, LBE_Risk_Significance, Risk_Importance_Measures, Risk_Significant_SSC)는 그대로 둔다.
+판정 기준은 2026-10-17 사용자 결정이다(아래 §판정). NRC 문서(`SER_KU1_CP`, NRC staff의 `ACRS_ML25293A458` 발표, `RG_1.232`·`RG_1.233`·`RG_1.247`·`RG_1.253`)와 RG 1.233이 승인한 `NEI_18-04`가 권위 문서(truth)이고, 신청자 문서(`PSAR_ch*`)는 이에 맞춰야 한다. 권위 문서끼리의 실질 모호·상충만 상위 dispute로 남겨 관련 노트를 `status: disputed`로 두고, 나머지는 노트 해설에 "규정 대비 메모"를 달아 해소한다. 항목별 상세 메모와 인용은 `meta/contradictions_memos_2026-10-17.md`에 있다.
 
 각 항목은 관련 노트의 원문 사실 절에 두 쪽 인용이 있다.
 
@@ -64,7 +64,7 @@
 | C54 | ch1 Table 1.4-4의 50.34(f)(3)(ii)(QA list에 important to safety SSC 포함) 행은 Section 칸을 `11.4`로 두나 ch11 §11.4의 제목은 Aircraft Impact Assessment이고 본문은 비공개이다. 같은 표의 (f)(3)(iii) 행은 품질보증을 `8.1`로 적는다 | [PSAR_ch01 Table 1.4-4 p.97], [PSAR_ch11 §11.4 p.72] | Natrium_TMI_Requirements |
 | C55 | ch1 Table 1.4-4의 50.34(f)(2)(xvii)(격납 계측) 행은 Section 칸을 `11.2`로 두나 ch11 §11.2 본문에는 격납 계측에 관한 서술이 없다 | [PSAR_ch01 Table 1.4-4 p.97], [PSAR_ch11 §11.2 p.20] | Natrium_TMI_Requirements |
 | C56 | 열전달 경로 표현: ch1 §1.1.3은 NSS가 열을 `Energy Island (EI) hot salt storage tank`로 보낸다고 적고 §1.1.4.2는 NSS→ESS→TSS hot tank로 ESS를 사이에 둔다. 열교환기 표기도 `sodium-salt heat exchangers`, `Sodium-Salt Heat Exchangers (SHXs)`, `sodium to salt heat exchangers`로 다르다 | [PSAR_ch01 §1.1.3 p.12], [PSAR_ch01 §1.1.4.2 p.28] | Natrium_Energy_Island_Systems, Natrium_Plant_Overview |
-| C57 | RG 1.232 부록 C의 Section VI 제목은 `Fuel and Reactivity Control`이고 부록 A와 Table 1 머리 목록은 `Fuel and Radioactivity Control`이다 | [RG_1.232 App.C intro p.105], [RG_1.232 Table 1 p.13-20] | MHTGR_DC_Fuel_And_Radioactivity_Control |
+| C57 | RG 1.232 부록 C의 Section VI 제목은 `Fuel and Reactivity Control`이고 부록 A와 Table 1 머리 목록은 `Fuel and Radioactivity Control`이다 | [RG_1.232 App.C p.131], [RG_1.232 App.B p.94], [RG_1.232 Table 1 p.13-20] | MHTGR_DC_Fuel_And_Radioactivity_Control |
 | C58 | 주요사고 선정 근거와 DBA 선량: §3.3.3은 LFF-SAO-CN이 `not exceeded by any other in-vessel design basis event or in-vessel DBA`라서 선정했다고 적으나, Table 3.5-4에서 용기 내 연료취급 DBA RFH-FDIV-CN의 30-day LPZ TEDE 3.19E+00 rem이 LFF-SAO-CN의 9.60E-01 rem보다 크다. 선정 기준으로 함께 적힌 "maximum core damage"가 이 차이를 해소하는지는 원문에서 판단할 수 없다 | [PSAR_ch03 §3.3.3 p.47], [PSAR_ch03 Table 3.5-4 p.60-61] | Natrium_DBA_List |
 | C59 | `AST` 표기: SER §3.7.1.1은 DHP-L1PP-4를 사건 목록과 Table 3.7-1에서 "Alternative Shunt Trip"으로 적으나, 본문은 정지 차단기를 "anticipatory automatic seismic trip system (AST)"가 트립한다고 적는다(같은 표현이 DHS-ISTL-4, RPD-CW1ACS-4, RPD-SS-4에도 나온다). SER의 다른 곳에서 alternative shunt trip(DL4-RC6)과 automatic seismic trip(DL4-RC4)은 별개 기능이다. C7(PSAR의 AST 약어 전개)과 관련 | [SER_KU1_CP §3.7.1.1 p.262], [SER_KU1_CP Table 3.7-1 p.276] | Natrium_SER_BDBE_DBA_Review |
 | C60 | SER §7.2.3.1.15.1은 `PSAR` §7.2.3.2.2와 Table 5.2-3이 SCG의 방사성핵종 보유 기능을 "seven functions"로 적는다고 쓰지만, 바로 뒤 목록에는 DL3-RR1c, DL3-RR10, DL2-RR10, DL4-RR4a, DL4-RR4, DL4-RR4c의 여섯 항목만 있다 | [SER_KU1_CP §7.2.3.1.15.1 p.475] | Natrium_SER_Reactor_Auxiliary_Review |
@@ -74,8 +74,39 @@
 | C64 | ESWR 사건의 barrier: PSAR은 Pool Immersion Cell 세척 사건(RFH-ESWR)을 PIC와 BLTC가 결합된 상태로 적으나, SER은 세척 중 BLTC가 PIC와 결합되지 않으며 결합 barrier(DL3-RR5a)는 낙하 사건(RFH-FDPI)에만 적절하고, PSAR의 ESWR 해석이 낡은 예비 설계 정보에 근거한다고 적음 | [PSAR_ch03 §3.7.4.5.1 p.79], [PSAR_ch03 §3.8.5.4.1 p.96], [PSAR_ch03 §3.9.5.3.1 p.116], [SER_KU1_CP §3.6.1.4 p.250], [SER_KU1_CP §3.2.1.3 p.203] | Natrium_DBE_List, Natrium_BDBE_List, Natrium_DBA_List, Natrium_Risk_Significant_LBEs, Natrium_SER_AOO_DBE_Review |
 | C65 | 표기 차이 묶음: (1) `ASME/ANS RA-S-1.4-2021` 승인을 SER은 "endorses, with clarifications", RG 1.247은 "with exceptions"로 적음; (2) DL4-RC6c/d 이름: PSAR "Alternative Shunt Trip on High High IHT level"·"… Low Low IHT level", SER "Alternative shunt trip on high IHT level"·"… low IHT level"(분류는 같음); (3) 누적 위험 목표: RG 1.253은 세 목표 모두 "should not exceed", NEI 18-04는 둘째·셋째 목표에 "shall not exceed"(수치는 같음); (4) RAC 성격: PSAR "Inherent - RAC Operation", SER은 열린 유로 유지에 의존하므로 passive로 봄(분류 SR은 같음) | [SER_KU1_CP §3.1.1 p.153], [RG_1.247 §B Reason for Issuance p.9], [PSAR_ch05 Table 5.2-4 p.17], [SER_KU1_CP §5.5 p.354], [RG_1.253 §5 p.18], [NEI_18-04 §3.2.2 Task 7b p.24], [PSAR_ch05 Table 5.2-2 p.9], [SER_KU1_CP §1.3.3.3.2 p.43] | Natrium_SER_PRA_Review, Natrium_SER_PDC_SR_NSRST_Review, Cumulative_Risk_Targets, Natrium_SER_Facility_Overview_Review |
 | C66 | PRA 범위: RG 1.247 C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상("must always") 개발하고 모든 POS를 다루라고 적으나, RG 1.253 A.3.3은 CP PRA logic model의 최소 범위를 출력 운전 POS의 원자로 내부 사건 hazard group으로 두고 A.3.7은 DBHL credit을 허용함. RG 1.253은 수용성을 RG 1.247 Section C로 정의하고 OL 신청 PRA가 모든 원천·hazard·POS를 다루도록 요구하므로 적용 단계의 차이로 읽히나, "must always"를 CP 단계에 맞추어 조정하는 문장은 없음 | [RG_1.247 §C.1.1 p.15], [RG_1.253 §A.3.3 p.33], [RG_1.253 §A.3.7 p.33], [RG_1.253 §A.1 p.29], [RG_1.253 §A.7.1 p.35] | RG_1247_PRA_Acceptability_Framework, RG_1253_CP_PRA_Acceptability |
+| C67 | 피동 NSRST SSC 저하 성능의 DBA credit: SER은 사업자가 일부 피동 NSRST SSC를 저하 성능으로 DBA 선원항 해석에 포함한 것을 합리적이라고 보았으나(수용성은 OL에서 판단), NEI 18-04 §4.1·Table 3-1과 RG 1.233은 DBA 완화에 SR SSC만 쓰인다고 적는다 | [SER_KU1_CP §5.1 p.339], [NEI_18-04 §4.1 Tasks 4A and 5A p.44], [NEI_18-04 Table 3-1 p.14], [RG_1.233 §C.1 p.11] | SSC_Safety_Classification |
+| C68 | SER 안의 소유 관계: §2.2.2는 TerraPower를 USO의 100 percent 자회사로, §1.7·§8.2.1은 USO를 TerraPower의 wholly owned 자회사로 적는다(관련 노트는 §2.2.2 문장을 인용하지 않음) | [SER_KU1_CP §2.2.2 p.58], [SER_KU1_CP §1.7 p.49] | (없음) |
+| C69 | SER §3.7.1 안에서 같은 분류 기준을 "mean"과 "50th percentile"로 함께 적는다 | [SER_KU1_CP §3.7.1 p.261] | (없음) |
+| C70 | NEI 18-04 §5.3 Task 1이 가리키는 "Task 14"가 해당 내용을 담은 과업(Task 16)과 다르다 | [NEI_18-04 §5.3 Task 1 p.63], [NEI_18-04 §5.3 Task 14 p.65], [NEI_18-04 §5.3 Task 16 p.65] | (없음) |
+| C71 | NEI 18-04 용어집의 Risk-Informed 항목 출처 칸이 Performance-Based 항목의 출처 문구를 되풀이한다 | [NEI_18-04 §6 p.90] | (없음) |
+| C72 | NEI 18-04 Task 7c "within 1%"와 §4.2.2 "exceeds 1%"의 risk significance 문턱 표현; §4.2.2의 수치 문턱과 SER §5.5의 정리로 해소 | [NEI_18-04 §3.2.2 Task 7c p.24], [NEI_18-04 §4.2.2 p.47], [SER_KU1_CP §5.5 p.353] | LBE_Risk_Significance |
+| C73 | SER Table 1.8-3에 `10 CFR 50.34(f)(2)(xvii)` 행이 두 번 나온다(둘째 행은 In-plant Radiation Monitoring) | [SER_KU1_CP Table 1.8-3 p.51-54] | (없음) |
 
-## 판정 (2026-09-16 사용자 결정)
+## 판정 (2026-10-17 사용자 결정)
+
+원칙:
+1. 권위 문서는 NRC 문서와 RG 1.233이 승인한 NEI 18-04이다. 신청자 문서(`PSAR`)가 권위 문서와 다르면 **규정 불일치**로 보고, 어떤 권위 조항과 어떻게 다른지(SER 판단이 있으면 그 판단까지) 노트에 메모를 달아 해소한다.
+2. 신청자 문서끼리만 다르고 판정할 권위 조항이 없으면 **신청자 문서 내부 불일치**로 메모를 달아 해소한다.
+3. 권위 문서끼리 표기·제목·교차참조만 다르고 요건 내용이 같으면 **기록만** 하고 disputed로 두지 않는다.
+4. RG가 NEI 18-04를 승인하며 붙인 명확화는 NEI 18-04 문장보다 우선한다(**규정으로 해소**).
+5. SER이 RG·NEI 문언의 모호함을 해석한 경우는 SER 기준으로 해소하고, 문언과 다른 범위를 허용한 경우는 **상위 dispute**로 남긴다.
+
+분류(하위 항목 단위):
+
+| 갈래 | 항목 | 노트 상태 |
+|---|---|---|
+| 상위 dispute | C14-1(SFR-DC 35 단일 고장 문단), C14-6(SFR-DC 55 IHX tubing 경계), C59(SER의 DHP-L1PP-4 credit 기능), C61(RG 1.247의 NEI 20-09 승인 범위), C66(RG 1.247 대 RG 1.253 PRA 범위), C67(피동 NSRST 저하 성능 credit), C68(SER 소유 관계, 관련 노트 없음) | `disputed`: SFR_DC_Residual_Heat_Removal_And_ECC, SFR_DC_Reactor_Containment, Natrium_SER_BDBE_DBA_Review, RG_1247_Standards_Peer_Review_Documentation, RG_1247_PRA_Acceptability_Framework, RG_1253_CP_PRA_Acceptability, SSC_Safety_Classification |
+| 규정으로 해소 | C13-a, C13-b, C13-c, C72, NEI 18-04 disputed 노트의 평균/95th 쟁점(BDBE 하한: RG 1.233 C.1.b; risk-significant LBE: RG 1.233 C.1; risk-significant SSC: SER Table 5.1-1의 RSF 평균·NSRST 95th 정리), DBE 범위에 걸치는 AOO·BDBE의 DBA 지정(SER §3.4.1) | 해제: LBE_Frequency_Categories, LBE_Risk_Significance, Risk_Importance_Measures, Risk_Significant_SSC, RG_1233_LBE_Staff_Position, RG_1233_SSC_Classification_Staff_Position |
+| 규정 불일치 | C3, C6, C7-b, C11(a–d), C12(a–e), C15, C16, C21, C23, C26(d), C27, C31(a), C32, C33, C35, C36, C38, C40, C42, C44, C45, C49–C51, C54–C56, C58, C62, C63, C64, C65(2), C65(4), OQE 포함(SER 수용) | 해제, 노트 해설에 규정 대비 메모 |
+| 신청자 문서 내부 불일치 | C1, C2, C4, C5(SER은 RG 1.253 C.5.a에 맞다고 판단), C8, C9(SER은 Chapter 6·7과 같음), C10, C20(SER은 Chapter 5와 같음), C26(c)(SER은 PDC 1·2·4와 정합 판단), C30(SER은 Chapter 7 논리로 판단), C18, C19, C22, C24, C25, C26(a, b), C28, C29, C31(b–d), C34, C39, C41, C46, C47, C48, C52·C53(SER은 이탈 없다고 판단; PSAR Table 1.4-1 표시와 본문 차이) | 해제, 노트 해설에 메모 |
+| 규정과 일치 | C7-c, C43(SER은 NSRST 구조물 극한 하중조합에 ACI 349-13 적용으로 읽음) | 해제, 노트 해설에 메모 |
+| 권위 문서 표기 차이(기록만) | C7-a, C14-2, C14-3, C14-5, C14-7, C17, C37, C57, C60, C65(1), C65(3), C69, C70, C71, C73 | disputed 아님 |
+| 판단 보류 | C14-4(차이의 내용이 기록에 없음) | 변경 없음 |
+
+결과: disputed 노트는 42개에서 7개로 줄었다. 해제한 노트와 새로 disputed로 둔 노트의 해설에는 `**규정 대비 메모(항목, 갈래).**` 문단을 달고 근거 인용을 원문 사실 절에 더했다.
+
+## 이전 판정 (2026-09-16, 2026-10-17 판정으로 대체됨)
+
 
 세 갈래로 나누어 판정했다. 기준은 "독자가 이 차이를 모르고 노트를 쓰면 잘못된 결론에 이르는가"이다.
 
@@ -85,5 +116,5 @@
 
 갈래 A의 노트는 모순이 해소될 새 원문이 들어오기 전까지 `disputed`를 유지한다.
 
-**판정 대기 (2026-10-16 기준)**: C58–C66은 위 판정 뒤에 기록되어 아직 갈래가 정해지지 않았다. C62–C66과 C6·C7·C9·C12·C13·C27·C44·C61의 보강은 2026-10-16 의미 점검(`meta/lint/2026-10-16.md`)에서 나왔다. 관련 노트의 `status`는 바꾸지 않았다.
+**판정 대기 (2026-10-16 기준, 2026-10-17 판정으로 해소)**: C58–C66은 위 판정 뒤에 기록되었다. C62–C66과 C6·C7·C9·C12·C13·C27·C44·C61의 보강은 2026-10-16 의미 점검(`meta/lint/2026-10-16.md`)에서 나왔다. 관련 노트의 `status`는 바꾸지 않았다.
 

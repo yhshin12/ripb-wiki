@@ -3,8 +3,11 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch01
-status: disputed
-verified: 2026-09-16
+- PSAR_ch06
+- SER_KU1_CP
+- PSAR_ch11
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -35,6 +38,26 @@ terms_pending: []
 - "a different type of reactor design" [PSAR_ch01 §1.4.1 p.66]
 - "an SSC that is not part of the design, but for which a substantively equivalent function is served by other SSCs within the design" [PSAR_ch01 §1.4.1 p.66]
 - "RGs that have been designated applicable but do not have a conformance designation are RGs that are evaluated to be not applicable to the design and construction phase of the project and will be addressed at the operating license (OL) stage." [PSAR_ch01 §1.4.1 p.66]
+
+| RG | Revision | Title | Conformance | 출처 |
+|---|---|---|---|---|
+| RG 1.76 | Rev. 1 | Design Basis Tornado for Nuclear Power Plants | Full | [PSAR_ch06 Table 6.4-4 p.59-60] |
+
+- "RG 1.76, “Design-Basis Tornado and Tornado Missiles for Nuclear Power Plants,” Revision 1." [PSAR_ch06 §6.4.2.2.3 p.28]
+- "RG 1.76, “Design-Basis Tornado and Tornado Missiles for Nuclear Power Plants,” Rev. 1 (ML070360253);" [SER_KU1_CP §6.1 p.361]
+- "The PSAR does not state that the applicant plans to deviate from the 10 CFR 50.160 requirements or the guidance of RG 1.242." [SER_KU1_CP §11.3 p.669]
+- "and the associated RG 1.242, “Performance-Based Emergency Preparedness for Small Modular Reactors, Non-Light-Water Reactors, and Non-Power Production or Utilization Facilities,” Rev. 0" [SER_KU1_CP §11.3 p.669]
+- "RG 1.242, section C, “Staff Regulatory Guidance,” guidance item 2.c, which states that the analysis of the emergency planning zone (EPZ) size required in 10 CFR 50.33(g)(2) may be preliminary for CPs consistent with the preliminary design of the facility as described in the PSAR." [SER_KU1_CP §11.3 p.670]
+- "The emergency preparedness plan will be provided at the operating license stage." [PSAR_ch11 §11.3 p.51]
+- "A performance-based emergency preparedness plan and emergency preparedness (EP) program will be developed utilizing the requirements in 10 CFR 50.160 and the guidance in Regulatory Guide (RG) 1.242, “Performance Based Emergency Preparedness for Small Modular Reactors, Non-Light-Water Reactors, and Non-Power Production or Utilization Facilities,” Revision 0." [PSAR_ch11 §11.3 p.51]
+- "Additionally, PSAR section 11.1.5.1 states that the qualifications of managers, supervisors, operators, technicians, and other support staff will also meet ANSI/ANS 3.1-2014." [SER_KU1_CP §11.1.1.7 p.662]
+- "The staff determined that the PSAR proposes education and experience requirements for key personnel that are consistent with the guidance of RG 1.8 and therefore that the application is consistent with criterion 11.2(g)." [SER_KU1_CP §11.1.1.7 p.662]
+- "Radiation protection training is addressed by PSAR table 1.4-1, which states that conformance with RG 8.27, “Radiation Protection Training for Personnel at Light-Water-Cooled Nuclear Power Plants,” Rev. 0 (ML003739628), and RG 1.8, “Qualification and Training of Personnel for Nuclear Power Plants” Rev. 4 (ML19101A395), will be addressed at the OL stage." [SER_KU1_CP §10.1.1 p.647]
+- "PSAR section 11.1.5.3 states that the rules of practice for control room activities, as described by administrative procedures, incorporate the guidance of RG 1.114." [SER_KU1_CP §11.1.1.9 p.662]
+- "The staff determined that the applicant has described preliminary plans for licensed operator staffing to the extent warranted for a PSAR as required under 10 CFR 50.34(a)(6) and that further review of compliance with the staffing requirements of 50.54(m) would occur as part of the staff’s review of a future OL application." [SER_KU1_CP §11.1.1.9 p.663]
+- "Section 11.6.1 in the PSAR states that an FFD program consistent with NEI 06-06, “Fitness for Duty Program Guidance for New Nuclear Power Plant Construction Sites,” Rev. 6 (ML13093A340), as endorsed, with an exception, by RG 5.84, “Fitness-for-Duty Programs at New Reactor Construction Sites” Rev. 0 (ML15083A412), would be implemented prior to commencing construction of SR and security-related SSCs." [SER_KU1_CP §11.6.1.6 p.707]
+- "RG 5.84 endorsed the methodology discussed in NEI 06-06 with an exception, as acceptable for implementing an FFD program at a new reactor construction site that meets the requirements of Subpart K of 10 CFR Part 26 for the worker population identified in 10 CFR 26.4(f)." [SER_KU1_CP §11.6.1.6 p.707]
+- "The staff therefore determined that the FFD program description contained in PSAR section 11.6.1 defines adequate FFD program measures for the worker population identified in 10 CFR 26.4(f)." [SER_KU1_CP §11.6.1.6 p.707]
 
 | Guide Number | Title | Revision | Conformance Status | Comments | 출처 |
 |---|---|---|---|---|---|
@@ -228,6 +251,12 @@ terms_pending: []
 표에서 되풀이되는 Partial Conformance의 근거는 크게 셋이다. 첫째, 설계가 non-light water reactor여서 지침의 문언이 light water reactor를 전제하는 경우다. 둘째, 설계가 `RG 1.29`의 seismic Category I 정의와 `RG 1.26`의 Quality Group 정의를 채택하지 않아 그 표현을 그대로 적용할 수 없는 경우다. `RG 1.29` 행은 seismic Category I SSC%%t:SSC%%에 대한 요건을 대신 Safety-Related%%t:SR%% SSC%%t:SSC%%에 적용한다고 적으며, 상호작용 방지와 접속면 동적해석, 품질 요건도 같은 방식으로 옮긴다고 적는다. 셋째, 특정 하위 지침만 예외인 경우다.
 
 이 표는 RG%%t:RG%% 부합을 한 자리에 모은 자료이므로 개별 RG%%t:RG%% 노트와 함께 보아야 한다. 표 안의 `; `는 원문 구두점이 아니라 정제 파이프라인(`scripts/refclean/tables.py`)이 셀 안의 열거 줄바꿈을 대신해 넣은 편집 구분자다.
+
+**규정 대비 메모(C45, 규정 불일치).** `SER`은 RG%%t:RG%% 1.76 Rev. 1의 제목을 "Design-Basis Tornado and Tornado Missiles for Nuclear Power Plants"로 적는다. `PSAR` Chapter 6 §6.4.2.2.3과 Chapter 1 Table 1.4-1은 같은 제목을 적고, Chapter 6 Table 6.4-4만 "Design Basis Tornado for Nuclear Power Plants"로 적는다. 따라서 RG%%t:RG%% 1.76 제목은 Table 6.4-4에서만 `SER`과 다르다.
+
+**규정 대비 메모(C52, 신청자 문서 내부 불일치).** `PSAR` Table 1.4-1은 RG%%t:RG%% 1.242를 Full Conformance로 표시하고, Chapter 11은 emergency preparedness 계획을 operating license%%t:OL%% 단계에서 제공한다고 적으며, §1.4.1은 OL%%t:OL%% 단계에서 다룰 RG%%t:RG%%에는 부합 표시를 두지 않는다고 적는다. `SER`은 RG%%t:RG%% 1.242 지침 항목 2.c가 construction permit%%t:CP%% 단계의 예비 emergency planning zone%%t:EPZ%% 크기 분석을 허용한다고 보고 그 지침으로 CP%%t:CP%% 신청을 평가했으며, `PSAR`이 이 지침에서 벗어나겠다고 적지 않았다고 기록했다. 따라서 권위 문서 기준으로 Full Conformance 표시와 계획의 OL%%t:OL%% 단계 제출은 양립하고, 차이는 Table 1.4-1의 표시와 §1.4.1 규칙 사이에 있으며, RG%%t:RG%% 1.242 제목도 `SER`이 "Performance-Based"와 "Non-Light-Water Reactors"로 적는 데 비해 Table 1.4-1은 "Non-Light-Water-Reactors", Chapter 11은 "Performance Based"로 각각 한 곳씩 다르다.
+
+**규정 대비 메모(C53, 신청자 문서 내부 불일치).** Table 1.4-1은 RG%%t:RG%% 1.8, RG%%t:RG%% 1.114, RG%%t:RG%% 5.84를 설계·건설 단계에 적용하지 않고 OL%%t:OL%% 단계에서 다룬다고 표시한다. `SER`이 기록한 `PSAR` Chapter 11은 인원 자격이 `ANSI/ANS 3.1-2014`를 만족하고 주제어실 운영 규칙이 RG%%t:RG%% 1.114 지침을 반영하며 RG%%t:RG%% 5.84가 승인한 NEI 06-06에 따른 `FFD` 프로그램을 건설 전에 이행한다고 적는다. `SER`은 핵심 인원 요건이 RG%%t:RG%% 1.8 지침과 일관되고 운전원 인력 계획이 `PSAR`에 필요한 범위로 기술되었다고 판단하며, 방사선방호 훈련과 관련해서는 Table 1.4-1의 RG%%t:RG%% 1.8 OL%%t:OL%% 단계 표시를 기록하고, `FFD` 프로그램 기술은 CP%%t:CP%% 단계에서 적절하다고 판단한다. 따라서 권위 문서 기준으로 Chapter 11 서술은 CP%%t:CP%% 단계 예비 계획으로 수용되고 운전원 인력 요건 부합은 OL%%t:OL%% 단계에서 검토되며, 차이는 Table 1.4-1이 CP%%t:CP%% 단계 약속을 표시하지 않는 데 있다.
 
 ## 관련 문서
 - [[Natrium_Licensing_Basis_Methodology]]

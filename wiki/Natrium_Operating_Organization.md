@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch11
 - PSAR_ch01
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -87,6 +88,15 @@ terms_pending: []
 - "11.1-1 ANSI/ANS-3.1-2014, “Selection, Qualification, and Training of Personnel for Nuclear Power Plants,” November 20, 2014." [PSAR_ch11 §11.1 References p.14]
 - "11.1-2 ANSI/ANS-3.2-2012 (R2017), “Managerial, Administrative, and Quality Assurance Controls for the Operational Phase of Nuclear Power Plant,” April 4, 2017." [PSAR_ch11 §11.1 References p.14]
 - "delineation of responsibility; • description of organization; • unit staff qualifications" [PSAR_ch11 Table 11.5-1 p.67]
+- "The staff determined that the PSAR proposes education and experience requirements for key personnel that are consistent with the guidance of RG 1.8 and therefore that the application is consistent with criterion 11.2(g)." [SER_KU1_CP §11.1.1.7 p.662]
+- "Radiation protection training is addressed by PSAR table 1.4-1, which states that conformance with RG 8.27, “Radiation Protection Training for Personnel at Light-Water-Cooled Nuclear Power Plants,” Rev. 0 (ML003739628), and RG 1.8, “Qualification and Training of Personnel for Nuclear Power Plants” Rev. 4 (ML19101A395), will be addressed at the OL stage." [SER_KU1_CP §10.1.1 p.647]
+- "PSAR section 11.1.5.3 states that the rules of practice for control room activities, as described by administrative procedures, incorporate the guidance of RG 1.114." [SER_KU1_CP §11.1.1.9 p.662]
+- "The staff determined that the applicant has described preliminary plans for licensed operator staffing to the extent warranted for a PSAR as required under 10 CFR 50.34(a)(6) and that further review of compliance with the staffing requirements of 50.54(m) would occur as part of the staff’s review of a future OL application." [SER_KU1_CP §11.1.1.9 p.663]
+
+| Guide Number | Title | Revision | Conformance Status | 출처 |
+|---|---|---|---|---|
+| 1.8 | Qualification and Training of Personnel for Nuclear Power Plants | 4 | The guidance is not applicable to the design and construction phase of the project and will be addressed at the OL stage. | [PSAR_ch01 Table 1.4-1 p.69] |
+| 1.114 | Guidance to Operators at the Controls and to Senior Operators in the Control Room of a Nuclear Power Unit | 3 | The guidance is not applicable to the design and construction phase of the project and will be addressed at the OL stage. | [PSAR_ch01 Table 1.4-1 p.69] |
 
 - "Figure 11.1-4 Operating Organization and Technical Support" [PSAR_ch11 Figure 11.1-4 p.18]
 
@@ -104,6 +114,8 @@ terms_pending: []
 운전 수행에서 부지 운전은 Main Control Room(`MCR`)으로 통제되고 일부 활동은 online/outage control center(`OCC`)에서 조정·발행된다. 정비 활동, surveillance, safety-significant Structures, Systems, and Components%%t:SSC%%의 제거·복구는 `MCR`의 Control Room Supervisor 승인 없이 시작할 수 없다(`may not`). 제어실 활동의 rules of practice는 `Regulatory Guide 1.114, Revision 3` 지침을 반영해 운전원과 Control Room Supervisor의 행동, surveillance area 정의와 범위, 교대 요건을 다룬다. `10 CFR 50.54`에 따라 반응도 제어는 면허 운전원과 선임 운전원만 조작하고, 반응도나 출력에 영향을 줄 수 있는 다른 장치는 제어 위치의 운전원이나 Control Room Supervisor의 인지와 동의가 있어야(`shall`) 조작된다. 원문은 운전원과 정비 기술자가 승인된 절차에 따라 운전하고 technical specifications를 준수할 것으로 기대한다고 적으며, `10 CFR 50.54(k)`와 `(m)`의 인원 요건은 OL%%t:OL%% 단계에서 제공될 예정이다.
 
 `PSAR` Chapter 11 `Table 11.5-1`은 technical specifications 행정 통제 후보로 `description of organization`과 `unit staff qualifications`를 적고, Chapter 1 `Table 1.4-1`은 `RG 1.8`을 설계·건설 단계에 적용하지 않고 OL%%t:OL%% 단계에서 다룬다고 적는다.
+
+**규정 대비 메모(C53, 신청자 문서 내부 불일치).** `PSAR` Chapter 11은 운전 조직 인원이 regulatory guide%%t:RG%% 1.8이 승인한 `ANSI/ANS-3.1-2014` 자격 요건을 만족하고 주제어실 운영 규칙이 RG%%t:RG%% 1.114 지침을 반영한다고 적지만, Chapter 1 Table 1.4-1은 두 RG%%t:RG%%를 설계·건설 단계에 적용하지 않고 OL%%t:OL%% 단계에서 다룬다고 표시한다. `SER`은 Chapter 11의 핵심 인원 학력·경력 요건이 RG%%t:RG%% 1.8 지침과 일관된다고 판단하고 운전원 인력 계획이 `PSAR`에 필요한 범위로 기술되었다고 보면서, 방사선방호 훈련과 관련해서는 Table 1.4-1의 RG%%t:RG%% 1.8 OL%%t:OL%% 단계 표시를 기록한다. 따라서 권위 문서 기준으로 Chapter 11 서술은 construction permit%%t:CP%% 단계 예비 계획으로 수용되고 운전원 인력 요건 부합은 OL%%t:OL%% 단계에서 검토되며, 차이는 Table 1.4-1이 CP%%t:CP%% 단계 약속을 표시하지 않는 데 있다.
 
 ## 관련 문서
 - [[Natrium_Project_Organization]]

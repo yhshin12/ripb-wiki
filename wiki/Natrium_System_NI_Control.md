@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch07
 - PSAR_ch01
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -61,6 +62,11 @@ terms_pending: []
 - "The safety-significant PSFs are identified as safety-related (SR) functions or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.6.2.2.1 p.254]
 - "The NIC supports the following safety-significant functions, which are designated as NSRST to indicate the safety classification of NIC components relied upon to perform the function:" [PSAR_ch07 §7.6.2.2.1 p.254]
 - "The AMC is a digital NIC sub-system with allocated plant functions supporting DL2, DL4, and DL5, including the following DL4 NSRST functions:" [PSAR_ch07 §7.6.2.2.1 p.254]
+- "RMS components that are classified as NSRST fully conform to RG 1.180, Revision 4." [PSAR_ch07 §7.6.6.2 p.307]
+- "RG 1.180, Rev. 2." [SER_KU1_CP §7.6.6 p.576]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the NIC:" [SER_KU1_CP §7.6.2 p.546]
+- "RG 1.180, “Guidelines for Evaluating Electromagnetic and Radio-Frequency Interference in Safety-Related Instrumentation and Control Systems,” Rev. 2 (ML19175A044);" [SER_KU1_CP §7.6.2 p.547]
+- "CTC Coolant temperature monitoring and control system" [SER_KU1_CP Abbreviations and Acronyms p.11]
 
 | Function ID | Function Description | AMC Functional Support | 출처 |
 |---|---|---|---|
@@ -202,6 +208,10 @@ principal design criteria%%t:PDC%% 2에 따라 NSRST%%t:NSRST%% `NIC` Structures
 `NIC`의 표시·제어 기능은 NST%%t:NST%%이고, 정보 표시가 NSRST%%t:NSRST%% 기능이면 별도의 NSRST%%t:NSRST%% 표시 장치를, 수동 제어가 NSRST%%t:NSRST%% 기능이면 hardwired switch를 쓴다. `NIC`는 `IEEE 497-2016`의 Type D·E `PAM` 변수를 수집·표시하고, 다른 종류의 `PAM` 변수는 credit되는 표시가 `NIC` 범위 밖이지만 `RPS`가 보내 모두 `NIC`에 표시된다. Safety Parameter Display System은 `NIC` `HSI`에서 볼 수 있는 화면 모음이며 독립 계통이 아니다.
 
 `PSAR` Chapter 1과 Chapter 7 §7.6.2.1은 이 하위 계통을 `Coolant Temperature Monitoring and Control System (CTC)`로 적는 반면 `Table 7.6.1-1`은 `Nuclear Island Coolant Temperature Control System`으로 적는다.
+
+**규정 대비 메모(C25(d), 신청자 문서 내부 불일치).** `CTC` 이름이 `PSAR` Chapter 1과 Chapter 7 §7.6.2.1에서는 Coolant Temperature Monitoring and Control System, Chapter 7 Table 7.6.1-1에서는 Nuclear Island Coolant Temperature Control System이다. `SER` 약어표는 Chapter 1과 같은 이름을 쓰지만, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다.
+
+**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.2.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

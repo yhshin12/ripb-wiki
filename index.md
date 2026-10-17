@@ -37,15 +37,15 @@
 - [[Non_LWR_PRA_Regulatory_Role]] — NEI 18-04는 비경수형원전(non-light-water reactor)에 대해 현행 10 CFR Part 52 요건과 Part 50 정책을 넘는 PRA 역할을 둔다.
 - [[Principal_Design_Criteria_Non_LWR]] — 이 NRC 지침은 10 CFR 50 Appendix A의 general design criteria를 비경수형원전(non-light-water reactor) 설계에 맞게 조정해 principal design criteria를 개발하는 방법을 제시한다.
 - [[RG_1233_DID_Staff_Position]] — 직원 입장 C.3은 NEI 18-04가 plant capability와 programmatic controls로 제공되는 심층방어(Defense-in-Depth) 적절성을 평가하는 수용 가능한 방법이라고 보며, 인허가 발급 뒤의 변경 관리 과정에 대해서는 판단하지 않는다는 명확화 하나만 둔다.
-- [[RG_1233_LBE_Staff_Position]] — 직원 입장 C.1은 NEI 18-04가 사건을 식별·분류하는 수용 가능한 방법이라고 보고 Licensing Basis Event 선정에 명확화를 붙인다. (disputed)
-- [[RG_1233_SSC_Classification_Staff_Position]] — 직원 입장 C.2는 NEI 18-04가 비경수형원전(non-light-water reactor)의 Structures, Systems, and Components를 Safety-Related, Non-Safety-Related with Special Treatment, special treatment가 없는 비안전 등급으로 분류하는 수용 가능한 방법이라고 본다. (disputed)
+- [[RG_1233_LBE_Staff_Position]] — 직원 입장 C.1은 NEI 18-04가 사건을 식별·분류하는 수용 가능한 방법이라고 보고 Licensing Basis Event 선정에 명확화를 붙인다.
+- [[RG_1233_SSC_Classification_Staff_Position]] — 직원 입장 C.2는 NEI 18-04가 비경수형원전(non-light-water reactor)의 Structures, Systems, and Components를 Safety-Related, Non-Safety-Related with Special Treatment, special treatment가 없는 비안전 등급으로 분류하는 수용 가능한 방법이라고 본다.
 - [[RG_1247_Appendix_A_Staff_Positions]] — `RG 1.247` 부록 A는 `ASME/ANS RA-S-1.4-2021`의 요건마다 "no objection", "no objection with clarification", "no objection subject to the following qualification" 가운데 하나로 staff 입장을 정하고, 표준의 nonmandatory appendix는 승인하지 않는다.
 - [[RG_1247_Hazard_List]] — `RG 1.247` 부록 B는 PRA가 넓은 범위의 hazard를 체계적으로 조사해 중요한 위험 기여 요인이 빠지지 않게 하도록, 고려할 hazard 목록(Table B-1)과 hazard의 원인·조건 목록(Table B-2)을 제시한다.
-- [[RG_1247_PRA_Acceptability_Framework]] — 시험 사용 지침인 `RG 1.247`은 신청을 뒷받침하는 비경수형원전(non-light-water reactor) PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 한 가지 수용 가능한 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다(원문 일부는 peer review 지침을 예외와 함께 승인한다고 적는다).
+- [[RG_1247_PRA_Acceptability_Framework]] — 시험 사용 지침인 `RG 1.247`은 신청을 뒷받침하는 비경수형원전(non-light-water reactor) PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 한 가지 수용 가능한 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다(원문 일부는 peer review 지침을 예외와 함께 승인한다고 적는다). (disputed)
 - [[RG_1247_PRA_Elements_Hazards]] — `RG 1.247` C.1.3.8–C.1.3.14는 내부 침수, 내부 화재, 지진, hazard 스크리닝, 강풍, 외부 침수, other hazards PRA 요소의 목적과 특성을 정한다.
 - [[RG_1247_PRA_Elements_Internal_Events]] — `RG 1.247` C.1.3은 모든 방사성 원천, hazard, Plant Operating State, 분석 수준을 다루는 비경수형원전(non-light-water reactor) PRA에 필요한 요소를 정하고, 하나라도 빠진 PRA는 완전하지 않다고 본다.
-- [[RG_1247_Standards_Peer_Review_Documentation]] — 직원 입장 C.2–C.4는 NRC가 승인한 national consensus PRA 표준을 쓰고 승인된 절차로 peer review를 받는 것을 PRA 수용성을 보이는 한 가지 방법으로 두고, capability category, peer review 팀 구성과 판정, newly developed method의 처리, 신청서의 PRA 정보와 문서화 요건을 정한다.
-- [[RG_1253_CP_PRA_Acceptability]] — `RG 1.253` 부록 A는 Licensing Modernization Project 방법론에 근거한 비경수형원전(non-light-water reactor) construction permit 신청에서 PRA(`CP PRA`)에 대해, 수용 가능한 한 가지 접근으로서 범위, 요소, 상세도, 발전소 표현과 형상 관리, 문서화, 수용성 입증 방법을 제시한다.
+- [[RG_1247_Standards_Peer_Review_Documentation]] — 직원 입장 C.2–C.4는 NRC가 승인한 national consensus PRA 표준을 쓰고 승인된 절차로 peer review를 받는 것을 PRA 수용성을 보이는 한 가지 방법으로 두고, capability category, peer review 팀 구성과 판정, newly developed method의 처리, 신청서의 PRA 정보와 문서화 요건을 정한다. (disputed)
+- [[RG_1253_CP_PRA_Acceptability]] — `RG 1.253` 부록 A는 Licensing Modernization Project 방법론에 근거한 비경수형원전(non-light-water reactor) construction permit 신청에서 PRA(`CP PRA`)에 대해, 수용 가능한 한 가지 접근으로서 범위, 요소, 상세도, 발전소 표현과 형상 관리, 문서화, 수용성 입증 방법을 제시한다. (disputed)
 - [[RG_1253_Integrated_Evaluation_And_SSC_Positions]] — 직원 입장 C.5–C.9는 NEI 21-07의 `SAR` 4–8장 지침을 통합 평가, 안전 기능과 설계 기준, Safety-Related과 Non-Safety-Related with Special Treatment Structures, Systems, and Components, 발전소 프로그램의 작성 방법으로 승인한다.
 - [[RG_1253_Methodology_And_LBE_Positions]] — 직원 입장 C.2–C.4는 NEI 21-07의 `SAR` 1–3장 지침을 승인하면서 명확화와 추가 사항을 붙인다.
 - [[RG_1253_SAR_Content_Endorsement]] — `RG 1.253`은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여, 비경수형원전(non-light-water reactor) 인허가 신청서 `SAR` 일부를 작성하는 수용 가능한 방법으로 승인한다.
@@ -58,9 +58,9 @@
 - [[SFR_DC_Primary_Coolant_Boundary]] — 기준 30–33은 primary coolant boundary의 품질, 파괴 방지, 검사와 1차 냉각재 재고 유지를 다룬다.
 - [[SFR_DC_Protection_Systems]] — 기준 20–25는 보호 계통의 기능, 신뢰도와 시험 가능성, 독립성, 고장 모드, 제어 계통과의 분리, 반응도 제어 오작동에 대한 요건을 다룬다.
 - [[SFR_DC_Reactivity_Control]] — 기준 26–29는 반응도 제어 계통, 결합 능력, 반응도 한계, Anticipated Operational Occurrence 방호를 다룬다.
-- [[SFR_DC_Reactor_Containment]] — 기준 50–57은 원자로 격납 구조의 설계기준, 경계의 파괴 방지, 누설률 시험, 시험·검사 설비, 격납 관통 배관, primary coolant boundary 관통 배관, 격납 격리, 폐쇄 계통 격리 밸브를 다룬다.
+- [[SFR_DC_Reactor_Containment]] — 기준 50–57은 원자로 격납 구조의 설계기준, 경계의 파괴 방지, 누설률 시험, 시험·검사 설비, 격납 관통 배관, primary coolant boundary 관통 배관, 격납 격리, 폐쇄 계통 격리 밸브를 다룬다. (disputed)
 - [[SFR_DC_Reactor_Design_And_Coolant_Boundary]] — 기준 10–16은 원자로 설계, 원자로 고유 보호, 출력 진동 억제, 계측·제어, primary coolant boundary, primary coolant system 설계, 격납 설계를 다룬다.
-- [[SFR_DC_Residual_Heat_Removal_And_ECC]] — 기준 34–37은 잔열 제거, 비상 노심 냉각, 비상 노심 냉각 계통의 검사와 시험을 다룬다.
+- [[SFR_DC_Residual_Heat_Removal_And_ECC]] — 기준 34–37은 잔열 제거, 비상 노심 냉각, 비상 노심 냉각 계통의 검사와 시험을 다룬다. (disputed)
 - [[SFR_DC_Sodium_Specific_Criteria]] — 기준 72–74는 general design criteria에 대응 조문이 없는 추가 기준으로, 소듐 가열 계통, 소듐 누설 탐지와 소듐-공기·소듐-콘크리트 반응의 방지·완화, 소듐-물 반응의 방지·완화를 다룬다.
 - [[SFR_DC_Structural_And_Equipment_Cooling]] — 기준 44–46은 경수로의 cooling water 기준을 structural and equipment cooling으로 바꾼 기준으로, important to safety 구조물·계통·기기의 열을 최종 열침원으로 전달하는 계통과 그 검사·시험을 다룬다.
 - [[Single_Failure_Criterion_Non_LWR]] — NEI 18-04는 신형 비경수형원전(non-light-water reactor)이 고유·피동·능동 설계 특성의 다양한 조합과 심층방어(Defense-in-Depth) 적절성 평가를 거치므로 single-failure criterion 적용이 필요 없다고 설명한다.
@@ -76,9 +76,9 @@
 - [[Event_Sequence_Family]] — Licensing Basis Event는 PRA에 모델링된 개별 Event Sequence를 비슷한 특성으로 묶은 Event Sequence Family로 정의된다.
 - [[F_C_Target]] — Frequency-Consequence Target은 빈도–결말 도표 위의 기준선이며, 개별 Licensing Basis Event의 risk significance와 risk margin을 평가하는 데 쓰인다.
 - [[Integrated_Decision_Making_Process]] — integrated decision-making process는 심층방어(Defense-in-Depth) 적절성을 평가하는 과정으로, 설계 관리 과정의 일부로 수행하거나 운영 단계 검토처럼 상설 Integrated Decision-Making Process Panel로 수행할 수 있다.
-- [[LBE_Frequency_Categories]] — Anticipated Operational Occurrence, Design Basis Event, Beyond Design Basis Event는 평균 빈도 구간으로 구분된다. (disputed)
+- [[LBE_Frequency_Categories]] — Anticipated Operational Occurrence, Design Basis Event, Beyond Design Basis Event는 평균 빈도 구간으로 구분된다.
 - [[LBE_Layers_Of_Defense_Review]] — 심층방어(Defense-in-Depth) 평가의 중심 요소 가운데 하나는 integrated decision-making process가 Licensing Basis Event를 Layers of Defense와 체계적으로 대조하는 검토이다.
-- [[LBE_Risk_Significance]] — Licensing Basis Event는 평균 빈도로 범주를 정하되, 빈도 불확실도 구간이 범주 경계에 걸치면 양쪽 범주에서 모두 평가한다. (disputed)
+- [[LBE_Risk_Significance]] — Licensing Basis Event는 평균 빈도로 범주를 정하되, 빈도 불확실도 구간이 범주 경계에 걸치면 양쪽 범주에서 모두 평가한다.
 - [[LBE_Selection_Process]] — Licensing Basis Event 선정 절차는 Task 1–10으로 이루어진 논리도로 제시되며, 과제에 정해진 순서가 없고 설계가 진행되는 동안 반복된다.
 - [[Layers_Of_Defense]] — NEI 18-04가 인용하는 NRC 용어집은 심층방어(Defense-in-Depth)의 핵심을 여러 독립적이고 중복된 Layers of Defense를 만들어 어느 한 layer도 배타적으로 의존되지 않게 하는 것으로 적는다.
 - [[Licensing_Basis_Event]] — Licensing Basis Event 정의는 설계와 인허가 기준에서 고려하는 Event Sequence 전체를 가리킨다.
@@ -89,11 +89,11 @@
 - [[Programmatic_DID]] — Programmatic Defense-in-Depth의 적절성은 정량 평가가 가능한 발전소 능력과 달리, integrated decision-making process가 표 5-5의 attribute와 표 5-6의 평가 고려 사항을 써서 공학적 판단으로 정한다.
 - [[Required_Functional_Design_Criteria]] — Required Functional Design Criteria는 Required Safety Function을 만족하는 데 필요충분한, 원자로 설계에 고유한 기능 기준이다.
 - [[Required_Safety_Function]] — Required Safety Function은 Design Basis Event의 결말이나 결말이 큰 Beyond Design Basis Event의 빈도를 Frequency-Consequence Target 안에 두기 위해 반드시 수행되어야 하는 PRA Safety Function이다.
-- [[Risk_Importance_Measures]] — 표 3-2는 PRA에서 흔히 쓰는 risk importance measure 8가지를 정리한다. (disputed)
-- [[Risk_Significant_SSC]] — Structures, Systems, and Components는 그 기능이 모든 Licensing Basis Event를 Frequency-Consequence Target 안에 두는 데 필요하거나, 세 cumulative risk target 가운데 하나에 한도의 1%를 넘게 기여하면 Risk-Significant SSC로 분류된다. (disputed)
+- [[Risk_Importance_Measures]] — 표 3-2는 PRA에서 흔히 쓰는 risk importance measure 8가지를 정리한다.
+- [[Risk_Significant_SSC]] — Structures, Systems, and Components는 그 기능이 모든 Licensing Basis Event를 Frequency-Consequence Target 안에 두는 데 필요하거나, 세 cumulative risk target 가운데 하나에 한도의 1%를 넘게 기여하면 Risk-Significant SSC로 분류된다.
 - [[SSC_Design_Requirements]] — Structures, Systems, and Components의 설계 요건은 Safety-Related, Non-Safety-Related with Special Treatment, Non-Safety-Related with No Special Treatment 세 범주마다 정해진다.
 - [[SSC_Reliability_And_Capability]] — Structures, Systems, and Components의 신뢰도는 Licensing Basis Event의 빈도를 낮춰 발생을 예방하고, 성공한 SSC 기능은 LBE의 결말 완화를 돕는다.
-- [[SSC_Safety_Classification]] — Structures, Systems, and Components는 PRA에 모델링된 기능을 기준으로 Safety-Related, Non-Safety-Related with Special Treatment, Non-Safety-Related with No Special Treatment 세 범주로 분류된다.
+- [[SSC_Safety_Classification]] — Structures, Systems, and Components는 PRA에 모델링된 기능을 기준으로 Safety-Related, Non-Safety-Related with Special Treatment, Non-Safety-Related with No Special Treatment 세 범주로 분류된다. (disputed)
 - [[Safety_Significant_SSC]] — Safety-Significant SSC는 Safety-Related와 Non-Safety-Related with Special Treatment로 분류된 Structures, Systems, and Components 전체이다.
 - [[Special_Treatment]] — special treatment는 Regulatory Guide 1.201에서 Structures, Systems, and Components가 설계기준 기능을 수행한다는 확신을 통상의 산업 관행 이상으로 높이는 요건으로 정의되며, 이 절차에서는 Licensing Basis Event에 반영된 기능 수행에 대한 합리적 확신을 주는 조치이다.
 - [[TI_RIPB_Process_Overview]] — NEI 18-04는 비경수형원전(non-light-water reactor)의 Licensing Basis Event 선정, Structures, Systems, and Components 안전 분류와 risk-informed special treatment, 심층방어(Defense-in-Depth) 적절성 판단을 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시한다.
@@ -101,26 +101,26 @@
 ## Natrium (natrium)
 
 - [[Natrium_AOO_List]] — Kemmerer Unit 1의 Anticipated Operational Occurrence 요약표는 열한 사건을 적으며 모두 risk-significant가 아니다.
-- [[Natrium_ASME_Component_Loads_And_Limits]] — `PSAR` §6.4.3은 `ASME` Code `Section III`, Division 5 기기·지지물·노심지지구조물의 구조 건전성을 정해진 하중과 하중조합에 대한 service stress limit 만족으로 보증한다고 적는다. (disputed)
+- [[Natrium_ASME_Component_Loads_And_Limits]] — `PSAR` §6.4.3은 `ASME` Code `Section III`, Division 5 기기·지지물·노심지지구조물의 구조 건전성을 정해진 하중과 하중조합에 대한 service stress limit 만족으로 보증한다고 적는다.
 - [[Natrium_ASME_Design_Transients]] — `PSAR` §6.4.3.1.1은 `ASME` Code `Section III`, Division 5 기기 설계에 쓰는 과도를 Licensing Basis Event에서 도출하고, Level A–D Service Loading과 Testing Loading의 정의를 옮긴다.
-- [[Natrium_BDBE_List]] — Kemmerer Unit 1의 Beyond Design Basis Event 요약표는 마흔일곱 사건을 적는다. (disputed)
-- [[Natrium_Building_Fuel_Handling]] — Fuel Handling Building(`FHB`)은 핵연료 반입, 재장전, 저장, 방사성폐기물 계통과 Spent Fuel Pool(`SFP`)을 수용한다. (disputed)
-- [[Natrium_Building_NI_Control]] — Nuclear Island Control Building(`NCB`)의 지표 아래 하부구조는 `RPS`, Primary Sodium Pump·Intermediate Sodium Pump breaker, Non-Safety-Related with Special Treatment 전기 장비, Remote Shutdown Complex를 수용하는 Safety-Related 구조물(`SCS1`)이다. (disputed)
-- [[Natrium_Building_Reactor]] — Reactor Building(`RXB`)은 지표 아래 철근콘크리트·강재 하부구조와 지상 강골조 상부구조로 이루어진다. (disputed)
-- [[Natrium_Building_Reactor_Auxiliary]] — Reactor Auxiliary Building(`RAB`)은 Reactor Building에서 온 중간 소듐의 열을 `NI` Salt System으로 넘기는 구성품을 수용하며, 지표 아래·지상 부분 모두 Non-Safety-Related with Special Treatment이고 지진 분류는 `SCN1`이다. (disputed)
+- [[Natrium_BDBE_List]] — Kemmerer Unit 1의 Beyond Design Basis Event 요약표는 마흔일곱 사건을 적는다.
+- [[Natrium_Building_Fuel_Handling]] — Fuel Handling Building(`FHB`)은 핵연료 반입, 재장전, 저장, 방사성폐기물 계통과 Spent Fuel Pool(`SFP`)을 수용한다.
+- [[Natrium_Building_NI_Control]] — Nuclear Island Control Building(`NCB`)의 지표 아래 하부구조는 `RPS`, Primary Sodium Pump·Intermediate Sodium Pump breaker, Non-Safety-Related with Special Treatment 전기 장비, Remote Shutdown Complex를 수용하는 Safety-Related 구조물(`SCS1`)이다.
+- [[Natrium_Building_Reactor]] — Reactor Building(`RXB`)은 지표 아래 철근콘크리트·강재 하부구조와 지상 강골조 상부구조로 이루어진다.
+- [[Natrium_Building_Reactor_Auxiliary]] — Reactor Auxiliary Building(`RAB`)은 Reactor Building에서 온 중간 소듐의 열을 `NI` Salt System으로 넘기는 구성품을 수용하며, 지표 아래·지상 부분 모두 Non-Safety-Related with Special Treatment이고 지진 분류는 `SCN1`이다.
 - [[Natrium_Codes_Standards]] — `PSAR` §1.4.4는 설계에 쓰는 consensus code와 standard를 Table 1.4-5에 모으고, 표에 실렸다고 해서 그 코드가 전부 적용된다는 뜻은 아니라고 밝힌다.
 - [[Natrium_Control_Heat_Generation]] — Fundamental Safety Function인 controlling heat generation은 노심에 제어봉을 넣어 수행하며, Defense Line에 걸쳐 능동, 피동, 고유 수단을 갖는다.
 - [[Natrium_Control_Heat_Removal]] — Fundamental Safety Function인 controlling heat removal은 Defense Line에 걸쳐 능동, 피동, 고유 수단을 가지며, 서로 다른 두 잔열 제거 계통인 Intermediate Air Cooling System과 Reactor Air Cooling System이 수행한다.
-- [[Natrium_Core_Thermal_Hydraulic_Design]] — `PSAR` Chapter 3 §3.13은 노심 열수력 설계의 범위를 노심에서 primary sodium으로의 열수송으로 한정하고, 평가 모형·코드·해석은 `TP-LIC-RPT-0011`에 넘긴다. (disputed)
-- [[Natrium_DBA_List]] — Kemmerer Unit 1의 Design Basis Accident 요약표는 Design Basis Event에서 대응된 DBA와, DBE 없이 추가된 지진 DBA를 적는다. (disputed)
+- [[Natrium_Core_Thermal_Hydraulic_Design]] — `PSAR` Chapter 3 §3.13은 노심 열수력 설계의 범위를 노심에서 primary sodium으로의 열수송으로 한정하고, 평가 모형·코드·해석은 `TP-LIC-RPT-0011`에 넘긴다.
+- [[Natrium_DBA_List]] — Kemmerer Unit 1의 Design Basis Accident 요약표는 Design Basis Event에서 대응된 DBA와, DBE 없이 추가된 지진 DBA를 적는다.
 - [[Natrium_DBE_List]] — Kemmerer Unit 1의 Design Basis Event 요약표는 스물일곱 사건을 적고, 그중 핵연료 취급 사건 세 건만 risk-significant이다.
 - [[Natrium_DID_Approach]] — 이 보고서는 심층방어(Defense-in-Depth)를 인허가 기준과 적절한 보호의 합리적 보증 입증의 핵심 요소로 두고, plant capability, programmatic capability, 통합 적절성 평가의 세 요소가 baseline을 확립한다고 적는다.
-- [[Natrium_Defense_Lines]] — `PSAR` Chapter 4는 NEI 18-04의 다섯 Layers of Defense를 Defense Line `DL1`–`DL5`로 정의하고, DL 사이의 독립성을 보장하는 다섯 항목 전략을 둔다. (disputed)
+- [[Natrium_Defense_Lines]] — `PSAR` Chapter 4는 NEI 18-04의 다섯 Layers of Defense를 Defense Line `DL1`–`DL5`로 정의하고, DL 사이의 독립성을 보장하는 다섯 항목 전략을 둔다.
 - [[Natrium_Design_Basis_Hazard_Levels]] — `PSAR` Chapter 6은 Safety-Related Structures, Systems, and Components가 SR 기능 수행 능력에 악영향 없이 견디도록 설계되는 재해의 심각도나 강도 규격을 design-basis hazard level로 정의하고, `Table 6.1-1`의 재해(`Wind Loadings`, `Tornadoes`, `External Flooding`, `Internal Flooding`, `Missiles`, `Rupture of Piping`, `Seismic`, `Extreme Winter Precipitation`, `Internal Fire`)에 대한 수준과 근거를 요약한다.
-- [[Natrium_Emergency_Preparedness_EPZ]] — `PSAR` Chapter 11은 `10 CFR 50.160`과 `RG 1.242`에 따른 `performance-based` emergency preparedness 계획을 operating license 단계에 제출한다고 적고, 예비 크기 분석이 Exclusion Area Boundary 안의 plume exposure pathway emergency planning zone을 뒷받침하며, `10 CFR 50.160`과 `RG 1.242`에 따르면 그런 부지에는 부지 밖 계획 활동이 요구되지 않으므로 계획이 주로 부지 내 활동에 초점을 둔다고 적는다. (disputed)
+- [[Natrium_Emergency_Preparedness_EPZ]] — `PSAR` Chapter 11은 `10 CFR 50.160`과 `RG 1.242`에 따른 `performance-based` emergency preparedness 계획을 operating license 단계에 제출한다고 적고, 예비 크기 분석이 Exclusion Area Boundary 안의 plume exposure pathway emergency planning zone을 뒷받침하며, `10 CFR 50.160`과 `RG 1.242`에 따르면 그런 부지에는 부지 밖 계획 활동이 요구되지 않으므로 계획이 주로 부지 내 활동에 초점을 둔다고 적는다.
 - [[Natrium_Emergency_Response_Organization_And_Facilities]] — `PSAR` Chapter 11 §11.3의 하위 절은 비상 대응 체계에 관한 계획을 적으며, 여러 세부를 emergency preparedness plan과 이행 절차에서 정한다고 적는다.
 - [[Natrium_Energy_Island_Systems]] — `PSAR` §1.1.4.2는 2차 계통이 원자로에서 낸 열을 전력으로 바꾸는 경로를 `NSS`–`ESS`–`TSS`–`SGS` 염 순환과 동력 사이클로 서술하고, 뒤따르는 절들이 서술하는 Energy Island 계통과 기능을 모두 Non-Safety-Related with No Special Treatment로 분류한다.
-- [[Natrium_Fuel_Criticality_Safety]] — `PSAR` Chapter 3 §3.14는 principal design criteria 62와 `10 CFR 50.68`(`10 CFR 50.68(b)(7)` 농축도 한계 제외) 부합을 다루며, 핵연료는 Water Pool·Ex-Vessel·In-Vessel Fuel Handling System과 Reactor Enclosure System이 저장·취급한다. (disputed)
+- [[Natrium_Fuel_Criticality_Safety]] — `PSAR` Chapter 3 §3.14는 principal design criteria 62와 `10 CFR 50.68`(`10 CFR 50.68(b)(7)` 농축도 한계 제외) 부합을 다루며, 핵연료는 Water Pool·Ex-Vessel·In-Vessel Fuel Handling System과 Reactor Enclosure System이 저장·취급한다.
 - [[Natrium_Functional_Containment]] — Kemmerer Unit 1은 Fundamental Safety Function 가운데 retaining radionuclides를 다양한 피동 barrier로 이루어진 functional containment 전략으로 수행한다.
 - [[Natrium_Fundamental_Safety_Functions]] — Kemmerer Unit 1의 Fundamental Safety Function은 retaining radionuclides, controlling heat generation, controlling heat removal의 세 가지이며, regulatory dose criteria와 Quantitative Health Objective의 cumulative risk objectives를 만족시킨다.
 - [[Natrium_HFE_OER_Training_HPM]] — `PSAR` Chapter 11 §11.2.2는 operating experience review(`OER`)로 설계 초기에 `HFE` 문제를 반영하고, §11.2.6.2는 systematic approach to training에 따른 훈련·자격 프로그램 개발을, §11.2.7은 운전 단계의 human performance monitoring(`HPM`) 전략을 기술한다.
@@ -132,18 +132,18 @@
 - [[Natrium_Integrated_Risk_Results]] — `PSAR` Chapter 4는 `PSAR`용 PRA 범위의 발전소 통합 위험을 NEI 18-04의 세 cumulative risk target과 비교하고, 현재 PRA 결과의 불확실도 없는 평균값으로 site boundary 선량 초과 빈도 `3.12E-03 per plant-year`, `early fatality` 위험 `0 per plant-year`, `latent cancer` 위험 `3.86E-09 per plant-year`를 보고한다.
 - [[Natrium_Kemmerer_Site]] — `PSAR` §1.2는 Kemmerer Unit 1 부지가 Wyoming주 Lincoln County의 Elkol 7.5-minute quadrangle Zone 12T 안에 있다고 적는다.
 - [[Natrium_LBE_Evaluation_Methods]] — Design Basis Accident는 보수적 경계 변수와 네 방법론 보고서로 평가하고, Anticipated Operational Occurrence·Design Basis Event·Beyond Design Basis Event는 모든 Structures, Systems, and Components의 예상 응답을 고려해 같은 보수적 방법이나 best-estimate plus uncertainty 방법으로 평가한다.
-- [[Natrium_LBE_Risk_Margins]] — `PSAR` Chapter 4의 두 표는 risk-significant Licensing Basis Event의 빈도와 선량이 Frequency-Consequence Target에서 얼마나 떨어져 있는지를 예비(preliminary) 값으로 평균값 기준 세 건과 95th percentile 기준 열한 건에 대해 비로 보인다. (disputed)
-- [[Natrium_LBE_Selection]] — 이 보고서는 regulatory guide 1.233이 승인한 NEI 18-04 방법론을 Licensing Basis Event 선정·평가에 일탈 없이 적용한다고 적는다. (disputed)
+- [[Natrium_LBE_Risk_Margins]] — `PSAR` Chapter 4의 두 표는 risk-significant Licensing Basis Event의 빈도와 선량이 Frequency-Consequence Target에서 얼마나 떨어져 있는지를 예비(preliminary) 값으로 평균값 기준 세 건과 95th percentile 기준 열한 건에 대해 비로 보인다.
+- [[Natrium_LBE_Selection]] — 이 보고서는 regulatory guide 1.233이 승인한 NEI 18-04 방법론을 Licensing Basis Event 선정·평가에 일탈 없이 적용한다고 적는다.
 - [[Natrium_Licensing_Basis_Methodology]] — Kemmerer Unit 1은 10 CFR Part 50에 따른 construction permit 신청이며, 보고서 구성은 regulatory guide 1.233과 content-of-application 방법론 초안 지침을 따른다.
 - [[Natrium_MST_Methodology]] — 이 보고서는 Mechanistic Source Term을 특정 위치에서의 방사성 핵종 방출 특성으로 정의하고, 방출을 release categories로 묶어 시점, 위치, 방출량, 이동 barrier와 메커니즘을 고려해 평가한다.
 - [[Natrium_Major_Structures]] — `PSAR` §1.1.4.4는 Nuclear Island의 다섯 주요 건물(`RXB`, `FHB`, `RAB`, `NCB`, `FAB`)과 지원 시설(E-Module, Energy Island 시설)을 서술하고 건물마다 수용 계통 목록을 적는다.
 - [[Natrium_NI_EI_Interface]] — Kemmerer Unit 1의 Nuclear Island와 Energy Island는 가능한 한 서로 독립적으로 기능하도록 설계되고, 두 island는 열을 옮기고 저장하는 Nuclear Island Salt System으로 물리적으로 연결된다.
 - [[Natrium_NRC_Review_Core_Design]] — 이 발표에서 NRC 직원은 Kemmerer Unit 1 construction permit 신청의 노심 구성품, 핵연료 설계, 노심 설계 검토 결과를 설명한다.
-- [[Natrium_NRC_Review_Reactivity_Control]] — 이 발표에서 NRC 직원은 Kemmerer Unit 1 제어봉 구동 계통의 중력 scram, 전력 상실 scram, driveline scram follow 설계와, 반응도 제어 계통·반응도 한계·primary coolant boundary 관련 principal design criteria 검토 결과를 설명한다. (disputed)
+- [[Natrium_NRC_Review_Reactivity_Control]] — 이 발표에서 NRC 직원은 Kemmerer Unit 1 제어봉 구동 계통의 중력 scram, 전력 상실 scram, driveline scram follow 설계와, 반응도 제어 계통·반응도 한계·primary coolant boundary 관련 principal design criteria 검토 결과를 설명한다.
 - [[Natrium_NSRST_Functions]] — Non-Safety-Related with Special Treatment 기능 표는 PRA Safety Function마다 safety significance 기준, credit되는 사건, 수행 Structures, Systems, and Components를 적는다.
-- [[Natrium_Nuclear_Design]] — `PSAR` Chapter 3 §3.12는 노심 핵설계의 범위를 반응도 계수, 출력 분포, shutdown margin의 결정과 평가로 한정하고 평가 모형·전산 코드·해석은 `TP-LIC-RPT-0011`에 넘긴다. (disputed)
+- [[Natrium_Nuclear_Design]] — `PSAR` Chapter 3 §3.12는 노심 핵설계의 범위를 반응도 계수, 출력 분포, shutdown margin의 결정과 평가로 한정하고 평가 모형·전산 코드·해석은 `TP-LIC-RPT-0011`에 넘긴다.
 - [[Natrium_Operating_Modes]] — `PSAR` Chapter 11은 원자로 운전 모드를 소듐 온도, control rod drive(`CRD`) 상태, 원자로 냉각 방식의 포괄적 조합으로 정의한다.
-- [[Natrium_Operating_Organization]] — `USO`는 사전 운전 시험 전에 Operating Organization을 세우고 `ANSI/ANS-3.1-2014` 자격 요건을 만족하는 인원을 둔다. (disputed)
+- [[Natrium_Operating_Organization]] — `USO`는 사전 운전 시험 전에 Operating Organization을 세우고 `ANSI/ANS-3.1-2014` 자격 요건을 만족하는 인원을 둔다.
 - [[Natrium_PDC_Additional]] — principal design criteria 70–82는 intermediate coolant system, primary coolant와 커버가스(cover gas) 순도, 소듐 가열, 소듐 누설과 반응, 소듐-물 반응, intermediate coolant boundary의 품질·파괴 방지·검사, primary coolant system 접속부, 커버가스 재고, 원자로 용기와 원자로 건물의 구조 설계기준과 검사를 다룬다.
 - [[Natrium_PDC_Development]] — Kemmerer Unit 1의 principal design criteria는 regulatory guide 1.232 Revision 0의 sodium-cooled fast reactor design criteria를 바탕으로 Natrium 설계 고유 특성을 반영해 개발되었다.
 - [[Natrium_PDC_Fluid_Heat_Transport]] — principal design criteria 30–37과 44–46은 primary coolant boundary의 품질·파괴 방지·검사, primary coolant 재고 유지, 잔열 제거, 비상 노심 냉각과 그 검사·시험, 구조물·기기 냉각을 다룬다.
@@ -153,16 +153,16 @@
 - [[Natrium_PDC_Reactivity_Control]] — principal design criteria 20–29는 보호 계통의 기능, 신뢰도와 시험 가능성, 독립성, 고장 모드, 제어 계통과의 분리, 반응도 제어 오작동 대응, 반응도 제어 계통, 반응도 한계, Anticipated Operational Occurrence 방호를 다룬다.
 - [[Natrium_PRA_Scope]] — Kemmerer Unit 1 PRA는 NEI 18-04 틀을 구현하도록 `ASME/ANS RA-S-1.4-2021`의 해당 요건에 따라 개발되며, construction permit 단계의 PRA Technical Adequacy는 내부 사건 출력 운전·저출력 정지 PRA의 자체 평가로 확립되었다.
 - [[Natrium_Piping_And_Industrial_Codes]] — `PSAR` §6.4.4는 `ASME` `BPVC` `Section III` Division 1·5 배관과 지지물의 설계 근거를 적되, 배관 설계가 아직 예비 단계이며 상세는 operating license 단계에 제공한다고 밝힌다.
-- [[Natrium_Plant_Capability_DID_Evaluation]] — `PSAR` Chapter 4는 NEI 18-04 `Chapter 5`에 따라 Plant Capability Defense-in-Depth를 평가하고, risk-significant Licensing Basis Event에는 한 layer나 한 특성에 대한 과도한 의존이 없으며 Design Basis Accident 하나가 단일 barrier에 의존한다고 적는다. (disputed)
+- [[Natrium_Plant_Capability_DID_Evaluation]] — `PSAR` Chapter 4는 NEI 18-04 `Chapter 5`에 따라 Plant Capability Defense-in-Depth를 평가하고, risk-significant Licensing Basis Event에는 한 layer나 한 특성에 대한 과도한 의존이 없으며 Design Basis Accident 하나가 단일 barrier에 의존한다고 적는다.
 - [[Natrium_Plant_Overview]] — Kemmerer Unit 1은 TerraPower가 공급하는 `840 MWt` pool-type sodium-cooled fast reactor인 Natrium 원자로이며, 신청자는 `10 CFR Part 50`에 따른 construction permit을 신청한다.
-- [[Natrium_Programmatic_And_Integrated_DID]] — `PSAR` Chapter 4는 Programmatic Defense-in-Depth 지침을 설계와 프로그램 개발에 반영했다고 적으면서, 그 적절성 평가, PRA 불확실도 평가, 추가 special treatment, 통합 평가 결과와 baseline 확립을 모두 operating license 단계로 넘긴다. (disputed)
+- [[Natrium_Programmatic_And_Integrated_DID]] — `PSAR` Chapter 4는 Programmatic Defense-in-Depth 지침을 설계와 프로그램 개발에 반영했다고 적으면서, 그 적절성 평가, PRA 불확실도 평가, 추가 special treatment, 통합 평가 결과와 baseline 확립을 모두 operating license 단계로 넘긴다.
 - [[Natrium_Project_Organization]] — `PSAR` Chapter 11 §11.1은 설계·설계 검토·승인·건설 관리·시험·운전을 맡는 조직 구조와 주요 관리 직위를 기술한다.
-- [[Natrium_RG_Conformance]] — `PSAR` §1.4.1은 모든 현행 regulatory guide를 검토해 설계에 적용되지 않는 것을 제외했다고 적고, Table 1.4-1이 신청서 제출 6개월 전에 유효한 RG별 부합 상태와 의견을 담는다고 적는다. (disputed)
+- [[Natrium_RG_Conformance]] — `PSAR` §1.4.1은 모든 현행 regulatory guide를 검토해 설계에 적용되지 않는 것을 제외했다고 적고, Table 1.4-1이 신청서 제출 6개월 전에 유효한 RG별 부합 상태와 의견을 담는다고 적는다.
 - [[Natrium_Reactor_Heat_Transport_Systems]] — `PSAR` 1장의 계통 개요는 Natrium의 Reactor Core System, `RES`, Reactor Air Cooling System, Primary Heat Transport System, Intermediate Heat Transport System, Intermediate Air Cooling System, 소듐 커버가스(cover gas) 계통, Sodium Processing System, Control Rod Drive System을 요약한다.
 - [[Natrium_Reliability_Capability_Targets]] — `PSAR` Chapter 6은 Structures, Systems, and Components가 PRA Safety Function을 수행한다는 보증을 PRA에서 평가한 reliability와 capability의 달성·감시로 얻는다고 적고, reliability target을 SSC가 지정된 기능을 완수할 확률에 대한 성능 목표로, capability target을 적절한 margin을 두고 PSF를 수행하는 능력에 초점을 둔 성능 목표로 정의하며, 정량 reliability target은 Design Reliability Assurance Program이 산출하고 정량 capability target은 해석 모델에 기반한다.
-- [[Natrium_Risk_Significant_LBEs]] — 이 보고서는 부지 경계 선량이 `30-day` 동안 2.5 mrem을 넘고 그 선량의 빈도가 Frequency-Consequence Target의 one percent 안에 있는 Licensing Basis Event를 risk-significant로, 선량이 10 CFR 50.34 기준을 넘는 Beyond Design Basis Event를 high-consequence로 분류한다. (disputed)
+- [[Natrium_Risk_Significant_LBEs]] — 이 보고서는 부지 경계 선량이 `30-day` 동안 2.5 mrem을 넘고 그 선량의 빈도가 Frequency-Consequence Target의 one percent 안에 있는 Licensing Basis Event를 risk-significant로, 선량이 10 CFR 50.34 기준을 넘는 Beyond Design Basis Event를 high-consequence로 분류한다.
 - [[Natrium_SER_AOO_DBE_Review]] — NRC staff는 Kemmerer Unit 1의 Anticipated Operational Occurrence와 Design Basis Event 해석이 construction permit 발급을 뒷받침한다고 판단했다.
-- [[Natrium_SER_BDBE_DBA_Review]] — NRC staff는 Kemmerer Unit 1의 Beyond Design Basis Event와 Design Basis Accident 결과가 10 CFR 50.34를 충족한다고 판단했고, DBA는 보수적 결정론 해석으로 적절히 식별·해석되었다고 보았다.
+- [[Natrium_SER_BDBE_DBA_Review]] — NRC staff는 Kemmerer Unit 1의 Beyond Design Basis Event와 Design Basis Accident 결과가 10 CFR 50.34를 충족한다고 판단했고, DBA는 보수적 결정론 해석으로 적절히 식별·해석되었다고 보았다. (disputed)
 - [[Natrium_SER_Conduct_Of_Operations_Review]] — NRC staff는 조직, 인간공학, 비상계획, 기술지침서, 직무적합성과 보안에 관한 `PSAR` 정보가 construction permit 발급에 관련된 규제 요건을 충족한다고 결론지었고(조직은 "relevant portions"), 항공기 충돌 평가는 10 CFR 50.150(a)·(b)를 충족한다고 보았다.
 - [[Natrium_SER_Core_Fuel_Design_Review]] — NRC staff는 연료 인증 `TR` NAT-2806-A의 L&C가 construction permit 단계에서 적용되지 않거나 적절히 다루어졌다고 보고 참조 포함을 수용했다.
 - [[Natrium_SER_DBHL_Review]] — NRC staff는 Kemmerer Unit 1이 정한 design-basis hazard level 집합이 `RG 1.233`과 일치한다고 판단했다.
@@ -196,37 +196,37 @@
 - [[Natrium_SR_Functions_Heat_Removal]] — controlling heat removal을 뒷받침하는 Safety-Related 기능은 DL3-HR1부터 DL3-HR13까지 열세 개이다.
 - [[Natrium_SR_Functions_Retaining_Radionuclides]] — retaining radionuclides를 뒷받침하는 Safety-Related 기능은 DL3-RR1부터 DL3-RR10까지의 barrier와 격리·압력 방출 기능이다.
 - [[Natrium_SSC_Safety_Classification]] — Kemmerer Unit 1의 Structures, Systems, and Components 안전 분류는 regulatory guide 1.233이 승인한 NEI 18-04를 따르며, 계통에 배정된 PRA Safety Function의 safety significance가 그 기능을 수행하는 SSC의 분류를 정한다.
-- [[Natrium_Safety_Significant_Structures]] — `PSAR` §6.4.2는 safety-significant 구조물인 `NCB`, `RXB`, `FHB`, `RAB`가 매립 철근콘크리트 하부구조와 그 위의 강골조 상부구조로 이루어진다고 적고, 하부·상부구조별 안전 분류와 주 설계 코드를 지정한다. (disputed)
-- [[Natrium_Security_And_Fitness_For_Duty]] — `PSAR` Chapter 11 §11.6은 `RG 5.84`가 승인한 `NEI 06-06`에 따른 fitness-for-duty(`FFD`) 프로그램과 `10 CFR Part 26` 적용 일정, 보안 계획 일정을 적는다. (disputed)
+- [[Natrium_Safety_Significant_Structures]] — `PSAR` §6.4.2는 safety-significant 구조물인 `NCB`, `RXB`, `FHB`, `RAB`가 매립 철근콘크리트 하부구조와 그 위의 강골조 상부구조로 이루어진다고 적고, 하부·상부구조별 안전 분류와 주 설계 코드를 지정한다.
+- [[Natrium_Security_And_Fitness_For_Duty]] — `PSAR` Chapter 11 §11.6은 `RG 5.84`가 승인한 `NEI 06-06`에 따른 fitness-for-duty(`FFD`) 프로그램과 `10 CFR Part 26` 적용 일정, 보안 계획 일정을 적는다.
 - [[Natrium_Seismic_Analysis_Methods]] — `PSAR` §6.4.1.3은 Safety-Related Structures, Systems, and Components의 지진 해석을 동적해석(response spectrum, time history, `System for Analysis of Soil Structure Interaction`을 쓴 soil-structure interaction) 또는 equivalent static load method로 수행한다고 적고, 모델링·감쇠·모드 조합·in-structure response spectra·비틀림·안정성의 준거 규격을 `ASCE/SEI 4-16`, `ASCE/SEI 43-19`, `RG 1.61`, `RG 1.92`, `RG 1.122`로 지정한다.
 - [[Natrium_Seismic_Classification]] — `PSAR` Chapter 6은 safety-significant Structures, Systems, and Components의 `seismic design bases`를 safety classification과 일관된 seismic classification 형태의 지진 special treatment로 정한다.
 - [[Natrium_Special_Treatment_Process]] — `PSAR` Chapter 6은 special treatment를 safety-significant Structures, Systems, and Components가 `design basis functions`를 수행한다는 보증을 일반 산업 관행 이상으로 높이는 요건으로 정의한다.
-- [[Natrium_Structural_Loads_And_Combinations]] — `PSAR` §6.4.2.2는 safety-significant 구조물의 설계 하중을 normal, severe environmental, extreme environmental, abnormal의 네 범주로 나누고 범주마다 기호와 값을 정의한다. (disputed)
+- [[Natrium_Structural_Loads_And_Combinations]] — `PSAR` §6.4.2.2는 safety-significant 구조물의 설계 하중을 normal, severe environmental, extreme environmental, abnormal의 네 범주로 나누고 범주마다 기호와 값을 정의한다.
 - [[Natrium_Support_Systems]] — `PSAR` §1.1.4.3은 핵연료 취급(`FHI`, `FHE`, `FHP`), Main Control Room과 `DCS`, Nuclear Island 보조·부대 전력계통, 방사성폐기물 처리(`RWG`, `RWL`, `RWS`), `NHV`, `PCO`, `NCH`, `NGS`, `SMS`, 비상 운전 조명, `NFP`, `NME`를 한 절에 모아 각 계통의 구성과 역할을 짧게 적는다.
-- [[Natrium_System_Anticipatory_Seismic_Trip]] — Anticipatory Automatic Seismic Trip System(`AST`)은 지반 운동을 측정해 Safe Shutdown Earthquake보다 큰 seismic beyond design basis event에서 최대 지진파 도달 전에 `RTB`의 shunt trip feature로 scram 신호를 보내는 Non-Safety-Related with Special Treatment 계통이다. (disputed)
+- [[Natrium_System_Anticipatory_Seismic_Trip]] — Anticipatory Automatic Seismic Trip System(`AST`)은 지반 운동을 측정해 Safe Shutdown Earthquake보다 큰 seismic beyond design basis event에서 최대 지진파 도달 전에 `RTB`의 shunt trip feature로 scram 신호를 보내는 Non-Safety-Related with Special Treatment 계통이다.
 - [[Natrium_System_Control_Rod_Drive]] — Control Rod Drive System(`CRD`)은 primary control rod assembly용 9개와 secondary용 4개, 모두 13개의 같은 구동 장치로 정상 반응도 제어와 reactor scram을 지원한다.
-- [[Natrium_System_Control_Room_Indications]] — Main Control Room(`MCR`)은 Non-Safety-Related with Special Treatment `NCB` 상부구조에 있고 principal design criteria 19를 충족하도록 설계되며, Safety-Related 운전원 조치는 요구되지 않는다. (disputed)
-- [[Natrium_System_Ex_Vessel_Fuel_Handling]] — `PSAR` Chapter 7의 Ex-Vessel Fuel Handling System(`FHE`)은 새 노심 집합체와 spent 집합체를 불활성·차폐 환경에서 원자로 용기, Ex-Vessel Storage Tank, Water Pool Fuel Handling System 사이로 옮긴다. (disputed)
+- [[Natrium_System_Control_Room_Indications]] — Main Control Room(`MCR`)은 Non-Safety-Related with Special Treatment `NCB` 상부구조에 있고 principal design criteria 19를 충족하도록 설계되며, Safety-Related 운전원 조치는 요구되지 않는다.
+- [[Natrium_System_Ex_Vessel_Fuel_Handling]] — `PSAR` Chapter 7의 Ex-Vessel Fuel Handling System(`FHE`)은 새 노심 집합체와 spent 집합체를 불활성·차폐 환경에서 원자로 용기, Ex-Vessel Storage Tank, Water Pool Fuel Handling System 사이로 옮긴다.
 - [[Natrium_System_Gaseous_Radwaste_Processing]] — `PSAR` Chapter 7의 Gaseous Radwaste Processing System(`RWG`)은 커버가스(cover gas) 계통의 기체 폐기물을 holdup과 activated charcoal adsorption bed로 처리해 감시되는 plant stack으로 배출하며, Non-Safety-Related with Special Treatment로 분류된다.
 - [[Natrium_System_IC_Architecture]] — `PSAR` Chapter 7 §7.6.1은 instrumentation and control(`I&C`) 계통의 설계 기준, 분류, 통신 전략, Post-Accident Monitoring(`PAM`) 범위를 요약하고 세부를 `NAT-4950-A`에 넘긴다.
 - [[Natrium_System_In_Vessel_Fuel_Handling]] — `PSAR` Chapter 7의 In-Vessel Fuel Handling System(`FHI`)은 Mode 4 refueling 중 원자로 용기 안 노심 집합체를 옮기고, 설치되어 있는 동안 functional containment 경계의 일부가 된다.
 - [[Natrium_System_Intermediate_Air_Cooling]] — Intermediate Air Cooling System(`IAC`)은 intermediate sodium의 열을 대기로 보내며, `PSAR` Chapter 7은 저출력·정지 조건의 주·선호 원자로 열제거 수단으로 적는다.
 - [[Natrium_System_Intermediate_Heat_Transport]] — Intermediate Heat Transport System(`IHT`)은 정상 출력 운전에서 primary coolant의 열을 `NSS`로, 기동·정지 중에는 `IAC`로 보내며, 펌프 유량을 잃으면 `IAC` `AHX`로 자연 순환한다.
 - [[Natrium_System_NI_Auxiliary_Electrical]] — `PSAR` Chapter 7 §7.7의 전기 계통은 대부분 Non-Safety-Related with No Special Treatment이고, `NI Uninterruptible AC Power Supply System`(`NUP`)과 `NI DC Power Supply System`(`NDC`)의 네 division 일부만 Non-Safety-Related with Special Treatment이다.
-- [[Natrium_System_NI_Control]] — Nuclear Island Control System(`NIC`)은 대부분이 Distributed Control System(`DCS`) 위에 구현된 `I&C` 하위 계통의 모음으로, 계통 전체는 분류되지 않고 하위 계통마다 분류된다. (disputed)
+- [[Natrium_System_NI_Control]] — Nuclear Island Control System(`NIC`)은 대부분이 Distributed Control System(`DCS`) 위에 구현된 `I&C` 하위 계통의 모음으로, 계통 전체는 분류되지 않고 하위 계통마다 분류된다.
 - [[Natrium_System_NI_Fire_Protection]] — `PSAR` Chapter 7의 Nuclear Island Fire Protection System(`NFP`)은 네 계통의 모음이며, `NI Fire Water Distribution System`(`NFD`), `NI Fire Suppression System`(`NFS`), `NI Fire Detection and Alarm System`(`NFA`)은 Non-Safety-Related with No Special Treatment, Sodium Leak Detection, Collection, and Containment System(`NNA`)은 Non-Safety-Related with Special Treatment이다.
-- [[Natrium_System_NI_HVAC]] — `PSAR` Chapter 7의 Nuclear Island Heating, Ventilation, and Air Conditioning System(`NHV`)은 건물별로 배정되며, functional containment barrier 관통부 격리, `FHB` 배기의 `HEPA` 여과와 감시되는 plant stack을 통한 제어 방출 경로, Main Control Room 격리로 Non-Safety-Related with Special Treatment 기능을 지원한다. (disputed)
-- [[Natrium_System_Nuclear_Instrumentation]] — Nuclear Instrumentation System(`XIS`)은 노심에서 누설되는 neutron flux를 감지해 `RPS`와 `NIC`에 신호를 주는 네 division의 아날로그 Safety-Related 계통이다. (disputed)
-- [[Natrium_System_Primary_Heat_Transport]] — Primary Heat Transport System(`PHT`)은 `RES` 안의 Intermediate Heat Exchanger(`IHX`) 둘, Primary Sodium Pump(`PSP`) 둘, `RV` 안의 sodium pool 셋으로 이루어진 Safety-Related 계통이다. (disputed)
-- [[Natrium_System_Radiation_Monitoring]] — Radiation Monitoring System(`RMS`)은 area, effluent, process 감시 그룹으로 이루어진 디지털 계통이며 Non-Safety-Related with Special Treatment와 Non-Safety-Related with No Special Treatment 기능을 가진다. (disputed)
+- [[Natrium_System_NI_HVAC]] — `PSAR` Chapter 7의 Nuclear Island Heating, Ventilation, and Air Conditioning System(`NHV`)은 건물별로 배정되며, functional containment barrier 관통부 격리, `FHB` 배기의 `HEPA` 여과와 감시되는 plant stack을 통한 제어 방출 경로, Main Control Room 격리로 Non-Safety-Related with Special Treatment 기능을 지원한다.
+- [[Natrium_System_Nuclear_Instrumentation]] — Nuclear Instrumentation System(`XIS`)은 노심에서 누설되는 neutron flux를 감지해 `RPS`와 `NIC`에 신호를 주는 네 division의 아날로그 Safety-Related 계통이다.
+- [[Natrium_System_Primary_Heat_Transport]] — Primary Heat Transport System(`PHT`)은 `RES` 안의 Intermediate Heat Exchanger(`IHX`) 둘, Primary Sodium Pump(`PSP`) 둘, `RV` 안의 sodium pool 셋으로 이루어진 Safety-Related 계통이다.
+- [[Natrium_System_Radiation_Monitoring]] — Radiation Monitoring System(`RMS`)은 area, effluent, process 감시 그룹으로 이루어진 디지털 계통이며 Non-Safety-Related with Special Treatment와 Non-Safety-Related with No Special Treatment 기능을 가진다.
 - [[Natrium_System_Reactor_Air_Cooling]] — Reactor Air Cooling System(`RAC`)은 자연 대류 공기 유동으로 원자로 붕괴열을 대기로 방출하는 피동 계통이며, `PHT`·`RES`와 함께 장기 비상 노심 냉각 기능을 제공한다.
-- [[Natrium_System_Reactor_Core]] — Reactor Core System(`RCC`)은 Reactor Vessel 안에서 Core Barrel Structures가 지지하는 교체 가능한 노심 집합체로 이루어지며, 초기 연료는 `HT-9` 피복의 sodium-bonded `U-10Zr`이다. (disputed)
+- [[Natrium_System_Reactor_Core]] — Reactor Core System(`RCC`)은 Reactor Vessel 안에서 Core Barrel Structures가 지지하는 교체 가능한 노심 집합체로 이루어지며, 초기 연료는 `HT-9` 피복의 sodium-bonded `U-10Zr`이다.
 - [[Natrium_System_Reactor_Enclosure]] — Reactor Enclosure System(`RES`)은 원자로 용기와 헤드, 원자로 내부 구조물, guard vessel, 원자로 지지 구조물로 이루어지며 `RXB` 하부구조 안에서 노심을 지지하고 primary sodium을 담는다.
-- [[Natrium_System_Reactor_Instrumentation]] — Reactor Instrumentation System(`RIS`)은 원자로 용기 안이나 근처의 변수를 측정해 `RPS`와 `NIC`에 신호를 보내는 계기 channel의 모음이며, Safety-Related 입력은 네 division으로 나뉜다. (disputed)
-- [[Natrium_System_Reactor_Protection]] — Reactor Protection System(`RPS`)은 네 division(A–D)의 2-out-of-4 voting으로 reactor scram과 engineered safety feature(`ESF`) 작동을 자동 개시하며 Safety-Related과 Non-Safety-Related with Special Treatment 기능을 함께 수행하는 계통이며, `RadICS` platform을 쓴다. (disputed)
-- [[Natrium_System_Sodium_Cover_Gas]] — Sodium Cover Gas System(`SCG`)은 `RXB`, `RAB`, `FHB`의 계통에 불활성 argon을 공급·감시·제어하며 Primary `SCG`와 Intermediate `SCG`로 이루어진다. (disputed)
+- [[Natrium_System_Reactor_Instrumentation]] — Reactor Instrumentation System(`RIS`)은 원자로 용기 안이나 근처의 변수를 측정해 `RPS`와 `NIC`에 신호를 보내는 계기 channel의 모음이며, Safety-Related 입력은 네 division으로 나뉜다.
+- [[Natrium_System_Reactor_Protection]] — Reactor Protection System(`RPS`)은 네 division(A–D)의 2-out-of-4 voting으로 reactor scram과 engineered safety feature(`ESF`) 작동을 자동 개시하며 Safety-Related과 Non-Safety-Related with Special Treatment 기능을 함께 수행하는 계통이며, `RadICS` platform을 쓴다.
+- [[Natrium_System_Sodium_Cover_Gas]] — Sodium Cover Gas System(`SCG`)은 `RXB`, `RAB`, `FHB`의 계통에 불활성 argon을 공급·감시·제어하며 Primary `SCG`와 Intermediate `SCG`로 이루어진다.
 - [[Natrium_System_Sodium_Processing]] — Sodium Processing System(`SPS`)은 primary sodium(`SPS-P`), intermediate sodium(`SPS-I`), `EVST` sodium(`SPS-E`)의 불순물을 감시·제거하며, 이 감시·제거 기능은 Non-Safety-Related with No Special Treatment이다.
-- [[Natrium_System_Water_Pool_Fuel_Handling]] — `PSAR` Chapter 7의 Water Pool Fuel Handling System(`FHP`)은 spent fuel과 조사된 비핵연료 노심 집합체를 물 환경에 저장하며 Spent Fuel Pool, Pool Immersion Cell, Fuel Pool Cooling, Fuel Pool Purification으로 이루어진다. (disputed)
+- [[Natrium_System_Water_Pool_Fuel_Handling]] — `PSAR` Chapter 7의 Water Pool Fuel Handling System(`FHP`)은 spent fuel과 조사된 비핵연료 노심 집합체를 물 환경에 저장하며 Spent Fuel Pool, Pool Immersion Cell, Fuel Pool Cooling, Fuel Pool Purification으로 이루어진다.
 - [[Natrium_TMI_Requirements]] — `PSAR` §1.4.3은 `NUREG-0933`의 generic issue를 설계에 대해 적용성과 준수 여부로 평가했다고 적고, `NUREG-0933` Appendix B Section 1의 Three Mile Island Action Item은 `10 CFR 50.34(f)`에 성문화된 형태로 다룬다고 적는다.
 - [[Natrium_Technical_Specifications_Scope]] — `PSAR` Chapter 11은 `10 CFR 50.34(a)(5)`에 따라 예비 안전해석에서 technical specifications의 개연성 있는 대상이 되는 변수와 조건을 `Table 11.5-1`에 제시하고, 전체 technical specifications는 operating license 단계에 제출한다고 적는다.
 - [[Natrium_Topical_Technical_Reports]] — `PSAR` §1.4.2는 Table 1.4-2의 topical report와 Table 1.4-3의 technical report가 `NRC`에 검토를 위해 제출되었다고 적는다.

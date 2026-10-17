@@ -3,8 +3,8 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch07
-status: disputed
-verified: 2026-10-16
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -223,6 +223,8 @@ principal design criteria%%t:PDC%% 2와 4에 따라 safety-significant 부분은
 `XIS`는 현재 SR%%t:SR%% 기능을 수행하는 소프트웨어가 없는 아날로그 계통으로 설계되어, 원문은 `IEEE 603-2018` Clause 5.16이 요구하는 신뢰할 만한 CCF%%t:CCF%%나 안전 기능 저하 가능성이 없다고 적는다. 조달 구성품에 embedded digital device가 있으면 산업 표준과 규제 지침을 따라야 하고, SR%%t:SR%%·NSRST%%t:NSRST%% 기능에 쓰이면 `SECY-22-0076`과 `SRM-SECY-22-0076` 지침으로 CCF%%t:CCF%% 분석을 한다. `XIS` 입력에 의존하는 `DL3` 기능의 수동 제어는 `RPS` 안에 있다. 운전 정보는 `RPS`와 `NIC`로 표시되고, `MCR`과 `FHCR`의 NST%%t:NST%% audible count rate 장치가 source range를 소리로 알린다.
 
 Nuclear Instrumentation System 검출기는 노심 바깥에 인접한 개별 drywell에 있고, field amplifier enclosure는 Reactor Building head access area에, electronics enclosure는 `NI` Control Building 하부구조에 있으며, audible count rate monitor는 주제어실과 `FHCR`에 모두 있다.
+
+**규정 대비 메모(C26(b), 신청자 문서 내부 불일치).** Chapter 7 표는 `XIS`를 DL2·DL3·DL5에 두지만 분류 문장은 `RPS` 구성품의 분류를 가리킨다. 이 차이를 판정하는 권위 문서 조항은 없다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

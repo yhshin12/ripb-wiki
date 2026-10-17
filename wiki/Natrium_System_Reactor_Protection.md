@@ -5,8 +5,9 @@ sources:
 - PSAR_ch07
 - PSAR_ch05
 - PSAR_ch11
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -84,6 +85,12 @@ terms_pending: []
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.6.3.2.1 p.267]
 - "The safety-significant PSFs are identified as safety-related (SR) functions or non-safety-related with special treatment (NSRST) functions as defined in Section 5.2." [PSAR_ch07 §7.6.3.2.1 p.267]
 - "The RPS supports the following safety-significant functions, which are designated as SR (for DL3 functions) or NSRST (for DL4 and DL5 functions) to indicate the safety classification of RPS components relied upon to perform the function:" [PSAR_ch07 §7.6.3.2.1 p.267]
+- "DL3-RC1a | High-high neutron flux | XIS" [SER_KU1_CP §7.6.3.1.11.1 p.561]
+- "DL4-RR8, Manual SPS Pump Trip on Low Primary Sodium Level (NSRST)" [SER_KU1_CP §7.2.4.1.14.1 p.487]
+- "DL4-RR8 – Manual Sodium Processing System Pump Trip on Leak Indication" [SER_KU1_CP §7.7.1.7 p.589]
+- "DL3-RC1 — Scram - Gravity Driven Absorber Insertion by Latch Release" [PSAR_ch05 Table 5.2-1 p.6]
+- "The staff finds that USO’s probable subjects of TSs are consistent with important parameters determined as a result of the preliminary safety analyses in the PSAR, with special attention given to items (e.g., SLs, and LCOs) that may significantly influence the final design, and that the probable subjects of TSs are supported by appropriate bases." [SER_KU1_CP §11.5.1 p.701]
+- "The staff will perform a detailed evaluation of the complete and finalized TSs for KU1, including SLs, SCP, LCOs, safety-related (SR), design features, administrative controls, and operational modes during its review of a KU1 OL application." [SER_KU1_CP §11.5.1 p.701]
 
 | Function ID | Function Description | RPS Functional Support | 출처 |
 |---|---|---|---|
@@ -294,6 +301,12 @@ principal design criteria%%t:PDC%% 2에 따라 SR%%t:SR%% 부분은 SR%%t:SR%% `
 `IEEE 603-2018`, `IEEE 7-4.3.2-2016`, `IEEE 379-2014`, `IEEE 384-2018`이 `RadICS` platform 밖 application-specific 장비의 special treatment이고, 검증에는 `IEEE/IEC 60780-323-2016`, `IEEE/IEC 60980-344-2020`, `IEEE 420-2013`, `RG 1.180`이 쓰인다. 수리, 신뢰성 평가(action item 7.6), 시험·교정(action item 7.8), maintenance bypass, single failure 영향, system integrity(action item 7.4), operating bypass, 예측 가능·반복 가능 거동, Secure Development and Operational Environment는 OL%%t:OL%% 단계에서 제공된다. 보호 동작은 개시되면 끝까지 진행되고 복귀에는 운전원의 의도적 조치가 필요하다. `Table 7.6.3-1`에서 네 division 캐비닛과 `RTB` enclosure panel은 SR%%t:SR%%·`SCS1`, `SVDU`·수동 switch panel·Remote Shutdown `SVDU`는 NSRST%%t:NSRST%%·`SCN1`, `RPS Data Gateway Cabinet`은 NST%%t:NST%%·지진 분류 `None`이다.
 
 `PSAR` Chapter 5 레코드 `DL4-RR8`은 이 기능을 `Manual SPS Pump Trip on Leak Indication`으로 적어 이 절의 `Manual SPS pump trip on low primary sodium level`과 이름이 다르다. `PSAR` Chapter 11 `Table 11.5-1`의 계측 `LCO` 행은 `RPS`, `XIS`, `RIS` 기능으로 reactor scram, `PSP` trip, `Intermediate Sodium Pump` trip만 적어 SR%%t:SR%% 기능 `DL3-HR11`의 `SPS` pump trip이 없다.
+
+**규정 대비 메모(C22-a, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `DL3-RC1`을 `DL3-RC1a`–`DL3-RC1j`로 나누어 적으나, Chapter 5 Table 5.2-1에는 `DL3-RC1` 한 레코드만 있고 하위 `ID`가 없다. `SER`은 Chapter 7 하위 `ID`를 그대로 쓴다. 하위 `ID` 체계를 정하는 권위 조항은 없다.
+
+**규정 대비 메모(C22-b, 신청자 문서 내부 불일치).** `DL4-RR8`의 이름이 `PSAR` Chapter 5에서는 Manual `SPS` Pump Trip on Leak Indication, Chapter 7 기능 표에서는 Manual `SPS` pump trip on low primary sodium level이다. `SER`도 §7.7.1.7에서는 앞의 이름을, §7.2.4.1.14.1에서는 뒤의 이름을 옮겨 적을 뿐 판정하지 않으며, 판정할 권위 조항이 없다.
+
+**규정 대비 메모(C24, 신청자 문서 내부 불일치).** `PSAR` Chapter 11 Table 11.5-1의 계측 `LCO` 기능 목록(reactor scram, `PSP` trip, `ISP` trip)은 Chapter 7 `RPS`의 SR%%t:SR%% 기능 `DL3-HR11`(`SPS` pump trip)을 빠뜨린다. 판정할 권위 조항이 없다. `SER` §11.5.1은 `TS` 대상이 예비 안전해석의 중요 변수와 일관된다고 판단하고 `LCO`를 포함한 상세 평가를 OL%%t:OL%% 단계로 넘기며, 이 누락은 다루지 않는다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

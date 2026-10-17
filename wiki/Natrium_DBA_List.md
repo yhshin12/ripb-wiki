@@ -5,8 +5,10 @@ sources:
 - PSAR_ch03
 - NEI_18-04
 - SER_KU1_CP
-status: disputed
-verified: 2026-10-16
+- RG_1.233
+- RG_1.253
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -39,6 +41,21 @@ terms_pending: []
 - "RFH-ESWR-1 source term with the DBA consequence methodology would result in a TEDE of approximately 7.3 rem versus the 0.609 rem reported for this DBA, which is higher but still within the 25 rem TEDE acceptance criterion and thus acceptable." [SER_KU1_CP §3.8.1.5 p.297]
 - "However, the applicant provided no basis for the assumption of 50 percent leakage per day, and as such the staff cannot reach a determination as to its acceptability." [SER_KU1_CP §3.8.1.4 p.295]
 - "the staff finds the preliminary analysis to be reasonable and will address detailed performance in the final analyses at the OL" [SER_KU1_CP §3.8.1.4 p.295]
+- "With the understanding that SR SSCs are required to be capable of performing their RSFs in response to external events within the DBEHL, there will be no new DBAs introduced by external hazards." [NEI_18-04 §3.2.2 Task 6 p.22]
+- "The PRA results, including consideration of external hazards, will also validate a designer’s initial selections of DBAs and SR SSCs protected against DBEHLs, and ensure no new DBAs are introduced by external hazards." [RG_1.233 §C.1.c p.14]
+- "The phenomena caused by the design basis seismic hazard are not covered by other DBA evaluations, so a seismic DBA was developed." [PSAR_ch03 §3.4 p.52]
+- "There are no DBEs related to this DBA, which was added to address design basis hazards associated with a seismic event at the CP stage as discussed in PSAR section 3.4." [SER_KU1_CP §3.8.1.3 p.292]
+- "The staff reviewed PSAR section 3.9.3, which includes the one reactivity DBA (SEV-SSE-CN) intended to represent a seismic event." [SER_KU1_CP §3.8.1.3 p.292]
+- "Based on the staff’s review described above, the staff concluded that the information provided relative to the reactivity DBA was consistent with the guidance provided in NEI 21-07" [SER_KU1_CP §3.8.1.3 p.293]
+- "The staff notes that although the offsite radiological consequences of the selected major accident are bounding for at-power in-vessel DBAs, that is not true for the ex-vessel and fuel handling DBAs." [SER_KU1_CP §3.3.1.7 p.221]
+- "This would necessitate additional justification as discussed in footnote 10 to RG 1.253 option 1." [SER_KU1_CP §3.3.1.7 p.221]
+- "the staff determined the selection of the PSAR section 3.9.6.1 core blockage and local faults DBA as the major accident, as supported by the assessment of DBAs in the LMP methodology, appropriately addresses the purpose and intent of the 10 CFR 50.34(a)(1)(ii)(D) safety analysis" [SER_KU1_CP §3.3.1.7 p.222]
+- "The BLTC is not expected to be mated with the PIC during the washing operation. Therefore, the mated BLTC/PIC (DL3-RR5a) is the appropriate radionuclide barrier for the drop events (RFH-FDPI), but not for the washing events (RFH-ESWR)." [SER_KU1_CP §3.6.1.4 p.250]
+- "While uncertainty in the design remains, the staff determined that the information provided was sufficient to support the CP based on:" [SER_KU1_CP §3.6.1.4 p.250]
+- "The PIC radionuclide retention barrier SSCs are currently classified as SR through the DL3-RR5a SR function." [SER_KU1_CP §3.6.1.4 p.250]
+- "The additional preventative controls are expected to reduce the frequencies for these LBEs farther from the F-C target curve, as described in the PIC supplement." [SER_KU1_CP §3.6.1.4 p.250]
+- "These are conservative assumptions that could be adjusted as the event specific mechanistic source term is developed at the OL stage." [SER_KU1_CP §3.6.1.4 p.250]
+- "If assessment a major accident is not conservative or bounding for a specific non-LWR design in this regard or an applicant proposes to use a DBA that is not a major accident, justification for assessment of the radiological consequences at the EAB and LPZ outer boundary using a different event will be needed." [RG_1.253 §C.3.b fn.10 p.14]
 
 | DBE ID | DBA ID | DBA Title | DBA 2-hour Exclusion Area Boundary TEDE (rem) | DBA 30-day Low Population Zone Boundary TEDE (rem) | 출처 |
 |---|---|---|---|---|---|
@@ -182,6 +199,14 @@ DBA%%t:DBA%%는 Licensing Basis Event%%t:LBE%% 평가 방법 절의 보수적 �
 LBE%%t:LBE%% Description 표 가운데 Gaseous Radwaste Processing System 누설은 holdup tank 누설로 방출이 생긴다. 원자로 용기 안 핵연료 취급은 낙하한 집합체와 부딪힌 집합체가 파손되고 functional containment barrier%%t:BARRIER%%가 retention 기능을 수행하며, Spent Fuel Pool 핵연료 취급은 낙하한 집합체만 파손된다. bottom loading transfer cask와 Ex-Vessel Handling Machine의 능동 냉각 상실 DBA%%t:DBA%%는 피동 냉각이 유지되어 피복이 손상되지 않고 방출이 없다.
 
 **NRC staff 평가와의 차이.** `PSAR`은 Pool Immersion Cell DBA%%t:DBA%%인 RFH-ESWR-CN에 Ex-Vessel Handling Machine 집합체 파손 선원항%%t:SOURCE_TERM%%을 쓰는 근거로 그 결과가 더 가혹하다는 점을 들지만, NRC staff는 DBE%%t:DBE%%와 달리 이 선원항%%t:SOURCE_TERM%%이 핵연료의 방출분율을 낮게 만든 것으로 보인다고 적는다. staff 추정으로는 RFH-ESWR-1의 선원항%%t:SOURCE_TERM%%을 DBA%%t:DBA%% 결과 방법론에 적용하면 total effective dose equivalent%%t:TEDE%%가 이 DBA%%t:DBA%%에 보고된 0.609 rem 대신 약 7.3 rem이 되며, 이는 25 rem 기준 안이므로 수용 가능하다. `PSAR`은 Ex-Vessel Handling Machine 방출과 결합된 Pool Immersion Cell·bottom loading transfer cask 방출을, staff는 이 선원항%%t:SOURCE_TERM%%과 DBE%%t:DBE%% 선원항%%t:SOURCE_TERM%%을 비교하므로 두 원문의 비교 기준은 다르다. 또 staff는 primary Sodium Processing System cell 누설률 50 percent per day 가정에 근거가 없어 수용성을 판단할 수 없다고 적고, 예비 해석은 합리적이라 보아 상세 성능은 OL%%t:OL%% 최종 해석에서 다룬다.
+
+**규정 대비 메모(C12-a, 규정 불일치).** `PSAR`은 외부 재해(설계기준 지진)에서 DBA%%t:DBA%%(SEV-SSE-CN)를 새로 두어 NEI 18-04의 외부 재해 과업과 [[RG_1.233]] C.1.c의 기대와 다르다. `SER`은 이 DBA%%t:DBA%%가 construction permit%%t:CP%% 단계에서 지진 설계기준 재해를 다루려고 추가되었다고 적고, 검토 결과 반응도 DBA%%t:DBA%% 정보가 NEI 21-07 지침과 일관된다고 결론지었다.
+
+**규정 대비 메모(C58, 규정 불일치).** `PSAR`은 Major Accident로 고른 LFF-SAO-CN이 다른 어떤 원자로 용기 안 DBE%%t:DBE%%나 DBA%%t:DBA%%도 넘지 않는 위험을 나타낸다고 적는다. `SER`은 그 선량이 at-power in-vessel DBA%%t:DBA%%에 대해서만 bounding이고 ex-vessel·fuel handling DBA%%t:DBA%%에 대해서는 그렇지 않으므로 [[RG_1.253]] option 1 각주 10의 추가 정당화가 필요하다고 적었다. 그 뒤 `SER`은 Licensing Modernization Project%%t:LMP%% 방법론의 DBA%%t:DBA%% 평가가 뒷받침한다는 이유로 이 선정이 10 CFR 50.34(a)(1)(ii)(D) 안전해석의 목적에 맞는다고 판단했다.
+
+**규정 대비 메모(C62, 규정 불일치).** `PSAR`은 `EVHM` 선원항%%t:SOURCE_TERM%%이 더 가혹하다는 이유로 선택했지만, `SER`은 그 선원항%%t:SOURCE_TERM%%이 방출분율을 낮춘 것으로 보이며 RFH-ESWR-1 선원항%%t:SOURCE_TERM%%이면 약 7.3 rem이라고 추정했다. `SER`은 그 값도 25 rem 기준 안이므로 수용 가능하다고 적었다.
+
+**규정 대비 메모(C64, 규정 불일치).** `PSAR`은 Pool Immersion Cell 소듐-물 반응 사건을 `PIC`와 `BLTC`가 결합된 상태의 사건으로 적는다. `SER`은 세척 중에는 `BLTC`가 `PIC`와 결합되지 않을 것으로 보아, 결합 barrier인 DL3-RR5a는 낙하 사건에는 적절하나 세척 사건에는 적절하지 않다고 적었다. 그럼에도 `SER`은 `PIC` barrier Structures, Systems, and Components%%t:SSC%%가 DL3-RR5a를 통해 Safety-Related%%t:SR%%로 분류된 점, 추가 예방 조치가 빈도를 낮출 것으로 예상되는 점, 선원항%%t:SOURCE_TERM%% 해석의 가정이 보수적인 점을 근거로 CP%%t:CP%% 단계에는 충분하다고 판단했고, 그 가정은 OL%%t:OL%% 단계에서 사건별 Mechanistic Source Term%%t:MST%%를 개발하며 조정될 수 있다고 적었다.
 
 ## 관련 문서
 - [[Natrium_DBE_List]]

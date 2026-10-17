@@ -7,8 +7,8 @@ sources:
 - NEI_18-04
 - RG_1.233
 - SER_KU1_CP
-status: disputed
-verified: 2026-09-16
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -71,6 +71,8 @@ DL%%t:DL%% 사이의 충분한 독립성을 위해 `PSAR`은 다섯 항목의 DL
 DL%%t:DL%%별 평가 문단에 따르면 `DL1`은 programmatic element와 견고한 design feature로 off-normal 운전과 AOO%%t:AOO%%를 예방한다. programmatic element는 발전소 설계·건설·운전에 품질, 신뢰도, 보수성이 있도록 보장하고, design feature는 Initiating Event%%t:IE%% 가능성을 줄이며 DL%%t:DL%% 기능을 수행하는 Structures, Systems, and Components%%t:SSC%%가 신뢰성 있게 작동하도록 돕는다. 그러나 programmatic 평가는 operating license%%t:OL%% 단계에서 제공되므로, 예비 `DL1`은 신뢰성 있는 운전을 돕는 design feature에 한정되고 programmatic element를 아직 포함하지 않는다. `DL2`는 abnormal operation을 제어하고 고장을 탐지하며 DBE%%t:DBE%%를 예방하는데, risk-significant AOO%%t:AOO%%는 식별되지 않았다. `DL3`는 analyzed design basis condition 안에서 DBE%%t:DBE%%를 제어하고 risk-significant BDBE%%t:BDBE%%를 예방한다고 적어, layer 정의의 `prevent beyond design basis events`보다 대상을 좁혀 적는다. `DL4`와 `DL5`는 severe plant condition을 제어하고 BDBE%%t:BDBE%%의 결과를 완화하며, offsite protective action을 전개하고 공중 건강과 안전에 대한 악영향을 막는다.
 
 NEI 18-04 `Table 5-2`의 한 주석은 해당 기준이 programmatic activity나 인간 행위에 과도하게 의존하지 않고 목표를 만족하는 독립 수단이 적어도 둘 제공됨을 함축한다(`implies`)고 적고, NEI 18-04 `§5.6.2`는 `Table 5-2` 지침이 둘 이상의 독립적인 plant design 또는 operational feature를 요구한다고 적고, RG%%t:RG%%는 이를 중요한 정성적 overall guideline으로 기술한다. `PSAR` 전략은 DL%%t:DL%% 단위로 개수를 세며, `DL2`나 `DL4`의 CCF%%t:CCF%%로 생긴 DBE%%t:DBE%% PIE%%t:PIE%%에는 적어도 한 DL%%t:DL%%이 완화할 수 있으면 된다고 적는다. 이 지침은 feature 단위이므로 두 기준의 문언은 다르다. 두 기준이 직접 충돌하는지를 판정한 원문 문장은 없으나, NRC staff는 `PSAR`의 DL%%t:DL%% 정의가 NEI 18-04 Table 5-2 지침과 일치해 수용 가능하다고 보았다. staff는 DL2와 DL4가 DL3과는 독립이지만 서로 공통 계통을 포함할 수 있어 완전히 독립적이지 않을 수 있다고 지적하고, CCF%%t:CCF%%로 시작된 DBE%%t:DBE%%에서 하나의 DL%%t:DL%%만 남을 수 있는 예외는 기시 CCF%%t:CCF%% 너머에 적어도 하나의 독립 기능을 보장하므로 합리적이라고 판단했다.
+
+**규정 대비 메모(C6, 규정 불일치).** `PSAR`은 `DL2`나 `DL4`의 CCF%%t:CCF%%로 생긴 DBE%%t:DBE%% PIE%%t:PIE%%에 대해서는 적어도 한 DL%%t:DL%%이 완화할 수 있으면 된다고 적어, 이 경우 독립 수단을 하나로 둔다. NEI 18-04와 [[RG_1.233]]은 둘 이상의 독립적인 plant design 또는 operational feature를 요구하는 지침을 적는다. `SER`은 이 경우 `DL3`만 가용할 수 있음을 인지하고, 이 예외가 시작 CCF%%t:CCF%%를 넘어 적어도 하나의 독립 기능을 보장하므로 합리적이라고 판단했다.
 
 ## 관련 문서
 - [[Natrium_Fundamental_Safety_Functions]]

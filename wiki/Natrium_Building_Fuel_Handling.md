@@ -3,8 +3,9 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch07
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -72,6 +73,12 @@ terms_pending: []
 - "The PSFs are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.8.2.2.2 p.350]
 - "The safety-significant PSFs are identified as SR or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.8.2.2.2 p.350]
 - "The FHB superstructure supports the following NSRST functions:" [PSAR_ch07 §7.8.2.2.2 p.350]
+- "The substructures of the RAB and FHB are located approximately 16 ft west and 40 ft east of the RXB, respectively, and are structurally separated from the RXB." [SER_KU1_CP §7.8.1 p.590]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the FHB:" [SER_KU1_CP §7.8.2 p.596]
+- "RG 1.142, Rev. 3;" [SER_KU1_CP §7.8.2 p.596]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the NCB:" [SER_KU1_CP §7.8.4 p.602]
+- "RG 1.142, Rev. 3;" [SER_KU1_CP §7.8.4 p.602]
+- "The acceptance criteria for reinforced concrete structures and components are in accordance with the limits defined in ACI 349-13 as modified by RG 1.142, “Safety-Related Concrete Structures for Nuclear Power Plants (Other than Reactor Vessels and Containments),” Revision 3, for the load combinations, as applicable, in Table 6.4-5 for SR reinforced concrete structures." [PSAR_ch07 §7.8.4.1.3 p.367]
 
 | Function ID | Function Description | Functional Support | 출처 |
 |---|---|---|---|
@@ -151,6 +158,10 @@ principal design criteria%%t:PDC%% 2와 4에 따라 하부구조는 Section 6.4.
 Fuel Handling Building 상부구조는 가장 높은 지점이 지상 약 76 feet이고, 사용후핵연료 cask와 정비 장비를 옮기는 천장 크레인을 지지하며, Ex-Vessel Handling Machine 궤도가 있는 폐쇄 통로로 Reactor Building과 이어진다. north wing은 약 50 feet이고 액체·고체 방사성 폐기물 설비와 truck bay를 수용한다. 상부구조는 주 건물과 north wing의 두 모델로 나누어 `GT` `STRUDL`로 해석한다. 주 건물의 횡력 저항 계통은 양 방향 강재 모멘트 골조이고, north wing은 콘크리트 전단벽과 가새 골조이다.
 
 하중은 `ASCE 7-16`에 따라 크레인, 바람, 눈, 지진 하중을 만들고, 지진 분류는 SCN1이다. 상부구조가 SR%%t:SR%% 하부구조 위에 있으므로 risk targeted maximum considered earthquake로 구조물 내 응답 스펙트럼을 쓰고, seismic risk category `IV`와 importance factor 1.5를 적용하며, 건물 구조로 보아 `ASCE 7-16` Chapter 12의 요건을 쓴다. 해석은 `AISC 360-16` Chapter C의 direct analysis method를 따르고, 크레인 바퀴 하중은 원격 운전 크레인을 고려해 25 percent의 충격 계수로 늘린다.
+
+**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다.
+
+**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.2.1.3은 `FHB` 철근콘크리트 구조물과 `SFP`의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 2"로 수정한 `ACI` 349-13 한계에 따른다고 적고, `NCB` 절(§7.8.4.1.3)은 같은 문장에 "Revision 3"을 적는다. `SER`은 `FHB`와 `NCB`의 평가 모두에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼다. 따라서 `FHB` 절의 Revision 2는 `SER` 기준과 다르고 `NCB` 절의 Revision 3은 같다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다.
 
 ## 관련 문서
 - [[Natrium_System_Water_Pool_Fuel_Handling]]

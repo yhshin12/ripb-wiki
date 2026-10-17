@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch04, PSAR_ch03, NEI_18-04]
-status: disputed
-verified: 2026-09-16
+sources: [PSAR_ch04, PSAR_ch03, NEI_18-04, SER_KU1_CP]
+status: checked
+verified: 2026-10-17
 term:
 tags: [natrium]
 terms_pending: []
@@ -19,6 +19,9 @@ terms_pending: []
 - "Table 4.2-2 presents all risk-significant LBEs." [PSAR_ch04 §4.2.1.1 p.8]
 - "See Chapter 3 for the LBE description associated with the LBE identifications." [PSAR_ch04 §4.2.1.1 p.8]
 - "The DID baseline to support plant operation will be established at the operating license (OL) stage." [PSAR_ch04 §4.2.1.1 p.8]
+- "For RFH-ESWR-2, a BDBE with a 95th percentile frequency extending into the DBE region, the PIC barrier is assumed to have failed" [SER_KU1_CP §3.8.1.5 p.296]
+- "The staff’s review of updated analyses for these events, including any associated DBAs, is being deferred to the OL stage based on the understanding that additional preventative controls will move this event to lower frequencies, and its frequency band will no longer extend into the DBE region." [SER_KU1_CP §3.7.1.5 p.272]
+- "Based on this, the staff determined that margin evaluation is consistent with the guidance in NEI 21-07 by demonstrating that risk-significant LBEs maintain margin to the F-C target curve." [SER_KU1_CP §4.2.1.1.1 p.327]
 
 | LBE Category | LBE ID | Mean Frequency/ plant-yr | Mean Dose (rem) | F-C Target Frequency at LBE Dose/ plant-yr[a] | Mean Frequency Margin[b] | F-C Target Dose at LBE Frequency (rem)[c] | Mean Dose Margin[d] | 출처 |
 |---|---|---|---|---|---|---|---|---|
@@ -71,7 +74,11 @@ terms_pending: []
 
 margin을 구하는 범위에 대해 NEI 18-04는 세 LBE%%t:LBE%% 범주 각각에서 risk significance가 가장 높은 LBE%%t:LBE%%에 대해 정한다고 적는 한편, 빈도와 선량 모두에 95th percentile 상한값을 쓰는 더 보수적인 margin 평가를 들고, 이 과정을 설계 개발 중 심층방어%%t:DID%% 평가의 일부로 개별 LBE%%t:LBE%%마다 범주별로 반복한다고 적는다. risk significance 판정 값에 대해 NEI 18-04 용어집의 risk-significant LBE%%t:LBE%% 정의는 상한(95%tile) 추정을 쓰고, `Task 7a`는 일반적인 risk-informed decision-making에서 견고한 불확실도 해석이 뒷받침하는 평균 추정이 risk significance 판정에 일반적으로 쓰인다고 설명한다([[LBE_Risk_Significance]]).
 
-`RFH-ESWR-2`의 95th percentile 빈도는 `Table 4.2-2`에서 `1.31E-04`, `PSAR` Chapter 3 `§3.8.5.4.3`의 불확실도 표에서 `1.61E-04`이며, 두 `PDF`의 글자열도 각각 이 값이다. `Table 4.2-2`의 frequency margin `7.53`은 F-C Target%%t:FC_TARGET%% 빈도 `9.87E-04`를 `1.31E-04`로 나눈 값과 맞는다. 같은 LBE%%t:LBE%%의 같은 양을 두 장이 다르게 적는다. 이 차이는 모순 목록(`meta/contradictions.md`)에 모아 두었다.
+`RFH-ESWR-2`의 95th percentile 빈도는 `Table 4.2-2`에서 `1.31E-04`, `PSAR` Chapter 3 `§3.8.5.4.3`의 불확실도 표에서 `1.61E-04`이며, 두 `PDF`의 글자열도 각각 이 값이다. `Table 4.2-2`의 frequency margin `7.53`은 F-C Target%%t:FC_TARGET%% 빈도 `9.87E-04`를 `1.31E-04`로 나눈 값과 맞는다. 같은 LBE%%t:LBE%%의 같은 양을 두 장이 다르게 적는다.
+
+**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다.
+
+**규정 대비 메모(C3, 규정 불일치).** `PSAR` 두 표의 주석은 margin을 F-C Target%%t:FC_TARGET%% 값을 LBE%%t:LBE%% 값으로 나눈 비로 정의하고, NEI 18-04 §5.7.1은 margin을 사건의 평균값을 대응하는 F-C Target%%t:FC_TARGET%% 값에 대한 비로 표현한다고 적어 두 정의는 역수 관계이다. `SER`은 이 margin 평가가 risk-significant LBE%%t:LBE%%의 F-C Target%%t:FC_TARGET%% 곡선까지의 margin 유지를 보여 NEI 21-07 지침과 일관된다고 판단했으나, 그 판단 문장은 비의 방향을 다루지 않는다.
 
 ## 관련 문서
 - [[DID_Risk_Margins]]

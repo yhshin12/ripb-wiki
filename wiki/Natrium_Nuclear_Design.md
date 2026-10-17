@@ -6,8 +6,10 @@ sources:
 - PSAR_ch05
 - RG_1.232
 - PSAR_ch07
-status: disputed
-verified: 2026-09-16
+- ACRS_ML25293A458
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -34,6 +36,19 @@ terms_pending: []
 - "The core analysis applies fuel and control rod manipulations to achieve an equilibrium fuel cycle, which is evaluated at the beginning of equilibrium cycle, middle of equilibrium cycle, and end of equilibrium cycle." [PSAR_ch03 §3.12.1.1 p.121]
 - "The core design and analysis will support the development of the Core Operating Limits Report at the operating license stage." [PSAR_ch03 §3.12.1.1 p.121]
 - "The following reactivity coefficients are important for Natrium core design and evaluation:" [PSAR_ch03 §3.12.1.2 p.121]
+- "(1) A means of inserting negative reactivity at a sufficient rate and amount to assure, with appropriate margin for malfunctions, that the design limits for the fission product barriers are not exceeded and safe shutdown is achieved and maintained during normal operation, including anticipated operational occurrences." [RG_1.232 SFR-DC 26 p.74]
+- "The staff found the PDC for the Natrium plant to be acceptable, as documented in its SE included with the approved version of NATD-LIC-RPRT-0002-A." [SER_KU1_CP §5.3 p.344]
+- "(1) insert negative reactivity at sufficient rate and amount to ensure SARRDLs are not exceeded and safe shutdown is achieved and maintained for AOOs; (2) control the rate of reactivity changes during planned, normal power changes to ensure SARRDLs are not exceeded" [SER_KU1_CP §7.2.5.1.8 p.495]
+- "Demonstrated using approved TR NAT-9393-A, “Reactor Stability Methodology” (ML25211A275) reviewed by ACRS in March and April 2025" [ACRS_ML25293A458 Applicable PDCs p.11]
+- "PSAR section 3.12.1.6 incorporates by reference applicable sections of NAT-9393-A, “Stability Methodology Topical Report,” Rev. 0 (ML25211A276)" [SER_KU1_CP §7.1.1.1.3 p.411]
+- "NAT-9393‑A, “Reactor Stability Methodology,” Rev. 0 (ML25211A276)." [SER_KU1_CP §3.11 p.302]
+- "Reactivity feedback mechanisms associated with the design of RCC include Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, and fuel bowing." [SER_KU1_CP §7.1.1.1.3 p.411]
+- "The primary reactivity feedback mechanisms in increasing order of response time are:" [PSAR_ch05 §5.3.2.2 p.25]
+
+| Topical Report Number | Topical Report Title | ADAMS Accession Number | Safety Evaluation Report Section | 출처 |
+|---|---|---|---|---|
+| NAT-9393-A | Stability Methodology | ML25211A276 | 3.11 | [SER_KU1_CP Table 1.8-1 p.50] |
+
 
 | 번호 | 반응도 계수 (원문 목록) | 출처 |
 |---|---|---|
@@ -114,6 +129,12 @@ terms_pending: []
 설계 기준으로 §3.12.2는 PDC%%t:PDC%% 10(정상 운전과 Anticipated Operational Occurrence%%t:AOO%%에서 specified acceptable system radionuclide release design limit%%t:SARRDL%% 초과 방지), PDC%%t:PDC%% 11(출력 운전 범위에서 prompt inherent 되먹임의 순효과가 급격한 반응도 증가를 보상), PDC%%t:PDC%% 12(SARRDL%%t:SARRDL%%을 넘길 수 있는 출력 진동의 배제 또는 탐지·억제), PDC%%t:PDC%% 26(둘 이상의 반응도 제어 계통·수단이 갖출 네 요건)을 적는다. 사용 코드와 노심 중성자 평가 모형, 코드 Validation and Verification 계획도 `TP-LIC-RPT-0011`에 있다.
 
 `PSAR` Chapter 5의 PDC%%t:PDC%% 26 (1)은 `specified acceptable system radionuclide release design limits`만 적는 반면, 이 절은 `for the fission product barriers`를 덧붙인다. 인용한 `ARDC 26`은 `design limits for the fission product barriers`, `MHTGR-DC 26`은 SARRDL%%t:SARRDL%%과 `reactor helium pressure boundary design limits`를 적고, `MHTGR-DC 26` 근거는 fission product barrier 설계 한계라는 용어가 SARRDL%%t:SARRDL%%로 대체되었다고 설명한다. prompt 되먹임 항목에서 Chapter 5는 Doppler, metallic fuel volume, sodium coolant density, radial distortion feedback 넷을 적어 이 절과 대응하지만, Chapter 7은 여기에 control rod driveline axial expansion을 더해 다섯 기구를 적는다.
+
+**규정 대비 메모(C32, 규정 불일치).** [[RG_1.232]] SFR-DC 26 (1)은 "design limits for the fission product barriers"를 적고, Natrium PDC%%t:PDC%% 26은 이를 SARRDL%%t:SARRDL%%로 바꾸었으며, `SER`은 Natrium PDC%%t:PDC%%를 승인된 토픽 보고서를 통해 수용하고 PDC%%t:PDC%% 26을 SARRDL%%t:SARRDL%%로 기술한다. `PSAR` Chapter 5 §5.3.3.7은 `SER`이 수용한 문언과 같은 반면, Chapter 3 §3.12.2는 두 표현을 합친 "specified acceptable system radionuclide release design limits for the fission product barriers"를 써서 `SER`이 수용한 PDC%%t:PDC%% 문언과 다르다. [[RG_1.232]] 안에서는 SFR-DC 26과 MHTGR-DC 26이 기술별로 다를 뿐 상충하지 않는다.
+
+**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt feedback 특성으로 고려할 만큼 빠르게 작용하는 계수를 네 개로, Chapter 5는 주요 반응도 되먹임 기구를 네 개로 적는 반면, Chapter 7 §7.1.1.2는 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. `SER`은 Doppler, 비연료 재료 온도계수, 냉각재 온도계수, 연료 축방향 팽창, fuel bowing을 되먹임 기구로 드는 또 다른 목록을 적을 뿐, 어느 목록이 맞는지는 판정하지 않는다. 되먹임 기구의 범위를 정하는 권위 조항은 없다.
+
+**규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 권위 문서끼리 NAT-9393-A의 제목과 문서 번호 표기가 다르다. `ACRS` 발표는 "Reactor Stability Methodology"와 ML25211A275를 적고, `SER`은 §7.1.1.1.3에서 "Stability Methodology Topical Report", §3.11에서 "Reactor Stability Methodology", 토픽 보고서 목록 표에서 "Stability Methodology"를 쓰며 문서 번호는 ML25211A276으로 적는다. `PSAR` Chapter 3의 제목은 `SER` §7.1.1.1.3과 같다. 내용 차이가 아니므로 기록만 한다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Core]]

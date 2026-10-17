@@ -3,8 +3,9 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch07
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -35,6 +36,7 @@ terms_pending: []
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.8.3.1.2 p.356]
 - "The safety-significant PSFs are identified as SR or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.8.3.1.2 p.356]
 - "The RAB substructure supports the following NSRST functions:" [PSAR_ch07 §7.8.3.1.2 p.356]
+- "the staff determined that the preliminary design information for the RAB substructure and superstructure are consistent with PDC 1, 2, and 4." [SER_KU1_CP §7.8.3.1.1 p.600]
 
 | Function ID | Function Description | RAB Functional Support | 출처 |
 |---|---|---|---|
@@ -135,6 +137,8 @@ principal design criteria%%t:PDC%% 2, 3, 4에 대한 문장은 하부구조와 �
 Reactor Auxiliary Building 상부구조는 폭 144 feet, 길이 214 feet, 최고 높이 지상 70 feet의 강구조이며, 커버가스(cover gas)%%t:COVER_GAS%% 설비, Intermediate Sodium Pump, expansion tank를 지지하는 장비 플랫폼 두 층을 갖는다. 지진 분류는 SCN1이고 주 설계 규격은 `ANSI/AISC 360-16`이다. 횡력 저항 계통은 동서 방향 중심 가새 골조와 남북 방향 모멘트 골조이고, 자동차 토네이도 비산물 충격 barrier가 Intermediate Air Cooling System과 Intermediate Heat Transport System을 보호한다.
 
 지진 해석은 하부구조의 safe shutdown earthquake 기반 응답과 risk targeted maximum considered earthquake의 포락을 입력으로 하고, seismic risk category `IV`와 importance factor 1.5를 적용한다. 이 건물은 평상시 사람이 상주하지 않으므로 `ASCE 7-16` Chapter 15의 건물 유사 비건물 구조물로 다룬다. 해석은 `GT` `STRUDL`과 `AISC 360-16`의 direct analysis method를 쓰며, 지진 하중을 포함한 조합에는 Appendix 8의 근사 2차 해석을 modal response spectrum analysis와 함께 쓴다.
+
+**규정 대비 메모(C26(c), 신청자 문서 내부 불일치).** `PSAR`은 `RAB` 상부구조가 PDC%%t:PDC%% 1을 충족한다고 적으며 해당 절을 가리키지만 그 절에는 PDC%%t:PDC%% 1 문단이 없다. `SER`은 `RAB` 하부구조와 상부구조의 예비 설계가 PDC%%t:PDC%% 1, 2, 4와 정합한다고 판단했으므로, 빠진 문단은 신청자 문서의 교차참조 결함이다.
 
 ## 관련 문서
 - [[Natrium_Reactor_Heat_Transport_Systems]]

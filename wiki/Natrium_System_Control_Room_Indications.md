@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch07
 - PSAR_ch06
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -71,6 +72,8 @@ terms_pending: []
 - "Located in the Division B RPS Vault, Distributed Control System, and control rod drive cabinet room, the location of the RSC provides access to nearby equipment capable of tripping all Reactor Trip Breakers and ESF components." [PSAR_ch07 §7.6.7.2.1 p.318]
 - "Means of tripping equipment necessary for prompt reactor shutdown and safe shutdown are located in the RPS Vaults, Distributed Control System, and control rod drive cabinet rooms, as well as the Primary Sodium Pump and Intermediate Sodium Pump trip breaker rooms, shown in Figure 1.1-12." [PSAR_ch07 §7.6.7.2.1 p.318]
 - "This equipment is accessed from the RSC using self-contained breathing apparatus and hazardous materials suits, as described in Section 7.6.7.2 above." [PSAR_ch07 §7.6.7.2.1 p.318]
+- "According to USO’s methodology and classification scheme as summarized in PSAR table 6.4-1B and section 6.4.1.1, NSRST SSCs are classified as either SCN1, SCN2, or SCN3." [SER_KU1_CP §6.4.1.1.1 p.391]
+- "The staff determined that the approach to initial seismic classification is reasonable, and that the design codes associated with each seismic classification are reasonable based on the risk-informed approach described in NEI 18-04, as endorsed in RG 1.233." [SER_KU1_CP §6.4.1.1.1 p.392]
 
 ## 해설
 제어실과 지시는 PDC%%t:PDC%% 19(Control Room)와 비상 계획 요건을 충족하도록 제공된다. Main Control Room(`MCR`)은 NSRST%%t:NSRST%% Nuclear Island Control Building 상부구조에 있고 Section 7.8.4.2에 기술된 대로 외부 재해에서 보호되며, SR%%t:SR%% 운전원 조치는 요구되지 않는다. `NI Heating, Ventilation, and Air Conditioning System`이 정상 운전 환경을 제어하고, PDC%%t:PDC%% 19가 요구하는 사고 조건의 방사선, 소듐 aerosol, 화학 위해에 대한 `MCR` 거주성 조치를 한다.
@@ -84,6 +87,8 @@ terms_pending: []
 `Primary ERF`와 `Backup ERF` 기능을 수행할 수 있는 Emergency Response Facilities와 필요한 지시 제공 방법은 OL%%t:OL%% 단계에서 기술된다. 두 `ERF`는 `NAT-4950-A`에 보인 대로 `NIC`에서 발전소 상태 자료를 받는다.
 
 Remote Shutdown Complex에는 Reactor Protection System Division A와 B의 변수와 상태를 표시하는 `SVDU` 두 대가 있고, 이 `SVDU`는 해당 division에 배정된 `PAM` 변수도 표시한다. Remote Shutdown Complex는 Division B Reactor Protection System vault, Distributed Control System, control rod drive cabinet room에 있어 모든 Reactor Trip Breaker와 `ESF` 기기를 트립할 수 있는 설비에 접근할 수 있으며, 이 설비에는 자급식 호흡기와 유해물질 보호복을 갖추고 접근한다.
+
+**규정 대비 메모(C23, 규정 불일치).** `SER`이 검토·수용한 NSRST%%t:NSRST%% 지진 분류는 SCN1–SCN3 세 범주뿐이다. Chapter 7 §7.6.7.1.2의 "Graded Seismic Risk Significant category A"는 이 체계에 없는 명칭이며, 같은 장 Table 7.6.3-1의 SCN1은 `SER` 체계와 맞는다. `SER`에는 `SVDU`의 지진 범주에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

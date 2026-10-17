@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch07, PSAR_ch03, PSAR_ch04, PSAR_ch05]
-status: disputed
-verified: 2026-10-16
+sources: [PSAR_ch07, PSAR_ch03, PSAR_ch04, PSAR_ch05, SER_KU1_CP]
+status: checked
+verified: 2026-10-17
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -80,6 +80,9 @@ terms_pending: []
 - "Probabilistic risk assessment (PRA) safety functions are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.3.2.2 p.188]
 - "The safety-significant PRA safety functions are identified as SR functions or non-safety-related with special treatment (NSRST) functions as defined in Section 5.2." [PSAR_ch07 §7.3.2.2 p.188]
 - "The FHE supports the following safety-significant functions, which are designated as SR or NSRST to indicate the safety classification of FHE components relied upon to perform the function:" [PSAR_ch07 §7.3.2.2 p.188]
+- "k<sub>eff</sub> + 2σ < USL (Equation 3.14-1)" [PSAR_ch03 §3.14.2 p.128]
+- "Each of the preliminary calculations showed the maximum calculated keff remained below the applicable USL." [SER_KU1_CP §3.13.1.3 p.319]
+- "The staff determined that the preliminary FHE design is consistent with PDC 62 because it provides an acceptable means of criticality prevention based on the evaluation of the supporting criticality analyses for the EVST and NAPS, provided in SE section 3.13" [SER_KU1_CP §7.3.2.1.7 p.516]
 
 | Function ID | Function Description | FHE Functional Support | 출처 |
 |---|---|---|---|
@@ -266,9 +269,11 @@ principal design criteria%%t:PDC%% 적용에서 `FHB`와 `RXB` substructure 안�
 
 `EVHM` 냉각이 부족해 피복 온도 한계를 넘는 경우 복사 열전달이 `EVHM` 압력 경계 온도를 설계 온도 아래로 유지해 `EVHM` radionuclide barrier와 냉각 계통 사이에 심층방어(Defense-in-Depth)%%t:DID%%를 제공함을 보이는 해석은 OL%%t:OL%%을 뒷받침하도록 제공되며(`will`), `ARIS` 임계 관리도 OL%%t:OL%%을 뒷받침하도록 제공될 예정이다(`will`). `RG 1.31`은 부분 부합으로, 설계 온도가 `800 degrees Fahrenheit`를 넘을 때 delta ferrite를 ferrite number `3`–`10`으로 제한하는 `Regulatory Position C.4`를 예외로 한다. `RG 1.87`과 `RG 1.244`는 완전 부합, `RG 1.97`은 부분 부합이다. `Table 7.3.2-1`에서 `EVHM`·`BLTC` shielded cask assembly, `EVST` pressure vessel·rotating carousel, fueling floor valve, core assembly transfer tube, pin removal cell, core assembly pot는 SR%%t:SR%%·`SCS1`이고, `EVHM`·`BLTC` transporter는 NSRST%%t:NSRST%%·`SCN1`, `EVST` guard vessel과 pin extraction machine은 NSRST%%t:NSRST%%·`SCN3`이다.
 
-`PSAR` Chapter 3 요약표에는 피동 냉각 없이 `EVHM` 능동 냉각이 상실되고 `EVHM` barrier가 방출을 막지 못하는 사건과, `EVHM` 안에서 핵연료를 옮기는 중 취급 사건이 일어나고 `EVHM` barrier가 방출을 막지 못하는 사건이 있고([[Natrium_Risk_Significant_LBEs]]), Chapter 5는 `EVHM`이 spent fuel assembly의 붕괴열을 피동 제거해야 한다(`shall`)고 적는다. `DL3-RR3a`의 이름은 Chapter 4에서 `Ex-Vessel Handling Machine to Head Barrier Function`, Chapter 7에서 `EVHM Transfer Barrier Function`이고, 인용한 Chapter 5 표 부분에는 이 식별자 대신 `DL3-RR3`(`EVHM Cask barrier`)의 기준 하나가 원자로 헤드 결합을 다룬다. 이 차이는 `meta/contradictions.md` C4에 모았다. Chapter 5는 PDC%%t:PDC%% 63 적용 계통에 `FHE`를 넣고, `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 핵연료 저장·취급 계통이 기하학적으로 안전한 배치와 고정 중성자 흡수체 같은(`such as`) 설계 속성으로 비의도적 임계를 막는다고 적는다. Chapter 7의 `FHE` PDC%%t:PDC%% 62 기술은 기하학적 미임계 배치만 적는다.
+`PSAR` Chapter 3 요약표에는 피동 냉각 없이 `EVHM` 능동 냉각이 상실되고 `EVHM` barrier가 방출을 막지 못하는 사건과, `EVHM` 안에서 핵연료를 옮기는 중 취급 사건이 일어나고 `EVHM` barrier가 방출을 막지 못하는 사건이 있고([[Natrium_Risk_Significant_LBEs]]), Chapter 5는 `EVHM`이 spent fuel assembly의 붕괴열을 피동 제거해야 한다(`shall`)고 적는다. `DL3-RR3a`의 이름은 Chapter 4에서 `Ex-Vessel Handling Machine to Head Barrier Function`, Chapter 7에서 `EVHM Transfer Barrier Function`이고, 인용한 Chapter 5 표 부분에는 이 식별자 대신 `DL3-RR3`(`EVHM Cask barrier`)의 기준 하나가 원자로 헤드 결합을 다룬다. Chapter 5는 PDC%%t:PDC%% 63 적용 계통에 `FHE`를 넣고, `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 핵연료 저장·취급 계통이 기하학적으로 안전한 배치와 고정 중성자 흡수체 같은(`such as`) 설계 속성으로 비의도적 임계를 막는다고 적는다. Chapter 7의 `FHE` PDC%%t:PDC%% 62 기술은 기하학적 미임계 배치만 적는다.
 
 Ex-Vessel Storage Tank 커버가스(cover gas)%%t:COVER_GAS%%는 용기와 액체 소듐 사이에 argon 불활성 barrier를 제공하고, 주 용기와 guard vessel에 새 argon을 공급하며, 주 용기의 오염물과 압력을 직접 제어한다. 이 설비는 방사선 감시, 소듐 여과, 불순물 감시, 압력 방출, buffer seal 정압 공급도 수행한다.
+
+**규정 대비 메모(C35, 규정 불일치).** `PSAR` Chapter 3 §3.14.2는 k_eff + 2σ < `USL` 기준을 두고, Chapter 7 §7.3.2.2는 가장 반응성이 큰 연료 배치에 기반해 k_eff ≤ 0.95로 제한하는 기하학적 미임계 배치를 적는다. `SER`은 예비 계산마다 최대 k_eff가 해당 `USL` 아래였다고 기술하고, `EVST`와 `NAPS`의 임계 해석 평가를 근거로 `FHE` 예비 설계가 PDC%%t:PDC%% 62와 정합한다고 판단했다. 따라서 `SER`이 ex-vessel 설비에 쓴 판정 기준은 `USL` 방법이며, Chapter 7의 고정값 0.95는 `SER`이 쓴 기준이 아니다. `SER`에는 이 0.95 문장에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_SR_Functions_Heat_Removal]]

@@ -3,8 +3,10 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch06
-status: disputed
-verified: 2026-09-16
+- PSAR_ch07
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -54,6 +56,16 @@ terms_pending: []
 - "Reaction forces and moments are based on a static analysis with a dynamic load factor of 2.0 unless justification for a lower dynamic load factor is provided or dynamic analysis is performed." [PSAR_ch06 §6.4.3.3.2 p.46]
 - "The reaction loads are included in the applicable load combination shown in Table 6.4-18." [PSAR_ch06 §6.4.3.3.2 p.46]
 - "Applicable Loads for ASME Code Class A and B Components" [PSAR_ch06 Table 6.4-17 p.79]
+- "The overturning factor of safety, sliding factor of safety and Floatation Factor of Safety is 1.5 when OBE is used and 1.1 when SSE is used." [PSAR_ch06 Table 6.4-9 Note 4 p.69]
+- "USO did not develop a separate seismic analysis involving the OBE in accordance with RG 1.61, because the OBE is one-third of the SSE." [SER_KU1_CP §6.4.1.1.2 p.392]
+- "The staff determined that the development of the design ground motions for SR and NSRST SSCs is reasonable because, i) they rely on the seismic hazard analysis that was reviewed and accepted by the staff in SE section 2.6.2, and ii) USO is following guidance in RG 1.61 to define the OBE based on the SSE." [SER_KU1_CP §6.4.1.1.2 p.393]
+- "The staff determined that USO’s information on loads and load combinations is appropriate for the design of SR structures because the load combinations and the load factors are consistent with ACI 349-13, RG 1.142, ANSI/AISC N690-18, and RG 1.243." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "The staff will review the application of these loads and load combinations at the OL stage." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "PSAR section 6.4.4 addresses the design and analysis of piping systems and piping supports." [SER_KU1_CP §6.4.1.4 p.403]
+- "The applicant clarified during the audit that this section is only applicable to piping systems and piping supports that select ASME BPVC Section III as their design code." [SER_KU1_CP §6.4.1.4 p.403]
+- "The GV is designed, fabricated, erected, and tested in accordance with ASME BPVC Section VIII, Division 1 (Reference 7.1.2-3)." [PSAR_ch07 §7.1.2.3 p.38]
+- "Code stress analysis methods, along with identification of loads and load combinations, for the GV are described in Section 6.4.3." [PSAR_ch07 §7.1.2.3 p.38]
+- "The methods used for development of CRDM loads, load combinations, and stress limits are described in Section 6.4.4." [PSAR_ch07 §7.2.5.2 p.156]
 
 | Load | Description | 출처 |
 |---|---|---|
@@ -99,6 +111,10 @@ OBE%%t:OBE%%는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되므�
 하중조합은 Design, Service Level A–D 과도, Service Level B OBE%%t:OBE%%, Service Level D Safe Shutdown Earthquake%%t:SSE%%, Static Pressure Test, 그 밖의 시험의 아홉 조건으로 나뉜다. service stress limit은 Design 조건이 Design, Service Level A 과도가 A, Service Level B 과도와 Service Level B OBE%%t:OBE%%가 B, Service Level C 과도가 C, Service Level D 과도와 Service Level D Safe Shutdown Earthquake%%t:SSE%%가 D, Static Pressure Test가 Test, 그 밖의 시험이 B이다. Table 6.4-18의 조합 기호와 Table 6.4-17의 하중 이름의 대응은 원문에 없다. 정압시험은 `HBB-6000` 또는 `HCB-6000`에 따르고 Test 한계로 평가하며, 그 밖의 시험 사건은 `HBB-3113.7`에 따라 Level B Service Limit으로 평가한다. Service stress limit만으로 기능을 보증할 수 없는 기기와 지지물에는 functional limit을 따로 설정한다.
 
 압력 방출 장치의 방출 반력은 `ASME` Code `Section III` Appendix O의 지침으로 해석하고, 더 낮은 값의 정당화나 동적해석이 없으면 dynamic load factor 2.0의 정적해석으로 반력과 모멘트를 정한다. 정적·동적 해석에 쓰는 프로그램에는 유한요소 해석의 `ANSYS`, 설계 과도의 열수력 조건을 만드는 `TP RELAP5-3D`, 상세 열수력 해석의 `STAR-CCM+`가 있다.
+
+**규정 대비 메모(C44, 규정 불일치).** `PSAR` Chapter 6은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적으면서도, Table 6.4-9 주석에는 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. Table 6.4-9 주석의 OBE%%t:OBE%% 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 Safety-Related%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
+
+**규정 대비 메모(C47, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `ASME` `BPVC` Section `VIII`, Division 1로 설계하는 Guard Vessel%%t:GV%%의 응력해석 방법과 하중·하중조합을 §6.4.3에서 기술한다고 적고, `CRDM`의 하중·하중조합·응력 한계 개발 방법을 §6.4.4에서 기술한다고 적는다. Chapter 6 §6.4.3은 `ASME` Code Section `III`, Division 5 기기를 다룬다고 적고, `SER`은 §6.4.4가 `ASME` `BPVC` Section `III`를 설계 코드로 고른 배관과 배관 지지물에만 적용된다는 신청자 설명을 기록한다. 이 교차참조의 적부를 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 7 참조의 적부에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_ASME_Design_Transients]]

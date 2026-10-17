@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch07
 - PSAR_ch05
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -175,6 +176,11 @@ terms_pending: []
 - "Seismic special treatments are applied to NSRST portions of the SCG, as applicable based on seismic classification, to provide assurance that risk-significant functions or functions required for adequate defense-in-depth are capable of being performed." [PSAR_ch07 §7.2.3.2.2 p.122]
 - "Major equipment safety classifications for Primary SCG and Intermediate SCG are provided in Table 7.2.3-1." [PSAR_ch07 §7.2.3.2.2 p.122]
 - "Figure 7.2.3-1 and Figure 7.2.3-2 provide identification of general SSC classifications for SCG equipment; individual SSCs are classified as described in Section 5.1." [PSAR_ch07 §7.2.3.2.2 p.122]
+- "The staff audited the LBEs that rely on this function and determined that a SR SCG isolation function is appropriate for radionuclide retention." [SER_KU1_CP §7.2.3.1.15.1 p.475]
+- "The staff will review the integration of this function into the final design during the OL review." [SER_KU1_CP §7.2.3.1.15.1 p.475]
+- "DL3-RR1c, SCG Primary System Barrier (SR)" [SER_KU1_CP §7.2.3.1.15.1 p.475]
+- "DL3-RR10, SCG Isolation (SR)" [SER_KU1_CP §7.2.3.1.15.1 p.475]
+- "Note 1 to PSAR table 5.2-3 states that DL3-RR10 mitigates radionuclide release from SCG pathways following certain LBEs." [SER_KU1_CP §7.2.3.1.15.1 p.475]
 
 | Function ID | Function Description | SCG Functional Support | 출처 |
 |---|---|---|---|
@@ -284,6 +290,7 @@ terms_pending: []
 | Intermediate SCG | Overpressure Protection Skids Rupture Disks, Relief Valves, and Equalization Line Isolation Valves | NSRST | [PSAR_ch07 Table 7.2.3-1 p.130] |
 
 - "Classification is for integrity of the associated pressure boundary only" [PSAR_ch07 Table 7.2.3-1 Note p.130]
+- "DL3-RR1 — Primary Coolant Boundary including RES Barrier" [PSAR_ch05 Table 5.2-3 p.12]
 - "DL3-RR10 is added at the CP stage to mitigate radionuclide release from SCG pathways in the following LBEs" [PSAR_ch05 Table 5.2-3 Note 1 p.16]
 - "The SR SCG isolation function will be fail safe, and necessary detection and actuation signals will be SR." [PSAR_ch05 Table 5.2-3 Note 1 p.16]
 - "This function has not yet been integrated into the design or analysis and is therefore not discussed further in the construction permit application." [PSAR_ch05 Table 5.2-3 Note 1 p.16]
@@ -411,6 +418,10 @@ regulatory guide%%t:RG%% 부합은 `RG 1.44`, `RG 1.61`, `RG 1.84`, `RG 1.87`, `
 intermediate 커버가스(cover gas)%%t:COVER_GAS%% 계통은 Reactor Auxiliary Building 안의 `NGA`에서 정제 argon을 받아 압력과 유량을 조절하고, Intermediate Sodium Pump tank, Intermediate Heat Transport System drain tank, bubbler tube, gas barrier, lube oil skid, aerosol filter와 sample line purge로 분배한다. 기체는 expansion tank와 drain tank를 거쳐 aerosol filter에서 소듐 증기와 aerosol이 제거된 뒤 oil bubbler를 지나 `NHV`로 배출된다. 설계 압력은 drain tank에서 Intermediate Heat Transport System loop를 공압으로 채우는 데 필요한 높은 압력을 수용한다.
 
 계통 설계·성능 평가 절은 primary 계통의 기능으로 냉각재 순도 유지, 원자로 용기 커버가스%%t:COVER_GAS%%를 head access area보다 약간 높은 압력으로 유지, 원자로 용기·control rod drive mechanism·Guard Vessel%%t:GV%% 과압 보호, 커버가스%%t:COVER_GAS%% 배기에서 소듐 증기·aerosol과 cesium 증기 제거, 파손 핵연료 감시, 계통 격리 등을 나열한다. primary 감시는 Reactor Building 지상층의 밀폐 cabinet에서 이루어지며, 배기에서 fission gas가 검출되지 않으면 `RWG` vacuum tank로 보내고, 새 파손을 뜻하는 증가가 검출되면 tag gas 분석 cabinet에서 xenon과 krypton 동위원소비를 질량분석기로 분석해 파손 집합체 또는 후보를 찾는다. 원자로 용기와 GV%%t:GV%% 사이 환형 공간의 기체는 산소 감소, 방사능 증가, filter 차압 증가로 원자로 용기 누설을 감시한다. intermediate 계통은 loop마다 전용 감시 계통을 두고 methane, oxygen, hydrogen, nitrogen을 측정한다.
+
+**규정 대비 메모(C27, 규정 불일치).** `SER`은 `DL3-RR10`을 SR%%t:SR%% 기능으로 인정하고 설계 통합을 operating license%%t:OL%%에서 검토한다. Chapter 7 `SCG` 기능 표에는 `DL3-RR10`이 없고 격리 밸브 닫힘을 SR%%t:SR%% primary coolant boundary 기능이 아니라고 적어, `SER`이 인정한 SR%%t:SR%% 격리 기능을 아직 반영하지 않았다. Chapter 7 문장은 `DL3-RR1c`(경계 기능)에 한정되므로 `DL3-RR10` 자체를 부정하지는 않는다.
+
+**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `SCG` 기능 표는 `DL3-RR1c`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.2.3.1.15.1은 Chapter 7의 하위 `ID`를 그대로 써서 `SCG`를 평가한다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]

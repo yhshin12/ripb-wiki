@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch03
 - SER_KU1_CP
-status: disputed
-verified: 2026-10-16
+- PSAR_ch05
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -79,6 +80,17 @@ terms_pending: []
 - "The staff identified one event, the sodium leakage from the RV into the RV-GV annulus, that potentially needs to be updated to an LBE at the OL." [SER_KU1_CP §3.4.1 p.228]
 - "The staff notes that this event therefore should have been identified as an LBE in the PSAR." [SER_KU1_CP §3.4.1 p.228]
 - "DHP-L1PP-4 assumes failure of the scram on high high power-to-flow ratio and as a result, DHP-L1PP-CN is not bounding for this event." [SER_KU1_CP §3.7.1.1 p.264]
+- "DL4-RC6(a-d) is identified as a defense line function in the most recent revision of the PRA. The requirement has not yet been integrated into the design and is therefore not discussed further in the construction permit application." [PSAR_ch05 Table 5.2-4 Note 1 p.20]
+- "DL4-RC6 — Alternative Shunt Trip" [PSAR_ch05 Table 5.2-4 p.17]
+- "BDBE: DHP-L1PP-4, DHP-LOOP-4, DHS-ISTL-4, OTH-LMAC-4, RPD-CW1ACS-4, RPD-SS-4" [PSAR_ch05 Table 5.2-4 p.17]
+- "The BLTC is not expected to be mated with the PIC during the washing operation. Therefore, the mated BLTC/PIC (DL3-RR5a) is the appropriate radionuclide barrier for the drop events (RFH-FDPI), but not for the washing events (RFH-ESWR)." [SER_KU1_CP §3.6.1.4 p.250]
+- "While uncertainty in the design remains, the staff determined that the information provided was sufficient to support the CP based on:" [SER_KU1_CP §3.6.1.4 p.250]
+- "The PIC radionuclide retention barrier SSCs are currently classified as SR through the DL3-RR5a SR function." [SER_KU1_CP §3.6.1.4 p.250]
+- "The additional preventative controls are expected to reduce the frequencies for these LBEs farther from the F-C target curve, as described in the PIC supplement." [SER_KU1_CP §3.6.1.4 p.250]
+- "These are conservative assumptions that could be adjusted as the event specific mechanistic source term is developed at the OL stage." [SER_KU1_CP §3.6.1.4 p.250]
+- "Based on these considerations, the staff determined that review of this evaluation can reasonably be deferred to the OL stage based on the preliminary nature of the design." [SER_KU1_CP §3.7.1.1 p.264]
+- "Therefore, the staff determined that the finalization of this aspect of the design can be left to the OL stage" [SER_KU1_CP §5.5 p.354]
+- "The postulated initiating event is a sodium-water reaction in the Pool Immersion Cell (PIC) during fuel handling activities while the PIC and BLTC are mated that causes fuel cladding failure." [PSAR_ch03 §3.9.5.3.1 p.116]
 
 | LBE ID | 항목 | 5th Percentile | Mean | 95th Percentile | 출처 |
 |---|---|---|---|---|---|
@@ -331,6 +343,12 @@ Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%
 **NRC staff 평가.** NRC staff는 LFF-SAO-2가 일차 functional containment 경계가 실패하고 `HAA`는 성공하는 사건으로 의도되었으나, `PSAR`의 MST%%t:MST%% 서술은 일차 냉각재 경계가 건재하고 `HAA`가 실패한 경우로 적혀 있다고 지적한다. 감사 중 사업자는 이 해석이 잘못되었다고 확인했으며, staff는 기존 여유도와 확인 해석에 근거해 `PSAR` 단계의 BDBE%%t:BDBE%% 분류는 적절하다고 보고 사건 서술은 OL%%t:OL%% 단계에서 고쳐질 것으로 예상한다. 또 staff는 DHP-L1PP-1, DHP-L1PP-4, OTH-LMAC-1처럼 95th percentile 빈도가 Design Basis Event%%t:DBE%% 범위에 걸치는 BDBE%%t:BDBE%%에 Design Basis Accident%%t:DBA%%를 지정해야 한다고 적고, DHP-L1PP-4의 DBA%%t:DBA%%를 평가하면 이 사건이 credit하는 alternative shunt trip이 Non-Safety-Related with Special Treatment%%t:NSRST%%에서 Safety-Related%%t:SR%%로 올라갈 것으로 예상한다.
 
 **`PSAR` 목록 밖의 사건.** `SER`은 95th percentile 빈도를 분류에 썼다면 BDBE%%t:BDBE%%가 되었을 추가 사건을 Table 3.4-1로 제시하며, 그 표 제목의 기준은 5E-07/plant-year이다. 또 staff는 원자로 용기에서 RV-GV annulus로의 소듐 누설을 `PSAR`에서 Licensing Basis Event%%t:LBE%%로 식별했어야 할 사건으로 보고, OL%%t:OL%% 단계에서 LBE%%t:LBE%%로 추가될 수 있다고 적는다.
+
+**규정 대비 메모(C12-d, 규정 불일치).** `PSAR` Chapter 3의 alternative shunt trip BDBE%%t:BDBE%%는 이 기능을 credit하고 Chapter 5도 DL4-RC6의 연관 BDBE%%t:BDBE%%로 같은 사건들을 적지만, Chapter 5 표 주석은 DL4-RC6(a-d)가 최신 PRA의 방어선 기능일 뿐 아직 설계에 반영되지 않았다고 적는다. `SER`은 DHP-L1PP-4의 DBA%%t:DBA%%를 평가하면 이 기능이 NSRST%%t:NSRST%%에서 SR%%t:SR%%로 올라갈 것으로 예상하고, 이 평가의 검토를 OL%%t:OL%% 단계로 미루었으며, 설계 확정도 OL%%t:OL%% 단계에 맡길 수 있다고 판단했다.
+
+**규정 대비 메모(C63, 규정 불일치).** `PSAR` MST%%t:MST%% 서술(일차 경계 건전·`HAA` 실패)은 `SER`이 확인한 사건 의도(일차 functional containment 실패·`HAA` 성공)와 반대이며, 신청자도 audit에서 오류로 인정했다. `SER`은 BDBE%%t:BDBE%% 분류를 유지하고 서술 정정을 OL%%t:OL%%로 이연했다.
+
+**규정 대비 메모(C64, 규정 불일치).** `PSAR`은 Pool Immersion Cell 소듐-물 반응 사건을 `PIC`와 `BLTC`가 결합된 상태의 사건으로 적는다. `SER`은 세척 중에는 `BLTC`가 `PIC`와 결합되지 않을 것으로 보아, 결합 barrier인 DL3-RR5a는 낙하 사건에는 적절하나 세척 사건에는 적절하지 않다고 적었다. 그럼에도 `SER`은 `PIC` barrier Structures, Systems, and Components%%t:SSC%%가 DL3-RR5a를 통해 SR%%t:SR%%로 분류된 점, 추가 예방 조치가 빈도를 낮출 것으로 예상되는 점, 선원항%%t:SOURCE_TERM%% 해석의 가정이 보수적인 점을 근거로 construction permit%%t:CP%% 단계에는 충분하다고 판단했고, 그 가정은 OL%%t:OL%% 단계에서 사건별 MST%%t:MST%%를 개발하며 조정될 수 있다고 적었다.
 
 ## 관련 문서
 - [[Natrium_LBE_Selection]]

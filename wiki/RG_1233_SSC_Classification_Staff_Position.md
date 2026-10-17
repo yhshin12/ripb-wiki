@@ -4,8 +4,8 @@ aliases: []
 sources:
 - RG_1.233
 - NEI_18-04
-status: disputed
-verified: 2026-09-16
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - rg-1233
@@ -32,7 +32,7 @@ terms_pending: []
 - "“Barrier functions” can also include indirect functions, in which an SSC serves to protect one or more other SSCs that may be classified as barriers." [RG_1.233 §C.2 p.17]
 - "The Commission’s SRM dated December 4, 2018 (Ref. 37), approved the methodology described in SECY-18-0096 for establishing functional containment performance criteria for non-LWRs." [RG_1.233 §C.2 p.17]
 - "The magnitudes of the safety margins in performance are set considering the uncertainties in performance, the nature of the associated LBEs, and criteria for adequate DID." [RG_1.233 §C.2 p.17]
-- "C.2 Staff Position: NEI 18-04 provides an acceptable method for assessing and classifying non-LWR SSCs as SR, NSRST, or non-SR with no special treatment." [RG_1.233 §C.2 p.18]
+- "C.2 Staff Position: NEI 18-04 provides an acceptable method for assessing and classifying non-LWR SSCs as SR, NSRST, or non-SR with no special treatment. The staff offers the following clarifications:" [RG_1.233 §C.2 p.18]
 - "The classifications and related outcomes may not apply for alternative approaches that do not follow the other parts of the NEI 18-04 methodology." [RG_1.233 §C.2.a p.18]
 - "The staff expects that SSCs that provide essential support (including required human actions) for SR or NSRST SSCs will be classified in a manner consistent with the higher-level function, even if the supporting SSC is not explicitly modeled in the PRA." [RG_1.233 §C.2.a p.18]
 - "Use of the term “safety-related” in NEI 18-04 for non-LWRs is not the same as the definition in 10 CFR 50.2, and the SSCs included in the “safety-related” classification for non-LWRs may not be the same as those considered safety-related for LWRs." [RG_1.233 §C.2.b p.18]
@@ -49,6 +49,8 @@ terms_pending: []
 SR%%t:SR%% SSC%%t:SSC%%에는 Required Functional Design Criteria%%t:RFDC%%와 하위 설계 기준을 정해 `RG 1.232`로 만든 principal design criteria%%t:PDC%%가 담지 못하거나 보완할 설계 고유 기준을 담고, NSRST%%t:NSRST%% SSC%%t:SSC%%는 RFDC%%t:RFDC%%와 직접 연결되지 않지만 risk significance나 심층방어%%t:DID%% 평가 결과로 special treatment%%t:SPECIAL_TREATMENT%%를 받는다. barrier function에는 다른 barrier%%t:BARRIER%% SSC%%t:SSC%%를 보호하는 간접 기능도 포함되며, Commission은 비경수형원전%%t:NON_LWR%%의 functional containment 성능 기준을 정하는 방법론을 승인했다. 성능의 safety margin%%t:SAFETY_MARGIN%% 크기는 성능 불확실도, 관련 LBE%%t:LBE%%의 성격, 심층방어%%t:DID%% 적절성 기준을 고려해 정한다.
 
 직원 입장 C.2의 명확화 a는 분류와 그 결과가 NEI 18-04의 다른 부분을 따르지 않는 대안 접근에는 적용되지 않을 수 있다고 적고, SR%%t:SR%%이나 NSRST%%t:NSRST%% SSC%%t:SSC%%에 필수 지원을 제공하는 SSC%%t:SSC%%와 필요한 인적 행위를 PRA에 명시적으로 모델링되지 않았더라도 상위 기능과 일관되게 분류하기를 기대한다. NEI 18-04는 safety-significant SSC%%t:SSC%%가 PRA에 모델링된 SSC%%t:SSC%% 범위 안에 있다고 적으므로, 이 기대는 NEI 18-04 문장의 범위를 넘는다. 명확화 b는 NEI 18-04의 safety-related가 10 CFR 50.2 정의와 같지 않고 그 범주의 SSC%%t:SSC%%가 LWR의 safety-related SSC%%t:SSC%%와 다를 수 있으며, nonsafety-related는 NRC 규정에 정의되지 않은 말로 이 지침과 NEI 18-04에서는 safety-related가 아닌 SSC%%t:SSC%%를 뜻한다고 적는다.
+
+**규정 대비 메모(C13-b, 규정으로 해소).** NEI 18-04는 safety-significant SSC%%t:SSC%%를 PRA에 모델링된 SSC%%t:SSC%% 범위 안에 둔다고 적는다. [[RG_1.233]]은 NEI 18-04를 SSC%%t:SSC%% 분류의 수용 가능한 방법으로 보되 명확화를 붙이며, C.2.a에서 SR%%t:SR%%이나 NSRST%%t:NSRST%% SSC%%t:SSC%%에 필수 지원을 제공하는 SSC%%t:SSC%%는 PRA에 명시적으로 모델링되지 않았더라도 상위 기능과 일관되게 분류할 것을 기대한다. 두 문언의 범위는 다르지만 명확화는 이 수용에 붙은 조건이므로, 지원 SSC%%t:SSC%% 분류 범위는 [[RG_1.233]] C.2.a를 기준으로 본다.
 
 ## 관련 문서
 - [[NRC_Endorsement_Of_NEI_18-04]]

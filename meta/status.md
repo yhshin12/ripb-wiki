@@ -40,8 +40,8 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 0. 원문 2건(RG_1.253·RG_1.247, SER_KU1_CP) 인제스트를 마쳤으므로 다음 `wiki-audit`과 SER 잔여분 반영 노트(PDC 정합성 노트 5개 등)의 `wiki-lint` 의미 점검을 제안한다.
 0a. 2026-10-16 `wiki-audit`(seed 20261016)와 `wiki-lint` 의미 점검은 끝났다. 의미 점검 조치 1–19는 적용했다(`meta/lint/2026-10-16.md`). 남은 것: 계통 묶음 대조 재의뢰(계통 노트 5건의 "vault에 없" 판정, ACRS 두 노트와 SER의 중복, C34 반응도 계수 목록, 운전 모드).
 0b. 정제 파이프라인 보완 후보: RG_1.247 Table 1 내용 누락, 부록 A 굵은 글씨·취소선 소실(현재 노트는 issue 문장 위주), C.1.3.8 쪽 표지 위치; RG_1.253 Table A-2·A-3 표 구조 깨짐.
-1. lint 조치 A6 결정(`Risk_Significant_SSC` 단일 기록처화와 `Risk_Importance_Measures` disputed 해제).
-2. NEI 18-04 내부 불일치 3건(§5.3 Task 1의 "Task 14" 참조, 용어집 RI 출처 칸, Task 7c "within 1%"와 §4.2.2 "exceeds 1%")을 `meta/contradictions.md`에 기록할지 결정.
+1. lint 조치 A6(`Risk_Significant_SSC` 단일 기록처화)는 남았다. `Risk_Importance_Measures`의 disputed는 2026-10-17 판정으로 해제되었다.
+2. (완료) NEI 18-04 내부 불일치 3건은 C70–C72로 기록했다.
 3. 남은 미정 용어 후보 질문.
 4. `wiki-lint` 의미 점검(2026-09-16 배치 전체).
 5. 다음 `wiki-audit`: 다음 원문 2건 인제스트 뒤, 또는 수정된 대조 절차로 만든 노트가 생긴 뒤.
@@ -53,15 +53,13 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 - 약어가 있는 영어 유지 용어의 이후 표기는 약어.
 - 긴 장은 추출을 읽기 전용 서브에이전트에 맡기고(`extract/*.md`, 인용 ±1쪽 재검증), 노트는 생성 스크립트로 쓰고, 작성 뒤 읽기 전용 서브에이전트로 해설을 원문과 대조한다. 2026-09-16 배치에서 오류 10, 수정 권고 53건을 잡았다.
 - 해설 규칙: 수치는 원문 사실 절에 있어야 한다(V5, 백틱 안의 수도 검사됨, `Chapter`/`Section`/`§` 뒤 번호는 제외). 인용 조각 3단어 이상. `1차`처럼 숫자가 든 한국어도 V5에 걸린다.
-- disputed 판정은 모든 원문 인제스트 뒤로 미룬다(2026-09-16 사용자 결정). 새 모순은 `meta/contradictions.md`에 모은다.
+- 모순 판정 원칙(2026-10-17 사용자 결정): 권위 문서(NRC 문서, RG 1.233이 승인한 NEI 18-04)끼리의 실질 상충만 disputed. PSAR과 권위 문서의 차이, PSAR 내부 차이는 해설의 "규정 대비 메모"로 해소. 권위 문서끼리 표기 차이는 기록만. RG 명확화가 NEI 문장보다 우선하고, SER의 해석은 해소·SER의 문언 밖 확장은 dispute. 새 모순은 `meta/contradictions.md`에 모은다.
 
 ## 미해결
-- 모순 C58–C66 판정 대기(갈래 미정). C62–C66은 2026-10-16 의미 점검에서 새로 기록했고, C13의 PRA standard 상태는 RG 1.247로 해소 후보가 되었다.
+- 모순 C1–C73 판정(2026-10-17): 상위 dispute 7건(C14-1, C14-6, C59, C61, C66, C67, C68), disputed 노트 7개. 상세 메모 `meta/contradictions_memos_2026-10-17.md`.
 - 누락 주제(2026-10-16 의미 점검): alternative shunt trip(DL4-RC6a–d), other quantified events(OQE), Pin Removal Cell, Pool Immersion Cell과 ESWR 사건군, SHX(허가 조건 대상), RIM 프로그램, D-RAP, 항공기 충돌 평가, complementary design criteria, Prevention Function의 분류 처리, 피동 NSRST 저하 성능의 DBA credit, PRA 형상 관리·self-assessment·peer review, 사용후연료 PRA, DG-1404와 RG 1.253의 관계, 10 CFR 50.34(f)의 비경수형원전 적용성, SER의 "seventeen AOOs and BDBEs" 목록. vault에 원문이 없는 문서: NEI 21-07, NEI 20-09, ASME/ANS RA-S-1.4-2021 본문, NUREG-1855.
 - 도구 개선 후보: 새 노트가 생겨도 기존 노트의 "vault에 없" 문장을 다시 점검하는 검사가 없다(2026-10-16 audit 원인 후보, 의미 점검에서 16건 확인).
 - 첫 `wiki-audit`(2026-10-14, seed 20261014): 노트 오류율 20 % (2/10), 원문 사실 항목 오류 0/417. 목표 노트 오류율 ≤ 10 %. 오류 2건은 해설의 원문 사실 근거 누락과 문서 구조 배타 진술; `wiki-ingest` 대조 지시를 보완함. `meta/metrics.md`.
-- 원문 간 모순(disputed, 이전 결정): NEI 18-04 SSC risk significance 평균/상한(`Risk_Importance_Measures`, `LBE_Risk_Significance`, `Risk_Significant_SSC`), BDBE 빈도 하한(`LBE_Frequency_Categories`).
-- 모순 57건 판정 완료(2026-09-16): disputed 28건(노트 38개), 기록만 25건, 공백 4건. `meta/contradictions.md` §판정.
 - 다음 용어 질문 후보(노트에는 영어로 둠): redundant/redundancy, partially·fully conform, margin(setpoint margin 등), qualified(seismically/environmentally), PEP, LBE family, plant functional/physical capability DID, DID baseline, severe accident, Design Reliability Assurance Program, seismic classification, SCS1/SCS2/SCN1–SCN3, Seismic Category I, maximum considered earthquake, OBE, LCO, LSSS, SL, COLR, ERO, ERF, technical specifications, emergency preparedness, protective action, emergency response functions, control rod assembly, refueling, downpower, passive, design basis ~, reasonable assurance/confidence, stylized scenarios, permanent uncertainties, integrated risk, plant challenges; 낮은 우선순위: 결정론적 안전해석, 보수적 가정, 미지 요소, 불리한 사건, 보호 전략, 모델링 불확실도. 2026-09-16 배치에서 더한 후보: steel embedment, extraordinary events, consensus codes and standards, design transient, Level A–D Service Loading, service stress limit, core support structure, design-by-rule/design-by-analysis, Foundation Input Response Spectra, in-structure response spectra, seismic anchor motion, accidental torsion, Lateral Force Resisting System, limit state design method, stay-in-place formwork, dynamic amplification factor, factors of safety, functional containment, radionuclide retention, stack.
 - 2026-09-16 완료한 lint 조치: A7(새 노트 4), A9(C17 기록), A1(LBE_Risk_Significance 해설에 평균·상한 병기), A4(Integrated_Decision_Making_Process 해설에 SR 예외 명시). 남은 결정: A6(Risk_Significant_SSC를 단일 기록처로 두고 Risk_Importance_Measures의 disputed 해제).
 - NEI 18-04 용어집 RI 항목의 출처 칸 오기 가능성(고치지 않음).

@@ -1,9 +1,9 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04, SER_KU1_CP]
-status: checked
-verified: 2026-09-15
+sources: [NEI_18-04, SER_KU1_CP, RG_1.233]
+status: disputed
+verified: 2026-10-17
 term:
 tags: []
 terms_pending: []
@@ -38,6 +38,14 @@ terms_pending: []
 - "However, based on USO’s interpretation of statement (a) that NSRST SSCs may continue to function but not perform RSFs, and statement (b), USO incorporated some passive NSRST SSCs performing at a degraded level in their DBA source term analyses." [SER_KU1_CP §5.1 p.339]
 - "The staff determined that USO’s interpretation of the guidance and approach to ascribing some amount of degraded performance to passive NSRST SSCs in DBA source term analyses was reasonable, but acceptability is dependent on the design aspects of the SSCs and the level of degraded performance credited." [SER_KU1_CP §5.1 p.339]
 - "It is appropriate that for the inherent capabilities of passive functions, degradation of the passive function is considered, as opposed to complete failure" [SER_KU1_CP §5.1 p.339]
+- "Since the design is preliminary, a final determination on the acceptability of this approach to DBA source term analysis will be made at the OL stage when the methodology and complete scope of SSCs credited with degraded performance will be available for review." [SER_KU1_CP §5.1 p.339]
+- "NEI 18-04 contains the following statements in sections 5.3 and 5.6.2:" [SER_KU1_CP §5.1 p.339]
+- "DBAs are then constructed, starting with each DBE, and then assuming that only the SR SSCs perform their associated RSFs." [NEI_18-04 §5.3 Task 10 p.64]
+- "The guidelines in Table 5-2 require that two or more independent plant design or operational features be provided to meet the plant capability requirements." [NEI_18-04 §5.6.2 p.69]
+- "It is appropriate that for the inherent capabilities of passive functions, degradation of the passive function is considered, as opposed to complete failure (i.e., a physical non-existence of that function)." [NEI_18-04 §5.6.2 p.69]
+- "DBAs are derived from the DBEs by prescriptively assuming that only Safety Related SSCs are available to mitigate postulated event sequence consequences to within the 10 CFR 50.34 dose limits." [NEI_18-04 Table 3-1 p.14]
+- "Design-basis accidents (DBAs) are derived from DBEs by assuming that only safety-related (SR) SSCs are available to mitigate the events." [RG_1.233 §C.1 p.11]
+- "A deterministic DBA is associated with each DBE that includes the required safety function challenges, but the DBA analysis is performed with the assumption that the required safety functions are performed by SR SSCs." [RG_1.233 §C.1 p.12]
 
 | 항목 | 값 | 출처 |
 |---|---|---|
@@ -64,6 +72,8 @@ Task 1은 두 경우의 초점을 구분한다. Initiating Event%%t:IE%%의 결�
 모든 SR%%t:SR%% SSC%%t:SSC%%는 Design Basis External Hazard Level%%t:DBEHL%%의 영향으로부터 보호되어야 하므로, NST%%t:NST%%나 NSRST%%t:NSRST%% SSC%%t:SSC%%의 고장이 SR%%t:SR%% SSC%%t:SSC%%의 RSF%%t:RSF%% 수행을 방해하지 않도록 하는 설계 요건이 생길 수 있다. Task 6과 Task 7은 분류 결과에서 요건을 도출한다. SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%에는 설계 요건과 special treatment%%t:SPECIAL_TREATMENT%% 요건이 붙고, NST%%t:NST%% SSC%%t:SSC%%의 reliability target과 capability target은 규제 요건이 아닌 소유자 설계 요건에 속한다.
 
 **Natrium 심사 사례.** 원문은 Task 5A에서 SR%%t:SR%%로 분류한 SSC%%t:SSC%%만 DBA%%t:DBA%% 해석에 포함된다고 적는다. Natrium 건설허가 심사에서 사업자는 일부 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%를 저하된 성능으로 DBA%%t:DBA%% 선원항(source term)%%t:SOURCE_TERM%% 해석에 포함했고, NRC staff는 이 접근을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단했다. 이 credit은 Task 5A 문장과 문언상 다르지만, `SER`은 이를 원문 §5.3·§5.6.2의 두 문장, 곧 DBA%%t:DBA%%에서 SR%%t:SR%% SSC%%t:SSC%%만 RSF%%t:RSF%%를 수행한다고 가정한다는 문장과 피동 기능은 완전 고장 대신 성능 저하를 고려한다는 문장에 대한 사업자 해석으로 본다.
+
+**규정 대비 메모(C67, 상위 dispute).** NEI 18-04 §5.3 Task 10은 DBA%%t:DBA%%를 구성할 때 SR%%t:SR%% SSC%%t:SSC%%만 연계된 RSF%%t:RSF%%를 수행한다고 가정한다고 적고, [[RG_1.233]] C.1도 DBA%%t:DBA%% 해석은 RSF%%t:RSF%%를 SR%%t:SR%% SSC%%t:SSC%%가 수행한다는 가정으로 한다고 적어, 비SR%%t:SR%% SSC%%t:SSC%%의 비RSF%%t:RSF%% 기능을 배제하지 않는 것으로 읽힐 여지가 있다. `SER`은 이 읽기와 §5.6.2의 피동 기능 저하 문장에 근거한 사업자 해석, 곧 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%의 저하 성능 credit을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단하고, 최종 판단을 operating license%%t:OL%% 단계로 미루었다. 그러나 NEI 18-04 §4.1과 표 3-1, 그리고 [[RG_1.233]] C.1의 DBA%%t:DBA%% 도출 문장은 DBA%%t:DBA%% 완화에 동원되는 SSC%%t:SSC%%를 SR%%t:SR%% SSC%%t:SSC%%로만 한정하며, `SER`은 이 문장들을 언급하지 않는다. 또 §5.6.2의 저하 문장은 Table 5-2 심층방어%%t:DID%% 지침의 맥락에 있고 DBA%%t:DBA%% 해석을 지칭하지 않으므로, 권위 문서 사이의 해석 차이가 남는다.
 
 ## 관련 문서
 - [[Safety_Significant_SSC]]

@@ -4,8 +4,10 @@ aliases: []
 sources:
 - PSAR_ch11
 - RG_1.233
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+- PSAR_ch01
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -49,6 +51,20 @@ terms_pending: []
 - "However, capabilities will be provided to assess on-site conditions to support recommendations for protective actions to off-site agencies." [PSAR_ch11 §11.3.6.3 p.56]
 - "An emergency planning zone is the area surrounding some nuclear facilities within which special considerations and management practices are preplanned and exercised in case protective actions are needed to protect the public from a release of radioactive material." [RG_1.233 §C.4 Emergency Preparedness p.22]
 - "For non-LWRs, the spectrum of events for evaluating the need for emergency planning zones is expected to be the LBEs as described in NEI 18-04, adjusted as necessary to reflect the specific criteria in the emergency planning decision-making process (e.g., dose calculations over a period of 96 hours from the release of radioactive materials in DG-1350 versus the 30-day period in NEI 18-04 for plotting on the F-C target)." [RG_1.233 §C.4 Emergency Preparedness p.22]
+- "Therefore, the staff determined that the preliminary KU1 PEP EPZ size determination analysis information is acceptable and meets the applicable PSAR preliminary plan discussion requirement in 10 CFR 50.34(a)(10)(ii)" [SER_KU1_CP §11.3.1.1.3 p.676]
+- "The PSAR does not state that the applicant plans to deviate from the 10 CFR 50.160 requirements or the guidance of RG 1.242." [SER_KU1_CP §11.3 p.669]
+- "and the associated RG 1.242, “Performance-Based Emergency Preparedness for Small Modular Reactors, Non-Light-Water Reactors, and Non-Power Production or Utilization Facilities,” Rev. 0" [SER_KU1_CP §11.3 p.669]
+- "RG 1.242, section C, “Staff Regulatory Guidance,” guidance item 2.c, which states that the analysis of the emergency planning zone (EPZ) size required in 10 CFR 50.33(g)(2) may be preliminary for CPs consistent with the preliminary design of the facility as described in the PSAR." [SER_KU1_CP §11.3 p.670]
+- "states that the TerraPower TR, NAT-3056, “Plume Exposure Pathway Emergency Planning Zone Sizing Methodology,” (ML25104A001) provides an approach for determining the KU1 PEP EPZ size based on the area within which public dose, as defined in 10 CFR 20.1003, “Definitions”, is projected to exceed 10 millisievert (mSv) (1 rem) total effective dose equivalent (TEDE) over" [SER_KU1_CP §11.3.1.1.2 p.672]
+- "4 days (96 hours) from the release of radioactive materials from the facility, considering accident likelihood and source term, timing of the release sequence, and meteorology." [SER_KU1_CP §11.3.1.1.2 p.672]
+- "The staff approved NAT-3056, Rev. 3 (NAT-3056-A), on March 28, 2025 (ML25076A653)." [SER_KU1_CP §11.3.1.1.2 p.673]
+- "The staff reviewed and evaluated the applicant’s use of NAT-3056-A in TP-LIC-RPT-0012 and determined that the preliminary PEP EPZ sizing analysis includes discussion of the use of the KU1 PRA in the PEP EPZ sizing analysis." [SER_KU1_CP §11.3.1.1.2 p.674]
+- "This same PRA was used in the Licensing Modernization Project-based PSAR analysis." [SER_KU1_CP §11.3.1.1.2 p.674]
+- "RGs that have been designated applicable but do not have a conformance designation are RGs that are evaluated to be not applicable to the design and construction phase of the project and will be addressed at the operating license (OL) stage." [PSAR_ch01 §1.4.1 p.66]
+
+| Guide Number | Title | Revision | Conformance Status | 출처 |
+|---|---|---|---|---|
+| 1.242 | Performance-Based Emergency Preparedness for Small Modular Reactors, Non-Light-Water-Reactors, and Non-Power Production or Utilization Facilities | 0 | Full Conformance | [PSAR_ch01 Table 1.4-1 p.69] |
 
 ## 해설
 이 절은 비상 상황에 대처하기 위한 예비 계획을 기술하며, emergency preparedness 계획 자체는 OL%%t:OL%% 단계에서 제공된다. `performance-based` 계획과 프로그램은 `10 CFR 50.160`의 요건과 `RG 1.242, Revision 0`의 지침으로 개발되고, 계획과 `PEP` EPZ%%t:EPZ%%는 설계·부지 고유 정보로 개발된다. 가정된 비상 상황이 정해지면 `emergency response functions`, `ERO` 인원, `ERF`, `PEP` EPZ%%t:EPZ%% 크기에 반영되며, 계획의 수용 가능성은 훈련, drill, exercise의 성과를 평가·비판해 입증한다. `10 CFR 50.160`과 `RG 1.242`는 small modular reactor와 다른 신기술에 대해 `performance-based`, technology-inclusive, risk-informed, `consequence-oriented` 접근과 크기를 조정할 수 있는 `PEP` EPZ%%t:EPZ%%를 제공한다.
@@ -60,6 +76,10 @@ terms_pending: []
 예비 크기 분석은 보안 사건을 따로 식별하지 않았다. 규제 요건과 security-by-design 특성이 시설에 관련될 수 있는 사건을 식별하고, 보안 사건의 세부가 개발되면 내부·외부 Licensing Basis Event%%t:LBE%% 목록으로 포괄되지 않을 수 있는 사건을 가려내며, 남은 사건 가운데 `PEP` EPZ%%t:EPZ%% 분석의 완결성을 위해 평가가 필요한 사건에는 OL%%t:OL%% 단계를 뒷받침하도록 정성 또는 정량 접근을 적용할 예정이다.
 
 NRC regulatory guide%%t:RG%%의 `§C.4`는 EPZ%%t:EPZ%%를 일부 원자력 시설을 둘러싼 구역으로, 방사성 물질 방출로부터 공중을 보호할 `protective actions`가 필요할 경우에 대비해 특별한 고려와 관리 관행을 사전에 계획·연습하는 곳으로 설명한다. 또 `non-LWRs`에서 zone 필요성을 평가하는 사건 범위를 NEI 18-04의 LBE%%t:LBE%%로 예상하되, 필요에 따라(`as necessary`) 비상 계획 결정 과정의 기준을 반영하도록 조정한다고 적고, 그 예로 `DG-1350`의 `96 hours` 선량 계산 기간과 Frequency-Consequence Target%%t:FC_TARGET%% 도시용 NEI 18-04의 `30-day` 기간을 든다. `PSAR` Chapter 11은 크기 결정 지침을 `RG 1.242, Appendix A`에, 방법론을 `PEP EPZ Topical Report`에, 예비 결과를 `Preliminary Emergency Planning Zone Determination Analysis`에 두며, 인용한 문장들에는 선량 계산 기간이 없다. `RG 1.242`와 두 보고서의 원문은 vault에 없다.
+
+**규정 대비 메모(C16, 규정 불일치).** `PSAR` Chapter 11은 EPZ%%t:EPZ%% 크기 결정에 RG%%t:RG%% 1.242 Appendix A 지침을 썼다고만 적고, [[RG_1.233]] §C.4가 예상하는 LBE%%t:LBE%% 기반 사건 범위나 96시간 선량 기간을 적지 않는다. `SER`은 NAT-3056 방법이 시설 방출 뒤 4일(96시간) 동안 1 rem total effective dose equivalent%%t:TEDE%%를 넘는 구역으로 EPZ%%t:EPZ%% 크기를 정한다고 기술하고, 예비 크기 분석이 Licensing Modernization Project%%t:LMP%% 기반 `PSAR` 해석과 같은 PRA를 쓴다고 적은 뒤 그 분석 정보를 수용했다. 따라서 Chapter 11이 적지 않은 선량 기간은 `SER`이 확인한 승인 방법론으로 채워진다.
+
+**규정 대비 메모(C52, 신청자 문서 내부 불일치).** `PSAR` Table 1.4-1은 RG%%t:RG%% 1.242를 Full Conformance로 표시하고, Chapter 11은 emergency preparedness 계획을 OL%%t:OL%% 단계에서 제공한다고 적으며, §1.4.1은 OL%%t:OL%% 단계에서 다룰 RG%%t:RG%%에는 부합 표시를 두지 않는다고 적는다. `SER`은 RG%%t:RG%% 1.242 지침 항목 2.c가 construction permit%%t:CP%% 단계의 예비 EPZ%%t:EPZ%% 크기 분석을 허용한다고 보고 그 지침으로 CP%%t:CP%% 신청을 평가했으며, `PSAR`이 이 지침에서 벗어나겠다고 적지 않았다고 기록했다. 따라서 권위 문서 기준으로 Full Conformance 표시와 계획의 OL%%t:OL%% 단계 제출은 양립하고, 차이는 Table 1.4-1의 표시와 §1.4.1 규칙 사이에 있으며, RG%%t:RG%% 1.242 제목도 `SER`이 "Performance-Based"와 "Non-Light-Water Reactors"로 적는 데 비해 Table 1.4-1은 "Non-Light-Water-Reactors", Chapter 11은 "Performance Based"로 각각 한 곳씩 다르다.
 
 ## 관련 문서
 - [[Natrium_Emergency_Response_Organization_And_Facilities]]

@@ -3,8 +3,9 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch07
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -124,6 +125,11 @@ terms_pending: []
 - "The strain energy of the target at maximum response is used to balance the residual kinetic energy of the target (or target-missile combination) resulting from missile impact." [PSAR_ch07 §7.8.4.2.3 p.371]
 - "The primary components of the NCB steel superstructure are shown to possess adequate ductility and deflection capacity to absorb the strain energy due to impact of the external hazard tornado-generated missiles on the exterior wall and roof surfaces." [PSAR_ch07 §7.8.4.2.3 p.371]
 - "The MCRE reinforced enclosure is designed for tornado wind loads and associated missile effects in accordance with ACI 318-08 working with ACI 349-13, Appendix F special provisions for impactive effects." [PSAR_ch07 §7.8.4.2.3 p.371]
+- "The acceptance criteria for the FHB reinforced concrete structures and the SFP are in accordance with the limits defined in ACI 349-13 as modified by RG 1.142, “Safety-Related Concrete Structures for Nuclear Power Plants (Other than Reactor Vessels and Containments),” Revision 2, for the load combinations, as applicable, provided in Table 6.4-5 for SR reinforced concrete structures." [PSAR_ch07 §7.8.2.1.3 p.348]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the FHB:" [SER_KU1_CP §7.8.2 p.596]
+- "RG 1.142, Rev. 3;" [SER_KU1_CP §7.8.2 p.596]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the NCB:" [SER_KU1_CP §7.8.4 p.602]
+- "RG 1.142, Rev. 3;" [SER_KU1_CP §7.8.4 p.602]
 
 | 해석 항목 (원문 목록) | 출처 |
 |---|---|
@@ -146,6 +152,8 @@ principal design criteria%%t:PDC%% 2에 따라 하부구조는 Section 6.1.1의 
 `NI` Control Building 상부구조는 `GT` `STRUDL` Version 40으로 부재 설계, 처짐, 지점 반력, 동적 응답 특성을 해석한다. 횡력 저항 계통은 남북 방향 중심 가새 골조와 동서 방향 모멘트 골조이고, 지붕은 `ASCE 7-16`에 따라 유연 diaphragm으로 이상화되며, Type 1a·1b 수평 비정형성이 없어 accidental torsion 적용이 필요 없다. 상부구조는 붕괴하여 SR%%t:SR%% 하부구조에 영향을 주지 않는지 지진 상호작용을 해석하며, 단층 구조이고 평지붕 적설 하중이 30 pounds per square foot를 넘지 않으므로 유효 지진 질량에는 고정 하중만 넣는다.
 
 modal response spectrum analysis는 고유진동수 100 hertz 미만의 모든 모드에 대해 수행하고 직교 수평 방향마다 90 percent를 넘는 질량 참여를 얻으며, 모드 응답은 Complete Quadratic Combination Method로 조합한다. 토네이도 비산물 해석은 `RG 1.76`에 따라 지상 30 feet 아래의 모든 높이에서 자동차 비산물 충격을 고려하므로 지상 21 feet의 지붕 골조도 평가하며, 에너지 균형법으로 탄소성 응답의 상한을 추정한다.
+
+**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.4.1.3은 `NCB` 철근콘크리트 구조물·기기의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 3"으로 수정한 `ACI` 349-13 한계에 따른다고 적고, `SER`은 `NCB` 평가에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼으므로 `NCB` 절은 `SER` 기준과 같다. 같은 Chapter 7의 `FHB` 절(§7.8.2.1.3)은 같은 문장에 "Revision 2"를 적어, `FHB` 평가에도 RG%%t:RG%% 1.142 Rev. 3을 쓴 `SER` 기준과 다르다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다.
 
 ## 관련 문서
 - [[Natrium_System_Control_Room_Indications]]

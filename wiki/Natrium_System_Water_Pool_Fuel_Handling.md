@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch07, PSAR_ch05, PSAR_ch06]
-status: disputed
-verified: 2026-09-16
+sources: [PSAR_ch07, PSAR_ch05, PSAR_ch06, PSAR_ch03, SER_KU1_CP]
+status: checked
+verified: 2026-10-17
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -51,6 +51,9 @@ terms_pending: []
 - "Probabilistic risk assessment (PRA) safety functions are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.3.1.2 p.167]
 - "The safety-significant PRA safety functions are identified as SR functions or non-safety-related with special treatment (NSRST) functions as defined in Section 5.2." [PSAR_ch07 §7.3.1.2 p.167]
 - "The FHP supports the following safety-significant functions, which are designated as SR or NSRST to indicate the safety classification of FHP components relied upon to perform the function:" [PSAR_ch07 §7.3.1.2 p.167]
+- "This section demonstrates conformance with Principal Design Criterion 62, “Prevention of Criticality in Fuel Storage and Handling” (as described in Section 5.3) and 10 CFR 50.68, except for the U-235 enrichment limit defined in 10 CFR 50.68(b)(7)." [PSAR_ch03 §3.14 p.127]
+- "Therefore, the NRC hereby grants USO an exemption from the requirements of 10 CFR 50.68(b)(7) to allow the applicant to follow the requirements of 10 CFR 50.68(b) in lieu of" [SER_KU1_CP App. B.2.4 p.737]
+- "Exemption to 10 CFR 50.68(b)(7) is addressed in NAT-9403, “Regulatory Exemptions” (ML24088A084), and evaluated in appendix B of this SE." [SER_KU1_CP §3.13 p.315]
 
 | Function ID | Function Description | FHP Functional Support | 출처 |
 |---|---|---|---|
@@ -183,6 +186,8 @@ principal design criteria%%t:PDC%% 적용에서 `FHP` Structures, Systems, and C
 intact·failed fuel rack은 노심 집합체를 구조적으로 지지하고 하중 경로는 `SFP` liner를 거쳐 SR%%t:SR%% `FHB` substructure로 이어지며, `PHM`과 `PIC`는 연료 이동 중 임시 하중 경로이다. `RG 1.13` 부합은 부분 부합으로, 정상 보충수가 `Seismic Category I`이 아니고 heat sink 설계 하중이 원자로 열출력의 `0.3%` 이상이 아니며(설계상 전 노심 offload를 `SFP`로 할 수 없음, `precludes a full core offload`), 각 예외는 운전원 조치 전 `7 days` 넘게 피동 냉각할 수 있다는 해석으로 뒷받침된다. `SFP`는 정상 운전 `ten years`분의 spent fuel과 다른 노심 집합체를 저장하는 크기이고, 물 부피는 가득 찬 `SFP` 열부하(약 `225 kilowatts`)에서 보충 없이 적어도 `7 days` 냉각하며, 총 물 재고는 약 `574,000 gallons`이다. `Table 7.3.1-1`에서 fuel rack, liner, `PIC` failed fuel canister는 SR%%t:SR%%·`SCS1`, `PIC` cleaning vessel·process skid·receiver는 SR%%t:SR%%·`SCS2`, exterior fill leg·수위·온도 계측·`PHM`은 NSRST%%t:NSRST%%·`SCN3`이다. `neutron absorber material monitoring program`은 operating license%%t:OL%% 단계에서 제공될 예정이다(`will`). `RG 1.240`은 완전 부합이고, `RG 1.97`은 부분 부합으로 `10 CFR 50.155(e)` 요건을 충족하는 데 쓰인다. `PHM`은 지진 뒤 운전할 필요는 없으나 `SFP` 위에 걸쳐 있으므로 `SFP` 안전 기능을 해치거나 하중을 떨어뜨려서는 안 된다(`must not`).
 
 `PSAR` Chapter 5 표는 이 계통을 한 곳에서 `Water Fuel Pool Handling System`, 다른 곳에서 `Water Pool Fuel Handling System`으로 적고, Chapter 7은 뒤의 이름을 쓴다. Chapter 5는 `DL4-HR4`를 `Risk-Significant Function`으로 표시하고, Chapter 7은 그 기능의 exterior fill leg를 `SCN3`로 분류하며, Chapter 6은 `SCN3`를 NSRST%%t:NSRST%% SSC%%t:SSC%%의 최소 초기 분류로, `SCN1`을 지진 위험(`seismic risk`)에 대한 기여 가능성이 높다고 식별된 SSC%%t:SSC%%에 부여한다고 적는다. Chapter 7은 exterior fill leg가 지진·비지진 설계기준 사건 중 기능하도록 설계된다고도 적는다. `DL4-HR4`의 `Risk-Significant Function` 표시와 exterior fill leg의 `SCN3` 분류의 관계를 설명하는 원문은 vault에 없다. Chapter 6은 `SCS2`를 지진 시 고장이 safety significant function에 악영향을 주지 않는 SR%%t:SR%% SSC%%t:SSC%%에 부여한다고 적는다.
+
+**규정 대비 메모(C36, 규정 불일치).** `PSAR` Chapter 3 §3.14는 10 CFR 50.68 부합을 보이되 50.68(b)(7)의 U-235 농축도 한계는 예외로 한다고 적고, Chapter 7 §7.3.1.2는 핵연료 저장·취급 계통의 임계가 50.68(b)에 따라 방지된다고 적는다. NRC는 50.68(b)(7) 요건에 대한 면제를 부여했고, `SER`은 이 면제를 부록 B에서 평가한다고 적는다. Chapter 7 §7.3.1.2는 50.68(b) 부합만 적고 (b)(7) 면제를 언급하지 않으므로, `SER`이 부여한 면제가 Chapter 7 기술에는 드러나지 않는다.
 
 ## 관련 문서
 - [[Natrium_SR_Functions_Heat_Removal]]

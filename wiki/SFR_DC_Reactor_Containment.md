@@ -3,8 +3,8 @@ type: regulation
 aliases: []
 sources:
 - RG_1.232
-status: checked
-verified: 2026-09-16
+status: disputed
+verified: 2026-10-17
 term: null
 tags:
 - sfr-dc
@@ -86,6 +86,8 @@ terms_pending: []
 기준 55는 primary coolant boundary의 일부로 격납 구조를 관통하는 각 배관에, 계측 배관 같은 특정 계열 배관이 다른 정의된 근거로 수용 가능함을 입증하지 않는 한, 안쪽과 바깥쪽의 잠금 폐쇄 밸브와 자동 밸브를 조합한 네 가지 가운데 하나로 격납 격리 밸브를 두게 하고, 바깥쪽 자동 격리 밸브로 단순 역지 밸브를 쓰지 못하게 한다. 바깥쪽 격리 밸브는 격납에 가깝게 두고 구동 동력을 잃으면 더 안전한 위치를 취해야 하며, 배관 파열의 확률이나 결말을 줄이는 추가 요건은 부지 주변의 인구 밀도, 이용 특성, 물리적 특성을 고려해 정한다. 근거는 SFR%%t:SFR%%의 intermediate coolant system이 1차 냉각재 소듐과 직접 섞이지 않는 별개의 폐쇄 계통이고, intermediate heat exchanger 전열관과 관련 intermediate coolant system 배관은 primary coolant boundary의 일부이며, 전체가 primary coolant boundary는 아닌 폐쇄 계통의 격납 관통은 기준 57에서 다루는 것이 적절하다고 설명한다.
 
 기준 56은 격납 대기에 직접 연결되어 격납 구조를 관통하는 각 배관에 같은 네 가지 격리 밸브 조합과 바깥쪽 밸브 배치·동력 상실 요건을 적용한다. 근거는 제목과 본문에서 primary를 지웠고, 격납이 핵분열생성물과 환경 사이의 barrier%%t:BARRIER%%이므로 reactor도 지웠다고 적지만, 기준 56 조문에는 reactor containment structure라는 말이 남아 있다. 근거는 또 신형로 설계가 다양해 단일 격납 개념은 없지만 격납 관통부의 격리 규칙은 모든 경우에 적용되며, 그 방법은 primary, secondary, reactor containment 가운데 무엇인지 지나치게 규정하지 않고 설계자에게 맡긴다고 설명한다. 근거가 드는 예로 molten salt reactor%%t:MSR%% 설계는 액체 연료염 일부를 처리 계통으로 빼내 정화하고 핵분열생성물을 제거한 뒤 원자로로 돌려보내므로 계통 전체를 둘러싸는 격납이 필요할 수 있다. SFR%%t:SFR%%에서는 guard vessel이 primary containment가 될 것이고, `PRISM` 설계의 경우 그 위의 돔형 구조가 secondary containment가 될 것이며, secondary containment도 격리 요건을 만족해야 한다. 기준 57은 격납 구조를 관통하지만 primary coolant boundary의 일부도 아니고 격납 대기에 직접 연결되지도 않은 배관에, 단일 능동 기기 고장을 가정해도 격리 밸브 없이 격납 안전 기능을 만족함을 입증하지 않는 한 적어도 하나의 격리 밸브를 두게 한다. 그 밸브는 자동, 잠금 폐쇄, 원격 수동 조작 가운데 하나여야 하고 격납 밖 가까이에 있어야 하며, 단순 역지 밸브는 자동 격리 밸브로 쓸 수 없다.
+
+**규정 대비 메모(C14-6, 상위 dispute).** SFR-DC 55의 근거 절이 중간 계통 배관을 primary coolant boundary의 일부라고 적는 한편, 중간 계통은 SFR-DC 57이 다룰 closed system이고 SFR-DC 55는 중간 계통에 적용되지 않는다고 적는다. 격납 관통 중간 계통 배관에 55와 57 가운데 무엇이 적용되는지가 모호한 실질 차이이다.
 
 ## 관련 문서
 - [[Principal_Design_Criteria_Non_LWR]]

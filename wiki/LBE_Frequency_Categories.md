@@ -1,9 +1,9 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04]
-status: disputed
-verified:
+sources: [NEI_18-04, SER_KU1_CP, RG_1.233]
+status: checked
+verified: 2026-10-17
 term:
 tags: []
 terms_pending: []
@@ -36,6 +36,13 @@ terms_pending: []
 - "BDBEs take into account the expected response of all SSCs within the plant regardless of safety classification." [NEI_18-04 §6 p.90]
 - "Postulated accidents that are used to set design criteria and performance objectives for the design of Safety-Related SSCs." [NEI_18-04 §6 p.90]
 - "DBAs are derived from DBEs based on the capabilities and reliabilities of Safety-Related SSCs needed to mitigate and prevent accidents, respectively." [NEI_18-04 §6 p.90]
+- "While USO did use the 95th percentile frequency when determining which events to evaluate as BDBEs, mean frequency was used when determining which events would be classified and included in the CP application as BDBEs." [SER_KU1_CP §3.4.1 p.225]
+- "The staff intends to continue to evaluate BDBEs based on the 95th percentile frequency when reviewing the OL application." [SER_KU1_CP §3.7.1 p.261]
+- "The staff assessed the BDBEs to ensure they were appropriately categorized as BDBEs based on their frequency (upper 95th percentile frequency above 5E-07 and mean frequency less than 1E-04)." [SER_KU1_CP §3.7.1 p.261]
+- "Two deviations from the methodology were identified based on the staff’s review." [SER_KU1_CP §3.4.1 p.225]
+- "The first deviation was in the lower range used in identifying BDBEs." [SER_KU1_CP §3.4.1 p.225]
+- "The mean values of the frequencies are used to classify the LBEs into AOOs, DBEs, and BDBE categories." [RG_1.233 §C.1 p.11]
+- "The F-C target and related discussions in NEI 18-04 include an upper bound event sequence frequency (i.e., 95th percentile) of 5E-07/plant-year to define the lower range of BDBEs." [RG_1.233 §C.1.b p.14]
 
 | 항목 | 값 | 출처 |
 |---|---|---|
@@ -53,7 +60,9 @@ DBA%%t:DBA%%는 성격이 다르다. 빈도 구간으로 정의되지 않고 DBE
 
 §6 용어집의 정의는 표 3-1과 대체로 같지만 세 곳에서 표현이 다르다. DBE%%t:DBE%% 정의에는 DBE%%t:DBE%%의 목적과 범위가 발전소의 안전 설계기준을 이룬다는 문장이 더 있다. BDBE%%t:BDBE%% 정의는 구간을 5E-07/plant-year에서 1E-04/plant-year로 같게 적되, 표 3-1의 mean이라는 한정어 없이 frequencies로만 적는다. DBA%%t:DBA%% 정의는 표 3-1의 event sequences 대신 accidents라는 말을 쓴다. 구간 수치는 두 곳이 같다.
 
-BDBE%%t:BDBE%% 빈도 하한의 기준은 원문 안에서 어긋난다. 표 3-1은 평균 빈도 5E-07/plant-year 이상을 BDBE%%t:BDBE%%로 정의하고, §3.2.1과 §3.2.2의 LBE%%t:LBE%% 범주 지정 과업도 범주가 평균 빈도에 기반한다고 적는다. 그러나 같은 두 곳은 BDBE%%t:BDBE%%를 빈도가 1E-04/plant-year보다 낮지만 상한 빈도가 5E-07/plant-year보다 높은 사건으로 적는다. §3.2.2의 그 과업은 이어서 95th percentile 상한 빈도가 5E-07/plant-year보다 낮은 ES%%t:ES%%를 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는다. 하한을 평균값으로 보는지 상한값으로 보는지가 다르므로 이 노트는 disputed로 둔다.
+BDBE%%t:BDBE%% 빈도 하한의 기준은 원문 안에서 어긋난다. 표 3-1은 평균 빈도 5E-07/plant-year 이상을 BDBE%%t:BDBE%%로 정의하고, §3.2.1과 §3.2.2의 LBE%%t:LBE%% 범주 지정 과업도 범주가 평균 빈도에 기반한다고 적는다. 그러나 같은 두 곳은 BDBE%%t:BDBE%%를 빈도가 1E-04/plant-year보다 낮지만 상한 빈도가 5E-07/plant-year보다 높은 사건으로 적는다. §3.2.2의 그 과업은 이어서 95th percentile 상한 빈도가 5E-07/plant-year보다 낮은 ES%%t:ES%%를 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는다. NEI 18-04 안에서는 하한을 평균값으로 보는지 상한값으로 보는지가 다르며, 권위 문서가 이 차이를 어떻게 정리하는지는 아래 메모에 적는다.
+
+**규정 대비 메모(D-1, 규정으로 해소).** NEI 18-04는 표 3-1에서 BDBE%%t:BDBE%% 하한 5E-07/plant-year를 평균 빈도로 적고, §3.2.1과 §3.2.2의 LBE%%t:LBE%% 선정 과업에서는 95th percentile 상한 빈도로 적는다. [[RG_1.233]] C.1은 범주 분류에 평균값을 쓴다고 적으면서 C.1.b에서는 BDBE%%t:BDBE%% 하한을 95th percentile 상한 빈도로 정의하고, `SER`은 95th percentile 상한 빈도가 5E-07보다 높고 평균 빈도가 1E-04보다 낮은 것을 BDBE%%t:BDBE%% 분류 기준으로 적용한다. `SER`은 신청자가 95th percentile로 평가 대상을 정하고도 평균으로 BDBE%%t:BDBE%%를 분류·수록한 처리를 두 방법론 이탈 가운데 첫째로 판정했다. 따라서 권위 문서의 운용 기준은 상한 1E-04/plant-year에는 평균을, 하한 5E-07/plant-year에는 95th percentile을 쓰는 것이다.
 
 ## 관련 문서
 - [[Licensing_Basis_Event]]

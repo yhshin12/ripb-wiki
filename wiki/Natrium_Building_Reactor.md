@@ -5,8 +5,10 @@ sources:
 - PSAR_ch07
 - PSAR_ch06
 - PSAR_ch05
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+- PSAR_ch01
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -51,6 +53,11 @@ terms_pending: []
 - "The probabilistic risk assessment safety functions (PSF) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.8.1.1.2 p.338]
 - "The safety-significant PSFs are identified as SR functions or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.8.1.1.2 p.338]
 - "The RXB substructure supports the following safety-significant functions, which are designated as SR or NSRST to indicate the safety classification of RXB substructure components relied upon to perform the function:" [PSAR_ch07 §7.8.1.1.2 p.338]
+- "The NSRST barrier function DL4-RR1 refers to the functional containment boundary formed around the RES by the HAA barrier, the GV, and the HAA HVAC isolation. The sub-function DL4-RR1a represents the HAA portion of the boundary." [SER_KU1_CP §7.8.1.1.8 p.594]
+- "the staff determined that the preliminary design of the RXB substructure is consistent with the six identified safety-significant functions listed at the beginning of this section." [SER_KU1_CP §7.8.1.1.8 p.594]
+- "USO classified the RXB superstructure as NST because it does not perform safety-significant PSFs." [SER_KU1_CP §7.8.1.1.10 p.594]
+- "As shown on the site layout plan in Figure 1.2-1, the FHB is located approximately 28 feet to the east of the Reactor Building and approximately 40 feet to the north of the Fuel Auxiliary Building." [PSAR_ch07 §7.8.2 p.345]
+- "The substructures of the RAB and FHB are located approximately 16 ft west and 40 ft east of the RXB, respectively, and are structurally separated from the RXB." [SER_KU1_CP §7.8.1 p.590]
 
 | Function ID | Function Description | Functional Support | 출처 |
 |---|---|---|---|
@@ -108,6 +115,15 @@ terms_pending: []
 - "NI HVAC System (NHV)" [PSAR_ch05 Table 5.2-4 p.19]
 - "Reactor Building (RXB)" [PSAR_ch05 Table 5.2-4 p.19]
 - "non-safety-related with special treatment (NSRST) functions performed by SR SSCs" [PSAR_ch05 §5.4 p.51]
+- "Structural steel shapes are not used as principal structural members in SR and NSRST substructures." [PSAR_ch06 §6.4.2.3.1 p.31]
+- "The RXB superstructure is supported by structural steel columns founded on concrete foundations that are decoupled from the below-grade reinforced concrete and steel RXB substructure which has a separate foundation." [PSAR_ch01 §1.1.4.4.2 p.37]
+- "The RXB building consists of an embedded concrete substructure and above grade steel-framed superstructure." [SER_KU1_CP §7.8.1 p.590]
+- "The design codes for SR substructures are ACI 349-13 for reinforced concrete and ANSI/AISC N690-18 for structural steel." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "DL4-RR1 — Ex-RES Functional Containment Barrier" [PSAR_ch05 DL4-RR1 p.19]
+- "DL4-RR1a — HAA barrier" [PSAR_ch05 DL4-RR1a p.19]
+- "DL4-RR1b — Guard Vessel Leak Prevention Function" [PSAR_ch05 DL4-RR1b p.19]
+- "HAA Barrier, GV Leak Prevention Function (NSRST)" [PSAR_ch07 §7.1.2.2 p.31]
+- "PSAR section 7.1.2.2 states that the RES supports DL3-RR1 “Primary Coolant Boundary including RES Barrier,” and DL4-RR1 “HAA Barrier, GV Leak Prevention Function,” which are SR and NSRST, respectively." [SER_KU1_CP §7.1.2.1.18.2 p.433]
 
 ## 해설
 `PSAR` Chapter 7 §7.8은 Nuclear Island의 safety-significant 건물로 Reactor Building(`RXB`), Fuel Handling Building(`FHB`), Reactor Auxiliary Building(`RAB`), Nuclear Island Control Building(`NCB`)을 다룬다. `RXB`는 지상 강골조 상부구조와 지표 아래 철근콘크리트·강재 하부구조로 이루어진다. SR%%t:SR%% 하부구조는 원자로, Reactor Enclosure System(`RES`), `RES`를 피동 공기 냉각하는 Reactor Air Cooling System(`RAC`)의 duct stack을 수용·지지·보호한다. 상부구조는 safety-significant PRA Safety Function%%t:PSF%%을 수행하지 않고, safety-significant Structures, Systems, and Components%%t:SSC%%의 하중 경로나 외부 재해 방호도 제공하지 않으므로 NST%%t:NST%%로 분류된다. `RXB`는 평상시 비어 있고 운전 중 하부구조 출입이 제한된다. `HAA` 구조는 원자로 head 접근을 허용하고 하부구조의 일부로서 SR%%t:SR%%이다.
@@ -120,7 +136,15 @@ principal design criteria%%t:PDC%% 2와 4에 따라 하부구조는 Section 6.4.
 
 상부구조는 하부구조와 독립된 콘크리트 기초 위의 지상 강골조이며 단일 고장 방지 천장 크레인을 지지한다. 원문은 상부구조가 SR%%t:SR%% 하부구조, SR%%t:SR%% `RAC` stack, 핵연료 재장전 중의 SR%%t:SR%% 핵연료 취급 장비와 가까워 design-basis hazard level%%t:DBHL%% 상호작용의 신뢰할 만한 원천으로 식별된다고 적는다. 따라서 Section 6.1.3.1의 지진 상호작용 요건에 따라 설계·해석·관리되고, `Table 6.4-1B` 설계 변수로 `SCN1` 지진 분류에 상응하는 수준에서 `ASCE 7-16`에 따라 설계되며, NSRST%%t:NSRST%% 구조물과 같은 지진·토네이도 상호작용 영향을 반영한다. §7.8.1.1.1은 SR%%t:SR%% `FHB` 하부구조가 `RXB` 하부구조 동쪽 약 40 feet에 있어 `RXB` 하부구조 설계에 영향을 주지 않는다고 적는다.
 
-`PSAR` Chapter 6은 `RXB` 하부구조를 SR%%t:SR%% 구조물, 상부구조를 NST%%t:NST%%로 적고, Chapter 5 표는 `Ex-RES Functional Containment Barrier`의 SSC%%t:SSC%%로 `NI HVAC System (NHV)`와 `Reactor Building (RXB)`를 적어 건물 단위로 지정한다. Chapter 5 §5.4 문장은 SR%%t:SR%% SSC%%t:SSC%%가 수행하는 NSRST%%t:NSRST%% 기능을 전제한다. 이 차이는 `meta/contradictions.md` C9에 모았다.
+`PSAR` Chapter 6은 `RXB` 하부구조를 SR%%t:SR%% 구조물, 상부구조를 NST%%t:NST%%로 적고, Chapter 5 표는 `Ex-RES Functional Containment Barrier`의 SSC%%t:SSC%%로 `NI HVAC System (NHV)`와 `Reactor Building (RXB)`를 적어 건물 단위로 지정한다. Chapter 5 §5.4 문장은 SR%%t:SR%% SSC%%t:SSC%%가 수행하는 NSRST%%t:NSRST%% 기능을 전제한다.
+
+**규정 대비 메모(C9, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 `RXB` 하부구조를 SR%%t:SR%%, 상부구조를 NST%%t:NST%%로 분류하고 Chapter 7은 하부구조가 NSRST%%t:NSRST%% 기능 DL4-RR1과 그 하위 기능 DL4-RR1a를 지원한다고 적는 반면, Chapter 5 표는 Ex-RES Functional Containment Barrier의 SSC%%t:SSC%%로 건물 단위의 Reactor Building을 적는다. `SER`은 상부구조를 NST%%t:NST%%로 분류한 신청자 판단을 기록하고, DL4-RR1을 `HAA` barrier, Guard Vessel%%t:GV%%, `HAA` `HVAC` isolation이 이루는 기능적 격납 경계로, DL4-RR1a를 그 `HAA` 부분으로 기술하여 Chapter 6·7의 구분과 같다. 따라서 차이는 Chapter 5만 SSC%%t:SSC%%를 건물 단위로 적은 신청자 문서 안의 표기 단위 차이이며, `SER` 기준과 충돌하지는 않는다.
+
+**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다.
+
+**규정 대비 메모(C28, 신청자 문서 내부 불일치).** `PSAR` Chapter 5는 DL4-RR1, DL4-RR1a와 별도로 DL4-RR1b "Guard Vessel Leak Prevention Function"을 적는다. Chapter 7의 `RES` 기능 표는 DL4-RR1 한 행의 이름에 `HAA` barrier와 GV%%t:GV%% 누설 방지 기능을 함께 담고, `RXB` 기능 표는 DL4-RR1(Ex-RES Functional Containment Barrier)과 DL4-RR1a(`HAA` barrier)를 따로 쓴다. `SER`은 `RES` 절에서 DL4-RR1을 Chapter 7 `RES` 표의 이름 그대로 옮겨 적고, `RXB` 절에서는 DL4-RR1을 기능적 격납 경계로, DL4-RR1a를 그 `HAA` 부분으로 기술한다. 하위 `ID` 체계를 정하는 권위 조항은 vault에 없고, `SER`에는 두 표기 가운데 어느 쪽이 맞는지에 대한 판단이 없다(vault 기준).
+
+**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적으며 Chapter 7은 하부구조 강재 요소의 하중조합을 `ANSI`/`AISC` N690-18에 둔다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. `SER`에는 주 부재 문제에 대한 판단이 없고(vault 기준), 이를 판정할 권위 조항도 vault에 없다. 하부구조의 강재가 주 부재가 아닌 어떤 요소를 가리키는지는 vault에 없다.
 
 ## 관련 문서
 - [[Natrium_SR_Functions_Heat_Removal]]

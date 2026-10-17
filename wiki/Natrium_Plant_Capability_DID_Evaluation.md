@@ -2,8 +2,8 @@
 type: natrium
 aliases: []
 sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04, SER_KU1_CP]
-status: disputed
-verified: 2026-09-16
+status: checked
+verified: 2026-10-17
 term:
 tags: [natrium]
 terms_pending: []
@@ -56,6 +56,10 @@ terms_pending: []
 - "The function relied on is DL2-RR8, the intermediate cold trap sodium processing system barrier, which is assumed to fail as the initiating event in the DBA." [SER_KU1_CP §4.2.1.1.3 p.329]
 - "Because the F-C target is met for the DBE and the dose criteria are met for the DBA as discussed in PSAR sections 3.7.3.3 and 3.9.4.2 and sections 3.6.1.3 and 3.8.1.4 of this SE, the staff does not consider the function to be relied on for the purposes of the DID adequacy evaluation." [SER_KU1_CP §4.2.1.1.3 p.330]
 - "Accordingly, the staff determined that USO’s single-feature reliance evaluation is acceptable." [SER_KU1_CP §4.2.1.1.3 p.330]
+- "USO reported no risk-significant AOOs but identified several risk-significant DBEs and BDBEs." [SER_KU1_CP §4.2.1.1.1 p.327]
+- "DL3-RR3a – EVHM Transfer Barrier (SR)" [SER_KU1_CP §7.3.2.1.12.3 p.518]
+- "Table 4.2-2 presents all risk-significant LBEs." [PSAR_ch04 §4.2.1.1 p.8]
+- "RFH-FDEM-1: This event does not credit any NSRST barriers and credits the SR EVHM cask barrier and EVHM to head barrier (DL3-RR3 and DL3-RR3a)." [SER_KU1_CP §3.7.1.5 p.273]
 
 | DBE ID | Maintain Frequency of all BDBEs < 1E-04/plant-year: DL Function | Maintain Frequency of all BDBEs < 1E-04/plant-year: Description | Any single design or operation feature relied upon to meet quantitative objectives for DBE? | 출처 |
 |---|---|---|---|---|
@@ -119,6 +123,20 @@ terms_pending: []
 | RFH-FDSP-2 | Yes | [PSAR_ch03 Table 3.5-3 p.57-59] |
 | RFH-LMCA-2 | Yes | [PSAR_ch03 Table 3.5-3 p.57-59] |
 
+| LBE Name | LBE Category | 출처 |
+|---|---|---|
+| RFH-FDIV-1 | DBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDIV-3 | DBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDSP-1 | DBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDSP-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-ESWR-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDIV-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-ESWR-3 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-LMCA-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDBL-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDEM-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+| RFH-FDPI-1 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
+
 ## 해설
 `PSAR` Chapter 4의 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가는 NEI 18-04 `Chapter 5`의 지침을 따르며, Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%, Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%, 통합 평가의 세 요소를 `Section 4.2.1`, `Section 4.2.2`, `Section 4.2.3`에 나누어 싣는다. 이 장에서 다루지 않는 나머지 평가는 `Chapters 3, 5, 6, 7, and 8`에 있다. Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%는 안전 적절성을 보장하는 기능, Structures, Systems, and Components%%t:SSC%%, 그 bounding 설계 능력을 고르는 데 쓰이며, 요약은 LBE%%t:LBE%% margin, Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가, single feature reliance 평가, prevention-mitigation balance 평가로 이루어진다.
 
@@ -126,7 +144,7 @@ Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%는 plant functional 
 
 `PSAR`은 NEI 18-04 `Table 5-2`의 plant capability 정량·정성 지침을 평가·확인했다고 적고, NEI 18-04 `Section 5`에서 가져온 검토 항목으로 개별 LBE%%t:LBE%%와 Frequency-Consequence Target%%t:FC_TARGET%% 사이의 충분한 margin, 모든 Design Basis Event%%t:DBE%%와 Beyond Design Basis Event%%t:BDBE%%의 빈도를 각각 `1E-02 per plant-year`와 `1E-04 per plant-year` 아래로 유지하는 것, 개별 위험을 Quantitative Health Objective%%t:QHO%% 아래로 유지하는 것, Defense Line%%t:DL%% 사이의 충분한 독립성, DL%%t:DL%% 전반에서 한 특성에 대한 과도한 의존 방지, 예방과 완화의 충분한 균형을 든다. 심층방어%%t:DID%% 평가 결과 Non-Safety-Related with Special Treatment%%t:NSRST%%로 분류된 SSC%%t:SSC%%는 `Chapter 5`에, 그 성능 기준과 special treatment%%t:SPECIAL_TREATMENT%%는 `Chapters 6 and 7`에 있다.
 
-Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가 절은 NEI 18-04 `Table 5-2`의 정성 지침이 각 LBE%%t:LBE%%에 대해 만족되고, risk-significant LBE%%t:LBE%%에 한 layer에 대한 과도한 의존이 없으며, construction permit%%t:CP%% 단계에서 한 layer 속성에 대한 중요한 의존 때문에 추가한 programmatic action이 없다고 적는다. 같은 절은 risk-significant LBE%%t:LBE%%가 여덟 건 식별되었다고 적는다. 그러나 `Table 4.2-2`는 모든 risk-significant LBE%%t:LBE%%를 싣는다고 하면서 열한 건(DBE%%t:DBE%% 세 건, BDBE%%t:BDBE%% 여덟 건)을 싣고, `PSAR` Chapter 3의 요약표도 같은 열한 건을 risk-significant로 표시한다. 두 서술은 동시에 참이기 어렵다. 이 차이는 모순 목록(`meta/contradictions.md`)에 모아 두었다.
+Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가 절은 NEI 18-04 `Table 5-2`의 정성 지침이 각 LBE%%t:LBE%%에 대해 만족되고, risk-significant LBE%%t:LBE%%에 한 layer에 대한 과도한 의존이 없으며, construction permit%%t:CP%% 단계에서 한 layer 속성에 대한 중요한 의존 때문에 추가한 programmatic action이 없다고 적는다. 같은 절은 risk-significant LBE%%t:LBE%%가 여덟 건 식별되었다고 적는다. 그러나 `Table 4.2-2`는 모든 risk-significant LBE%%t:LBE%%를 싣는다고 하면서 열한 건(DBE%%t:DBE%% 세 건, BDBE%%t:BDBE%% 여덟 건)을 싣고, `PSAR` Chapter 3의 요약표도 같은 열한 건을 risk-significant로 표시한다. 두 서술은 동시에 참이기 어렵다.
 
 `Table 4.2-3`은 risk-significant DBE%%t:DBE%%마다 모든 BDBE%%t:BDBE%%의 빈도를 `1E-04 per plant-year` 아래로 유지하는 DL%%t:DL%% 기능을 적는다. `RFH-FDIV-1`과 `RFH-FDIV-3`에는 `DL3-RR1`(`Primary System Boundary including RES Barrier`)과 `DL3-RR3a`(`Ex-Vessel Handling Machine to Head Barrier Function`)가 적히고, `RFH-FDSP-1`은 `None.`이며 BDBE%%t:BDBE%% `RFH-FDSP-2`와는 추가 핵연료 집합체 파손 여부만 다르고, 같은 DL%%t:DL%% 기능 집합에 의존하되 결과가 다르다고 설명된다. `Table 4.2-4`는 risk-significant BDBE%%t:BDBE%%의 개별 위험을 QHO%%t:QHO%% 아래로 유지하는 기능을 적는데, `RFH-ESWR-2`에만 `DL4-RR7`(`Fuel Handling Building Barrier`)이 있고 나머지 일곱 건은 `None.`과 `All available functions are failed for this LBE.`이다. 두 표의 모든 행은 단일 설계·운전 특성에 의존하지 않는다고 판정하며, 판정 문장의 단위는 `LBE family`이다.
 
@@ -137,6 +155,10 @@ single feature reliance 평가는 risk-significant LBE%%t:LBE%%나 Design Basis 
 같은 체계적 검토로 각 risk-significant LBE%%t:LBE%%에 Prevention Function%%t:PREVENTION_FUNCTION%%과 Mitigation Function%%t:MITIGATION_FUNCTION%%이 모두 있는지도 확인한다. 이 확인은 일반적으로 `DL1` 특성이 있고 적용되는 Fundamental Safety Function%%t:FSF%%마다 기능이 식별되었는지로 이루어지며, DBA%%t:DBA%%는 결정론적 성격이므로 사건을 예방하거나 완화하는 `DL3` 기능의 신뢰도와 가용도를 보장하는 `DL1` 특성을 식별한다. 이 평가로 CP%%t:CP%% 단계에서 추가한 plant capability action이나 programmatic action은 없다.
 
 **NRC staff 평가.** 사업자 평가는 intermediate Sodium Processing System 방출 DBA%%t:DBA%%인 RRS-ISPL-CN이 방출을 피하는 데 하나의 DL%%t:DL%%에 의존한다고 확인했다. 의존 기능은 이 DBA%%t:DBA%%에서 기시사건으로 실패를 가정하는 `DL2-RR8`(intermediate cold trap barrier)이다. NRC staff는 DBE%%t:DBE%%가 F-C target을, DBA%%t:DBA%%가 선량 기준을 만족하므로 이 기능을 심층방어%%t:DID%% 적절성 평가 목적의 의존 대상으로 보지 않고, 사업자의 단일 feature 의존 평가를 수용했다.
+
+**규정 대비 메모(C2, 신청자 문서 내부 불일치).** `PSAR` Chapter 4 본문은 risk-significant LBE%%t:LBE%%를 여덟 건으로 적지만, 같은 장 `Table 4.2-2`는 모든 risk-significant LBE%%t:LBE%%를 싣는다고 하면서 열한 건을 싣고 Chapter 3 요약표도 같은 열한 건을 risk-significant로 표시한다. `SER`은 risk-significant DBE%%t:DBE%%와 BDBE%%t:BDBE%%가 "several" 식별되었다고만 적으므로, 개수를 판정할 권위 조항이 없다.
+
+**규정 대비 메모(C4, 신청자 문서 내부 불일치).** `PSAR` Chapter 4 표와 Chapter 5 표는 `DL3-RR1`의 이름을 각각 "Primary System Boundary"와 "Primary Coolant Boundary"로 시작해 다르게 적고, Chapter 4 표가 쓰는 `DL3-RR3a`("Ex-Vessel Handling Machine to Head Barrier Function")는 인용한 Chapter 5 표 부분에 없다. `SER`은 한 절에서 `DL3-RR3a`를 transfer barrier로, 다른 절에서 head barrier로 적어 어느 한 장의 이름을 기준으로 삼지 않으므로, 판정할 권위 조항이 없다.
 
 ## 관련 문서
 - [[Plant_Capability_DID]]

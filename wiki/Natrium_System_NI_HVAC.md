@@ -5,8 +5,9 @@ sources:
 - PSAR_ch07
 - PSAR_ch04
 - PSAR_ch05
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -77,6 +78,11 @@ terms_pending: []
 - "The safety-significant PSFs are identified as non-safety-related with special treatment (NSRST) functions as defined in Section 5.2." [PSAR_ch07 §7.5.1.2 p.228]
 - "Safety classifications for NHV components are listed in Table 7.5.1-2." [PSAR_ch07 §7.5.1.2 p.228]
 - "The NHV supports the following safety-significant functions, which are designated as NSRST to indicate the safety classification of NHV components relied upon to perform the function:" [PSAR_ch07 §7.5.1.2 p.228]
+- "The NUP and NDC provide power to support the following NSRST safety functions, as shown in PSAR table 5.2-4:" [SER_KU1_CP §7.7.1.7 p.588]
+- "DL4-RR7 – Fuel Handling Building Barrier" [SER_KU1_CP §7.7.1.7 p.589]
+- "PSAR section 7.5.1.3 describes that NSRST NHV valves and dampers are powered by the NST NI AC electrical power low voltage system (NLV) and are designed to fail closed upon loss of power to ensure the radionuclide retention function is accomplished." [SER_KU1_CP §7.5.1.1.13 p.538]
+- "Exhaust from these areas within the RXB, FHB, RAB, and FAB passes through a combined stack for effluent monitoring by the RMS, as described in PSAR section 7.6.6." [SER_KU1_CP §7.5.1.1.11 p.537]
+- "Because the preliminary NHV design allows for monitoring radioactivity from effluent discharge paths during both normal operations and accident conditions, the staff determined that it is consistent with PDC 64." [SER_KU1_CP §7.5.1.1.11 p.538]
 
 | Function ID | Function Description | Functional Support | 출처 |
 |---|---|---|---|
@@ -160,8 +166,10 @@ terms_pending: []
 - "DL4-RR1c — HAA HVAC Operations Following Postulated Release" [PSAR_ch05 Table 5.2-4 p.19]
 - "Utility Monitoring and Control System (UMC)" [PSAR_ch05 Table 5.2-4 p.19]
 - "DL4-RR7 — Fuel Handling Building Barrier" [PSAR_ch05 Table 5.2-4 p.20]
+- "NI DC Power Supply System (NDC)" [PSAR_ch05 Table 5.2-4 p.20]
 - "NI Uninterruptible AC Power Supply System (NUP)" [PSAR_ch05 Table 5.2-4 p.20]
 - "RFH-ESWR-2 DL4-RR7 Fuel Handling Building Barrier" [PSAR_ch04 Table 4.2-4 p.15]
+- "DL4-RR7 | Fuel Handling Building Barrier | The NDC and NUP provide electric power to support performance of these functions." [PSAR_ch07 §7.7.1.2 p.328]
 - "Exhaust from the RXB, FHB, and RAB pass through a combined stack for effluent monitoring." [PSAR_ch05 §5.3.5.5 p.43]
 
 ## 해설
@@ -173,7 +181,11 @@ principal design criteria%%t:PDC%% 16에 따라 `NHV`는 functional containment 
 
 `MCR` 신선 공기 흡입구의 소듐·독성 화학·방사선 감시기가 hazard를 감지하면 경보에 따라 운전원이 `MCR` `HVAC` unit을 재순환 모드로 두며, `MCR` envelope와 `NCB` 지하 부분의 격리는 NSRST%%t:NSRST%% 기능이다. NSRST%%t:NSRST%% 격리 damper와 valve의 전원은 `Nuclear Island AC Electrical Power Low Voltage System`(`NLV`)의 NST%%t:NST%% 전원이며, 전원이 없을 때 fail closed로 방사성 핵종 보유 기능을 달성한다. NSRST%%t:NSRST%% 부분은 `SCN1`로 설계되고 `ASME AG-1`이나 `ASME B31.1`을 따른다. 고방사선 조건(control room `HVAC`는 `MCR` 신선 공기 흡입구의 독성 화학물질·소듐 증기 탐지 포함)에서 `HAA` `HVAC`, `SPS` cell, `SCG` trap cell, control room `HVAC` 격리는 운전원이 표시를 보고 필요하면(`as necessary`) 수동으로 시작하고, `SCG` trap cell은 relief valve가 열리면 자동 격리된다.
 
-`PSAR` Chapter 5 표는 `DL4-RR1`을 `Ex-RES Functional Containment Barrier`, `DL4-RR1c`를 `HAA HVAC Operations Following Postulated Release`로 적는다. Chapter 7 `NHV` 절은 `DL4-RR1`, `DL4-RR1a`, `DL4-RR1c` 세 기능에 같은 지원 문구를 적는다. Chapter 5는 `DL4-RR7`의 SSC%%t:SSC%% 목록에 `NI Uninterruptible AC Power Supply System`(`NUP`)을 적고, Chapter 7은 NSRST%%t:NSRST%% 격리 damper·valve 전반에 `NLV`의 NST%%t:NST%% 전원을 적으며, 두 기술이 같은 설비를 가리키는지는 vault에 없다(`meta/contradictions.md` C20). Chapter 4 `Table 4.2-4`는 `RFH-ESWR-2`에 `DL4-RR7`을 적는다. Chapter 5의 PDC%%t:PDC%% 64 관련 구현 요약은 공동 stack 배기 건물을 `RXB`, `FHB`, `RAB` 셋으로 적고 Chapter 7은 `FAB`를 더한다(C21).
+`PSAR` Chapter 5 표는 `DL4-RR1`을 `Ex-RES Functional Containment Barrier`, `DL4-RR1c`를 `HAA HVAC Operations Following Postulated Release`로 적는다. Chapter 7 `NHV` 절은 `DL4-RR1`, `DL4-RR1a`, `DL4-RR1c` 세 기능에 같은 지원 문구를 적는다. Chapter 5는 `DL4-RR7`의 SSC%%t:SSC%% 목록에 `NI Uninterruptible AC Power Supply System`(`NUP`)을 적고, Chapter 7은 NSRST%%t:NSRST%% 격리 damper·valve 전반에 `NLV`의 NST%%t:NST%% 전원을 적으며, 두 기술이 같은 설비를 가리키는지는 vault에 없다. Chapter 4 `Table 4.2-4`는 `RFH-ESWR-2`에 `DL4-RR7`을 적는다. Chapter 5의 PDC%%t:PDC%% 64 관련 구현 요약은 공동 stack 배기 건물을 `RXB`, `FHB`, `RAB` 셋으로 적고 Chapter 7은 `FAB`를 더한다.
+
+**규정 대비 메모(C20, 신청자 문서 내부 불일치).** `PSAR` Chapter 5 Table 5.2-4와 Chapter 7 §7.7.1.2는 DL4-RR7 전원을 `NUP`·`NDC`로 적고, Chapter 7 `NHV` 절은 NSRST%%t:NSRST%% 격리 damper·valve 전반에 `NLV`의 NST%%t:NST%% 전원을 적는다. `SER`은 DL4-RR7을 `NUP`·`NDC`가 전원을 주는 기능으로 적고, `NHV` 절의 `NLV` 문장은 전원 상실 시 fail closed되는 격리 damper·valve에 관한 것으로 옮겨 적는다. 따라서 권위 문서 기준으로 DL4-RR7 전원은 `NUP`·`NDC`이며 신청자 문서 간 차이는 해소된다.
+
+**규정 대비 메모(C21, 규정 불일치).** `SER`의 PDC%%t:PDC%% 64 평가는 `FAB`를 포함한 네 건물을 적어 Chapter 7과 같고, Chapter 5 §5.3.5.5는 `FAB`를 빠뜨린다. `SER`은 이 구성으로 PDC%%t:PDC%% 64와 일관된다고 판단했다.
 
 ## 관련 문서
 - [[Natrium_NSRST_Functions]]

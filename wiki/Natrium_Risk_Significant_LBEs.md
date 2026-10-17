@@ -6,8 +6,8 @@ sources:
 - PSAR_ch04
 - NEI_18-04
 - SER_KU1_CP
-status: disputed
-verified: 2026-09-16
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -28,7 +28,14 @@ terms_pending: []
 - "Plots of the frequencies, consequences, and uncertainties of the LBEs, with comparison to the NEI 18-04 F-C target, are shown in Figure 3.5-1." [PSAR_ch03 §3.5.1 p.53]
 - "Denotes high-consequence BDBE" [PSAR_ch03 Table 3.5-3 p.57-59]
 - "The tables show that the risk-significant LBEs maintain margin to the F-C target curve." [SER_KU1_CP §4.2.1.1.1 p.327]
-- "Therefore, the mated BLTC/PIC (DL3-RR5a) is the appropriate radionuclide barrier for the drop events (RFH-FDPI), but not for the washing events (RFH-ESWR)." [SER_KU1_CP §3.6.1.4 p.250]
+- "The BLTC is not expected to be mated with the PIC during the washing operation. Therefore, the mated BLTC/PIC (DL3-RR5a) is the appropriate radionuclide barrier for the drop events (RFH-FDPI), but not for the washing events (RFH-ESWR)." [SER_KU1_CP §3.6.1.4 p.250]
+- "While uncertainty in the design remains, the staff determined that the information provided was sufficient to support the CP based on:" [SER_KU1_CP §3.6.1.4 p.250]
+- "The PIC radionuclide retention barrier SSCs are currently classified as SR through the DL3-RR5a SR function." [SER_KU1_CP §3.6.1.4 p.250]
+- "The additional preventative controls are expected to reduce the frequencies for these LBEs farther from the F-C target curve, as described in the PIC supplement." [SER_KU1_CP §3.6.1.4 p.250]
+- "These are conservative assumptions that could be adjusted as the event specific mechanistic source term is developed at the OL stage." [SER_KU1_CP §3.6.1.4 p.250]
+- "For RFH-ESWR-2, a BDBE with a 95th percentile frequency extending into the DBE region, the PIC barrier is assumed to have failed" [SER_KU1_CP §3.8.1.5 p.296]
+- "The staff’s review of updated analyses for these events, including any associated DBAs, is being deferred to the OL stage based on the understanding that additional preventative controls will move this event to lower frequencies, and its frequency band will no longer extend into the DBE region." [SER_KU1_CP §3.7.1.5 p.272]
+- "The postulated initiating event is a sodium-water reaction in the Pool Immersion Cell (PIC) during fuel handling activities while the PIC and BLTC are mated that causes fuel cladding failure." [PSAR_ch03 §3.9.5.3.1 p.116]
 
 | LBE ID | Title | Risk Significant | 출처 |
 |---|---|---|---|
@@ -89,9 +96,13 @@ DBE%%t:DBE%% 요약표에서 risk-significant로 표시된 것은 원자로 용�
 
 수치 표에 따르면 risk-significant DBE%%t:DBE%% 세 건의 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 1.83E-01에서 3.66E-01 rem이고, 평균 빈도는 8.77E-04에서 2.26E-03이다. high-consequence BDBE%%t:BDBE%% 두 건의 평균 선량은 모두 4.60E+01 rem(95th percentile 7.00E+01 rem)이고 평균 빈도는 5.25E-07과 8.82E-07이다. 나머지 risk-significant BDBE%%t:BDBE%%의 평균 선량은 6.62E-01에서 1.40E+01 rem이며, Pool Immersion Cell barrier%%t:BARRIER%% 실패 사건의 평균 빈도는 5.10E-07이다. 10 CFR 50.34 선량 기준의 수치는 이 노트가 인용한 원문에 없다.
 
-`RFH-ESWR-2`의 95th percentile 빈도는 `PSAR` Chapter 3 `§3.8.5.4.3`에서 `1.61E-04`, `PSAR` Chapter 4 `Table 4.2-2`에서 `1.31E-04`로 다르고, 95th percentile 선량 `5.05`는 두 장이 같다. 두 원문이 같은 양을 다르게 적으며, 이 차이는 모순 목록(`meta/contradictions.md`)에 모아 두었다([[Natrium_LBE_Risk_Margins]]).
+`RFH-ESWR-2`의 95th percentile 빈도는 `PSAR` Chapter 3 `§3.8.5.4.3`에서 `1.61E-04`, `PSAR` Chapter 4 `Table 4.2-2`에서 `1.31E-04`로 다르고, 95th percentile 선량 `5.05`는 두 장이 같다. 두 원문이 같은 양을 다르게 적는다([[Natrium_LBE_Risk_Margins]]).
 
 **NRC staff 평가.** NRC staff는 `PSAR` 표에서 risk-significant LBE%%t:LBE%%가 F-C target 곡선에 대해 여유를 유지한다고 확인했다. 또 staff는 Anticipated Operational Occurrence%%t:AOO%%·DBE%%t:DBE%% 평가 절에서 Pool Immersion Cell 세척 사건(RFH-ESWR)에 대해 결합된 cask와 cell을 적절한 방사성핵종 barrier%%t:BARRIER%%로 보지 않는다.
+
+**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다.
+
+**규정 대비 메모(C64, 규정 불일치).** `PSAR`은 Pool Immersion Cell 소듐-물 반응 사건을 `PIC`와 `BLTC`가 결합된 상태의 사건으로 적는다. `SER`은 세척 중에는 `BLTC`가 `PIC`와 결합되지 않을 것으로 보아, 결합 barrier인 DL3-RR5a는 낙하 사건에는 적절하나 세척 사건에는 적절하지 않다고 적었다. 그럼에도 `SER`은 `PIC` barrier Structures, Systems, and Components%%t:SSC%%가 DL3-RR5a를 통해 Safety-Related%%t:SR%%로 분류된 점, 추가 예방 조치가 빈도를 낮출 것으로 예상되는 점, 선원항(source term)%%t:SOURCE_TERM%% 해석의 가정이 보수적인 점을 근거로 construction permit%%t:CP%% 단계에는 충분하다고 판단했고, 그 가정은 operating license%%t:OL%% 단계에서 사건별 Mechanistic Source Term%%t:MST%%를 개발하며 조정될 수 있다고 적었다.
 
 ## 관련 문서
 - [[LBE_Risk_Significance]]

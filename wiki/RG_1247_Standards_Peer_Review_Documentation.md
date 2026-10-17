@@ -2,8 +2,8 @@
 type: regulation
 aliases: []
 sources: [RG_1.247]
-status: checked
-verified: 2026-10-16
+status: disputed
+verified: 2026-10-17
 term:
 tags: [rg-1247, pra, peer-review]
 terms_pending: []
@@ -56,11 +56,13 @@ terms_pending: []
 
 **peer review(C.2.2).** 표준은 PRA 모델, upgrade, newly developed method 사용에 대한 peer review를 요구한다. 수행한 작업을 검토하지 못하게 하는 등 이해 충돌을 피하도록 팀을 구성해야 한다. high-level requirement는 그 아래 적용 가능한 supporting requirement를 모두 충족할 때 충족된 것으로 본다. upgrade 뒤에는 후속 peer review를 한다. newly developed method는 peer review로 수용성을 판단하고, 이를 PRA에 구현하는 것은 upgrade이므로 구현 peer review 대상이 된다. 근본적으로 새로운 방법에는 staff의 직접 검토가 필요할 수 있다. peer review가 없고 신청자의 정당화로 충분한 확신을 얻지 못하면 staff의 심층 검토가 필요하다.
 
-**peer review 지침의 승인 표현.** C.2 도입 문단은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적지만, §B와 C.2.2는 `NEI 20-09` Revision 1을 예외 없이 승인한다고 적는다. C.2 도입 문단이 말하는 지침은 이름이 아니라 "related industry PRA peer review guidance"로 적혀 있다. §A Purpose 문장도 같은 취지로 읽힐 수 있으나, 그 문장에서 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지가 문장 구조로는 분명하지 않다. 이 차이는 `meta/contradictions.md`에 기록한다.
+**peer review 지침의 승인 표현.** C.2 도입 문단은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적지만, §B와 C.2.2는 `NEI 20-09` Revision 1을 예외 없이 승인한다고 적는다. C.2 도입 문단이 말하는 지침은 이름이 아니라 "related industry PRA peer review guidance"로 적혀 있다. §A Purpose 문장도 같은 취지로 읽힐 수 있으나, 그 문장에서 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지가 문장 구조로는 분명하지 않다. 두 서술의 관계는 아래 메모에 적는다.
 
 **PRA의 개발·사용과 응용별 기준(C.3).** 신청서의 PRA 관련 정보는 응용별 수용 기준을 밝히고 충족을 보여야 하며, 위험정보 활용 의사결정에 쓰이는 PRA는 늘 발전소에 대한 최선의 정보를 반영해야 한다. C.1–C.1.4는 PRA가 갖추어야 할 최소 능력이다. 부록 A로 승인된 표준을 쓰면 C.1–C.2가 충족된 것으로 보고, 승인 내용이나 직원 입장과 다른 접근은 사안별로 평가한다. PRA 결과에 영향을 주어 응용에 영향을 줄 수 있는 가정은 key assumption이다. 안전 목표와 Quantitative Health Objective%%t:QHO%%가 응용의 기준으로 쓰이지 않는 경우에도 신청자는 이를 어떻게 충족하는지 보여야 한다.
 
 **문서화(C.4).** PRA 문서는 staff가 PRA와 결과의 수용성을 판단할 수 있을 만큼 충분해야 하며, archival 문서와 submittal 문서로 이루어진다. archival 문서에는 PRA 수용성 판단 과정의 기술로서 national consensus 표준 사용 여부와 그 요건 충족 여부를 밝힌다. submittal 문서는 응용별 지침이 없을 때에는 일반 characteristics와 attributes를 갖추어야 하며, supporting requirement를 충족하지 못하거나 요구보다 낮은 capability category를 충족하는 부분에 대해 그 적절성을 정당화해야 한다.
+
+**규정 대비 메모(C61, 상위 dispute).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 "with staff exceptions"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이므로 예외 없는 승인이 실효 입장으로 읽힐 수 있으나, 두 서술의 관계를 정하는 문장은 vault에 없다.
 
 ## 관련 문서
 - [[RG_1.247]]

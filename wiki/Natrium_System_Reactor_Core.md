@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch07, ACRS_ML25293A458]
-status: disputed
-verified: 2026-09-16
+sources: [PSAR_ch07, ACRS_ML25293A458, PSAR_ch03, PSAR_ch05, SER_KU1_CP]
+status: checked
+verified: 2026-10-17
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -65,6 +65,13 @@ terms_pending: []
 - "The reactor core is designed such that the net effect of the prompt acting components of these feedback mechanisms is negative in the power operating range." [PSAR_ch07 §7.1.1.2 p.13]
 - "These feedback mechanisms tend to compensate for a rapid increase in reactivity." [PSAR_ch07 §7.1.1.2 p.13]
 - "Reactivity coefficients are described further in Section 3.12." [PSAR_ch07 §7.1.1.2 p.13]
+- "The four coefficients which act in a rapid enough time window for consideration in prompt feedback characteristics are the fuel Doppler constant, the fuel density coefficient to capture changes in metallic fuel volume, the coolant density coefficient which captures temperature changes to sodium coolant density, and radial expansion coefficients which capture the changes in fuel movement with respect to the radial direction." [PSAR_ch03 §3.12.1.2 p.121]
+- "The primary reactivity feedback mechanisms in increasing order of response time are:" [PSAR_ch05 §5.3.2.2 p.25]
+- "Doppler – temperature changes in the fuel alter associated neutron cross-sections." [PSAR_ch05 §5.3.2.2 p.25]
+- "Metallic fuel volume – fuel contraction or expansion in the axial direction along the length of the fuel." [PSAR_ch05 §5.3.2.2 p.25]
+- "Sodium coolant density – temperature changes cause the coolant density to change thereby impacting neutron spectrum and leakage." [PSAR_ch05 §5.3.2.2 p.25]
+- "Radial distortion feedback – core assembly displacement and distortion with respect to the radial direction resulting from core load pad restraint expansion and contraction, and grid plate expansion and contraction." [PSAR_ch05 §5.3.2.2 p.25]
+- "Reactivity feedback mechanisms associated with the design of RCC include Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, and fuel bowing." [SER_KU1_CP §7.1.1.1.3 p.411]
 - "Consistent with PDC 16, Containment Design, fuel cladding is a functional containment barrier under normal conditions and LBEs where cladding is not failed, and its expected performance is to retain fission products." [PSAR_ch07 §7.1.1.2 p.13]
 - "For DBAs and other LBEs where cladding breach occurs, all fission products contained in the plenum area of the fuel pin are assumed to be released instantaneously (no retention of plenum activity)." [PSAR_ch07 §7.1.1.2 p.13]
 - "The fuel matrix is not an explicit barrier of the functional containment strategy; however, the fuel is expected to retain significant radionuclides." [PSAR_ch07 §7.1.1.2 p.13]
@@ -180,6 +187,8 @@ principal design criteria%%t:PDC%% 2에 따라 `RCC`는 `RXB` 하부구조 안�
 노심은 액체 소듐 냉각재, 금속 우라늄 연료, 강 피복·duct, 독립적이고 diverse한 두 제어봉 세트를 쓴다. 출력 수준, 기동, 정지는 운전원 조치로 제어되지만 `DL3` scram 기능이나 비상 붕괴열 제거를 위한 자연 순환 개시에는 운전원 조치가 필요 없다. primary control rod assembly `nine`개와 secondary control rod assembly `four`개가 `CRD`와 함께 흡수재를 배치하며, 제어봉은 가장 반응도가 큰 봉이 인출 위치에 고착되어도 원자로를 정지·유지할 반응도를 가진다. secondary control assembly는 작은 반응도 변화를 조절하는 기능도 하고, control assembly는 SR%%t:SR%%이다. 흡수재 pin에는 피복된 helium-bonded Boron Carbide pellet이 들어간다. hard-facing 추가 적용과 core restraint system은 연구개발 대상이고, `RES` `CBS` 입구 strainer와 공기 유동 시험·검사가 이물질 유입 가능성을 줄인다. programmatic special treatment는 Quality Assurance Program Description, Design Reliability Assurance Program, Equipment Qualification Program, Post-Construction Inspection, Testing, and Analysis Program으로 예비 식별되고, 핵연료·제어 집합체의 검증·시험이 추가 special treatment이다. Nuclear Instrumentation System, Reactor Instrumentation System(tag gas 또는 냉각재 방사능 분석을 통한 핵연료 파손 감시 포함), Radiation Monitoring System이 노심 감시를 제공한다. `Table 7.1.1-1`의 노심 출력은 `840 MWt`, 100% 출력·유량에서 입구 온도 `680°F (360°C)`, 출구 온도 `950°F (510°C)`이다.
 
 `ACRS_ML25293A458` 발표는 `RCC` 기능으로 `DL3-HR5 - HR10, DL3-HR13` 피동 열제거를 적고, 다른 모든 노심 집합체의 구조 요소가 제어봉 삽입성과 냉각성을 위해 변형을 제한하도록 SR%%t:SR%%이라고 적는다.
+
+**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt 되먹임에 고려되는 계수를 네 개로, Chapter 5 §5.3.2.2는 주요 반응도 되먹임 기구를 네 개(Doppler, metallic fuel volume, sodium coolant density, radial distortion)로 적고, Chapter 7 §7.1.1.2는 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. `SER` §7.1.1.1.3은 되먹임 기구를 또 다른 목록(Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, fuel bowing)으로 적지만 목록 차이를 판정하지 않는다. 판정할 권위 조항이 없다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]

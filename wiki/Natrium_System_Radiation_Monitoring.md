@@ -4,8 +4,9 @@ aliases: []
 sources:
 - PSAR_ch07
 - PSAR_ch01
-status: disputed
-verified: 2026-10-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -53,6 +54,14 @@ terms_pending: []
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.6.6.2.1 p.308]
 - "The safety-significant PSFs are identified as SR functions or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.6.6.2.1 p.308]
 - "The RMS supports the following safety-significant functions, which are designated as NSRST to indicate the safety classification of RMS components relied upon to perform the function:" [PSAR_ch07 §7.6.6.2.1 p.308]
+- "NIC sub-systems that are classified as NSRST fully conform to RG 1.180, Revision 4." [PSAR_ch07 §7.6.2.2 p.254]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following regulations and guidance in its evaluation of the RMS:" [SER_KU1_CP §7.6.6 p.575]
+- "RG 1.180, Rev. 2." [SER_KU1_CP §7.6.6 p.576]
+- "In addition to the regulations and guidance provided at the beginning of this chapter, the staff used the following guidance in its evaluation of the NIC:" [SER_KU1_CP §7.6.2 p.546]
+- "RG 1.180, “Guidelines for Evaluating Electromagnetic and Radio-Frequency Interference in Safety-Related Instrumentation and Control Systems,” Rev. 2 (ML19175A044);" [SER_KU1_CP §7.6.2 p.547]
+- "No automatic control actions are provided by RMS." [SER_KU1_CP §7.6.6.1.1 p.576]
+- "Controls are provided by RMS and NIC to maintain these variables and systems within prescribed operating ranges." [SER_KU1_CP §7.6.6.1.3 p.578]
+- "The staff determined that the preliminary RMS design is consistent with PDC 13 because the RMS is designed to monitor variables and systems over their anticipated ranges for normal operation, AOOs, and accident conditions." [SER_KU1_CP §7.6.6.1.3 p.578]
 
 | Function ID | Function Description | RMS Functional Support | 출처 |
 |---|---|---|---|
@@ -157,6 +166,12 @@ Radiation Monitoring System(`RMS`)은 NSRST%%t:NSRST%%와 NST%%t:NST%% 기능을
 `PSAR` Chapter 1은 effluent radiation monitoring의 주 기능을 `off-site exposure`가 `10 CFR 20` 한계를 넘지 않게 보장하는 것으로 적고, Chapter 7은 `ERM`이 `personnel exposure`의 한계 준수를 보장한다고 적는다. Chapter 1은 세 감시 부류를 `three main subsystems`, Chapter 7은 `three main monitoring groups`라고 부른다.
 
 운전원 접속 절에 따르면 `DRMS`는 `AMC`에 신호를 보내 표시하게 하고, 방사선 준위의 독립적인 표시·경보·기록과 source check, setpoint 제어, 밸브·펌프 조작 같은 제어 기능을 수행할 수 있다. `DRMS`는 어느 방사선 감시기에도 범위나 검출 한계를 두지 않으며, 주제어실 경보는 감시기 신호가 setpoint를 넘을 때 `AMC`가 만든다. NSRST%%t:NSRST%% 기능에 쓰는 감시기는 division별 Reactor Protection System cabinet room 또는 `NCB` cabinet room에 개별 Radiation Indicator Controller를 둔다.
+
+**규정 대비 메모(C25(c), 신청자 문서 내부 불일치).** `ERM` 목적 문장은 Chapter 1에서 off-site exposure, Chapter 7에서 personnel exposure를 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
+
+**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.6.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준).
+
+**규정 대비 메모(C39, 신청자 문서 내부 불일치).** `PSAR` §7.6.6.2.2는 `RMS`가 변수를 운전 범위 안에 유지하는 제어를 제공한다고 적고, §7.6.6.3은 `RMS`에 자동 제어 동작이 없다고 적는다. 판정 기준이 되는 권위 조항은 없다. `SER`은 두 문장을 모두 옮겨 적되 그 차이에 대한 판단은 없고(vault 기준), §7.6.6.1.3은 제어 주체에 `NIC`를 더해 적으며(그 뜻은 vault에 없다), PDC%%t:PDC%% 13 부합 판단은 감시 기능만 근거로 한다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

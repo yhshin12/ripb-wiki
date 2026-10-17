@@ -4,8 +4,9 @@ aliases: []
 sources:
 - RG_1.233
 - NEI_18-04
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - rg-1233
@@ -49,6 +50,9 @@ terms_pending: []
 - "The total mean frequency of exceeding a site boundary dose of 100 mrem from all LBEs should not exceed 1/plant-year." [NEI_18-04 §3.2.2 Task 7b p.24]
 - "Event sequences with mean frequencies of 5E-07/plant-year to 1E-04/plant-year are classified as BDBEs." [NEI_18-04 Table 3-1 p.14]
 - "The F-C Target for the BDBEs range from 25 rem at 1E-04/plant-year to 750 rem at 5E-07/plant-year to ensure that the Quantitative Health Objective (QHO) for early health effects is not exceeded for individual BDBEs." [NEI_18-04 §3.2.1 p.16]
+- "An event sequence family with a mean frequency less than 5E-07/plant year but with a 95%tile frequency estimate above 5E-07/plant-year is evaluated as a BDBE." [NEI_18-04 §3.2.2 Task 7a p.22]
+- "The first deviation was in the lower range used in identifying BDBEs. RG 1.233 states, “The F-C target and related discussions in NEI 18-04 include an upper bound event sequence frequency (i.e., 95th percentile) of 5E-07/plant-year to define the lower range of BDBEs.”" [SER_KU1_CP §3.4.1 p.225]
+- "While USO did use the 95th percentile frequency when determining which events to evaluate as BDBEs, mean frequency was used when determining which events would be classified and included in the CP application as BDBEs." [SER_KU1_CP §3.4.1 p.225]
 
 ## 해설
 이 절은 NEI 18-04가 Event Sequence%%t:ES%%를 빈도에 따라 Anticipated Operational Occurrence%%t:AOO%%, Design Basis Event%%t:DBE%%, BDBE%%t:BDBE%%로 분류하는 과정을 요약한다. 범주 분류에는 빈도의 평균값을 쓰고, 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다. 각주는 AOO%%t:AOO%%와 DBE%%t:DBE%%가 LWR 규정·지침의 같은 말과 정의가 다른 예이며, 이 지침을 참조하는 신청자가 NEI 18-04 용어를 쓰고 필요하면 NRC 규정의 예외와 면제를 식별하기를 기대한다고 적는다. F-C Target%%t:FC_TARGET%%은 실제 규제 수용 기준이 아니라 risk significance 판정, Structures, Systems, and Components%%t:SSC%% 분류 지원, special treatment%%t:SPECIAL_TREATMENT%% 요건 결정, programmatic controls 식별, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 확인을 위해 사건 범위를 평가하는 수단이다.
@@ -60,6 +64,8 @@ terms_pending: []
 명확화 b는 NEI 18-04가 BDBE%%t:BDBE%% 하한을 95th percentile 상한 빈도 5E-07/plant-year로 정의한다고 적고, 이 경계를 hard-and-fast cutoff로 보지 말고 integrated decisionmaking panel의 역할, 심층방어%%t:DID%% 평가, 불확실도, cliff edge effects%%t:CLIFF_EDGE_EFFECT%% 평가 같은 방법론의 다른 부분과 함께 고려하라고 한다. NEI 18-04의 LBE%%t:LBE%% 정의 표는 평균 빈도 5E-07/plant-year에서 1E-04/plant-year까지를 BDBE%%t:BDBE%%로 분류하고 이 지침도 범주 분류에 평균값을 쓴다고 적으므로, 하한을 95th percentile로 읽는 b의 문장은 범주 분류 문장과 기준 통계량이 다르다.
 
 명확화 c는 DBEHL%%t:DBEHL%%을 NRC가 승인한 방법으로 정하면 현행 관행과 대체로 일관되고 Safety-Related%%t:SR%% SSC%%t:SSC%%를 적절히 보호한다고 보며, 가능한 방법이 있으면 PRA가 DBEHL%%t:DBEHL%%을 넘는 외부 재해 수준을 포함한 내부 사건과 외부 재해 전 범위를 다루기를 기대한다. PRA 결과는 설계자의 초기 Design Basis Accident%%t:DBA%%와 SR%%t:SR%% SSC%%t:SSC%% 선정을 검증하고 외부 재해로 새 DBA%%t:DBA%%가 생기지 않음을 보장한다. 직원이 검토·승인하지 않은 DBEHL%%t:DBEHL%% 식별 방법은 사안별로 검토하며, 신청자는 외부 재해의 확률론적 평가와 safety-significant SSC%%t:SSC%% 설계·건설에 쓰는 consensus standards를 조화시켜야 할 수 있다. 명확화 d와 e는 [[Single_Failure_Criterion_Non_LWR]]과 [[Non_LWR_PRA_Regulatory_Role]]에 있다.
+
+**규정 대비 메모(C13-a, 규정으로 해소).** [[RG_1.233]] C.1은 범주 분류에 평균값을 쓴다고 적고, C.1.b는 BDBE%%t:BDBE%% 하한 5E-07/plant-year를 95th percentile 상한 빈도로 정의한다. NEI 18-04 Task 7a는 평균이 5E-07/plant-year보다 낮아도 95th percentile이 그 위이면 BDBE%%t:BDBE%%로 평가한다는 경계 규칙으로 두 서술을 잇는다. `SER`은 C.1.b를 인용하여, 95th percentile로 평가 대상을 정하고 평균으로 BDBE%%t:BDBE%%를 분류·수록한 처리를 방법론 이탈로 판정했다. 따라서 하한 5E-07/plant-year는 95th percentile로 적용한다.
 
 ## 관련 문서
 - [[NRC_Endorsement_Of_NEI_18-04]]

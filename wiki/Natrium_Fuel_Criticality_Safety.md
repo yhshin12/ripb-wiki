@@ -5,8 +5,9 @@ sources:
 - PSAR_ch03
 - PSAR_ch05
 - PSAR_ch07
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -25,6 +26,11 @@ terms_pending: []
 - "Radiation monitoring in the Fuel Handling Building to detect excessive radiation levels is described in Section 7.6.6." [PSAR_ch03 §3.14 p.127]
 - "A nuclear material control and accounting program will be provided at operating license stage." [PSAR_ch03 §3.14 p.127]
 - "Fuel is stored and handled by the following Structures, Systems, and Components:" [PSAR_ch03 §3.14.1 p.127]
+- "Each of the preliminary calculations showed the maximum calculated keff remained below the applicable USL." [SER_KU1_CP §3.13.1.3 p.319]
+- "The staff determined that the preliminary FHE design is consistent with PDC 62 because it provides an acceptable means of criticality prevention based on the evaluation of the supporting criticality analyses for the EVST and NAPS, provided in SE section 3.13" [SER_KU1_CP §7.3.2.1.7 p.516]
+- "Consistent with PDC 62, Prevention of criticality in fuel storage and handling, criticality in the fuel storage and handling system is prevented in accordance with 10 CFR 50.68(b) and the criticality analysis is described in Section 3.14." [PSAR_ch07 §7.3.1.2 p.167]
+- "Therefore, the NRC hereby grants USO an exemption from the requirements of 10 CFR 50.68(b)(7) to allow the applicant to follow the requirements of 10 CFR 50.68(b) in lieu of" [SER_KU1_CP App. B.2.4 p.737]
+- "Exemption to 10 CFR 50.68(b)(7) is addressed in NAT-9403, “Regulatory Exemptions” (ML24088A084), and evaluated in appendix B of this SE." [SER_KU1_CP §3.13 p.315]
 
 | 번호 | 핵연료 저장·취급 SSC (원문 목록) | 출처 |
 |---|---|---|
@@ -148,7 +154,11 @@ terms_pending: []
 
 저장 위치별 모형은 네 곳 모두 conservative fuel assembly model, 위치별 conservative model, 신뢰할 만한 이상 사건을 포괄하는 사례로 이루어진다. `SFP`에는 사용후핵연료만 저장하고 신연료는 저장하지 않으며, 파손 연료는 Failed Fuel Canister에 담아 불활성화하고 canister가 leak-tight로 인증되므로 해석은 canister 안의 moderator exclusion을 credit한다. rack의 중성자 흡수재는 borated stainless steel이고 흡수판 붕소의 `90 percent`를 credit하며, `SFP`에는 soluble boron이 없다. 연료 집합체 모형은 농축도, duct 두께, pellet 밀도·직경, 피복 두께, pin pitch를 변화시켜 가장 반응도가 큰 조건을 찾고 연소도 없이 신연료로 모형화한다. `EVST`는 신연료와 사용후핵연료의 staging 구역이고, `IVS`는 사용후핵연료를 저장하며 inner·outer core barrel 사이 노심 바깥에 있다. 노심과 `IVS`를 합친 모형은 노심의 `k_eff`만 보고하고 `IVS` 정보를 주지 않으므로, `IVS` 모형에서는 노심을 제거하고 `IVS` 내면에 white 또는 reflective 경계를 두어 `IVS`의 `k_eff`를 따로 계산하며, 이 경계 조건이 노심을 소듐으로 모형화하는 것보다 반응도가 크다. `NAPS`는 신연료 집합체를 기체 속에 저장해 `EVST` 삽입 전에 가열하는 설비이다. 신연료는 shipping container로 부지에 반입되어 `FHB` 지정 저장 위치로 옮겨지고, 집합체는 container에서 꺼내 assembly receipt inspection stand(`ARIS`)에 놓였다가 인수 검사 뒤 `NAPS`로 들어가며, shipping container·보관 위치·`ARIS`의 임계 해석은 Operating License를 뒷받침하도록 제공될 예정이다.
 
-`PSAR` Chapter 5는 같은 임계 방지 수단을 `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 저장·취급 계통에 대해 적고 흡수체를 `fixed neutron absorbers`로 표기하며, Chapter 7 §7.3.1.2는 `SFP`에 대해 borated stainless steel 흡수판과 subcritical geometry를 적는다. Chapter 7 §7.3.2.2는 가장 반응도가 큰 연료 배치 기준으로 `k_eff` `≤ 0.95`라는 고정값을 적는 반면, 이 절은 위치와 조건에 따라 달라지는 `USL`을 기준으로 삼는다. 두 기준의 관계를 설명하는 원문은 vault에 없다. 또 Chapter 7 §7.3.1.2는 예외 없이 `10 CFR 50.68(b)` 부합을 적고, 이 절은 `10 CFR 50.68(b)(7)` 농축도 한계를 예외로 적는다.
+`PSAR` Chapter 5는 같은 임계 방지 수단을 `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 저장·취급 계통에 대해 적고 흡수체를 `fixed neutron absorbers`로 표기하며, Chapter 7 §7.3.1.2는 `SFP`에 대해 borated stainless steel 흡수판과 subcritical geometry를 적는다. Chapter 7 §7.3.2.2는 가장 반응도가 큰 연료 배치 기준으로 `k_eff` `≤ 0.95`라는 고정값을 적는 반면, 이 절은 위치와 조건에 따라 달라지는 `USL`을 기준으로 삼는다. 두 기준의 관계를 설명하는 원문은 vault에 없다. 또 Chapter 7 §7.3.1.2는 `10 CFR 50.68(b)` 부합을 적되 (b)(7) 면제를 언급하지 않고, 이 절은 `10 CFR 50.68(b)(7)` 농축도 한계를 예외로 적는다.
+
+**규정 대비 메모(C35, 규정 불일치).** `PSAR` Chapter 3 §3.14.2는 계산한 k_eff에 Monte Carlo 불확실도의 두 배를 더한 값이 `USL`보다 작아야 한다는 기준을 두고, Chapter 7 §7.3.2.2는 가장 반응성이 큰 연료 배치에 기반해 k_eff ≤ 0.95로 제한하는 기하학적 미임계 배치를 적는다. `SER`은 예비 계산마다 최대 k_eff가 해당 `USL` 아래였다고 기술하고, `EVST`와 `NAPS`의 임계 해석 평가를 근거로 `FHE` 예비 설계가 PDC%%t:PDC%% 62와 정합한다고 판단했다. 따라서 `SER`이 ex-vessel 설비에 쓴 판정 기준은 `USL` 방법이며, Chapter 7의 고정값 0.95는 `SER`이 쓴 기준이 아니다. `SER`에는 이 0.95 문장에 대한 판단이 없다(vault 기준).
+
+**규정 대비 메모(C36, 규정 불일치).** `PSAR` Chapter 3 §3.14는 10 CFR 50.68 부합을 보이되 50.68(b)(7)의 U-235 농축도 한계는 예외로 한다고 적고, Chapter 7 §7.3.1.2는 핵연료 저장·취급 계통의 임계가 50.68(b)에 따라 방지된다고 적는다. NRC는 50.68(b)(7) 요건에 대한 면제를 부여했고, `SER`은 이 면제를 부록 B에서 평가한다고 적는다. Chapter 7 §7.3.1.2는 50.68(b) 부합만 적고 (b)(7) 면제를 언급하지 않으므로, `SER`이 부여한 면제가 Chapter 7 기술에는 드러나지 않는다.
 
 ## 관련 문서
 - [[Natrium_System_Water_Pool_Fuel_Handling]]

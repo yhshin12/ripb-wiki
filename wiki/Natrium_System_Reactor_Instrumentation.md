@@ -4,8 +4,10 @@ aliases: []
 sources:
 - PSAR_ch07
 - PSAR_ch01
-status: disputed
-verified: 2026-09-16
+- PSAR_ch05
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -70,6 +72,11 @@ terms_pending: []
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.6.5.2.1 p.295]
 - "The safety-significant PSFs are identified as SR functions or NSRST functions as defined in Section 5.2." [PSAR_ch07 §7.6.5.2.1 p.295]
 - "The RIS supports the following safety-significant functions, which are designated as SR (for DL3 functions) or NSRST (for DL 4 and DL 5 functions) to indicate the safety classification of RIS components relied upon to perform the function:" [PSAR_ch07 §7.6.5.2.1 p.295]
+- "DL3-RC1a | High-high neutron flux | XIS" [SER_KU1_CP §7.6.3.1.11.1 p.561]
+- "DL4-RR8, Manual SPS Pump Trip on Low Primary Sodium Level (NSRST)" [SER_KU1_CP §7.2.4.1.14.1 p.487]
+- "DL4-RR8 – Manual Sodium Processing System Pump Trip on Leak Indication" [SER_KU1_CP §7.7.1.7 p.589]
+- "DL3-RC1 — Scram - Gravity Driven Absorber Insertion by Latch Release" [PSAR_ch05 Table 5.2-1 p.6]
+- "DL4-RR8 — Manual SPS Pump Trip on Leak Indication" [PSAR_ch05 DL4-RR8 p.20]
 
 | Function ID | Function Description | RIS Functional Support | 출처 |
 |---|---|---|---|
@@ -204,6 +211,14 @@ principal design criteria%%t:PDC%% 2와 4에 따라 safety-significant 부분은
 `IEEE 603-2018`, `IEEE 379-2014`, `IEEE 384-2018`이 규격 special treatment이고, 검증에는 `IEEE/IEC 60780-323-2016`, `IEEE/IEC 60980-344-2020`, `IEEE 420-2013`, `RG 1.180`이 쓰이며, 신뢰도·능력 목표를 위해 `IEEE 338-2022`가 적용된다. safety-significant 장비의 지진 special treatment는 `SCS1` 분류에 상응한다. SR%%t:SR%% 부분은 출력 운전 중 계통 수준의 SR%%t:SR%% 기능을 잃지 않고 시험·교정할 수 있고, 한 division을 보수 bypass해도 계통 수준 안전 기능을 잃지 않는다. `RIS`에는 정보 표시 장치가 없고 자동 제어를 하지 않으며 다른 계통과 상호작용하는 명령 기능이 없다. `IEEE 497-2016` 부합, maintenance bypass와 operating bypass 구현, 예측 가능·반복 가능 거동 설명은 OL%%t:OL%% 단계에서 제공되고, common cause failure%%t:CCF%% 대응 다양성은 `NAT-4950-A`에 기술된다.
 
 `PSAR` Chapter 1은 `RIS`가 RV-GV annulus 액체 소듐 누설 탐지 변수를 `RPS` 입력으로 제공한다고 적는다. Chapter 7 `Table 7.6.5-1`은 `Reactor Vessel-Guard Vessel Liquid Sodium Detection`을 계기 3개의 NSRST%%t:NSRST%%로 적고, 이 절의 기능 표에는 이 변수를 쓰는 기능이 없다. Chapter 1은 변수로 hot pool level, hot pool temperature, cold pool temperature, `PSP` shaft speed를 예시하며(`include`), `Table 7.6.5-1`의 SR%%t:SR%% `PSP Current Detector`는 이 예시에 들어 있지 않다. `Core Exit Temperature`(NSRST%%t:NSRST%%)와 `Reactor Head Temperature`(NST%%t:NST%%)도 이 절 기능 표에 대응 기능이 없다.
+
+**규정 대비 메모(C22-a, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `DL3-RC1`을 `DL3-RC1a`–`DL3-RC1j`로 나누어 적으나, Chapter 5 Table 5.2-1에는 `DL3-RC1` 한 레코드만 있고 하위 `ID`가 없다. `SER`은 Chapter 7 하위 `ID`를 그대로 쓴다. 하위 `ID` 체계를 정하는 권위 조항은 없다.
+
+**규정 대비 메모(C22-b, 신청자 문서 내부 불일치).** `DL4-RR8`의 이름이 `PSAR` Chapter 5에서는 Manual `SPS` Pump Trip on Leak Indication, Chapter 7 기능 표에서는 Manual `SPS` pump trip on low primary sodium level이다. `SER`도 §7.7.1.7에서는 앞의 이름을, §7.2.4.1.14.1에서는 뒤의 이름을 옮겨 적을 뿐이며, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다.
+
+**규정 대비 메모(C25(a), 신청자 문서 내부 불일치).** `PSAR` Chapter 1은 `RIS`가 RV-GV annulus 액체 소듐 누설 탐지 변수를 `RPS` 입력으로 준다고 적으나, Chapter 7은 이 변수를 NSRST%%t:NSRST%% 변수로 두고 `RIS` 기능 표에는 이 변수를 쓰는 기능이 없다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
+
+**규정 대비 메모(C25(b), 신청자 문서 내부 불일치).** `PSAR` Chapter 1의 `RPS` 입력 목록에는 SR%%t:SR%% `PSP Current Detector`가 없다. `SER`에는 이 입력에 관한 판단이 없다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

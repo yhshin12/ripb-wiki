@@ -3,8 +3,9 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch06
-status: disputed
-verified: 2026-09-16
+- SER_KU1_CP
+status: checked
+verified: 2026-10-17
 term: null
 tags:
 - natrium
@@ -102,6 +103,22 @@ terms_pending: []
 - "f2 = 0.7 (for roof configurations that do not shed snow off the structure and 0.2 for other roof configurations)" [PSAR_ch06 §6.4.2.2.5 p.30]
 - "ACI 318-19 and AISC 360-16 load combinations are used if determined to be more stringent." [PSAR_ch06 §6.4.2.2.5 p.30]
 - "NSRST structures are evaluated for extraordinary events such as extreme winter precipitation, tornado missiles, and accidents per building’s functional requirements using load combinations per Table 6.4-7, Table 6.4-8, Table 6.4-11 and Table 6.4-12." [PSAR_ch06 §6.4.2.2.5 p.30]
+- "The load combinations for SR concrete substructures are in PSAR table 6.4-5, and for structural steel in table 6.4-6." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "For extraordinary events, load combinations and factors from ACI 349-13 for concrete and ANSI/AISC N690 for steel will be used, as detailed in PSAR tables 6.4-7, 6.4-8, 6.4-11, and 6.4-12." [SER_KU1_CP §6.4.1.2.2 p.399]
+- "The OBE is set at 1/3 of the SSE which eliminates the need for explicit response or design analysis per 10 CFR 50 Appendix S; however, the cyclic effects of OBE are included in the fatigue analysis as described in Section 6.4.3.2." [PSAR_ch06 §6.4.3.3.1 p.46]
+- "USO did not develop a separate seismic analysis involving the OBE in accordance with RG 1.61, because the OBE is one-third of the SSE." [SER_KU1_CP §6.4.1.1.2 p.392]
+- "The staff determined that the development of the design ground motions for SR and NSRST SSCs is reasonable because, i) they rely on the seismic hazard analysis that was reviewed and accepted by the staff in SE section 2.6.2, and ii) USO is following guidance in RG 1.61 to define the OBE based on the SSE." [SER_KU1_CP §6.4.1.1.2 p.393]
+- "The staff determined that USO’s information on loads and load combinations is appropriate for the design of SR structures because the load combinations and the load factors are consistent with ACI 349-13, RG 1.142, ANSI/AISC N690-18, and RG 1.243." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "The staff will review the application of these loads and load combinations at the OL stage." [SER_KU1_CP §6.4.1.2.1 p.397]
+- "The primary design codes for the NSRST RAB substructure are ACI 318-19 (Reference 6.4-8) for concrete design and ANSI/AISC 360-16 (Reference 6.4-7) for structural steel design." [PSAR_ch06 §6.4.2.1 p.24]
+- "The primary design codes for the NSRST superstructures are ACI 318-19 (Reference 6.4-8) for concrete design and ANSI/AISC 360-16 for structural steel design." [PSAR_ch06 §6.4.2.1 p.24]
+- "Extreme and Abnormal: C-9(6): 9-6" [PSAR_ch06 Table 6.4-5 p.61-62]
+- "Normal and Severe: S-17(6): NB2-6" [PSAR_ch06 Table 6.4-6 p.63-64]
+
+| Load | Symbol | 조합 열 | 계수 | 출처 |
+|---|---|---|---|---|
+| Accident Pressure | Pa | Extreme and Abnormal: S-23: NB2-8 | 1.4(11) | [PSAR_ch06 Table 6.4-6 p.63-64] |
+
 
 | 원문 조합식 (IBC-2021 §1605.1) | 출처 |
 |---|---|
@@ -292,6 +309,14 @@ Severe environmental load는 Operating Basis Earthquake%%t:OBE%%와 풍하중이
 SR%%t:SR%% 하부구조의 콘크리트·강재 조합은 Table 6.4-11과 Table 6.4-12에 있다고 본문이 적지만, 표 제목이 가리키는 내용과 견주면 이 교차참조는 원문의 결함이다. 두 표는 NSRST%%t:NSRST%% 상부구조의 extraordinary events 조합을 담는다. 원문 오기는 고치지 않았다. NSRST%%t:NSRST%% Reactor Auxiliary Building 하부구조와 상부구조는 `IBC-2021` §1605.1의 Load and Resistance Factor Design 조합 일곱 개를 쓰고, `ACI 318-19`·`AISC 360-16`의 조합이 더 엄격하면 그쪽을 쓴다. extraordinary events, 곧 extreme winter precipitation, 토네이도 비산물, 사고는 건물의 기능 요건에 따라 Table 6.4-7, Table 6.4-8, Table 6.4-11, Table 6.4-12의 조합으로 평가한다.
 
 표의 주석은 조합 계수를 어떤 규정이 바꾸었는지 적는다. `ACI 349-13`의 계수를 `RG 1.142` Regulatory Position 5에 따라 1.2에서 1.4나 1.6으로, 0.8에서 1.0으로 바꾼 경우가 반복되고, 강재 표에서는 `RG 1.243`에 따라 `ANSI/AISC N690-18`의 계수를 바꾼다. 풍하중 계수는 `ASCE/SEI 7-16`의 풍속이 1700-year return period 기반이므로 1.6 대신 1.0을 쓴다. 고정하중이 안정화에 기여하면 그 계수를 0.90배로 낮추고 다른 중력하중의 계수는 `zero`가 된다. 구조 안정성의 최소 안전율은 NSRST%%t:NSRST%% 하부구조에서 전도 1.50, 활동 1.10, 부력 1.10이고, SR%%t:SR%% 하부구조에서는 OBE%%t:OBE%%를 쓰면 1.5, Safe Shutdown Earthquake%%t:SSE%%를 쓰면 1.1이다. Table 6.4-9는 최소 안전율 값이 St- 머리보다 한 열 왼쪽에 인쇄되어 있어 열 대응이 어긋나 있고, Table 6.4-8은 Accident Thermal 행에 기호와 계수가 없으며 Accident Pipe Break Missile Impact 행이 없다. 둘 다 원문 인쇄 상태이며 고치지 않았다. 조합별 계수 행렬은 원문 표에 있고 이 노트는 하중 행 이름과 기호만 옮긴다.
+
+**규정 대비 메모(C42, 규정 불일치).** `PSAR` §6.4.2.2.5는 SR%%t:SR%% 하부구조의 콘크리트·강재 하중조합이 Table 6.4-11과 Table 6.4-12에 있다고 적는다. `SER`은 SR%%t:SR%% 콘크리트 하부구조의 조합을 Table 6.4-5에, 강재 조합을 Table 6.4-6에 있다고 기술한다. 따라서 §6.4.2.2.5의 표 지칭은 `SER` 기준과 다른 교차참조 결함이다. `SER`은 Table 6.4-5·6.4-6의 하중조합과 하중계수가 SR%%t:SR%% 구조물 설계에 적절하다고 판단했다.
+
+**규정 대비 메모(C43, 규정과 일치).** `PSAR` §6.4.2.1은 NSRST%%t:NSRST%% `RAB` 하부구조와 NSRST%%t:NSRST%% 상부구조의 주 설계 코드를 `ACI` 318-19로 적고, NSRST%%t:NSRST%% 하부구조와 상부구조의 extraordinary events 조합 표(Table 6.4-7, Table 6.4-11) 머리 칸은 `ACI` 349-13의 식 번호를 쓴다. `SER`은 extraordinary events에 콘크리트는 `ACI` 349-13, 강재는 `ANSI`/`AISC` N690의 조합과 계수를 쓰며 그 내용이 Table 6.4-7, 6.4-8, 6.4-11, 6.4-12에 있다고 기술한다. 따라서 머리 칸의 `ACI` 349-13은 `SER` 기준과 같고 주 설계 코드 기술과 충돌하지 않는다.
+
+**규정 대비 메모(C44, 규정 불일치).** `PSAR` §6.4.3.3.1(기계 기기)은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적고, SR%%t:SR%% 하부구조 조합 표(Table 6.4-5)는 Operating Earthquake 하중 행을, Table 6.4-9 주석은 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. 구조물 표의 OBE%%t:OBE%% 행과 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 SR%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
+
+**규정 대비 메모(C48, 신청자 문서 내부 불일치).** Table 6.4-6은 S-17(6) 조합(NB2-6 식)을 "Normal and Severe" 범주에 두고, Table 6.4-5는 주석 번호 (6)이 붙은 C-9(6) 조합(9-6 식)을 "Extreme and Abnormal" 범주에 둔다. 또 Table 6.4-6의 Accident Pressure 계수 1.4는 주석 (11)을 가리키는데, 주석 (11)은 계수를 1.6으로 정하는 주석이고 계수를 1.4로 정하는 주석은 따로 있다. 하중 범주 표기를 정하는 권위 조항은 vault에 없고, `SER`은 두 표의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 일괄 판단했으며, `SER`에는 범주 표기와 주석 번호에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_Safety_Significant_Structures]]
