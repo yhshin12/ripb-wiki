@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04]
+sources: [NEI_18-04, RG_1.253]
 status: checked
 verified: 2026-09-15
 term: SPECIAL_TREATMENT
@@ -36,6 +36,7 @@ terms_pending: []
 - "The applicability of special treatment to the SSC safety categories identified in Table 4-1 is provided for general guidance only, and it is not prescriptive." [NEI_18-04 §4.4.5 p.55]
 - "The purpose of any special treatment requirement is to provide adequate assurance that the SSC will perform its functions in the prevention and mitigation of LBEs." [NEI_18-04 §4.4.5 p.56]
 - "Each requirement is intended to assure that the SSC has adequate reliability and capability to perform these functions." [NEI_18-04 §4.4.5 p.56]
+- "Special treatments are considered anything that is done, beyond procuring commercial-grade equipment, to provide increased assurance of the capability and reliability of both SR and NSRST SSCs, including, for example, design requirements, quality assurance requirements, availability controls, reliability and capability controls, and monitoring programs associated with reliability." [RG_1.253 §7 p.21]
 
 | Group | Special Treatment Category | SR SSC | NSRST SSC | NST SSC | Available Guidance | 출처 |
 |---|---|---|---|---|---|---|
@@ -72,6 +73,8 @@ terms_pending: []
 
 원문은 어떤 special treatment%%t:SPECIAL_TREATMENT%% 범주든 적용 여부를 사안별로, 해당 LBE%%t:LBE%%의 예방과 완화에서 SSC%%t:SSC%% 기능이 갖는 맥락에 따라 판단해야 한다고 거듭 적는다. 적용 여부는 설계에서 정하고 Licensing Modernization Project%%t:LMP%% 방법론의 일부인 IDP%%t:IDP%%에서 확인한다. Integrated Decision-Making Process Panel%%t:IDPP%%은 IDP%%t:IDP%%를 수행하는 한 가지 수단이다. 표 4-1의 범주별 적용은 일반 지침일 뿐 처방이 아니며, 표에 실린 활동은 발전소 능력과 성능 결과가 설계기준 안에 머문다는 확신을 주는 프로그램 활동 전체의 일부이다. 더 넓은 프로그램 조치 목록은 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가에서 평가되며, 개별 SSC%%t:SSC%%에 실제로 적용되는 special treatment%%t:SPECIAL_TREATMENT%%는 RIPB%%t:RIPB%% 고려의 영향을 받는다. 어떤 special treatment%%t:SPECIAL_TREATMENT%% 요건이든 목적은 SSC%%t:SSC%%가 LBE%%t:LBE%%를 예방하고 완화하는 기능을 수행한다는 적절한 확신을 주는 것이며, 각 요건은 그 기능을 수행할 신뢰도와 능력이 적절함을 보증하려는 것이다.
 
+**[[RG_1.253]]의 정의.** [[RG_1.253]]은 special treatment%%t:SPECIAL_TREATMENT%%를 상용 등급 기기 조달을 넘어 SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%% 모두의 capability와 reliability에 대한 확신을 높이려고 하는 모든 것으로 보고, 설계 요건, 품질보증 요건, availability 관리, reliability·capability 관리, reliability 관련 감시 프로그램을 예로 든다.
+
 ## 관련 문서
 - [[SSC_Design_Requirements]]
 - [[Required_Functional_Design_Criteria]]
@@ -82,3 +85,5 @@ terms_pending: []
 - [[Programmatic_DID]]
 - [[DID_Integrated_Process]]
 - [[NEI_18-04]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]
+- [[Natrium_SER_SSC_Design_Review]]

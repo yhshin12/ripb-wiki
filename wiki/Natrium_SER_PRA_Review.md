@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [SER_KU1_CP]
+sources: [SER_KU1_CP, RG_1.247]
 status: checked
 verified: 2026-10-16
 term:
@@ -11,7 +11,7 @@ terms_pending: []
 # NRC의 Natrium CP 단계 PRA 평가 (NRC Evaluation of the Natrium CP-Stage PRA)
 
 > [!abstract] 요약
-> NRC staff는 `RG 1.253` Appendix A와 `RG 1.247`의 해당 입장을 적용해 Kemmerer Unit 1의 construction permit%%t:CP%% 단계 PRA를 검토했다. PRA 요소 열두 개 각각을 "reasonable"로 판정했다. 근거는 `PSAR` 서술이 `RG 1.253`의 CP%%t:CP%% 단계 지침에 맞고 해석이 `RG 1.247` 지침에 따라 수행되었다는 것이다. 이 PRA는 내부 기시사건만 다루며, 여러 요소에서 근거 보강과 재평가를 operating license%%t:OL%% 단계로 넘겼다.
+> NRC staff는 `RG 1.253` Appendix A와 `RG 1.247`의 해당 입장을 적용해 Kemmerer Unit 1의 construction permit%%t:CP%% 단계 PRA를 검토했다. PRA 요소 열두 개와 사용후연료(`SF`) PRA 각각을 "reasonable"로 판정했다. 근거는 `PSAR` 서술이 `RG 1.253`의 CP%%t:CP%% 단계 지침에 맞고 해석이 `RG 1.247` 지침에 따라 수행되었다는 것이다. 이 PRA는 내부 기시사건만 다루며, 여러 요소에서 근거 보강과 재평가를 operating license%%t:OL%% 단계로 넘겼다.
 
 ## 원문 사실
 - "The staff followed the guidance in Appendix A of RG 1.253, “Guidance for a Technology-Inclusive Content-of-Application Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light-Water Reactors,” Rev. 0 (ML23269A222) to review the KU1 CP stage PRA within the context of the LMP framework." [SER_KU1_CP §3.1.1 p.152]
@@ -44,6 +44,8 @@ terms_pending: []
 - "In PSAR section 3.1.1.2, USO stated that a PRA peer review will be conducted to support the OL stage PRA, which will replace the KU1 PRA self-assessment and provide an additional level of confidence in the PRA model and results." [SER_KU1_CP §3.1.3 p.176]
 - "Overall, the staff determined the KU1 PRA configuration control procedure to be reasonably developed." [SER_KU1_CP §3.1.3 p.177]
 - "The staff concludes that the PRA information described in the PSAR conforms to the guidance documents, referenced above, and that the scope, level of detail, and quality of the KU1 PRA are reasonable for the CP application. This conclusion is based on the understanding that the KU1 PRA is preliminary to support the CP application, and that the applicant is not requesting finality at this stage." [SER_KU1_CP §3.1.4 p.185]
+- "referred to hereafter as the ASME/ANS NLWR PRA standard, which is endorsed in this RG with exceptions" [RG_1.247 §B Reason for Issuance p.9]
+- "which documents the development and results of the spent fuel (SF) PRA" [SER_KU1_CP §3.1.3 p.173]
 
 | PRA 요소 | staff 판정 문장 | 출처 |
 |---|---|---|
@@ -62,7 +64,7 @@ terms_pending: []
 | SF PRA | the staff determined the SF PRA analysis to be reasonable | [SER_KU1_CP §3.1.3 p.174] |
 
 ## 해설
-staff는 PRA를 `RG 1.253` Appendix A의 CP%%t:CP%% 단계 기대(범위, 상세도, 품질)에 비추어 검토했다. 이 PRA가 내부 기시사건만 다루므로, 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA 표준을 단서와 함께 승인하는 `RG 1.247`의 해당 입장을 함께 적용했다. 검토의 일부로 가상 audit과 3일간의 현장 audit을 했고, `CAFTA`로 만든 PRA 모델과 선택된 민감도 해석도 audit 대상이었다.
+staff는 PRA를 `RG 1.253` Appendix A의 CP%%t:CP%% 단계 기대(범위, 상세도, 품질)에 비추어 검토했다. 이 PRA가 내부 기시사건만 다루므로, 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA 표준을 승인하는 `RG 1.247`의 해당 입장을 함께 적용했다. `SER`은 이 승인을 "with clarifications"로 적지만, `RG 1.247` 자체는 "with exceptions"로 적는다. 검토의 일부로 가상 audit과 3일간의 현장 audit을 했고, `CAFTA`로 만든 PRA 모델과 선택된 민감도 해석도 audit 대상이었다.
 
 staff는 PRA 요소 열두 개와 사용후연료 PRA를 각각 "reasonable"로 판정했다. 판정 문장은 대체로 `PSAR`의 해당 서술이 `RG 1.253`의 CP%%t:CP%% 단계 지침에 맞는다는 근거를 들며, Plant Operating State%%t:POS%% 판정처럼 해석이 `RG 1.247` 지침에 따라 수행되었다는 근거를 함께 드는 경우가 있다. 동시에 요소별 한계와 OL%%t:OL%% 단계 과제를 적었다.
 - 일부 Structures, Systems, and Components%%t:SSC%%는 설계 정보가 없어 모델링되지 않았다. 이들이 추가되면 새 고장 모드 때문에 일부 사건의 빈도가 커질 수 있다.
@@ -82,3 +84,4 @@ staff의 결론은 PRA의 범위, 상세도, 품질이 CP%%t:CP%% 신청에 합�
 - [[Natrium_PRA_Scope]]
 - [[Natrium_Hazard_Screening]]
 - [[Natrium_SER_PRA_OL_Expectations]]
+- [[RG_1247_PRA_Acceptability_Framework]]

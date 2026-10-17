@@ -56,7 +56,7 @@ terms_pending: []
 
 **peer review(C.2.2).** 표준은 PRA 모델, upgrade, newly developed method 사용에 대한 peer review를 요구한다. 수행한 작업을 검토하지 못하게 하는 등 이해 충돌을 피하도록 팀을 구성해야 한다. high-level requirement는 그 아래 적용 가능한 supporting requirement를 모두 충족할 때 충족된 것으로 본다. upgrade 뒤에는 후속 peer review를 한다. newly developed method는 peer review로 수용성을 판단하고, 이를 PRA에 구현하는 것은 upgrade이므로 구현 peer review 대상이 된다. 근본적으로 새로운 방법에는 staff의 직접 검토가 필요할 수 있다. peer review가 없고 신청자의 정당화로 충분한 확신을 얻지 못하면 staff의 심층 검토가 필요하다.
 
-**peer review 지침의 승인 표현.** §A Purpose와 C.2 도입 문단은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적지만, §B와 C.2.2는 `NEI 20-09` Revision 1을 예외 없이 승인한다고 적는다. C.2 도입 문단이 말하는 지침은 이름이 아니라 "related industry PRA peer review guidance"로 적혀 있다. 이 차이는 `meta/contradictions.md`에 기록한다.
+**peer review 지침의 승인 표현.** C.2 도입 문단은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적지만, §B와 C.2.2는 `NEI 20-09` Revision 1을 예외 없이 승인한다고 적는다. C.2 도입 문단이 말하는 지침은 이름이 아니라 "related industry PRA peer review guidance"로 적혀 있다. §A Purpose 문장도 같은 취지로 읽힐 수 있으나, 그 문장에서 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지가 문장 구조로는 분명하지 않다. 이 차이는 `meta/contradictions.md`에 기록한다.
 
 **PRA의 개발·사용과 응용별 기준(C.3).** 신청서의 PRA 관련 정보는 응용별 수용 기준을 밝히고 충족을 보여야 하며, 위험정보 활용 의사결정에 쓰이는 PRA는 늘 발전소에 대한 최선의 정보를 반영해야 한다. C.1–C.1.4는 PRA가 갖추어야 할 최소 능력이다. 부록 A로 승인된 표준을 쓰면 C.1–C.2가 충족된 것으로 보고, 승인 내용이나 직원 입장과 다른 접근은 사안별로 평가한다. PRA 결과에 영향을 주어 응용에 영향을 줄 수 있는 가정은 key assumption이다. 안전 목표와 Quantitative Health Objective%%t:QHO%%가 응용의 기준으로 쓰이지 않는 경우에도 신청자는 이를 어떻게 충족하는지 보여야 한다.
 
@@ -67,3 +67,4 @@ terms_pending: []
 - [[RG_1247_PRA_Acceptability_Framework]]
 - [[RG_1247_Appendix_A_Staff_Positions]]
 - [[RG_1253_CP_PRA_Acceptability]]
+- [[Non_LWR_PRA_Regulatory_Role]]

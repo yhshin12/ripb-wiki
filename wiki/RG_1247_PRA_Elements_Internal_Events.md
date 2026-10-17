@@ -1,7 +1,7 @@
 ---
 type: regulation
 aliases: []
-sources: [RG_1.247]
+sources: [RG_1.247, RG_1.253]
 status: checked
 verified: 2026-10-16
 term:
@@ -44,9 +44,10 @@ terms_pending: []
 - "The objective of expressing overall risk in terms of appropriate risk metrics is to provide a vehicle by which risk contributions from multiple reactors and other radiological sources can be integrated." [RG_1.247 §C.1.3.18 p.50]
 - "The documentation of the PRA model provides the information necessary to easily reproduce and justify results." [RG_1.247 §C.1.3.19 p.51]
 - "A source of model uncertainty is one that is related to an issue for which there is no consensus approach or model (e.g., choice of data source, success criteria, human reliability model)." [RG_1.247 §C.1.3.19 p.51]
+- "C.1.3.17 (RC) Radiological Consequence Analysis; C.1.3.18 (RI) Risk Integration" [RG_1.253 Table A-1 p.34]
 
 ## 해설
-**요소의 구성.** PRA 요소의 characteristics와 attributes는 각 기술 해석을 수행하고 목적을 달성하려고 충족해야 할 요구를 정한다. Table 1은 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%, 모든 분석 수준을 다루는 PRA에 필요한 요소를 열거하며, 하나라도 빠진 PRA는 완전하지 않다고 본다. 정제본에는 Table 1의 내용이 빠져 있어 표의 항목은 vault에 없다. staff는 경수로 지침 `RG 1.200`에서는 두지 않았던 risk integration 요소의 입장을 이 지침에서 새로 둔다.
+**요소의 구성.** PRA 요소의 characteristics와 attributes는 각 기술 해석을 수행하고 목적을 달성하려고 충족해야 할 요구를 정한다. Table 1은 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%, 모든 분석 수준을 다루는 PRA에 필요한 요소를 열거하며, 하나라도 빠진 PRA는 완전하지 않다고 본다. 정제본에는 Table 1의 본문이 빠져 있다. 요소 번호와 이름은 C.1.3.x 절과 [[RG_1.253]] Table A-1([[RG_1253_CP_PRA_Acceptability]])에서 확인되며, [[RG_1253_CP_PRA_Acceptability]]의 Table A-1 인용에는 C.1.3.1부터 C.1.3.18 Risk Integration까지의 요소가 있다. staff는 경수로 지침 `RG 1.200`에서는 두지 않았던 risk integration 요소의 입장을 이 지침에서 새로 둔다.
 
 **내부 사건 요소.**
 - POS%%t:POS%%: 위험에 중요한 운전 변화(전출력, `LPSD`)를 찾아 조건이 비교적 일정한 운전 상태로 나눈다. 고려할 안전 기능에는 반응도 제어, 냉각재 화학 제어, 붕괴열 제거, 냉각재 계통 재고·barrier%%t:BARRIER%% 제어, 방사성핵종 이동 barrier%%t:BARRIER%% 제어, 용기 외 핵분열생성물 제어가 들어간다. 용기 외 원천은 문서화된 기술적 정당화가 없는 한 포함한다.
@@ -69,3 +70,4 @@ terms_pending: []
 - [[RG_1247_PRA_Acceptability_Framework]]
 - [[RG_1247_PRA_Elements_Hazards]]
 - [[Risk_Importance_Measures]]
+- [[RG_1253_CP_PRA_Acceptability]]

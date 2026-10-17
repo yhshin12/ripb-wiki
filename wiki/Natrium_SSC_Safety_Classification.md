@@ -4,6 +4,7 @@ aliases: []
 sources:
 - PSAR_ch05
 - NEI_18-04
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -61,6 +62,14 @@ terms_pending: []
 - "Any SSCs that do not meet the risk-significance criteria should be classified as safety-significant only if the integrated decision-making process determines that some form of special treatment is necessary to establish the adequacy of DID." [NEI_18-04 §4.3 p.48]
 
 - "Safety-significant SSCs include all those SSCs classified as SR or NSRST. None of the NST SSCs are classified as safety-significant." [NEI_18-04 §4 p.38]
+- "USO unintentionally deviated from the LMP methodology in two ways while performing these risk-significant function determinations for the CPA" [SER_KU1_CP §5.1 p.337]
+- "Identification of RSFs was performed using the 95th percentile versus mean risk values." [SER_KU1_CP §5.1 p.337]
+- "Identification of risk-significant NSRST functions needed to keep LBEs within the F-C target was not performed." [SER_KU1_CP §5.1 p.337]
+- "The first deviation is conservative and may have resulted in a small number of SSCs that should have been classified as risk-significant NSRST being classified as SR, reducing the impacts of the second deviation." [SER_KU1_CP §5.1 p.337]
+- "the staff determined that the impact of this second deviation on the overall design and facility risk at the CP stage is small" [SER_KU1_CP §5.1 p.337]
+- "During its review of the PSAR, the staff identified that some preventative functions were not being evaluated through the SSC safety classification process." [SER_KU1_CP §5.1 p.338]
+- "However, based on USO’s interpretation of statement (a) that NSRST SSCs may continue to function but not perform RSFs, and statement (b), USO incorporated some passive NSRST SSCs performing at a degraded level in their DBA source term analyses." [SER_KU1_CP §5.1 p.339]
+- "The staff determined that USO’s interpretation of the guidance and approach to ascribing some amount of degraded performance to passive NSRST SSCs in DBA source term analyses was reasonable, but acceptability is dependent on the design aspects of the SSCs and the level of degraded performance credited." [SER_KU1_CP §5.1 p.339]
 
 ## 해설
 이 보고서는 SSC%%t:SSC%% 안전 분류를 NEI 18-04에 따라 수행한다. PSF%%t:PSF%%는 먼저 계통에 배정되고, 구조화된 방법으로 각 PSF%%t:PSF%%를 수행하는 SSC%%t:SSC%%를 식별하며, PSF%%t:PSF%%의 safety significance가 그 기능 수행에 credit된 SSC%%t:SSC%%의 안전 분류를 정한다. NEI 18-04도 LBE%%t:LBE%%에 나타난 사건을 방지하거나 완화하는 SSC%%t:SSC%% 기능만 관심 대상이므로 이 과정을 SSC%%t:SSC%% 기능 분류 과정이라고 부르고, SSC%%t:SSC%%가 분류되더라도 성능 요건과 special treatment%%t:SPECIAL_TREATMENT%% 요건은 LBE%%t:LBE%%에서 식별된 특정 기능에 대한 것이라고 적는다.
@@ -72,6 +81,8 @@ NSRST%%t:NSRST%% 기능 표는 PSF%%t:PSF%% 번호, 기능 설명, 만족한 saf
 `Associated LBE` 칸이 None인 risk-significant PSF%%t:PSF%%도 보수적으로 risk-significant NSRST%%t:NSRST%% 기능으로 분류하고, SR%%t:SR%% 아닌 PSF%%t:PSF%%의 risk significance는 OL%%t:OL%% 단계의 안전해석 평가로 확인한다. NEI 18-04의 NSRST%%t:NSRST%% 정의는 risk-significant 기능이나 심층방어%%t:DID%% 적절성에 필요한 기능을 수행하는 비안전 SSC%%t:SSC%%이며, NEI 18-04는 risk-significance 기준을 만족하지 않는 SSC%%t:SSC%%를 integrated decision-making process%%t:IDP%%가 심층방어%%t:DID%% 적절성을 위해 special treatment%%t:SPECIAL_TREATMENT%%가 필요하다고 판정할 때만 safety-significant로 분류한다고 적는다. 이 노트가 인용한 보고서 절에는 심층방어%%t:DID%% 기준의 판정 주체가 적혀 있지 않다.
 
 Non-Safety-Related with No Special Treatment%%t:NST%% 기능은 SR%%t:SR%% 기능도 NSRST%%t:NSRST%% 기능도 아닌 PSF%%t:PSF%%이며, safety-significant가 아니어서 이 장에 목록이 없다. NEI 18-04도 safety-significant SSC%%t:SSC%%는 SR%%t:SR%%이나 NSRST%%t:NSRST%%로 분류된 SSC%%t:SSC%%이고 NST%%t:NST%% SSC%%t:SSC%%는 safety-significant가 아니라고 적는다. SR%%t:SR%% SSC%%t:SSC%% 절과 NSRST%%t:NSRST%% SSC%%t:SSC%% 절은 분류 방법과 분류 결과가 앞 절들에 요약되어 있다고만 적는다.
+
+**NRC staff 평가.** NRC staff는 사업자가 risk-significant 기능을 정하면서 Licensing Modernization Project%%t:LMP%% 방법론에서 두 가지로 의도치 않게 벗어났다고 적는다. 첫째, RSF%%t:RSF%%를 평균 대신 95th percentile 위험값으로 식별했고, 둘째, LBE%%t:LBE%%를 F-C target 안에 유지하는 데 필요한 risk-significant NSRST%%t:NSRST%% 기능의 식별을 수행하지 않았다. staff는 첫째 일탈이 보수적이고, 그 결과 risk-significant NSRST%%t:NSRST%%로 분류되어야 할 일부 SSC%%t:SSC%%가 SR%%t:SR%%로 분류되었을 수 있어 둘째 일탈의 영향을 줄이며, 둘째 일탈이 construction permit%%t:CP%% 단계의 설계와 시설 위험에 미치는 영향은 작다고 판단했다. staff는 또 일부 Prevention Function%%t:PREVENTION_FUNCTION%%이 SSC%%t:SSC%% 안전 분류 과정에서 평가되지 않았음을 확인했다. 사업자는 일부 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%를 저하된 성능으로 Design Basis Accident%%t:DBA%% 선원항(source term)%%t:SOURCE_TERM%% 해석에 포함했으며, staff는 이 접근이 합리적이지만 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단했다.
 
 ## 관련 문서
 - [[SSC_Safety_Classification]]
@@ -87,3 +98,5 @@ Non-Safety-Related with No Special Treatment%%t:NST%% 기능은 SR%%t:SR%% 기�
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_Licensing_Basis_Methodology]]
 - [[PSAR_ch05]]
+- [[Natrium_SER_SSC_Classification_Review]]
+- [[Natrium_SER_Exemptions_Review]]

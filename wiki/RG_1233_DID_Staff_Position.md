@@ -51,3 +51,4 @@ plant capability 쪽의 중요한 정성적 전체 지침은 각 LBE%%t:LBE%%의
 - [[Integrated_Decision_Making_Process]]
 - [[Natrium_DID_Approach]]
 - [[RG_1.233]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]

@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch03, NEI_18-04]
+sources: [PSAR_ch03, NEI_18-04, SER_KU1_CP]
 status: disputed
 verified: 2026-09-16
 term:
@@ -36,6 +36,10 @@ terms_pending: []
 - "DBAs are derived from design basis events based on the capabilities and reliabilities of safety-related structures, systems, or components needed to mitigate and prevent accidents, respectively." [PSAR_ch03 §3.9 p.108]
 - "DBAs are derived from the design basis events by prescriptively assuming that only safety-related structures, systems, or components are available to mitigate postulated accident consequences to within the 10 CFR 50.34 dose limits." [PSAR_ch03 §3.9 p.108]
 - "At the OL stage, DBAs will also be derived from AOOs with 5th percentile frequencies less than 1E-02/plant-year and BDBEs with 95th percentile frequencies greater than 1E-04/plant-year." [PSAR_ch03 §3.9 p.108]
+- "Two deviations from the methodology were identified based on the staff’s review." [SER_KU1_CP §3.4.1 p.225]
+- "While USO did use the 95th percentile frequency when determining which events to evaluate as BDBEs, mean frequency was used when determining which events would be classified and included in the CP application as BDBEs." [SER_KU1_CP §3.4.1 p.225]
+- "The second deviation from RG 1.233 was that USO did not generate DBAs for AOOs and BDBEs with frequency bands that extend into the DBE region when identifying and classifying LBEs." [SER_KU1_CP §3.4.1 p.225]
+- "By limiting this evaluation Task 7a, no DBAs were created for AOOs with 5th percentile frequencies or BDBEs with 95th percentile frequencies that extend into the DBE region." [SER_KU1_CP §3.4.1 p.226]
 
 | 범주 | 빈도 구간 (원문) | 출처 |
 |---|---|---|
@@ -64,7 +68,7 @@ LBE%%t:LBE%% 선정은 event sequences의 체계적 정의, 분류, 평가를 �
 
 Anticipated Operational Occurrence%%t:AOO%%는 발전소 수명 동안 한 번 이상 일어날 것으로 예상되는 사건으로 평균 빈도 1E-02 per plant-year 이상이고, Design Basis Event%%t:DBE%%는 AOO%%t:AOO%%보다 드물고 수명 중 일어나지 않을 것으로 예상되는 평균 빈도 1E-04에서 1E-02 per plant-year의 사건이며, Beyond Design Basis Event%%t:BDBE%%는 DBE%%t:DBE%%보다 드문 평균 빈도 5E-07에서 1E-04 per plant-year의 사건이다. 세 범주 모두 안전 등급과 무관하게 모든 SSC%%t:SSC%%의 예상 응답을 고려하고, AOO%%t:AOO%%와 DBE%%t:DBE%% 완화에는 사건 기술에 따로 적지 않은 한 운전원 조치가 필요 없다. DBA%%t:DBA%%는 Safety-Related%%t:SR%% SSC%%t:SSC%%의 설계 기준과 성능 목표를 정하는 가정 사고로, DBE%%t:DBE%%에서 SR%%t:SR%% SSC%%t:SSC%%만 사고 결말을 10 CFR 50.34 선량 한도 안으로 완화할 수 있다고 처방적으로 가정해 도출한다.
 
-경계 수치는 NEI 18-04의 LBE%%t:LBE%% 정의 표와 같고, 이 보고서도 세 범주 모두 평균 빈도를 명시한다. NEI 18-04는 BDBE%%t:BDBE%%를 상한 빈도가 5E-07/plant-year보다 큰 사건으로도 설명하고, 95th percentile 빈도가 5E-07/plant-year 미만인 사건을 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는데, 이 노트가 인용한 보고서 문장에는 이에 대응하는 서술이 없다. NEI 18-04는 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다고 적는다. 이 보고서는 5th percentile 빈도가 1E-02/plant-year 미만인 AOO%%t:AOO%%와 95th percentile 빈도가 1E-04/plant-year를 넘는 BDBE%%t:BDBE%%에서 DBA%%t:DBA%%를 도출하는 일을 OL%%t:OL%% 단계로 미루면서, 동시에 NEI 18-04 방법론을 LBE%%t:LBE%% 선정·평가에 일탈 없이 적용한다고 적는다. 두 서술의 관계는 원문에 설명되어 있지 않다.
+경계 수치는 NEI 18-04의 LBE%%t:LBE%% 정의 표와 같고, 이 보고서도 세 범주 모두 평균 빈도를 명시한다. NEI 18-04는 BDBE%%t:BDBE%%를 상한 빈도가 5E-07/plant-year보다 큰 사건으로도 설명하고, 95th percentile 빈도가 5E-07/plant-year 미만인 사건을 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는데, 이 노트가 인용한 보고서 문장에는 이에 대응하는 서술이 없다. NRC staff는 사업자가 BDBE%%t:BDBE%%로 평가할 사건을 정할 때는 95th percentile 빈도를 썼지만, BDBE%%t:BDBE%%로 분류해 construction permit%%t:CP%% 신청서에 넣을 사건을 정할 때는 평균 빈도를 썼다고 확인하고 이를 방법론 일탈로 본다. NEI 18-04는 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다고 적는다. 이 보고서는 5th percentile 빈도가 1E-02/plant-year 미만인 AOO%%t:AOO%%와 95th percentile 빈도가 1E-04/plant-year를 넘는 BDBE%%t:BDBE%%에서 DBA%%t:DBA%%를 도출하는 일을 OL%%t:OL%% 단계로 미루면서, 동시에 NEI 18-04 방법론을 LBE%%t:LBE%% 선정·평가에 일탈 없이 적용한다고 적는다. 보고서는 두 서술의 관계를 설명하지 않는다. NRC staff는 이 DBA%%t:DBA%% 미도출을 두 번째 방법론 일탈로 판단하고, 사업자가 이 평가를 Task 7a에만 적용해 DBE%%t:DBE%% 범위에 걸치는 AOO%%t:AOO%%와 BDBE%%t:BDBE%%에 DBA%%t:DBA%%가 만들어지지 않았다고 적는다.
 
 NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 Design Basis External Hazard Level%%t:DBEHL%% 안의 외부 사건에 대해 Required Safety Function%%t:RSF%%을 수행할 수 있어야 하므로 외부 재해로 새 DBA%%t:DBA%%가 생기지 않는다고 적는다. 이 보고서는 설계기준 지진이 일으키는 현상을 다른 DBA%%t:DBA%% 평가가 다루지 않는다는 이유로 지진 DBA%%t:DBA%%를 만들었고, 이 DBA%%t:DBA%%는 safe shutdown earthquake의 수평·수직 반응도 시간 이력을 포괄하는 반응도 곡선 범위로 전출력 조건에서 해석한다.
 
@@ -81,3 +85,5 @@ NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 Design Basis External Hazard Level%%t:DB
 - [[Natrium_DBA_List]]
 - [[Natrium_LBE_Evaluation_Methods]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_LBE_Summary_Review]]
+- [[Natrium_SER_LBE_Methodologies_Review]]

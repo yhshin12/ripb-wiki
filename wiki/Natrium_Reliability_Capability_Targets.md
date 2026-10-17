@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch06, NEI_18-04]
+sources: [PSAR_ch06, NEI_18-04, SER_KU1_CP]
 status: checked
 verified: 2026-09-16
 term:
@@ -31,6 +31,9 @@ terms_pending: []
 - "Assurance is further accomplished by achieving and monitoring the capabilities of the SSCs in the performance of their mitigation functions with adequate margins to address uncertainties." [NEI_18-04 §4.4.5 p.50]
 - "All safety-significant SSCs, including those in the SR and NSRST categories, should be included in a Reliability Assurance Program (RAP) similar to that described in SRP 17.4." [NEI_18-04 §4.4.5 p.56]
 - "Additional special treatment requirements for SR SSCs should be developed to provide assurance that the capability to perform their RSFs is maintained during the operating lifetime of the plant." [NEI_18-04 §4.4.5 p.56]
+- "Specifically, the staff noted that certain reliability targets were set below the typical values established for comparable safety functions in other reactor designs." [SER_KU1_CP §6.2.1 p.386]
+- "At the CP stage, there are insufficient technical justifications to fully substantiate the adequacy of these lower targets." [SER_KU1_CP §6.2.1 p.386]
+- "the determination on the proposed targets and if they are technically achievable or provide sufficient margin to ensure reliable performance of the associated safety functions will occur at the OL stage" [SER_KU1_CP §6.2.1 p.386]
 
 ## 해설
 `PSAR` Chapter 6에 따르면 SSC%%t:SSC%%가 PSF%%t:PSF%%를 수행한다는 보증은 PRA에서 평가한 SSC%%t:SSC%%의 reliability와 capability 수준을 달성하고 감시해서 얻는다. PRA는 `Section 3.1`, Licensing Basis Event%%t:LBE%%는 `Sections 3.4 through 3.9`, PSF%%t:PSF%%는 `Section 5.2`에 기술된다. NEI 18-04는 먼저 PRA에서 평가되고 LBE%%t:LBE%% 위험 평가 기준을 만족하는 데 필요한 reliability와 availability를 달성·감시하고, 다음으로 불확실도를 다룰 적절한 margin을 두고 `mitigation functions`를 수행하는 SSC%%t:SSC%% capability를 달성·감시해 보증한다고 적는다. `PSAR` 문장은 reliability와 capability를 한 문장에 적고 availability를 적지 않는다.
@@ -39,9 +42,12 @@ reliability target은 SSC%%t:SSC%%가 지정된 기능을 완수할 확률에 �
 
 capability target은 SSC%%t:SSC%%가 적절한 margin을 두고 PSF%%t:PSF%%를 수행하는 능력에 초점을 둔 성능 목표이며, 수명 중 열화가 capability의 일부로 고려된다. 구체적인 운전 성능 기준이 PSF%%t:PSF%% 성공 profile의 일부로 포함되고, 이 정량 target은 재해에 대응하는 발전소 능력을 보이는 해석 모델에 기반한다. SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%의 capability target도 아직 확정되지 않았고, 해석 모델의 결과가 OL%%t:OL%% 단계에서 PRA에 가정된 capability target이 만족되었음을 확인할 예정이다. NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 발전소 운전 수명 동안 Required Safety Function%%t:RSF%% 수행 능력을 유지하도록 추가 special treatment%%t:SPECIAL_TREATMENT%% 요건을 개발해야 한다(`should`)고 적는다. SR%%t:SR%%과 NSRST%%t:NSRST%%로 분류된 SSC%%t:SSC%%에 대해 reliability와 capability로 special treatment%%t:SPECIAL_TREATMENT%% 요건을 개발하는 과정은 `Section 6.3`에 있다([[Natrium_Special_Treatment_Process]]). target의 수치는 vault에 없다.
 
+**NRC staff 평가.** NRC staff는 일부 reliability target이 다른 원자로 설계의 비교 가능한 안전 기능에 쓰이는 전형적 값보다 낮게 설정되었고, construction permit%%t:CP%% 단계에는 이 낮은 target의 적정성을 뒷받침할 기술적 정당화가 부족하다고 적는다. target의 달성 가능성과 여유에 대한 판단은 OL%%t:OL%% 단계에서 한다.
+
 ## 관련 문서
 - [[SSC_Reliability_And_Capability]]
 - [[Natrium_Special_Treatment_Process]]
 - [[Natrium_SRDC_Summary]]
 - [[Special_Treatment]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_SSC_Design_Review]]

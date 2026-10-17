@@ -46,7 +46,7 @@ terms_pending: []
 ## 해설
 **연료 설계.** 연료 인증 `TR` NAT-2806-A에는 L&C 다섯 개가 붙어 있다. staff는 각 L&C가 CP%%t:CP%% 단계에 적용되지 않거나 CP%%t:CP%% 신청에서 적절히 다루어졌다고 보고 참조 포함을 수용했다. 이 `TR`은 Type 1 연료와 제어집합체를 인증하는 수용 가능한 접근법이지만, 그 자체로 인증을 입증하지는 않는다. 연료 인증 활동은 CP%%t:CP%% 발급 전에 완료될 필요가 없다는 근거로 L&C 1은 적용되지 않는 것으로 보았다. 연료 인증 완료와 방사성핵종 보유 요건은 OL%%t:OL%% 단계에서 검토된다.
 
-**연료 파손 기준.** 연료 피복은 기능적 격납 전략에서 첫 번째 Safety-Related%%t:SR%% barrier%%t:BARRIER%%이다. time-at-temperature no-failure%%t:TATNF%% 기준은 온도·응력·변형률 같은 여러 변수를 하나의 기준으로 묶어, 그 아래에서는 피복 파손이 배제된다. 이 기준을 넘으면 손상 여부와 범위를 더 상세히 해석한다. 낙하 집합체와 국부 결함을 겪는 집합체는 전부 파손된다고 가정한다.
+**연료 파손 기준.** 연료 피복은 기능적 격납 전략에서 첫 번째 Safety-Related%%t:SR%% barrier%%t:BARRIER%%이다. time-at-temperature no-failure%%t:TATNF%% 기준은 여러 변수를 하나의 수용 기준으로 묶어, 그 아래에서는 피복 파손이 배제된다. 이 기준을 넘으면 손상 여부와 범위를 더 상세히 해석한다. 낙하 집합체와 국부 결함을 겪는 집합체는 전부 파손된다고 가정한다.
 
 **핵설계와 열수력 설계.** staff는 두 방법론이 각각 해당 principal design criteria%%t:PDC%%(핵설계: `PDC 10, 11, 12, 26` / 열수력: `PDC 10, 15, 34`)과의 정합을 보이는 예비 해석에 적절하다고 판단했다. 노심 전체 반응도 계수는 음이지만, 국부 과열 시나리오에서 국부 양의 반응도 계수는 OL%%t:OL%% 단계에서 계속 확인한다. 붕괴열 계산의 실험적 근거와 최종 노심 설계 제한값도 OL%%t:OL%% 단계 과제이다. 정상 운전 시 냉각재 입구 온도는 360°C, 출구 평균 온도는 510°C이다.
 
@@ -55,3 +55,7 @@ terms_pending: []
 ## 관련 문서
 - [[SER_KU1_CP]]
 - [[Natrium_NRC_Review_Core_Design]]
+- [[Natrium_Nuclear_Design]]
+- [[Natrium_Core_Thermal_Hydraulic_Design]]
+- [[Natrium_Fuel_Criticality_Safety]]
+- [[Natrium_NRC_Review_Reactivity_Control]]

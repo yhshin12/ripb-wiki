@@ -4,6 +4,7 @@ aliases: []
 sources:
 - PSAR_ch03
 - NEI_18-04
+- SER_KU1_CP
 status: checked
 verified: 2026-10-16
 term: null
@@ -48,6 +49,16 @@ terms_pending: []
 | SUD-IACA-1 | Loss of One Train of IAC While Shutdown with Passive IAC | No | [PSAR_ch03 Table 3.5-2 p.55-56] |
 | SUD-IHEL-BL | Intermediate Heat Exchanger Secondary-to-Primary Leak While Shutdown with Non-Passive IAC | No | [PSAR_ch03 Table 3.5-2 p.55-56] |
 | SUD-LOOP-1 | Loss of Offsite Power While at Low Power with Passive IAC | No | [PSAR_ch03 Table 3.5-2 p.55-56] |
+- "The BLTC is not expected to be mated with the PIC during the washing operation." [SER_KU1_CP §3.6.1.4 p.250]
+- "Therefore, the mated BLTC/PIC (DL3-RR5a) is the appropriate radionuclide barrier for the drop events (RFH-FDPI), but not for the washing events (RFH-ESWR)." [SER_KU1_CP §3.6.1.4 p.250]
+- "During the audit, USO identified that the PIC design has changed since the PSAR submittal and that the analysis of the ESWR events in PSAR are based on the outdated preliminary design information." [SER_KU1_CP §3.2.1.3 p.203]
+- "a single loop of passive IAC is not sufficient to remove the limiting decay heat load as discussed in section 7.2.2.3 of the PSAR" [SER_KU1_CP §3.6.1.2 p.243]
+- "the combined single train of passive IAC, augmented by the heat transfer provided by RAC, is sufficient to ensure fuel integrity" [SER_KU1_CP §3.6.1.2 p.243]
+- "However, assumptions for nominal and degraded leak rates of the SPS cell may be non-conservative and will be evaluated further at the OL stage when additional design information is available." [SER_KU1_CP §3.2.1.4 p.207]
+- "no justification was provided in the PSAR for the timing of the isolation function" [SER_KU1_CP §3.6.1.3 p.246]
+- "The staff will review further justification for the isolation timing at the OL stage." [SER_KU1_CP §3.6.1.3 p.246]
+- "DHS-ISTL-1 assumes non-passive IAC fails on both trains and credits a single train of passive IAC for decay heat removal." [SER_KU1_CP §3.6.1.2 p.243]
+- "For RRS-CGR-BL and -1, the HAA HVAC operates at 400 cubic feet per minute (cfm) for 30 minutes with filtration, prior to isolation, after which the design leak rate is applied." [SER_KU1_CP §3.6.1.3 p.246]
 
 | LBE ID | 항목 | 5th Percentile | Mean | 95th Percentile | 출처 |
 |---|---|---|---|---|---|
@@ -216,6 +227,8 @@ terms_pending: []
 
 final conditions 표에 없던 누설·핵연료 취급 DBE%%t:DBE%% 가운데 일곱 건(RRS-SPLX-BL, RRS-SPLA-BL, RRS-RWG-2, RFH-FDIV-BL, RFH-FDIV-1, RFH-FDIV-3, RFH-ESWR-BL)의 기시사건과 사건 진행은 사건 기술 표에 원문 그대로 있다. 나머지 누설·핵연료 취급 DBE%%t:DBE%%의 Licensing Basis Event%%t:LBE%% Description은 이 노트에 싣지 않았다. primary Sodium Processing System 누설은 head access area 안에서 격리 밸브 안쪽에 생기는 누설과 Reactor Auxiliary Building 안의 누설이며, 두 사건 모두 펌프가 low primary sodium level로 정지해 primary sodium 재고 손실이 끝나고 functional containment barrier%%t:BARRIER%%가 방사성 핵종 retention 기능을 수행한다. Gaseous Radwaste Processing System holdup tank에서 plant stack으로 가는 누설은 방출된 핵분열생성물이 모두 plant stack으로 배출된다. 원자로 용기 안 핵연료 취급 사건은 비핵연료 집합체 낙하(피복 건전성 유지, 방출 없음), 낙하한 핵연료 집합체만 파손, 낙하한 집합체와 부딪힌 집합체가 함께 파손되는 경우로 나뉜다. Pool Immersion Cell 소듐-물 반응은 Pool Immersion Cell과 bottom loading transfer cask가 결합된 핵연료 취급 중에 일어나며 피복 건전성은 유지된다.
 
+**NRC staff 평가.** NRC staff는 세척 작업 중에는 bottom loading transfer cask가 Pool Immersion Cell과 결합되어 있지 않을 것으로 보고, 결합된 cask와 cell(`DL3-RR5a`)은 낙하 사건(RFH-FDPI)에는 적절한 방사성핵종 barrier%%t:BARRIER%%이지만 세척 사건(RFH-ESWR)에는 아니라고 판단한다. 감사 중 사업자는 `PSAR` 제출 뒤 Pool Immersion Cell 설계가 바뀌었고 `PSAR`의 `ESWR` 해석이 낡은 예비 설계 정보에 근거한다고 밝혔다. 열침원 상실 DHS-ISTL-1에 대해 staff는 피동 Intermediate Air Cooling System 한 계열만으로는 제한 붕괴열을 제거하지 못하며, `RAC`의 열전달이 더해져야 핵연료 건전성이 확보된다고 적는다. 또 primary Sodium Processing System cell의 정상·저하 누설률 가정은 비보수적일 수 있어 OL%%t:OL%% 단계에서 다시 평가하고, RRS-CGR-BL과 RRS-CGR-1의 head access area `HVAC` 격리 시점에는 `PSAR`의 정당화가 없어 OL%%t:OL%% 단계에서 검토한다.
+
 ## 관련 문서
 - [[Natrium_LBE_Selection]]
 - [[Natrium_DBA_List]]
@@ -224,3 +237,5 @@ final conditions 표에 없던 누설·핵연료 취급 DBE%%t:DBE%% 가운데 �
 - [[Natrium_MST_Methodology]]
 - [[LBE_Frequency_Categories]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_AOO_DBE_Review]]
+- [[Natrium_SER_MST_Methodology_Review]]

@@ -4,6 +4,7 @@ aliases: []
 sources:
 - PSAR_ch04
 - NEI_18-04
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -40,6 +41,8 @@ terms_pending: []
 - "Based on the current results of the PRA used for the PSAR, the mean frequency, without uncertainties, of the cumulative average individual risk of latent cancer within 10 miles of the EAB, summed over all AOO, DBEs, BDBEs, and OQEs, is 3.86E-09 per plant-year." [PSAR_ch04 §4.1.3 p.5]
 - "Therefore, the latent cancer integrated risk metric target of 2E-06 per plant-year is satisfied with margin." [PSAR_ch04 §4.1.3 p.5]
 - "4.1-1 NEI, “Modernization of Technical Requirements for Licensing of Advanced Non-Light Water Reactors, Risk-Informed Performance-Based Technology Inclusive Guidance for Non-Light Water Reactor Licensing Basis Development,” Technical Report 18-04, Revision 1, August 2019 [ADAMS Accession No. ML19241A472]." [PSAR_ch04 §4.1 p.5]
+- "The staff compared the cumulative risk metrics in PSAR section 4.1 to the guidance in NEI 18-04 and determined that the metrics were consistent with the exception that OQEs from the PRA were included in the integrated plant performance evaluation in addition to the LBEs required in the LMP methodology." [SER_KU1_CP §4.1.1 p.323]
+- "The staff determined that this deviation was acceptable because the content of information in PSAR section 4.1 is consistent with the guidance for the content of construction permit (CP) applications found in section C.4.1 of NEI 21-07 as endorsed by RG 1.253 with certain clarifications, and the inclusion of the OQEs adds additional information in the integrated plant performance evaluation." [SER_KU1_CP §4.1.1 p.323]
 
 | 지표 | 목표(원문) | PSAR 결과(원문) | 출처 |
 |---|---|---|---|
@@ -64,6 +67,8 @@ terms_pending: []
 
 NEI 18-04 `Task 7b`의 site boundary 목표 문장은 합산 대상을 모든 LBE%%t:LBE%%로 적고, NEI 18-04 `§4.2.2`는 Structures, Systems, and Components%%t:SSC%% 분류 과정의 cumulative risk limit 기준을 평가할 때 지원 PRA 범위 안의 모든 LBE%%t:LBE%%를 포함해야 한다고 적는다. NEI 18-04의 LBE%%t:LBE%% 정의에는 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%%와 함께 DBA%%t:DBA%%가 들어 있다. 따라서 `PSAR`의 합산 범위는 OQE%%t:OQE%%를 더하고 DBA%%t:DBA%%를 뺀 점에서 NEI 18-04 문언과 다르다. NEI 18-04는 빈도가 `5E-07/plant-year`보다 낮은 Event Sequence%%t:ES%%를 PRA 결과에 남겨 cliff edge 효과가 없음을 확인하는 데 쓴다고 적는데, 이 사건들과 `PSAR`의 OQE%%t:OQE%%가 같은 범위인지는 vault에 없다.
 
+**NRC staff 평가.** NRC staff는 누적 위험 지표가 NEI 18-04 지침과 일치하되, Licensing Modernization Project%%t:LMP%% 방법론이 요구하는 LBE%%t:LBE%% 외에 PRA의 OQE%%t:OQE%%를 통합 성능 평가에 포함한 점이 예외라고 판단했다. staff는 이 일탈이 `RG 1.253`이 승인한 NEI 21-07 C.4.1의 construction permit%%t:CP%% 신청 내용 지침과 맞고 OQE%%t:OQE%%가 정보를 더하므로 수용 가능하다고 보았다. 따라서 위의 판단 가운데 OQE%%t:OQE%% 포함 부분은 staff 판정과 같고, DBA%%t:DBA%% 제외는 staff가 언급하지 않는다.
+
 ## 관련 문서
 - [[Natrium_LBE_Risk_Margins]]
 - [[LBE_Risk_Significance]]
@@ -71,3 +76,5 @@ NEI 18-04 `Task 7b`의 site boundary 목표 문장은 합산 대상을 모든 LB
 - [[Natrium_PRA_Scope]]
 - [[Natrium_LBE_Evaluation_Methods]]
 - [[PSAR_ch04]]
+- [[Natrium_SER_Integrated_Evaluation_Review]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]

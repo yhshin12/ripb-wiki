@@ -315,3 +315,4 @@ process radiation monitor는 primary Sodium Processing System에만 해당한다
 - [[Natrium_SR_Functions_Retaining_Radionuclides]]
 - [[Natrium_NSRST_Functions]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_Reactor_Auxiliary_Review]]

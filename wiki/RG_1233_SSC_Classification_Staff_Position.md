@@ -61,3 +61,4 @@ SR%%t:SR%% SSC%%t:SSC%%에는 Required Functional Design Criteria%%t:RFDC%%와 �
 - [[Natrium_SSC_Safety_Classification]]
 - [[Mechanistic_Source_Term_Conditions]]
 - [[RG_1.233]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]

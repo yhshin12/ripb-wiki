@@ -57,3 +57,4 @@ SARRDL%%t:SARRDL%%은 계통과 기기에 대해 규정된 방사성 핵종 방�
 - [[Required_Safety_Function]]
 - [[Plant_Capability_DID]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_Facility_Overview_Review]]

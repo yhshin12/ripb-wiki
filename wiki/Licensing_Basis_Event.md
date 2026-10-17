@@ -39,3 +39,4 @@ LBE%%t:LBE%%는 개별 사건이 아니라 설계와 인허가 기준에서 다�
 - [[LBE_Selection_Process]]
 - [[Event_Sequence_Family]]
 - [[NEI_18-04]]
+- [[RG_1253_Methodology_And_LBE_Positions]]

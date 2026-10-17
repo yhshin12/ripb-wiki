@@ -4,6 +4,7 @@ aliases: []
 sources:
 - PSAR_ch03
 - NEI_18-04
+- SER_KU1_CP
 status: disputed
 verified: 2026-10-16
 term: null
@@ -34,6 +35,10 @@ terms_pending: []
 - "The seismic reactivity insertion DBA is analyzed at full power operating conditions by examining a range of reactivity profiles that encapsulate the combined safe shutdown earthquake lateral and vertical reactivity time history." [PSAR_ch03 §3.9.3.1.1 p.111]
 - "The control rod drop time is assumed to be degraded due to the seismic event." [PSAR_ch03 §3.9.3.1.1 p.111]
 - "Mitigation of beyond design basis events will be addressed at the operating license stage in accordance with 10 CFR 50.155." [PSAR_ch03 §3.10 p.119]
+- "Unlike the DBEs, the source term for RFH-ESWR-CN is based off of the EVHM source term which appears to the staff to have resulted in a lower release fraction from the fuel." [SER_KU1_CP §3.8.1.5 p.296]
+- "RFH-ESWR-1 source term with the DBA consequence methodology would result in a TEDE of approximately 7.3 rem versus the 0.609 rem reported for this DBA, which is higher but still within the 25 rem TEDE acceptance criterion and thus acceptable." [SER_KU1_CP §3.8.1.5 p.297]
+- "However, the applicant provided no basis for the assumption of 50 percent leakage per day, and as such the staff cannot reach a determination as to its acceptability." [SER_KU1_CP §3.8.1.4 p.295]
+- "the staff finds the preliminary analysis to be reasonable and will address detailed performance in the final analyses at the OL" [SER_KU1_CP §3.8.1.4 p.295]
 
 | DBE ID | DBA ID | DBA Title | DBA 2-hour Exclusion Area Boundary TEDE (rem) | DBA 30-day Low Population Zone Boundary TEDE (rem) | 출처 |
 |---|---|---|---|---|---|
@@ -176,6 +181,8 @@ DBA%%t:DBA%%는 Licensing Basis Event%%t:LBE%% 평가 방법 절의 보수적 �
 
 LBE%%t:LBE%% Description 표 가운데 Gaseous Radwaste Processing System 누설은 holdup tank 누설로 방출이 생긴다. 원자로 용기 안 핵연료 취급은 낙하한 집합체와 부딪힌 집합체가 파손되고 functional containment barrier%%t:BARRIER%%가 retention 기능을 수행하며, Spent Fuel Pool 핵연료 취급은 낙하한 집합체만 파손된다. bottom loading transfer cask와 Ex-Vessel Handling Machine의 능동 냉각 상실 DBA%%t:DBA%%는 피동 냉각이 유지되어 피복이 손상되지 않고 방출이 없다.
 
+**NRC staff 평가와의 차이.** `PSAR`은 Pool Immersion Cell DBA%%t:DBA%%인 RFH-ESWR-CN에 Ex-Vessel Handling Machine 집합체 파손 선원항%%t:SOURCE_TERM%%을 쓰는 근거로 그 결과가 더 가혹하다는 점을 들지만, NRC staff는 DBE%%t:DBE%%와 달리 이 선원항%%t:SOURCE_TERM%%이 핵연료의 방출분율을 낮게 만든 것으로 보인다고 적는다. staff 추정으로는 RFH-ESWR-1의 선원항%%t:SOURCE_TERM%%을 DBA%%t:DBA%% 결과 방법론에 적용하면 total effective dose equivalent%%t:TEDE%%가 이 DBA%%t:DBA%%에 보고된 0.609 rem 대신 약 7.3 rem이 되며, 이는 25 rem 기준 안이므로 수용 가능하다. `PSAR`은 Ex-Vessel Handling Machine 방출과 결합된 Pool Immersion Cell·bottom loading transfer cask 방출을, staff는 이 선원항%%t:SOURCE_TERM%%과 DBE%%t:DBE%% 선원항%%t:SOURCE_TERM%%을 비교하므로 두 원문의 비교 기준은 다르다. 또 staff는 primary Sodium Processing System cell 누설률 50 percent per day 가정에 근거가 없어 수용성을 판단할 수 없다고 적고, 예비 해석은 합리적이라 보아 상세 성능은 OL%%t:OL%% 최종 해석에서 다룬다.
+
 ## 관련 문서
 - [[Natrium_DBE_List]]
 - [[Natrium_LBE_Selection]]
@@ -183,3 +190,6 @@ LBE%%t:LBE%% Description 표 가운데 Gaseous Radwaste Processing System 누설
 - [[Natrium_Functional_Containment]]
 - [[Required_Safety_Function]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_BDBE_DBA_Review]]
+- [[Natrium_SER_Major_Accident_Review]]
+- [[Natrium_SER_Event_Source_Terms_Review]]

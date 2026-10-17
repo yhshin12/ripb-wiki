@@ -129,3 +129,4 @@ Nuclear Island의 중심은 `RXB`이며 원자로와 운전을 지원하는 Stru
 - [[Natrium_Support_Systems]]
 - [[Natrium_Kemmerer_Site]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_SSC_Design_Review]]

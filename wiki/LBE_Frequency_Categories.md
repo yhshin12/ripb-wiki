@@ -61,3 +61,4 @@ BDBE%%t:BDBE%% 빈도 하한의 기준은 원문 안에서 어긋난다. 표 3-1
 - [[LBE_Risk_Significance]]
 - [[LBE_Selection_Process]]
 - [[NEI_18-04]]
+- [[Natrium_SER_LBE_Summary_Review]]

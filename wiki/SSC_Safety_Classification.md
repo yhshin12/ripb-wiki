@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: []
-sources: [NEI_18-04]
+sources: [NEI_18-04, SER_KU1_CP]
 status: checked
 verified: 2026-09-15
 term:
@@ -35,6 +35,9 @@ terms_pending: []
 - "Those that meet these criteria are classified as NSRST in Task 5B and those remaining as NST in Task 5C." [NEI_18-04 §4.1 Tasks 4C and 5C p.44]
 - "For those SSCs classified as NST, the reliability and capability targets are part of the non-regulatory owner design requirements." [NEI_18-04 §4.1 Task 6 p.45]
 - "The purpose of this task is to establish the specific design requirements for SSCs which include design criteria for SR classified SSCs, regulatory design and special treatment requirements for each of the safety-significant SSCs classified as SR or NSRST, and owner design requirements for NST-classified SSCs." [NEI_18-04 §4.1 Task 7 p.46]
+- "However, based on USO’s interpretation of statement (a) that NSRST SSCs may continue to function but not perform RSFs, and statement (b), USO incorporated some passive NSRST SSCs performing at a degraded level in their DBA source term analyses." [SER_KU1_CP §5.1 p.339]
+- "The staff determined that USO’s interpretation of the guidance and approach to ascribing some amount of degraded performance to passive NSRST SSCs in DBA source term analyses was reasonable, but acceptability is dependent on the design aspects of the SSCs and the level of degraded performance credited." [SER_KU1_CP §5.1 p.339]
+- "It is appropriate that for the inherent capabilities of passive functions, degradation of the passive function is considered, as opposed to complete failure" [SER_KU1_CP §5.1 p.339]
 
 | 항목 | 값 | 출처 |
 |---|---|---|
@@ -60,6 +63,8 @@ Task 1은 두 경우의 초점을 구분한다. Initiating Event%%t:IE%%의 결�
 
 모든 SR%%t:SR%% SSC%%t:SSC%%는 Design Basis External Hazard Level%%t:DBEHL%%의 영향으로부터 보호되어야 하므로, NST%%t:NST%%나 NSRST%%t:NSRST%% SSC%%t:SSC%%의 고장이 SR%%t:SR%% SSC%%t:SSC%%의 RSF%%t:RSF%% 수행을 방해하지 않도록 하는 설계 요건이 생길 수 있다. Task 6과 Task 7은 분류 결과에서 요건을 도출한다. SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%에는 설계 요건과 special treatment%%t:SPECIAL_TREATMENT%% 요건이 붙고, NST%%t:NST%% SSC%%t:SSC%%의 reliability target과 capability target은 규제 요건이 아닌 소유자 설계 요건에 속한다.
 
+**Natrium 심사 사례.** 원문은 Task 5A에서 SR%%t:SR%%로 분류한 SSC%%t:SSC%%만 DBA%%t:DBA%% 해석에 포함된다고 적는다. Natrium 건설허가 심사에서 사업자는 일부 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%를 저하된 성능으로 DBA%%t:DBA%% 선원항(source term)%%t:SOURCE_TERM%% 해석에 포함했고, NRC staff는 이 접근을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단했다. 이 credit은 Task 5A 문장과 문언상 다르지만, `SER`은 이를 원문 §5.3·§5.6.2의 두 문장, 곧 DBA%%t:DBA%%에서 SR%%t:SR%% SSC%%t:SSC%%만 RSF%%t:RSF%%를 수행한다고 가정한다는 문장과 피동 기능은 완전 고장 대신 성능 저하를 고려한다는 문장에 대한 사업자 해석으로 본다.
+
 ## 관련 문서
 - [[Safety_Significant_SSC]]
 - [[Risk_Significant_SSC]]
@@ -70,3 +75,4 @@ Task 1은 두 경우의 초점을 구분한다. Initiating Event%%t:IE%%의 결�
 - [[Special_Treatment]]
 - [[SSC_Reliability_And_Capability]]
 - [[NEI_18-04]]
+- [[Natrium_SER_SSC_Classification_Review]]

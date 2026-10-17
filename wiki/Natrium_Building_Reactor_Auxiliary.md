@@ -143,3 +143,4 @@ Reactor Auxiliary Building 상부구조는 폭 144 feet, 길이 214 feet, 최고
 - [[Natrium_Building_Reactor]]
 - [[Natrium_Seismic_Classification]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

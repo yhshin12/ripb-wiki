@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch04, PSAR_ch01, NEI_18-04]
+sources: [PSAR_ch04, PSAR_ch01, NEI_18-04, SER_KU1_CP]
 status: disputed
 verified: 2026-09-16
 term:
@@ -42,6 +42,11 @@ terms_pending: []
 - "For advanced non-LWRs that are currently in various stages of design development, the IDPP is comprised of a team that is responsible for implementing the integrated process tasks for evaluating DID shown in Figure 5-4." [NEI_18-04 §5.9.1 p.82]
 - "Integrated DID adequacy evaluations would be expected to occur in concert with completion of each major phase of design—conceptual, preliminary, detailed, and final—and would additionally occur in response to any significant design changes or new risk-significant information at any phase of design or licensing." [NEI_18-04 §5.9.2 p.84]
 - "The IDP may determine whether additional requirements on SSCs (e.g., elevating classification) or other operational programs are needed to meet the Table 5-2 guidelines." [NEI_18-04 §5.6.2 p.69]
+- "RG 1.253 section C.5 states that the NRC anticipates that the DID discussion at the CP stage may be limited to plant capabilities because programmatic capabilities may not have been established yet." [SER_KU1_CP §4.2.1.2 p.331]
+- "As such, the staff determined that the limited detail provided in the PSAR on programmatic DID is reasonable." [SER_KU1_CP §4.2.1.2 p.331]
+- "The staff will perform a more detailed evaluation of DID adequacy, including programmatic measures, at the OL" [SER_KU1_CP §4.2.2 p.331]
+- "Prior to submittal of the operating licensing application, USO shall notify the NRC within 30 days after an integrated decision-making process panel is convened for internal approval of the safety analysis, risk assessment, or defense-in-depth adequacy of the design." [SER_KU1_CP §4.3.4 p.333]
+- "The staff recommends that the CP include the following permit conditions:" [SER_KU1_CP §4.3.4 p.333]
 
 ## 해설
 `PSAR` Chapter 4는 NEI 18-04 `Section 5.8`의 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%% 적절성 지침과 `Table 5-5 and 5-6`의 속성·고려 사항이 평가되어 `Chapters 6, 7, and 8`의 설계와 발전소 프로그램 개발에 반영되었다고 적는다. 이 장에서 기술한 통합 심층방어%%t:DID%% 적절성 평가로 식별되는 추가 special treatment%%t:SPECIAL_TREATMENT%%는 operating license%%t:OL%% 단계에서 제공된다. PRA의 중요한 불확실도나 가정을 평가하는 NEI 18-04 `Section 5.9.4` 지침은 integrated decision-making process%%t:IDP%%에 포함되며, 그 평가 결과는 OL%%t:OL%% 단계에서 제공된다.
@@ -56,6 +61,8 @@ NEI 18-04 `§5.9.1`은 이 과정을 다른 기술적 결정처럼 design contro
 
 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%에 대해 `Section 4.2.2`는 지침이 평가되어 설계와 프로그램 개발에 반영되었다고 적는 반면, `Section 4.2.1.2`는 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%% 평가가 OL%%t:OL%% 단계에서 제공된다고 적고, `PSAR` Chapter 1도 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%% 적절성과 통합 평가가 OL%%t:OL%% 단계에서 제공된다고 적는다. 지침을 개발에 반영하는 일과 적절성 평가 결과를 제출하는 일을 구분하면 두 서술은 양립할 수 있으나, 원문은 이 구분을 적지 않는다.
 
+**NRC staff 평가.** `RG 1.253`은 CP%%t:CP%% 단계의 심층방어%%t:DID%% 논의가 plant capability에 한정될 수 있다고 예상하며, NRC staff는 이에 근거해 `PSAR`의 programmatic 심층방어%%t:DID%% 서술이 제한적인 것을 합리적이라고 보았다. programmatic 조치를 포함한 상세 평가는 OL%%t:OL%% 단계에서 한다. 또 staff는 OL%%t:OL%% 신청 전에 IDP%%t:IDP%% panel이 설계의 안전해석, 위험평가, 심층방어%%t:DID%% 적절성의 내부 승인을 위해 소집되면 30일 안에 NRC에 통지하도록 하는 허가 조건을 권고한다.
+
 ## 관련 문서
 - [[Programmatic_DID]]
 - [[Integrated_Decision_Making_Process]]
@@ -66,3 +73,5 @@ Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%에 대해 `Section 4.2.2`는
 - [[Natrium_Plant_Capability_DID_Evaluation]]
 - [[Natrium_Defense_Lines]]
 - [[PSAR_ch04]]
+- [[Natrium_SER_Integrated_Evaluation_Review]]
+- [[Natrium_SER_RD_And_Permit_Conditions]]

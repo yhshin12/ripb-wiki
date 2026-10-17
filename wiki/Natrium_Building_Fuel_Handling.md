@@ -161,3 +161,5 @@ Fuel Handling Building 상부구조는 가장 높은 지점이 지상 약 76 fee
 - [[Natrium_Building_Reactor]]
 - [[Natrium_Seismic_Classification]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_Fuel_Handling_And_Ancillary_Review]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

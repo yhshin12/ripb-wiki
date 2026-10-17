@@ -49,7 +49,7 @@ staff가 인용한 NEI 18-04 문장은 mean으로 LBE%%t:LBE%%를 분류하되, 
 - **사건 하나뿐인 `IE` family:** non-DBA LBE%%t:LBE%%에 사건이 하나만 나오는 Initiating Event%%t:IE%% family가 일곱 개이다. 그 가운데 `PRC` 관련 사건 둘이 있다. staff는 `PRC`의 mean 고장 빈도(1.5E-05/plant-year)와 선량 저감 능력이 hot cell로는 달성되지 않을 수 있어 처리가 잠재적으로 비보수적이라고 보았다. 다만 `PRC`가 현재 Safety-Related%%t:SR%%이므로 `CP` 단계에는 충분하다고 판단했다.
 - **누락 가능 LBE%%t:LBE%%:** 원자로 용기에서 RV-GV annulus로의 소듐 누설은 mean 빈도가 BDBE%%t:BDBE%% 범위라는 점을 사업자가 audit에서 인정했다. staff는 이 사건이 `PSAR`에서 LBE%%t:LBE%%로 식별되었어야 한다고 적었다.
 
-`PSAR` §3.4가 NEI 18-04를 "without deviation" 따른다고 적은 것과 달리, staff는 이탈 두 가지를 찾았다([[Natrium_SER_LBE_Methodologies_Review]]). 하한 판정이 mean과 95th percentile 중 무엇이냐는 문제는 공개 노트 [[LBE_Frequency_Categories]]의 disputed 판정과 같은 쟁점이다.
+`PSAR` §3.4가 NEI 18-04를 "without deviation" 따른다고 적은 것과 달리, staff는 이탈 두 가지를 찾았다([[Natrium_SER_LBE_Methodologies_Review]]). 하한 판정이 mean과 95th percentile 중 무엇이냐는 문제는 공개 노트 [[LBE_Frequency_Categories]]의 disputed 판정과 관련된 쟁점이며, [[RG_1233_LBE_Staff_Position]]과도 관련된다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]
@@ -57,3 +57,4 @@ staff가 인용한 NEI 18-04 문장은 mean으로 LBE%%t:LBE%%를 분류하되, 
 - [[Natrium_LBE_Selection]]
 - [[Natrium_BDBE_List]]
 - [[Natrium_SER_LBE_Methodologies_Review]]
+- [[RG_1233_LBE_Staff_Position]]

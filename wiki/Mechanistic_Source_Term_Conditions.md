@@ -45,3 +45,5 @@ Commission은 비경수형원전%%t:NON_LWR%% 선원항%%t:SOURCE_TERM%%을 기�
 - [[Non_LWR_PRA_Regulatory_Role]]
 - [[Natrium_Functional_Containment]]
 - [[RG_1.233]]
+- [[Natrium_SER_MST_Methodology_Review]]
+- [[RG_1253_Methodology_And_LBE_Positions]]

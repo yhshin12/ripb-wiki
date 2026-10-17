@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch06, PSAR_ch05, NEI_18-04]
+sources: [PSAR_ch06, PSAR_ch05, NEI_18-04, SER_KU1_CP]
 status: checked
 verified: 2026-09-16
 term:
@@ -11,7 +11,7 @@ terms_pending: []
 # Natrium의 Safety-Related Design Criteria 요약 (Natrium Summary of Safety-Related Design Criteria)
 
 > [!abstract] 요약
-> `PSAR` Chapter 6은 Safety-Related Design Criteria%%t:SRDC%%를 Safety-Related%%t:SR%% 기능을 수행하도록 선정된 Structures, Systems, and Components%%t:SSC%%의 Required Functional Design Criteria%%t:RFDC%% 충족에 필요한 설계 기준으로 설명하고, SRDC%%t:SRDC%% 자체는 `PSAR` Chapter 5의 SR%%t:SR%% 기능 표에 둔다. Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 principal design criteria%%t:PDC%%와 비교해 PDC%%t:PDC%%의 완전성을 확인한다고 적고, `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232`의 `SFR-DC`를 바탕으로 Natrium 고유 설계 특성을 반영해 개발되었다고 적는다. 비교 결과는 vault에 없다.
+> `PSAR` Chapter 6은 Safety-Related Design Criteria%%t:SRDC%%를 Safety-Related%%t:SR%% 기능을 수행하도록 선정된 Structures, Systems, and Components%%t:SSC%%의 Required Functional Design Criteria%%t:RFDC%% 충족에 필요한 설계 기준으로 설명하고, SRDC%%t:SRDC%% 자체는 `PSAR` Chapter 5의 SR%%t:SR%% 기능 표에 둔다. Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 principal design criteria%%t:PDC%%와 비교해 PDC%%t:PDC%%의 완전성을 확인한다고 적고, `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232`의 `SFR-DC`를 바탕으로 Natrium 고유 설계 특성을 반영해 개발되었다고 적는다. 비교 결과 표는 vault에 없다.
 
 ## 원문 사실
 - "The SRDC are design criteria that are necessary to fulfill the Required Functional Design Criteria for those SSCs selected to perform SR functions." [PSAR_ch06 §6.1.2 p.8]
@@ -26,11 +26,16 @@ terms_pending: []
 - "These SR SSCs shall include appropriate RFDC for such functions." [NEI_18-04 §4.4.5 p.56]
 - "Principal Design Criteria (PDC) were developed based on the SFR-DC in Regulatory Guide (RG) 1.232, Revision 0, “Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors,” as informed by design features specific to the Natrium reactor." [PSAR_ch05 §5.3 p.21]
 - "SR SSCs must be capable of mitigating the DBAs within the 10 CFR 50.34 dose limits." [NEI_18-04 §4.4.5 p.56]
+- "The staff reviewed the PDC in section 5.3 of the PSAR and noted that USO did not identify any additional PDC." [SER_KU1_CP §5.3 p.345]
+- "However, the staff reviewed PSAR tables 5.2-1 through 5.2-3 and found that they identify SR functions needed to mitigate BDBEs and link them to performance of safety-related design criteria (SRDC) for these events." [SER_KU1_CP §5.3 p.345]
+- "the staff determined that the information regarding the PDC in PSAR section 5.3 is sufficient" [SER_KU1_CP §5.3 p.346]
 
 ## 해설
 SRDC%%t:SRDC%%는 SR%%t:SR%% 기능을 수행하도록 선정된 SSC%%t:SSC%%에 대해 RFDC%%t:RFDC%%를 충족하는 데 필요한 설계 기준이다. RFDC%%t:RFDC%%는 `Regulatory Guide 1.233`이 endorse한 NEI 18-04에 따라 정의·개발된다. SRDC%%t:SRDC%%는 주어진 SSC%%t:SSC%%의 capability target 대상이 되는 변수를 포함하고, `Chapter 7`에 기술된 SSC%%t:SSC%% 설계에 반영된다. SR%%t:SR%% 기능은 `Section 5.2`에 기술되며, SRDC%%t:SRDC%%는 SR%%t:SR%% 기능과의 연결을 보이도록 `Tables 5.2-1, 5.2-2, and 5.2-3`에 제시된다. `PSAR` Chapter 5도 SRDC%%t:SRDC%% 설명을 이 절로 넘긴다. NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 `10 CFR 50.34` 선량 한도 안에서 Design Basis Accident%%t:DBA%%를 완화할 수 있어야 하고, 그 SR%%t:SR%% SSC%%t:SSC%%가 그 기능에 알맞은 RFDC%%t:RFDC%%를 포함해야 한다(`shall`)고 적는다. capability target은 `Section 6.2`에서 다룬다([[Natrium_Reliability_Capability_Targets]]).
 
-`PSAR` Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 PDC%%t:PDC%%와 비교해 PDC%%t:PDC%%가 설계에 대해 완전함을 확인한다고 적는다. `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232, Revision 0`의 `SFR-DC`를 바탕으로 Natrium 원자로 고유 설계 특성을 반영해 개발되었다고 적으며, Chapter 5 정제본에는 `Required Functional Design Criteria`나 RFDC%%t:RFDC%%라는 표기가 없다. RFDC%%t:RFDC%%와 PDC%%t:PDC%%의 비교 결과는 vault에 없다([[Natrium_PDC_Development]]).
+`PSAR` Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 PDC%%t:PDC%%와 비교해 PDC%%t:PDC%%가 설계에 대해 완전함을 확인한다고 적는다. `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232, Revision 0`의 `SFR-DC`를 바탕으로 Natrium 원자로 고유 설계 특성을 반영해 개발되었다고 적으며, Chapter 5 정제본에는 `Required Functional Design Criteria`나 RFDC%%t:RFDC%%라는 표기가 없다. RFDC%%t:RFDC%%와 PDC%%t:PDC%%의 비교 결과 표는 vault에 없다([[Natrium_PDC_Development]]).
+
+**NRC staff 평가.** NRC staff는 `PSAR` 5.3절의 PDC%%t:PDC%%를 검토해 사업자가 추가 PDC%%t:PDC%%를 식별하지 않았음을 확인했고, `PSAR` Table 5.2-1–5.2-3이 Beyond Design Basis Event%%t:BDBE%% 완화에 필요한 SR%%t:SR%% 기능을 SRDC%%t:SRDC%% 수행과 연결한다고 적는다. staff는 `PSAR` 5.3절의 PDC%%t:PDC%% 정보가 충분하다고 판단했다.
 
 ## 관련 문서
 - [[Natrium_SR_Functions_Heat_Generation]]
@@ -40,3 +45,4 @@ SRDC%%t:SRDC%%는 SR%%t:SR%% 기능을 수행하도록 선정된 SSC%%t:SSC%%에
 - [[Natrium_Reliability_Capability_Targets]]
 - [[SSC_Design_Requirements]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_PDC_SR_NSRST_Review]]

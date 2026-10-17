@@ -4,6 +4,7 @@ aliases: []
 sources:
 - PSAR_ch05
 - RG_1.232
+- RG_1.253
 status: checked
 verified: 2026-09-16
 term: null
@@ -24,6 +25,9 @@ terms_pending: []
 - "This section includes the PDC, a summary of the PDC implementation, and references to relevant PSAR chapters and sections containing additional information regarding PDC implementation." [PSAR_ch05 §5.3 p.21]
 - "The PDC apply to normal operations, anticipated operational occurrences, and postulated design basis accidents as described in RG 1.232." [PSAR_ch05 §5.3 p.21]
 - "5.3-1 TerraPower, “Principal Design Criteria for the Natrium Advanced Reactor,” NATD-LIC-RPRT-0002-A, Revision 1" [PSAR_ch05 §5.3 p.50]
+- "For applicants using the LMP process endorsed in RG 1.233, SSCs important to safety include both SR and NSRST SSCs." [RG_1.253 §C.6.a p.20]
+- "the scope of the proposed PDC should include SSCs important to safety" [RG_1.253 §C.6.a p.20]
+- "Therefore, the proposed PDC will need to address the functions provided by both SR and NSRST SSCs." [RG_1.253 §C.6.a p.20]
 
 | Criterion | 출처 |
 |---|---|
@@ -156,6 +160,8 @@ terms_pending: []
 
 기준 80–82는 sodium-cooled fast reactor design criteria가 아니라 MHTGR design criteria 70–72와 문구가 대응한다. 기준 80은 MHTGR design criteria 70과 같다. 기준 81은 MHTGR design criteria 71에서 depressurization accidents 때 원자로 헬륨 방출 경로를 제공하라는 문구를, 기준 82는 MHTGR design criteria 72에서 depressurization pathway 검사 문구를 뺀 형태이다. 이 보고서는 절 머리에서 PDC%%t:PDC%%가 sodium-cooled fast reactor design criteria를 바탕으로 개발되었다고만 적는다.
 
+**[[RG_1.253]]의 범위.** [[RG_1.253]]은 Licensing Modernization Project%%t:LMP%% 과정을 쓰는 신청자에게 `SSCs important to safety`가 Safety-Related%%t:SR%%와 Non-Safety-Related with Special Treatment%%t:NSRST%% Structures, Systems, and Components%%t:SSC%%를 모두 포함한다고 적으므로, 제안 PDC%%t:PDC%%는 두 범주의 기능을 다루어야 한다.
+
 ## 관련 문서
 - [[Principal_Design_Criteria_Non_LWR]]
 - [[Non_LWR_Design_Criteria_Crosswalk]]
@@ -170,3 +176,5 @@ terms_pending: []
 - [[Natrium_Functional_Containment]]
 - [[PSAR_ch05]]
 - [[RG_1.232]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]
+- [[Natrium_SER_PDC_SR_NSRST_Review]]

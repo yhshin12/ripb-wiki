@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch06, PSAR_ch05, NEI_18-04]
+sources: [PSAR_ch06, PSAR_ch05, NEI_18-04, SER_KU1_CP]
 status: checked
 verified: 2026-09-16
 term:
@@ -36,6 +36,10 @@ terms_pending: []
 - "SCN3 is assigned as a minimum initial seismic classification for NSRST SSCs and the initial seismic classification is increased to SCN2 or SCN1 as appropriate based on the factors above." [PSAR_ch06 §6.4.1.1 p.14]
 - "SCN1 should be assigned to impose seismic qualification for active components, SCN2 or SCN1 are assigned as appropriate to meet minimum building code requirements, and SCN1 is assigned for SSCs identified as having a high potential contribution to seismic risk." [PSAR_ch06 §6.4.1.1 p.14]
 - "Initial seismic classifications are assigned at the CP stage and will be confirmed or adjusted for the OL stage based on the risk-informed process and use of a seismic PRA." [PSAR_ch06 §6.4.1.1 p.15]
+- "USO did not develop a separate seismic analysis involving the OBE in accordance with RG 1.61, because the OBE is one-third of the SSE." [SER_KU1_CP §6.4.1.1.2 p.392]
+- "USO has expanded the scope of seismic interaction beyond support for systems or components located above or near SR and NSRST SSCs to buildings, including the reactor building (RXB) superstructure, and any component containing sodium." [SER_KU1_CP §5.1 p.341]
+- "This design approach, including additional design requirements (i.e., to meet ASCE/SEI 43-19 Limit State B), should be confirmed by USO through the seismic PRA at the OL stage." [SER_KU1_CP §6.1.1.3 p.372]
+- "USO stated that to prevent seismic-related DBHL interactions, NSRST and NST SSCs with seismic interaction prevention design requirements will be designed in accordance with ASCE/SEI 7-16 at the SCN1 seismic classification level." [SER_KU1_CP §6.1.1.3 p.371]
 
 | Seismic Classification | Seismic Design Parameters | 출처 |
 |---|---|---|
@@ -75,6 +79,8 @@ NSRST%%t:NSRST%% SSC%%t:SSC%%는 Safe Shutdown Earthquake%%t:SSE%% 뒤 기능 �
 
 NEI 18-04의 special treatment 표는 SR%%t:SR%% SSC%%t:SSC%%가 Safe Shutdown Earthquake%%t:SSE%% 뒤 Required Safety Function%%t:RSF%%를 수행해야 하고 NSRST%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 `Seismic II/I` 요건, 곧 SR%%t:SR%% SSC%%t:SSC%%의 RSF%%t:RSF%% 수행을 방해하지 않을 것을 만족해야 한다고 적고, 표의 범주별 적용은 일반 지침일 뿐 처방이 아니라고 적는다. `PSAR`은 NSRST%%t:NSRST%% SSC%%t:SSC%%에 기능 성능 확신을 위한 지진 special treatment%%t:SPECIAL_TREATMENT%%와 `SCN1`·`SCN2`의 functional qualification을 두고, SR%%t:SR%% SSC%%t:SSC%% 가운데 `SCS2`에는 `ASCE 7`의 `commercial standards`와 일관된 qualification을 둔다. `PSAR` Chapter 5의 risk-significant 기준은 Frequency-Consequence Target%%t:FC_TARGET%%과 세 cumulative risk target%%t:CUM_RISK_TARGET%%에 대한 것이며, `SCS1`과 `SCS2`를 가르는 seismic risk significance의 정량 기준은 vault에 없다.
 
+**NRC staff 평가에서 확인되는 사항.** `SER`은 사업자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 one-third이므로 `RG 1.61`에 따른 별도의 OBE%%t:OBE%% 지진 해석을 수행하지 않았다고 적는다. 또 사업자는 지진 상호작용의 범위를 SR%%t:SR%%·NSRST%%t:NSRST%% SSC%%t:SSC%% 위나 근처에 있는 계통·기기의 지지에서 `RXB` 상부구조를 포함한 건물과 소듐을 담은 모든 기기로 넓혔다. 지진 상호작용을 막으려고 NSRST%%t:NSRST%%·NST%%t:NST%% SSC%%t:SSC%%를 `SCN1` 수준의 `ASCE`/`SEI` 7-16으로 설계하고 `ASCE`/`SEI` 43-19 Limit State B를 맞추는 추가 설계 요건을 두는 설계 접근은 OL%%t:OL%% 단계의 지진 PRA로 확인되어야 한다.
+
 ## 관련 문서
 - [[Special_Treatment]]
 - [[Natrium_Special_Treatment_Process]]
@@ -83,3 +89,5 @@ NEI 18-04의 special treatment 표는 SR%%t:SR%% SSC%%t:SSC%%가 Safe Shutdown E
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_SSC_Safety_Classification]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_SSC_Design_Review]]
+- [[Natrium_SER_SSC_Classification_Review]]

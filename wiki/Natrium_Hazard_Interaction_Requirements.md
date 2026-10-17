@@ -73,3 +73,4 @@ NSRST%%t:NSRST%%와 NST%%t:NST%% SSC%%t:SSC%%는 DBHL%%t:DBHL%%이 이들로 하
 - [[Special_Treatment]]
 - [[Natrium_SSC_Safety_Classification]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_DBHL_Review]]

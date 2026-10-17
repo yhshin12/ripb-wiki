@@ -421,3 +421,5 @@ intermediate 커버가스(cover gas)%%t:COVER_GAS%% 계통은 Reactor Auxiliary 
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_Functional_Containment]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_Event_Source_Terms_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_Review]]

@@ -92,3 +92,4 @@ NEI 18-04 용어집의 Design Basis External Hazard Level%%t:DBEHL%% 정의는 �
 - [[Natrium_Seismic_Classification]]
 - [[SSC_Design_Requirements]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_DBHL_Review]]

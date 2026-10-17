@@ -155,3 +155,4 @@ modal response spectrum analysis는 고유진동수 100 hertz 미만의 모든 �
 - [[Natrium_Seismic_Classification]]
 - [[Natrium_Design_Basis_Hazard_Levels]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

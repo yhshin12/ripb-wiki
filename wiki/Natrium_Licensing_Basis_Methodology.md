@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch01
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -27,6 +28,8 @@ terms_pending: []
 - "Nuclear Energy Institute (NEI) 18-04, “Risk-Informed Performance-Based Technology-Inclusive Guidance for Non-Light Water Reactor Licensing Basis Development,” Revision 1, August 2019." [PSAR_ch01 §1.3 References p.64]
 - "The EI structures, systems, and components (SSCs) are classified as non-safety-related with no special treatment (NST)." [PSAR_ch01 §1.1.3 p.20]
 - "Further information on safety-related (SR) and non-safety-related with special treatment (NSRST) systems is provided in Chapter 7." [PSAR_ch01 §1.1.4 p.20]
+- "Two deviations from the methodology were identified based on the staff’s review." [SER_KU1_CP §3.4.1 p.225]
+- "USO unintentionally deviated from the LMP methodology in two ways while performing these risk-significant function determinations for the CPA" [SER_KU1_CP §5.1 p.337]
 
 | Guide Number | Title | Revision | Conformance Status | Comments | 출처 |
 |---|---|---|---|---|---|
@@ -47,11 +50,13 @@ terms_pending: []
 ## 해설
 신청자는 Kemmerer Unit 1의 CP%%t:CP%% 승인을 요청하며, 발전소는 10 CFR Part 50에 따라 인허가된다. 보고서의 구성과 내용은 대체로 RG%%t:RG%% 1.233 Revision 0과 technology-inclusive content-of-application 방법론에 관한 초안 지침 Revision 1을 따른다.
 
-LBE%%t:LBE%% 선정, SSC%%t:SSC%% 안전 분류와 그에 따른 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어%%t:DID%% 적절성 결정은 RG%%t:RG%% 1.233이 승인한 NEI 18-04 Revision 1 방법론에 따라 IDP%%t:IDP%%로 수행되었고, 이 보고서는 그 수행이 3장부터 8장까지에서 입증된다고 적는다. 승인된 방법론이나 지침의 staff position에서 벗어난 점은 없었다. 안전 분류 범주로는 Safety-Related%%t:SR%%, Non-Safety-Related with Special Treatment%%t:NSRST%%, Non-Safety-Related with No Special Treatment%%t:NST%%를 쓰며, Energy Island의 SSC%%t:SSC%%는 모두 NST%%t:NST%%로 분류된다.
+LBE%%t:LBE%% 선정, SSC%%t:SSC%% 안전 분류와 그에 따른 risk-informed special treatment%%t:SPECIAL_TREATMENT%%, 심층방어%%t:DID%% 적절성 결정은 RG%%t:RG%% 1.233이 승인한 NEI 18-04 Revision 1 방법론에 따라 IDP%%t:IDP%%로 수행되었고, 이 보고서는 그 수행이 3장부터 8장까지에서 입증된다고 적는다. 보고서는 승인된 방법론이나 지침의 staff position에서 벗어난 점이 없었다고 적는다. 안전 분류 범주로는 Safety-Related%%t:SR%%, Non-Safety-Related with Special Treatment%%t:NSRST%%, Non-Safety-Related with No Special Treatment%%t:NST%%를 쓰며, Energy Island의 SSC%%t:SSC%%는 모두 NST%%t:NST%%로 분류된다.
 
 Regulatory guide 부합 표에서 RG%%t:RG%% 1.232, 1.233, 1.253과 Revision이 Trial인 1.247은 Full Conformance이다. 방사선 결말 해석에 관한 1.183과 1.195는 Partial Conformance이다. 1.183 행은 NEI 18-04를 따를 때 사고별 방법론과 가정은 참고로만 쓰이고 사고별 선량 기준은 적용되지 않으며, 사고 선원항(source term)%%t:SOURCE_TERM%%은 비경수형원전(non-light-water reactor)%%t:NON_LWR%% 설계에 적용되지 않는다고 적는다. 1.195 행은 이 설계의 Design Basis Accident%%t:DBA%% 해석에 직접 적용되는 부분이 2절의 지배 선량식뿐이라고 적는다. 1.117 행은 Position C.3이 이 설계에 적용되지 않으며, 토네이도로부터 보호되는 SSC%%t:SSC%%를 확인하는 데 그 선량 척도 대신 NEI 18-04를 쓴다고 적는다. 1.143 행은 C.5의 결정론적 분류 방법론 대신 프로젝트 고유의 확률론적 방법론을 방사성 물질을 담은 계통 분류의 주 수단으로 쓰고, C.6.1의 재해 평가에도 확률론적 방법론을 쓴다고 적는다. 1.29 행은 seismic Category I SSC%%t:SSC%%에 대한 전반 요건을 SR%%t:SR%% SSC%%t:SSC%%에 적용하는 예외를 두고, 경수로 기술에 고유한 C.1의 명시적 SSC%%t:SSC%% 목록은 적용하지 않는다고 적는다.
 
 사고 후 요건 적용성 표에서 발전소·부지 고유 PRA를 수행하라는 요건은 Full Compliance이며 3.1.1절을 가리킨다.
+
+**NRC staff 평가.** NRC staff는 LBE%%t:LBE%% 선정·분류에서 방법론 일탈 두 가지를 확인했고, SSC%%t:SSC%% 안전 분류에서도 사업자가 risk-significant 기능을 정하면서 Licensing Modernization Project%%t:LMP%% 방법론에서 의도치 않게 두 가지로 벗어났다고 적는다. 따라서 벗어난 점이 없었다는 보고서 서술과 staff의 판정이 다르다.
 
 ## 관련 문서
 - [[TI_RIPB_Process_Overview]]
@@ -69,3 +74,5 @@ Regulatory guide 부합 표에서 RG%%t:RG%% 1.232, 1.233, 1.253과 Revision이 
 - [[RG_1.233]]
 - [[RG_1.232]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_LBE_Summary_Review]]
+- [[Natrium_SER_SSC_Classification_Review]]

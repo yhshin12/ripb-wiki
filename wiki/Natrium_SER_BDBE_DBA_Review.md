@@ -36,7 +36,7 @@ terms_pending: []
 - "The staff determined that the DBAs were properly identified and analyzed using conservative deterministic safety analysis. The staff finds that the DBA results meet the requirements in 10 CFR 50.34." [SER_KU1_CP §3.8.2 p.298]
 - "The staff finds that the review of the requirements found in 10 CFR 50.155 can be deferred to the operating licensing phase of the KU1 review consistent with the regulation and guidance." [SER_KU1_CP §3.9.2 p.299]
 - "Loss of One Primary Sodium Pump with Alternative Shunt Trip" [SER_KU1_CP Table 3.7-1 p.276]
-- "During the audit (ML25302A443), USO determined that this analysis was erroneous" [SER_KU1_CP §3.7.1.6 p.274]
+- "However, the description for the mechanistic source term for LFF-SAO-2 in the PSAR states that the primary coolant boundary is intact and the HAA is failed." [SER_KU1_CP §3.7.1.6 p.274]
 
 ## 해설
 **BDBE%%t:BDBE%%.** staff는 사업자가 BDBE%%t:BDBE%% 하한 판정에 mean 빈도를 썼다는 점을 다시 적고, OL%%t:OL%% 검토에서는 계속 95th percentile로 평가하겠다고 밝혔다. 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 들어가는 BDBE%%t:BDBE%%(DHP-L1PP-1, DHP-L1PP-4, OTH-LMAC-1 등)에는 NEI 21-07에 따라 DBA%%t:DBA%%가 식별되어야 한다고 지적했다.

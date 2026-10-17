@@ -54,3 +54,4 @@ SSC%%t:SSC%% 판정의 첫 기준은 그 SSC%%t:SSC%%가 예방하거나 완화�
 - [[PRA_Role_In_LBE_Selection]]
 - [[F_C_Target]]
 - [[NEI_18-04]]
+- [[RG_1247_PRA_Elements_Internal_Events]]

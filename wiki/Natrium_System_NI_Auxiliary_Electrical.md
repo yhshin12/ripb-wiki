@@ -139,3 +139,4 @@ special treatment는 Section 6.3에 따라 초기 선정되며, 신뢰도 목표
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_Building_NI_Control]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

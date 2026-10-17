@@ -1,7 +1,7 @@
 ---
 type: regulation
 aliases: []
-sources: [RG_1.253]
+sources: [RG_1.253, RG_1.247]
 status: checked
 verified: 2026-10-16
 term:
@@ -42,6 +42,9 @@ terms_pending: []
 - "The CP applicant should use Tables A-2 and A-3 as guidance to demonstrate the acceptability of the scope and level of detail of the PRA logic model, consistent with the maturity of the design." [RG_1.253 Appendix A Tables A-2 and A-3 Notes p.38]
 - "Accordingly, the application should demonstrate that:" [RG_1.253 §A.1 p.29]
 - "It is expected that reactors will reflect through their design, construction and operation an extremely low probability for accidents" [RG_1.253 §A.2.3 p.31]
+- "For licensing activities, a PRA for the seismic hazard group must always be developed; other hazards should also be included if they cannot be screened out with appropriate justification." [RG_1.247 §C.1.1 p.15]
+- "All POSs (e.g., at-power and low-power and shutdown (LPSD) types of POSs) should be addressed." [RG_1.247 §C.1.1 p.15]
+- "An ongoing rulemaking effort, “Incorporation of Lessons Learned from New Reactor Licensing Process (10 CFR Parts 50 and 52 Licensing Process Alignment),” Docket NRC-2009-0196, RIN-3150-AI66, includes proposed PRA-related requirements for 10 CFR Part 50 CP and OL applications that are similar to the existing PRA-related requirements for 10 CFR Part 52 licenses, certifications, and approvals" [RG_1.253 §A.2.3 fn3 p.31]
 
 | 구분 | PRA 요소 | 출처 |
 |---|---|---|
@@ -59,9 +62,12 @@ terms_pending: []
 
 **수용성 입증.** 신청자는 모든 PRA logic model, 스크리닝 해석, risk-informed supplemental analysis가 기술적으로 수용 가능하게 개발·사용되었음을 자체 평가로 보여야 한다. peer review는 선택이며, 완료하면 staff의 심층 검토 필요가 줄 수 있다. 다만 표준은 risk-informed supplemental evaluation에 대한 요구사항을 제공하지 않는다. Table A-2와 A-3은 설계 성숙도에 맞는 범위·상세도 수용성을 보이는 지침으로 쓴다.
 
+**`RG 1.247` C.1.1과의 관계.** 이 부록은 PRA 수용성을 `RG 1.247` Section C의 regulatory position 충족으로 정의하면서도, CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%에서 원자로의 내부 사건 hazard group으로 두고 일부 hazard를 DBHL%%t:DBHL%% credit으로 처리할 수 있게 한다. `RG 1.247` C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다뤄야 한다고 적는다. 이 부록은 OL%%t:OL%% 신청을 뒷받침하는 PRA가 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%를 다루도록 형상 관리 계획을 설명하게 하므로, 두 지침의 차이는 CP%%t:CP%% 단계와 OL%%t:OL%% 단계의 범위 차이로 읽힌다. 다만 `RG 1.247`의 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 vault에 없다. 또 이 부록의 각주는 진행 중인 rulemaking이 Part 50 CP%%t:CP%%·OL%%t:OL%% 신청에 Part 52와 비슷한 PRA 관련 요건을 제안한다고 적는다.
+
 ## 관련 문서
 - [[RG_1.253]]
 - [[RG_1.247]]
 - [[RG_1253_Methodology_And_LBE_Positions]]
 - [[Natrium_SER_PRA_Review]]
 - [[PRA_Role_In_LBE_Selection]]
+- [[RG_1247_PRA_Acceptability_Framework]]

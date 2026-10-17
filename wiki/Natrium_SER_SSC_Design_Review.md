@@ -59,3 +59,4 @@ staff는 초기 분류 접근과 등급별 설계 코드가 합리적이라고 �
 - [[Natrium_SER_DBHL_Review]]
 - [[Special_Treatment]]
 - [[Natrium_Major_Structures]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

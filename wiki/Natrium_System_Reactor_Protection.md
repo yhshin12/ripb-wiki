@@ -307,3 +307,4 @@ principal design criteria%%t:PDC%% 2에 따라 SR%%t:SR%% 부분은 SR%%t:SR%% `
 - [[Natrium_System_Anticipatory_Seismic_Trip]]
 - [[Natrium_System_Control_Room_Indications]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

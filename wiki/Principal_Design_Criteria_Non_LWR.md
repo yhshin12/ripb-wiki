@@ -4,6 +4,7 @@ aliases: []
 sources:
 - RG_1.232
 - NEI_18-04
+- RG_1.253
 status: checked
 verified: 2026-09-16
 term: PDC
@@ -74,19 +75,23 @@ terms_pending: []
 - "And, unless this RG is part of the licensing basis for a facility, the staff may not represent to the licensee that the licensee’s failure to comply with the positions in this RG constitutes a violation." [RG_1.232 §D Use by NRC Staff p.21]
 - "Additionally, an existing applicant may be required to comply with new rules, orders, or guidance if 10 CFR 50.109(a)(3) applies." [RG_1.232 §D Use by NRC Staff p.22]
 - "NRC Regulatory Guide 1.232, “Developing Principal Design Criteria for Non-Light Water Reactors,” should be used as one input by designers to initially establish principal design criteria for a facility based on the specifics of its unique design." [NEI_18-04 §3.2.3 p.26]
+- "For applicants using the LMP process endorsed in RG 1.233, SSCs important to safety include both SR and NSRST SSCs." [RG_1.253 §C.6.a p.20]
+- "the scope of the proposed PDC should include SSCs important to safety" [RG_1.253 §C.6.a p.20]
 
 ## 해설
 이 지침은 10 CFR 50 Appendix A의 GDC%%t:GDC%%를 비경수형원전%%t:NON_LWR%% 설계에 맞게 조정하는 방법에 관한 NRC 지침이다. 설계자, 신청자, 인허가 소지자는 이를 써서 PDC%%t:PDC%%를 개발할 수 있고, 지침은 특히 sodium-cooled fast reactor%%t:SFR%%와 MHTGR 두 설계 개념에 대해 GDC%%t:GDC%%를 수정·보완하는 방법을 제시한다. 적용 대상은 10 CFR Part 50과 Part 52의 발전로이며, 각주는 비발전 비경수형원전%%t:NON_LWR%%에도 적절히 적용할 수 있다고 적는다. 건설허가, 설계인증, 복합허가, 표준설계승인, 제조허가 신청서는 각각 10 CFR 50.34(a)(3)(i), 52.47(a)(3)(i), 52.79(a)(4)(i), 52.137(a)(3)(i), 52.157(a)에 따라 PDC%%t:PDC%%를 포함해야 한다. 규제 지침은 규정을 대체하지 않고 준수가 요구되지 않으며, 다른 방법도 인허가 판단에 필요한 근거를 제공하면 수용될 수 있다.
 
-경수로에서 GDC%%t:GDC%%는 important to safety Structures, Systems, and Components%%t:SSC%%의 설계·제작·건설·시험·성능 요건을 정하는 PDC%%t:PDC%%의 최소 요건이며, NRC 직원이 정상 운전, Anticipated Operational Occurrence%%t:AOO%%, 가정 사고에서 안전 기능 수행을 검토할 때의 기본 기준이다. 원문은 이 세 조건에서 가정하는 사건을 design basis events라고 부른다. Appendix A는 GDC%%t:GDC%%가 다른 유형의 발전소에도 일반적으로 적용되고 PDC%%t:PDC%% 설정의 지침이 된다고 적는다. 원문은 관련 규정을 종합하면 GDC%%t:GDC%%가 비경수형원전%%t:NON_LWR%% 설계에 규제 요건이 아니라 지침이라고 보며, 그래서 신청자는 특정 설계의 PDC%%t:PDC%%를 제안할 때 GDC%%t:GDC%% 면제를 신청할 필요가 없다. 부록 A–C의 non-LWR design criteria는 GDC%%t:GDC%%를 해석하는 방법에 대한 NRC 직원의 견해이며 최종적이거나 구속력이 있지 않다. 고유 설계에 맞춘 PDC%%t:PDC%% 개발, 심층방어(Defense-in-Depth)%%t:DID%% 같은 기본 개념의 고려, 필요한 안전 요건의 식별과 충족은 신청자의 책임이다. NRC는 설계 정보와 자료가 허락하는 한 이 기준을 risk-informed하게 만드는 데 따른 장래의 이점을 인정한다.
+경수로에서 GDC%%t:GDC%%는 important to safety Structures, Systems, and Components%%t:SSC%%의 설계·제작·건설·시험·성능 요건을 정하는 PDC%%t:PDC%%의 최소 요건이며, NRC 직원이 정상 운전, Anticipated Operational Occurrence%%t:AOO%%, 가정 사고에서 안전 기능 수행을 검토할 때의 기본 기준이다. 원문은 이 세 조건에서 가정하는 사건을 design basis events라고 부른다. Appendix A는 GDC%%t:GDC%%가 다른 유형의 발전소에도 일반적으로 적용되고 PDC%%t:PDC%% 설정의 지침이 된다고 적는다. 원문은 관련 규정을 종합하면 GDC%%t:GDC%%가 비경수형원전%%t:NON_LWR%% 설계에 규제 요건이 아니라 지침이라고 보며, 그래서 신청자는 특정 설계의 PDC%%t:PDC%%를 제안할 때 GDC%%t:GDC%% 면제를 신청할 필요가 없다. 부록 A–C의 비경수형원전%%t:NON_LWR%% design criteria는 GDC%%t:GDC%%를 해석하는 방법에 대한 NRC 직원의 견해이며 최종적이거나 구속력이 있지 않다. 고유 설계에 맞춘 PDC%%t:PDC%% 개발, 심층방어(Defense-in-Depth)%%t:DID%% 같은 기본 개념의 고려, 필요한 안전 요건의 식별과 충족은 신청자의 책임이다. NRC는 설계 정보와 자료가 허락하는 한 이 기준을 risk-informed하게 만드는 데 따른 장래의 이점을 인정한다.
 
 기준 집합의 유래는 DOE-NRC 이니셔티브이다. 이니셔티브의 목적은 GDC%%t:GDC%%가 비경수형원전%%t:NON_LWR%% 설계에 적용되는지 평가하고, 각 기준의 근본 안전 목표는 여전히 적용된다는 전제에서 설계 특성을 다루는 PDC%%t:PDC%%를 제안하는 것이었다. U.S. Department of Energy%%t:DOE%%는 GDC%%t:GDC%%가 경수로에 하는 역할을 비경수형원전%%t:NON_LWR%%에 하도록 여섯 기술을 포괄하는 advanced reactor design criteria를 제안했고, 그에 더해 기술별 기준 두 묶음을 제안했다. 이 기준은 SFR%%t:SFR%%과 MHTGR에 적용하려는 것으로, 각각 sodium-cooled fast reactor design criteria와 MHTGR design criteria라고 부른다. 일부 기준의 안전 목표가 소듐·헬륨 냉각재나 피동 열제거 계통 같은 특성을 다루지 못해 추가 기준도 만들었다. NRC 직원은 2단계에서 두 기술의 설계 다양성을 고려해 advanced reactor design criteria에 더해 두 기술별 기준을 개발했고, 부록 표는 공개 의견의 상당수를 반영한 직원의 최종본이다.
 
 NRC 직원이 기준을 개발하면서 둔 핵심 가정은 다음과 같다. 세 기준 집합은 정상 운전, AOO%%t:AOO%%, 가정 사고라는 설계기준 범위에 적용된다. 경수로의 중대사고·beyond-design-basis event 규정에 대응하는 비경수형원전%%t:NON_LWR%% 규정은 이 이니셔티브에서 정하지 않았고, 현행 규정은 비경수형원전%%t:NON_LWR%%에 적용될 수도 있고 아닐 수도 있다. 적용되는 규정의 준수, 적용되지 않는 이유, 설계 고유 중대사고의 완화를 입증하는 것은 신청자의 책임이다. 직원은 core disruptive accident를 신청자가 중대사고나 beyond-design-basis event로 입증한다고 가정했으며, 이 사고는 냉각 가능한 형상을 잃게 해 여러 기준을 위반하게 될 것이라고 적는다. 비경수형원전%%t:NON_LWR%%의 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%%는 경수로와 크게 다를 수 있다. advanced reactor design criteria는 여섯 기술에 적용하려는 것이지만 일부 설계에는 sodium-cooled fast reactor design criteria나 MHTGR design criteria의 기준이 더 적합할 수 있고, molten salt reactor%%t:MSR%%나 lead fast reactor%%t:LFR%% 같은 기술별 기준은 장래에 개발될 수 있다. functional containment 성능 요건, specified acceptable fuel design limits%%t:SAFDL%% 대신 specified acceptable system radionuclide release design limit%%t:SARRDL%%를 쓰는 개념은 Commission의 검토와 승인이 필요할 수 있는 정책 사안이다. 비경수형원전%%t:NON_LWR%% 설계는 경수로보다 향상된 margins of safety를 제공해야 한다.
 
-사용 방식으로 원문은 신청자가 이 지침으로 PDC%%t:PDC%% 전부나 일부를 개발할 수 있고, 각 기준의 안전 근거와 조정 이유를 검토한 뒤 기준마다 advanced reactor design criteria, sodium-cooled fast reactor design criteria, MHTGR design criteria 가운데 고를 수 있다고 적는다. fluoride high-temperature reactor%%t:FHR%% 설계자는 적절한 경우 MHTGR design criteria를 쓸 수 있고, MSR%%t:MSR%% 설계자는 액체 연료와 관련 계통을 위한 새 PDC%%t:PDC%%를 개발해야 할 수 있다. 설계자나 신청자는 PDC%%t:PDC%%와 함께 설계가 이를 어떻게 만족하는지, 그 기준이 안전을 어떻게 보장하는지 뒷받침하는 정보를 제공해야 하며, GDC%%t:GDC%%나 non-LWR design criteria 가운데 제안하지 않는 기준은 안전 관점의 근거로 정당화해야 한다. 부록의 기준은 GDC%%t:GDC%%와 일관되게 shall과 must를 쓰지만 규제 요건을 뜻하지 않는다. advanced reactor design criteria는 여섯 기술에 일반적으로 적용되고, sodium-cooled fast reactor design criteria는 pool형과 loop형 SFR%%t:SFR%%에 모두 적용되며, 신청자는 전혀 새로운 PDC%%t:PDC%%를 개발할 수도 있다. 기준별 대응과 상태는 [[Non_LWR_Design_Criteria_Crosswalk]]에 있다. NEI 18-04도 설계자가 고유 설계에 맞는 PDC%%t:PDC%%를 처음 정할 때 이 지침을 하나의 입력으로 써야 한다고 적는다.
+사용 방식으로 원문은 신청자가 이 지침으로 PDC%%t:PDC%% 전부나 일부를 개발할 수 있고, 각 기준의 안전 근거와 조정 이유를 검토한 뒤 기준마다 advanced reactor design criteria, sodium-cooled fast reactor design criteria, MHTGR design criteria 가운데 고를 수 있다고 적는다. fluoride high-temperature reactor%%t:FHR%% 설계자는 적절한 경우 MHTGR design criteria를 쓸 수 있고, MSR%%t:MSR%% 설계자는 액체 연료와 관련 계통을 위한 새 PDC%%t:PDC%%를 개발해야 할 수 있다. 설계자나 신청자는 PDC%%t:PDC%%와 함께 설계가 이를 어떻게 만족하는지, 그 기준이 안전을 어떻게 보장하는지 뒷받침하는 정보를 제공해야 하며, GDC%%t:GDC%%나 비경수형원전%%t:NON_LWR%% design criteria 가운데 제안하지 않는 기준은 안전 관점의 근거로 정당화해야 한다. 부록의 기준은 GDC%%t:GDC%%와 일관되게 shall과 must를 쓰지만 규제 요건을 뜻하지 않는다. advanced reactor design criteria는 여섯 기술에 일반적으로 적용되고, sodium-cooled fast reactor design criteria는 pool형과 loop형 SFR%%t:SFR%%에 모두 적용되며, 신청자는 전혀 새로운 PDC%%t:PDC%%를 개발할 수도 있다. 기준별 대응과 상태는 [[Non_LWR_Design_Criteria_Crosswalk]]에 있다. NEI 18-04도 설계자가 고유 설계에 맞는 PDC%%t:PDC%%를 처음 정할 때 이 지침을 하나의 입력으로 써야 한다고 적는다.
 
 이행에 관해 원문은 지침 사용이 자발적이며, 다른 방법도 NRC 직원이 규정 준수를 검증할 충분한 근거를 제공하면 수용될 수 있다고 적는다. NRC 직원은 이 지침의 강제나 backfit을 의도하지 않고, 지침이 인허가 기준에 포함되지 않은 한 인허가 소지자의 불이행을 위반으로 표현할 수 없다. 기존 신청자도 10 CFR 50.109(a)(3)가 적용되면 새 규칙, 명령, 지침을 따라야 할 수 있다.
+
+**[[RG_1.253]]의 범위.** [[RG_1.253]]은 PDC%%t:PDC%%를 제안할 때 그 범위가 `SSCs important to safety`를 포함해야 하며, Licensing Modernization Project%%t:LMP%% 과정을 쓰는 신청자에게 `SSCs important to safety`는 Safety-Related%%t:SR%%와 Non-Safety-Related with Special Treatment%%t:NSRST%% SSC%%t:SSC%%를 모두 포함한다고 적는다.
 
 ## 관련 문서
 - [[Non_LWR_Design_Criteria_Crosswalk]]
@@ -95,3 +100,4 @@ NRC 직원이 기준을 개발하면서 둔 핵심 가정은 다음과 같다. �
 - [[Required_Functional_Design_Criteria]]
 - [[TI_RIPB_Process_Overview]]
 - [[RG_1.232]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]

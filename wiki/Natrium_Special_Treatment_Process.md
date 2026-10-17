@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch06, PSAR_ch01, NEI_18-04]
+sources: [PSAR_ch06, PSAR_ch01, NEI_18-04, SER_KU1_CP]
 status: checked
 verified: 2026-09-16
 term:
@@ -29,6 +29,8 @@ terms_pending: []
 - "special treatment refers to those requirements that provide increased assurance beyond normal industrial practices that structures, systems, and components (SSCs) perform their design-basis functions." [NEI_18-04 §4.4.5 p.50]
 - "The programmatic DID adequacy, including any additional special treatments identified, and the integrated DID adequacy evaluations will be provided at the operating license stage to establish the baseline DID." [PSAR_ch01 §1.3.3 p.64]
 - "In Regulatory Guide 1.201, the following definition of special treatment is provided:" [NEI_18-04 §4.4.5 p.46]
+- "Based on its review described above, the staff determined the preliminary information regarding the process of identifying special treatments requirements is consistent with RG 1.253 and acceptable for the CP review." [SER_KU1_CP §6.3 p.388]
+- "The final special treatments will be provided at the OL stage of the review." [SER_KU1_CP §6.3.1 p.388]
 
 ## 해설
 `PSAR` Chapter 6의 정의는 NEI 18-04가 인용하는 `Regulatory Guide 1.201`의 special treatment%%t:SPECIAL_TREATMENT%% 정의와 문장 구조가 같지만, 대상을 safety-significant SSC%%t:SSC%%로 한정하고 `structures, systems, and components`를 `structures, systems, or components`로 적는다. special treatment%%t:SPECIAL_TREATMENT%%는 safety-significant SSC%%t:SSC%%가 reliability와 capability target을 만족한다는 `reasonable confidence`를 주도록 개발되며, operating license%%t:OL%% 단계에서 target을 확인하는 방법은 `Section 6.2`에 있다([[Natrium_Reliability_Capability_Targets]]).
@@ -37,6 +39,8 @@ safety-significant SSC%%t:SSC%%에 적용되는 special treatment%%t:SPECIAL_TRE
 
 일부 special treatment%%t:SPECIAL_TREATMENT%%는 seismic classification이나 발전소 프로그램과 관련된다. seismic classification과 지진 special treatment%%t:SPECIAL_TREATMENT%%는 `Section 6.4.1`에서 정의되고([[Natrium_Seismic_Classification]]), special treatment%%t:SPECIAL_TREATMENT%%로 식별된 발전소 프로그램은 `Section 8.0`에 요약된다. special treatment%%t:SPECIAL_TREATMENT%%가 확정되면 그 프로그램에 변경이 필요한지 평가하고, 갱신된 프로그램은 OL%%t:OL%% 단계에서 제공된다. `PSAR` Chapter 1은 추가 special treatment%%t:SPECIAL_TREATMENT%%를 포함한 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%% 적절성 평가와 통합 심층방어%%t:DID%% 적절성 평가를 OL%%t:OL%% 단계에서 제공한다고 적는다. Chapter 6은 special treatment%%t:SPECIAL_TREATMENT%% 확정을 target 확정 뒤로 두며, 그 확정을 OL%%t:OL%% 단계와 직접 연결하지는 않는다.
 
+**NRC staff 평가.** NRC staff는 special treatment%%t:SPECIAL_TREATMENT%% 요건을 식별하는 과정에 관한 예비 정보가 `RG 1.253`과 일치하고 construction permit%%t:CP%% 검토에 수용 가능하다고 판단했으며, 최종 special treatment%%t:SPECIAL_TREATMENT%%는 OL%%t:OL%% 단계에서 제시된다.
+
 ## 관련 문서
 - [[Special_Treatment]]
 - [[Natrium_Reliability_Capability_Targets]]
@@ -44,3 +48,5 @@ safety-significant SSC%%t:SSC%%에 적용되는 special treatment%%t:SPECIAL_TRE
 - [[Natrium_DID_Approach]]
 - [[Natrium_Programmatic_And_Integrated_DID]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_SSC_Design_Review]]
+- [[RG_1253_Integrated_Evaluation_And_SSC_Positions]]

@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch03
+- SER_KU1_CP
 status: disputed
 verified: 2026-10-16
 term: null
@@ -67,6 +68,17 @@ terms_pending: []
 | SUD-CGR-2 | SCG Leak Downstream of the SCG Vapor Trap Cell where RXB Substructure Fails to Retain Release While Shutdown | No | [PSAR_ch03 Table 3.5-3 p.57-59] |
 | SUD-IACA-2 | Loss of One Train of IAC While Shutdown with RAC | No | [PSAR_ch03 Table 3.5-3 p.57-59] |
 | SUD-IHEL-1 | Intermediate Heat Exchanger Secondary-to-Primary Leak While Shutdown with Passive IAC | No | [PSAR_ch03 Table 3.5-3 p.57-59] |
+- "LFF-SAO-2 is intended to assume that the primary functional containment boundary fails but the HAA is successful" [SER_KU1_CP §3.7.1.6 p.274]
+- "However, the description for the mechanistic source term for LFF-SAO-2 in the PSAR states that the primary coolant boundary is intact and the HAA is failed." [SER_KU1_CP §3.7.1.6 p.274]
+- "During the audit (ML25302A443), USO determined that this analysis was erroneous (see audit question 3-95)" [SER_KU1_CP §3.7.1.6 p.274]
+- "Based on the margins reported in the existing analysis and staff confirmatory analyses that staff determined that this event was appropriately categorized as a BDBE for the PSAR but anticipates that the description of the event will be corrected at the OL stage." [SER_KU1_CP §3.7.1.6 p.274]
+- "Several of the events have 95th percentile frequencies that extend into the DBE range and should have DBAs identified per footnote 37 of Appendix A to NEI 21-07, including DHP-L1PP-1, DHP-L1PP-4, and OTH-LMAC-1." [SER_KU1_CP §3.7.1.1 p.263]
+- "With the frequencies and consequences included in the PSAR analyses, evaluation of this DBA is anticipated to elevate the alternative shunt trip credited in this LBE from NSRST to SR." [SER_KU1_CP §3.7.1.1 p.264]
+- "Frequency and consequence information for the additional events that would be categorized as BDBEs if the 95th percentile were used are provided in SE table 3.4-1 below." [SER_KU1_CP §3.4.1 p.225]
+- "Table 3.4-1: Additional BDBEs based on 95th Percentile Frequency of 5E-07/plant-year" [SER_KU1_CP Table 3.4-1 p.229]
+- "The staff identified one event, the sodium leakage from the RV into the RV-GV annulus, that potentially needs to be updated to an LBE at the OL." [SER_KU1_CP §3.4.1 p.228]
+- "The staff notes that this event therefore should have been identified as an LBE in the PSAR." [SER_KU1_CP §3.4.1 p.228]
+- "DHP-L1PP-4 assumes failure of the scram on high high power-to-flow ratio and as a result, DHP-L1PP-CN is not bounding for this event." [SER_KU1_CP §3.7.1.1 p.264]
 
 | LBE ID | 항목 | 5th Percentile | Mean | 95th Percentile | 출처 |
 |---|---|---|---|---|---|
@@ -316,6 +328,10 @@ local fuel fault BDBE%%t:BDBE%% 두 건은 운전원이 파손 핵연료 방사�
 
 Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%%t:BDBE%%는 재장전 중 핵연료 집합체나 Lead Test Assembly, Lead Demonstration Assembly를 다루는 동안 일어나며, 피복이 손상되어 방출이 생기지만 Ex-Vessel Handling Machine 경계가 방사성 핵종 retention을 제공한다.
 
+**NRC staff 평가.** NRC staff는 LFF-SAO-2가 일차 functional containment 경계가 실패하고 `HAA`는 성공하는 사건으로 의도되었으나, `PSAR`의 MST%%t:MST%% 서술은 일차 냉각재 경계가 건재하고 `HAA`가 실패한 경우로 적혀 있다고 지적한다. 감사 중 사업자는 이 해석이 잘못되었다고 확인했으며, staff는 기존 여유도와 확인 해석에 근거해 `PSAR` 단계의 BDBE%%t:BDBE%% 분류는 적절하다고 보고 사건 서술은 OL%%t:OL%% 단계에서 고쳐질 것으로 예상한다. 또 staff는 DHP-L1PP-1, DHP-L1PP-4, OTH-LMAC-1처럼 95th percentile 빈도가 Design Basis Event%%t:DBE%% 범위에 걸치는 BDBE%%t:BDBE%%에 Design Basis Accident%%t:DBA%%를 지정해야 한다고 적고, DHP-L1PP-4의 DBA%%t:DBA%%를 평가하면 이 사건이 credit하는 alternative shunt trip이 Non-Safety-Related with Special Treatment%%t:NSRST%%에서 Safety-Related%%t:SR%%로 올라갈 것으로 예상한다.
+
+**`PSAR` 목록 밖의 사건.** `SER`은 95th percentile 빈도를 분류에 썼다면 BDBE%%t:BDBE%%가 되었을 추가 사건을 Table 3.4-1로 제시하며, 그 표 제목의 기준은 5E-07/plant-year이다. 또 staff는 원자로 용기에서 RV-GV annulus로의 소듐 누설을 `PSAR`에서 Licensing Basis Event%%t:LBE%%로 식별했어야 할 사건으로 보고, OL%%t:OL%% 단계에서 LBE%%t:LBE%%로 추가될 수 있다고 적는다.
+
 ## 관련 문서
 - [[Natrium_LBE_Selection]]
 - [[Natrium_Risk_Significant_LBEs]]
@@ -323,3 +339,5 @@ Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_MST_Methodology]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_LBE_Summary_Review]]
+- [[Natrium_SER_BDBE_DBA_Review]]

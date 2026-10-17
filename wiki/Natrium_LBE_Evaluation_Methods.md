@@ -113,3 +113,4 @@ Licensing Basis Event%%t:LBE%%는 비슷한 유형의 Initiating Event%%t:IE%%�
 - [[LBE_Frequency_Categories]]
 - [[Required_Safety_Function]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_LBE_Methodologies_Review]]

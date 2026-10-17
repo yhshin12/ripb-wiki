@@ -51,3 +51,4 @@ PRA는 risk triplet의 세 질문, 즉 무엇이 잘못될 수 있는지, 얼마
 - [[Risk_Importance_Measures]]
 - [[LBE_Selection_Process]]
 - [[NEI_18-04]]
+- [[RG_1253_CP_PRA_Acceptability]]

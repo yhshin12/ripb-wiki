@@ -64,3 +64,4 @@ Natrium 원자로 발전소는 `840 MWt` pool-type SFR%%t:SFR%%로, 간결하고
 - [[Natrium_Control_Heat_Removal]]
 - [[Natrium_Licensing_Basis_Methodology]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_Facility_Overview_Review]]

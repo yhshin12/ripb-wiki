@@ -191,3 +191,4 @@ intact·failed fuel rack은 노심 집합체를 구조적으로 지지하고 하
 - [[Natrium_Seismic_Classification]]
 - [[Natrium_System_Ex_Vessel_Fuel_Handling]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_Fuel_Handling_And_Ancillary_Review]]

@@ -130,3 +130,4 @@ Post-Accident Monitoring 기능은 `IEEE 497-2016`이 정의한 Type B, C, D, F 
 - [[Natrium_System_Anticipatory_Seismic_Trip]]
 - [[Natrium_System_Control_Room_Indications]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

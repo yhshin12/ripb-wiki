@@ -53,11 +53,13 @@ terms_pending: []
 - "Elements of a PRA: The PRA elements are defined in terms of the fundamental technical analyses needed to develop and quantify the PRA model for its intended purpose" [RG_1.247 §C.1 p.14]
 - "All internal and external hazards should be addressed." [RG_1.247 §C.1.1 p.15]
 - "That is, each characteristic and attribute are always addressed, but the degree to which they are addressed may vary." [RG_1.247 §C.1.2 p.18]
+- "Regulatory Position C.2.2 presents the staff position on the use of PRA peer reviews to this effect, including staff endorsement with exceptions, of related industry PRA peer review guidance." [RG_1.247 §C.2 p.54]
+- "endorses NEI 20-09, Revision 1, in its entirety and with no exceptions as a means of satisfying the peer review requirements in the ASME/ANS NLWR PRA standard" [RG_1.247 §B Background p.10]
 
 ## 해설
 **지침의 성격.** 이 지침은 시험 사용 지침으로, 설계별·발전소별 PRA가 비경수형원전%%t:NON_LWR%% 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 수용 가능한 한 가지 접근을 제시한다. 여기서 "application"은 최초 인허가 신청과 위험정보 활용 신청을 모두 포함한다. 이 지침은 10 CFR Part 50 신청에도 적용된다. 시험 사용 기간은 경험을 쌓기 위한 것이며, 기간이 끝난 뒤 수용 불가로 판단된 입장은 철회되거나 추가될 수 있다. 최종 입장 채택 전의 변경은 backfit으로 보지 않는다.
 
-**승인 대상과 수용성 정의.** 이 지침은 `ASME/ANS RA-S-1.4-2021`을 예외와 함께, peer review 지침 `NEI 20-09` Revision 1을 예외 없이 승인한다. 다만 §A Purpose는 peer review 지침을 staff 예외와 함께 승인한다고 적어, 이 차이를 [[RG_1247_Standards_Peer_Review_Documentation]]에서 다룬다. PRA 수용성은 Section C의 직원 입장 충족으로 정의되며, 승인된 표준과 peer review 절차를 충족해 만족시킬 수 있다. staff의 승인문은 표준의 강제 표현("requirement" 등)을 그대로 따르지만, 이 지침이 그 표현을 쓰는 것이 규제 요건을 부과하거나 표준이 유일한 방법이라는 뜻은 아니다. Figure 1은 수용성 달성에 관련된 서로 의존하는 세 측면을 보이지만, 정제본에는 그림 내용이 없어 세 측면의 구체적 구성은 vault에 없다.
+**승인 대상과 수용성 정의.** 이 지침은 `ASME/ANS RA-S-1.4-2021`을 예외와 함께, peer review 지침 `NEI 20-09` Revision 1을 예외 없이 승인한다. 다만 C.2 도입 문단은 peer review 지침을 staff 예외와 함께 승인한다고 적고 §A Purpose 문장도 그렇게 읽힐 수 있어, 이 차이를 [[RG_1247_Standards_Peer_Review_Documentation]]에서 다룬다. PRA 수용성은 Section C의 직원 입장 충족으로 정의되며, 승인된 표준과 peer review 절차를 충족해 만족시킬 수 있다. staff의 승인문은 표준의 강제 표현("requirement" 등)을 그대로 따르지만, 이 지침이 그 표현을 쓰는 것이 규제 요건을 부과하거나 표준이 유일한 방법이라는 뜻은 아니다. Figure 1은 수용성 달성에 관련된 서로 의존하는 세 측면을 보이지만, 정제본에는 그림 내용이 없어 세 측면의 구체적 구성은 vault에 없다.
 
 **적용 맥락.** 현재 규정은 Part 50의 construction permit%%t:CP%%나 operating license%%t:OL%% 신청자에게 PRA 관련 정보를 요구하지 않는다. 이 지침은 부지 밖 시설의 건설과 부지로의 운송 중 위험을 다루지 않는다. staff는 신청자가 PRA 결과의 역할에 맞추어 PRA 범위와 상세도를 조정하려 할 수 있음을 인정한다.
 
@@ -75,3 +77,5 @@ terms_pending: []
 - [[RG_1247_Appendix_A_Staff_Positions]]
 - [[RG_1247_Hazard_List]]
 - [[Non_LWR_PRA_Scope]]
+- [[RG_1253_CP_PRA_Acceptability]]
+- [[Non_LWR_PRA_Regulatory_Role]]

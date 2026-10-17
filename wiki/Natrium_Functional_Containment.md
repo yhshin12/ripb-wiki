@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch01
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -52,6 +53,11 @@ terms_pending: []
 - "The RES provides one of the functional containment boundaries for the primary sodium coolant and sodium cover gas as described in Section 1.3.2.1." [PSAR_ch01 §1.1.4.1.2 p.21]
 - "Together, these components manipulate the positions of core assemblies during refueling operations and maintain the primary functional containment boundary during all reactor modes when the equipment is installed." [PSAR_ch01 §1.1.4.3.1 p.30]
 - "When irradiated fuel is not located within the reactor vessel, the fuel cladding continues to provide the first SR radionuclide retention barrier." [PSAR_ch01 §1.3.2.1 p.62]
+- "the GV is already classified as SR based on its heat removal function." [SER_KU1_CP §7.1.2.1.1 p.417]
+- "Therefore, the staff notes that the safety classification of the radionuclide retention function for the GV is expected to be justified at the OL stage and may ultimately be reclassified." [SER_KU1_CP §7.1.2.1.1 p.417]
+- "The NSRST barrier function DL4-RR1 refers to the functional containment boundary formed around the RES by the HAA barrier, the GV, and the HAA HVAC isolation." [SER_KU1_CP §7.8.1.1.8 p.594]
+- "With respect to functional containment, the staff concluded that the overall approach is acceptable to apply to the KU1 design based on the use of the NEI 18-04 methodology for licensing basis development" [SER_KU1_CP §1.3.3.3.2 p.45]
+- "However, the staff did not come to a final determination on the adequacy and acceptability of functional containment performance due to the preliminary nature of the design and analysis as discussed in chapters 3, 4, 5, 6, and 7 of this SE." [SER_KU1_CP §1.3.3.3.2 p.45]
 
 | Regulation | Description | Compliance Status | Section | 출처 |
 |---|---|---|---|---|
@@ -74,6 +80,8 @@ terms_pending: []
 
 사고 후 요건 적용성 표에서 이 보고서는 설계가 단일 격납 구조물 대신 functional containment을 쓴다는 이유로 격납 격리 계통 요건, 격납 퍼지·배기 요건, 전용 격납 관통부 요건을 적용 대상이 아니라고 적는다. 격납 건전성 예비 설계 정보 요건도 격납 구조물을 쓰지 않고 피복-냉각재 상호작용으로 수소를 만들지 않는다는 이유로 적용하지 않는다. head access area 쪽 누설은 정상 heating, ventilation, and air conditioning system 기능으로 관리하며 전용 퍼지 계통이 필요 없다고 적는다. 격납 밖 계통의 누설 제어·탐지 요건만 Partial Compliance이다. 이 행은 SR%%t:SR%%로 분류된 barrier%%t:BARRIER%%와 경계를 누설 시험이 가능하게 해 성능을 입증하고, 사고 뒤 사고 선원항(source term)%%t:SOURCE_TERM%%을 담거나 담을 수 있는 SR%%t:SR%% barrier%%t:BARRIER%% 설계에 누설 제어와 탐지를 반영하며, 초기 시험 프로그램, 재시험 일정, 누설 최소화 조치를 포함한 누설 제어 프로그램을 제출하겠다고 적는다.
 
+**NRC staff 평가.** `SER`은 guard vessel이 열제거 기능으로 이미 SR%%t:SR%%로 분류되어 있고, guard vessel의 방사성핵종 보유 기능의 안전 분류는 operating license%%t:OL%% 단계에서 정당화되어야 하며 재분류될 수 있다고 적는다. Non-Safety-Related with Special Treatment%%t:NSRST%% barrier 기능 `DL4-RR1`은 `HAA` barrier, guard vessel, `HAA` `HVAC` 격리로 `RES` 둘레에 형성되는 functional containment 경계를 가리킨다. staff는 NEI 18-04 방법론을 쓰는 functional containment 접근 전체는 수용했지만, 설계와 해석이 예비 단계이므로 functional containment 성능의 적정성과 수용성에 대한 최종 판단은 내리지 않았다.
+
 ## 관련 문서
 - [[Natrium_Fundamental_Safety_Functions]]
 - [[Natrium_Licensing_Basis_Methodology]]
@@ -81,3 +89,8 @@ terms_pending: []
 - [[LBE_Layers_Of_Defense_Review]]
 - [[SSC_Safety_Classification]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_Facility_Overview_Review]]
+- [[Natrium_SER_Nuclear_Heat_Supply_Review]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_SER_MST_Methodology_Review]]
+- [[Natrium_SER_PDC_SR_NSRST_Review]]

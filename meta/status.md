@@ -38,7 +38,7 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 
 ## 다음 작업
 0. `SER_KU1_CP` 잔여 하위 절의 처리 방침(노트 보강 또는 coverage 제외)을 사용자와 정한다. 내부 자료 작업 상태는 `internal/status.md`.
-0a. `wiki-audit`(RG_1.253·RG_1.247 인제스트 뒤)와 `wiki-lint` 의미 점검(SER, RG_1.253, RG_1.247).
+0a. 2026-10-16 `wiki-audit`(seed 20261016)와 `wiki-lint` 의미 점검은 끝났다. 의미 점검 조치 1–19는 적용했다(`meta/lint/2026-10-16.md`). 남은 것: 계통 묶음 대조 재의뢰(계통 노트 5건의 "vault에 없" 판정, ACRS 두 노트와 SER의 중복, C34 반응도 계수 목록, 운전 모드).
 0b. 정제 파이프라인 보완 후보: RG_1.247 Table 1 내용 누락, 부록 A 굵은 글씨·취소선 소실(현재 노트는 issue 문장 위주), C.1.3.8 쪽 표지 위치; RG_1.253 Table A-2·A-3 표 구조 깨짐.
 1. lint 조치 A6 결정(`Risk_Significant_SSC` 단일 기록처화와 `Risk_Importance_Measures` disputed 해제).
 2. NEI 18-04 내부 불일치 3건(§5.3 Task 1의 "Task 14" 참조, 용어집 RI 출처 칸, Task 7c "within 1%"와 §4.2.2 "exceeds 1%")을 `meta/contradictions.md`에 기록할지 결정.
@@ -56,6 +56,9 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 - disputed 판정은 모든 원문 인제스트 뒤로 미룬다(2026-09-16 사용자 결정). 새 모순은 `meta/contradictions.md`에 모은다.
 
 ## 미해결
+- 모순 C58–C66 판정 대기(갈래 미정). C62–C66은 2026-10-16 의미 점검에서 새로 기록했고, C13의 PRA standard 상태는 RG 1.247로 해소 후보가 되었다.
+- 누락 주제(2026-10-16 의미 점검): alternative shunt trip(DL4-RC6a–d), other quantified events(OQE), Pin Removal Cell, Pool Immersion Cell과 ESWR 사건군, SHX(허가 조건 대상), RIM 프로그램, D-RAP, 항공기 충돌 평가, complementary design criteria, Prevention Function의 분류 처리, 피동 NSRST 저하 성능의 DBA credit, PRA 형상 관리·self-assessment·peer review, 사용후연료 PRA, DG-1404와 RG 1.253의 관계, 10 CFR 50.34(f)의 비경수형원전 적용성, SER의 "seventeen AOOs and BDBEs" 목록. vault에 원문이 없는 문서: NEI 21-07, NEI 20-09, ASME/ANS RA-S-1.4-2021 본문, NUREG-1855.
+- 도구 개선 후보: 새 노트가 생겨도 기존 노트의 "vault에 없" 문장을 다시 점검하는 검사가 없다(2026-10-16 audit 원인 후보, 의미 점검에서 16건 확인).
 - 첫 `wiki-audit`(2026-10-14, seed 20261014): 노트 오류율 20 % (2/10), 원문 사실 항목 오류 0/417. 목표 노트 오류율 ≤ 10 %. 오류 2건은 해설의 원문 사실 근거 누락과 문서 구조 배타 진술; `wiki-ingest` 대조 지시를 보완함. `meta/metrics.md`.
 - 원문 간 모순(disputed, 이전 결정): NEI 18-04 SSC risk significance 평균/상한(`Risk_Importance_Measures`, `LBE_Risk_Significance`, `Risk_Significant_SSC`), BDBE 빈도 하한(`LBE_Frequency_Categories`).
 - 모순 57건 판정 완료(2026-09-16): disputed 28건(노트 38개), 기록만 25건, 공백 4건. `meta/contradictions.md` §판정.

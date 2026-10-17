@@ -139,3 +139,4 @@ PDC%%t:PDC%% 2에 따라 `AST`는 가상 지진에 대해 지진 검증을 받�
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_Seismic_Classification]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_Electrical_Structures_Review]]

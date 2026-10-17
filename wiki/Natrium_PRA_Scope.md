@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch03
+- SER_KU1_CP
 status: checked
 verified: 2026-10-16
 term: null
@@ -58,6 +59,7 @@ terms_pending: []
 - "Chapter 4 also describes the defense-in-depth adequacy evaluation to ensure proper defense-in-depth protective measures have been incorporated to alleviate uncertainties, assumptions, and limitations in the PRA." [PSAR_ch03 §3.1.2 p.13]
 - "Chapter 5 includes the documentation of risk-significant SSCs that are required to meet the F-C target and cumulative risk metrics." [PSAR_ch03 §3.1.2 p.13]
 - "Chapter 6 describes the reliability and capability targets for safety-related SSCs and NSRST SSCs." [PSAR_ch03 §3.1.2 p.13]
+- "While recognizing that the KU1 PRA self-assessment serves as a valuable initial tool for evaluating PRA quality, the staff does not rely solely on it to determine PRA adequacy or acceptability, even for PRA supporting requirements assessed as “Met.”" [SER_KU1_CP §3.1.3 p.176]
 
 | PRA element | 출처 |
 |---|---|
@@ -148,6 +150,8 @@ ES%%t:ES%%의 끝은 안전·안정 상태이거나 방사성 핵종 방출이�
 
 systems analysis는 ES%%t:ES%% 분석에서 event tree 정량화에 필요한 fault tree를 만들며, event tree의 각 top event에 필요한 frontline system과 그 기능을 뒷받침하는 support system을 다룬다. Human Reliability Analysis는 ES%%t:ES%%에 관여하는 인적 상호작용을 평가하고 그에 대응하는 human failure event의 확률을 추정한다.
 
+**NRC staff 평가.** NRC staff는 사업자의 PRA 자체 평가를 PRA 품질을 평가하는 유용한 초기 도구로 보지만, "Met"로 평가된 supporting requirement에 대해서도 PRA의 적정성이나 수용성을 판단하는 데 자체 평가에만 의존하지 않는다고 적는다.
+
 ## 관련 문서
 - [[Non_LWR_PRA_Scope]]
 - [[PRA_Role_In_LBE_Selection]]
@@ -157,3 +161,6 @@ systems analysis는 ES%%t:ES%% 분석에서 event tree 정량화에 필요한 fa
 - [[Natrium_LBE_Selection]]
 - [[Natrium_Licensing_Basis_Methodology]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_PRA_Review]]
+- [[Natrium_SER_PRA_OL_Expectations]]
+- [[RG_1253_CP_PRA_Acceptability]]

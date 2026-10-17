@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04]
+sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04, SER_KU1_CP]
 status: disputed
 verified: 2026-09-16
 term:
@@ -52,6 +52,10 @@ terms_pending: []
 - "An indication of whether a single design or operational feature is relied upon to meet the quantitative DID objectives is also provided." [PSAR_ch04 §4.2.1.2 p.8]
 - "Table 4.2-4 identifies functions relied upon to maintain individual risks below the QHOs for the risk-significant BDBEs." [PSAR_ch04 §4.2.1.2 p.8]
 - "An indication of whether a single barrier or plant feature is relied upon to meet the quantitative DID objectives is also provided." [PSAR_ch04 §4.2.1.2 p.8]
+- "The applicant’s evaluation identified a DBA—RRS-ISPL-CN, a release from the intermediate sodium processing system—that is reliant on a single layer of defense to avoid a release." [SER_KU1_CP §4.2.1.1.3 p.329]
+- "The function relied on is DL2-RR8, the intermediate cold trap sodium processing system barrier, which is assumed to fail as the initiating event in the DBA." [SER_KU1_CP §4.2.1.1.3 p.329]
+- "Because the F-C target is met for the DBE and the dose criteria are met for the DBA as discussed in PSAR sections 3.7.3.3 and 3.9.4.2 and sections 3.6.1.3 and 3.8.1.4 of this SE, the staff does not consider the function to be relied on for the purposes of the DID adequacy evaluation." [SER_KU1_CP §4.2.1.1.3 p.330]
+- "Accordingly, the staff determined that USO’s single-feature reliance evaluation is acceptable." [SER_KU1_CP §4.2.1.1.3 p.330]
 
 | DBE ID | Maintain Frequency of all BDBEs < 1E-04/plant-year: DL Function | Maintain Frequency of all BDBEs < 1E-04/plant-year: Description | Any single design or operation feature relied upon to meet quantitative objectives for DBE? | 출처 |
 |---|---|---|---|---|
@@ -132,6 +136,8 @@ single feature reliance 평가는 risk-significant LBE%%t:LBE%%나 Design Basis 
 
 같은 체계적 검토로 각 risk-significant LBE%%t:LBE%%에 Prevention Function%%t:PREVENTION_FUNCTION%%과 Mitigation Function%%t:MITIGATION_FUNCTION%%이 모두 있는지도 확인한다. 이 확인은 일반적으로 `DL1` 특성이 있고 적용되는 Fundamental Safety Function%%t:FSF%%마다 기능이 식별되었는지로 이루어지며, DBA%%t:DBA%%는 결정론적 성격이므로 사건을 예방하거나 완화하는 `DL3` 기능의 신뢰도와 가용도를 보장하는 `DL1` 특성을 식별한다. 이 평가로 CP%%t:CP%% 단계에서 추가한 plant capability action이나 programmatic action은 없다.
 
+**NRC staff 평가.** 사업자 평가는 intermediate Sodium Processing System 방출 DBA%%t:DBA%%인 RRS-ISPL-CN이 방출을 피하는 데 하나의 DL%%t:DL%%에 의존한다고 확인했다. 의존 기능은 이 DBA%%t:DBA%%에서 기시사건으로 실패를 가정하는 `DL2-RR8`(intermediate cold trap barrier)이다. NRC staff는 DBE%%t:DBE%%가 F-C target을, DBA%%t:DBA%%가 선량 기준을 만족하므로 이 기능을 심층방어%%t:DID%% 적절성 평가 목적의 의존 대상으로 보지 않고, 사업자의 단일 feature 의존 평가를 수용했다.
+
 ## 관련 문서
 - [[Plant_Capability_DID]]
 - [[DID_Adequacy_Framework]]
@@ -144,3 +150,4 @@ single feature reliance 평가는 risk-significant LBE%%t:LBE%%나 Design Basis 
 - [[Natrium_NSRST_Functions]]
 - [[Natrium_DBA_List]]
 - [[PSAR_ch04]]
+- [[Natrium_SER_Integrated_Evaluation_Review]]

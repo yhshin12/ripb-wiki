@@ -107,3 +107,5 @@ MST%%t:MST%% 정의는 방출 물질의 물리·화학적 성질, 방출 크기,
 - [[Natrium_PRA_Scope]]
 - [[Natrium_LBE_Evaluation_Methods]]
 - [[PSAR_ch03]]
+- [[Natrium_SER_Event_Source_Terms_Review]]
+- [[Natrium_SER_MST_Methodology_Review]]

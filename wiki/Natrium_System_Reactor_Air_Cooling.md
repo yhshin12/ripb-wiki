@@ -195,3 +195,4 @@ inlet·outlet stack은 `ASME STS-1`, stack·louver housing·cowl·`CCA`는 `AISC
 - [[Natrium_Seismic_Classification]]
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_Reactor_Auxiliary_Review]]
