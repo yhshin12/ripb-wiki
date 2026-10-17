@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, instrumentation-control, electrical, structures, nrc-review]
 terms_pending: []
@@ -58,6 +58,13 @@ terms_pending: []
 - "Based on the review described above, the staff concludes that the information in PSAR section 7.7 is sufficient" [SER_KU1_CP §7.7.2 p.589]
 - "Based on the review described above, the staff concludes that the information in PSAR section 7.8.1 is sufficient" [SER_KU1_CP §7.8.1.2 p.595]
 - "Risk significance determinations will depend on the reliability of the primary trip function and potential consequences of failure and will be reviewed at the OL stage." [SER_KU1_CP §5.5 p.354]
+- "PSAR section 7.8.4.1.2 states that the NCB substructure is designed in accordance with applicable PDC including PDC 2 and PDC 4." [SER_KU1_CP §7.8.4.1.1 p.603]
+- "The seismic classification of the NCB substructure is SCS1." [SER_KU1_CP §7.8.4.1.1 p.603]
+- "the staff determined that the preliminary design information for the NCB substructure is consistent with PDC 1, 2, and 4." [SER_KU1_CP §7.8.4.1.1 p.603]
+- "PSAR section 7.8.4.2.2 states that the NSRST NCB superstructure is required to meet PDC 2 and PDC 4." [SER_KU1_CP §7.8.4.1.1 p.603]
+- "The seismic classification is SCN1." [SER_KU1_CP §7.8.4.1.1 p.603]
+- "the adequacy of the seismic design will be confirmed or adjusted at the OL to meet required performance targets based on the results of the SPRA" [SER_KU1_CP §7.8.4.1.1 p.604]
+- "the staff determined that the preliminary design information for the NCB superstructure is consistent with PDC 1, 2, and 4." [SER_KU1_CP §7.8.4.1.1 p.604]
 
 ## 해설
 **계측제어.** 설계가 예비 단계여서 construction permit%%t:CP%% 검토 범위는 `DRG`와 `DNRL-ISG-2022-01` 항목으로 제한되었고, 상세 검토는 operating license%%t:OL%% 단계에서 한다. NSRST%%t:NSRST%%나 Non-Safety-Related with No Special Treatment%%t:NST%% 계통에서 SR%%t:SR%% 계통으로 가는 직접 디지털 통신은 없다. `PSAR`는 계측제어 계통이 `IEEE 603-2018`에 따라 설계된다고 적지만 규정이 참조하는 것은 `IEEE 603-1991`이다. staff는 완전한 준수를 보이려면 최종 설계가 필요하고 두 표준이 대체로 정렬되어 있다는 이유로 이 비교를 OL%%t:OL%% 단계로 미뤘다.
@@ -76,6 +83,8 @@ terms_pending: []
 - `NI` 제어 건물: 지하 하부구조 SR%%t:SR%%, 지상 상부구조 NSRST%%t:NSRST%%.
 
 핵연료 취급 건물 상부구조에 관해 staff는 NRC가 NSRST%%t:NSRST%%·NST%%t:NST%% 구조물 검토에 대한 규제 지침이나 입장을 정하지 않았다고 적는다. 사업자에 따르면 지진 PRA는 OL%%t:OL%% 단계에야 나오므로 성능 목표를 지금 확인할 수 없다. 그래도 staff는 `PSAR`의 설계가 OL%%t:OL%% 단계에서 성능 목표를 충족할 수 있다는 합리적 확신을 준다고 판단했다.
+
+**`NCB` 구조물(보강).** `NCB` 하부구조는 principal design criteria%%t:PDC%% 2와 PDC%%t:PDC%% 4 등에 따라 설계되며 지진 분류는 SCS1이다. NSRST%%t:NSRST%% `NCB` 상부구조는 PDC%%t:PDC%% 2와 PDC%%t:PDC%% 4를 충족해야 하고 지진 분류는 SCN1이며, 지진 설계의 적정성은 OL%%t:OL%% 단계에서 `SPRA` 결과에 따라 확인되거나 조정된다. staff는 두 구조의 예비 설계 정보가 PDC%%t:PDC%% 1, 2, 4와 일치한다고 판단했다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

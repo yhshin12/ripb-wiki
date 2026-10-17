@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, hazards, nrc-review]
 terms_pending: []
@@ -37,6 +37,13 @@ terms_pending: []
 - "The staff will review USO’s evaluation of pipe ruptures and their impacts at the OL stage, based on the final design information and piping layout." [SER_KU1_CP §6.1.1.1 p.367]
 - "The staff will review USO’s complete thunderstorm and lightning hazard protection design at the OL stage, based on the final design information." [SER_KU1_CP §6.1.1.1 p.370]
 - "Additional details on sodium retention seismic interaction design requirements are expected at the OL stage." [SER_KU1_CP §6.1.1.3 p.371]
+- "As described in PSAR section 2.3.3.1.4, none of the examined transportation hazards present a design basis hazard to the KU1 site." [SER_KU1_CP §6.1.1.1 p.369]
+- "The applicant also evaluated each transportation mode to identify chemicals potentially transported along these routes that could constitute a design basis event." [SER_KU1_CP §6.1.1.1 p.369]
+- "The analysis established minimum safe distances for postulated accidents, which were then compared to the proximity of these transportation routes to KU1." [SER_KU1_CP §6.1.1.1 p.369]
+- "In support of this assessment, the staff conducted an audit that included the supporting detailed analysis of transportation hazards, including the potential chemical release of propane." [SER_KU1_CP §6.1.1.1 p.369]
+- "Volcanic hazards in the vicinity of the KU1 site are assessed and discussed in PSAR section 2.7." [SER_KU1_CP §6.1.1.1 p.369]
+- "Tephra falls, including volcanic ash and debris flows, were assessed and described in sections 8 and 9 of NAT-3226-A." [SER_KU1_CP §6.1.1.1 p.370]
+- "The staff reviewed the incorporation by reference of NAT-3226-A and found it to be acceptable in section 2.7 of this SE." [SER_KU1_CP §6.1.1.1 p.370]
 
 ## 해설
 staff는 사업자가 정한 DBHL%%t:DBHL%% 집합을 `RG 1.233`과 일치한다고 보고, 위험요인별로 다음과 같이 판단했다.
@@ -52,6 +59,8 @@ staff는 사업자가 정한 DBHL%%t:DBHL%% 집합을 `RG 1.233`과 일치한다
 - **항공기 충돌:** 사업자가 OL%%t:OL%%을 신청하면, 항공기 충돌 사고의 스크리닝이 여전히 유효하고 비경수형원전%%t:NON_LWR%% PRA에 맞는지 재평가해야 한다.
 
 비SR%%t:SR%% SSC%%t:SSC%%와 SR%%t:SR%% SSC%%t:SSC%%의 상호작용을 막기 위해, 지진 상호작용 방지 요건이 있는 NSRST%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 `ASCE/SEI 7-16`의 `SCN1` 등급으로 설계된다. 소듐을 담은 SSC%%t:SSC%%는 Safe Shutdown Earthquake%%t:SSE%% 뒤에도 소듐 재고를 유지하도록 설계된다. 이 접근은 OL%%t:OL%% 단계 지진 PRA로 확인되어야 한다. staff는 사업자가 DBHL%%t:DBHL%%을 합리적으로 특성화했고, 설계 접근이 SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%가 자연·인위 위험요인에 기능을 잃지 않고 견딘다는 확신을 준다고 결론지었다.
+
+**교통과 화산 hazard(보강).** 검토한 교통 hazard 가운데 design basis hazard가 되는 것은 없으며, 사업자는 교통 수단별 운송 화학물질을 식별하고 최소 안전 거리를 경로까지의 거리와 비교했다. staff는 propane 화학 방출을 포함한 상세 해석을 audit했다. 화산 hazard는 `PSAR` 2.7절과 NAT-3226-A에서 평가되며, staff는 NAT-3226-A의 참조 포함을 `SE` 2.7절에서 수용했다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

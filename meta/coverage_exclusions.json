@@ -27,7 +27,16 @@
     {"pages": "609-651", "reason": "chapters 8-10 (plant programs, QA, effluents, radiation protection); the corresponding PSAR chapters are not in the vault"},
     {"pages": "710-712", "reason": "chapter 12 post-construction inspection, testing, and analysis program; the corresponding PSAR chapter is not in the vault"},
     {"pages": "725-731", "reason": "chapter 14 financial qualifications; only the exemption outcome (14.1, 14.1.2) is cited, the financial and ownership review is outside vault scope"},
-    {"pages": "753-768", "reason": "back matter: references and list of contributors"}
+    {"pages": "753-768", "reason": "back matter: references and list of contributors"},
+    {"heading": "^1 THE FACILITY$|^4 INTEGRATED EVALUATIONS$|^5 SAFETY FUNCTIONS, DESIGN CRITERIA, AND SSC SAFETY CLASSIFICATION$", "reason": "chapter introductions that restate the scope of the chapter"},
+    {"heading": "^1\\.3\\.2 Regulatory Evaluation$|^3\\.1\\.2 Regulatory Evaluation$", "reason": "regulatory evaluation sections that list the applicable regulations and guidance"},
+    {"heading": "^1\\.3\\.4 Conclusion$|^3\\.3\\.2 Conclusion$|^4\\.1\\.2 Conclusion$|^4\\.2\\.1\\.1\\.5 Conclusion|^11\\.1\\.1\\.6 Plans for Conduct of Operations$", "reason": "conclusions that repeat findings already cited from the preceding subsections"},
+    {"heading": "^11\\.3\\.1\\.2\\.1\\.2 Staffs Findings|^11\\.3\\.1\\.2\\.1\\.6\\.1 Staff Findings|^11\\.3\\.1\\.2\\.1\\.10 Staff Findings|^11\\.3\\.1\\.2\\.2\\.1 Staff Findings|^11\\.3\\.1\\.2\\.4\\.1 Staff Findings|^11\\.3\\.1\\.2\\.5 Staff Findings", "reason": "emergency preparedness staff-findings subsections that repeat the evaluated capabilities cited in Natrium_SER_Emergency_Preparedness_Review"},
+    {"heading": "^1\\.3\\.3\\.2 Site Description$|^11\\.6\\.1\\.2 Hazardous Material|^11\\.6\\.1\\.3 Regional Climatology|^11\\.6\\.1\\.5 Geological and Seismology", "reason": "site characteristic findings that refer to SE chapter 2, which is outside vault scope"},
+    {"heading": "^1\\.8 Tables$", "reason": "Tables 1.8-1 and 1.8-2 list topical reports; Table 1.8-3 rows are cited under Table 1.8-3"},
+    {"heading": "^Table 3\\.11-1", "reason": "KU1 values in the comparison table are withheld"},
+    {"heading": "^Table 6\\.1-1", "reason": "table restates the SRDC of PSAR tables 5.2-1 to 5.2-3 and the SE sections that evaluate them"},
+    {"heading": "^PRA Element 5 - Systems Analysis$", "reason": "unnumbered subsection of 3.1.3; its body (p.164-165) is cited as §3.1.3"}
   ],
   "RG_1.232": [
     {"pages": "29-61", "reason": "Appendix A (ARDC) not ingested by user decision"},

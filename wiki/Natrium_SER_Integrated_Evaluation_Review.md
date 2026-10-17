@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, did, risk, nrc-review]
 terms_pending: []
@@ -41,6 +41,10 @@ terms_pending: []
 - "The staff recommends that the CP include the following permit conditions:" [SER_KU1_CP §4.3.4 p.333]
 - "Based on its review of the PSAR, the staff finds that USO’s IDP and IDPP implementation for the KU1 CP application is consistent with the methodology described in NEI 18-04" [SER_KU1_CP §4.3.5 p.333]
 - "Therefore, the staff determined that the key assumption of no bulk sodium boiling in the OQEs does not negatively affect the integrated risk assessment and evaluation against the cumulative risk metrics" [SER_KU1_CP §4.1.1 p.324]
+- "PSAR section 4.2.1.4 states that the applicant performed an evaluation to ensure prevention and mitigation DL functions exist for risk-significant LBEs and DBAs, by identifying DLs that are available to prevent or mitigate each event." [SER_KU1_CP §4.2.1.1.4 p.330]
+- "The defense layer evaluation discussed in PSAR section 4.2.1.3 and provided in NAT-4770 was used to identify preventative and mitigative functions available for each LBE." [SER_KU1_CP §4.2.1.1.4 p.330]
+- "The applicant stated that prevention-mitigation balance was generally confirmed by ensuring DL1 features are available to prevent events, and that functions are identified for each fundamental safety function for each risk-significant LBE." [SER_KU1_CP §4.2.1.1.4 p.330]
+- "The staff determined that this is an acceptable approach to preventative-mitigative balance because it ensures that features are available to prevent initiating events from occurring in the first place, and also ensures functions are available across multiple DLs to prevent LBEs from progressing to more severe accidents." [SER_KU1_CP §4.2.1.1.4 p.330]
 
 ## 해설
 **누적 위험도.** 판정 기준은 다음 세 가지이다.
@@ -53,6 +57,8 @@ staff는 `PSAR` 지표가 NEI 18-04와 일치한다고 보았다. 다만 Licensi
 **심층방어%%t:DID%%.** staff는 Layers of Defense%%t:LAYERS_OF_DEFENSE%% 정의가 NEI 18-04 table 5-2와 일치한다고 보았다. DL3 기능은 모두 Safety-Related%%t:SR%%이고, DL2와 DL4 기능은 Non-Safety-Related with Special Treatment%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%%가 섞여 있다. DL2와 DL4는 DL3와 독립이지만, 서로 공통 계통을 포함할 수 있어 완전히 독립이 아닐 수 있다. 각 LBE%%t:LBE%%에 대해 여러 독립 Layers of Defense%%t:LAYERS_OF_DEFENSE%%가 남아 있음을 확인했고, 예외는 Layers of Defense%%t:LAYERS_OF_DEFENSE%% 가운데 하나에만 의존하는 RRS-ISPL-CN 하나이다. 이 사건이 의존하는 DL2-RR8은 기시사건에서 실패한다고 가정되는 barrier%%t:BARRIER%%이다. staff는 해당 Design Basis Event%%t:DBE%%의 Frequency-Consequence Target%%t:FC_TARGET%%과 Design Basis Accident%%t:DBA%%의 선량 기준이 충족된다는 이유로 이 기능을 심층방어%%t:DID%% 적정성 평가의 의존 기능으로 보지 않았고, 단일 특성 의존 평가를 수용했다. 프로그램 측면 심층방어%%t:DID%%는 `RG 1.253` C.5에 따라 construction permit%%t:CP%% 단계에서 제한적이어도 합리적이라고 보았으며, 다른 운전 상태와 비원자로 Structures, Systems, and Components%%t:SSC%%를 포함한 상세 평가는 OL%%t:OL%% 단계에서 한다.
 
 **IDP%%t:IDP%%.** staff는 panel이 빈도, 결과, 설계 특성을 고려했고 빈도는 낮지만 결과가 클 수 있는 사건을 적절히 LBE%%t:LBE%% 집합에 남겼다고 확인했다. 또 `OL` 신청 전에 사업자가 설계의 안전해석·위험도 평가·심층방어%%t:DID%% 적정성 승인을 위한 panel을 소집하면 30일 이내에 NRC에 알리도록 하는 허가 조건을 CP%%t:CP%%에 넣을 것을 권고했다.
+
+**예방·완화 균형(보강).** 사업자는 NAT-4770의 defense layer 평가로 risk-significant LBE%%t:LBE%%와 DBA%%t:DBA%%마다 예방·완화 Defense Line%%t:DL%% 기능을 식별했고, DL1 feature가 있는지와 risk-significant LBE%%t:LBE%%마다 Fundamental Safety Function%%t:FSF%%별 기능이 식별되는지로 균형을 대체로 확인했다. staff는 이 접근이 기시사건을 처음부터 막는 feature와 여러 DL%%t:DL%%에 걸친 기능을 모두 보장하므로 수용 가능하다고 판단했다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

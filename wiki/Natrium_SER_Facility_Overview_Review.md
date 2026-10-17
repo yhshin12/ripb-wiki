@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, overview, functional-containment, nrc-review]
 terms_pending: []
@@ -41,6 +41,18 @@ terms_pending: []
 - "also provides an overview of how the design addresses the fundamental safety functions (FSFs) of retaining radionuclides, controlling heat generation, and controlling heat removal." [SER_KU1_CP §1.3.1 p.35]
 - "Combined with mechanical pumps with inherent coastdown characteristics provided by rotating machinery" [SER_KU1_CP §1.5 p.48]
 - "a highly reliable scram system" [SER_KU1_CP §1.5 p.48]
+- "Support buildings described in PSAR chapter 1 consist of the NI e-modules and EI facilities." [SER_KU1_CP §1.3.3.1.3 p.41]
+- "The e-modules contain electrical systems and components." [SER_KU1_CP §1.3.3.1.3 p.41]
+- "As described in PSAR section 7.7, safety-significant NI electrical components are housed in the NCB substructure and are thus not contained within e-modules." [SER_KU1_CP §1.3.3.1.3 p.41]
+- "EI facilities include all the buildings on the EI, which as previously discussed, are classified as NST along with the rest of the EI SSCs." [SER_KU1_CP §1.3.3.1.3 p.41]
+- "Based on the information provided in PSAR chapter 1, as augmented by the discussion in chapter 7 clarifying the role of the e-modules, the staff determined that the preliminary information provided was sufficient to understand the fundamental design and operation of the support buildings and their role in the LMP-based safety analysis, consistent with the guidance in RG 1.253, NEI 21-07, and DANU-ISG-2022-01." [SER_KU1_CP §1.3.3.1.3 p.41]
+- "| 10 CFR 50.34(f)(1)(xii) | Perform an evaluation of alternative hydrogen control systems | Not listed in DANU-ISG-2022-01, appendix B table 4 as being generically applicable but it is listed in KU1 table 1.4-4 PSAR as being applicable. See section 7.2.4 of this SE. |" [SER_KU1_CP Table 1.8-3 p.51]
+- "Based on the design of the KU1 primary coolant system, which is arranged in a pool-type configuration with a liquid surface level to which non-condensable gases can migrate, the staff determined that" [SER_KU1_CP Table 1.8-3 p.51]
+- "| 10 CFR 50.34(f)(2)(viii) | Post-accident sampling | KU1 table 1.4-4 notes that the design is partially compliant with this item. The staff’s evaluation is in section 7.2.4 of this SE. |" [SER_KU1_CP Table 1.8-3 p.51]
+- "However, the PSAR also states in table 1.4-4 that SR barriers will be leak-testable and will be designed for leakage control and detection, and a leakage control program will be provided." [SER_KU1_CP Table 1.8-3 p.51]
+- "PSAR table 1.4-4 notes that the new emergency preparedness rule does not require these specific facilities (see SE 11.3)." [SER_KU1_CP Table 1.8-3 p.51]
+- "As stated in the QA TR, the list includes all SR and NSRST SSCs, which as discussed in staff position C.6.a.(2) of RG 1.253 includes both SR and NSRST SSCs." [SER_KU1_CP Table 1.8-3 p.51]
+- "coolant flow cannot be impeded by non-condensable gases and as such concluded that this requirement is not applicable to the design." [SER_KU1_CP Table 1.8-3 p.51]
 
 ## 해설
 **허가의 성격.** construction permit%%t:CP%%는 발급되면 건설 착수를 허가할 뿐이며, 사업자가 특정 승인을 요청하고 그것이 허가에 반영되지 않는 한 설계 특성의 안전성 승인이 아니다. 이번에는 그런 요청이 없었다. CP%%t:CP%% 신청은 건설 허가만 구하므로 설계는 기능 또는 개념 수준으로 기술될 수 있다. staff는 일정한 조건 아래 예비 설계와 해석이 발급 요건을 충족한다고 보았다. 남은 불확실성의 해소는 발급에 필요하지 않고, staff가 Commission에 권고하는 부록 A의 허가 조건은 부분적으로 CP%%t:CP%%와 operating license%%t:OL%% 사이에 성숙할 설계 영역의 정보에 staff가 접근할 수 있도록 하려는 것이다.
@@ -50,6 +62,8 @@ terms_pending: []
 **FSF%%t:FSF%%와 기능적 격납.** FSF%%t:FSF%%는 열 생성 제어, 열제거 제어, 방사성핵종 보유이며 staff는 이를 NEI 18-04와 일치한다고 보았다. `PSAR`는 `RAC`를 열제거의 고유 수단으로 적지만 staff는 열린 유로 유지에 의존하므로 피동 수단으로 본다. 기능적 격납은 단일 압력 유지 구조물일 필요가 없으며, 사업자는 barrier%%t:BARRIER%%의 적정성을 F-C Target%%t:FC_TARGET%% 충족으로 판단한다. staff는 전체 접근을 수용했으나 성능 적정성에 대한 최종 판단은 하지 않았고 OL%%t:OL%% 단계에서 확인한다. 한편 `SER` Table 1.8-3은 KU1이 기능적 격납을 쓰므로 전통적 격납 설계에만 적용되는 격리 요건(10 CFR 50.34(f)(2)(xiv))이 적용되지 않는다고 정리한다.
 
 **유사 시설과 기타.** `HALEU` 연료에 따른 부드러운 중성자 스펙트럼, 큰 음의 Doppler worth, 높은 지발중성자 분율, 노심 전체의 음의 void worth에 고유 coastdown 특성을 가진 기계식 펌프와 신뢰도 높은 scram 계통이 결합된 물리적 특성이 Licensing Modernization Project%%t:LMP%%와 결합되어 Non-Safety-Related with Special Treatment%%t:NSRST%% head access area를 경계로 쓰는 기능적 격납 개념이 가능하다. 용융염 계통은 소듐-물 반응 가능성을 없애고 `IHT`의 `IAC`를 통한 별도의 붕괴열 제거 경로를 가능하게 하며, staff는 이를 `PRISM`에 없던 중요한 심층방어(Defense-in-Depth)%%t:DID%% 붕괴열 제거 계통으로 본다. 에너지부와의 성실한 협상 문서를 근거로 CP%%t:CP%% 단계의 `NWPA` 준수가 인정되었다. 참조된 `TR`과 그 평가 위치는 `SER` Table 1.8-1에 있다.
+
+**지원 건물과 `TMI` 요건 적용성(보강).** 지원 건물은 `NI` e-module과 `EI` 시설로 이루어지며, safety-significant `NI` 전기 기기는 e-module이 아니라 `NCB` 하부구조에 있고 `EI` 건물은 다른 `EI` Structures, Systems, and Components%%t:SSC%%와 함께 NST%%t:NST%%로 분류된다. staff는 7장의 설명을 더하면 지원 건물의 예비 정보가 충분하다고 판단했다. `SER` Table 1.8-3은 10 CFR 50.34(f) 항목별 적용성을 정리하며, 대체 수소 제어 계통 평가와 사고 후 시료 채취는 `SE` 7.2.4절로 넘기고, high point venting은 비응축 기체가 모일 수 있는 액면을 가진 pool형 일차 냉각재 계통 배치에서는 냉각재 유동이 비응축 기체로 방해받지 않으므로 이 요건이 적용되지 않는다고 판단한다. 또 Safety-Related%%t:SR%% barrier는 누설 시험이 가능하게 설계되고 leakage control program이 마련되며, QA 목록은 SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%를 모두 포함한다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

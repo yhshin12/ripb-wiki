@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP, RG_1.247]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, pra, nrc-review]
 terms_pending: []
@@ -46,6 +46,27 @@ terms_pending: []
 - "The staff concludes that the PRA information described in the PSAR conforms to the guidance documents, referenced above, and that the scope, level of detail, and quality of the KU1 PRA are reasonable for the CP application. This conclusion is based on the understanding that the KU1 PRA is preliminary to support the CP application, and that the applicant is not requesting finality at this stage." [SER_KU1_CP §3.1.4 p.185]
 - "referred to hereafter as the ASME/ANS NLWR PRA standard, which is endorsed in this RG with exceptions" [RG_1.247 §B Reason for Issuance p.9]
 - "which documents the development and results of the spent fuel (SF) PRA" [SER_KU1_CP §3.1.3 p.173]
+- "While the OL stage PRA should encompass all plant modes, hazards, POSs, and radionuclide sources, some PRA elements, such as other hazards, were not completed at the CP stage." [SER_KU1_CP §3.1.3 p.159]
+- "The KU1 IE analysis focused on events that could impact the reactor core and core components within the reactor enclosure system (RES), including in-vessel storage (IVS), core assemblies transferred to the ex-vessel storage tank (EVST) during refueling outages, and radionuclide sources associated with systems directly connected to the RES during reactor operation, such as the sodium processing system (SPS) and sodium cover gas (SCG) system." [SER_KU1_CP §3.1.3 p.159]
+- "Ex-vessel fuel handling events were also identified and included in the PSAR." [SER_KU1_CP §3.1.3 p.159]
+- "The staff examined how USO used multiple data sources, such as NUREG/CR-6928 (ML070650650), and relevant non-LWR and sodium fast reactor PRAs, to ensure extensiveness, and how system-level design reviews were applied to identify plant-specific initiators." [SER_KU1_CP §3.1.3 p.159]
+- "The staff’s audit identified that the IE identification, grouping, and frequency estimation processes were conducted in a structured and traceable manner consistent with non-LWR PRA standard." [SER_KU1_CP §3.1.3 p.160]
+- "IEs were logically grouped based on similarity in mitigation requirements." [SER_KU1_CP §3.1.3 p.160]
+- "Sources of model uncertainty related to the IE analysis were identified and qualitatively characterized." [SER_KU1_CP §3.1.3 p.160]
+- "The audit focused on how each system was characterized to support the SC for essential safety functions, including reactivity control, core flow, primary sodium heat removal, and confinement." [SER_KU1_CP §3.1.3 p.164]
+- "Fault tree models reflected the plant as-designed, as-to-be-constructed, and as-to-be-operated within the limits of the preliminary design information available at this time." [SER_KU1_CP §3.1.3 p.164]
+- "Common cause failures and human errors were addressed at a preliminary level within the systems models." [SER_KU1_CP §3.1.3 p.165]
+- "The identification of human errors was limited at this stage due to incomplete information on the operation and maintenance for systems." [SER_KU1_CP §3.1.3 p.165]
+- "Mission times, component actuations, functionality, and limited associated HFEs were incorporated where applicable." [SER_KU1_CP §3.1.3 p.165]
+- "This document presents a sensitivity analysis that examines the impact of key assumptions and model elements used in the risk integration portion of the KU1 PRA." [SER_KU1_CP §3.1.3 p.175]
+- "While the preliminary nature of the KU1 design limits the ability to draw definitive conclusions regarding the sensitivity results, the staff’s examination of the sensitivity analysis found that it was useful in assessing the relative importance of key assumptions and data." [SER_KU1_CP §3.1.3 p.175]
+- "The staff confirmed that the sensitivity analysis supports ongoing development and refinement of the integrated risk model as the design progresses toward the OL stage." [SER_KU1_CP §3.1.3 p.175]
+- "Consistent with RG 1.253, the following PRA elements were not analyzed for the CP application and were therefore excluded from the KU1 PRA self-assessment: internal flood, internal fire, seismic, high wind, external flooding and other external hazards PRAs." [SER_KU1_CP §3.1.3 p.175]
+- "The self-assessment appeared to be conducted primarily as individual comparisons of PRA standard supporting requirements against documentation." [SER_KU1_CP §3.1.3 p.175]
+- "Enhanced team-based holistic evaluation of the adequacy of the PRA models and the underlying technical assessments may result in enhanced coordination on resolution plans to address identified self-assessment findings." [SER_KU1_CP §3.1.3 p.175]
+- "the self-assessment appeared to be systematic, sufficiently documented, and provided useful insights to support future refinement and verification of the PRA." [SER_KU1_CP §3.1.3 p.176]
+- "Based on its review of the PSAR and confirmation via the audit described above, the staff finds that the KU1 PRA self-assessment was conducted per RG 1.247 and RG 1.253." [SER_KU1_CP §3.1.3 p.176]
+- "The staff will review the results of the KU1 PRA peer review at the OL stage and consider them to inform its conclusions regarding PRA quality and acceptability." [SER_KU1_CP §3.1.3 p.176]
 
 | PRA 요소 | staff 판정 문장 | 출처 |
 |---|---|---|
@@ -78,6 +99,8 @@ staff는 PRA 요소 열두 개와 사용후연료 PRA를 각각 "reasonable"로 
 자체평가에 대해 staff는 일부가 PRA 전문성이 제한된 인력으로 수행되었을 수 있다고 지적했다. 또 자체평가를 유용한 초기 도구로 인정하면서도, "Met"로 평가된 요구사항이라도 PRA 적정성 판단을 자체평가에만 의존하지 않는다고 밝혔다. 사업자는 OL%%t:OL%% 단계 PRA를 위해 peer review를 하겠다고 밝혔고, PRA 형상관리 절차는 합리적으로 개발되었다고 판단되었다.
 
 staff의 결론은 PRA의 범위, 상세도, 품질이 CP%%t:CP%% 신청에 합리적이라는 것이다. 이 결론은 PRA가 예비적이고 사업자가 이 단계에서 finality를 요청하지 않는다는 이해에 근거한다. OL%%t:OL%% 단계 기대 사항은 [[Natrium_SER_PRA_OL_Expectations]]에 정리했다.
+
+**PRA 요소 보강.** 기시사건 분석은 `RES` 안의 노심과 `IVS`, 재장전 중 `EVST`로 옮긴 노심 집합체, `SPS`·`SCG`처럼 `RES`에 직접 연결된 계통의 방사성 원천에 초점을 두었고, 용기 외 핵연료 취급 사건도 포함했다. OL%%t:OL%% 단계 PRA는 모든 운전 모드, hazard, POS%%t:POS%%, 방사성 원천을 다뤄야 하지만 other hazards 같은 일부 요소는 CP%%t:CP%% 단계에서 완료되지 않았다. staff는 audit에서 기시사건 식별, 묶음, 빈도 추정이 체계적이고 추적 가능하게 수행되었다고 보았다. 계통 분석의 fault tree는 예비 설계 정보 범위 안에서 발전소를 반영하며, common cause failure와 인적 오류는 예비 수준에서 다루었고 인적 오류 식별은 운전·정비 정보가 부족해 제한되었다. risk integration 민감도 분석은 확정 결론을 내리기 어렵지만 핵심 가정과 자료의 상대적 중요도 평가에 유용했다. 자체 평가는 regulatory guide%%t:RG%% 1.253에 따라 내부 침수, 내부 화재, 지진, 강풍, 외부 침수, 기타 외부 hazard PRA를 제외했다. staff는 개별 supporting requirement 대조 위주의 수행 방식을 지적하고 팀 기반 종합 평가가 도움이 될 수 있다고 적으면서도, 자체 평가가 RG%%t:RG%% 1.247과 RG%%t:RG%% 1.253에 따라 수행되었다고 판단했다. peer review 결과는 OL%%t:OL%% 단계에서 검토한다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

@@ -69,3 +69,4 @@ NRC regulatory guide%%t:RG%%의 `§C.4`는 EPZ%%t:EPZ%%를 일부 원자력 시�
 - [[RG_1.233]]
 - [[PSAR_ch11]]
 - [[Natrium_SER_Conduct_Of_Operations_Review]]
+- [[Natrium_SER_Emergency_Preparedness_Review]]

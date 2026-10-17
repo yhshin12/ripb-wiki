@@ -31,7 +31,9 @@ units:
   status: complete
 - unit: "Chapters 1, 11, 13, Appendices A-B (facility, conduct of operations, R&D, permit conditions, exemptions)"
   status: complete
-- unit: "잔여: 1, 3-7, 11장의 미인용 하위 절(계통별 PDC·기능별 정합성 판단 등)"
+- unit: "잔여 R1: 1, 3-6, 11, 13장의 미인용 하위 절(운영 조직, 비상대비, 지진 해석, 노물리, BDBE/DBA 보강)"
+  status: complete
+- unit: "잔여 R2: 7장 계통별 PDC 정합성·programmatic special treatment 하위 절"
   status: pending
 ---
 

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, lbe, nrc-review]
 terms_pending: []
@@ -36,6 +36,22 @@ terms_pending: []
 - "DHP-LOOP-BL and SUD-LOOP-BL map to DBAs DHP-LOOP-CN and SUD-LOOP-CN, respectively, but OTH-LMAC-BL does not have an associated DBA at the CP stage." [SER_KU1_CP §3.5.1.1 p.234]
 - "Therefore, the staff finds that the AOO analysis information adequately supports the issuance of a CP pursuant to the regulations of 10 CFR 50." [SER_KU1_CP §3.5.2 p.238]
 - "a single loop of passive IAC is not sufficient to remove the limiting decay heat load as discussed in section 7.2.2.3 of the PSAR." [SER_KU1_CP §3.6.1.2 p.243]
+- "As described in PSAR section 3.6.2.1, DHS-ISTL-BL is initiated by a loss of heat removal from one intermediate sodium loop at full power." [SER_KU1_CP §3.5.1.2 p.234]
+- "The reactor scrams on high high cold pool temperature." [SER_KU1_CP §3.5.1.2 p.234]
+- "As described in PSAR section 3.6.2.2, SUD-IACA-BL occurs only during low power or shutdown operations, during which non-passive IAC is the normal means of heat removal as discussed in PSAR section 1.1.4.1." [SER_KU1_CP §3.5.1.2 p.235]
+- "The staff verified through audit that the limiting low power case analyzed demonstrates the ability of the plant to stabilize at a slightly higher temperature and slightly lower power without a reactor trip." [SER_KU1_CP §3.5.1.2 p.235]
+- "As discussed in the response to RCI-3, these events have mean frequencies greater than 1E-02 per year and are appropriately categorized as AOOs." [SER_KU1_CP §3.5.1.2 p.235]
+- "The 5th percentile frequencies are greater than 1E-02, so there is no need to develop associated DBAs." [SER_KU1_CP §3.5.1.2 p.235]
+- "| 3.6.2.1 | Loss of Heat Sink with Non-Passive IAC | DHS-ISTL-BL | Increase or Decrease in Heat Removal | Reactor core | Reactor scram on high high cold pool temperature | DL3-RC1 | IAC non-passive mode | None1 | Fuel cladding | DL3-RR2 |" [SER_KU1_CP Table 3.5-1 p.239]
+- "| 3.6.2.2 | Loss of One Train of IAC While Shutdown with Non-Passive IAC | SUD-IACA-BL | Increase or Decrease in Heat Removal | Reactor core | None | None | IAC non-passive mode | None1 | Fuel cladding | DL3-RR2 |" [SER_KU1_CP Table 3.5-1 p.239]
+- "| 3.6.4.1 | Fuel Damage While Handling an LTA or LDA Test Pin with PRC Barrier Successfully Retains Release | RFH-OERC-BL | Fuel Handling | High burnup LTA or LDA, 2.5 day decay | N/A | N/A | N/A | N/A | PRC cell barrier | DL3-RR6 |" [SER_KU1_CP Table 3.5-1 p.239]
+- "| 3.6.4.2 | Loss of Spent Fuel Pool Cooling with Cooling Restored | RFH-LSPC-BL | Fuel Handling | SFP contents | N/A | N/A | Passive heat removal in FHP | DL3-HR10 | Fuel cladding | DL3-RC2 |" [SER_KU1_CP Table 3.5-1 p.239]
+- "| 3.7.2.1 | Loss of Heat Sink with Passive IAC | DHS-ISTL-1 | Increase or Decrease in Heat Removal | Reactor core | Reactor scram on high high cold pool temperature | DL3-RC1 | IAC passive mode, PSP coastdown, PSP trip on high high primary sodium temperature, ISP trip on high high primary sodium temperature | DL4-HR1, DL3-HR1, DL3-HR2, DL3-HR3 | Fuel cladding | DL3-RR2 |" [SER_KU1_CP Table 3.6-1 p.254]
+- "| 3.7.2.6 | Intermediate Heat Exchanger Secondary-to-Primary Leak with Non-Passive IAC | IPI-IHEL-BL | Increase or Decrease in Heat Removal | Reactor core | Reactor scram on high high primary sodium level | DL3-RC1 | IAC non-passive mode, ISP trip on high high primary sodium level | None*, DL3-HR12 | Fuel cladding | DL3-RR2 |" [SER_KU1_CP Table 3.6-1 p.254]
+- "| 3.7.3.3 | SPS Leak at the Cold Trap with RAB Barrier Succesfully Retains Release | RRS-ISPL-BL | Release from Ex-Vessel Systems | SPS-I cold trap tritium inventory | N/A | N/A | N/A | N/A | None | None |" [SER_KU1_CP Table 3.6-1 p.254]
+- "| 3.7.4.4 | Fuel Handling Event Occurs While Moving Fuel Assembly in the SFP with a Single Assembly Failed and FHB Barrier Fails to Retain Release | RFH-FDSP-1 | Fuel Handling | High burnup fuel assembly, 310 day decay | N/A | N/A | N/A | N/A | None | None |" [SER_KU1_CP Table 3.6-1 p.254]
+- "| 3.7.5.1 | Core Blockage and Local Faults with Non-Passive IAC and Functional Containment Barrier Successfully Retains Release | LFF-SAO-BL | Local Fuel Fault | Reactor core | Manual reactor scram | None* | IAC non-passive mode | None* | Primary coolant boundary, ex-RES functional containment barrier, HAA barrier | DL3-RR1, DL4-RR1, DL4-RR1a |" [SER_KU1_CP Table 3.6-1 p.254]
+- "Table 3.5-1: Summary of anticipated operational occurrences from PSAR section 3.6" [SER_KU1_CP Table 3.5-1 p.239]
 
 ## 해설
 **AOO%%t:AOO%%.** 용기 외 계통 방출이나 기타 유형의 과도는 AOO%%t:AOO%%로 식별되지 않았다. 국부 연료 결함은 빈도가 1E-03/year로 지정되어 AOO%%t:AOO%% 빈도 범위 아래에 있다. 방출이 있는 AOO%%t:AOO%%는 F-C Target%%t:FC_TARGET%% 곡선 안에 머문다.
@@ -52,6 +68,8 @@ staff가 지적한 주된 이탈은 5th percentile 빈도가 1E-02보다 낮아 
 - LFF-SAO-BL은 커버가스(cover gas)%%t:COVER_GAS%% 지시에 따른 운전원 수동 정지에 의존하며, 운전원 조치는 OL%%t:OL%% 신청 전에 더 개발되어야 한다.
 
 staff는 DBE%%t:DBE%% 결과가 10 CFR 50.34를 충족하고 NEI 18-04와 일치한다고 결론지었다.
+
+**열제거 증감 AOO%%t:AOO%%와 사건별 기능 표(보강).** DHS-ISTL-BL은 전출력에서 intermediate sodium loop 하나의 열제거 상실로 시작해 high high cold pool temperature로 scram한다. SUD-IACA-BL은 저출력·정지 중에만 일어나며, staff는 audit에서 제한 저출력 경우가 원자로 트립 없이 약간 높은 온도와 약간 낮은 출력에서 안정됨을 확인했다. 두 사건은 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류되고, 5th percentile 빈도도 1E-02보다 커서 DBA%%t:DBA%%가 필요 없다. `SER` Table 3.5-1과 Table 3.6-1은 각각 `PSAR`의 AOO%%t:AOO%%와 DBE%%t:DBE%%를 요약하며, 인용한 행은 사건마다 credit한 기능과 그 기능 `ID`를 적는다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

@@ -166,6 +166,7 @@
 - [[Natrium_SER_Conduct_Of_Operations_Review]] — NRC staff는 조직, 인간공학, 비상계획, 기술지침서, 직무적합성과 보안에 관한 `PSAR` 정보가 construction permit 발급에 관련된 규제 요건을 충족한다고 결론지었고(조직은 "relevant portions"), 항공기 충돌 평가는 10 CFR 50.150(a)·(b)를 충족한다고 보았다.
 - [[Natrium_SER_Core_Fuel_Design_Review]] — NRC staff는 연료 인증 `TR` NAT-2806-A의 L&C가 construction permit 단계에서 적용되지 않거나 적절히 다루어졌다고 보고 참조 포함을 수용했다.
 - [[Natrium_SER_DBHL_Review]] — NRC staff는 Kemmerer Unit 1이 정한 design-basis hazard level 집합이 `RG 1.233`과 일치한다고 판단했다.
+- [[Natrium_SER_Emergency_Preparedness_Review]] — NRC staff는 `PSAR` 11.3절의 예비 비상대비 계획을 검토했다.
 - [[Natrium_SER_Event_Source_Terms_Review]] — NRC staff는 `PSAR` Table 3.2-1~3.2-18의 선원항(source term)을 네 사건군(용기 내 출력운전, 용기 내 연료취급, 용기 외 연료취급, 용기 외 계통 방출)으로 나누어 검토하고, 각 군의 선원항이 사건을 합리적으로 대표한다고 판단했다.
 - [[Natrium_SER_Exemptions_Review]] — `SER` 부록 B는 재정 자격 면제(14장에서 평가)를 제외한 신청서의 면제 요청과 staff가 직접 식별한 면제를 평가한다.
 - [[Natrium_SER_Facility_Overview_Review]] — `SER` 1장은 construction permit의 성격, 남은 불확실성과 허가 조건, 시설 개요에 대한 staff 판단을 정리한다.
@@ -177,6 +178,7 @@
 - [[Natrium_SER_MST_Methodology_Review]] — NRC staff는 Kemmerer Unit 1 `PSAR`이 승인된 방법론 NAT-9392-A로 Mechanistic Source Term을 만들었고, construction permit 단계에서 MST 해석이 적절하다고 판단했다.
 - [[Natrium_SER_Major_Accident_Review]] — 사업자는 `RG 1.253` Option 1에 따라 Design Basis Accident 결과로 주요사고(Major Accident)를 정하고, 용기 내 DBA로 범위를 좁혀 core blockage and local faults DBA를 선정했다.
 - [[Natrium_SER_Nuclear_Heat_Supply_Review]] — NRC staff는 노심 계통(`RCC`), 원자로 격납 계통(`RES`), 1차 열수송 계통(`PHT`), 중간 열수송 계통(`IHT`) 각각에 대해 `PSAR` 정보가 construction permit 발급에 충분하다고 결론지었다.
+- [[Natrium_SER_Operating_Organization_Review]] — NRC staff는 `PSAR` 11.1·11.2절의 조직·인력·인간공학 정보를 검토해, 원자력 안전 책임 임원이 식별되었고, 보고 체계가 정상 운전 압력으로부터의 독립성을 합리적으로 제공하며, 핵심 인원의 학력·경력 요건이 regulatory guide 1.8 지침과 일치하고, 인간공학 조직 책임이 명확하다고 판단했다.
 - [[Natrium_SER_PDC_SR_NSRST_Review]] — NRC staff는 principal design criteria `TR`(NATD-LIC-RPRT-0002-A)의 L&C 두 개가 다루어졌고 Kemmerer Unit 1 `PSAR`의 PDC 서술이 충분하다고 판단했다.
 - [[Natrium_SER_PRA_OL_Expectations]] — NRC staff는 `RG 1.247`과 `RG 1.253`에 따라 사업자가 operating license를 신청할 경우 수행하기를 기대하는 PRA 과제 열한 가지를 나열했다.
 - [[Natrium_SER_PRA_Review]] — NRC staff는 `RG 1.253` Appendix A와 `RG 1.247`의 해당 입장을 적용해 Kemmerer Unit 1의 construction permit 단계 PRA를 검토했다.

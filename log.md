@@ -213,3 +213,8 @@
 - 모순 C62–C66 기록, C6·C7·C9·C12·C13·C27·C44·C61 보강(disputed 판정은 보류)
 - 기존 노트 32개·새 노트 7개 수정, 역링크 64개 추가
 - 원문 대조 지적 28건 수정; lint 0, 인용 검증 0
+
+## [2026-10-17] ingest | SER_KU1_CP 잔여 R1(1, 3-6, 11, 13장 미인용 하위 절)
+- 새 노트 2(Natrium_SER_Operating_Organization_Review, Natrium_SER_Emergency_Preparedness_Review), 고친 노트 12
+- coverage 제외 9규칙(장 도입, 규제 목록, 결론 반복, 부지 특성, 비공개 표, 표 중복)
+- 원문 대조 지적 28건 수정; lint 0, 인용 검증 0; 미정 용어 0

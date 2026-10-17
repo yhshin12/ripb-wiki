@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-17
 term:
 tags: [natrium, research-development, permit-conditions, nrc-review]
 terms_pending: []
@@ -38,6 +38,11 @@ terms_pending: []
 - "By December 31, 2026, USO shall submit a report with a complete degradation mechanism assessment (DMA) for the reliability and integrity management program (RIM) program." [SER_KU1_CP App. A p.733]
 - "This complete DMA may be based on preliminary design information but shall include RIM screening criteria and a technical basis for all degradation mechanisms that could affect safety-significant SSCs, including those exposed to a molten salt environment." [SER_KU1_CP App. A p.733]
 - "reactions. These reports shall include activities to characterize the sodium-salt reaction, mature and develop the SHX design, and develop appropriate design features and controls needed to prevent and mitigate sodium-salt reactions." [SER_KU1_CP App. A p.733]
+- "During audit discussions, the applicant described how the compressive assemblies enable the core to be designed such that core assemblies can be removed without excessive force during shut down, but ensure core lock-up (i.e., contact between core assemblies), as the core is brought up in power." [SER_KU1_CP §13.1.1.5 p.719]
+- "The safety questions associated with the compressive assemblies relate to ensuring they can achieve the capability and reliability needed in a sodium environment." [SER_KU1_CP §13.1.1.5 p.719]
+- "The R&D activities defined in PSAR section 13.2.4 for the compressive assemblies are to develop specific requirements and perform testing in a relevant environment." [SER_KU1_CP §13.1.1.5 p.719]
+- "The PSAR states these R&D activities will be completed prior to the completion of construction." [SER_KU1_CP §13.1.1.5 p.719]
+- "the staff determined that the R&D activities are consistent with the requirements of 10 CFR 50.34(a)(8) and 10 CFR 50.35(a)(3)." [SER_KU1_CP §13.1.1.5 p.719]
 
 ## 해설
 **연구개발.** 10 CFR 50.34(a)(8)은 construction permit%%t:CP%% 신청자가 설계 적정성 확인에 연구개발이 필요한 SSC%%t:SSC%%를 식별하도록 요구한다. 사업자는 기술 성숙 계획으로 연구개발을 이끈다. staff는 사업자가 해당 SSC%%t:SSC%%와 필요한 활동, 그리고 그 활동이 건설 완료 전 안전 문제 해소를 지원함을 식별했다고 보아 이 요건을 충족한다고 판단했다. 10 CFR 50.43(e)는 CP%%t:CP%% 신청에는 적용되지 않지만, operating license%%t:OL%% 단계의 그 요건 충족은 일부 연구개발 활동에 달려 있다. 항목별 요점은 다음과 같다.
@@ -57,6 +62,8 @@ staff는 여러 항목의 범위가 넓어 10 CFR 50.35(b)에 따른 허가 조�
 - 소듐-염 열교환기와 소듐-염 반응 연구개발에 관한 연례 보고(첫 보고는 December 31, 2026까지).
 - `RIM` 대상 SSC%%t:SSC%%의 재료 성능 연구개발에 관한 연례 보고(첫 보고 같은 날짜까지).
 - 같은 날짜까지 `RIM`의 완전한 열화 기제 평가 보고서 제출. 예비 설계 정보에 근거할 수 있으나 용융염 환경에 노출된 SSC%%t:SSC%%를 포함해 safety-significant SSC%%t:SSC%%에 영향을 줄 수 있는 모든 열화 기제의 기술적 근거를 담아야 한다.
+
+**compressive assembly R&D.** 사업자는 audit 논의에서 compressive assembly가 정지 중에는 과도한 힘 없이 노심 집합체를 꺼낼 수 있게 하면서, 출력이 오를 때는 core lock-up을 보장한다고 설명했다. 안전 문제는 소듐 환경에서 필요한 capability와 reliability를 얻는 것이며, `PSAR` 13.2.4절의 R&D(구체적 요건 개발과 관련 환경 시험)는 건설 완료 전에 끝난다. staff는 이 R&D가 10 CFR 50.34(a)(8)와 50.35(a)(3)에 부합한다고 판단했다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

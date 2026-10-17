@@ -111,3 +111,4 @@ Emergency Response Organization%%t:ERO%%과 인원 배치는 가정한 비상 �
 - [[Natrium_Project_Organization]]
 - [[PSAR_ch11]]
 - [[Natrium_SER_Conduct_Of_Operations_Review]]
+- [[Natrium_SER_Emergency_Preparedness_Review]]
