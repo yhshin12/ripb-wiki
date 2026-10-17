@@ -212,3 +212,4 @@ principal design criteria%%t:PDC%% 2와 4에 따라 safety-significant 부분은
 - [[Natrium_SR_Functions_Heat_Removal]]
 - [[Natrium_IC_Systems]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_PDC_Conformance]]

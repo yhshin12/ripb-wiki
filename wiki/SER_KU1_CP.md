@@ -15,32 +15,35 @@ build:
     -->, image_output=external, image_format=png, content_safety_off=off-page)
   cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
   missing_pct: 0.32
-ingest: in_progress
+ingest: complete
 units:
-- unit: "§3.2-§3.4 (MST, LBE 평가 방법론, LBE 요약)"
+- unit: §3.2-§3.4 (MST, LBE 평가 방법론, LBE 요약)
   status: complete
-- unit: "§3.1 (PRA)"
+- unit: §3.1 (PRA)
   status: complete
-- unit: "§3.5-§3.13 (AOO, DBE, BDBE, DBA, 10 CFR 50.155, fuel, nuclear, T-H, criticality)"
+- unit: §3.5-§3.13 (AOO, DBE, BDBE, DBA, 10 CFR 50.155, fuel, nuclear, T-H, criticality)
   status: complete
-- unit: "Chapter 4 (plant risk, DID, IDP)"
+- unit: Chapter 4 (plant risk, DID, IDP)
   status: complete
-- unit: "Chapters 5-6 (SSC classification, PDC, SR/NSRST, DBHL, reliability, special treatment, design)"
+- unit: Chapters 5-6 (SSC classification, PDC, SR/NSRST, DBHL, reliability, special
+    treatment, design)
   status: complete
-- unit: "Chapter 7 (system-level reviews: NHS, reactor auxiliary, fuel handling, radwaste, ancillary, I&C, electrical, buildings)"
+- unit: 'Chapter 7 (system-level reviews: NHS, reactor auxiliary, fuel handling, radwaste,
+    ancillary, I&C, electrical, buildings)'
   status: complete
-- unit: "Chapters 1, 11, 13, Appendices A-B (facility, conduct of operations, R&D, permit conditions, exemptions)"
+- unit: Chapters 1, 11, 13, Appendices A-B (facility, conduct of operations, R&D,
+    permit conditions, exemptions)
   status: complete
-- unit: "잔여 R1: 1, 3-6, 11, 13장의 미인용 하위 절(운영 조직, 비상대비, 지진 해석, 노물리, BDBE/DBA 보강)"
+- unit: '잔여 R1: 1, 3-6, 11, 13장의 미인용 하위 절(운영 조직, 비상대비, 지진 해석, 노물리, BDBE/DBA 보강)'
   status: complete
-- unit: "잔여 R2: 7장 계통별 PDC 정합성·programmatic special treatment 하위 절"
-  status: pending
+- unit: '잔여 R2: 7장 계통별 PDC 정합성·programmatic special treatment 하위 절'
+  status: complete
 ---
 
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)
 
 > [!abstract] 요약
-> (인제스트 완료 시 작성)
+> `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다. vault는 1, 3–7, 11, 13장과 부록 A·B를 `Natrium_SER_` 노트 30개로 옮겼고, 7장의 계통별 PDC 정합성 판단은 계통군별 노트 다섯 개로 정리했다. 2, 8–10, 12, 14장은 대응 `PSAR` 장이 vault에 없어 제외했고, 장 도입, 규제 목록, 결론 반복, 비공개 표 같은 절은 사유와 함께 coverage에서 제외했다.
 
 ## 서지
 - 키: `SER_KU1_CP`
@@ -83,3 +86,10 @@ units:
 - [[Natrium_SER_Conduct_Of_Operations_Review]]
 - [[Natrium_SER_RD_And_Permit_Conditions]]
 - [[Natrium_SER_Exemptions_Review]]
+- [[Natrium_SER_Operating_Organization_Review]]
+- [[Natrium_SER_Emergency_Preparedness_Review]]
+- [[Natrium_SER_NHS_PDC_Conformance]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]
+- [[Natrium_SER_Fuel_Handling_Ancillary_PDC_Conformance]]
+- [[Natrium_SER_IC_PDC_Conformance]]
+- [[Natrium_SER_Electrical_Buildings_PDC_Conformance]]

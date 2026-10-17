@@ -190,3 +190,4 @@ principal design criteria%%t:PDC%% 2에 따라 `RCC`는 `RXB` 하부구조 안�
 - [[Natrium_NRC_Review_Core_Design]]
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_NHS_PDC_Conformance]]

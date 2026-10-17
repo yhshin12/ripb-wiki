@@ -1,0 +1,105 @@
+---
+type: natrium
+aliases: []
+sources: [SER_KU1_CP]
+status: checked
+verified: 2026-10-17
+term:
+tags: [natrium, pdc, nrc-review, electrical, structures]
+terms_pending: []
+---
+# NRC의 전력 계통·건물 PDC 정합성 평가 (NRC Evaluation of NI Electrical Power Systems and Buildings against the PDC)
+
+> [!abstract] 요약
+> `SER` 7.7.1절과 7.8절은 `NI` 보조 전력(`NUP`)·직류 전력(`NDC`) 계통과 원자로 건물(`RXB`), 핵연료 취급 건물(`FHB`), 원자로 보조 건물(`RAB`), `NI` 제어 건물(`NCB`)에 대해 적용 principal design criteria%%t:PDC%%와 지원 안전 기능의 예비 설계 정합성을 판단한다. staff는 인용된 PDC%%t:PDC%%에 대해 예비 설계가 정합한다고 판단했고, 관련 PDC%%t:PDC%%가 없는 `RXB` 상부구조는 construction permit%%t:CP%% 단계에서 수용 가능하다고 보았다. `RXB`의 `RAC` 성능 지원과 주기 검사·시험 지원, `RAB`의 지진 설계 적정성과 `SPS` cell barrier 성능 근거는 operating license 단계에서 확인한다.
+
+## 원문 사실
+- "PSAR section 7.7.1.2 states that the safety-significant portions of the NDC and NUP are located within and protected by the reinforced concrete NCB substructure, which is designed to withstand the effects of applicable natural phenomena without the loss of capability to perform safety-significant functions." [SER_KU1_CP §7.7.1.2 p.587]
+- "PSAR section 7.7.1.2 states that the NSRST components of the NDC and NUP are classified as SCN1 for seismic design, analysis, and qualification." [SER_KU1_CP §7.7.1.2 p.587]
+- "The staff determined that the preliminary NUP and NDC design is consistent with PDC 2 because the NSRST components of the NUP and NDC are located in the NCB substructure that is designed to withstand the effects of applicable natural phenomena without the loss of structural integrity and the NSRST components are classified as SCN1." [SER_KU1_CP §7.7.1.2 p.587]
+- "PSAR section 7.7.1.2 states that NUP and NDC NSRST components are designed and located to minimize the probability and effect of fires through the selection of non-combustible and non-fire sustaining materials to the extent practical." [SER_KU1_CP §7.7.1.3 p.587]
+- "PSAR section 7.5.2.3 states that a fire protection program addressing those SSCs that could affect safety, or the protection of licensed radioactive materials will be included in the OL application." [SER_KU1_CP §7.7.1.3 p.587]
+- "The staff determined that the preliminary NUP and NDC design is consistent with" [SER_KU1_CP §7.7.1.3 p.587]
+- "PSAR section 7.7.1.2 states that the NUP and NDC NSRST components are designed to be compatible with the environmental conditions associated with normal operations, maintenance, testing, anticipated operational occurrences, and postulated accidents." [SER_KU1_CP §7.7.1.4 p.587]
+- "These systems and components are located in the NCB substructure and are protected from dynamic effects of fluid, pipe whipping, discharge fluids, external hazards, including missiles." [SER_KU1_CP §7.7.1.4 p.587]
+- "The staff determined that the preliminary design of the NUP and NDC NSRST components is consistent with PDC 4 because the electrical systems and components are located in the NCB substructure and are protected from external hazards, including missiles and discharging fluids." [SER_KU1_CP §7.7.1.4 p.588]
+- "PSAR section 7.7.1.2 states that NSRST electrical systems are designed with (1) the capability to periodically test the operability and functional performance of the components of the systems and (2) the operability of the systems as a whole" [SER_KU1_CP §7.7.1.6 p.588]
+- "The staff determined that the preliminary design of the NSRST NUP and NDC is consistent with PDC 18 because the systems have testing capability." [SER_KU1_CP §7.7.1.6 p.588]
+- "The NUP and NDC provide power to support the following NSRST safety functions, as shown in PSAR table 5.2-4:" [SER_KU1_CP §7.7.1.7 p.588]
+- "DL5-PAM1 – Post-Accident Monitoring" [SER_KU1_CP §7.7.1.7 p.589]
+- "The staff determined that the preliminary designs of the NUP and NDC are consistent with the associated safety functions, based on the selected codes and standards discussed under PDC 1 and their alignment with the requirements of PDC 17 and 18." [SER_KU1_CP §7.7.1.7 p.589]
+- "Programmatic special treatments applied to the NUP and NDC are summarized in PSAR section 7.7.1.4 and include the QAP, D-RAP, EQ program, and PITAP." [SER_KU1_CP §7.7.1.8 p.589]
+- "Because the NUP and NDC contain NSRST SSCs, the staff determined that these programs are thus appropriate to apply to the NUP and NDC." [SER_KU1_CP §7.7.1.8 p.589]
+- "PSAR section 7.8.1.1.2 states that RXB substructure is designed to withstand natural phenomena for the protection of SR and NSRST SSCs to perform their safety-significant functions. The seismic classification of the RXB substructure is SCS1." [SER_KU1_CP §7.8.1.1.1 p.591]
+- "The loads and load combinations used for the design include loads for construction, normal plant start-up, operations, shutdown, and design basis accidents." [SER_KU1_CP §7.8.1.1.1 p.591]
+- "Based on the evaluation in SE section 6.4.1.2.1 and the other information noted above, the staff determined that the preliminary design information for the RXB substructure is consistent with PDC 1, 2, and 4." [SER_KU1_CP §7.8.1.1.1 p.592]
+- "PSAR section 7.8.1.1.2 states that the RXB substructure is designed with plant features that minimize the probability and effect of fires and explosions by the use of low combustible materials and physical separation." [SER_KU1_CP §7.8.1.1.2 p.592]
+- "Based on review of the information in PSAR section 7.8.1.1.2 and the evaluation in SE sections 7.5.2 and 8.3, the staff determined the preliminary RXB substructure design is consistent with PDC 3." [SER_KU1_CP §7.8.1.1.2 p.592]
+- "The RXB substructure reactor cavity walls form a portion of the RAC inlet air downcomer. The walls of the RXB substructure below the operating deck are part of the air plenum for the RAC." [SER_KU1_CP §7.8.1.1.4 p.592]
+- "The staff determined that the preliminary RXB substructure design is consistent with PDC 35 because it supports the operation of the RAC to dissipate the necessary heat during LBEs." [SER_KU1_CP §7.8.1.1.4 p.592]
+- "The staff will confirm that the final design of the RXB substructure supports adequate RAC performance at the OL stage." [SER_KU1_CP §7.8.1.1.4 p.592]
+- "PSAR section 7.8.1.1.2 states that the RXB substructure is designed to allow for access for the performance of MANDE activities for the RAC as a part of the RIM Program and to permit inspections of portions of the RXB that provide support for the RAC and form part of the RAC air flow path." [SER_KU1_CP §7.8.1.1.5 p.593]
+- "The staff determined that the preliminary RXB substructure design is consistent with PDC 36 and 37 because it allows for periodic inspections and testing to ensure the system’s integrity and capability to perform its SR function." [SER_KU1_CP §7.8.1.1.5 p.593]
+- "The staff will confirm that the final design of the RXB substructure supports periodic inspections and testing of RAC at the OL stage." [SER_KU1_CP §7.8.1.1.5 p.593]
+- "PSAR section 7.8.1.1.2 states that the RXB substructure is designed to structurally support and protect the RES and RAC such that the geometry for passive heat removal from the reactor core is maintained during DBAs." [SER_KU1_CP §7.8.1.1.6 p.593]
+- "the staff determined that the preliminary design of the RXB substructure is configured to structurally protect the geometry for passive heat removal and is thus consistent with PDC 81." [SER_KU1_CP §7.8.1.1.6 p.593]
+- "PSAR section 7.8.1.1.2 states the HAA and RAC enclosures are accessible for inspection and surveillance via removable access plugs on the ground floor. The cylindrical reactor cavity is accessible by remotely operated inspection equipment." [SER_KU1_CP §7.8.1.1.7 p.593]
+- "Based on these abilities to inspect key areas, the staff determined that the preliminary RXB substructure design is consistent with PDC 82." [SER_KU1_CP §7.8.1.1.7 p.593]
+- "PSAR section 7.8.1.1.4 states that the identification of special treatment for the SR RXB substructure is preliminary and is based on its safety classification (described in PSAR section 6.3) and construction codes and standards selected for design and construction (discussed in PSAR 6.4.3.2.1)." [SER_KU1_CP §7.8.1.1.9 p.594]
+- "The programmatic special treatments applied to the RXB include QAP, D-RAP and PITAP." [SER_KU1_CP §7.8.1.1.9 p.594]
+- "Because the RXB contains SR and NSRST SSCs, the staff determined that these programs are thus applicable to the RXB." [SER_KU1_CP §7.8.1.1.9 p.594]
+- "USO classified the RXB superstructure as NST because it does not perform safety-significant PSFs." [SER_KU1_CP §7.8.1.1.10 p.594]
+- "There are no PDC associated with the design of NST structures." [SER_KU1_CP §7.8.1.1.10 p.594]
+- "PSAR section 6.1.3 discusses the design requirements for NST structures for the prevention of seismic interaction at the design basis ground motion level and stated that the NST SSCs will be designed in accordance with ASCE 7-16 applying response parameters consistent with ASCE 43-19 Limit Sate B." [SER_KU1_CP §7.8.1.1.10 p.594]
+- "and the plans for a seismic PRA to further inform the structural design at the OL stage, the staff determined that the preliminary design information for the RXB superstructure is acceptable at the CP stage." [SER_KU1_CP §7.8.1.1.10 p.595]
+- "PSAR section 7.8.2 states that the FHB substructure and superstructure are designed with plant features that minimize the probability and effect of fires and explosions including the use of noncombustible or fire-resistive materials." [SER_KU1_CP §7.8.2.1.2 p.598]
+- "Based on review of the information in PSAR section 7.8.2 and the evaluation in SE sections 7.5.2 and 8.3, the staff determined the preliminary FHB substructure design is consistent with PDC 3." [SER_KU1_CP §7.8.2.1.2 p.598]
+- "PSAR section 7.8.2.2.2 states that the FHB superstructure is designed as an enveloping barrier to support maintaining a negative pressure for radionuclide retention." [SER_KU1_CP §7.8.2.1.3 p.598]
+- "the staff determined that the preliminary design information for the FHB superstructure is consistent with PDC 16." [SER_KU1_CP §7.8.2.1.3 p.598]
+- "The FHB substructure is designed to protect SR and NSRST SSCs from the effects of design-basis external hazards and provides the load path for structural support for SR and NSRST SSCs." [SER_KU1_CP §7.8.2.1.4 p.598]
+- "The FHB superstructure supports NSRST DL4-RR7 function by maintaining a slightly negative pressure as part of the enveloping barrier to reduce the amount of radionuclides escaping for fuel drop events." [SER_KU1_CP §7.8.2.1.4 p.599]
+- "The FHB superstructure also provides the load path for temporary structural support for the EVHM as it performs its SR PSFs." [SER_KU1_CP §7.8.2.1.4 p.599]
+- "the staff determined that the preliminary design of the FHB substructure and superstructure are consistent with the identified safety-significant functions." [SER_KU1_CP §7.8.2.1.4 p.599]
+- "These special treatments include the QAP, D-RAP, and PITAP." [SER_KU1_CP §7.8.2.1.5 p.599]
+- "Because the FHB contains SR and NSRST SSCs, and the staff determined that these programs are thus appropriate to apply to FHB." [SER_KU1_CP §7.8.2.1.5 p.599]
+- "USO states that the NSRST RAB superstructure and substructure are required to meet PDC 2 and PDC 4." [SER_KU1_CP §7.8.3.1.1 p.600]
+- "the adequacy of the seismic design will be confirmed or adjusted at the OL to meet required performance targets based on the results of the SPRA" [SER_KU1_CP §7.8.3.1.1 p.600]
+- "the staff determined that the preliminary design information for the RAB substructure and superstructure are consistent with PDC 1, 2, and 4." [SER_KU1_CP §7.8.3.1.1 p.600]
+- "PSAR section 7.8.3.1.2 states that the RAB substructure and superstructure are designed with plant features that minimize the probability and effect of fires and explosions including the use of noncombustible or fire-resistive materials." [SER_KU1_CP §7.8.3.1.2 p.601]
+- "Based on review of the information in PSAR section 7.8.3.1.2 and the evaluation in SE sections 7.5.2 and 8.3, the staff determined the preliminary RAB substructure design is consistent with PDC 3." [SER_KU1_CP §7.8.3.1.2 p.601]
+- "PSAR section 7.8.3.12 states that the RAB substructure SPS cells are designed as enveloping boundary for functional containment for radionuclide retention." [SER_KU1_CP §7.8.3.1.3 p.601]
+- "the staff determined that the preliminary design information for the RAB substructure is consistent with PDC 16 and further information can reasonably be left for later consideration." [SER_KU1_CP §7.8.3.1.3 p.601]
+- "Additionally, as noted in SE sections 3.2.1.4 and 5.1, additional design information to support the bases for the nominal and degraded performance of the SPS cell barrier used in the source term analysis is expected to be provided at the OL stage." [SER_KU1_CP §7.8.3.1.3 p.601]
+- "DL4-RR3 requires that the RAB substructure provides an enveloping boundary for radionuclide retention in the SPS cells. The preliminary design includes limited design information on the SPS cell enclosures." [SER_KU1_CP §7.8.3.1.4 p.601]
+- "the staff determined that the preliminary design information for DL4-RR3 is sufficient at the CP stage." [SER_KU1_CP §7.8.3.1.4 p.601]
+- "the staff determined that the preliminary design of the RAB is consistent with the identified safety-significant functions for external hazard protection and load path for NSRST SSCs." [SER_KU1_CP §7.8.3.1.4 p.602]
+- "These special treatments include the QAP, D-RAP, and PITAP." [SER_KU1_CP §7.8.3.1.5 p.602]
+- "Because the RAB contains NSRST SSCs, the staff determined that these programs are thus appropriate to apply to RAB." [SER_KU1_CP §7.8.3.1.5 p.602]
+- "PSAR section 7.8.4 states that the NCB substructure and superstructure are designed with plant features that minimize the probability and effect of fires and explosions including the use of noncombustible or fire-resistive materials." [SER_KU1_CP §7.8.4.1.2 p.604]
+- "Based on review of the information in PSAR section 7.8.4 and the evaluation in SE sections 7.5.2 and 8.3, the staff determined the preliminary NCB substructure design is consistent with PDC 3." [SER_KU1_CP §7.8.4.1.2 p.604]
+- "PSAR section 7.8.4.1.2 states that the NCB substructure includes the RSC that contains instrumentation and controls for monitoring of the plant if the MCR is evacuated." [SER_KU1_CP §7.8.4.1.3 p.604]
+- "PSAR section 7.8.4.2.2 identifies that the NCB superstructure provides radiation and external hazards protection for the MCR." [SER_KU1_CP §7.8.4.1.3 p.604]
+- "the staff determined that the preliminary design information for the NCB substructure and superstructure is consistent with PDC." [SER_KU1_CP §7.8.4.1.3 p.604]
+- "The NCB substructure supports the following safety-significant functions:" [SER_KU1_CP §7.8.4.1.4 p.604]
+- "the staff determined that the preliminary design of the NCB substructure and superstructure are consistent with the identified safety-significant functions." [SER_KU1_CP §7.8.4.1.4 p.604]
+- "Programmatic special treatments applied to the NCB substructure and superstructure are summarized in PSAR sections 7.8.4.1.4 and 7.8.4.2.4 respectively. These special treatments include the QAP, D-RAP, and PITAP." [SER_KU1_CP §7.8.4.1.5 p.605]
+- "Because the NCB contains SR and NSRST SSCs, and the staff determined that these programs are thus appropriate to apply to NCB." [SER_KU1_CP §7.8.4.1.5 p.605]
+- "PDC 3 due to the use of low combustible materials and the planned fire protection program." [SER_KU1_CP §7.7.1.4 p.587]
+- "the superstructure is designed to prevent interactions or adverse impacts on SR SSCs" [SER_KU1_CP §7.8.1.1.10 p.594]
+
+## 해설
+**`NUP`와 `NDC`.** `NUP`와 `NDC`의 Non-Safety-Related with Special Treatment%%t:NSRST%% 구성품은 철근콘크리트 `NCB` 하부구조 안에 있고 SCN1으로 분류되며, 정상 운전부터 가상 사고까지의 환경 조건과 양립하도록 설계된다. NSRST%%t:NSRST%% 전력 계통은 구성품의 operability와 기능 성능을 주기적으로 시험할 수 있게 설계된다. staff는 PDC%%t:PDC%% 2, 4, 18과 이 계통이 전력을 공급하는 NSRST%%t:NSRST%% 안전 기능에 대해 예비 설계가 정합한다고 판단했고, PDC%%t:PDC%% 3에 대해서는 저가연성 재료 사용과 계획된 fire protection program을 근거로 들었다. fire protection program은 operating license%%t:OL%% 신청에 포함될 예정이다.
+
+**원자로 건물(`RXB`).** Safety-Related%%t:SR%% `RXB` 하부구조는 SCS1로 분류되고 건설부터 설계기준사고까지의 하중과 하중 조합으로 설계된다. 하부구조의 reactor cavity 벽과 operating deck 아래 벽은 `RAC` 공기 유로의 일부이며, 하부구조는 설계기준사고 동안 피동 열제거 형상이 유지되도록 `RES`와 `RAC`를 지지·보호한다. `HAA`와 `RAC` enclosure는 탈착식 access plug로, 원통형 reactor cavity는 원격 검사 장비로 점검할 수 있다. 최종 설계가 `RAC` 성능과 `RAC` 주기 검사·시험을 지원하는지는 OL%%t:OL%% 단계에서 확인한다. `RXB` 상부구조는 safety-significant PRA Safety Function%%t:PSF%%를 수행하지 않아 Non-Safety-Related with No Special Treatment%%t:NST%%이고 관련 PDC%%t:PDC%%가 없지만, SR%%t:SR%% Structures, Systems, and Components%%t:SSC%%에 대한 상호작용이나 악영향을 막도록 `ASCE` 7-16과 `ASCE` 43-19를 기반으로 설계되며, staff는 OL%%t:OL%% 단계의 지진 PRA로 구조 설계를 보완할 계획 등을 근거로 CP%%t:CP%% 단계에서 수용 가능하다고 보았다.
+
+**`FHB`, `RAB`, `NCB`.** `PSAR`은 세 건물의 하부구조와 상부구조에 불연성 또는 내화성 재료를 쓴다고 기술하며, staff는 세 건물의 하부구조 설계가 PDC%%t:PDC%% 3과 정합한다고 판단했다. `FHB` 상부구조는 방사성핵종 보유를 위해 부압을 유지하는 enveloping barrier%%t:BARRIER%%로 설계되어 PDC%%t:PDC%% 16과 `DL4-RR7`을 지원한다. NSRST%%t:NSRST%% `RAB`는 PDC%%t:PDC%% 2와 4를 충족해야 하고 지진 설계의 적정성은 `SPRA` 결과에 따라 OL%%t:OL%% 단계에서 확인되거나 조정되며, `RAB` 하부구조의 `SPS` cell은 enveloping boundary(`DL4-RR3`)이고 그 nominal·degraded 성능 근거는 OL%%t:OL%% 단계에서 제출될 것으로 예상된다. `NCB` 하부구조는 주제어실 대피 시 감시용 계측·제어를 갖춘 `RSC`를 포함하고 상부구조는 주제어실에 방사선과 외부 hazard 방호를 제공하며, `SER`의 주제어실 관련 PDC%%t:PDC%% 판단 문장은 원문에서 "consistent with PDC%%t:PDC%%."로 끝난다.
+
+## 관련 문서
+- [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_SER_PDC_SR_NSRST_Review]]
+- [[Natrium_System_NI_Auxiliary_Electrical]]
+- [[Natrium_Building_Reactor]]
+- [[Natrium_Building_Fuel_Handling]]
+- [[Natrium_Building_Reactor_Auxiliary]]
+- [[Natrium_Building_NI_Control]]
+- [[SER_KU1_CP]]

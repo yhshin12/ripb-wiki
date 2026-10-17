@@ -423,3 +423,4 @@ intermediate 커버가스(cover gas)%%t:COVER_GAS%% 계통은 Reactor Auxiliary 
 - [[PSAR_ch07]]
 - [[Natrium_SER_Event_Source_Terms_Review]]
 - [[Natrium_SER_Reactor_Auxiliary_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]

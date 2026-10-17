@@ -36,7 +36,9 @@
     {"heading": "^1\\.8 Tables$", "reason": "Tables 1.8-1 and 1.8-2 list topical reports; Table 1.8-3 rows are cited under Table 1.8-3"},
     {"heading": "^Table 3\\.11-1", "reason": "KU1 values in the comparison table are withheld"},
     {"heading": "^Table 6\\.1-1", "reason": "table restates the SRDC of PSAR tables 5.2-1 to 5.2-3 and the SE sections that evaluate them"},
-    {"heading": "^PRA Element 5 - Systems Analysis$", "reason": "unnumbered subsection of 3.1.3; its body (p.164-165) is cited as §3.1.3"}
+    {"heading": "^PRA Element 5 - Systems Analysis$", "reason": "unnumbered subsection of 3.1.3; its body (p.164-165) is cited as §3.1.3"},
+    {"heading": "^7\\.[68]\\.\\d\\.2 Conclusion$", "reason": "system-level conclusions in 7.6 and 7.8 that repeat the PDC findings cited from the preceding subsections"},
+    {"heading": "^7\\.6\\.[245]\\.1\\.(7|9) Other supported PDC$|^7\\.5\\.2\\.1\\.7 Safety Functions$", "reason": "subsections that only point to the SE sections where the PDC or function is evaluated"}
   ],
   "RG_1.232": [
     {"pages": "29-61", "reason": "Appendix A (ARDC) not ingested by user decision"},

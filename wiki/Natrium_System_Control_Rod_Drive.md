@@ -212,3 +212,4 @@ principal design criteria%%t:PDC%% 2에 따라 `CRD`는 `CRDM` motor controller(
 - [[Natrium_PDC_Reactivity_Control]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_Reactor_Auxiliary_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]

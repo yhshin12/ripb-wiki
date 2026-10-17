@@ -17,7 +17,7 @@
 - [[RG_1.233]] — `RG 1.233`은 non-light-water reactor의 licensing basis와 신청서 내용을 정하는 technology-inclusive, risk-informed, performance-based 방법론에 관한 지침이다.
 - [[RG_1.247]] — `RG 1.247`(2022년 3월, 시험 사용)은 비경수형원전 PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다.
 - [[RG_1.253]] — `RG 1.253`(2024년 3월, Revision 0)은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여 비경수형원전 인허가 신청서 `SAR` 앞 여덟 장의 작성 방법으로 승인하고, NRC가 제안한 12장 `SAR` 구조를 제시한다.
-- [[SER_KU1_CP]] — Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application
+- [[SER_KU1_CP]] — `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다.
 
 ## 규제 (regulation)
 
@@ -166,23 +166,28 @@
 - [[Natrium_SER_Conduct_Of_Operations_Review]] — NRC staff는 조직, 인간공학, 비상계획, 기술지침서, 직무적합성과 보안에 관한 `PSAR` 정보가 construction permit 발급에 관련된 규제 요건을 충족한다고 결론지었고(조직은 "relevant portions"), 항공기 충돌 평가는 10 CFR 50.150(a)·(b)를 충족한다고 보았다.
 - [[Natrium_SER_Core_Fuel_Design_Review]] — NRC staff는 연료 인증 `TR` NAT-2806-A의 L&C가 construction permit 단계에서 적용되지 않거나 적절히 다루어졌다고 보고 참조 포함을 수용했다.
 - [[Natrium_SER_DBHL_Review]] — NRC staff는 Kemmerer Unit 1이 정한 design-basis hazard level 집합이 `RG 1.233`과 일치한다고 판단했다.
+- [[Natrium_SER_Electrical_Buildings_PDC_Conformance]] — `SER` 7.7.1절과 7.8절은 `NI` 보조 전력(`NUP`)·직류 전력(`NDC`) 계통과 원자로 건물(`RXB`), 핵연료 취급 건물(`FHB`), 원자로 보조 건물(`RAB`), `NI` 제어 건물(`NCB`)에 대해 적용 principal design criteria와 지원 안전 기능의 예비 설계 정합성을 판단한다.
 - [[Natrium_SER_Emergency_Preparedness_Review]] — NRC staff는 `PSAR` 11.3절의 예비 비상대비 계획을 검토했다.
 - [[Natrium_SER_Event_Source_Terms_Review]] — NRC staff는 `PSAR` Table 3.2-1~3.2-18의 선원항(source term)을 네 사건군(용기 내 출력운전, 용기 내 연료취급, 용기 외 연료취급, 용기 외 계통 방출)으로 나누어 검토하고, 각 군의 선원항이 사건을 합리적으로 대표한다고 판단했다.
 - [[Natrium_SER_Exemptions_Review]] — `SER` 부록 B는 재정 자격 면제(14장에서 평가)를 제외한 신청서의 면제 요청과 staff가 직접 식별한 면제를 평가한다.
 - [[Natrium_SER_Facility_Overview_Review]] — `SER` 1장은 construction permit의 성격, 남은 불확실성과 허가 조건, 시설 개요에 대한 staff 판단을 정리한다.
+- [[Natrium_SER_Fuel_Handling_Ancillary_PDC_Conformance]] — `SER` 7.3–7.5절의 하위 절은 수조 핵연료 취급(`FHP`), 용기 외 핵연료 취급(`FHE`), 용기 내 핵연료 취급(`FHI`), 기체 방사성폐기물 처리(`RWG`), `NI` `HVAC`(`NHV`), `NI` 화재 방호(`NFP`) 계통마다 적용 principal design criteria와 지원 안전 기능에 대해 예비 설계의 정합성을 판단한다.
 - [[Natrium_SER_Fuel_Handling_And_Ancillary_Review]] — NRC staff는 수조 핵연료 취급 계통(`FHP`), 용기 외 핵연료 취급 계통(`FHE`), 용기 내 핵연료 취급 계통(`FHI`), 기체 방사성폐기물 계통(`RWG`), `NI` 공조 계통(`NHV`), `NI` 화재 방호 계통(`NFP`)의 `PSAR` 정보가 construction permit 발급에 충분하다고 결론지었다.
 - [[Natrium_SER_IC_Electrical_Structures_Review]] — NRC staff는 계측제어 계통, 전기 계통, 원자로·핵연료 취급·보조·제어 건물의 예비 설계 정보가 construction permit 발급에 충분하다고 결론지었다.
+- [[Natrium_SER_IC_PDC_Conformance]] — `SER` 7.6절의 하위 절은 `NIC`, `RPS`, `XIS`, `RIS`, `RMS`, 주제어실(`MCR`), `AST` 계통마다 적용 principal design criteria와 지원 안전 기능에 대해 예비 설계의 정합성을 판단한다.
 - [[Natrium_SER_Integrated_Evaluation_Review]] — NRC staff는 Kemmerer Unit 1의 누적 위험도 지표 결과가 판정 기준을 충족하고 여유가 커서 불확실성을 합리적으로 반영한다고 판단했다.
 - [[Natrium_SER_LBE_Methodologies_Review]] — NRC staff는 Kemmerer Unit 1 `PSAR`이 참조로 포함한 해석 방법론 `TR` 다섯 건 가운데 NAT-9390-A, NAT-9394-A, NAT-9395-A, NAT-9391-A의 L&C가 construction permit 단계에서 모두 충족되거나 적절히 다루어졌다고 판단했다.
 - [[Natrium_SER_LBE_Summary_Review]] — NRC staff는 Kemmerer Unit 1의 Licensing Basis Event 식별·분류가 NEI 18-04와 `RG 1.233`에 맞는다고 보면서 두 가지 이탈을 지적했다.
 - [[Natrium_SER_MST_Methodology_Review]] — NRC staff는 Kemmerer Unit 1 `PSAR`이 승인된 방법론 NAT-9392-A로 Mechanistic Source Term을 만들었고, construction permit 단계에서 MST 해석이 적절하다고 판단했다.
 - [[Natrium_SER_Major_Accident_Review]] — 사업자는 `RG 1.253` Option 1에 따라 Design Basis Accident 결과로 주요사고(Major Accident)를 정하고, 용기 내 DBA로 범위를 좁혀 core blockage and local faults DBA를 선정했다.
+- [[Natrium_SER_NHS_PDC_Conformance]] — `SER` 7.1절의 하위 절은 원자로 노심(`RCC`), Reactor Enclosure System(`RES`), primary heat transport(`PHT`), intermediate heat transport(`IHT`) 계통마다 적용 principal design criteria와 지원 안전 기능에 대해 예비 설계의 정합성을 판단하고, 계통별 programmatic special treatment의 적절성을 판단한다.
 - [[Natrium_SER_Nuclear_Heat_Supply_Review]] — NRC staff는 노심 계통(`RCC`), 원자로 격납 계통(`RES`), 1차 열수송 계통(`PHT`), 중간 열수송 계통(`IHT`) 각각에 대해 `PSAR` 정보가 construction permit 발급에 충분하다고 결론지었다.
 - [[Natrium_SER_Operating_Organization_Review]] — NRC staff는 `PSAR` 11.1·11.2절의 조직·인력·인간공학 정보를 검토해, 원자력 안전 책임 임원이 식별되었고, 보고 체계가 정상 운전 압력으로부터의 독립성을 합리적으로 제공하며, 핵심 인원의 학력·경력 요건이 regulatory guide 1.8 지침과 일치하고, 인간공학 조직 책임이 명확하다고 판단했다.
 - [[Natrium_SER_PDC_SR_NSRST_Review]] — NRC staff는 principal design criteria `TR`(NATD-LIC-RPRT-0002-A)의 L&C 두 개가 다루어졌고 Kemmerer Unit 1 `PSAR`의 PDC 서술이 충분하다고 판단했다.
 - [[Natrium_SER_PRA_OL_Expectations]] — NRC staff는 `RG 1.247`과 `RG 1.253`에 따라 사업자가 operating license를 신청할 경우 수행하기를 기대하는 PRA 과제 열한 가지를 나열했다.
 - [[Natrium_SER_PRA_Review]] — NRC staff는 `RG 1.253` Appendix A와 `RG 1.247`의 해당 입장을 적용해 Kemmerer Unit 1의 construction permit 단계 PRA를 검토했다.
 - [[Natrium_SER_RD_And_Permit_Conditions]] — NRC staff는 설계 적정성 확인에 연구개발이 필요한 Structures, Systems, and Components와 필요한 활동, 그리고 그 활동이 건설 완료 전 안전 문제 해소를 지원함을 사업자가 적절히 식별했다고 판단했다.
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]] — `SER` 7.2절의 하위 절은 `RAC`, `IAC`, `SCG`, `SPS`, `CRD` 계통마다 적용 principal design criteria와 지원 안전 기능에 대해 예비 설계의 정합성을 판단하고, 계통별 programmatic special treatment를 평가한다.
 - [[Natrium_SER_Reactor_Auxiliary_Review]] — NRC staff는 원자로 공기 냉각 계통(`RAC`), 중간 공기 냉각 계통(`IAC`), 소듐 커버가스(cover gas) 계통(`SCG`), 소듐 정화 계통(`SPS`), 제어봉 구동 계통(`CRD`) 각각에 대해 `PSAR` 정보가 construction permit 발급에 충분하다고 결론지었다.
 - [[Natrium_SER_SSC_Classification_Review]] — NRC staff는 Kemmerer Unit 1의 Structures, Systems, and Components 안전 분류 과정이 construction permit 신청에 수용 가능하다고 판단했다.
 - [[Natrium_SER_SSC_Design_Review]] — NRC staff는 D-RAP을 통해 신뢰도·능력 목표를 정하는 사업자의 일반 접근과 특수 처리 식별 과정이 construction permit 단계에 합리적이라고 판단했다.

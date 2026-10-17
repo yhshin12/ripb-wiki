@@ -196,3 +196,4 @@ inlet·outlet stack은 `ASME STS-1`, stack·louver housing·cowl·`CCA`는 `AISC
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_Reactor_Auxiliary_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]

@@ -232,3 +232,4 @@ Nuclear Instrumentation System 검출기는 노심 바깥에 인접한 개별 dr
 - [[Natrium_IC_Systems]]
 - [[Natrium_System_NI_Auxiliary_Electrical]]
 - [[PSAR_ch07]]
+- [[Natrium_SER_IC_PDC_Conformance]]

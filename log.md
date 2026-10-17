@@ -218,3 +218,8 @@
 - 새 노트 2(Natrium_SER_Operating_Organization_Review, Natrium_SER_Emergency_Preparedness_Review), 고친 노트 12
 - coverage 제외 9규칙(장 도입, 규제 목록, 결론 반복, 부지 특성, 비공개 표, 표 중복)
 - 원문 대조 지적 28건 수정; lint 0, 인용 검증 0; 미정 용어 0
+
+## [2026-10-17] ingest | SER_KU1_CP 잔여 R2(7장 계통별 하위 절); SER_KU1_CP 완료
+- 새 노트 5(7.1 NHS, 7.2 원자로 보조, 7.3-7.5 핵연료 취급·보조, 7.6 계측제어, 7.7-7.8 전력·건물 PDC 정합성), 역링크 29
+- coverage 0(제외 2규칙 추가: 7.6·7.8 결론 반복, 다른 절을 가리키기만 하는 절)
+- 원문 대조 지적 37건 수정; lint 0, 인용 검증 0; 미정 용어 0

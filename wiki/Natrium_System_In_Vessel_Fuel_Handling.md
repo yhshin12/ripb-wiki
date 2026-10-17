@@ -188,3 +188,4 @@ principal design criteria%%t:PDC%% 2 적용에서 `FHI`는 `Section 7.8.1.1`의 
 - [[Natrium_Operating_Modes]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_Fuel_Handling_And_Ancillary_Review]]
+- [[Natrium_SER_Fuel_Handling_Ancillary_PDC_Conformance]]

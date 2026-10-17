@@ -193,3 +193,4 @@ principal design criteria%%t:PDC%% 2와 4에 대해 `ISP` 비상 정지에 필�
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_Nuclear_Heat_Supply_Review]]
+- [[Natrium_SER_NHS_PDC_Conformance]]

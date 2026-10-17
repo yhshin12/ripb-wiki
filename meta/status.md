@@ -32,12 +32,12 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 | PSAR_ch06 | complete | §6.1–§6.4.5 전체 | 없음 |
 | PSAR_ch07 | complete | §7.1–§7.8 전체 | 없음 |
 | PSAR_ch11 | in_progress | §11.1, §11.2, §11.3, §11.5, §11.6 | §11.4(withheld만 남음) |
-| SER_KU1_CP | in_progress | 1, 3–7, 11, 13장, 부록 A–B, 잔여 R1(7장 밖 미인용 하위 절; 노트 25개) | 잔여 R2: 7장 계통별 PDC 정합성·programmatic special treatment 하위 절(265절). 2, 8–10, 12, 14장은 대응 PSAR 장이 vault에 없어 제외 |
+| SER_KU1_CP | complete | 1, 3–7, 11, 13장, 부록 A–B, 잔여 R1·R2(노트 30개) | 없음(2, 8–10, 12, 14장은 대응 PSAR 장이 vault에 없어 제외; 나머지 제외 절은 `meta/coverage_exclusions.json`) |
 | RG_1.253 | complete | 전체 | 없음(Table A-2·A-3은 정제본 표가 깨져 주석 문단만 인용) |
 | RG_1.247 | complete | 전체(본문 C.1–C.4, 부록 A의 qualification·주요 clarification, 부록 B) | 없음(부록 A "No objection" 레코드는 개별 노트로 옮기지 않음) |
 
 ## 다음 작업
-0. `SER_KU1_CP` 잔여 R2(7장 계통별 하위 절 265개) 인제스트. R1(7장 밖)은 2026-10-17 완료: 노트 보강, 반영 대상이 아닌 절은 사유와 함께 coverage 제외. 내부 자료 작업 상태는 `internal/status.md`.
+0. 원문 2건(RG_1.253·RG_1.247, SER_KU1_CP) 인제스트를 마쳤으므로 다음 `wiki-audit`과 SER 잔여분 반영 노트(PDC 정합성 노트 5개 등)의 `wiki-lint` 의미 점검을 제안한다.
 0a. 2026-10-16 `wiki-audit`(seed 20261016)와 `wiki-lint` 의미 점검은 끝났다. 의미 점검 조치 1–19는 적용했다(`meta/lint/2026-10-16.md`). 남은 것: 계통 묶음 대조 재의뢰(계통 노트 5건의 "vault에 없" 판정, ACRS 두 노트와 SER의 중복, C34 반응도 계수 목록, 운전 모드).
 0b. 정제 파이프라인 보완 후보: RG_1.247 Table 1 내용 누락, 부록 A 굵은 글씨·취소선 소실(현재 노트는 issue 문장 위주), C.1.3.8 쪽 표지 위치; RG_1.253 Table A-2·A-3 표 구조 깨짐.
 1. lint 조치 A6 결정(`Risk_Significant_SSC` 단일 기록처화와 `Risk_Importance_Measures` disputed 해제).

@@ -214,3 +214,4 @@ principal design criteria%%t:PDC%% 2에 따라 NSRST%%t:NSRST%% `NIC` Structures
 - [[Natrium_System_NI_HVAC]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_SER_IC_PDC_Conformance]]

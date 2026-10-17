@@ -134,3 +134,4 @@ principal design criteria%%t:PDC%% 2와 4에 따라 하부구조는 Section 6.4.
 - [[Natrium_System_Ex_Vessel_Fuel_Handling]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_SER_Electrical_Buildings_PDC_Conformance]]
