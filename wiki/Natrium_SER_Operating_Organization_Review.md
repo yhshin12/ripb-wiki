@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [SER_KU1_CP]
+sources: [SER_KU1_CP, PSAR_ch11]
 status: checked
 verified: 2026-10-17
 term:
@@ -77,9 +77,13 @@ terms_pending: []
 - "In the staff’s evaluation of NAT-2965-A, the staff determined that, subject to the limitations and conditions described within that evaluation, TerraPower’s HFEPP addresses the incorporation of technologically relevant, post-TMI requirements." [SER_KU1_CP §11.2.1.3 p.669]
 - "The staff determined that the applicant has described how the design would satisfy the technically relevant requirements of 10 CFR 50.34(f) to an extent that is reasonable for a PSAR and that further evaluation of the completed implementation of these items can occur as part of the OL application." [SER_KU1_CP §11.2.1.3 p.669]
 - "if sufficient managerial depth is available to provide qualified backup, consistent with the QA program and ANS 3.2, for overall station operation in the event of temporary unexpected contingencies" [SER_KU1_CP §11.1.1.14 p.665]
+- "At present, the President and CEO of USO is the same individual as the President and CEO of TerraPower." [SER_KU1_CP §8.2.1.1 p.621]
+- "The President and CEO of TerraPower has overall responsibility for functions involving design, construction, and operation." [PSAR_ch11 §11.1.1.1 p.7]
 
 ## 해설
 **조직과 책임.** `USO` President and `CEO`가 설계·건설·운영 전반의 책임을 지고, 설계·건설 책임은 사업 수행 책임 임원에게, 원자력 발전소 운전 통제는 pre-operational testing 전에 `CNO`에게 넘어간다. `CNO`는 원자력 안전과 규제 준수의 전반적 책임을 지는 임원이고, `PGM`은 `CNO`에 직접 보고하며 일상 운전을 맡는다. staff는 audit에서 `CNO`와 `PGM`의 보고 관계가 `PSAR` 조직도와 같음을 확인했다. Natrium Project Organization이 design authority이고, `BPC`는 건설 조직 안의 문서 관리·보존을 맡는다. 건설 조직은 `BPC` Project Manager가 이끌며, staff는 건설 인원 수가 설계·건설 중 바뀔 수 있어 `PSAR`에 적을 필요가 없다고 보았다. `BPC`는 25개국 150개가 넘는 원자력 사업의 설계·건설에 참여했고, direct hire와 targeted specialty subcontracting으로 건설 인력을 확보할 계획이다.
+
+**규정 대비 메모(C74, 규정 불일치).** `SER`은 `PSAR` §11.1.1.1의 전반 책임자를 `USO`의 President and `CEO`로 옮기며, `SER` §8.2.1.1이 인용한 `PSAR` §11.1.1.1 문언은 현재 그가 TerraPower의 President and `CEO`와 같은 사람이라고 적는다. 그러나 vault의 `PSAR` Chapter 11은 같은 책임을 TerraPower의 President and `CEO`에게 두므로 `SER`이 인용한 `PSAR` 문언과 vault의 `PSAR` 문언이 다르다([[Natrium_Project_Organization]] 참조).
 
 **보고 체계의 독립성.** Director of Training과 Station Sciences Manager는 Director of Operations와 독립적으로 `PGM`에 보고하고, Director of Nuclear Oversight는 `PGM`과 별도로 `CNO`에 직접 보고한다. staff는 이 구조가 정상 운전 압력으로부터의 독립성을 합리적으로 제공할 것으로 보았고, 운영 조직의 핵심 기능이 별도로 감독·관리된다고 판단했다.
 
@@ -96,3 +100,5 @@ terms_pending: []
 - [[Natrium_HFE_OER_Training_HPM]]
 - [[Natrium_Security_And_Fitness_For_Duty]]
 - [[SER_KU1_CP]]
+- [[Natrium_HFE_Program]]
+- [[Natrium_TMI_Requirements]]

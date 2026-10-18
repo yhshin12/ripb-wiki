@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch07, PSAR_ch05]
+sources: [PSAR_ch07, PSAR_ch05, SER_KU1_CP]
 status: checked
 verified: 2026-10-16
 term:
@@ -114,6 +114,7 @@ terms_pending: []
 - "The RWG receives control signals from the Auxiliary Monitoring and Control System." [PSAR_ch07 §7.4.1.5 p.223]
 - "RWG controls do not require redundancy, Class 1E, or harsh environment qualification, but are seismically qualified." [PSAR_ch07 §7.4.1.5 p.223]
 - "DL2-RR4 — Gaseous Radwaste Barrier" [PSAR_ch05 Table 5.2-4 p.18]
+- "PSAR section 7.4.1.2 describes the functional requirements and design criteria related to the RWG’s NSRST function, DL2-RR4, “Retain Radionuclide – RWG Radionuclide Boundary.”" [SER_KU1_CP §7.4.1.1.3 p.528]
 - "The SCG controls and filters exhaust gas from the reactor vessel and guard vessel to the RWG." [PSAR_ch05 §5.3.5.1 p.41]
 
 - "Figure 7.4.1-1 Gaseous Radwaste Processing System Overview" [PSAR_ch07 Figure 7.4.1-1 p.225]
@@ -134,6 +135,8 @@ principal design criteria%%t:PDC%% 적용에서 `RWG` 설비는 Fuel Handling Bu
 `RWG`는 `FHB` 지하의 `once-through` 상온 `charcoal adsorber delay system`이다. 모든 원자로 운전 모드에서 운전할 수 있지만 Design Basis Event%%t:DBE%%나 Design Basis Accident%%t:DBA%%의 결과를 완화할 필요는 없고, 정상 운전과 AOO%%t:AOO%% 중 운전하도록 설계된다. `RG 1.110`은 `Full Conformance`로 적혀 있으나 cost-benefit analysis는 operating license%%t:OL%% 단계에서 수행될 예정이고(`will`), `RG 1.143` 부합은 부분 부합이며 `Section 5.1`과 `Section 6.1.3`의 방법이 `Regulatory Positions C.5 and C.6`을 대체한다. 자동 방출 종료에 쓰는 밸브는 fail closed로 설계되고, `RWG` 제어는 중복성, `Class 1E`, harsh environment qualification이 필요 없지만 지진 검증된다.
 
 `PSAR` Chapter 5는 `DL2-RR4`를 `Gaseous Radwaste Barrier`로 적어 Chapter 7의 기능 이름(`Retain Radionuclide - RWG Radionuclide Boundary`)과 다르다(`meta/contradictions.md` C19). Chapter 5의 PDC%%t:PDC%% 60 구현 요약은 `SCG`가 원자로 용기와 guard vessel에서 `RWG`로 가는 배기 기체를 제어·여과한다고 적고, Chapter 7은 primary Sodium Cover Gas System과 exhaust distribution cabinet의 기체를 처리한다고 적는다.
+
+**규정 대비 메모(C19, 신청자 문서 내부 불일치).** `DL2-RR4`의 이름은 Chapter 7에서 `Retain Radionuclide - RWG Radionuclide Boundary`, Chapter 5에서 `Gaseous Radwaste Barrier`이다. `SER`은 `PSAR` §7.4.1.2를 옮기면서 Chapter 7의 이름(`Retain Radionuclide – RWG Radionuclide Boundary`)을 쓴다. 분류(NSRST%%t:NSRST%%)와 계통은 두 장에서 같고, 판정할 권위 조항은 없으므로 이 노트는 `SER`과 같이 Chapter 7의 이름을 쓴다.
 
 Gaseous Radwaste Processing System 설비는 `RG 1.143`에 열거된 codes and standards에 따라 설계·제작·시험되며, 이 부합으로 정상 조건과 AOO%%t:AOO%%에서 예상되는 화학적·물리적·방사선 환경과의 양립성이 보장된다. 압력 유지 기기 재료는 ASME Boiler and Pressure Vessel Code Section `II`의 재료 사양을 따르되, 가단·단조·주철 재료와 플라스틱 배관은 쓰지 않고, 주요 기기는 부식 방지를 위해 stainless steel로 만든다.
 

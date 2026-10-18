@@ -114,6 +114,10 @@ def part_checks(vault):
     errors = [f for f in lint + vq if f.level == "error"]
     lines = [f"- lint_wiki: 오류 {sum(f.level == 'error' for f in lint)}, 경고 {sum(f.level != 'error' for f in lint)}",
              f"- verify_quotes: 오류 {len(vq)}"]
+    import check_absence as CA
+    ab = CA.check(vault)
+    lines.append(f"- check_absence: 재점검할 부재 진술 {len(ab)} (미검토 {sum(f.code == 'A1' for f in ab)}, "
+                 f"새 근거 후보 {sum(f.code == 'A2' for f in ab)})")
     return "\n".join(lines + [f"  - {f}" for f in errors[:MAX]])
 
 

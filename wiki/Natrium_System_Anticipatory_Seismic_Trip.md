@@ -73,6 +73,8 @@ terms_pending: []
 - "The following are NSRST alternative shunt trips that are identified as risk-significant defense line functions in PSAR table 5.2-4, but are not described in detail within the PSAR due to the timing of when USO added them to the PRA relative to the submittal of the PSAR:" [SER_KU1_CP §5.5 p.354]
 - "Therefore, the staff determined that the finalization of this aspect of the design can be left to the OL stage" [SER_KU1_CP §5.5 p.354]
 - "The AST supports the NSRST function DL4-RC4, “Automatic seismic trip,” by continuously monitoring signal inputs from triaxial accelerometers and sending an isolated signal to the shunt trip feature in the RTBs when the signal inputs exceed a bi-stable setpoint." [SER_KU1_CP §7.6.8.1.7 p.584]
+- "The staff determined that the preliminary AST design is consistent with PDC 2 because the equipment is located in the RXB and is designed to withstand the effects of applicable external hazards without loss of capability to perform their safety function." [SER_KU1_CP §7.6.8.1.2 p.583]
+- "PSAR section 7.6.8.2.2 states that the AST processing cabinets are located in and protected from external hazards by the NCB." [SER_KU1_CP §7.6.8.1.4 p.583]
 
 | Function ID | Function Description | AST Functional Support | 출처 |
 |---|---|---|---|
@@ -146,6 +148,8 @@ PDC%%t:PDC%% 2에 따라 `AST`는 가상 지진에 대해 지진 검증을 받�
 **규정 대비 메모(C7-b, 규정 불일치).** `SER`은 PDC%%t:PDC%% 26 절에서 예비 설계가 PDC%%t:PDC%% 26과 일관된다고 판단한 뒤, 제어봉 삽입을 막을 수 있는 보호계통 고장의 완화 수단으로 alternative shunt trip(DL4-RC6)을 든다. `PSAR` Chapter 5 주석은 DL4-RC6이 최신 `PRA` 개정에서 defense line 기능으로 식별되었으나 그 요건이 아직 설계에 반영되지 않았다고 적고, `SER`도 이 기능이 `PSAR`에 상세히 기술되지 않았다고 적는다. `SER`은 이 부분의 설계 확정을 OL%%t:OL%% 단계로 미루었다.
 
 **규정 대비 메모(C7-c, 규정과 일치).** Chapter 7의 `AST` 서술은 `SER`과 같다. Chapter 7의 shunt trip feature가 `ACRS` 발표의 alternative shunt trip 설명과 겹쳐 보이는 것은 위 약어 차이에서 생기므로 독립된 차이가 아니다.
+
+**규정 대비 메모(C77, 권위 문서 표기 차이(기록만)).** `SER`은 PDC%%t:PDC%% 2 절에서 예비 `AST` 설계가 PDC%%t:PDC%% 2와 일관된다고 판단하며 그 이유로 장비가 `RXB`에 있다는 점을 들고, 바로 뒤 PDC%%t:PDC%% 4 절에서는 `PSAR` §7.6.8.2.2를 옮겨 처리 캐비닛이 `NCB` 안에 있다고 적는다. `PSAR` Chapter 7은 가속도계를 `RXB` 둘레 borehole에, 신호 처리를 Nuclear Island Control Building 하부구조의 캐비닛에 두고, 캐비닛과 그 밖의 `AST` SSC%%t:SSC%%의 구체적 위치는 OL%%t:OL%% 단계에서 기술한다고 적는다. 두 `SER` 문장은 `AST` 장비의 서로 다른 부분을 가리키는 것으로 읽을 수 있으나 `SER`은 PDC%%t:PDC%% 2 절의 "equipment"가 어느 기기인지 적지 않는다. 차이는 위치 서술에 그치고 요건 내용은 다르지 않으므로 기록만 한다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Protection]]

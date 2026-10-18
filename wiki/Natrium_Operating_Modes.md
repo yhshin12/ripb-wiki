@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch11
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -47,6 +48,7 @@ terms_pending: []
 
 - "The transition from Mode-2 to Mode-1 will be when the transfer of IHT heat removal has been fully transferred from IAC to NSS as denoted by the IAC blower being off and the top and bottom dampers being closed and latched." [PSAR_ch11 Table 11.5-2 p.74]
 - "The transition from Mode-1 to Mode-2 will be when the transfer of IHT heat removal has been fully transferred from NSS to IAC as denoted by the NSS isolation valves being closed." [PSAR_ch11 Table 11.5-2 p.74]
+- "PSAR section 11.5.2 and PSAR table 11.5-2 describe four operational modes for the KU1 TSs, which are defined in terms of combinations of sodium temperature, control rod drive status, and reactor cooling mechanism. The staff will evaluate KU1’s operational modes during the OL application review." [SER_KU1_CP §11.5.1 p.701]
 
 ## 해설
 각 운전 모드는 소듐 온도, control rod drive(`CRD`) 상태, 원자로 냉각 방식의 포괄적 조합으로 정의된다. 원자로 열제거는 Primary Heat Transport System에서 Intermediate Heat Transport System으로, 다시 Nuclear Island Salt System이나 Intermediate Air Cooling System으로 열을 보내 이루어진다.
@@ -55,9 +57,18 @@ Mode-2(Low Power Operation)는 기동 중 reactor scram breaker가 닫히고 둘
 
 Mode-3(Shutdown)의 목적은 기동 중 Mode-2에 들어가기 전, 또는 shutdown 중 Mode-4에 들어가기 전의 전환 상태 역할을 하는 것이다. 기동 중 Mode-3에서 primary coolant boundary가 확립되고, Primary Sodium Pump 운전으로 발전소 가열을 지원한다. Mode-4(Refuel)의 목적은 refueling 활동 지원이며, primary sodium hot pool 온도를 `400°F (204°C)` 아래의 refueling temperature로 낮춘다. Mode-3와 Mode-4에서는 `CRDM` driveline에 결합된 `CRA`가 하나 이하여서 원자로 정지를 유지할 만큼 충분한 `CRA`가 삽입되며, 시험을 위해 한 `CRA`를 결합해 조작할 수 있다. 표에서 Mode-3의 소듐 온도는 `> 400 °F (204°C)`, Mode-4는 `≤ 400 °F (204°C)`이다.
 
+NRC staff는 네 운전 모드를 기술한 `PSAR` 내용을 옮겨 적되, 운전 모드 평가는 operating license%%t:OL%% 신청 검토에서 하겠다고 적는다.
+
 ## 관련 문서
 - [[Natrium_Technical_Specifications_Scope]]
 - [[Natrium_NRC_Review_Reactivity_Control]]
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[Natrium_PRA_Scope]]
 - [[PSAR_ch11]]
+- [[Natrium_SER_Conduct_Of_Operations_Review]]
+- [[Natrium_PDC_Multiple_Barriers]]
+- [[Natrium_System_In_Vessel_Fuel_Handling]]
+- [[Natrium_ASME_Design_Transients]]
+- [[Natrium_System_Intermediate_Air_Cooling]]
+- [[Natrium_System_Primary_Heat_Transport]]
+- [[Natrium_System_Ex_Vessel_Fuel_Handling]]

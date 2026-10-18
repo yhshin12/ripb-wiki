@@ -184,3 +184,4 @@ NSRST%%t:NSRST%% SSC%%t:SSC%%에는 `ASCE/SEI 7-16`을 적용한다. 감쇠는 �
 - [[Natrium_System_Reactor_Enclosure]]
 - [[Natrium_Building_Reactor]]
 - [[PSAR_ch06]]
+- [[Natrium_SER_SSC_Design_Review]]

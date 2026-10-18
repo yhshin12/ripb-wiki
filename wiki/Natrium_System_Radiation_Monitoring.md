@@ -5,6 +5,7 @@ sources:
 - PSAR_ch07
 - PSAR_ch01
 - SER_KU1_CP
+- PSAR_ch05
 status: checked
 verified: 2026-10-17
 term: null
@@ -80,6 +81,10 @@ terms_pending: []
 - "Consistent with PDC 60, Control of release of radioactive materials to the environment, the Gaseous Radwaste Processing System, Liquid Radwaste Processing System, Solid Radwaste Processing System SSCs suitably control the release of radioactive materials in gaseous and liquid effluents, handling radioactive solid wastes produced during normal reactor operation, including AOOs, and sufficient holdup capacity for retention of gaseous and liquid effluent containing radioactive materials." [PSAR_ch07 §7.6.6.2.2 p.308]
 - "The RMS provides the monitoring component in support of these functions by indicating waste processing has provided sufficient radiological margin to allow for waste release (gaseous, solid) or the need for further processing and re-use (liquid)." [PSAR_ch07 §7.6.6.2.2 p.308]
 - "Consistent with PDC 64, Monitoring radioactivity release, the RMS provides a means for monitoring all NI building atmospheres with the potential for radioactive release, spaces containing components for primary system sodium and cover gas cleanup and processing, effluent discharge paths, and the plant environments, via the Nuclear Island Heating, Ventilation, and Air Conditioning System, for radioactivity that may be released from normal operations, including AOOs, and from postulated accidents" [PSAR_ch07 §7.6.6.2.2 p.309]
+- "The staff determined that the preliminary RMS design is consistent with PDC 60, 63, and 64 because the preliminary information on radiation monitoring needed to support the control of radioactive materials includes high level monitoring locations and the applicant stated it will conform to RG 1.21 at the OL stage." [SER_KU1_CP §7.6.6.1.4 p.579]
+- "The systems subject to PDC 63 requirements are FHE, FHP, NIC, SPS, SCG, RWS, RWL, and RWG." [PSAR_ch05 §5.3.5.4 p.43]
+- "The RMS, NIC, SCG, and SPS monitor normal operational radiation levels and potential off-normal conditions, including area radiation monitoring, process radiation monitoring, and effluent radiation monitoring." [PSAR_ch05 §5.3.5.4 p.43]
+- "| NIC | Nuclear Island Control System |" [PSAR_ch01 §LIST OF ACRONYMS AND ABBREVIATIONS p.5]
 - "System performance of each RMS monitor meets the following goals:" [PSAR_ch07 §7.6.6.3 p.309]
 - "Selected instrument ranges envelope the complete minimum and maximum conditions over normal operations, AOOs, postulated accidents, and post-accident conditions, as applicable." [PSAR_ch07 §7.6.6.3 p.309]
 - "Selected setpoints provide indication of monitored radiation levels exceeding nominal limits." [PSAR_ch07 §7.6.6.3 p.309]
@@ -171,7 +176,9 @@ Radiation Monitoring System(`RMS`)은 NSRST%%t:NSRST%%와 NST%%t:NST%% 기능을
 
 **규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.6.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준).
 
-**규정 대비 메모(C39, 신청자 문서 내부 불일치).** `PSAR` §7.6.6.2.2는 `RMS`가 변수를 운전 범위 안에 유지하는 제어를 제공한다고 적고, §7.6.6.3은 `RMS`에 자동 제어 동작이 없다고 적는다. 판정 기준이 되는 권위 조항은 없다. `SER`은 두 문장을 모두 옮겨 적되 그 차이에 대한 판단은 없고(vault 기준), §7.6.6.1.3은 제어 주체에 `NIC`를 더해 적으며(그 뜻은 vault에 없다), PDC%%t:PDC%% 13 부합 판단은 감시 기능만 근거로 한다.
+**규정 대비 메모(C39, 신청자 문서 내부 불일치).** `PSAR` §7.6.6.2.2는 `RMS`가 변수를 운전 범위 안에 유지하는 제어를 제공한다고 적고, §7.6.6.3은 `RMS`에 자동 제어 동작이 없다고 적는다. 판정 기준이 되는 권위 조항은 없다. `SER`은 두 문장을 모두 옮겨 적되 그 차이에 대한 판단은 없고(vault 기준), §7.6.6.1.3은 제어 주체에 `NIC`(Nuclear Island Control System, [[Natrium_System_NI_Control]])를 더해 적으며, PDC%%t:PDC%% 13 부합 판단은 감시 기능만 근거로 한다.
+
+**규정 대비 메모(C78, 규정 불일치).** `SER` §7.6.6.1.4는 예비 `RMS` 설계가 PDC%%t:PDC%% 60, 63, 64와 일관된다고 판단한다. 그러나 `PSAR` Chapter 5가 PDC%%t:PDC%% 63 대상으로 열거하는 계통(`FHE`, `FHP`, `NIC`, `SPS`, `SCG`, `RWS`, `RWL`, `RWG`)에 `RMS`는 없다. 같은 절의 implementation summary는 `RMS`를 `NIC`, `SCG`, `SPS`와 함께 정상 운전 방사선 준위와 off-normal 조건을 감시하는 계통으로 적지만, 대상 계통 목록에는 넣지 않는다. Chapter 7 §7.6.6.2.2의 `RMS` PDC%%t:PDC%% 문단도 PDC%%t:PDC%% 2, 13, 60, 64만 다룬다. 권위 문서인 `SER`은 `RMS`를 PDC%%t:PDC%% 63 판단 대상에 넣으므로, `PSAR`의 PDC%%t:PDC%% 63 적용 계통 목록과 `RMS` 절이 `SER`의 판단 범위보다 좁다. `SER`은 판단 근거로 고준위 감시 위치를 포함한 예비 방사선 감시 정보와 OL%%t:OL%% 단계의 RG%%t:RG%% 1.21 부합 진술을 든다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

@@ -172,6 +172,9 @@ terms_pending: []
 - "The staff therefore determined that the preliminary RPS design is consistent with DL3-HR2 and DL3-HR3 because all LBEs relying on the RPS maintain fuel integrity and do not result in radiological release." [SER_KU1_CP §7.6.3.1.11.5 p.562]
 - "PSAR section 7.1.3.1.1 states that the PHT supports two functions which provide radionuclide retention as part of the primary coolant boundary." [SER_KU1_CP §7.1.3.1.17.3 p.445]
 - "DL3-RR1a – IHX Primary System Barrier (SR) • DL3-RR1d – Primary Sodium Pump Seal (SR)" [SER_KU1_CP §7.1.3.1.17.3 p.445]
+- "DL3-RR1 | Primary Coolant Boundary including RES Barrier | The primary system boundary shall have low leakage in postulated accident conditions to establish reasonable assurance radionuclide release results in calculated radiological | Primary Heat Transport System (PHT)" [SER_KU1_CP Table 6.1-1 p.374-384]
+- "The IHT consists of two intermediate sodium loops, each connecting one IHX (which is considered part of the PHT) to an array of SHXs." [SER_KU1_CP §7.1.4 p.445]
+- "PSAR section 7.1.4.1 states that the IHT loop piping and components are primarily located within the reactor auxiliary building (RAB), except for piping within the RXB connecting to the IHX nozzles and yard area piping connecting to the IAC AHXs." [SER_KU1_CP §7.1.4 p.446]
 - "DL3-HR2 | PSP Trip on High High Primary Sodium Temperature | The RPS shall receive monitored signals and generate a PSP trip signal upon exceeding a high temperature limit with a low flux signal in time to establish reasonable assurance radionuclide release results in calculated radiological dose under the 10 CFR 50.34 dose criteria at a safe shutdown condition. | Reactor Protection System (RPS) | 7.6.3" [SER_KU1_CP Table 6.1-1 p.374-384]
 
 | Function ID | Function Description | PHT Functional Support | 출처 |
@@ -350,15 +353,15 @@ principal design criteria%%t:PDC%% 3에 따라 `PSP`에는 누설 윤활유를 �
 
 `PSP`는 SR%%t:SR%%이고 lube oil system, motor, adjustable speed drive는 Non-Safety-Related with No Special Treatment%%t:NST%%이다. shaft seal 장비 검증은 `ASME QME-1`로 수행될 예정이고, `PSP` 전체 지진 분류는 `SCS1`이며, isolation circuit breaker 지진 검증에는 `IEEE 344-2013`이 쓰인다. `Table 7.1.3-3`의 예비 성능 값은 전출력 유량 `40,000 gpm (150 m3/s)`, coastdown halving time `3.5 - 5 s`, 설계 온도 `1,050°F (566 °C)`이다. `IHX`는 SR%%t:SR%%이고 `Table 7.1.3-4`의 주요 구성품은 SR%%t:SR%%·`SCS1`이며, 정격 용량은 `1,450 MBtu/hr (425 MWth)`이다. `IHX` 누설은 intermediate sodium에서 primary sodium 쪽으로 일어나고 `IHT` expansion tank 수위 감소와 `PHT` hot pool 수위 증가로 탐지되며, `IHX` SR%%t:SR%% 기능은 피동이어서 제어·표시·계기가 필요 없다.
 
-`PSAR` Chapter 5 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier` 한 레코드로 적어 Chapter 7의 하위 식별자 `DL3-RR1a`·`DL3-RR1d`와 다르다. Chapter 5는 `DL3-HR2` 기준을 고온 한계와 low flux 신호로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한다. Chapter 1은 `The PHT safety function`, Chapter 7은 `A safety-significant function`이라고 적으며, Chapter 1은 `IHT`–`PHT` 경계를 `IHX` nozzle–`IHT` 배관 용접부로 적는 반면 Chapter 7은 원자로 안 `IHX` coaxial 배관을 `PHT` primary coolant boundary 구성품으로 열거한다. 두 경계 기술의 위치 관계는 vault에 없다.
+`PSAR` Chapter 5 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier` 한 레코드로 적어 Chapter 7의 하위 식별자 `DL3-RR1a`·`DL3-RR1d`와 다르다. Chapter 5는 `DL3-HR2` 기준을 고온 한계와 low flux 신호로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한다. Chapter 1은 `The PHT safety function`, Chapter 7은 `A safety-significant function`이라고 적으며, Chapter 1은 `IHT`–`PHT` 경계를 `IHX` nozzle–`IHT` 배관 용접부로 적는 반면 Chapter 7은 원자로 안 `IHX` coaxial 배관을 `PHT` primary coolant boundary 구성품으로 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주한다고 적고, `IHT` 루프 배관이 주로 `RAB`에 있되 `RXB` 안에서 `IHX` nozzle에 연결되는 배관은 예외라는 `PSAR` 기술을 옮겨 적는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없다.
 
-**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `PHT` 기능 표는 `DL3-RR1a`와 `DL3-RR1d`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.1.3.1.17.3은 Chapter 7의 하위 `ID`를 그대로 써서 `PHT`를 평가한다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준).
+**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `PHT` 기능 표는 `DL3-RR1a`와 `DL3-RR1d`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.1.3.1.17.3은 Chapter 7의 하위 `ID`를 그대로 써서 `PHT`를 평가하고, `SER` Table 6.1-1은 `PHT`의 `DL3-RR1`을 한 레코드로 적는다. `SER`은 두 표기를 모두 쓰며 그 차이를 판단하지 않는다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준).
 
 **규정 대비 메모(C30, 신청자 문서 내부 불일치).** `PSAR` Chapter 5 Safety-Related Design Criteria%%t:SRDC%%는 `DL3-HR2` trip 조건을 "high temperature limit with a low flux signal"로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한 세 조건의 조합으로 적는다. `SER` Table 6.1-1은 Chapter 5 SRDC%%t:SRDC%% 문언을 그대로 옮겨 적고, `SER` §7.6.3.1.11.5는 Chapter 7의 세 조건 논리를 기준으로 `RPS` 설계가 `DL3-HR2`에 부합한다고 판단했다. 따라서 `SER`은 두 문언을 함께 옮겨 쓰고 차이를 판정하지 않으며, `RPS` 부합 판단은 Chapter 7의 세 조건 논리에 근거한다.
 
 **규정 대비 메모(C31(c), 신청자 문서 내부 불일치).** Chapter 1은 `PHT` 기능을 "safety function"으로, Chapter 7은 "safety-significant function"으로 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
 
-**규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 경계에 대한 판단이 없다(vault 기준).
+**규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주하고 `RXB` 안에서 `IHX` nozzle에 연결되는 배관을 `IHT` 배관으로 옮겨 적으므로, 경계를 `IHX` nozzle에 두는 Chapter 1 기술과 어긋나지 않는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없고, `SER`에는 이 경계에 대한 직접 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]

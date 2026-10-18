@@ -1,0 +1,582 @@
+{
+ "accepted": "2026-10-19",
+ "notes": {
+  "ACRS_ML25293A458": "bea4f088e8f2",
+  "Advanced_Reactor_Licensing_Background": "1c413300f9ce",
+  "Cumulative_Risk_Targets": "bf6ec3a60f52",
+  "DID_Adequacy_Framework": "a1f32921baee",
+  "DID_Baseline": "bf374d975028",
+  "DID_Integrated_Process": "125807f8f349",
+  "DID_Risk_Margins": "94bec7294071",
+  "Deterministic_Safety_Analysis_Task_7d": "5a9fbf1e1386",
+  "Event_Sequence_Family": "80d3942eb15e",
+  "F_C_Target": "79b285972aea",
+  "Integrated_Decision_Making_Process": "e44f9c85bd7e",
+  "LBE_Frequency_Categories": "a1249c78af2f",
+  "LBE_Layers_Of_Defense_Review": "d278783e8ab6",
+  "LBE_Risk_Significance": "700ee30ce045",
+  "LBE_Selection_Process": "e90ec2bcb957",
+  "Layers_Of_Defense": "2c27b70a9253",
+  "Licensing_Basis_Event": "e937fc973026",
+  "MHTGR_DC_Electric_Power_And_Control_Room": "1f97db5cdd2d",
+  "MHTGR_DC_Fuel_And_Radioactivity_Control": "94bea90fbb99",
+  "MHTGR_DC_Heat_Transport_Systems": "3ef07c2a74d6",
+  "MHTGR_DC_Overall_Requirements": "2d08693e145b",
+  "MHTGR_DC_Reactivity_Control": "fa2be2a81c74",
+  "MHTGR_DC_Reactor_Building_Criteria": "fd2bbe7cdbc9",
+  "MHTGR_DC_Reactor_Containment_Not_Applicable": "f9bdd8c22eb6",
+  "MHTGR_DC_Reactor_Design_And_Functional_Containment": "cee7ced8f2d3",
+  "Mechanistic_Source_Term_Conditions": "a6388a771779",
+  "NEI_18-04": "9d0d7a83d43d",
+  "NRC_Endorsement_Of_NEI_18-04": "876a1fddf528",
+  "Natrium_AOO_List": "78fae55d8092",
+  "Natrium_ASME_Component_Loads_And_Limits": "dd128e64913a",
+  "Natrium_ASME_Design_Transients": "74a941564b1b",
+  "Natrium_BDBE_List": "3877a88eac85",
+  "Natrium_Building_Fuel_Handling": "014feb356b2b",
+  "Natrium_Building_NI_Control": "1d2f9c0ef4a7",
+  "Natrium_Building_Reactor": "1aa9d7269ffb",
+  "Natrium_Building_Reactor_Auxiliary": "ba9b7692df2e",
+  "Natrium_Codes_Standards": "2c9eb6694a55",
+  "Natrium_Control_Heat_Generation": "32e6c75adc9f",
+  "Natrium_Control_Heat_Removal": "13efc87423bc",
+  "Natrium_Core_Thermal_Hydraulic_Design": "23a24998dcf5",
+  "Natrium_DBA_List": "dcd6cb6ec242",
+  "Natrium_DBE_List": "a5796f9f7e50",
+  "Natrium_DID_Approach": "af2cd917ab97",
+  "Natrium_Defense_Lines": "f1a22036c533",
+  "Natrium_Design_Basis_Hazard_Levels": "e644d3f21c58",
+  "Natrium_Emergency_Preparedness_EPZ": "3b34a1b1c5b7",
+  "Natrium_Emergency_Response_Organization_And_Facilities": "2885064b40cf",
+  "Natrium_Energy_Island_Systems": "6a71d60c7d4f",
+  "Natrium_Fuel_Criticality_Safety": "f3eae1f52cc9",
+  "Natrium_Functional_Containment": "430be28392a5",
+  "Natrium_Fundamental_Safety_Functions": "1638f600541e",
+  "Natrium_HFE_OER_Training_HPM": "611ada6f95d0",
+  "Natrium_HFE_Program": "cf3756d14c28",
+  "Natrium_HFE_Safety_Function_Review": "f2a69b9b0f83",
+  "Natrium_Hazard_Interaction_Requirements": "83cf85afc993",
+  "Natrium_Hazard_Screening": "f27bfdeaf203",
+  "Natrium_IC_Systems": "1532f0b3634a",
+  "Natrium_Integrated_Risk_Results": "e6f492e6b96b",
+  "Natrium_Kemmerer_Site": "0b5c9058f808",
+  "Natrium_LBE_Evaluation_Methods": "4fd346cc3fac",
+  "Natrium_LBE_Risk_Margins": "fa19237c49e9",
+  "Natrium_LBE_Selection": "9fad67f18474",
+  "Natrium_Licensing_Basis_Methodology": "2272d666e4ba",
+  "Natrium_MST_Methodology": "a767e848fad6",
+  "Natrium_Major_Structures": "13327951e39f",
+  "Natrium_NI_EI_Interface": "482ba54cbeed",
+  "Natrium_NRC_Review_Core_Design": "48cae0ab853c",
+  "Natrium_NRC_Review_Reactivity_Control": "e998a0a3213d",
+  "Natrium_NSRST_Functions": "66d24cb8067d",
+  "Natrium_Nuclear_Design": "3c9cb1f8507d",
+  "Natrium_Operating_Modes": "d255e414131e",
+  "Natrium_Operating_Organization": "fe57c6754b08",
+  "Natrium_PDC_Additional": "94ed38d9bece",
+  "Natrium_PDC_Development": "27c8a5f56efd",
+  "Natrium_PDC_Fluid_Heat_Transport": "e4f36f46f886",
+  "Natrium_PDC_Fuel_Reactivity_Control": "060d9a73f7a8",
+  "Natrium_PDC_Multiple_Barriers": "cc8141a06dac",
+  "Natrium_PDC_Overall_Requirements": "bd361d2328c6",
+  "Natrium_PDC_Reactivity_Control": "20a56352e213",
+  "Natrium_PRA_Scope": "da580f180dfb",
+  "Natrium_Piping_And_Industrial_Codes": "b17f7eff0bed",
+  "Natrium_Plant_Capability_DID_Evaluation": "e6994c4cddac",
+  "Natrium_Plant_Overview": "9113818505ef",
+  "Natrium_Programmatic_And_Integrated_DID": "d62258e5192c",
+  "Natrium_Project_Organization": "73107a1f4ce3",
+  "Natrium_RG_Conformance": "8cb298fd027b",
+  "Natrium_Reactor_Heat_Transport_Systems": "f78fb6f26241",
+  "Natrium_Reliability_Capability_Targets": "65f2c93bcae5",
+  "Natrium_Risk_Significant_LBEs": "7caebcf53498",
+  "Natrium_SER_AOO_DBE_Review": "6d41be14ef48",
+  "Natrium_SER_BDBE_DBA_Review": "f56479f22c2b",
+  "Natrium_SER_Conduct_Of_Operations_Review": "62709b956559",
+  "Natrium_SER_Core_Fuel_Design_Review": "a2544ec640ad",
+  "Natrium_SER_DBHL_Review": "06e55050ee2e",
+  "Natrium_SER_Electrical_Buildings_PDC_Conformance": "d401a73251ea",
+  "Natrium_SER_Emergency_Preparedness_Review": "f415a76b9a86",
+  "Natrium_SER_Event_Source_Terms_Review": "11c905170cdd",
+  "Natrium_SER_Exemptions_Review": "b1a3a6882821",
+  "Natrium_SER_Facility_Overview_Review": "32fd100b04fa",
+  "Natrium_SER_Fuel_Handling_Ancillary_PDC_Conformance": "f2476d976791",
+  "Natrium_SER_Fuel_Handling_And_Ancillary_Review": "cd81de5a0d64",
+  "Natrium_SER_IC_Electrical_Structures_Review": "21f0682cd25d",
+  "Natrium_SER_IC_PDC_Conformance": "269ddec07e1f",
+  "Natrium_SER_Integrated_Evaluation_Review": "000e3fe2d984",
+  "Natrium_SER_LBE_Methodologies_Review": "3ae33dca2e3f",
+  "Natrium_SER_LBE_Summary_Review": "8201487043c7",
+  "Natrium_SER_MST_Methodology_Review": "4e22b4418fa5",
+  "Natrium_SER_Major_Accident_Review": "09f263595cd3",
+  "Natrium_SER_NHS_PDC_Conformance": "f35f886185c1",
+  "Natrium_SER_Nuclear_Heat_Supply_Review": "ae3aa116623c",
+  "Natrium_SER_Operating_Organization_Review": "662719fe4747",
+  "Natrium_SER_PDC_SR_NSRST_Review": "8d575061f3eb",
+  "Natrium_SER_PRA_OL_Expectations": "2e16f1468e10",
+  "Natrium_SER_PRA_Review": "ee4af9229305",
+  "Natrium_SER_RD_And_Permit_Conditions": "70f8cc89344f",
+  "Natrium_SER_Reactor_Auxiliary_PDC_Conformance": "f92ad634a71b",
+  "Natrium_SER_Reactor_Auxiliary_Review": "665ea6f6987a",
+  "Natrium_SER_SSC_Classification_Review": "bebbc01254cf",
+  "Natrium_SER_SSC_Design_Review": "fac2c03a294e",
+  "Natrium_SRDC_Summary": "05326c4b9dec",
+  "Natrium_SR_Functions_Heat_Generation": "cff01a2ed3f5",
+  "Natrium_SR_Functions_Heat_Removal": "35d6a73f7b49",
+  "Natrium_SR_Functions_Retaining_Radionuclides": "bc8dddeb4327",
+  "Natrium_SSC_Safety_Classification": "adc6293537af",
+  "Natrium_Safety_Significant_Structures": "bb8bf07446fc",
+  "Natrium_Security_And_Fitness_For_Duty": "bd7d739066f2",
+  "Natrium_Seismic_Analysis_Methods": "14e42602dcfd",
+  "Natrium_Seismic_Classification": "e1f63ccba39e",
+  "Natrium_Special_Treatment_Process": "f1d10cc555f1",
+  "Natrium_Structural_Loads_And_Combinations": "a0f91b8b2b6c",
+  "Natrium_Support_Systems": "aaa887c06130",
+  "Natrium_System_Anticipatory_Seismic_Trip": "13fec29fd343",
+  "Natrium_System_Control_Rod_Drive": "bc90bc18da09",
+  "Natrium_System_Control_Room_Indications": "b1bf807cd09e",
+  "Natrium_System_Ex_Vessel_Fuel_Handling": "84df78fbc105",
+  "Natrium_System_Gaseous_Radwaste_Processing": "c3c7b65d7206",
+  "Natrium_System_IC_Architecture": "680f2a4a8f6c",
+  "Natrium_System_In_Vessel_Fuel_Handling": "34dc57ebc6e9",
+  "Natrium_System_Intermediate_Air_Cooling": "06bb1140e083",
+  "Natrium_System_Intermediate_Heat_Transport": "932baccc9a73",
+  "Natrium_System_NI_Auxiliary_Electrical": "771678244f5f",
+  "Natrium_System_NI_Control": "db991ac2dc92",
+  "Natrium_System_NI_Fire_Protection": "a0c05de2cfe9",
+  "Natrium_System_NI_HVAC": "28b01e4e28af",
+  "Natrium_System_Nuclear_Instrumentation": "7319cfae1c6b",
+  "Natrium_System_Primary_Heat_Transport": "8f282ea30546",
+  "Natrium_System_Radiation_Monitoring": "99768131adba",
+  "Natrium_System_Reactor_Air_Cooling": "c1854e9915f3",
+  "Natrium_System_Reactor_Core": "ed85fe7dec70",
+  "Natrium_System_Reactor_Enclosure": "e8102f8ca0a4",
+  "Natrium_System_Reactor_Instrumentation": "5a929bf87ed8",
+  "Natrium_System_Reactor_Protection": "42b1d1e3c559",
+  "Natrium_System_Sodium_Cover_Gas": "e2e8a7afa270",
+  "Natrium_System_Sodium_Processing": "9e2f868d636a",
+  "Natrium_System_Water_Pool_Fuel_Handling": "dbc2c43d6140",
+  "Natrium_TMI_Requirements": "15fe0cb5a8e7",
+  "Natrium_Technical_Specifications_Scope": "8405a39e26fd",
+  "Natrium_Topical_Technical_Reports": "79520a3ed434",
+  "Natrium_Tornado_Winter_Precipitation_Design": "ee957c1368d9",
+  "Non_LWR_Application_Content": "52d540449706",
+  "Non_LWR_Design_Criteria_Crosswalk": "5036781cc4b6",
+  "Non_LWR_PRA_Regulatory_Role": "5c7f403dea11",
+  "Non_LWR_PRA_Scope": "893abd93701f",
+  "PRA_Role_In_LBE_Selection": "b3ff0d49c1f7",
+  "PRA_Safety_Function": "0c0e27bd8ef7",
+  "PSAR_ch01": "1762782ce743",
+  "PSAR_ch03": "a49aaf0ef278",
+  "PSAR_ch04": "ebd25477a7a0",
+  "PSAR_ch05": "46cca70bf80b",
+  "PSAR_ch06": "f4e53b558780",
+  "PSAR_ch07": "18092440022f",
+  "PSAR_ch11": "204de7ad7eb2",
+  "Plant_Capability_DID": "71415b17903a",
+  "Principal_Design_Criteria_Non_LWR": "e038a78df37d",
+  "Programmatic_DID": "ee297cb969c4",
+  "RG_1.232": "1a6de9e3ba02",
+  "RG_1.233": "9599edb9c494",
+  "RG_1.247": "55c4115454fc",
+  "RG_1.253": "497ced1c21c6",
+  "RG_1233_DID_Staff_Position": "5c6fd1dba086",
+  "RG_1233_LBE_Staff_Position": "36611b5b9547",
+  "RG_1233_SSC_Classification_Staff_Position": "5d66cc0c765c",
+  "RG_1247_Appendix_A_Staff_Positions": "4d480b1c33ab",
+  "RG_1247_Hazard_List": "d36b348a6617",
+  "RG_1247_PRA_Acceptability_Framework": "e1d77e3b08f2",
+  "RG_1247_PRA_Elements_Hazards": "a7cc58f9a7b8",
+  "RG_1247_PRA_Elements_Internal_Events": "8016c1808b9f",
+  "RG_1247_Standards_Peer_Review_Documentation": "9ddec5187b69",
+  "RG_1253_CP_PRA_Acceptability": "6cf6cb086465",
+  "RG_1253_Integrated_Evaluation_And_SSC_Positions": "f445ba63ede0",
+  "RG_1253_Methodology_And_LBE_Positions": "e894910ea9c3",
+  "RG_1253_SAR_Content_Endorsement": "d64e782c8d51",
+  "Required_Functional_Design_Criteria": "ef36046867e9",
+  "Required_Safety_Function": "03693d9a05dd",
+  "Risk_Importance_Measures": "3c605c7ce6a9",
+  "Risk_Significant_SSC": "44855b50baff",
+  "SER_KU1_CP": "e851908513c8",
+  "SFR_DC_Containment_Heat_Removal_And_Cleanup": "8ca0326850d8",
+  "SFR_DC_Electric_Power_And_Control_Room": "92759ed7749e",
+  "SFR_DC_Fuel_And_Reactivity_Control": "34d8845349d6",
+  "SFR_DC_Intermediate_Coolant_System": "dbaf89555ffd",
+  "SFR_DC_Overall_Requirements": "72674b6d685b",
+  "SFR_DC_Primary_Coolant_And_Cover_Gas": "b6e79b1fa6f7",
+  "SFR_DC_Primary_Coolant_Boundary": "46abcd648e90",
+  "SFR_DC_Protection_Systems": "af5247eb6737",
+  "SFR_DC_Reactivity_Control": "a43b236ed3a2",
+  "SFR_DC_Reactor_Containment": "b70008dd25cc",
+  "SFR_DC_Reactor_Design_And_Coolant_Boundary": "c38b8b18409b",
+  "SFR_DC_Residual_Heat_Removal_And_ECC": "1ed154bf735a",
+  "SFR_DC_Sodium_Specific_Criteria": "86c38be50207",
+  "SFR_DC_Structural_And_Equipment_Cooling": "f45df5ca4747",
+  "SSC_Design_Requirements": "8d053e81644d",
+  "SSC_Reliability_And_Capability": "89b9677e949f",
+  "SSC_Safety_Classification": "e9cb85fe3a34",
+  "Safety_Significant_SSC": "c2964bacad68",
+  "Single_Failure_Criterion_Non_LWR": "769b610fb5ce",
+  "Special_Treatment": "15ae46280d2c",
+  "TI_RIPB_Process_Overview": "b6b5788bbe96",
+  "Terminology": "478813fe589c",
+  "Uncertainty_Treatment": "77e328471620"
+ },
+ "statements": {
+  "49498cd89797": {
+   "note": "Mechanistic_Source_Term_Conditions",
+   "line": 40,
+   "text": "이 지침은 네 조건이 NEI 18-04의 ES%%t:ES%% 해석에서 방사선 결말을 추정하는 MST%%t:MST%% 평가에도 유효하다고 적는다. NEI 18-04는 이 주제를 상세히 다루지 않지만, 설계와 특정 event family에 대한 MST%%t:MST%% 개발은 통합된 risk-informed, performance-based 설계·인허가 접근의 또 다른 요소이다. 직원은 신청서나 관련 보고서가 barrier%%t:BARRIER%%에 의한 방사성 핵종 보유와 환경까지의 모든 barrier%%t:BARRIER%%·경로의 이동을 포함해 MST%%t:MST%%를 기술하기를 기대하며, 적용되는 경우 시설은 상당한 방사성 물질 재고를 담은 여러 계통을 다루기 위해 여러 MST%%t:MST%%와 특정 ES%%t:ES%%를 가질 수 있다. 같은 지침의 다른 절은 barrier function이 각 Licensing Basis Event%%t:LBE%%의 부지 밖 선량을 정하는 MST%%t:MST%% 개발·평가에 중요하다고 적고, Event Sequence Family%%t:EVENT_SEQ_FAMILY%%를 초기사건, 안전 기능 도전, 발전소 응답, End State%%t:END_STATE%%, MST%%t:MST%%가 비슷한 ES%%t:ES%%의 묶음으로 풀어 쓴다."
+  },
+  "8887a1a9120a": {
+   "note": "Natrium_AOO_List",
+   "line": 77,
+   "text": "방출이 있는 AOO%%t:AOO%%는 `RFH-OERC-BL` 하나이다. Pin Removal Cell 경계는 파손되지 않지만, Ex-Vessel Handling Machine에서의 방출이 더 보수적이라 그 선원항(source term)%%t:SOURCE_TERM%%을 적용한다. 해석은 원자로가 전출력에서 정지한 뒤 2.5일에 사건이 일어나고, 고연소 `LTA` 또는 `LDA` 집합체 하나에서 인출 핀과 주변 여섯 핀을 합친 일곱 핀의 피복이 파열된다고 가정한다. 설계 누설은 Fuel Handling Building으로 나가고 건물 체적은 즉시 환경으로 방출된다고 가정하며, 건물 안의 holdup과 붕괴는 고려하지 않는다. 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 3.62E-03 rem(5th 2.46E-03, 95th 5.40E-03)이고, 빈도는 평균 2.20E-02, 5th percentile 2.78E-03, 95th percentile 6.49E-02이다. 나머지 AOO%%t:AOO%%의 개별 빈도 값은 이 노트가 인용한 원문에 없다. NRC staff는 유량 상실, 열제거 증감, 반응도, 핵연료 취급 AOO%%t:AOO%% 묶음마다 사건들의 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류된 것이 적절하다고 개별 빈도 수치 없이 적는다."
+  },
+  "f6ebed63e6c8": {
+   "note": "Natrium_ASME_Component_Loads_And_Limits",
+   "line": 111,
+   "text": "하중조합은 Design, Service Level A–D 과도, Service Level B OBE%%t:OBE%%, Service Level D Safe Shutdown Earthquake%%t:SSE%%, Static Pressure Test, 그 밖의 시험의 아홉 조건으로 나뉜다. service stress limit은 Design 조건이 Design, Service Level A 과도가 A, Service Level B 과도와 Service Level B OBE%%t:OBE%%가 B, Service Level C 과도가 C, Service Level D 과도와 Service Level D Safe Shutdown Earthquake%%t:SSE%%가 D, Static Pressure Test가 Test, 그 밖의 시험이 B이다. Table 6.4-18의 조합 기호와 Table 6.4-17의 하중 이름의 대응은 원문에 없다. 정압시험은 `HBB-6000` 또는 `HCB-6000`에 따르고 Test 한계로 평가하며, 그 밖의 시험 사건은 `HBB-3113.7`에 따라 Level B Service Limit으로 평가한다. Service stress limit만으로 기능을 보증할 수 없는 기기와 지지물에는 functional limit을 따로 설정한다."
+  },
+  "2b266eedad66": {
+   "note": "Natrium_ASME_Component_Loads_And_Limits",
+   "line": 115,
+   "text": "**규정 대비 메모(C44, 규정 불일치).** `PSAR` Chapter 6은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적으면서도, Table 6.4-9 주석에는 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. Table 6.4-9 주석의 OBE%%t:OBE%% 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 Safety-Related%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다."
+  },
+  "00b95c72ad96": {
+   "note": "Natrium_ASME_Component_Loads_And_Limits",
+   "line": 117,
+   "text": "**규정 대비 메모(C47, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `ASME` `BPVC` Section `VIII`, Division 1로 설계하는 Guard Vessel%%t:GV%%의 응력해석 방법과 하중·하중조합을 §6.4.3에서 기술한다고 적고, `CRDM`의 하중·하중조합·응력 한계 개발 방법을 §6.4.4에서 기술한다고 적는다. Chapter 6 §6.4.3은 `ASME` Code Section `III`, Division 5 기기를 다룬다고 적고, `SER`은 §6.4.4가 `ASME` `BPVC` Section `III`를 설계 코드로 고른 배관과 배관 지지물에만 적용된다는 신청자 설명을 기록한다. 이 교차참조의 적부를 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 7 참조의 적부에 대한 판단이 없다(vault 기준)."
+  },
+  "f1b152f2d75a": {
+   "note": "Natrium_Building_Fuel_Handling",
+   "line": 162,
+   "text": "**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다."
+  },
+  "2c547f792e49": {
+   "note": "Natrium_Building_Reactor",
+   "line": 143,
+   "text": "**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다."
+  },
+  "cedea348f8c9": {
+   "note": "Natrium_Building_Reactor",
+   "line": 145,
+   "text": "**규정 대비 메모(C28, 신청자 문서 내부 불일치).** `PSAR` Chapter 5는 DL4-RR1, DL4-RR1a와 별도로 DL4-RR1b \"Guard Vessel Leak Prevention Function\"을 적는다. Chapter 7의 `RES` 기능 표는 DL4-RR1 한 행의 이름에 `HAA` barrier와 GV%%t:GV%% 누설 방지 기능을 함께 담고, `RXB` 기능 표는 DL4-RR1(Ex-RES Functional Containment Barrier)과 DL4-RR1a(`HAA` barrier)를 따로 쓴다. `SER`은 `RES` 절에서 DL4-RR1을 Chapter 7 `RES` 표의 이름 그대로 옮겨 적고, `RXB` 절에서는 DL4-RR1을 기능적 격납 경계로, DL4-RR1a를 그 `HAA` 부분으로 기술한다. 하위 `ID` 체계를 정하는 권위 조항은 vault에 없고, `SER`에는 두 표기 가운데 어느 쪽이 맞는지에 대한 판단이 없다(vault 기준)."
+  },
+  "c92c1ca6e666": {
+   "note": "Natrium_Building_Reactor",
+   "line": 147,
+   "text": "**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 \"reinforced concrete and steel\"로 적으며 Chapter 7은 하부구조 강재 요소의 하중조합을 `ANSI`/`AISC` N690-18에 둔다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. `SER`에는 주 부재 문제에 대한 판단이 없고(vault 기준), 이를 판정할 권위 조항도 vault에 없다. 하부구조의 강재가 주 부재가 아닌 어떤 요소를 가리키는지는 vault에 없다."
+  },
+  "357c3b1f341f": {
+   "note": "Natrium_Emergency_Preparedness_EPZ",
+   "line": 78,
+   "text": "NRC regulatory guide%%t:RG%%의 `§C.4`는 EPZ%%t:EPZ%%를 일부 원자력 시설을 둘러싼 구역으로, 방사성 물질 방출로부터 공중을 보호할 `protective actions`가 필요할 경우에 대비해 특별한 고려와 관리 관행을 사전에 계획·연습하는 곳으로 설명한다. 또 `non-LWRs`에서 zone 필요성을 평가하는 사건 범위를 NEI 18-04의 LBE%%t:LBE%%로 예상하되, 필요에 따라(`as necessary`) 비상 계획 결정 과정의 기준을 반영하도록 조정한다고 적고, 그 예로 `DG-1350`의 `96 hours` 선량 계산 기간과 Frequency-Consequence Target%%t:FC_TARGET%% 도시용 NEI 18-04의 `30-day` 기간을 든다. `PSAR` Chapter 11은 크기 결정 지침을 `RG 1.242, Appendix A`에, 방법론을 `PEP EPZ Topical Report`에, 예비 결과를 `Preliminary Emergency Planning Zone Determination Analysis`에 두며, 인용한 문장들에는 선량 계산 기간이 없다. `RG 1.242`와 두 보고서의 원문은 vault에 없다."
+  },
+  "75208bb160aa": {
+   "note": "Natrium_Fuel_Criticality_Safety",
+   "line": 160,
+   "text": "`PSAR` Chapter 5는 같은 임계 방지 수단을 `RES` In-Vessel Storage, `FHI`, `FHE`, `FHP`의 저장·취급 계통에 대해 적고 흡수체를 `fixed neutron absorbers`로 표기하며, Chapter 7 §7.3.1.2는 `SFP`에 대해 borated stainless steel 흡수판과 subcritical geometry를 적는다. Chapter 7 §7.3.2.2는 가장 반응도가 큰 연료 배치 기준으로 `k_eff` `≤ 0.95`라는 고정값을 적는 반면, 이 절은 위치와 조건에 따라 달라지는 `USL`을 기준으로 삼는다. 두 기준의 관계를 직접 설명하는 원문은 vault에 없다. `SER`은 행정 여유 `Δ_SM` `0.05`가 `10 CFR 50.68(b)(2)`와 (b)(4)의 여유와 일치한다고만 적는다. 또 Chapter 7 §7.3.1.2는 `10 CFR 50.68(b)` 부합을 적되 (b)(7) 면제를 언급하지 않고, 이 절은 `10 CFR 50.68(b)(7)` 농축도 한계를 예외로 적는다."
+  },
+  "5e9bd47e516b": {
+   "note": "Natrium_Fuel_Criticality_Safety",
+   "line": 164,
+   "text": "**규정 대비 메모(C36, 규정 불일치).** `PSAR` Chapter 3 §3.14는 10 CFR 50.68 부합을 보이되 50.68(b)(7)의 U-235 농축도 한계는 예외로 한다고 적고, Chapter 7 §7.3.1.2는 핵연료 저장·취급 계통의 임계가 50.68(b)에 따라 방지된다고 적는다. NRC는 50.68(b)(7) 요건에 대한 면제를 부여했고, `SER`은 이 면제를 부록 B에서 평가한다고 적는다. Chapter 7 §7.3.1.2는 50.68(b) 부합만 적고 (b)(7) 면제를 언급하지 않으므로, `SER`이 부여한 면제가 Chapter 7 기술에는 드러나지 않는다. `SER`은 면제가 50.68(b)(7)의 농축도 한계에만 해당하므로 50.68의 나머지 부분은 계속 적용된다고 적는다."
+  },
+  "d9016d64af8f": {
+   "note": "Natrium_Integrated_Risk_Results",
+   "line": 70,
+   "text": "NEI 18-04 `Task 7b`의 site boundary 목표 문장은 합산 대상을 모든 LBE%%t:LBE%%로 적고, NEI 18-04 `§4.2.2`는 Structures, Systems, and Components%%t:SSC%% 분류 과정의 cumulative risk limit 기준을 평가할 때 지원 PRA 범위 안의 모든 LBE%%t:LBE%%를 포함해야 한다고 적는다. NEI 18-04의 LBE%%t:LBE%% 정의에는 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%%와 함께 DBA%%t:DBA%%가 들어 있다. 따라서 `PSAR`의 합산 범위는 OQE%%t:OQE%%를 더하고 DBA%%t:DBA%%를 뺀 점에서 NEI 18-04 문언과 다르다. NEI 18-04는 빈도가 `5E-07/plant-year`보다 낮은 Event Sequence%%t:ES%%를 PRA 결과에 남겨 cliff edge 효과가 없음을 확인하는 데 쓴다고 적는다. NRC staff가 옮긴 신청자 진술에 따르면 OQE%%t:OQE%%는 평균 빈도가 `5E-07 per plant-year`보다 낮아 LBE%%t:LBE%% 빈도 cutoff 밖에 있으면서 결과가 정량화된 사건이다. NEI 18-04 문장은 이 빈도가 평균값인지 적지 않으므로, 두 사건 범위가 같은지는 vault에 없다."
+  },
+  "fc4c53eccdea": {
+   "note": "Natrium_LBE_Risk_Margins",
+   "line": 81,
+   "text": "**규정 대비 메모(C3, 규정 불일치).** `PSAR` 두 표의 주석은 margin을 F-C Target%%t:FC_TARGET%% 값을 LBE%%t:LBE%% 값으로 나눈 비로 정의하고, NEI 18-04 §5.7.1은 margin을 사건의 평균값을 대응하는 F-C Target%%t:FC_TARGET%% 값에 대한 비로 표현한다고 적어 두 정의는 역수 관계이다. `SER`은 이 margin 평가가 risk-significant LBE%%t:LBE%%의 F-C Target%%t:FC_TARGET%% 곡선까지의 margin 유지를 보여 NEI 21-07 지침과 일관된다고 판단했으나, 그 판단 문장은 비의 방향을 다루지 않는다."
+  },
+  "3060fe7860be": {
+   "note": "Natrium_LBE_Selection",
+   "line": 83,
+   "text": "경계 수치는 NEI 18-04의 LBE%%t:LBE%% 정의 표와 같고, 이 보고서도 세 범주 모두 평균 빈도를 명시한다. NEI 18-04는 BDBE%%t:BDBE%%를 상한 빈도가 5E-07/plant-year보다 큰 사건으로도 설명하고, 95th percentile 빈도가 5E-07/plant-year 미만인 사건을 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는데, 이 노트가 인용한 `Chapter 3` 문장에는 이에 대응하는 서술이 없다. 다만 `Chapter 4`는 LBE%%t:LBE%% 빈도 cutoff 밖에서 정량화된 사건을 other quantified events%%t:OQE%%로 적는다. NRC staff는 사업자가 BDBE%%t:BDBE%%로 평가할 사건을 정할 때는 95th percentile 빈도를 썼지만, BDBE%%t:BDBE%%로 분류해 construction permit%%t:CP%% 신청서에 넣을 사건을 정할 때는 평균 빈도를 썼다고 확인하고 이를 방법론 일탈로 본다. NEI 18-04는 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다고 적는다. 이 보고서는 5th percentile 빈도가 1E-02/plant-year 미만인 AOO%%t:AOO%%와 95th percentile 빈도가 1E-04/plant-year를 넘는 BDBE%%t:BDBE%%에서 DBA%%t:DBA%%를 도출하는 일을 OL%%t:OL%% 단계로 미루면서, 동시에 NEI 18-04 방법론을 LBE%%t:LBE%% 선정·평가에 일탈 없이 적용한다고 적는다. 보고서는 두 서술의 관계를 설명하지 않는다. NRC staff는 이 DBA%%t:DBA%% 미도출을 두 번째 방법론 일탈로 판단하고, 사업자가 이 평가를 Task 7a에만 적용해 DBE%%t:DBE%% 범위에 걸치는 AOO%%t:AOO%%와 BDBE%%t:BDBE%%에 DBA%%t:DBA%%가 만들어지지 않았다고 적는다."
+  },
+  "8456002cc123": {
+   "note": "Natrium_LBE_Selection",
+   "line": 85,
+   "text": "NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 Design Basis External Hazard Level%%t:DBEHL%% 안의 외부 사건에 대해 Required Safety Function%%t:RSF%%을 수행할 수 있어야 하므로 외부 재해로 새 DBA%%t:DBA%%가 생기지 않는다고 적는다. 이 보고서는 설계기준 지진이 일으키는 현상을 다른 DBA%%t:DBA%% 평가가 다루지 않는다는 이유로 지진 DBA%%t:DBA%%를 만들었고, 이 DBA%%t:DBA%%는 safe shutdown earthquake의 수평·수직 반응도 시간 이력을 포괄하는 반응도 곡선 범위로 전출력 조건에서 해석한다."
+  },
+  "c24b0f11d482": {
+   "note": "Natrium_NRC_Review_Reactivity_Control",
+   "line": 114,
+   "text": "이 발표의 약어표는 `AST`를 Alternative Shunt Trip으로 풀이한다. `PSAR` 5장의 Non-Safety-Related with Special Treatment 기능 표는 자동 지진 trip(DL4-RC4)의 Structures, Systems, and Components%%t:SSC%% 칸 네 항목 가운데 하나를 Anticipatory Automatic Seismic Trip System(`AST`)으로 적고, alternative shunt trip(DL4-RC6)의 SSC%%t:SSC%% 칸은 주석으로 넘긴다. 그 주석은 alternative shunt trip 계열이 최신 PRA 개정에서 defense line 기능으로 식별되었지만 요건이 아직 설계에 반영되지 않아 CP%%t:CP%% 신청에서 더 다루지 않는다고 적는다. `PSAR` Chapter 7도 `AST`를 Anticipatory Automatic Seismic Trip System으로 적으며, 이 계통은 지반 운동을 측정해 Safe Shutdown Earthquake%%t:SSE%%를 넘는 지진 Beyond Design Basis Event%%t:BDBE%%에서 최대 지진파가 도달하기 전에 원자로를 정지시키고, signal processing unit 출력이 bi-stable unit setpoint를 넘으면 bi-stable unit이 reactor trip breaker의 shunt trip 기능으로 신호를 보내며, NSRST%%t:NSRST%% 기능을 수행하도록 설계된다. 따라서 발표 약어표의 `AST`는 기능(alternative shunt trip)을, `PSAR`의 `AST`는 계통을 가리키며, 원문상 두 기능 모두 reactor trip breaker의 shunt trip을 거친다. 직원의 PDC%%t:PDC%% 26 판단은 `AST` 사용을 근거의 하나로 드는데, 이 판단과 `PSAR` 5장 주석의 설계 반영 상태 사이의 관계는 원문만으로 판정되지 않는다."
+  },
+  "0cba41587b26": {
+   "note": "Natrium_NSRST_Functions",
+   "line": 218,
+   "text": "`Risk-Significant Function`으로 표시된 PSF%%t:PSF%%는 DL4-RC3(`CRD Driveline Scram Follow`), DL4-RC6과 DL4-RC6a–RC6d(`Alternative Shunt Trip` 계열), DL4-HR4(`FHP Emergency Makeup`)이고, 나머지 PSF%%t:PSF%%는 모두 `Required for DID Adequacy`이다. DL4-RC6 계열의 SSC%%t:SSC%% 칸은 See Note 1이며, 주석은 이 기능이 PRA의 최신 개정에서 defense line 기능으로 식별되었지만 요건이 아직 설계에 반영되지 않아 construction permit%%t:CP%% 신청에서 더 다루지 않는다고 적는다. DL4-RC6c와 DL4-RC6d는 risk-significant로 표시되어 있으나 `Associated LBE` 칸이 None / N/A이다."
+  },
+  "6779c5afb482": {
+   "note": "Natrium_Nuclear_Design",
+   "line": 142,
+   "text": "**규정 대비 메모(C79(3), 권위 문서 표기 차이(기록만)).** `SER`은 `TP-LIC-RPT-0011`을 §3.11에서 \"Core Design and Thermal Hydraulic Technical Report\", Rev. 0, ML24088A085로, §7.1.1.1.3에서 \"Core Nuclear and Thermal Hydraulic Design Technical Report\", ML25276A289로 적는다. 같은 보고서 번호에 제목과 문서 번호가 둘이며, 두 표기가 같은 보고서의 다른 판을 가리키는지는 vault에 없다. 내용 판단의 차이가 아니므로 기록만 한다."
+  },
+  "63fe590808bd": {
+   "note": "Natrium_Piping_And_Industrial_Codes",
+   "line": 109,
+   "text": "산업 코드 쪽에서는 `Section VIII` Division 1이 design-by-rule로 복잡하지 않은 용기에, Division 2가 design-by-analysis로 상세 해석에 쓰인다. 고려 하중은 Division 1의 `UG-22`나 Division 2의 4.1.5.3에 열거된 것을 최소로 하고, 조합은 `UG-23`과 Table 4.1.2를 따른다. 다만 `Section VIII`은 하중을 service level과 연결하지 않고 분석해야 할 비정상 조건도 규정하지 않는다. 그래서 원자로 열수송 경로에 있는 Structures, Systems, and Components%%t:SSC%%처럼 `Section III` 과도의 영향을 받는 대상에는 그 과도에서 나온 설계하중을 `Section VIII` 기기 설계의 하중 입력으로 넣는다. `B31.1`과 `B31.3` 배관도 마찬가지로 원자로 용기와 같은 과도를 겪는 계통에 `Section III` 과도를 반영한다."
+  },
+  "c9d8f39513a8": {
+   "note": "Natrium_Piping_And_Industrial_Codes",
+   "line": 111,
+   "text": "`Section VIII` Division 1과 Division 2는 creep 영역의 고온 사용과 creep rupture·creep-fatigue interaction·creep buckling 같은 시간의존 파손 모드를 명시적으로 다루지 않는다. `B31.1`·`B31.3`도 시간의존 재료 물성과 고온 사용 영향에 관련된 허용응력 적용에 한계가 있다. `Section VIII`에서는 `Section III` Division 5의 Nonmandatory Appendix `HBB-T`가 Class A 금속 압력경계 기기의 creep-fatigue interaction 설계규칙을 주고, Code Case 2843-3이 creep과 creep-fatigue의 유의성 판정과 평가 방법을 준다. creep이 무시할 만하면 Division 2의 피로해석으로 충분하다. `B31.1`·`B31.3`에서는 Appendix `HCB-III`로 creep 효과의 무시 가능 여부를 판정하고, 무시할 수 없으면 `HCB-3634`가 허용응력을 낮추는 방법을 준다. 과압보호는 `Section VIII` SSC%%t:SSC%%에 대해서는 `Section VIII`이 허용하는 방법으로, `B31.1`·`B31.3` SSC%%t:SSC%%에 대해서는 각 코드의 요건으로 제공한다. `Section VIII`에서는 안전 분류가 다른 SSC%%t:SSC%%와의 접속부를 특별히 고려하며, 코드 분류가 다른 둘 이상의 SSC%%t:SSC%%가 연결되어 과압 사건이 양쪽에 영향을 주는 경우에는 더 엄격한 과압 요건을 따른다. 지진해석은 두 경우 모두 §6.4.1의 방법론을 따른다."
+  },
+  "6e12e3dcc4d6": {
+   "note": "Natrium_Plant_Capability_DID_Evaluation",
+   "line": 143,
+   "text": "`PSAR` Chapter 4의 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가는 NEI 18-04 `Chapter 5`의 지침을 따르며, Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%, Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%, 통합 평가의 세 요소를 `Section 4.2.1`, `Section 4.2.2`, `Section 4.2.3`에 나누어 싣는다. 이 장에서 다루지 않는 나머지 평가는 `Chapters 3, 5, 6, 7, and 8`에 있다. Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%는 안전 적절성을 보장하는 기능, Structures, Systems, and Components%%t:SSC%%, 그 bounding 설계 능력을 고르는 데 쓰이며, 요약은 LBE%%t:LBE%% margin, Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가, single feature reliance 평가, prevention-mitigation balance 평가로 이루어진다."
+  },
+  "5cde37fba930": {
+   "note": "Natrium_Plant_Capability_DID_Evaluation",
+   "line": 153,
+   "text": "`PSAR` Chapter 5의 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier`로, `DL3-RR3`을 `EVHM Cask barrier`로 적으며, 인용한 Chapter 5 표 부분에는 `DL3-RR3a`가 없다. Chapter 5의 `DL3-RR3` 기준은 `EVHM`이 원자로 헤드와 결합했을 때와 `EVST`와 결합했을 때 각각 결합된 barrier%%t:BARRIER%%가 핵연료의 방사성 핵종을 담아야 한다고 적는다. `SER`은 `DL3-RR3a`를 `EVHM`이 원자로 용기, `EVST`, `PRC` 위의 `FFV`에 결합되고 `FFV`가 열린 상태에서 형성되는 barrier%%t:BARRIER%%로 설명하므로, `DL3-RR3a`는 이 결합 상태의 barrier%%t:BARRIER%%에 해당한다. 다만 Chapter 5 기준이 원자로 헤드와 `EVST`와의 결합을 적는 반면 `SER` 설명은 `PRC` 결합을 더하며, 두 기술의 대응을 직접 적은 원문은 vault에 없다. `DL4-RR7`은 두 장에서 이름이 같고 Chapter 5에서 `Required for DID Adequacy`로 표시된다."
+  },
+  "8d18aa325f9e": {
+   "note": "Natrium_Project_Organization",
+   "line": 127,
+   "text": "**규정 대비 메모(C74, 규정 불일치).** vault의 `PSAR` Chapter 11은 Executive Management Organization을 TerraPower의 President and `CEO`, 사업 수행 책임 임원, 규제 업무 책임 임원, `CNO`, 품질 책임 director로 적고, 설계·건설·운전 기능 전반의 책임을 TerraPower의 President and `CEO`에게 둔다. `SER`은 `PSAR` §11.1.1이 `USO`의 executive management organization을 기술한다고 적고 그 구성원을 `USO`의 President and `CEO`와 그에게 직접 보고하는 `USO` 임원들로 옮기며, §11.1.1.1의 전반 책임자도 `USO`의 President and `CEO`로 옮긴다. `SER` §8.2.1.1이 인용한 `PSAR` §11.1.1.1 문언은 현재 `USO`와 TerraPower의 President and `CEO`가 같은 사람이라고 적는다. 따라서 `SER`이 인용하는 `PSAR` 문언은 vault의 `PSAR` Chapter 11 문언과 다르며, 권위 문서인 `SER`의 기술을 기준으로 읽는다. 신청자 표기·모회사 관계의 차이(C51)와 `SER` 안의 소유 관계 차이(C68)는 이 경영진 소속 차이를 다루지 않는다."
+  },
+  "d8bb97a96f45": {
+   "note": "Natrium_Reliability_Capability_Targets",
+   "line": 43,
+   "text": "capability target은 SSC%%t:SSC%%가 적절한 margin을 두고 PSF%%t:PSF%%를 수행하는 능력에 초점을 둔 성능 목표이며, 수명 중 열화가 capability의 일부로 고려된다. 구체적인 운전 성능 기준이 PSF%%t:PSF%% 성공 profile의 일부로 포함되고, 이 정량 target은 재해에 대응하는 발전소 능력을 보이는 해석 모델에 기반한다. SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%의 capability target도 아직 확정되지 않았고, 해석 모델의 결과가 OL%%t:OL%% 단계에서 PRA에 가정된 capability target이 만족되었음을 확인할 예정이다. NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 발전소 운전 수명 동안 Required Safety Function%%t:RSF%% 수행 능력을 유지하도록 추가 special treatment%%t:SPECIAL_TREATMENT%% 요건을 개발해야 한다(`should`)고 적는다. SR%%t:SR%%과 NSRST%%t:NSRST%%로 분류된 SSC%%t:SSC%%에 대해 reliability와 capability로 special treatment%%t:SPECIAL_TREATMENT%% 요건을 개발하는 과정은 `Section 6.3`에 있다([[Natrium_Special_Treatment_Process]]). target의 수치는 vault에 없다."
+  },
+  "2790bddac8b7": {
+   "note": "Natrium_Risk_Significant_LBEs",
+   "line": 98,
+   "text": "수치 표에 따르면 risk-significant DBE%%t:DBE%% 세 건의 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 1.83E-01에서 3.66E-01 rem이고, 평균 빈도는 8.77E-04에서 2.26E-03이다. high-consequence BDBE%%t:BDBE%% 두 건의 평균 선량은 모두 4.60E+01 rem(95th percentile 7.00E+01 rem)이고 평균 빈도는 5.25E-07과 8.82E-07이다. 나머지 risk-significant BDBE%%t:BDBE%%의 평균 선량은 6.62E-01에서 1.40E+01 rem이며, Pool Immersion Cell barrier%%t:BARRIER%% 실패 사건의 평균 빈도는 5.10E-07이다. NRC staff는 10 CFR 50.34 선량 기준을 EAB%%t:EAB%%에서 `2-hour` 25 rem total effective dose equivalent%%t:TEDE%%, low-population zone%%t:LPZ%% boundary에서 사건 방출 전 기간에 대해 25 rem TEDE%%t:TEDE%%로 적는다. 이 기준과 위 `30-day` 선량 값의 비교는 이 노트가 인용한 원문에 없다."
+  },
+  "1fef2f45d81c": {
+   "note": "Natrium_SER_Conduct_Of_Operations_Review",
+   "line": 79,
+   "text": "**비상계획.** 비상계획 본문은 OL%%t:OL%% 신청 때 제출되며, `PSAR`는 10 CFR 50.160 요건이나 `RG 1.242` 지침에서 벗어날 계획을 밝히지 않는다. `TP-LIC-RPT-0012`에 따르면 TerraPower의 `NAT-3056`은 사고 가능성과 원천항, 방출 시점, 기상을 고려해 공공 선량이 96시간 동안 1 rem total effective dose equivalent%%t:TEDE%%를 넘을 것으로 예상되는 영역을 기준으로 plume exposure pathway emergency planning zone%%t:EPZ%% 크기를 정하는 접근을 제시한다. `NAT-3056-A`가 예비 분석 보고서 `TP-LIC-RPT-0012`보다 나중에 승인되었으므로 staff는 두 보고서의 차이에 초점을 맞췄다. 예비 분석은 외부 사건과 건식 저장 이송 사건을 PRA에서 다루지 않았고, 지진에 대해서는 bounding 최대지반가속도에서 Design Basis Accident%%t:DBA%%를 정하는 대신 bounding 원천항을 쓴 지진 other quantified events%%t:OQE%%를 썼다. staff는 이 사건 선정이 방법론과 일치하거나 차이를 정당화한다고 보아 수용했다. 평가한 모든 사건에서 `EAB` 선량이 기준을 넘지 않았고, staff는 EPZ%%t:EPZ%%를 `EAB`에 둘 수 있다는 예비 판단을 내렸다. `NAT-3056-A` 안전성평가가 부과한 limitations and conditions 가운데 제4항에 따라, 이 `TR`을 참조하는 신청자는 연료 장전 전에 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA 표준을 만족하는 지진 PRA로 EPZ%%t:EPZ%% 크기를 재평가해야 한다. 또 최종 크기는 OL%%t:OL%% 신청에서 정당화되어야 한다. 현장의 1차 비상대응시설(`ERFP`)과 소외 예비 시설(`ERFB`)이 건설되며 두 시설이 수행하는 기능은 같다."
+  },
+  "4f7ca4f02ecf": {
+   "note": "Natrium_SER_IC_Electrical_Structures_Review",
+   "line": 85,
+   "text": "핵연료 취급 건물 상부구조에 관해 staff는 NRC가 NSRST%%t:NSRST%%·NST%%t:NST%% 구조물 검토에 대한 규제 지침이나 입장을 정하지 않았다고 적는다. 사업자에 따르면 지진 PRA는 OL%%t:OL%% 단계에야 나오므로 성능 목표를 지금 확인할 수 없다. 그래도 staff는 `PSAR`의 설계가 OL%%t:OL%% 단계에서 성능 목표를 충족할 수 있다는 합리적 확신을 준다고 판단했다."
+  },
+  "ec80ab9dcc47": {
+   "note": "Natrium_SER_Operating_Organization_Review",
+   "line": 92,
+   "text": "**operating license%%t:OL%% 단계로 미룬 평가.** `PSAR`은 운영 조직이 `ANSI`/ANS-3.2의 조직 조항이나 대안 가운데 무엇을 따를지 밝히지 않았으나, RG%%t:RG%% 1.33이 OL%%t:OL%% 신청자와 보유자에게 적용되므로 staff는 이 평가를 OL%%t:OL%% 신청 검토로 미루었다. 시험 조직의 `ANSI`/ANS-3.2 일치 여부, 운영 조직의 인력 확보, 10 CFR 50.54(m) 인원 요건, 면허 운전원 초기·지속 훈련도 OL%%t:OL%% 검토 대상이다. construction permit%%t:CP%%는 시설 운전을 허가하지 않는다. managerial depth 기준은 CP%%t:CP%% 신청에 적용되지 않는 10 CFR 50.34(b)(6)(v)를 다루므로 이번에 평가하지 않았고, staff는 관련 정보에 대해 현 시점에서는 입장을 취하지 않는다."
+  },
+  "2f32a9f2e1d3": {
+   "note": "Natrium_SER_SSC_Design_Review",
+   "line": 88,
+   "text": "**산업 코드(보강).** ASME `BPVC` Section `VIII`, B31.1, B31.3 같은 산업 코드는 주로 NSRST%%t:NSRST%% 기계 계통·기기와 일부 SR%%t:SR%% SSC%%t:SSC%%에 쓰인다. Section `III` 과도의 하중을 Section `VIII` 기기 설계의 하중 입력으로 쓰고, VIII-1이 피로를 명시적으로 다루지 않으므로 VIII-2의 피로 평가 절차를 적용한다. 무시할 수 없는 creep을 겪는 기기는 III-5 Class A 규칙이나 Code Case 2843-3으로, 배관은 HCB-3634 해석으로 평가한다. staff는 보충 요건을 붙인 B31.1·B31.3 배관 설계 접근을 수용했고, 다른 NSRST%%t:NSRST%% SSC%%t:SSC%%의 special treatment는 OL%%t:OL%% 신청의 최종 설계에서 검토한다."
+  },
+  "d366e6eac358": {
+   "note": "Natrium_SRDC_Summary",
+   "line": 14,
+   "text": "> `PSAR` Chapter 6은 Safety-Related Design Criteria%%t:SRDC%%를 Safety-Related%%t:SR%% 기능을 수행하도록 선정된 Structures, Systems, and Components%%t:SSC%%의 Required Functional Design Criteria%%t:RFDC%% 충족에 필요한 설계 기준으로 설명하고, SRDC%%t:SRDC%% 자체는 `PSAR` Chapter 5의 SR%%t:SR%% 기능 표에 둔다. Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 principal design criteria%%t:PDC%%와 비교해 PDC%%t:PDC%%의 완전성을 확인한다고 적고, `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232`의 `SFR-DC`를 바탕으로 Natrium 고유 설계 특성을 반영해 개발되었다고 적는다. 비교 결과 표는 vault에 없다."
+  },
+  "1bd5f00c9c98": {
+   "note": "Natrium_SRDC_Summary",
+   "line": 36,
+   "text": "`PSAR` Chapter 6은 RFDC%%t:RFDC%%를 `Section 5.3`의 PDC%%t:PDC%%와 비교해 PDC%%t:PDC%%가 설계에 대해 완전함을 확인한다고 적는다. `Section 5.3`은 PDC%%t:PDC%%가 `RG 1.232, Revision 0`의 `SFR-DC`를 바탕으로 Natrium 원자로 고유 설계 특성을 반영해 개발되었다고 적으며, Chapter 5 정제본에는 `Required Functional Design Criteria`나 RFDC%%t:RFDC%%라는 표기가 없다. RFDC%%t:RFDC%%와 PDC%%t:PDC%%의 비교 결과 표는 vault에 없다([[Natrium_PDC_Development]])."
+  },
+  "c82ec764e2c3": {
+   "note": "Natrium_SR_Functions_Retaining_Radionuclides",
+   "line": 94,
+   "text": "DL3-RR10(`SCG Isolation`)은 CP%%t:CP%% 단계에 추가된 기능으로, 주석에 따르면 여러 Licensing Basis Event%%t:LBE%%에서 커버가스%%t:COVER_GAS%% 계통 경로를 통한 방사성 핵종 방출을 완화한다. SR%%t:SR%% 격리 기능은 fail safe이고 필요한 탐지·작동 신호도 SR%%t:SR%%일 것이지만, 아직 설계나 해석에 반영되지 않아 CP%%t:CP%% 신청에서 더 다루지 않으며, operating license%%t:OL%% 단계에서 기능을 설계하고 LBE%%t:LBE%% 해석으로 이 기능의 완화를 포함한 방출을 평가할 것이다. 그래서 레코드의 SSC%%t:SSC%% 칸과 SRDC%%t:SRDC%% 칸은 See Note 1이다. 주석의 LBE%%t:LBE%% 목록에는 레코드의 `Associated LBE` 칸에 없는 `-CN` 접미 사건 식별자 두 개가 더 있다."
+  },
+  "be07e57d4530": {
+   "note": "Natrium_SSC_Safety_Classification",
+   "line": 79,
+   "text": "NSRST%%t:NSRST%% 기능 표는 PSF%%t:PSF%% 번호, 기능 설명, 만족한 safety significance 기준(risk-significant 또는 심층방어%%t:DID%%), 기능이 credit되는 사건, 수행 SSC%%t:SSC%%를 적는다. 이 보고서는 SSC%%t:SSC%% 기능이 어떤 LBE%%t:LBE%%라도 F-C Target%%t:FC_TARGET%% 안에 유지하는 데 필요하거나, SSC%%t:SSC%%가 고장난 LBE%%t:LBE%%의 총빈도가 세 cumulative risk targets 가운데 어느 하나의 within one percent이면 SSC%%t:SSC%%를 risk-significant로 분류한다고 적는다. NEI 18-04는 기능이 모든 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 유지한다는 설계 목표에 필요할 때, 또는 SSC%%t:SSC%% 고장을 포함한 모든 LBE%%t:LBE%%의 총빈도가 평균 추정값 기준으로 cumulative risk metric limit의 1%를 넘을 때를 기준으로 삼고, LBE%%t:LBE%%가 F-C Target%%t:FC_TARGET%% 안에 있다는 판정은 빈도와 선량 모두의 상위 95th percentile 점으로 한다고 적는다. 같은 원문의 용어집 정의는 평균 빈도와 결말을 기준으로 한다. 두 원문의 문언은 any와 all, within one percent와 exceeds 1%에서 다르고, 이 보고서의 문장은 평균값과 95th percentile 가운데 무엇을 쓰는지 밝히지 않는다."
+  },
+  "5593dd235b3b": {
+   "note": "Natrium_Safety_Significant_Structures",
+   "line": 257,
+   "text": "**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다."
+  },
+  "0595ad6f264a": {
+   "note": "Natrium_Safety_Significant_Structures",
+   "line": 259,
+   "text": "**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 \"reinforced concrete and steel\"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 7은 `FHB` 하부구조에 대해서는 `SFP` liner와 leak chase system에 관련된 구조용 강재 부분을 `AISC` N690-18로 설계한다고 적어 하부구조 강재의 한 예를 든다. 그러나 `RXB` 하부구조에 대한 Chapter 1·7의 \"steel\"이 무엇을 가리키는지, 곧 Chapter 6이 적는 stay-in-place formwork나 steel embedment인지는 vault에 없다."
+  },
+  "eecfafd5c429": {
+   "note": "Natrium_Seismic_Classification",
+   "line": 80,
+   "text": "NEI 18-04의 special treatment 표는 SR%%t:SR%% SSC%%t:SSC%%가 Safe Shutdown Earthquake%%t:SSE%% 뒤 Required Safety Function%%t:RSF%%를 수행해야 하고 NSRST%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% SSC%%t:SSC%%는 `Seismic II/I` 요건, 곧 SR%%t:SR%% SSC%%t:SSC%%의 RSF%%t:RSF%% 수행을 방해하지 않을 것을 만족해야 한다고 적고, 표의 범주별 적용은 일반 지침일 뿐 처방이 아니라고 적는다. `PSAR`은 NSRST%%t:NSRST%% SSC%%t:SSC%%에 기능 성능 확신을 위한 지진 special treatment%%t:SPECIAL_TREATMENT%%와 `SCN1`·`SCN2`의 functional qualification을 두고, SR%%t:SR%% SSC%%t:SSC%% 가운데 `SCS2`에는 `ASCE 7`의 `commercial standards`와 일관된 qualification을 둔다. `PSAR` Chapter 5의 risk-significant 기준은 Frequency-Consequence Target%%t:FC_TARGET%%과 세 cumulative risk target%%t:CUM_RISK_TARGET%%에 대한 것이며, `SCS1`과 `SCS2`를 가르는 seismic risk significance의 정량 기준은 vault에 없다."
+  },
+  "bf52d9dab32e": {
+   "note": "Natrium_Structural_Loads_And_Combinations",
+   "line": 317,
+   "text": "**규정 대비 메모(C44, 규정 불일치).** `PSAR` §6.4.3.3.1(기계 기기)은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적고, SR%%t:SR%% 하부구조 조합 표(Table 6.4-5)는 Operating Earthquake 하중 행을, Table 6.4-9 주석은 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. 구조물 표의 OBE%%t:OBE%% 행과 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 SR%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다."
+  },
+  "f441753728bd": {
+   "note": "Natrium_Structural_Loads_And_Combinations",
+   "line": 319,
+   "text": "**규정 대비 메모(C48, 신청자 문서 내부 불일치).** Table 6.4-6은 S-17(6) 조합(NB2-6 식)을 \"Normal and Severe\" 범주에 두고, Table 6.4-5는 주석 번호 (6)이 붙은 C-9(6) 조합(9-6 식)을 \"Extreme and Abnormal\" 범주에 둔다. 또 Table 6.4-6의 Accident Pressure 계수 1.4는 주석 (11)을 가리키는데, 주석 (11)은 계수를 1.6으로 정하는 주석이고 계수를 1.4로 정하는 주석은 따로 있다. 하중 범주 표기를 정하는 권위 조항은 vault에 없고, `SER`은 두 표의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 일괄 판단했으며, `SER`에는 범주 표기와 주석 번호에 대한 판단이 없다(vault 기준)."
+  },
+  "8dd44b8fb85b": {
+   "note": "Natrium_Support_Systems",
+   "line": 166,
+   "text": "방사성폐기물은 세 계통으로 처리한다. `RWG`는 Fuel Handling Building에 있는 일회통과 계통으로 Argon-41 같은 단반감기 핵종의 붕괴를 위한 체류를 주고 여과재와 활성탄 흡착층으로 xenon·krypton 같은 장반감기 핵종의 붕괴를 촉진한다. 배출 기체는 `NHV` 배기와 합쳐져 희석·감시된 뒤 배기구로 나간다. `RWL`은 나트륨과 염이 아닌 액체 폐기물을 모으고 분리·처리·시료채취·감시해 재사용하거나 증발시키며, 설비는 주로 Fuel Handling Building에 있다. `RWS`는 dewatering skid, compactor skid, 저장구역의 세 설계 요소로 젖은 폐기물과 마른 폐기물을 처리하되, 노심 집합체·사용후연료·대형 고장 기기 같은 큰 물체는 다루지 않고 장기 저장도 맡지 않는다."
+  },
+  "b3d16a925e3a": {
+   "note": "Natrium_System_NI_Control",
+   "line": 212,
+   "text": "**규정 대비 메모(C25(d), 신청자 문서 내부 불일치).** `CTC` 이름이 `PSAR` Chapter 1과 Chapter 7 §7.6.2.1에서는 Coolant Temperature Monitoring and Control System, Chapter 7 Table 7.6.1-1에서는 Nuclear Island Coolant Temperature Control System이다. `SER` 약어표는 Chapter 1과 같은 이름을 쓰지만, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다."
+  },
+  "d55b424df9a0": {
+   "note": "Natrium_System_Primary_Heat_Transport",
+   "line": 356,
+   "text": "`PSAR` Chapter 5 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier` 한 레코드로 적어 Chapter 7의 하위 식별자 `DL3-RR1a`·`DL3-RR1d`와 다르다. Chapter 5는 `DL3-HR2` 기준을 고온 한계와 low flux 신호로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한다. Chapter 1은 `The PHT safety function`, Chapter 7은 `A safety-significant function`이라고 적으며, Chapter 1은 `IHT`–`PHT` 경계를 `IHX` nozzle–`IHT` 배관 용접부로 적는 반면 Chapter 7은 원자로 안 `IHX` coaxial 배관을 `PHT` primary coolant boundary 구성품으로 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주한다고 적고, `IHT` 루프 배관이 주로 `RAB`에 있되 `RXB` 안에서 `IHX` nozzle에 연결되는 배관은 예외라는 `PSAR` 기술을 옮겨 적는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없다."
+  },
+  "f81d3e90da10": {
+   "note": "Natrium_System_Primary_Heat_Transport",
+   "line": 358,
+   "text": "**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `PHT` 기능 표는 `DL3-RR1a`와 `DL3-RR1d`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.1.3.1.17.3은 Chapter 7의 하위 `ID`를 그대로 써서 `PHT`를 평가하고, `SER` Table 6.1-1은 `PHT`의 `DL3-RR1`을 한 레코드로 적는다. `SER`은 두 표기를 모두 쓰며 그 차이를 판단하지 않는다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준)."
+  },
+  "e849cecebeb1": {
+   "note": "Natrium_System_Primary_Heat_Transport",
+   "line": 362,
+   "text": "**규정 대비 메모(C31(c), 신청자 문서 내부 불일치).** Chapter 1은 `PHT` 기능을 \"safety function\"으로, Chapter 7은 \"safety-significant function\"으로 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준)."
+  },
+  "6ccb85b9d4da": {
+   "note": "Natrium_System_Primary_Heat_Transport",
+   "line": 364,
+   "text": "**규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주하고 `RXB` 안에서 `IHX` nozzle에 연결되는 배관을 `IHT` 배관으로 옮겨 적으므로, 경계를 `IHX` nozzle에 두는 Chapter 1 기술과 어긋나지 않는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없고, `SER`에는 이 경계에 대한 직접 판단이 없다(vault 기준)."
+  },
+  "c9ead453602b": {
+   "note": "Natrium_System_Radiation_Monitoring",
+   "line": 175,
+   "text": "**규정 대비 메모(C25(c), 신청자 문서 내부 불일치).** `ERM` 목적 문장은 Chapter 1에서 off-site exposure, Chapter 7에서 personnel exposure를 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준)."
+  },
+  "264f00445f72": {
+   "note": "Natrium_System_Reactor_Instrumentation",
+   "line": 217,
+   "text": "**규정 대비 메모(C22-b, 신청자 문서 내부 불일치).** `DL4-RR8`의 이름이 `PSAR` Chapter 5에서는 Manual `SPS` Pump Trip on Leak Indication, Chapter 7 기능 표에서는 Manual `SPS` pump trip on low primary sodium level이다. `SER`도 §7.7.1.7에서는 앞의 이름을, §7.2.4.1.14.1에서는 뒤의 이름을 옮겨 적을 뿐이며, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다."
+  },
+  "d2317a5f12d4": {
+   "note": "Natrium_System_Reactor_Instrumentation",
+   "line": 219,
+   "text": "**규정 대비 메모(C25(a), 신청자 문서 내부 불일치).** `PSAR` Chapter 1은 `RIS`가 RV-GV annulus 액체 소듐 누설 탐지 변수를 `RPS` 입력으로 준다고 적으나, Chapter 7은 이 변수를 NSRST%%t:NSRST%% 변수로 두고 `RIS` 기능 표에는 이 변수를 쓰는 기능이 없다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준)."
+  },
+  "3288358debf1": {
+   "note": "Natrium_System_Reactor_Protection",
+   "line": 309,
+   "text": "**규정 대비 메모(C24, 신청자 문서 내부 불일치).** `PSAR` Chapter 11 Table 11.5-1의 계측 `LCO` 기능 목록(reactor scram, `PSP` trip, `ISP` trip)은 Chapter 7 `RPS`의 SR%%t:SR%% 기능 `DL3-HR11`(`SPS` pump trip)을 빠뜨린다. 판정할 권위 조항이 없다. `SER` §11.5.1은 `TS` 대상이 예비 안전해석의 중요 변수와 일관된다고 판단하고 `LCO`를 포함한 상세 평가를 OL%%t:OL%% 단계로 넘기며, 이 누락은 다루지 않는다."
+  },
+  "0e8edc313f64": {
+   "note": "Natrium_System_Sodium_Cover_Gas",
+   "line": 424,
+   "text": "**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `SCG` 기능 표는 `DL3-RR1c`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.2.3.1.15.1은 Chapter 7의 하위 `ID`를 그대로 써서 `SCG`를 평가한다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준)."
+  },
+  "8fa7dab6675d": {
+   "note": "Natrium_System_Water_Pool_Fuel_Handling",
+   "line": 191,
+   "text": "`PSAR` Chapter 5 표는 이 계통을 한 곳에서 `Water Fuel Pool Handling System`, 다른 곳에서 `Water Pool Fuel Handling System`으로 적고, Chapter 7은 뒤의 이름을 쓴다. Chapter 5는 `DL4-HR4`를 `Risk-Significant Function`으로 표시하고, Chapter 7은 그 기능의 exterior fill leg를 `SCN3`로 분류하며, Chapter 6은 `SCN3`를 NSRST%%t:NSRST%% SSC%%t:SSC%%의 최소 초기 분류로, `SCN1`을 지진 위험(`seismic risk`)에 대한 기여 가능성이 높다고 식별된 SSC%%t:SSC%%에 부여한다고 적는다. Chapter 7은 exterior fill leg가 지진·비지진 설계기준 사건 중 기능하도록 설계된다고도 적는다. `SER`은 `FHP` emergency makeup을 risk-significant NSRST%%t:NSRST%% 기능으로 옮겨 적고, `SCN1`을 능동 기기와 seismic risk significant로 식별된 SSC%%t:SSC%%에 부여하며 seismic risk significance는 Licensing Basis Event%%t:LBE%% 예방·완화에서의 역할과 common cause seismic failure의 비완화 선량 결과로 판단한다고 적는다. `SER`은 `SCN1` 부여 기준을 능동 기기와 seismic risk significance로 적을 뿐, `DL4-HR4`의 risk-significant 표시와의 관계는 적지 않는다. exterior fill leg의 `SCN3` 분류에 대한 직접 판단은 vault에 없다. Chapter 6은 `SCS2`를 지진 시 고장이 safety significant function에 악영향을 주지 않는 SR%%t:SR%% SSC%%t:SSC%%에 부여한다고 적는다."
+  },
+  "1387bc5dd045": {
+   "note": "Natrium_System_Water_Pool_Fuel_Handling",
+   "line": 193,
+   "text": "**규정 대비 메모(C36, 규정 불일치).** `PSAR` Chapter 3 §3.14는 10 CFR 50.68 부합을 보이되 50.68(b)(7)의 U-235 농축도 한계는 예외로 한다고 적고, Chapter 7 §7.3.1.2는 핵연료 저장·취급 계통의 임계가 50.68(b)에 따라 방지된다고 적는다. NRC는 50.68(b)(7) 요건에 대한 면제를 부여했고, `SER`은 이 면제를 부록 B에서 평가한다고 적는다. Chapter 7 §7.3.1.2는 50.68(b) 부합만 적고 (b)(7) 면제를 언급하지 않으므로, `SER`이 부여한 면제가 Chapter 7 기술에는 드러나지 않는다."
+  },
+  "18adc4b045fa": {
+   "note": "Natrium_TMI_Requirements",
+   "line": 99,
+   "text": "Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다고 확인된 항목은 없었다고 적는다. Table 1.4-4의 Section 칸에는 절 번호가 적힌 행과 `Not Applicable`이 적힌 행이 있다. §1.4.3에는 이 칸의 의미를 설명하는 문장이 없다. 절 제목은 unresolved safety issue를 포함하나 §1.4.3 본문에는 이를 따로 다루는 서술이 없다. `SER`은 신청자가 §1.4.3에서 `NUREG-0933` Appendix B의 Three Mile Island 외 항목 가운데 KU1에 적용되는 것이 없다고 판단했다고 기술하고, `10 CFR Part 50`에는 `10 CFR Part 52`와 달리 `USI`와 `GSI`를 다루라는 요건이 없다고 적는다. 그 위에서 staff는 `USI`와 `GSI`가 construction permit%%t:CP%% 신청에 대해 적절히 다루어졌다고 판단했다."
+  },
+  "6f9ba7a2b477": {
+   "note": "Natrium_Topical_Technical_Reports",
+   "line": 51,
+   "text": "이 노트는 표의 목록 자체를 담는다. 보고서 원문은 vault에 없으므로 제목과 문서번호, accession number, 참조 절만 확인할 수 있다. 본문은 이 칸을 safety evaluation report의 accession number로 설명하나 표 머리는 `Submittal Accession Number`로 적는다. 원문이 두 가지로 부르므로 어느 쪽인지는 §1.4.2만으로 판정할 수 없다."
+  },
+  "3a856e1dca3e": {
+   "note": "Plant_Capability_DID",
+   "line": 83,
+   "text": "Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%의 확립은 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%% 개발에서 시작해 LBE%%t:LBE%% 선정·평가로 이어지는 반복 과업 속에서 이루어지고, Structures, Systems, and Components%%t:SSC%% 안전 분류의 영향도 받는다. 원문은 LBE%%t:LBE%% 평가에서 발전소 능력을 평가하는 과업을 Task 7로 적되 어느 절차의 과업 번호인지는 밝히지 않는다. §3.2.2의 LBE%%t:LBE%% 선정 절차에서는 Task 7e가 심층방어%%t:DID%%의 risk-informed 평가이고, §5.3의 통합 절차에서는 Task 7이 LBE%%t:LBE%% 위험과 Frequency-Consequence Target%%t:FC_TARGET%%의 비교, Task 12가 발전소 능력 적절성의 확인이다. 원문은 원자력 발전소 인허가나 운전에서 심층방어%%t:DID%% 충분성을 판단할 명확한 규제 수용 기준이 없다고 보고, 표 5-2의 지침을 초기 평가의 기초로 제시하며, 이 지침이 적절하고 충분한지는 규제 검토에서 확인된다고 적는다."
+  },
+  "94a85924aad7": {
+   "note": "Principal_Design_Criteria_Non_LWR",
+   "line": 88,
+   "text": "NRC 직원이 기준을 개발하면서 둔 핵심 가정은 다음과 같다. 세 기준 집합은 정상 운전, AOO%%t:AOO%%, 가정 사고라는 설계기준 범위에 적용된다. 경수로의 중대사고·beyond-design-basis event 규정에 대응하는 비경수형원전%%t:NON_LWR%% 규정은 이 이니셔티브에서 정하지 않았고, 현행 규정은 비경수형원전%%t:NON_LWR%%에 적용될 수도 있고 아닐 수도 있다. 적용되는 규정의 준수, 적용되지 않는 이유, 설계 고유 중대사고의 완화를 입증하는 것은 신청자의 책임이다. 직원은 core disruptive accident를 신청자가 중대사고나 beyond-design-basis event로 입증한다고 가정했으며, 이 사고는 냉각 가능한 형상을 잃게 해 여러 기준을 위반하게 될 것이라고 적는다. 비경수형원전%%t:NON_LWR%%의 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%%는 경수로와 크게 다를 수 있다. advanced reactor design criteria는 여섯 기술에 적용하려는 것이지만 일부 설계에는 sodium-cooled fast reactor design criteria나 MHTGR design criteria의 기준이 더 적합할 수 있고, molten salt reactor%%t:MSR%%나 lead fast reactor%%t:LFR%% 같은 기술별 기준은 장래에 개발될 수 있다. functional containment 성능 요건, specified acceptable fuel design limits%%t:SAFDL%% 대신 specified acceptable system radionuclide release design limit%%t:SARRDL%%를 쓰는 개념은 Commission의 검토와 승인이 필요할 수 있는 정책 사안이다. 비경수형원전%%t:NON_LWR%% 설계는 경수로보다 향상된 margins of safety를 제공해야 한다."
+  },
+  "66430ea13ef4": {
+   "note": "RG_1247_PRA_Acceptability_Framework",
+   "line": 66,
+   "text": "**승인 대상과 수용성 정의.** 이 지침은 `ASME/ANS RA-S-1.4-2021`을 예외와 함께, peer review 지침 `NEI 20-09` Revision 1을 예외 없이 승인한다. 다만 C.2 도입 문단은 peer review 지침을 staff 예외와 함께 승인한다고 적고 §A Purpose 문장도 그렇게 읽힐 수 있어, 이 차이를 [[RG_1247_Standards_Peer_Review_Documentation]]에서 다룬다. PRA 수용성은 Section C의 직원 입장 충족으로 정의되며, 승인된 표준과 peer review 절차를 충족해 만족시킬 수 있다. staff의 승인문은 표준의 강제 표현(\"requirement\" 등)을 그대로 따르지만, 이 지침이 그 표현을 쓰는 것이 규제 요건을 부과하거나 표준이 유일한 방법이라는 뜻은 아니다. Figure 1은 수용성 달성에 관련된 서로 의존하는 세 측면을 보이지만, 정제본에는 그림 내용이 없어 세 측면의 구체적 구성은 vault에 없다."
+  },
+  "8d03e7b31350": {
+   "note": "RG_1247_PRA_Acceptability_Framework",
+   "line": 68,
+   "text": "**적용 맥락.** 현재 규정은 Part 50의 construction permit%%t:CP%%나 operating license%%t:OL%% 신청자에게 PRA 관련 정보를 요구하지 않는다. 이 지침은 부지 밖 시설의 건설과 부지로의 운송 중 위험을 다루지 않는다. staff는 신청자가 PRA 결과의 역할에 맞추어 PRA 범위와 상세도를 조정하려 할 수 있음을 인정한다."
+  },
+  "c9e2358118dd": {
+   "note": "RG_1247_PRA_Acceptability_Framework",
+   "line": 76,
+   "text": "**규정 대비 메모(C61, 상위 dispute).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 \"with staff exceptions\"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 \"with staff exceptions\"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이므로 예외 없는 승인이 실효 입장으로 읽힐 수 있으나, 두 서술의 관계를 정하는 문장은 vault에 없다."
+  },
+  "b56c83c31904": {
+   "note": "RG_1247_PRA_Elements_Internal_Events",
+   "line": 64,
+   "text": "- 방사선 결과: 대기 방출에 의한 피폭이 지배 경로라고 가정하며, 시설 내 원천의 직접 방사선과 지표수·지하수 경로는 다루지 않는다. 부지의 장기 기상을 대표하는 최소 한 해 분량의 시간별 기상 자료를 쓴다."
+  },
+  "e4a5e3f81e33": {
+   "note": "RG_1247_Standards_Peer_Review_Documentation",
+   "line": 53,
+   "text": "**표준의 역할(C.2).** 직원 입장 충족을 보이는 한 가지 방법은 staff가 예외와 함께 승인한 national consensus PRA 표준을 쓰는 것이다. 다만 표준은 수용 가능한 PRA의 요건을 어떻게 충족하는지는 다루지 않는다. 승인된 표준과 `NEI 20-09`를 쓰면 staff의 심층 검토 필요가 줄어든다."
+  },
+  "f9d5f03a5131": {
+   "note": "RG_1247_Standards_Peer_Review_Documentation",
+   "line": 65,
+   "text": "**규정 대비 메모(C61, 상위 dispute).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 \"with staff exceptions\"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 \"with staff exceptions\"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이므로 예외 없는 승인이 실효 입장으로 읽힐 수 있으나, 두 서술의 관계를 정하는 문장은 vault에 없다."
+  },
+  "b414bc4aca6d": {
+   "note": "RG_1253_CP_PRA_Acceptability",
+   "line": 66,
+   "text": "**`RG 1.247` C.1.1과의 관계.** 이 부록은 PRA 수용성을 `RG 1.247` Section C의 regulatory position 충족으로 정의하면서도, CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%에서 원자로의 내부 사건 hazard group으로 두고 일부 hazard를 DBHL%%t:DBHL%% credit으로 처리할 수 있게 한다. `RG 1.247` C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다뤄야 한다고 적는다. 이 부록은 OL%%t:OL%% 신청을 뒷받침하는 PRA가 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%를 다루도록 형상 관리 계획을 설명하게 하므로, 두 지침의 차이는 CP%%t:CP%% 단계와 OL%%t:OL%% 단계의 범위 차이로 읽힌다. 다만 `RG 1.247`의 \"must always\"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 vault에 없다. 또 이 부록의 각주는 진행 중인 rulemaking이 Part 50 CP%%t:CP%%·OL%%t:OL%% 신청에 Part 52와 비슷한 PRA 관련 요건을 제안한다고 적는다."
+  },
+  "c6cc7b290438": {
+   "note": "RG_1253_Integrated_Evaluation_And_SSC_Positions",
+   "line": 51,
+   "text": "이 장은 또 plant capability, programmatic capability, 통합 risk-informed performance-based 적정성이라는 세 측면에서 심층방어%%t:DID%% 적정성 평가를 기록한다. NRC는 CP%%t:CP%% 단계에서는 programmatic capability가 아직 정해지지 않았을 수 있으므로 심층방어%%t:DID%% 논의가 plant capability에 한정될 수 있다고 예상한다. CP%%t:CP%% 신청서는 심층방어%%t:DID%% 적정성을 세우는 접근을 논의해야 하며, `RG 1.233`의 평가 과정을 이행하는 논의는 이 목적에 수용 가능하다. 누적 위험 해석에서 다른 장의 방법론과 달리 쓴 입력이나 이탈은 요약해 넣어야 한다. 운영허가 발급 뒤 `FSAR` 변경 관리에 대해서는 지금 입장을 정하지 않는다."
+  },
+  "13e4ede9d546": {
+   "note": "RG_1253_Integrated_Evaluation_And_SSC_Positions",
+   "line": 53,
+   "text": "**안전 기능과 설계 기준(C.6).** PRA Safety Function%%t:PSF%%은 발전소 안 어떤 원천에서든 계획되지 않은 방사성 방출을 방지·완화하는 데 credit하는 기능이다. 품질 보증 PDC%%t:PDC%%를 두는 것은 등급별 품질 보증의 수용 가능한 방법이다. Licensing Modernization Project%%t:LMP%% 과정을 쓰는 신청자에게 `SSCs important to safety`는 SR%%t:SR%%과 NSRST%%t:NSRST%% SSC%%t:SSC%%를 모두 포함하므로, 제안 PDC%%t:PDC%%는 두 범주의 기능을 모두 다루어야 하며, 전체 범위를 다루지 않으면 신청서 내용 규정의 면제가 필요하다. NEI 21-07은 PDC%%t:PDC%%를 `PDC-RFDC`와 `PDC-CDC`의 두 층으로 나눈다. Chapter 5는 핵연료 인증도 다루어야 한다. 노심과 연료는 근본 안전 기능 수행에 직접 관여하므로 대체로 SR%%t:SR%%이며, 과거 자료를 쓰면 그 적용성을 정당화해야 한다."
+  },
+  "d5412090a2fc": {
+   "note": "RG_1253_SAR_Content_Endorsement",
+   "line": 55,
+   "text": "**12-chapter 구조.** NRC는 비경수형원전%%t:NON_LWR%% `SAR`로 12-chapter 구조를 제안했으며(대형 경수로 `SAR`은 19장), 각 장의 제목은 위 표와 같다. `TICAP`의 범위는 이 가운데 LMP%%t:LMP%% 과정이 반영되는 앞 여덟 장이다. LMP%%t:LMP%% 과정은 부지 평가를 구체적으로 다루지 않으므로 NEI 21-07도 이 측면을 다루지 않는다. 그래서 이 지침의 `SAR` 내용 논의는 신청서 전체의 관점에서 LMP%%t:LMP%% 과정 밖의 측면에 대한 지침도 포함한다. 이 지침의 목적 가운데 하나도 앞 여덟 장에 포함되어야 할 LMP%%t:LMP%% 범위 밖의 정보를 제공하는 것이다."
+  },
+  "1e1f3a80f7e6": {
+   "note": "SER_KU1_CP",
+   "line": 46,
+   "text": "> `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다. vault는 1, 3–7, 11, 13장과 부록 A·B를 `Natrium_SER_` 노트 30개(7장의 계통별 PDC 정합성 판단을 계통군별로 정리한 노트 다섯 개 포함)로 옮겼다. 2, 8–10, 12, 14장은 대응 `PSAR` 장이 vault에 없어 인제스트 단위에서 제외했으나, §2.4.1.4.2와 §2.5.1.3.2.2는 [[Terminology]]에서, §8.2.1.1은 [[Natrium_Project_Organization]]과 [[Natrium_SER_Operating_Organization_Review]]에서, §10.1.1은 [[Natrium_Operating_Organization]]과 [[Natrium_RG_Conformance]]에서, §14.1과 §14.1.2는 [[Natrium_SER_Exemptions_Review]]에서 부분 인용된다. 또 장 도입, 규제 목록, 결론 반복, 비공개 표 같은 절은 사유와 함께 coverage에서 제외했다."
+  },
+  "c6f4eb622ae5": {
+   "note": "SFR_DC_Reactor_Containment",
+   "line": 88,
+   "text": "기준 56은 격납 대기에 직접 연결되어 격납 구조를 관통하는 각 배관에 같은 네 가지 격리 밸브 조합과 바깥쪽 밸브 배치·동력 상실 요건을 적용한다. 근거는 제목과 본문에서 primary를 지웠고, 격납이 핵분열생성물과 환경 사이의 barrier%%t:BARRIER%%이므로 reactor도 지웠다고 적지만, 기준 56 조문에는 reactor containment structure라는 말이 남아 있다. 근거는 또 신형로 설계가 다양해 단일 격납 개념은 없지만 격납 관통부의 격리 규칙은 모든 경우에 적용되며, 그 방법은 primary, secondary, reactor containment 가운데 무엇인지 지나치게 규정하지 않고 설계자에게 맡긴다고 설명한다. 근거가 드는 예로 molten salt reactor%%t:MSR%% 설계는 액체 연료염 일부를 처리 계통으로 빼내 정화하고 핵분열생성물을 제거한 뒤 원자로로 돌려보내므로 계통 전체를 둘러싸는 격납이 필요할 수 있다. SFR%%t:SFR%%에서는 guard vessel이 primary containment가 될 것이고, `PRISM` 설계의 경우 그 위의 돔형 구조가 secondary containment가 될 것이며, secondary containment도 격리 요건을 만족해야 한다. 기준 57은 격납 구조를 관통하지만 primary coolant boundary의 일부도 아니고 격납 대기에 직접 연결되지도 않은 배관에, 단일 능동 기기 고장을 가정해도 격리 밸브 없이 격납 안전 기능을 만족함을 입증하지 않는 한 적어도 하나의 격리 밸브를 두게 한다. 그 밸브는 자동, 잠금 폐쇄, 원격 수동 조작 가운데 하나여야 하고 격납 밖 가까이에 있어야 하며, 단순 역지 밸브는 자동 격리 밸브로 쓸 수 없다."
+  },
+  "9754d4d96768": {
+   "note": "SFR_DC_Structural_And_Equipment_Cooling",
+   "line": 40,
+   "text": "기준 44는 important to safety Structures, Systems, and Components%%t:SSC%%의 열을 최종 열침원으로 전달하는 계통을 필요한 경우 두어 정상 운전과 사고 조건의 결합 열부하를 전달하게 하고, 단일 고장을 가정해도 안전 기능을 수행하도록 기기·특성의 중복성과 연결, 누설 탐지, 격리 능력을 요구한다. 근거는 이름을 바꾼 이 기준이 신형로 계통 설계의 차이를 반영해 해당하는 경우 SSC%%t:SSC%% 냉각 요건을 포함하도록 했으며, 기준 34의 잔열 제거 계통과 기준 35의 emergency core cooling system%%t:ECCS%%은 다루지 않는다고 적는다. 전력 언급은 전력 계통 기준을 참조하도록 삭제했다."
+  },
+  "797e05ae14ae": {
+   "note": "SSC_Safety_Classification",
+   "line": 76,
+   "text": "**규정 대비 메모(C67, 상위 dispute).** NEI 18-04 §5.3 Task 10은 DBA%%t:DBA%%를 구성할 때 SR%%t:SR%% SSC%%t:SSC%%만 연계된 RSF%%t:RSF%%를 수행한다고 가정한다고 적고, [[RG_1.233]] C.1도 DBA%%t:DBA%% 해석은 RSF%%t:RSF%%를 SR%%t:SR%% SSC%%t:SSC%%가 수행한다는 가정으로 한다고 적어, 비SR%%t:SR%% SSC%%t:SSC%%의 비RSF%%t:RSF%% 기능을 배제하지 않는 것으로 읽힐 여지가 있다. `SER`은 이 읽기와 §5.6.2의 피동 기능 저하 문장에 근거한 사업자 해석, 곧 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%의 저하 성능 credit을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단하고, 최종 판단을 operating license%%t:OL%% 단계로 미루었다. 그러나 NEI 18-04 §4.1과 표 3-1, 그리고 [[RG_1.233]] C.1의 DBA%%t:DBA%% 도출 문장은 DBA%%t:DBA%% 완화에 동원되는 SSC%%t:SSC%%를 SR%%t:SR%% SSC%%t:SSC%%로만 한정하며, `SER`은 이 문장들을 언급하지 않는다. 또 §5.6.2의 저하 문장은 Table 5-2 심층방어%%t:DID%% 지침의 맥락에 있고 DBA%%t:DBA%% 해석을 지칭하지 않으므로, 권위 문서 사이의 해석 차이가 남는다."
+  },
+  "6b39aa58ae6e": {
+   "note": "TI_RIPB_Process_Overview",
+   "line": 74,
+   "text": "지침의 전체 목표는 지식을 갖춘 여러 당사자가 비슷한 결론에 이르도록 LBE%%t:LBE%% 선정, SSC%%t:SSC%% 분류, 심층방어%%t:DID%% 적절성 판단의 체계적이고 재현 가능한 절차를 기술하는 것이다. 그 결과는 신청서에서 발전소 SSC%%t:SSC%%와 프로그램 관리를 기술할 범위와 상세 수준에 필요한 통찰을 주며, 절차는 설계가 진행되는 동안 반복되어 설계자에게 즉각적인 되먹임을 준다. 절차가 다루는 것은 Anticipated Operational Occurrence%%t:AOO%%, Design Basis Event%%t:DBE%%, DBA%%t:DBA%%, Beyond Design Basis Event%%t:BDBE%%를 포함한 LBE%%t:LBE%% 선정을 위한 ES%%t:ES%%의 정의·범주화·평가, SSC%%t:SSC%% 안전 분류와 성능 요건 개발·special treatment%%t:SPECIAL_TREATMENT%% 적용, 심층방어%%t:DID%% 적절성 평가 지침이다. 절차는 Risk-Informed%%t:RI%%이면서 Performance-Based%%t:PB%%이다. RI%%t:RI%%라는 것은 체계적 위험 평가의 통찰을 충분히 활용하되 위험 평가가 다루지 않는 불확실도를 구조화된 처방적 규칙으로 다룬다는 뜻이며, 원문은 이 접근이 공중 방사선 방호에 적절한 보호가 제공된다는 합리적 보증을 줄 수 있다고 적는다. PB%%t:PB%%라는 것은 LBE%%t:LBE%% 빈도·결말의 정량 성능 지표와 사건을 예방·완화하는 SSC%%t:SSC%% 능력의 성능 요건으로 달성되는 원하는 결과의 실현에 비추어 효과를 평가한다는 뜻이며, 특정 특성·조치·프로그램 요소를 지정하는 처방적 접근의 대안이다."
+  }
+ }
+}

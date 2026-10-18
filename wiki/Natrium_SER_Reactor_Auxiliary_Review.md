@@ -78,3 +78,4 @@ staff는 다섯 계통 각각의 `PSAR` 정보가 construction permit%%t:CP%% �
 - [[Natrium_System_Sodium_Processing]]
 - [[Natrium_System_Control_Rod_Drive]]
 - [[Natrium_SER_Nuclear_Heat_Supply_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]

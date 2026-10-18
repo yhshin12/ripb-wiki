@@ -114,6 +114,11 @@ terms_pending: []
 - "Sodium coolant density – temperature changes cause the coolant density to change thereby impacting neutron spectrum and leakage." [PSAR_ch05 §5.3.2.2 p.25]
 - "Radial distortion feedback – core assembly displacement and distortion with respect to the radial direction" [PSAR_ch05 §5.3.2.2 p.25]
 - "the reactivity feedback mechanisms include fuel temperature (Doppler) effects, fuel axial expansion and contraction, primary sodium coolant density, control rod driveline axial expansion, and radial distortion feedbacks." [PSAR_ch07 §7.1.1.2 p.13]
+- "PSAR section 3.12.1.2 describes the reactivity coefficients the applicant considers important for the Natrium reactor core design and evaluation, which include Doppler, fuel density, coolant density, cladding density, structure density, and radial expansion." [SER_KU1_CP §3.11.1.4 p.308]
+- "Other parameters are important for transient analyses, including axial expansion (which is a function of coolant and structure density and thermal expansion of the fuel system materials)." [SER_KU1_CP §3.11.1.4 p.308]
+- "the reactor vessel, which provides reactivity feedback via thermal expansion, which moves the core relative to the control rods." [SER_KU1_CP §7.1.2.1.5 p.424]
+- "TP-LIC-RPT-0011, “Core Design and Thermal Hydraulic Technical Report,” Rev. 0 (ML24088A085)" [SER_KU1_CP §3.11 p.302]
+- "provided in a supplemental technical report, TP-LIC-RPT-0011, “Core Nuclear and Thermal Hydraulic Design Technical Report” (ML25276A289)" [SER_KU1_CP §7.1.1.1.3 p.411]
 
 ## 해설
 `PSAR` Chapter 3 §3.11은 fuel qualification plan과 예비 설계가 `NAT-2806-A`(`TerraPower, LLC (TerraPower) Natrium Topical Report: Fuel and Control Assembly Qualification`, Revision 0)에 있고 이 보고서가 참조로 통합된다고 적는다. 방사성 핵종 보유 요건과 PDC%%t:PDC%% 10 부합을 위한 연료 기준을 포함한 최종 결과는 OL%%t:OL%% 단계에서 제공될 예정이다(`will`).
@@ -132,7 +137,9 @@ terms_pending: []
 
 **규정 대비 메모(C32, 규정 불일치).** [[RG_1.232]] SFR-DC 26 (1)은 "design limits for the fission product barriers"를 적고, Natrium PDC%%t:PDC%% 26은 이를 SARRDL%%t:SARRDL%%로 바꾸었으며, `SER`은 Natrium PDC%%t:PDC%%를 승인된 토픽 보고서를 통해 수용하고 PDC%%t:PDC%% 26을 SARRDL%%t:SARRDL%%로 기술한다. `PSAR` Chapter 5 §5.3.3.7은 `SER`이 수용한 문언과 같은 반면, Chapter 3 §3.12.2는 두 표현을 합친 "specified acceptable system radionuclide release design limits for the fission product barriers"를 써서 `SER`이 수용한 PDC%%t:PDC%% 문언과 다르다. [[RG_1.232]] 안에서는 SFR-DC 26과 MHTGR-DC 26이 기술별로 다를 뿐 상충하지 않는다.
 
-**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt feedback 특성으로 고려할 만큼 빠르게 작용하는 계수를 네 개로, Chapter 5는 주요 반응도 되먹임 기구를 네 개로 적는 반면, Chapter 7 §7.1.1.2는 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. `SER`은 Doppler, 비연료 재료 온도계수, 냉각재 온도계수, 연료 축방향 팽창, fuel bowing을 되먹임 기구로 드는 또 다른 목록을 적을 뿐, 어느 목록이 맞는지는 판정하지 않는다. 되먹임 기구의 범위를 정하는 권위 조항은 없다.
+**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt feedback 특성으로 고려할 만큼 빠르게 작용하는 계수를 네 개로, Chapter 5는 주요 반응도 되먹임 기구를 네 개로 적는 반면, Chapter 7 §7.1.1.2는 둘째 항목을 금속 연료 부피(fuel density) 대신 fuel axial expansion and contraction으로 적고 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. Chapter 5 §5.3.2.2는 금속 연료 부피를 "fuel contraction or expansion in the axial direction along the length of the fuel"로 정의하므로, Chapter 7의 둘째 항목은 이름만 다르고 실질 차이는 control rod driveline axial expansion 한 항목이다. `SER`도 세 곳에서 서로 다른 목록을 적는다. §3.11.1.4는 `PSAR` §3.12.1.2를 옮겨 Doppler, fuel density, coolant density, cladding density, structure density, radial expansion을 중요한 반응도 계수로 들고 axial expansion은 과도 해석에 중요한 다른 변수로 둔다. §7.1.1.1.3은 Doppler, 비연료 재료 온도계수, 냉각재 온도계수, 연료 축방향 팽창, fuel bowing을 되먹임 기구로 들고, §7.1.2.1.5는 원자로 용기의 열팽창이 노심을 제어봉에 대해 움직여 반응도 되먹임을 준다고 적는다. `SER`은 어느 목록이 맞는지는 판정하지 않는다. 되먹임 기구의 범위를 정하는 권위 조항은 없다.
+
+**규정 대비 메모(C79(3), 권위 문서 표기 차이(기록만)).** `SER`은 `TP-LIC-RPT-0011`을 §3.11에서 "Core Design and Thermal Hydraulic Technical Report", Rev. 0, ML24088A085로, §7.1.1.1.3에서 "Core Nuclear and Thermal Hydraulic Design Technical Report", ML25276A289로 적는다. 같은 보고서 번호에 제목과 문서 번호가 둘이며, 두 표기가 같은 보고서의 다른 판을 가리키는지는 vault에 없다. 내용 판단의 차이가 아니므로 기록만 한다.
 
 **규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 권위 문서끼리 NAT-9393-A의 제목과 문서 번호 표기가 다르다. `ACRS` 발표는 "Reactor Stability Methodology"와 ML25211A275를 적고, `SER`은 §7.1.1.1.3에서 "Stability Methodology Topical Report", §3.11에서 "Reactor Stability Methodology", 토픽 보고서 목록 표에서 "Stability Methodology"를 쓰며 문서 번호는 ML25211A276으로 적는다. `PSAR` Chapter 3의 제목은 `SER` §7.1.1.1.3과 같다. 내용 차이가 아니므로 기록만 한다.
 

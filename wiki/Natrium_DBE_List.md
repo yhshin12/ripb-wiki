@@ -215,6 +215,8 @@ terms_pending: []
 - "For each DBE identified in Task 4, a deterministic DBA is defined that includes the RSF challenges represented in the DBE but assumes that the RSFs are performed exclusively by SR SSCs, and all non-safety-related SSCs that perform these same functions are assumed to be unavailable." [NEI_18-04 §3.2.2 Task 6 p.21]
 - "This is the most limiting DBE that mapped to the RRS-CGR-CN DBA." [PSAR_ch03 §3.7.3.2.3 p.73]
 - "The table provides a mapping of DBEs to DBAs and the dose consequence of each DBA." [PSAR_ch03 §3.5.2 p.53]
+- "SPS Leak at the Cold Trap with RAB Barrier Successfully Retains Release (RRS-ISPL-BL)" [PSAR_ch03 §3.7.3.3 p.73]
+- "SPS leak at the cold trap with RAB barrier successfully retains release (RRS-ISPL-BL)" [SER_KU1_CP §3.6.1.3 p.245]
 
 ## 해설
 원자로 쪽 DBE%%t:DBE%%는 primary sodium pump 하나 상실, 소외 전원 상실(전출력·저출력), 열침원 상실, 원자로 power runback 없는 Energy Island 과도, 중간 열교환기의 이차측에서 일차측으로의 누설(운전·정지), 정지 중 Intermediate Air Cooling System 한 계열 상실이다. 이 사건들은 Intermediate Air Cooling System의 non-passive 냉각, 또는 non-passive와 passive 냉각이 두 계열 모두에서 실패한다고 가정하며, 최종 조건은 Reactor Air Cooling System이나 Intermediate Air Cooling System의 passive 또는 non-passive 모드가 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실만 저출력 safe and stable 또는 safe shutdown으로 끝난다. 중간 열교환기 누설 사건에서는 Primary Heat Transport System으로 흘러들 수 있는 중간 소듐 양이 Intermediate Heat Transport System 배치로 제한되어 원자로 용기가 넘치지 않는다. 빈도 표가 있는 원자로 쪽 DBE%%t:DBE%%의 평균 빈도는 1.11E-04에서 3.02E-03이다.
@@ -228,6 +230,8 @@ terms_pending: []
 final conditions 표에 없던 누설·핵연료 취급 DBE%%t:DBE%% 가운데 일곱 건(RRS-SPLX-BL, RRS-SPLA-BL, RRS-RWG-2, RFH-FDIV-BL, RFH-FDIV-1, RFH-FDIV-3, RFH-ESWR-BL)의 기시사건과 사건 진행은 사건 기술 표에 원문 그대로 있다. 나머지 누설·핵연료 취급 DBE%%t:DBE%%의 Licensing Basis Event%%t:LBE%% Description은 이 노트에 싣지 않았다. primary Sodium Processing System 누설은 head access area 안에서 격리 밸브 안쪽에 생기는 누설과 Reactor Auxiliary Building 안의 누설이며, 두 사건 모두 펌프가 low primary sodium level로 정지해 primary sodium 재고 손실이 끝나고 functional containment barrier%%t:BARRIER%%가 방사성 핵종 retention 기능을 수행한다. Gaseous Radwaste Processing System holdup tank에서 plant stack으로 가는 누설은 방출된 핵분열생성물이 모두 plant stack으로 배출된다. 원자로 용기 안 핵연료 취급 사건은 비핵연료 집합체 낙하(피복 건전성 유지, 방출 없음), 낙하한 핵연료 집합체만 파손, 낙하한 집합체와 부딪힌 집합체가 함께 파손되는 경우로 나뉜다. Pool Immersion Cell 소듐-물 반응은 Pool Immersion Cell과 bottom loading transfer cask가 결합된 핵연료 취급 중에 일어나며 피복 건전성은 유지된다.
 
 **NRC staff 평가.** NRC staff는 세척 작업 중에는 bottom loading transfer cask가 Pool Immersion Cell과 결합되어 있지 않을 것으로 보고, 결합된 cask와 cell(`DL3-RR5a`)은 낙하 사건(RFH-FDPI)에는 적절한 방사성핵종 barrier%%t:BARRIER%%이지만 세척 사건(RFH-ESWR)에는 아니라고 판단한다. 감사 중 사업자는 `PSAR` 제출 뒤 Pool Immersion Cell 설계가 바뀌었고 `PSAR`의 `ESWR` 해석이 낡은 예비 설계 정보에 근거한다고 밝혔다. 열침원 상실 DHS-ISTL-1에 대해 staff는 피동 Intermediate Air Cooling System 한 계열만으로는 제한 붕괴열을 제거하지 못하며, `RAC`의 열전달이 더해져야 핵연료 건전성이 확보된다고 적는다. 또 primary Sodium Processing System cell의 정상·저하 누설률 가정은 비보수적일 수 있어 OL%%t:OL%% 단계에서 다시 평가하고, RRS-CGR-BL과 RRS-CGR-1의 head access area `HVAC` 격리 시점에는 `PSAR`의 정당화가 없어 OL%%t:OL%% 단계에서 검토한다.
+
+**규정 대비 메모(C75, 신청자 문서 내부 불일치).** `PSAR` Chapter 3 Table 3.5-2는 RRS-ISPL-BL을 Reactor Auxiliary Building barrier%%t:BARRIER%%가 방출을 가두지 못하는(Fails to Retain Release) 사건으로 적으나, 같은 장 §3.7.3.3의 절 제목은 `RAB` barrier%%t:BARRIER%%가 방출을 가두는(Successfully Retains Release) 사건으로 적는다. 권위 문서인 `SER` §3.6.1.3의 사건 목록은 절 제목과 같이 "successfully retains release"로 적으므로, 이 노트는 RRS-ISPL-BL의 이름을 절 제목과 `SER`의 표기로 읽는다.
 
 ## 관련 문서
 - [[Natrium_LBE_Selection]]

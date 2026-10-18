@@ -71,3 +71,4 @@ staff는 여러 항목의 범위가 넓어 10 CFR 50.35(b)에 따른 허가 조�
 - [[Natrium_SER_Integrated_Evaluation_Review]]
 - [[Natrium_SER_Reactor_Auxiliary_Review]]
 - [[Natrium_SER_Nuclear_Heat_Supply_Review]]
+- [[Natrium_System_Reactor_Core]]

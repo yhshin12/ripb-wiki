@@ -93,3 +93,5 @@ staff는 초기 분류 접근과 등급별 설계 코드가 합리적이라고 �
 - [[Special_Treatment]]
 - [[Natrium_Major_Structures]]
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
+- [[Natrium_Seismic_Analysis_Methods]]
+- [[Natrium_Piping_And_Industrial_Codes]]

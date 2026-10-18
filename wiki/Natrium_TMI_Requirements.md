@@ -3,6 +3,8 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch01
+- SER_KU1_CP
+- PSAR_ch11
 status: checked
 verified: 2026-09-16
 term: null
@@ -83,10 +85,20 @@ terms_pending: []
 | 50.34(f)(3)(vi) | For plant designs with external hydrogen recombiners, provide redundant dedicated containment penetrations. (II.E.4.1) | Not Applicable. The design does not utilize hydrogen recombiners. | Not Applicable | [PSAR_ch01 Table 1.4-4 p.97] |
 | 50.34(f)(3)(vii) | Provide a description of the management plan for design and construction activities. (II.J.3.1) | Full Compliance | 11.1 | [PSAR_ch01 Table 1.4-4 p.97] |
 
+- "11.4 Aircraft Impact Assessment" [PSAR_ch11 §11.4 p.60]
+- "The QA list is discussed in section 2 of TR TP-QA-PD-0001 which is incorporated by reference into the PSAR as shown in PSAR table 1.4-2." [SER_KU1_CP Table 1.8-3 p.51-54]
+- "As stated in the QA TR, the list includes all SR and NSRST SSCs, which as discussed in staff position C.6.a.(2) of RG 1.253 includes both SR and NSRST SSCs." [SER_KU1_CP Table 1.8-3 p.51-54]
+- "Based on this, the staff determined that 10 CFR 50.34(f)(3)(ii) is met as discussed in the QA TR, which is incorporated by reference into the PSAR." [SER_KU1_CP Table 1.8-3 p.51-54]
+- "Regarding GSIs and USIs, the applicant determined in PSAR section 1.4.3 that none of the non-TMI items provided in appendix B of NUREG-0933, Resolution of Generic Safety Issues (formerly titled “A Prioritization of Generic Safety Issues”) applied to the KU1 facility." [SER_KU1_CP §1.3.3.4 p.46]
+- "The staff notes that there is no requirement in 10 CFR Part 50, similar to the 10 CFR Part 52 requirements, to address USIs and GSIs in NUREG-0933." [SER_KU1_CP §1.3.3.4 p.46]
+- "As such, the staff determined that the USIs and GSIs are appropriately addressed for the CP application." [SER_KU1_CP §1.3.3.4 p.46]
+
 ## 해설
 평가 대상은 `10 CFR 50` 신청의 generic issue 검토를 뒷받침하기 위해 `NUREG-0933`에서 가져왔다. Three Mile Island Action Item은 `NUREG-0933` Appendix B Section 1에 있으나, 이 항목들이 `10 CFR 50.34(f)`에 성문화되어 있으므로 그 조문을 통해 다룬다. 준수 상태의 정의는 세 가지다. Full Compliance는 규정이 관련·적용 가능하고 설계가 완전히 준수하는 경우이며 선택지가 있으면 선택한 쪽을 완전히 준수한다는 뜻이다. Partial Compliance는 규정이 관련·적용 가능하고 취지도 설계에 관련되나 문언 그대로 적용할 수 없는 경우다. Not Applicable은 규정을 적용하는 것이 적절하지 않아 준수가 요구되지 않는 경우로, light water reactor 설계에만 해당하거나 이 설계에 없는 Structures, Systems, and Components%%t:SSC%%에 해당하거나 `10 CFR Part 52` 같은 다른 종류의 신청에만 해당하는 경우를 예로 든다.
 
-Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다고 확인된 항목은 없었다고 적는다. Table 1.4-4의 Section 칸에는 절 번호가 적힌 행과 `Not Applicable`이 적힌 행이 있다. §1.4.3에는 이 칸의 의미를 설명하는 문장이 없다. 절 제목은 unresolved safety issue를 포함하나 §1.4.3 본문에는 이를 따로 다루는 서술이 없다.
+Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다고 확인된 항목은 없었다고 적는다. Table 1.4-4의 Section 칸에는 절 번호가 적힌 행과 `Not Applicable`이 적힌 행이 있다. §1.4.3에는 이 칸의 의미를 설명하는 문장이 없다. 절 제목은 unresolved safety issue를 포함하나 §1.4.3 본문에는 이를 따로 다루는 서술이 없다. `SER`은 신청자가 §1.4.3에서 `NUREG-0933` Appendix B의 Three Mile Island 외 항목 가운데 KU1에 적용되는 것이 없다고 판단했다고 기술하고, `10 CFR Part 50`에는 `10 CFR Part 52`와 달리 `USI`와 `GSI`를 다루라는 요건이 없다고 적는다. 그 위에서 staff는 `USI`와 `GSI`가 construction permit%%t:CP%% 신청에 대해 적절히 다루어졌다고 판단했다.
+
+**규정 대비 메모(C54, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(3)(ii)`(QA list에 important to safety SSC%%t:SSC%% 포함)의 Section 칸을 `11.4`로 두나, Chapter 11 §11.4의 제목은 Aircraft Impact Assessment이고, 같은 표의 `50.34(f)(3)(iii)` 행은 QA 프로그램을 `8.1`로 적는다. 권위 문서인 `SER` Table 1.8-3은 QA list가 `PSAR`에 참조 포함된 `TP-QA-PD-0001` section 2에서 다루어지고 그 목록이 모든 Safety-Related%%t:SR%% 및 Non-Safety-Related with Special Treatment%%t:NSRST%% SSC%%t:SSC%%를 포함한다고 적으며, 이를 근거로 `50.34(f)(3)(ii)`가 충족된다고 판단했다. 따라서 이 요건의 소재는 `PSAR` 표의 `11.4`가 아니라 `SER`이 가리키는 QA 토픽 보고서로 읽는다.
 
 ## 관련 문서
 - [[Natrium_Licensing_Basis_Methodology]]
@@ -94,3 +106,4 @@ Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다�
 - [[Natrium_Technical_Specifications_Scope]]
 - [[Natrium_RG_Conformance]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_Facility_Overview_Review]]

@@ -38,28 +38,16 @@ terms_pending: []
 - "To consider the effects of uncertainties, the upper 95th percentile estimates of both frequency and dose should be used." [NEI_18-04 §3.3.5 p.35]
 - "The use of the 1% metric is consistent with the approach to defining risk-significant event sequences in the PRA standards." [NEI_18-04 §3.3.5 p.35]
 - "The 2.5 mrem cut-off is selected as this is approximately 10% of the dose that an average person at the site boundary would receive in 30 days due to background radiation." [NEI_18-04 §3.3.5 p.35]
-- "In the LMP framework, an SSC is regarded as risk-significant if its PRA Safety Function is: a) required to keep one or more LBEs inside the F-C Target based on mean frequencies and consequences" [NEI_18-04 §6 p.90]
-- "The LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty of the LBE frequency and dose estimates is within the F-C Target." [NEI_18-04 §3.3.6 p.37]
 
 - "Figure 3-4. Use of the F-C Target to Define Risk-Significant LBEs" [NEI_18-04 Figure 3-4 p.34]
 
 ![[NEI_18-04_Fig_3-4.png]]
 - "Table 4.2-1 of the PSAR provides the margins from the mean frequency and dose to the F-C target curve for LBEs identified as risk-significant based on the mean risk." [SER_KU1_CP §4.2.1.1.1 p.327]
 - "PSAR table 4.2-2 provides the margins from the 95th percentile frequency and risk to the F-C target curve for LBEs identified as risk significant based on the 95th percentile risk." [SER_KU1_CP §4.2.1.1.1 p.327]
-- "An LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty on both the LBE frequency and dose is within the F-C Target." [NEI_18-04 §4.2.2 p.47]
-- "A significant contribution to each cumulative risk metric limit is satisfied when total frequency of all LBEs with failure of the SSC exceeds 1% of the cumulative risk metric limit based on the mean estimates of frequencies and consequences." [NEI_18-04 §4.2.2 p.47]
 - "NEI 18-04 defines risk-significant LBEs as those with frequencies and consequences within 1 percent of the F-C target, with site boundary doses exceeding 2.5 mrem." [RG_1.233 §C.1 p.13]
 - "To consider the effects of uncertainties, the applicant should use the upper 95th percentile estimates of both frequency and dose." [RG_1.233 §C.1 p.13]
 - "The NEI 18-04 methodology for assessing DID includes an assessment of plant risk margins that compares the mean values of each LBE frequency and dose to the F-C target." [RG_1.233 §C.3 Plant Capability Defense in Depth p.21]
 - "A more conservative evaluation of margins is also performed that compares the 95th percentile upperbound values of each LBE frequency and dose to the F-C target." [RG_1.233 §C.3 Plant Capability Defense in Depth p.21]
-- "Table 5.1-1 of this SE provides a staff summary of these steps, including the scope of LBEs to be evaluated, the parameters used in the evaluation, and the resulting risk importance category and classification for the functions and SSCs that perform those functions." [SER_KU1_CP §5.1 p.335]
-
-| Task* | LBEs Evaluated | Criteria Compared Against | Values Used | Resulting SSC Classification and risk importance category | 출처 |
-|---|---|---|---|---|---|
-| 7a.1 | DBEs and AOOs and BDBEs with uncertainty bands that extend into the DBE region | F-C target curve | Mean | SR RSF, risk-significant and safety-significant | [SER_KU1_CP Table 5.1-1 p.343] |
-| 7a.2 | BDBEs with mean consequences that exceed 25 rem TEDE | F-C target curve | Mean | SR RSF, risk-significant and safety-significant | [SER_KU1_CP Table 5.1-1 p.343] |
-| 7a.3 | All non-DBA LBEs | F-C target curve | 95th percentile | NSRST, risk-significant and safety-significant | [SER_KU1_CP Table 5.1-1 p.343] |
-| 7b | All non-DBA LBEs | 1% of cumulative risk metrics | Mean | NSRST, risk-significant and safety-significant | [SER_KU1_CP Table 5.1-1 p.343] |
 
 ## 해설
 범주 배정에는 빈도의 평균값을 쓴다. 다만 5th percentile과 95th percentile로 정한 불확실도 구간이 범주 경계에 걸치면 그 LBE%%t:LBE%%는 두 범주에서 모두 평가된다. 평균이 1E-02/plant-year를 넘고 5th percentile이 그보다 낮으면 Anticipated Operational Occurrence%%t:AOO%%이자 Design Basis Event%%t:DBE%%로, 평균이 1E-04/plant-year보다 낮고 95th percentile이 그보다 높으면 Beyond Design Basis Event%%t:BDBE%%이자 DBE%%t:DBE%%로 평가한다. 평균이 5E-07/plant-year보다 낮아도 95th percentile이 그 위면 BDBE%%t:BDBE%%로 평가한다.
@@ -70,11 +58,9 @@ cumulative risk target%%t:CUM_RISK_TARGET%%은 세 가지이다. 모든 LBE%%t:L
 
 LBE%%t:LBE%%는 부지 경계 선량이 30일 동안 2.5 mrem을 넘고 그 빈도가 원문 표현으로 F-C Target%%t:FC_TARGET%%의 within 1% of 범위에 들면 Risk-Significant LBE%%t:RS_LBE%%로 분류된다. 용어집은 같은 기준을 더 구체적으로 적어, 빈도와 결말의 상한(95%tile) 추정값과 EAB%%t:EAB%%의 30일 선량을 쓴다고 명시한다. SSC%%t:SSC%%는 그 기능이 어떤 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는 데 필요하거나, 그 SSC%%t:SSC%%가 고장 난 LBE%%t:LBE%%들의 총 빈도가 원문 표현으로 세 cumulative risk target%%t:CUM_RISK_TARGET%% 가운데 하나의 within 1% of이면 Risk-Significant SSC%%t:RS_SSC%%로 분류된다. 기여를 판정하는 수치 기준은 [[Risk_Significant_SSC]]에 있다.
 
-§3.3.5는 Risk-Significant LBE%%t:RS_LBE%% 판정에 빈도와 선량 모두 95th percentile 상한을 쓰라고 적어 용어집과 같다. 반면 Task 7a는 risk significance 판정에 일반적으로 불확실도 분석이 뒷받침하는 평균 추정값을 쓴다고 적어, 두 서술이 어긋난다. 1%는 PRA 표준이 risk-significant event sequence를 정하는 방식과 같고, 2.5 mrem은 부지 경계의 평균적인 사람이 배경 방사선으로 30일 동안 받는 선량의 약 10%이다. 한편 SSC%%t:SSC%%가 LBE%%t:LBE%%를 F-C Target%%t:FC_TARGET%% 안에 두는지 볼 때, 용어집은 평균값을 쓴다고 적고 본문의 뒤 절은 95th percentile 상한을 쓴다고 적어 서로 어긋난다. 권위 문서가 두 어긋남을 어떻게 정리하는지는 아래 메모에 적는다. 상세는 [[Risk_Importance_Measures]]에 있다.
+§3.3.5는 Risk-Significant LBE%%t:RS_LBE%% 판정에 빈도와 선량 모두 95th percentile 상한을 쓰라고 적어 용어집과 같다. 반면 Task 7a는 risk significance 판정에 일반적으로 불확실도 분석이 뒷받침하는 평균 추정값을 쓴다고 적어, 두 서술이 어긋난다. 1%는 PRA 표준이 risk-significant event sequence를 정하는 방식과 같고, 2.5 mrem은 부지 경계의 평균적인 사람이 배경 방사선으로 30일 동안 받는 선량의 약 10%이다. 권위 문서가 이 어긋남을 어떻게 정리하는지는 아래 메모에 적는다. Risk-Significant SSC%%t:RS_SSC%% 판정에 쓰는 통계량의 차이와 그 해소는 [[Risk_Significant_SSC]]에 있다.
 
 **규정 대비 메모(D-2, 규정으로 해소).** Task 7a는 risk significance 판정에 일반적으로 평균 추정값을 쓴다고 적고, §3.3.5와 용어집은 Risk-Significant LBE%%t:RS_LBE%% 판정에 빈도와 선량 모두 95th percentile 상한을 쓰라고 적는다. [[RG_1.233]]은 Risk-Significant LBE%%t:RS_LBE%% 정의를 옮기면서 불확실도를 고려해 신청자가 빈도와 선량 모두 95th percentile 상한 추정값을 써야 한다고 명시하고, 심층방어(Defense-in-Depth)%%t:DID%% 평가에서는 각 LBE%%t:LBE%%의 평균 빈도·선량을 F-C Target%%t:FC_TARGET%%과 비교하는 여유도 평가와 95th percentile 상한값으로 비교하는 더 보수적인 평가를 함께 둔다. [[RG_1.233]]이 Risk-Significant LBE%%t:RS_LBE%% 판정에 95th percentile을 쓰라고 명시하므로 이 판정에는 95th percentile을 쓴다.
-
-**규정 대비 메모(D-3, 규정으로 해소).** NEI 18-04 본문(§3.3.6, §4.2.2)은 SSC%%t:SSC%% 첫 기준에서 LBE%%t:LBE%%가 F-C Target%%t:FC_TARGET%% 안에 있는지를 95th percentile 상한 점으로 판정한다고 적고, 용어집은 같은 기준을 평균 빈도와 평균 결말로 적는다. `SER` Table 5.1-1은 NEI 18-04의 SSC%%t:SSC%% 분류 단계를 정리하면서 두 통계량을 단계별로 나누어, DBE%%t:DBE%%와 DBE%%t:DBE%% 영역에 걸치는 AOO%%t:AOO%%·BDBE%%t:BDBE%%, 결말이 큰 BDBE%%t:BDBE%%에서 Required Safety Function%%t:RSF%%(Safety-Related%%t:SR%%)를 정하는 단계에는 평균을, 모든 비DBA%%t:DBA%% LBE%%t:LBE%%에서 risk-significant Non-Safety-Related with Special Treatment%%t:NSRST%% 기능을 정하는 단계에는 95th percentile을 쓴다. 이 정리에 따르면 용어집의 평균 문장은 RSF%%t:RSF%% 판정에, 본문의 95th percentile 문장은 risk-significant NSRST%%t:NSRST%% 판정에 대응하나, 이 구분은 개별 신청의 `SER` 표에만 있고 [[RG_1.233]]에는 대응 문장이 없고(vault 기준), 용어집 문장은 하나 이상의 LBE%%t:LBE%% 전체에 평균을 적용하므로 `SER` 표와 글자 그대로 일치하지는 않는다. 따라서 첫 기준은 `SER` Table 5.1-1 기준으로 RSF%%t:RSF%% 판정에는 평균을, risk-significant NSRST%%t:NSRST%% 판정에는 95th percentile을 쓰는 것으로 해소하고, 둘째 기준(cumulative risk target%%t:CUM_RISK_TARGET%% 1%)은 NEI 18-04 본문과 `SER` Table 5.1-1의 7b 행이 모두 평균을 쓰므로 차이가 없다.
 
 ## 관련 문서
 - [[Risk_Importance_Measures]]

@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch03, RG_1.253]
+sources: [PSAR_ch03, RG_1.253, PSAR_ch06]
 status: checked
 verified: 2026-09-16
 term:
@@ -21,6 +21,8 @@ terms_pending: []
 - "No adjustments are made to the PRA and uncertainty assessments to address the bounding site characterizations and structure, system, or component (SSC) fragilities based on the DBHLs described in Section 6.1.1" [PSAR_ch03 §3.1.1.15 p.13]
 - "Determination of whether an IE can be caused by chemical hazards is considered in the internal and external hazards screening discussed in Section 3.1.1.5." [PSAR_ch03 §3.1.1.7 p.11]
 - "NEI 21‑07, Revision 1, Section 6.1.1 clarified NEI 18‑04 by defining and using the term DBHL rather than DBEHL." [RG_1.253 §A.3.7 p.34]
+- "DBHLs are a design specification of the level of severity or intensity of hazards for which the SR SSCs are designed to withstand with no adverse impact on their capability to perform their SR functions." [PSAR_ch06 §6.1.1 p.4]
+- "These DBHLs are selected in accordance with existing NRC approved methods and are consistent with the DBHLs described in Section 6.1.1 and Table 6-1 of NEI 21-07 (Reference 6.1-1)" [PSAR_ch06 §6.1.1 p.4]
 - "Specifically, DBHLs address both traditional external hazards (e.g., seismic events, external floods, high winds) and internal hazards (e.g., internal fires, internal floods, turbine missiles, and high energy line breaks)." [RG_1.253 §A.3.7 p.34]
 
 | Hazard | Analysis | 출처 |
@@ -180,7 +182,7 @@ terms_pending: []
 
 분석으로 넘어가는 재해 표에서 낙하·붕괴 하중은 내부 사건 PRA에 포함되고, 고온 공기는 추가 분석을 거쳐 필요하면 PRA에 포함되며, 화산 현상은 참조 포함된 부지 보고서에서 평가된다. 지진, 부지 내와 발전소 내 폭발, 토양 액상화 행은 seismic design basis hazard level을 CP%%t:CP%% 신청에 credit하되 지진 PRA 개발 대상으로 선정해 OL%%t:OL%% 단계에서 그 효능을 확인한다고 적고, 극한 바람, 강풍, 사이클론, 극한 기압과 강풍 조합 행은 high winds design basis hazard level을 같은 방식으로 다룬다. 내부 화재, 소듐 화재, 폭발성 전기 결함, 부지 내 대기 디젤 발전기 같은 행은 화재 PRA 개발 대상이고, 내부 침수, 배관 파손 영향, pipe whip, 증기 방출, spray, jet effects 행은 내부 침수 PRA 개발 대상이며, 두 PRA는 OL%%t:OL%% 단계에 제공된다. 부지 내와 발전소 내 폭발 행은 지진 행과 화재 행에 모두 나온다.
 
-이 보고서는 design basis hazard levels로 정한 부지 특성과 Structures, Systems, and Components%%t:SSC%% 취약도를 반영하려고 PRA와 불확실도 평가를 조정하지는 않는다고 적는다. 이 용어가 NEI 18-04의 Design Basis External Hazard Level%%t:DBEHL%%과 같은 개념인지는 이 노트가 인용한 원문에 없다. [[RG_1.253]]은 NEI 21-07 Revision 1의 Section 6.1.1이 DBEHL%%t:DBEHL%% 대신 design-basis hazard level%%t:DBHL%%이라는 용어를 정의해 써서 NEI 18-04를 명확히 했다고 적고, DBHL%%t:DBHL%%이 지진·외부 침수·강풍 같은 전통적 외부 hazard와 내부 화재·내부 침수 같은 내부 hazard를 모두 다룬다고 적는다. 이 보고서의 design basis hazard levels가 DBHL%%t:DBHL%%과 같은 것인지도 이 노트가 인용한 원문에는 없다.
+이 보고서는 design basis hazard levels로 정한 부지 특성과 Structures, Systems, and Components%%t:SSC%% 취약도를 반영하려고 PRA와 불확실도 평가를 조정하지는 않는다고 적는다. `PSAR` Chapter 6 §6.1.1은 이 hazard level을 Safety-Related%%t:SR%% SSC%%t:SSC%%가 SR%%t:SR%% 기능 수행 능력에 악영향 없이 견디도록 설계되는 hazard의 심각도·강도에 대한 설계 사양으로 정의하고, NEI 21-07 Section 6.1.1과 Table 6-1의 design-basis hazard level%%t:DBHL%%과 일치하게 선정된다고 적는다. [[RG_1.253]]은 NEI 21-07 Revision 1의 Section 6.1.1이 NEI 18-04의 Design Basis External Hazard Level%%t:DBEHL%% 대신 DBHL%%t:DBHL%%이라는 용어를 정의해 써서 NEI 18-04를 명확히 했다고 적고, DBHL%%t:DBHL%%이 지진·외부 침수·강풍 같은 전통적 외부 hazard와 내부 화재·내부 침수 같은 내부 hazard를 모두 다룬다고 적는다. 따라서 이 보고서의 design basis hazard levels는 NEI 21-07의 DBHL%%t:DBHL%%과 일치하게 선정된 것이며, [[RG_1.253]]에 따르면 이 용어는 NEI 18-04의 DBEHL%%t:DBEHL%% 대신 쓰인 것이다. 상세는 [[Natrium_Design_Basis_Hazard_Levels]]에 있다.
 
 ## 관련 문서
 - [[Natrium_PRA_Scope]]
@@ -191,3 +193,4 @@ terms_pending: []
 - [[RG_1253_CP_PRA_Acceptability]]
 - [[Natrium_SER_DBHL_Review]]
 - [[Natrium_SER_PRA_Review]]
+- [[Natrium_Design_Basis_Hazard_Levels]]

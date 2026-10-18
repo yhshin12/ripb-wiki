@@ -72,6 +72,9 @@ terms_pending: []
 - "Sodium coolant density – temperature changes cause the coolant density to change thereby impacting neutron spectrum and leakage." [PSAR_ch05 §5.3.2.2 p.25]
 - "Radial distortion feedback – core assembly displacement and distortion with respect to the radial direction resulting from core load pad restraint expansion and contraction, and grid plate expansion and contraction." [PSAR_ch05 §5.3.2.2 p.25]
 - "Reactivity feedback mechanisms associated with the design of RCC include Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, and fuel bowing." [SER_KU1_CP §7.1.1.1.3 p.411]
+- "PSAR section 3.12.1.2 describes the reactivity coefficients the applicant considers important for the Natrium reactor core design and evaluation, which include Doppler, fuel density, coolant density, cladding density, structure density, and radial expansion." [SER_KU1_CP §3.11.1.4 p.308]
+- "Other parameters are important for transient analyses, including axial expansion (which is a function of coolant and structure density and thermal expansion of the fuel system materials)." [SER_KU1_CP §3.11.1.4 p.308]
+- "the reactor vessel, which provides reactivity feedback via thermal expansion, which moves the core relative to the control rods." [SER_KU1_CP §7.1.2.1.5 p.424]
 - "Consistent with PDC 16, Containment Design, fuel cladding is a functional containment barrier under normal conditions and LBEs where cladding is not failed, and its expected performance is to retain fission products." [PSAR_ch07 §7.1.1.2 p.13]
 - "For DBAs and other LBEs where cladding breach occurs, all fission products contained in the plenum area of the fuel pin are assumed to be released instantaneously (no retention of plenum activity)." [PSAR_ch07 §7.1.1.2 p.13]
 - "The fuel matrix is not an explicit barrier of the functional containment strategy; however, the fuel is expected to retain significant radionuclides." [PSAR_ch07 §7.1.1.2 p.13]
@@ -188,7 +191,7 @@ principal design criteria%%t:PDC%% 2에 따라 `RCC`는 `RXB` 하부구조 안�
 
 `ACRS_ML25293A458` 발표는 `RCC` 기능으로 `DL3-HR5 - HR10, DL3-HR13` 피동 열제거를 적고, 다른 모든 노심 집합체의 구조 요소가 제어봉 삽입성과 냉각성을 위해 변형을 제한하도록 SR%%t:SR%%이라고 적는다.
 
-**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt 되먹임에 고려되는 계수를 네 개로, Chapter 5 §5.3.2.2는 주요 반응도 되먹임 기구를 네 개(Doppler, metallic fuel volume, sodium coolant density, radial distortion)로 적고, Chapter 7 §7.1.1.2는 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. `SER` §7.1.1.1.3은 되먹임 기구를 또 다른 목록(Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, fuel bowing)으로 적지만 목록 차이를 판정하지 않는다. 판정할 권위 조항이 없다.
+**규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt 되먹임에 고려되는 계수를 네 개로, Chapter 5 §5.3.2.2는 주요 반응도 되먹임 기구를 네 개(Doppler, metallic fuel volume, sodium coolant density, radial distortion)로 적고, Chapter 7 §7.1.1.2는 둘째 항목을 metallic fuel volume 대신 fuel axial expansion and contraction으로 적고 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. Chapter 5 §5.3.2.2는 metallic fuel volume을 "fuel contraction or expansion in the axial direction along the length of the fuel"로 정의하므로, Chapter 7의 둘째 항목은 이름만 다르고 실질 차이는 control rod driveline axial expansion 한 항목이다. `SER` §7.1.1.1.3은 되먹임 기구를 또 다른 목록(Doppler, non-fuel material temperature coefficients, coolant temperature coefficients, fuel axial expansion, fuel bowing)으로 적는다. `SER` §3.11.1.4는 `PSAR` §3.12.1.2를 옮겨 Doppler, fuel density, coolant density, cladding density, structure density, radial expansion을 중요한 반응도 계수로 들고 axial expansion을 과도 해석에 중요한 다른 변수로 두며, §7.1.2.1.5는 원자로 용기의 열팽창이 노심을 제어봉에 대해 움직여 반응도 되먹임을 준다고 적는다. `SER`은 목록 차이를 판정하지 않는다. 판정할 권위 조항이 없다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]
@@ -200,3 +203,4 @@ principal design criteria%%t:PDC%% 2에 따라 `RCC`는 `RXB` 하부구조 안�
 - [[Natrium_Reactor_Heat_Transport_Systems]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_NHS_PDC_Conformance]]
+- [[Natrium_SER_RD_And_Permit_Conditions]]

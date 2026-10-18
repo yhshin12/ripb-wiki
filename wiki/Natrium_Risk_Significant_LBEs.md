@@ -35,6 +35,7 @@ terms_pending: []
 - "These are conservative assumptions that could be adjusted as the event specific mechanistic source term is developed at the OL stage." [SER_KU1_CP §3.6.1.4 p.250]
 - "For RFH-ESWR-2, a BDBE with a 95th percentile frequency extending into the DBE region, the PIC barrier is assumed to have failed" [SER_KU1_CP §3.8.1.5 p.296]
 - "The staff’s review of updated analyses for these events, including any associated DBAs, is being deferred to the OL stage based on the understanding that additional preventative controls will move this event to lower frequencies, and its frequency band will no longer extend into the DBE region." [SER_KU1_CP §3.7.1.5 p.272]
+- "The dose criteria in 10 CFR 50.34 include a 2-hour dose criterion of 25 rem TEDE at the EAB and a 25 rem TEDE criterion at the LPZ boundary when calculated for the full duration of the event release." [SER_KU1_CP §3.3.1.8 p.223]
 - "The postulated initiating event is a sodium-water reaction in the Pool Immersion Cell (PIC) during fuel handling activities while the PIC and BLTC are mated that causes fuel cladding failure." [PSAR_ch03 §3.9.5.3.1 p.116]
 
 | LBE ID | Title | Risk Significant | 출처 |
@@ -94,7 +95,7 @@ terms_pending: []
 
 DBE%%t:DBE%% 요약표에서 risk-significant로 표시된 것은 원자로 용기 안 핵연료 이동 중 집합체 하나 또는 둘이 파손되고 functional containment barrier%%t:BARRIER%%가 방출을 가두는 두 사건과, Spent Fuel Pool에서 집합체 하나가 파손되고 Fuel Handling Building barrier%%t:BARRIER%%가 방출을 가두지 못하는 사건이다. BDBE%%t:BDBE%% 요약표에서는 Pool Immersion Cell의 과도한 소듐-물 반응 두 건, bottom loading transfer cask·Ex-Vessel Handling Machine·Pool Immersion Cell의 barrier%%t:BARRIER%% 실패 사건, 원자로 용기 안 단일 집합체 파손과 functional containment barrier%%t:BARRIER%% 실패, Spent Fuel Pool의 두 집합체 파손, 피동 냉각 없는 Ex-Vessel Handling Machine 능동 냉각 상실이 표시된다. 이 가운데 Ex-Vessel Handling Machine barrier%%t:BARRIER%% 실패 사건과 피동 냉각 없는 능동 냉각 상실 사건이 high-consequence BDBE%%t:BDBE%%로 표시된다.
 
-수치 표에 따르면 risk-significant DBE%%t:DBE%% 세 건의 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 1.83E-01에서 3.66E-01 rem이고, 평균 빈도는 8.77E-04에서 2.26E-03이다. high-consequence BDBE%%t:BDBE%% 두 건의 평균 선량은 모두 4.60E+01 rem(95th percentile 7.00E+01 rem)이고 평균 빈도는 5.25E-07과 8.82E-07이다. 나머지 risk-significant BDBE%%t:BDBE%%의 평균 선량은 6.62E-01에서 1.40E+01 rem이며, Pool Immersion Cell barrier%%t:BARRIER%% 실패 사건의 평균 빈도는 5.10E-07이다. 10 CFR 50.34 선량 기준의 수치는 이 노트가 인용한 원문에 없다.
+수치 표에 따르면 risk-significant DBE%%t:DBE%% 세 건의 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 1.83E-01에서 3.66E-01 rem이고, 평균 빈도는 8.77E-04에서 2.26E-03이다. high-consequence BDBE%%t:BDBE%% 두 건의 평균 선량은 모두 4.60E+01 rem(95th percentile 7.00E+01 rem)이고 평균 빈도는 5.25E-07과 8.82E-07이다. 나머지 risk-significant BDBE%%t:BDBE%%의 평균 선량은 6.62E-01에서 1.40E+01 rem이며, Pool Immersion Cell barrier%%t:BARRIER%% 실패 사건의 평균 빈도는 5.10E-07이다. NRC staff는 10 CFR 50.34 선량 기준을 EAB%%t:EAB%%에서 `2-hour` 25 rem total effective dose equivalent%%t:TEDE%%, low-population zone%%t:LPZ%% boundary에서 사건 방출 전 기간에 대해 25 rem TEDE%%t:TEDE%%로 적는다. 이 기준과 위 `30-day` 선량 값의 비교는 이 노트가 인용한 원문에 없다.
 
 `RFH-ESWR-2`의 95th percentile 빈도는 `PSAR` Chapter 3 `§3.8.5.4.3`에서 `1.61E-04`, `PSAR` Chapter 4 `Table 4.2-2`에서 `1.31E-04`로 다르고, 95th percentile 선량 `5.05`는 두 장이 같다. 두 원문이 같은 양을 다르게 적는다([[Natrium_LBE_Risk_Margins]]).
 

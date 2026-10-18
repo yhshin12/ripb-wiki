@@ -100,7 +100,7 @@ staff는 PRA 요소 열두 개와 사용후연료 PRA를 각각 "reasonable"로 
 
 staff의 결론은 PRA의 범위, 상세도, 품질이 CP%%t:CP%% 신청에 합리적이라는 것이다. 이 결론은 PRA가 예비적이고 사업자가 이 단계에서 finality를 요청하지 않는다는 이해에 근거한다. OL%%t:OL%% 단계 기대 사항은 [[Natrium_SER_PRA_OL_Expectations]]에 정리했다.
 
-**PRA 요소 보강.** 기시사건 분석은 `RES` 안의 노심과 `IVS`, 재장전 중 `EVST`로 옮긴 노심 집합체, `SPS`·`SCG`처럼 `RES`에 직접 연결된 계통의 방사성 원천에 초점을 두었고, 용기 외 핵연료 취급 사건도 포함했다. OL%%t:OL%% 단계 PRA는 모든 운전 모드, hazard, POS%%t:POS%%, 방사성 원천을 다뤄야 하지만 other hazards 같은 일부 요소는 CP%%t:CP%% 단계에서 완료되지 않았다. staff는 audit에서 기시사건 식별, 묶음, 빈도 추정이 체계적이고 추적 가능하게 수행되었다고 보았다. 계통 분석의 fault tree는 예비 설계 정보 범위 안에서 발전소를 반영하며, common cause failure와 인적 오류는 예비 수준에서 다루었고 인적 오류 식별은 운전·정비 정보가 부족해 제한되었다. risk integration 민감도 분석은 확정 결론을 내리기 어렵지만 핵심 가정과 자료의 상대적 중요도 평가에 유용했다. 자체 평가는 regulatory guide%%t:RG%% 1.253에 따라 내부 침수, 내부 화재, 지진, 강풍, 외부 침수, 기타 외부 hazard PRA를 제외했다. staff는 개별 supporting requirement 대조 위주의 수행 방식을 지적하고 팀 기반 종합 평가가 도움이 될 수 있다고 적으면서도, 자체 평가가 RG%%t:RG%% 1.247과 RG%%t:RG%% 1.253에 따라 수행되었다고 판단했다. peer review 결과는 OL%%t:OL%% 단계에서 검토한다.
+**PRA 요소 보강.** 기시사건 분석은 `RES` 안의 노심과 `IVS`, 재장전 중 `EVST`로 옮긴 노심 집합체, `SPS`·`SCG`처럼 `RES`에 직접 연결된 계통의 방사성 원천에 초점을 두었고, 용기 외 핵연료 취급 사건도 포함했다. OL%%t:OL%% 단계 PRA는 모든 운전 모드, hazard, POS%%t:POS%%, 방사성 원천을 다뤄야 하지만 other hazards 같은 일부 요소는 CP%%t:CP%% 단계에서 완료되지 않았다. staff는 audit에서 기시사건 식별, 묶음, 빈도 추정이 체계적이고 추적 가능하게 수행되었다고 보았다. 계통 분석의 fault tree는 예비 설계 정보 범위 안에서 발전소를 반영하며, common cause failure%%t:CCF%%와 인적 오류는 예비 수준에서 다루었고 인적 오류 식별은 운전·정비 정보가 부족해 제한되었다. risk integration 민감도 분석은 확정 결론을 내리기 어렵지만 핵심 가정과 자료의 상대적 중요도 평가에 유용했다. 자체 평가는 regulatory guide%%t:RG%% 1.253에 따라 내부 침수, 내부 화재, 지진, 강풍, 외부 침수, 기타 외부 hazard PRA를 제외했다. staff는 개별 supporting requirement 대조 위주의 수행 방식을 지적하고 팀 기반 종합 평가가 도움이 될 수 있다고 적으면서도, 자체 평가가 RG%%t:RG%% 1.247과 RG%%t:RG%% 1.253에 따라 수행되었다고 판단했다. peer review 결과는 OL%%t:OL%% 단계에서 검토한다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]
@@ -108,3 +108,4 @@ staff의 결론은 PRA의 범위, 상세도, 품질이 CP%%t:CP%% 신청에 합�
 - [[Natrium_Hazard_Screening]]
 - [[Natrium_SER_PRA_OL_Expectations]]
 - [[RG_1247_PRA_Acceptability_Framework]]
+- [[RG_1253_CP_PRA_Acceptability]]

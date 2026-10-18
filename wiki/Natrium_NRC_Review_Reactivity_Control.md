@@ -129,3 +129,6 @@ PDC%%t:PDC%% 28에 대해서는 인출 가능한 제어봉 가치가 노심 설�
 - [[PSAR_ch05]]
 - [[PSAR_ch07]]
 - [[Natrium_SER_Core_Fuel_Design_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_Review]]
+- [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]
+- [[Natrium_SER_NHS_PDC_Conformance]]

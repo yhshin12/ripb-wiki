@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch11, PSAR_ch01]
+sources: [PSAR_ch11, PSAR_ch01, SER_KU1_CP]
 status: checked
 verified: 2026-09-16
 term:
@@ -95,6 +95,9 @@ terms_pending: []
 - "The Project Field Engineer is the primary construction interface with the Natrium Project Organization, BPC, and GVH engineering groups." [PSAR_ch11 §11.1.3.3 p.10]
 - "US SFR Owner, LLC (USO), a subsidiary of TerraPower, LLC, is requesting approval for a construction permit of an 840 megawatt thermal (MWt) Natrium Reactor Plant, Kemmerer Power Station Unit 1 (Kemmerer Unit 1), to be located in Lincoln County, Wyoming approximately 3 miles (4.8 km) southwest of Kemmerer, Wyoming." [PSAR_ch01 §1.1 p.19]
 - "Kemmerer Unit 1 is a Natrium reactor supplied by TerraPower." [PSAR_ch01 §1.1.1 p.19]
+- "PSAR section 11.1.1 describes the executive management organization for USO, which includes the President and Chief Executive Officer (CEO) of USO; and the following executives who report directly to the President and CEO of USO: the executive responsible for project execution - USO, the executive responsible for regulatory affairs - USO, the director responsible for quality - USO, and the Chief Nuclear Officer (CNO) - USO." [SER_KU1_CP §11.1.1 p.654]
+- "PSAR section 11.1.1.1 explains that the President and CEO of USO has overall responsibility for functions involving design, construction, and operation." [SER_KU1_CP §11.1.1.5.1 p.657]
+- "At present, the President and CEO of USO is the same individual as the President and CEO of TerraPower." [SER_KU1_CP §8.2.1.1 p.621]
 
 - "Figure 11.1-1 Executive Management Organization" [PSAR_ch11 Figure 11.1-1 p.15]
 
@@ -120,6 +123,8 @@ Natrium Project Organization은 설계와 건설을 책임지는 설계 권한�
 Construction Organization은 `BPC`가 건설을 수행하며 품질·보건·안전·환경, 비용과 사업 지표 관리 체계를 운영하고, TerraPower는 Section 8.1.2의 project quality execution plan으로 감독한다(`Figure 11.1-3`). Project Manager가 조직의 장이며, Site Manager는 부지 전체 관리와 환경·보건·보안·비상 대응·품질·일정·예산을, Project Quality Manager는 사업 품질 계획의 관리·이행과 `BPC` Quality Assurance(`QA`) 프로그램에 따른 감독을, Project Field Engineer는 품질·기술 적합성·수량 검증과 Natrium Project Organization·`BPC`·`GVH` 기술 그룹과의 접점을 맡는다.
 
 `PSAR` Chapter 1은 `USO`를 `a subsidiary of TerraPower, LLC`로, Chapter 11은 `a wholly owned subsidiary of TerraPower`로 적고, Chapter 1 본문은 TerraPower를 원자로 공급자(`supplied by`)로 적는 반면 Chapter 11은 설계·건설 책임자로 적는다.
+
+**규정 대비 메모(C74, 규정 불일치).** vault의 `PSAR` Chapter 11은 Executive Management Organization을 TerraPower의 President and `CEO`, 사업 수행 책임 임원, 규제 업무 책임 임원, `CNO`, 품질 책임 director로 적고, 설계·건설·운전 기능 전반의 책임을 TerraPower의 President and `CEO`에게 둔다. `SER`은 `PSAR` §11.1.1이 `USO`의 executive management organization을 기술한다고 적고 그 구성원을 `USO`의 President and `CEO`와 그에게 직접 보고하는 `USO` 임원들로 옮기며, §11.1.1.1의 전반 책임자도 `USO`의 President and `CEO`로 옮긴다. `SER` §8.2.1.1이 인용한 `PSAR` §11.1.1.1 문언은 현재 `USO`와 TerraPower의 President and `CEO`가 같은 사람이라고 적는다. 따라서 `SER`이 인용하는 `PSAR` 문언은 vault의 `PSAR` Chapter 11 문언과 다르며, 권위 문서인 `SER`의 기술을 기준으로 읽는다. 신청자 표기·모회사 관계의 차이(C51)와 `SER` 안의 소유 관계 차이(C68)는 이 경영진 소속 차이를 다루지 않는다.
 
 ## 관련 문서
 - [[Natrium_Operating_Organization]]

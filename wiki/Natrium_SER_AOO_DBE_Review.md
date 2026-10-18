@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [SER_KU1_CP]
+sources: [SER_KU1_CP, PSAR_ch05]
 status: checked
 verified: 2026-10-17
 term:
@@ -52,6 +52,12 @@ terms_pending: []
 - "| 3.7.4.4 | Fuel Handling Event Occurs While Moving Fuel Assembly in the SFP with a Single Assembly Failed and FHB Barrier Fails to Retain Release | RFH-FDSP-1 | Fuel Handling | High burnup fuel assembly, 310 day decay | N/A | N/A | N/A | N/A | None | None |" [SER_KU1_CP Table 3.6-1 p.254]
 - "| 3.7.5.1 | Core Blockage and Local Faults with Non-Passive IAC and Functional Containment Barrier Successfully Retains Release | LFF-SAO-BL | Local Fuel Fault | Reactor core | Manual reactor scram | None* | IAC non-passive mode | None* | Primary coolant boundary, ex-RES functional containment barrier, HAA barrier | DL3-RR1, DL4-RR1, DL4-RR1a |" [SER_KU1_CP Table 3.6-1 p.254]
 - "Table 3.5-1: Summary of anticipated operational occurrences from PSAR section 3.6" [SER_KU1_CP Table 3.5-1 p.239]
+- "Table 3.6-1: Summary of design basis events from PSAR section 3.7" [SER_KU1_CP Table 3.6-1 p.254]
+- "| 3.8.7.1 | Loss of SFP Cooling with Makeup Restored | RFH-LSPC-1 | Other | SFP contents | N/A | N/A | Passive heat removal in FHP, SFP emergency makeup | DL3-HR10, DL4-HR4 | Fuel cladding | DL3-RC2 |" [SER_KU1_CP Table 3.7-1 p.287]
+- "| DL3-RC2 | Reactor Scram on Loss of Power |" [SER_KU1_CP Table 6.1-1 p.374-384]
+- "DL3-RR2 — Cladding barrier" [PSAR_ch05 Table 5.2-3 p.13]
+- "AOO: DHP-L1PP-BL, DHP-LOOP-BL, DHS-ISTL-BL, OTH-LMAC-BL, RFH-LSPC-BL, RFH-LTCA-BL, RPD-CW1ACS-BL, RPD-SS-BL, SUD-IACA-BL, SUD-LOOP-BL" [PSAR_ch05 Table 5.2-3 p.13]
+- "BDBE: DHP-L1PP-1, DHP-L1PP-3, DHP-L1PP-4, DHP-LAPP-BL, DHP-LOOP-2, DHS-ISTL-3, DHS-ISTL-4, DHS-RNBK-2, IPI-IHEL-1, IPI-IHEL-2, OTH-LMAC-1, OTH-LMAC-2, OTH-LMAC-3, OTH-LMAC-4, RFH-FDET-BL, RFH-LSPC-1, RPD-CW1ACS-1" [PSAR_ch05 Table 5.2-3 p.13]
 
 ## 해설
 **AOO%%t:AOO%%.** 용기 외 계통 방출이나 기타 유형의 과도는 AOO%%t:AOO%%로 식별되지 않았다. 국부 연료 결함은 빈도가 1E-03/year로 지정되어 AOO%%t:AOO%% 빈도 범위 아래에 있다. 방출이 있는 AOO%%t:AOO%%는 F-C Target%%t:FC_TARGET%% 곡선 안에 머문다.
@@ -69,7 +75,9 @@ staff가 지적한 주된 이탈은 5th percentile 빈도가 1E-02보다 낮아 
 
 staff는 DBE%%t:DBE%% 결과가 10 CFR 50.34를 충족하고 NEI 18-04와 일치한다고 결론지었다.
 
-**열제거 증감 AOO%%t:AOO%%와 사건별 기능 표(보강).** DHS-ISTL-BL은 전출력에서 intermediate sodium loop 하나의 열제거 상실로 시작해 high high cold pool temperature로 scram한다. SUD-IACA-BL은 저출력·정지 중에만 일어나며, staff는 audit에서 제한 저출력 경우가 원자로 트립 없이 약간 높은 온도와 약간 낮은 출력에서 안정됨을 확인했다. 두 사건은 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류되고, 5th percentile 빈도도 1E-02보다 커서 DBA%%t:DBA%%가 필요 없다. `SER` Table 3.5-1과 Table 3.6-1은 각각 `PSAR`의 AOO%%t:AOO%%와 DBE%%t:DBE%%를 요약하며, 인용한 행은 사건마다 credit한 기능과 그 기능 `ID`를 적는다.
+**열제거 증감 AOO%%t:AOO%%와 사건별 기능 표(보강).** DHS-ISTL-BL은 전출력에서 intermediate sodium loop 하나의 열제거 상실로 시작해 high high cold pool temperature로 scram한다. SUD-IACA-BL은 저출력·정지 중에만 일어나며, staff는 audit에서 제한 저출력 경우가 원자로 트립 없이 약간 높은 온도와 약간 낮은 출력에서 안정됨을 확인했다. 두 사건은 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류되고, 5th percentile 빈도도 1E-02보다 커서 DBA%%t:DBA%%가 필요 없다. `SER` Table 3.5-1과 Table 3.6-1은 각각 `PSAR`의 AOO%%t:AOO%%와 DBE%%t:DBE%%를 요약하며, 인용한 행은 사건마다 credit한 기능과 그 기능 `ID`를 적는다. Table 3.6-1은 RRS-ISPL-BL을 `RAB` barrier%%t:BARRIER%%가 방출을 가두는 사건으로 적는다(C75, `PSAR` 안의 이름 차이는 [[Natrium_DBE_List]] 참조).
+
+**규정 대비 메모(C76, 권위 문서 표기 차이(기록만)).** `SER` Table 3.5-1의 RFH-LSPC-BL 행과 Table 3.7-1의 RFH-LSPC-1 행은 방사성핵종 보유 barrier%%t:BARRIER%%를 Fuel cladding으로 두고 그 기능 `ID`를 DL3-RC2로 적는다. 그러나 `SER` Table 6.1-1에서 DL3-RC2는 Reactor Scram on Loss of Power이고, 다른 사건 행의 Fuel cladding 기능 `ID`는 DL3-RR2이다. `PSAR` Chapter 5 Table 5.2-3은 RFH-LSPC-BL을 AOO%%t:AOO%%로, RFH-LSPC-1을 Beyond Design Basis Event%%t:BDBE%%로 하여 두 사건을 DL3-RR2(Cladding barrier)의 연관 Licensing Basis Event%%t:LBE%%로 적는다. 따라서 두 행의 DL3-RC2는 DL3-RR2를 가리키는 표기 차이로 읽히며, 기능 `ID` 표기만의 차이이므로 기록만 한다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

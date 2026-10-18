@@ -40,6 +40,7 @@ terms_pending: []
 - "The staff will verify materials used in the final design at the OL stage." [SER_KU1_CP §6.4.1.2.1 p.398]
 - "The design codes for SR substructures are ACI 349-13 for reinforced concrete and ANSI/AISC N690-18 for structural steel." [SER_KU1_CP §6.4.1.2.1 p.397]
 - "The RXB building consists of an embedded concrete substructure and above grade steel-framed superstructure." [SER_KU1_CP §7.8.1 p.590]
+- "Structural steel portions of FHB substructure associated with the SFP liner and a leak chase system are designed to AISC N690-18" [PSAR_ch07 §7.8.2.1.2 p.347]
 - "The RXB superstructure is supported by structural steel columns founded on concrete foundations that are decoupled from the below-grade reinforced concrete and steel RXB substructure which has a separate foundation." [PSAR_ch01 §1.1.4.4.2 p.37]
 - "The Reactor Building (RXB) is composed of two main structural sections: a steel framed above-grade superstructure (described in Section 1.1.4.4.2) and a reinforced concrete and steel substructure below grade." [PSAR_ch07 §7.8.1 p.336]
 
@@ -255,7 +256,7 @@ NSRST%%t:NSRST%% 상부구조는 강구조이며 `AISC 325-17`의 Load and Resis
 
 **규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다.
 
-**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 1·7의 "steel"이 Chapter 6이 적는 stay-in-place formwork나 steel embedment를 가리키는지는 vault에 없다.
+**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 7은 `FHB` 하부구조에 대해서는 `SFP` liner와 leak chase system에 관련된 구조용 강재 부분을 `AISC` N690-18로 설계한다고 적어 하부구조 강재의 한 예를 든다. 그러나 `RXB` 하부구조에 대한 Chapter 1·7의 "steel"이 무엇을 가리키는지, 곧 Chapter 6이 적는 stay-in-place formwork나 steel embedment인지는 vault에 없다.
 
 ## 관련 문서
 - [[Natrium_SSC_Safety_Classification]]

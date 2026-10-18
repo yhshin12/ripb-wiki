@@ -36,6 +36,10 @@ terms_pending: []
 - "If RPD-CW1ACS-BL remains as an AOO with uncertainty bands that extend into the DBE range at the OL, a DBA should be appropriately assigned." [SER_KU1_CP §3.5.1.3 p.236]
 - "The staff expects to review an appropriate DBA analysis derived from RFH-LSPC-BL at the OL stage." [SER_KU1_CP §3.5.1.4 p.237]
 - "the mean failure frequency of the PRC is 1.5E-05 per plant year" [SER_KU1_CP §3.4.1 p.227]
+- "As discussed in the response to RCI-3, these events have mean frequencies greater than 1E-02 per year and are appropriately categorized as AOOs." [SER_KU1_CP §3.5.1.1 p.234]
+- "As discussed in the response to RCI-3, these events have mean frequencies greater than 1E-02 per year and are appropriately categorized as AOOs." [SER_KU1_CP §3.5.1.2 p.235]
+- "As discussed in the response to RCI-3, these events have mean frequencies greater than 1E-02 per year and are appropriately categorized as AOOs." [SER_KU1_CP §3.5.1.3 p.236]
+- "As discussed in the response to RCI-3, these events have mean frequencies greater than 1E-02 per year and are appropriately categorized as AOOs." [SER_KU1_CP §3.5.1.4 p.237]
 
 | LBE ID | 항목 | 5th Percentile | Mean | 95th Percentile | 출처 |
 |---|---|---|---|---|---|
@@ -70,7 +74,7 @@ terms_pending: []
 ## 해설
 요약표의 AOO%%t:AOO%%는 primary sodium pump 하나 상실, 소외 전원 상실(전출력과 저출력), 열침원 상실, medium voltage 모선 하나 상실, 제어봉에 의한 과출력 과도, scram 또는 spurious scram, 정지 중 Intermediate Air Cooling System 한 계열 상실, 복구되는 Spent Fuel Pool 냉각 상실, 피동 냉각이 있는 Ex-Vessel Storage Tank 능동 냉각 상실, `LTA` 또는 `LDA` 시험 핀 취급 중 핵연료 손상이다. 원자로 쪽 사건의 최종 조건은 non-passive 모드의 Intermediate Air Cooling System이 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실 사건만 저출력 safe and stable 또는 safe shutdown으로 끝난다. 모선 상실 사건의 Initiating Event%%t:IE%%는 전출력 조건의 primary 6.9 kilovolt 모선 상실이다. 원문에는 핵연료 성능 수용 기준이 만족되어 최고 핀의 건전성이 유지되고 방출이 없다는 문장, Spent Fuel Pool 냉각이 비등 전에 복구되어 핵연료 손상이 없다는 문장, Ex-Vessel Storage Tank 피동 냉각이 가용해 손상이 없다는 문장이 있다.
 
-방출이 있는 AOO%%t:AOO%%는 `RFH-OERC-BL` 하나이다. Pin Removal Cell 경계는 파손되지 않지만, Ex-Vessel Handling Machine에서의 방출이 더 보수적이라 그 선원항(source term)%%t:SOURCE_TERM%%을 적용한다. 해석은 원자로가 전출력에서 정지한 뒤 2.5일에 사건이 일어나고, 고연소 `LTA` 또는 `LDA` 집합체 하나에서 인출 핀과 주변 여섯 핀을 합친 일곱 핀의 피복이 파열된다고 가정한다. 설계 누설은 Fuel Handling Building으로 나가고 건물 체적은 즉시 환경으로 방출된다고 가정하며, 건물 안의 holdup과 붕괴는 고려하지 않는다. 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 3.62E-03 rem(5th 2.46E-03, 95th 5.40E-03)이고, 빈도는 평균 2.20E-02, 5th percentile 2.78E-03, 95th percentile 6.49E-02이다. 나머지 AOO%%t:AOO%%의 빈도 값은 이 노트가 인용한 원문에 없다.
+방출이 있는 AOO%%t:AOO%%는 `RFH-OERC-BL` 하나이다. Pin Removal Cell 경계는 파손되지 않지만, Ex-Vessel Handling Machine에서의 방출이 더 보수적이라 그 선원항(source term)%%t:SOURCE_TERM%%을 적용한다. 해석은 원자로가 전출력에서 정지한 뒤 2.5일에 사건이 일어나고, 고연소 `LTA` 또는 `LDA` 집합체 하나에서 인출 핀과 주변 여섯 핀을 합친 일곱 핀의 피복이 파열된다고 가정한다. 설계 누설은 Fuel Handling Building으로 나가고 건물 체적은 즉시 환경으로 방출된다고 가정하며, 건물 안의 holdup과 붕괴는 고려하지 않는다. 평균 `30-day` Exclusion Area Boundary%%t:EAB%% total effective dose equivalent는 3.62E-03 rem(5th 2.46E-03, 95th 5.40E-03)이고, 빈도는 평균 2.20E-02, 5th percentile 2.78E-03, 95th percentile 6.49E-02이다. 나머지 AOO%%t:AOO%%의 개별 빈도 값은 이 노트가 인용한 원문에 없다. NRC staff는 유량 상실, 열제거 증감, 반응도, 핵연료 취급 AOO%%t:AOO%% 묶음마다 사건들의 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류된 것이 적절하다고 개별 빈도 수치 없이 적는다.
 
 **NRC staff 평가.** NRC staff는 5th percentile 빈도가 1E-02 아래로 내려가 Design Basis Event%%t:DBE%% 범위에 걸치는 AOO%%t:AOO%%에 Design Basis Accident%%t:DBA%%를 지정해야 한다고 본다. DHP-LOOP-BL과 SUD-LOOP-BL은 각각 DHP-LOOP-CN과 SUD-LOOP-CN에 대응하지만, OTH-LMAC-BL, RPD-CW1ACS-BL, RFH-OERC-BL, RFH-LSPC-BL에는 DBA%%t:DBA%%가 지정되지 않았다. staff는 OTH-LMAC-BL과 RPD-CW1ACS-BL이 operating license%%t:OL%% 단계에도 DBE%%t:DBE%% 범위에 걸치면 DBA%%t:DBA%%를 지정해야 한다고 적고, RFH-LSPC-BL에서 도출한 DBA%%t:DBA%% 해석은 OL%%t:OL%% 단계에서 검토할 것으로 예상한다.
 

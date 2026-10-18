@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [SER_KU1_CP]
+sources: [SER_KU1_CP, PSAR_ch05, PSAR_ch07]
 status: checked
 verified: 2026-10-17
 term:
@@ -15,6 +15,7 @@ terms_pending: []
 
 ## 원문 사실
 - "PSAR section 7.6.2.3 identifies the seismic classification as SCN3." [SER_KU1_CP §7.6.2.1.1 p.547]
+- "The seismic classification of NIC subsystem (AMC, CTC, and UMC) components are SCN3." [PSAR_ch07 §7.6.2.3 p.258]
 - "Reliability and capability targets for SSCs will be determined at the OL stage and are described in PSAR section 6.2." [SER_KU1_CP §7.6.2.1.1 p.547]
 - "The RPS sends data to the NIC via a one-way data diode to ensure separation and any hardwire interfaces between the RPS and NIC include isolation devices." [SER_KU1_CP §7.6.2.1.1 p.547]
 - "Based on its review described above, the staff determined that the preliminary NIC design is consistent with PDC 1 because the codes and standards specified are acceptable and support the design principles of qualification, reliability, robustness, security, and DID, in alignment with guidance on the fundamental I&C design principles from the DRG." [SER_KU1_CP §7.6.2.1.1 p.548]
@@ -27,7 +28,7 @@ terms_pending: []
 - "PSAR section 7.6.2.2.2 states that the NIC provides reactivity control during normal operations and AOOs through power runbacks performed by the RMC and CTC." [SER_KU1_CP §7.6.2.1.5 p.549]
 - "The staff determined that the preliminary NIC design is consistent with PDC 25 because it ensures radionuclide design limits are not exceeded during AOOs by controlling reactivity during normal operations and AOOs independent of the RPS and by ensuring failure of the NIC does not impact the safety and reactivity control functions of the RPS." [SER_KU1_CP §7.6.2.1.5 p.549]
 - "PSAR section 7.6.2.2.2 states that the RMC subsystem of the NIC, along with the CRD, control the maximum rod withdrawal speed to limit the reactivity worth insertion rate." [SER_KU1_CP §7.6.2.1.6 p.549]
-- "because it includes controls that apply appropriate limits on the potential amount and rate of reactivity increase by controlling maximum rod withdrawal speed." [SER_KU1_CP §7.6.2.1.6 p.549]
+- "The staff determined that the preliminary RMC subsystem of the NIC design is consistent with PDC 28, because it includes controls that apply appropriate limits on the potential amount and rate of reactivity increase by controlling maximum rod withdrawal speed." [SER_KU1_CP §7.6.2.1.6 p.549]
 - "The RMS and PMC monitor for radiological releases through the exhaust air in the vent stack." [SER_KU1_CP §7.6.2.1.7 p.549]
 - "However, PSAR table 1.4-1 notes that RG 1.21 is not applicable to the design and construction phase and will be addressed at the OL stage. In addition, the design partially conforms to RG 1.97, with the extent of the conformance to be addressed at the OL stage." [SER_KU1_CP §7.6.2.1.7 p.550]
 - "The staff determined that the preliminary NIC design is consistent with PDC 60, 63, and 64 because the preliminary information on radiation monitoring needed to support the control of radioactive materials includes high level monitoring locations and the applicant stated it will conform to RG 1.21 at the OL stage." [SER_KU1_CP §7.6.2.1.7 p.550]
@@ -43,10 +44,12 @@ terms_pending: []
 - "PSAR section 7.6.2.2.1 states the UMC is a digital NIC sub-system with four DL4 functions:" [SER_KU1_CP §7.6.2.1.10.3 p.552]
 - "PSAR table 5.2-4 identifies these four DL4 functions as required for DID adequacy, with only DL4-RR1c associated with an LBE." [SER_KU1_CP §7.6.2.1.10.3 p.552]
 - "The staff determined that the preliminary UMC design is consistent with DL4-RR1c because it relies on equipment within the UMC sub-system, using signals from the RMS, that are diverse from the equipment in the NHV initiating HAA barrier isolation." [SER_KU1_CP §7.6.2.1.10.3 p.552]
-- "This DBA has a 2-hour EAB TEDE dose of 7.75 rem and 30-day LPZ boundary TEDE dose of 7.77 rem, both of which are projected to be well below the accident dose criteria described in 10 CFR 50.34(a)(1)(ii)(D)." [SER_KU1_CP §7.6.2.1.10.3 p.552]
+- "DL4-RR1c is associated with two DBEs, RRS-CGR-BL and RRS-CGR-1, both of which are mapped to DBA RRS-CGR-CN, SCG leak downstream the SCG cell. This DBA has a 2-hour EAB TEDE dose of 7.75 rem and 30-day LPZ boundary TEDE dose of 7.77 rem, both of which are projected to be well below the accident dose criteria described in 10 CFR 50.34(a)(1)(ii)(D)." [SER_KU1_CP §7.6.2.1.10.3 p.552]
 - "Programmatic special treatments applied to the NIC are summarized in PSAR section 7.6.2.3 and include the QAP, D-RAP, EQ program, and PITAP." [SER_KU1_CP §7.6.2.1.11 p.553]
 - "For the NIC DCS and all NIC subsystems, the Human Factors Engineering Program Plan (PSAR section 11.2) is applicable." [SER_KU1_CP §7.6.2.1.11 p.553]
 - "Because the NIC contains NSRST SSCs, the staff determined that these programs are thus appropriate to apply to NIC." [SER_KU1_CP §7.6.2.1.11 p.553]
+- "The following preliminary industry codes and standards are applied to the overall design of safety-significant, application-specific RPS equipment that is outside the scope of the RadICS platform: IEEE 603-2018;" [SER_KU1_CP §7.6.3.1.1 p.555]
+- "Based on its review described above, the staff determined that the preliminary RPS design is consistent with PDC 1 because the codes and standards specified are acceptable and support the design principles of qualification, reliability, robustness, security, and DID, in alignment with guidance on the fundamental I&C design principles from the DRG." [SER_KU1_CP §7.6.3.1.1 p.556]
 - "The RadICS TR describes the codes, standards, and RGs applicable to the RPS, along with accompanying application-specific requirements that will be evaluated at the OL stage." [SER_KU1_CP §7.6.3.1.1 p.554]
 - "IEEE 338-2022 and IEEE 603-2018 are applied as special treatments to safety-significant RPS equipment to ensure these targets are met." [SER_KU1_CP §7.6.3.1.1 p.555]
 - "Single failure is addressed by applying IEEE 379-2014 to the RPS design and through plant-specific action items from section 7.0 of the SE for the RadICS TR." [SER_KU1_CP §7.6.3.1.1 p.556]
@@ -65,9 +68,18 @@ terms_pending: []
 - "PDC 15 requires the design conditions of the primary coolant boundary to not be exceeded during conditions of normal operation, including AOOs." [SER_KU1_CP §7.6.3.1.7 p.557]
 - "RPS DL3 reactor scram and ESF functions are designed with appropriate margin to ensure that analytical limits established in the safety analysis are not exceeded as a result of AOOs that are not mitigated by DL2 functions." [SER_KU1_CP §7.6.3.1.7 p.558]
 - "The staff determined that the preliminary RPS design is consistent with PDC 15 because the RPS is designed with sufficient margin to ensure that the design conditions of the primary coolant boundary are not exceeded during normal operations and AOOs." [SER_KU1_CP §7.6.3.1.7 p.558]
+- "consistent with PDC 23, on loss of incoming power to the RPS, the undervoltage release mechanism opens the reactor trip breakers, configured in such a way that the RPS reactor scram circuit is designed as “de-energize to trip.”" [SER_KU1_CP §7.6.3.1.8 p.558]
+- "The staff determined that the preliminary RPS design is consistent with PDC 20, 21, 22, 23, 24, and 25 because the RPS is designed:" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "to (1) automatically initiate safety functions to ensure radionuclide release design limits are not exceeded during AOOs and (2) to sense accident conditions and initiate SSCs (PDC 20);" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "for high reliability and in-service testability such that (1) no single failure results in the loss of protection function and (2) removal from service does not result in loss of minimum redundancy unless acceptable reliability can be otherwise demonstrated (PDC 21);" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "to ensure that the effects of natural phenomena, normal operation, AOOs, and accident conditions on redundant channels do not result in loss of protection function (PDC 22);" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "to fail into a safe state or otherwise acceptable state under conditions such as disconnection of the system, power loss, or adverse environments (PDC 23);" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "to be separated from control systems to the extent that failure of any single control system component or channel, or failure or removal from service of any single protection system component or channel which is common to the control and protection systems, leaves intact the RPS satisfying all reliability, redundancy, and independence requirements (PDC 24); and" [SER_KU1_CP §7.6.3.1.8 p.559]
+- "to ensure that SARRDLs are not exceeded during normal operation or AOOs, accounting for a single malfunction of the reactivity control systems (PDC 25)." [SER_KU1_CP §7.6.3.1.8 p.559]
 - "PDC 26 requires a minimum of two reactivity control systems or means to provide the capability to insert negative reactivity and maintain the reactor shutdown under various conditions." [SER_KU1_CP §7.6.3.1.9 p.559]
 - "Additionally, the RPS is designed such that when any division generates a DL3 reactor scram demand, that division also generates an independent signal to the CRD to demand a DL4 CRD driveline scram follow." [SER_KU1_CP §7.6.3.1.9 p.560]
 - "The staff determined that the preliminary RPS design is consistent with PDC 26 because the RPS provides a means of inserting negative reactivity, with appropriate margin, to ensure that radionuclide design limits are not exceed and that safe shutdown is achieved and maintained during normal operation, AOOs, and following a postulated accident." [SER_KU1_CP §7.6.3.1.9 p.560]
+- "The staff also determined that the preliminary RPS design is consistent with PDC 28 because the RPS DL3 reactor scram function is designed with appropriate limits on the potential amount and rate of reactivity increase to ensure that the effects of postulated reactivity accidents do not (1) result in damage to the safety-significant primary coolant boundary or (2) sufficiently disturb the core or other associated structures in a way that significantly impairs the capability to cool the core." [SER_KU1_CP §7.6.3.1.9 p.560]
 - "The staff determined that the preliminary RPS design is consistent with PDC 29 because the PSAR states that the RPS will be designed with an extremely high probability of accomplishing scram and ESF functions and have appropriate margin to ensure that analytical limits are not exceeded and as such is reasonable to leave for later consideration." [SER_KU1_CP §7.6.3.1.10 p.560]
 - "Table 7.6.3-1 below lists the Function ID and description that specifies the RPS variable monitored to initiate the SR function DL3-RC1, “Scram – Gravity Driven Absorber Insertion by Latch Release.”" [SER_KU1_CP §7.6.3.1.11.1 p.560]
 - "Additionally, the RPS contributes to DL3-RC2, “Reactor scram on loss of power,” by ensuring that the RPS outputs fail to a safe state in the event of a loss of incoming power." [SER_KU1_CP §7.6.3.1.11.1 p.561]
@@ -75,9 +87,11 @@ terms_pending: []
 - "The staff therefore determined that the preliminary RPS design is consistent with DL3-RC1 and RC2 because LBEs relying on the gravity scram functions maintain dose consequences below acceptable limits." [SER_KU1_CP §7.6.3.1.11.1 p.561]
 - "This manual function is not credited in the safety analysis but is included to provide diversity from the RPS automatic logic." [SER_KU1_CP §7.6.3.1.11.2 p.561]
 - "The staff therefore determined that the preliminary RPS design is consistent with DL4-RC1, as it provides adequate DID through manual initiation of automatic RPS functions." [SER_KU1_CP §7.6.3.1.11.2 p.561]
+- "The staff determined that the preliminary RPS design is consistent with DL4-RC3 because five of the six LBEs maintain fuel integrity with no radiological release and remaining LBE (DHP-LOOP-3) results in radiological release with dose equivalents below required limits." [SER_KU1_CP §7.6.3.1.11.3 p.562]
 - "The RPS supports DL3-HR2 and DL3-HR3 by continuously monitoring primary sodium cold pool temperature inputs from the RIS and neutron flux inputs from the XIS." [SER_KU1_CP §7.6.3.1.11.5 p.562]
 - "The staff therefore determined that the preliminary RPS design is consistent with DL3-HR2 and DL3-HR3 because all LBEs relying on the RPS maintain fuel integrity and do not result in radiological release." [SER_KU1_CP §7.6.3.1.11.5 p.562]
-- "Both DBAs have a 2-hour EAB TEDE dose of 8.13E-02 rem and a 30-day LPZ boundary TEDE dose of 2.78E-01 rem, which are projected to be far below the accident dose criteria in 10 CFR 50.34(a)(1)(ii)(D)." [SER_KU1_CP §7.6.3.1.11.5 p.563]
+- "DL3-HR11 is associated with two DBEs (RRS-SPLA-BL and RRS-SPLX-BL) which are mapped to two DBAs (RRS-SPLA-CN and RRS-SPLX-CN, respectively). Both DBAs have a 2-hour EAB TEDE dose of 8.13E-02 rem and a 30-day LPZ boundary TEDE dose of 2.78E-01 rem, which are projected to be far below the accident dose criteria in 10 CFR 50.34(a)(1)(ii)(D)." [SER_KU1_CP §7.6.3.1.11.5 p.563]
+- "The staff therefore determined that the preliminary RPS design is consistent with DL3-HR11 because these LBEs result in radiological releases with dose equivalents below required limits." [SER_KU1_CP §7.6.3.1.11.5 p.563]
 - "PSAR section 7.6.3.2.1 states that these NSRST manual functions are diverse from the automatic safety functions." [SER_KU1_CP §7.6.3.1.11.6 p.563]
 - "The staff determined that the preliminary RPS design is consistent with these functions as they provide adequate DID through manual initiation of automatic RPS functions." [SER_KU1_CP §7.6.3.1.11.6 p.563]
 - "PSAR section 7.6.3.2 states that the RPS partially conforms with the guidance in RG 1.97, with the extent of conformance to be provided at the OL stage." [SER_KU1_CP §7.6.3.1.11.7 p.563]
@@ -135,11 +149,15 @@ terms_pending: []
 - "This section also states that the RMS has no automatic actions and the setpoints only provide indication in the MCR and trigger local or remote alarms." [SER_KU1_CP §7.6.6.1.4 p.579]
 - "The staff determined that the information contained during the CP application ensures that monitoring is appropriately considered to track radioactive materials, with additional details to be provided during the OL stage." [SER_KU1_CP §7.6.6.1.4 p.579]
 - "The staff determined that the preliminary RMS design is consistent with PDC 60, 63, and 64 because the preliminary information on radiation monitoring needed to support the control of radioactive materials includes high level monitoring locations and the applicant stated it will conform to RG 1.21 at the OL stage." [SER_KU1_CP §7.6.6.1.4 p.579]
+- "The systems subject to PDC 63 requirements are FHE, FHP, NIC, SPS, SCG, RWS, RWL, and RWG." [PSAR_ch05 §5.3.5.4 p.43]
+- "The RMS, NIC, SCG, and SPS monitor normal operational radiation levels and potential off-normal conditions, including area radiation monitoring, process radiation monitoring, and effluent radiation monitoring." [PSAR_ch05 §5.3.5.4 p.43]
 - "For all DL4 functions, the RMS supports the NIC by detecting radioactivity and sending signals to an NIC subsystem (UMC or AMC) to allow initiation when specific logic and conditions are met." [SER_KU1_CP §7.6.6.1.5 p.579]
 - "The primary system (RPS or NIC) is responsible for accomplishing this function, not the RMS." [SER_KU1_CP §7.6.6.1.5 p.579]
 - "The staff determined that the preliminary RMS design is consistent with these functions because the RMS supports the RPS and NIC in performing these specified functions by detecting radioactivity." [SER_KU1_CP §7.6.6.1.5 p.580]
 - "Programmatic special treatments applied to the RMS are summarized in PSAR section 7.6.6.3 and include the QAP, D-RAP, EQ program, and PITAP." [SER_KU1_CP §7.6.6.1.6 p.580]
 - "Because the RMS contains NSRST SSCs, the staff determined that these programs are thus appropriate to apply to RMS." [SER_KU1_CP §7.6.6.1.6 p.580]
+- "PSAR section 7.6.7.1 states that the MCR contains equipment that allows operators to initiate or take manual controls of functions associated with the RPS and NIC via human system interfaces." [SER_KU1_CP §7.6.7.1.1 p.580]
+- "The staff determined that the preliminary MCR design is consistent with PDC 1 based on the staff’s review of PSAR section 11.2 as well as the staff’s evaluation of the codes and standards applied to the RPS and NIC (SE sections 7.6.3.1.1 and 7.6.2.1.1)." [SER_KU1_CP §7.6.7.1.1 p.581]
 - "NI HVAC systems control the environmental conditions during normal operations and take measures to ensure MCR habitability under accident conditions." [SER_KU1_CP §7.6.7.1.2 p.581]
 - "PSAR section 7.6.7.2 states that the RSC contains equipment that provides the indications and controls necessary for prompt shutdown and for maintaining the unit in a safe condition during shutdown, with capability for subsequent safe shutdown." [SER_KU1_CP §7.6.7.1.2 p.581]
 - "The staff determined that the preliminary MCR and indications design is consistent with PDC 19 because the MCR is designed to serve as a location from which the nuclear power unit can be operated safely under normal conditions and maintained in a safe condition under accident conditions." [SER_KU1_CP §7.6.7.1.2 p.581]
@@ -151,6 +169,7 @@ terms_pending: []
 - "PSAR section 7.6.8.2.2 states that the AST is protected from fire hazards based upon the location of its SSCs." [SER_KU1_CP §7.6.8.1.3 p.583]
 - "The staff determined that the preliminary AST design is consistent with PDC 3 because the AST is designed and located to minimize the probability and effect of fires and explosions." [SER_KU1_CP §7.6.8.1.3 p.583]
 - "PSAR section 7.6.8.2.2 states that the AST processing cabinets are located in and protected from external hazards by the NCB." [SER_KU1_CP §7.6.8.1.4 p.583]
+- "The triaxial seismic accelerometers are located in boreholes at four locations at 90-degree angles around the RXB. The signal processing takes place in cabinets in the Nuclear Island Control Building substructure." [PSAR_ch07 §7.6.8.1.2 p.320]
 - "The staff determined that the preliminary AST design is consistent with PDC 4 because the AST is located in the NCB, which is designed to accommodate the effects of, and to be compatible with, the environmental conditions associated with normal operating conditions, AOOs, and postulated accidents." [SER_KU1_CP §7.6.8.1.4 p.583]
 - "The AST monitors the anticipated range of seismic activities to ensure a reactor scram is initiated with adequate margin during a seismic event." [SER_KU1_CP §7.6.8.1.5 p.583]
 - "The staff determined that the preliminary AST design is consistent with PDC 13 because the AST is designed to monitor variables and systems over their anticipated ranges for normal operation, AOOs, and accident conditions." [SER_KU1_CP §7.6.8.1.5 p.583]
@@ -159,16 +178,12 @@ terms_pending: []
 - "Programmatic special treatments applied to the AST are summarized in PSAR section 7.6.8.3 and include the QAP, D-RAP, EQ program, PITAP, and human factors engineering program." [SER_KU1_CP §7.6.8.1.8 p.584]
 - "Because the AST contains NSRST SSCs, the staff determined that these programs are thus appropriate to apply to AST." [SER_KU1_CP §7.6.8.1.8 p.584]
 - "The NIC performs both NSRST and NST functions." [SER_KU1_CP §7.6.2.1.1 p.547]
-- "the staff determined that the preliminary CTC design is consistent with DL2-HR2" [SER_KU1_CP §7.6.2.1.10.2 p.552]
-- "The RadICS platform, as described in the RadICS TR, is used for the RPS." [SER_KU1_CP §7.6.3 p.553]
-- "application-specific RPS equipment that is outside the scope of the RadICS platform" [SER_KU1_CP §7.6.3.1.1 p.555]
-- "the undervoltage release mechanism opens the reactor trip breakers, configured in such a way that the RPS reactor scram circuit is designed as “de-energize to trip.”" [SER_KU1_CP §7.6.3.1.8 p.558]
+- "Additionally, the staff determined that the preliminary CTC design is consistent with DL2-HR2 because it relies on equipment within the CTC sub-system, using IHT expansion tank level signals, that is diverse from the primary equipment in the IHT for tripping to ISP." [SER_KU1_CP §7.6.2.1.10.2 p.552]
 - "Reliability and capability targets for SSCs will be determined at the OL stage" [SER_KU1_CP §7.6.3.1.1 p.555]
 - "Reliability and capability targets for SSCs will be determined at the OL stage" [SER_KU1_CP §7.6.4.1.1 p.565]
 - "Reliability and capability targets for SSCs will be determined at the OL stage" [SER_KU1_CP §7.6.5.1.1 p.571]
 - "Reliability and capability targets for SSCs will be determined at the OL stage" [SER_KU1_CP §7.6.6.1.1 p.577]
 - "Reliability and capability targets for SSCs will be determined at the OL stage" [SER_KU1_CP §7.6.8.1.1 p.582]
-- "designed as an analog system that does not contain software" [SER_KU1_CP §7.6.4.1.1 p.565]
 - "The XIS is comprised of four redundant divisions" [SER_KU1_CP §7.6.4 p.564]
 - "provides flux signals to its corresponding RPS division" [SER_KU1_CP §7.6.4 p.564]
 - "a digital system that performs NSRST and NST functions" [SER_KU1_CP §7.6.6 p.575]
@@ -177,13 +192,26 @@ terms_pending: []
 - "IEEE 384-2018 is applied as a special treatment to the AST to meet independence requirements." [SER_KU1_CP §7.6.8.1.1 p.582]
 
 ## 해설
-**`NIC`.** `NIC`는 Non-Safety-Related with Special Treatment%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% 기능을 모두 수행하며 지진 분류는 SCN3이다. `RPS`에서 `NIC`로의 통신은 단방향 data diode나 격리 장치를 거치고, `NIC`에서 `RPS`로의 직접 통신은 없다. staff는 인용된 하위 계통 기능(`DL4-RR3a`, `DL4-RR3b`, `DL4-RR4a`, `DL4-HR2`, `DL4-HR3`, `DL4-RR1c`)과 `IHT` expansion tank level 신호를 쓰는 `CTC`의 `DL2-HR2`에 대해 예비 설계가 정합한다고 판단했다. reliability and capability target, `RMS` 관련 RG%%t:RG%% 1.21 적용과 RG%%t:RG%% 1.97 정합 범위는 operating license%%t:OL%% 단계에서 정한다.
+**`NIC`.** `NIC`는 Non-Safety-Related with Special Treatment%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% 기능을 모두 수행한다. `SER`은 `NIC`의 지진 분류를 SCN3으로 적으며 `PSAR`은 이를 `AMC`·`CTC`·`UMC` 구성품으로 한정한다(`meta/contradictions.md` C79). `RPS`에서 `NIC`로의 통신은 단방향 data diode나 격리 장치를 거치고, `NIC`에서 `RPS`로의 직접 통신은 없다. staff는 인용된 하위 계통 기능(`DL4-RR3a`, `DL4-RR3b`, `DL4-RR4a`, `DL4-HR2`, `DL4-HR3`, `DL4-RR1c`)과 `IHT` expansion tank level 신호를 쓰는 `CTC`의 `DL2-HR2`에 대해 예비 설계가 정합한다고 판단했다. reliability and capability target, `RMS` 관련 RG%%t:RG%% 1.21 적용과 RG%%t:RG%% 1.97 정합 범위는 operating license%%t:OL%% 단계에서 정한다.
 
-**`RPS`.** `RPS`에는 RadICS platform이 쓰이며, platform 범위 밖의 application-specific `RPS` 설비에는 `IEEE` 603-2018 등이 적용된다. `RPS` 입력 전원이 상실되면 undervoltage release mechanism이 reactor trip breaker를 열어, scram 회로는 "de-energize to trip"으로 설계된다. RadICS `TR`의 application-specific 요건 평가, reliability and capability target, RG%%t:RG%% 1.97 정합 범위와 선정된 `PAM` 변수, RG%%t:RG%% 1.105 기반 setpoint 방법론 평가는 OL%%t:OL%% 단계에서 한다.
+**`RPS`.** RadICS platform 범위 밖의 safety-significant, application-specific `RPS` 설비에는 `IEEE` 603-2018 등이 적용되며, RadICS platform 사용 자체는 [[Natrium_SER_IC_Electrical_Structures_Review]]에서 다룬다. PDC%%t:PDC%% 23과 관련하여, `RPS` 입력 전원이 상실되면 undervoltage release mechanism이 reactor trip breaker를 열어 scram 회로는 "de-energize to trip"으로 설계된다. staff는 `DL4-RC3`에 대해 관련 `LBE` 여섯 건 가운데 다섯 건이 핵연료 건전성을 유지하고 나머지 한 건(DHP-LOOP-3)의 선량도 요구 한계 아래라는 근거로, `DL3-HR11`에 대해 관련 사건의 선량이 요구 한계 아래라는 근거로 정합성을 판단했다. RadICS `TR`의 application-specific 요건 평가, reliability and capability target, RG%%t:RG%% 1.97 정합 범위와 선정된 `PAM` 변수, RG%%t:RG%% 1.105 기반 setpoint 방법론 평가는 OL%%t:OL%% 단계에서 한다.
 
-**`XIS`와 `RIS`.** `XIS`는 software가 없는 아날로그 계통으로 설계되며, 네 중복 division이 각각 대응하는 `RPS` division에 중성자속 신호를 주고 지진 분류는 SCS1이다. `RIS`는 원자로 용기 안팎의 변수를 측정해 `RPS`와 `NIC`에 신호를 보내며, 네 중복·독립 division의 Safety-Related%%t:SR%% 입력을 signal splitter로 `NIC`에 복제한다. 두 계통의 reliability and capability target은 OL%%t:OL%% 단계에서 정하고, `RIS` SR%%t:SR%% channel의 예측 가능하고 반복 가능한 거동에 관한 정보도 OL%%t:OL%% 단계에서 제공된다. `SER`의 판단 문장 가운데 `XIS` 절은 "preliminary `RPS` design", `RIS` 절은 "preliminary `NIC` design"이라고 적으며, 원문 표기는 고치지 않았다.
+**`XIS`와 `RIS`.** `XIS`는 네 중복 division이 각각 대응하는 `RPS` division에 중성자속 신호를 주고 지진 분류는 SCS1이다. `RIS`는 원자로 용기 안팎의 변수를 측정해 `RPS`와 `NIC`에 신호를 보내며, 네 중복·독립 division의 Safety-Related%%t:SR%% 입력을 signal splitter로 `NIC`에 복제한다. 두 계통의 reliability and capability target은 OL%%t:OL%% 단계에서 정하고, `RIS` SR%%t:SR%% channel의 예측 가능하고 반복 가능한 거동에 관한 정보도 OL%%t:OL%% 단계에서 제공된다. `SER`의 판단 문장 가운데 `XIS` 절은 "preliminary `RPS` design", `RIS` 절은 "preliminary `NIC` design"이라고 적으며, 원문 표기는 고치지 않았다.
 
-**`RMS`, `MCR`, `AST`.** `RMS`는 NSRST%%t:NSRST%%·NST%%t:NST%% 기능을 수행하는 디지털 계통으로 자동 조치가 없고 setpoint는 주제어실 표시와 경보만 내며, DL4 기능에서는 `UMC`·`AMC`에 신호를 보내고 `DL5-PAM1`에서는 Type C·F `PAM` 변수 표시를 위해 `RPS`에 신호를 보낸다. 주제어실은 정상 조건의 안전 운전과 사고 조건의 안전 상태 유지를 위한 설비를 갖추고, 주제어실 밖에서는 `RSC`가 신속한 정지와 안전 상태 유지를 위한 표시와 제어를 제공한다. `AST`는 NSRST%%t:NSRST%% Structures, Systems, and Components%%t:SSC%%를 포함하고 지진 분류는 SCN1이며 `EQ` program으로 qualify된다. `AST` 설계는 단일 고장 기준에 `IEEE` 379-2014와 정합하고, 독립성 요건을 위해 `IEEE` 384-2018이 special treatment로 적용되며, `RPS`와의 연결은 `RTB` interface로 제한된다. `RMS`와 `AST`의 reliability and capability target도 OL%%t:OL%% 단계에서 정한다.
+**`RMS`, `MCR`, `AST`.** `RMS`는 NSRST%%t:NSRST%%·NST%%t:NST%% 기능을 수행하는 디지털 계통으로 자동 조치가 없고 setpoint는 주제어실 표시와 경보만 내며, DL4 기능에서는 `UMC`·`AMC`에 신호를 보내고 `DL5-PAM1`에서는 Type C·F `PAM` 변수 표시를 위해 `RPS`에 신호를 보낸다. `SER`은 제어 주체를 `RMS`와 `NIC`로 적으며, `PSAR` 안의 `RMS` 제어 서술 차이(C39)는 [[Natrium_System_Radiation_Monitoring]]의 메모에 정리되어 있다. 주제어실 설계의 PDC%%t:PDC%% 1 정합 판단은 `PSAR` 11.2절 검토와 `RPS`·`NIC`에 적용된 code·standard 평가에 근거한다. 주제어실은 정상 조건의 안전 운전과 사고 조건의 안전 상태 유지를 위한 설비를 갖추고, `RSC`가 신속한 정지와 안전 상태 유지를 위한 표시와 제어를 제공한다. `AST`는 NSRST%%t:NSRST%% Structures, Systems, and Components%%t:SSC%%를 포함하고 지진 분류는 SCN1이며 `EQ` program으로 qualify된다. `AST` 설계는 단일 고장 기준에 `IEEE` 379-2014와 정합하고, 독립성 요건을 위해 `IEEE` 384-2018이 special treatment로 적용되며, `RPS`와의 연결은 `RTB` interface로 제한된다. `RMS`와 `AST`의 reliability and capability target도 OL%%t:OL%% 단계에서 정한다.
+
+**인용된 정합 판단.** 원문 사실에 인용된 staff 판단에서 예비 설계가 정합한다고 본 PDC%%t:PDC%%와 기능은 계통별로 다음과 같다.
+- `NIC`: PDC%%t:PDC%% 1, 13, 24, 25, 28, 60, 63, 64, 72; `DL4-RR3a`, `DL4-RR3b`, `DL4-RR4a`, `DL4-HR2`, `DL4-HR3`, `DL4-RR1c`, `DL2-HR2`.
+- `RPS`: PDC%%t:PDC%% 1, 2, 3, 4, 10, 13, 15, 20, 21, 22, 23, 24, 25, 26, 28, 29; `DL3-RC1`, `DL3-RC2`, `DL4-RC1`, `DL4-RC3`, `DL3-HR2`, `DL3-HR3`, `DL3-HR11`, `DL5-PAM1`.
+- `XIS`: PDC%%t:PDC%% 2, 3, 4, 13, 21, 22, 23, 24.
+- `RIS`: PDC%%t:PDC%% 1, 2, 3, 4, 13, 20, 21, 22, 24.
+- `RMS`: PDC%%t:PDC%% 2, 13, 60, 63, 64.
+- `MCR`: PDC%%t:PDC%% 1, 19.
+- `AST`: PDC%%t:PDC%% 1, 2, 3, 4, 13, 24.
+
+**규정 대비 메모(C78, 규정 불일치).** `SER`은 `RMS` 예비 설계가 PDC%%t:PDC%% 60, 63, 64와 정합한다고 판단하지만, `PSAR` Chapter 5의 PDC%%t:PDC%% 63 적용 계통 목록(`FHE`, `FHP`, `NIC`, `SPS`, `SCG`, `RWS`, `RWL`, `RWG`)에는 `RMS`가 없다. 같은 절의 implementation summary는 `RMS`를 `NIC`, `SCG`, `SPS`와 함께 정상 운전 방사선 준위와 off-normal 조건을 감시하는 계통으로 적지만, 대상 계통 목록에는 넣지 않는다. 권위 문서인 `SER`의 판단을 기준으로 두며, `SER`에는 이 목록 차이에 대한 언급이 없다(vault 기준).
+
+**기록 메모(`meta/contradictions.md` C77).** `SER`은 `AST`의 PDC%%t:PDC%% 2 판단에서 기기가 `RXB`에 있다고 적고, PDC%%t:PDC%% 4 판단에서는 `PSAR` 서술을 따라 `AST` processing cabinet이 `NCB` 안에 있다고 적는다. `PSAR`은 가속도계를 `RXB` 둘레의 borehole에, 신호 처리 cabinet을 Nuclear Island Control Building 하부구조에 둔다고 적으므로, PDC%%t:PDC%% 2 판단의 "equipment"와 PDC%%t:PDC%% 4 판단의 cabinet은 같은 계통의 다른 기기일 수 있다. 판단 내용(PDC%%t:PDC%% 2, 4 정합)은 같으므로 기록만 한다.
 
 ## 관련 문서
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
@@ -195,4 +223,7 @@ terms_pending: []
 - [[Natrium_System_Radiation_Monitoring]]
 - [[Natrium_System_Control_Room_Indications]]
 - [[Natrium_System_Anticipatory_Seismic_Trip]]
+- [[Natrium_System_IC_Architecture]]
+- [[Natrium_PDC_Development]]
+- [[Natrium_DBA_List]]
 - [[SER_KU1_CP]]

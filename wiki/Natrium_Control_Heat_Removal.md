@@ -3,6 +3,7 @@ type: natrium
 aliases: []
 sources:
 - PSAR_ch01
+- SER_KU1_CP
 status: checked
 verified: 2026-09-16
 term: null
@@ -42,11 +43,13 @@ terms_pending: []
 - "In active mode, there is forced circulation of the sodium in the intermediate loop provided by the ISP and forced air flow across the AHX provided by the IAC air blower." [PSAR_ch01 §1.1.4.1.6 p.23]
 - "In blower mode, there is natural circulation of the sodium in the intermediate loop and forced air flow across the AHX provided by the IAC air blower." [PSAR_ch01 §1.1.4.1.6 p.23]
 - "In passive mode, there is natural circulation of the sodium in the intermediate loop and natural convection flow of the air across the AHX." [PSAR_ch01 §1.1.4.1.6 p.23]
+- "The PSAR states that IAC provides active and passive means of controlling heat removal by pulling heat from the reactor core using the intermediate heat exchangers into the IHT and discharging them to the atmosphere through sodium-air heat exchangers." [SER_KU1_CP §1.3.3.3.2 p.43]
+- "The IHT consists of two intermediate sodium loops, each connecting one IHX (which is considered part of the PHT) to an array of SHXs. Each loop includes an ISP, sodium-air heat exchangers (AHX, which is considered part of the IAC), and interconnecting piping." [SER_KU1_CP §7.1.4 p.445]
 
 ## 해설
 controlling heat removal은 서로 다른 두 잔열 제거 계통인 Intermediate Air Cooling System과 Reactor Air Cooling System이 수행한다. Intermediate Air Cooling System에는 blower로 Intermediate Heat Transport System의 열을 옮기는 두 능동 운전 모드와, blower 대신 자연 통풍을 쓰는 피동 수단이 있다. 계통 설명 절은 대기로 열을 옮기는 세 운전 모드를 구분한다. active mode에서는 중간 루프 소듐이 강제 순환하고 blower가 sodium-air heat exchanger를 지나는 공기를 강제로 흘리며, blower mode에서는 소듐이 자연 순환하고 공기는 blower로 강제로 흐르고, passive mode에서는 소듐과 공기가 모두 자연 순환한다.
 
-두 서술은 열전달 기기의 이름이 다르다. 안전 개요 절은 blower가 Intermediate Heat Exchanger를 거쳐 Intermediate Heat Transport System의 열을 옮긴다고 적고, 계통 설명 절은 Intermediate Heat Transport System이 Sodium-Air Heat Exchanger를 거쳐 Intermediate Air Cooling System으로 열을 전달한다고 적는다. 두 이름이 같은 경로의 다른 기기를 가리키는지는 vault에 없다. 역할 표현도 다르다. 안전 개요 절은 이 계통을 발전소 기동, 정지, off-normal 조건에서의 주 열제거 수단으로 적고, 계통 설명 절은 upset events 동안 원자로의 preferred heat removal system으로 적는다. 계통 설명 절은 또 Intermediate Heat Transport System이 붕괴열 제거와 원자로 기동·정지 운전을 위해 이 계통으로 열을 전달하며, 붕괴열 방출의 정상적이고 선호되는 경로의 일부라고 적는다.
+두 서술은 열전달 기기의 이름이 다르다. 안전 개요 절은 blower가 Intermediate Heat Exchanger를 거쳐 Intermediate Heat Transport System의 열을 옮긴다고 적고, 계통 설명 절은 Intermediate Heat Transport System이 Sodium-Air Heat Exchanger를 거쳐 Intermediate Air Cooling System으로 열을 전달한다고 적는다. `SER`은 두 기기를 같은 열전달 경로의 서로 다른 기기로 다룬다. Intermediate Heat Exchanger는 Primary Heat Transport System의 일부로, Sodium-Air Heat Exchanger는 Intermediate Air Cooling System의 일부로 간주되며, 열은 노심에서 Intermediate Heat Exchanger를 거쳐 Intermediate Heat Transport System으로 들어간 뒤 Sodium-Air Heat Exchanger를 거쳐 대기로 방출된다. 역할 표현도 다르다. 안전 개요 절은 이 계통을 발전소 기동, 정지, off-normal 조건에서의 주 열제거 수단으로 적고, 계통 설명 절은 upset events 동안 원자로의 preferred heat removal system으로 적는다. 계통 설명 절은 또 Intermediate Heat Transport System이 붕괴열 제거와 원자로 기동·정지 운전을 위해 이 계통으로 열을 전달하며, 붕괴열 방출의 정상적이고 선호되는 경로의 일부라고 적는다.
 
 Reactor Air Cooling System은 guard vessel 외부를 도는 공기의 자연 순환으로 controlling heat removal의 고유 수단을 제공하며, 이 수단에는 특정 off-normal 조건에서 소듐이 자연 순환하는 메커니즘이 포함된다. 계통은 운전원 조치나 움직이는 부품 없이 연속 운전하며, 정상 운전, Anticipated Operational Occurrence%%t:AOO%%, Design Basis Event%%t:DBE%%, Design Basis Accident%%t:DBA%% 동안 붕괴열을 제거한다. 개방 계통이므로 주변 환경이 최종 냉각재 원천이자 열침원이다. 계통 설명 절에 따르면 주목적은 공기 자연 대류로 환경에 피동 붕괴열 제거를 제공하는 것이고, 펌프 유동 열교환기 같은 능동 냉각 계통의 일반적 고장 모드를 겪지 않아 본질적으로 신뢰성이 높다. 냉각을 시작하는 데 운전원 조치나 Structures, Systems, and Components%%t:SSC%% 상태 변화가 필요 없고, 사고 후를 포함한 운전 중 열제거 성능을 감시한다. 원자로 용기는 argon 기체 공간을 가로질러 guard vessel로 열을 복사하도록 설계되어, guard vessel 표면적을 늘리지 않고 열제거 용량을 키운다.
 
@@ -56,3 +59,4 @@ Reactor Air Cooling System은 guard vessel 외부를 도는 공기의 자연 순
 - [[Natrium_Functional_Containment]]
 - [[SFR_DC_Residual_Heat_Removal_And_ECC]]
 - [[PSAR_ch01]]
+- [[Natrium_SER_Facility_Overview_Review]]

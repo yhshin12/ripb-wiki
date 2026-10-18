@@ -8,12 +8,12 @@ file: references/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
 pdf: references/raw/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
   1 Construction Permit Application.pdf
 sha256_pdf: e28f1a00966cef387a91437f4bba8bd05a544a9722e404cb486fac1cc5a2f4b2
-sha256_md: 9f1a8972ac836125376a252240b15a6a0cfca5c71abd171a9305204fce85e8b3
+sha256_md: 9757b3aa3570a2a10c7b948b3b1f11b0d154aa7742f8f2f164d2f250b175d190
 pdf_pages: 768
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-18
   missing_pct: 0.32
 ingest: complete
 units:
@@ -43,7 +43,7 @@ units:
 # Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application (SER_KU1_CP)
 
 > [!abstract] 요약
-> `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다. vault는 1, 3–7, 11, 13장과 부록 A·B를 `Natrium_SER_` 노트 30개로 옮겼고, 7장의 계통별 PDC 정합성 판단은 계통군별 노트 다섯 개로 정리했다. 2, 8–10, 12, 14장은 대응 `PSAR` 장이 vault에 없어 제외했고, 장 도입, 규제 목록, 결론 반복, 비공개 표 같은 절은 사유와 함께 coverage에서 제외했다.
+> `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다. vault는 1, 3–7, 11, 13장과 부록 A·B를 `Natrium_SER_` 노트 30개(7장의 계통별 PDC 정합성 판단을 계통군별로 정리한 노트 다섯 개 포함)로 옮겼다. 2, 8–10, 12, 14장은 대응 `PSAR` 장이 vault에 없어 인제스트 단위에서 제외했으나, §2.4.1.4.2와 §2.5.1.3.2.2는 [[Terminology]]에서, §8.2.1.1은 [[Natrium_Project_Organization]]과 [[Natrium_SER_Operating_Organization_Review]]에서, §10.1.1은 [[Natrium_Operating_Organization]]과 [[Natrium_RG_Conformance]]에서, §14.1과 §14.1.2는 [[Natrium_SER_Exemptions_Review]]에서 부분 인용된다. 또 장 도입, 규제 목록, 결론 반복, 비공개 표 같은 절은 사유와 함께 coverage에서 제외했다.
 
 ## 서지
 - 키: `SER_KU1_CP`

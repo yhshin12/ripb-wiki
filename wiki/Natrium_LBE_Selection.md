@@ -1,7 +1,7 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch03, NEI_18-04, SER_KU1_CP, PSAR_ch01, RG_1.233]
+sources: [PSAR_ch03, NEI_18-04, SER_KU1_CP, PSAR_ch01, RG_1.233, PSAR_ch04]
 status: checked
 verified: 2026-10-17
 term:
@@ -73,13 +73,14 @@ terms_pending: []
 - "With the understanding that SR SSCs are required to be capable of performing their RSFs in response to external events within the DBEHL, there will be no new DBAs introduced by external hazards." [NEI_18-04 §3.2.2 Task 6 p.22]
 - "The phenomena caused by the design basis seismic hazard are not covered by other DBA evaluations, so a seismic DBA was developed." [PSAR_ch03 §3.4 p.52]
 - "The seismic reactivity insertion DBA is analyzed at full power operating conditions by examining a range of reactivity profiles that encapsulate the combined safe shutdown earthquake lateral and vertical reactivity time history." [PSAR_ch03 §3.9.3.1.1 p.111]
+- "OQEs are events that are quantified outside of the LBE frequency cutoff." [PSAR_ch04 §4.1 p.4]
 
 ## 해설
 LBE%%t:LBE%% 선정은 event sequences의 체계적 정의, 분류, 평가를 포함한다. `Chapter 3`은 LBE%%t:LBE%%를 간단히 기술하고 빈도·결말·불확실도를 NEI 18-04의 Frequency-Consequence Target%%t:FC_TARGET%%과 비교해 그리며, 사건 기술에는 초기 발전소 조건, 방사성 핵종 선원, Event Sequence Family%%t:EVENT_SEQ_FAMILY%%에 포함된 Initiating Event%%t:IE%%, Structures, Systems, and Components%%t:SSC%% 응답, PRA Safety Function%%t:PSF%%을 수행하는 운전원 조치가 들어간다. LBE%%t:LBE%% 빈도의 5th와 95th percentile은 `UNCERT`로 계산한다.
 
 Anticipated Operational Occurrence%%t:AOO%%는 발전소 수명 동안 한 번 이상 일어날 것으로 예상되는 사건으로 평균 빈도 1E-02 per plant-year 이상이고, Design Basis Event%%t:DBE%%는 AOO%%t:AOO%%보다 드물고 수명 중 일어나지 않을 것으로 예상되는 평균 빈도 1E-04에서 1E-02 per plant-year의 사건이며, Beyond Design Basis Event%%t:BDBE%%는 DBE%%t:DBE%%보다 드문 평균 빈도 5E-07에서 1E-04 per plant-year의 사건이다. 세 범주 모두 안전 등급과 무관하게 모든 SSC%%t:SSC%%의 예상 응답을 고려하고, AOO%%t:AOO%%와 DBE%%t:DBE%% 완화에는 사건 기술에 따로 적지 않은 한 운전원 조치가 필요 없다. DBA%%t:DBA%%는 Safety-Related%%t:SR%% SSC%%t:SSC%%의 설계 기준과 성능 목표를 정하는 가정 사고로, DBE%%t:DBE%%에서 SR%%t:SR%% SSC%%t:SSC%%만 사고 결말을 10 CFR 50.34 선량 한도 안으로 완화할 수 있다고 처방적으로 가정해 도출한다.
 
-경계 수치는 NEI 18-04의 LBE%%t:LBE%% 정의 표와 같고, 이 보고서도 세 범주 모두 평균 빈도를 명시한다. NEI 18-04는 BDBE%%t:BDBE%%를 상한 빈도가 5E-07/plant-year보다 큰 사건으로도 설명하고, 95th percentile 빈도가 5E-07/plant-year 미만인 사건을 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는데, 이 노트가 인용한 보고서 문장에는 이에 대응하는 서술이 없다. NRC staff는 사업자가 BDBE%%t:BDBE%%로 평가할 사건을 정할 때는 95th percentile 빈도를 썼지만, BDBE%%t:BDBE%%로 분류해 construction permit%%t:CP%% 신청서에 넣을 사건을 정할 때는 평균 빈도를 썼다고 확인하고 이를 방법론 일탈로 본다. NEI 18-04는 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다고 적는다. 이 보고서는 5th percentile 빈도가 1E-02/plant-year 미만인 AOO%%t:AOO%%와 95th percentile 빈도가 1E-04/plant-year를 넘는 BDBE%%t:BDBE%%에서 DBA%%t:DBA%%를 도출하는 일을 OL%%t:OL%% 단계로 미루면서, 동시에 NEI 18-04 방법론을 LBE%%t:LBE%% 선정·평가에 일탈 없이 적용한다고 적는다. 보고서는 두 서술의 관계를 설명하지 않는다. NRC staff는 이 DBA%%t:DBA%% 미도출을 두 번째 방법론 일탈로 판단하고, 사업자가 이 평가를 Task 7a에만 적용해 DBE%%t:DBE%% 범위에 걸치는 AOO%%t:AOO%%와 BDBE%%t:BDBE%%에 DBA%%t:DBA%%가 만들어지지 않았다고 적는다.
+경계 수치는 NEI 18-04의 LBE%%t:LBE%% 정의 표와 같고, 이 보고서도 세 범주 모두 평균 빈도를 명시한다. NEI 18-04는 BDBE%%t:BDBE%%를 상한 빈도가 5E-07/plant-year보다 큰 사건으로도 설명하고, 95th percentile 빈도가 5E-07/plant-year 미만인 사건을 PRA 결과에 남겨 cliff edge effects%%t:CLIFF_EDGE_EFFECT%%가 없음을 확인하는 데 쓴다고 적는데, 이 노트가 인용한 `Chapter 3` 문장에는 이에 대응하는 서술이 없다. 다만 `Chapter 4`는 LBE%%t:LBE%% 빈도 cutoff 밖에서 정량화된 사건을 other quantified events%%t:OQE%%로 적는다. NRC staff는 사업자가 BDBE%%t:BDBE%%로 평가할 사건을 정할 때는 95th percentile 빈도를 썼지만, BDBE%%t:BDBE%%로 분류해 construction permit%%t:CP%% 신청서에 넣을 사건을 정할 때는 평균 빈도를 썼다고 확인하고 이를 방법론 일탈로 본다. NEI 18-04는 5th와 95th percentile 불확실도 구간이 빈도 경계에 걸치면 두 범주에서 모두 평가한다고 적는다. 이 보고서는 5th percentile 빈도가 1E-02/plant-year 미만인 AOO%%t:AOO%%와 95th percentile 빈도가 1E-04/plant-year를 넘는 BDBE%%t:BDBE%%에서 DBA%%t:DBA%%를 도출하는 일을 OL%%t:OL%% 단계로 미루면서, 동시에 NEI 18-04 방법론을 LBE%%t:LBE%% 선정·평가에 일탈 없이 적용한다고 적는다. 보고서는 두 서술의 관계를 설명하지 않는다. NRC staff는 이 DBA%%t:DBA%% 미도출을 두 번째 방법론 일탈로 판단하고, 사업자가 이 평가를 Task 7a에만 적용해 DBE%%t:DBE%% 범위에 걸치는 AOO%%t:AOO%%와 BDBE%%t:BDBE%%에 DBA%%t:DBA%%가 만들어지지 않았다고 적는다.
 
 NEI 18-04는 SR%%t:SR%% SSC%%t:SSC%%가 Design Basis External Hazard Level%%t:DBEHL%% 안의 외부 사건에 대해 Required Safety Function%%t:RSF%%을 수행할 수 있어야 하므로 외부 재해로 새 DBA%%t:DBA%%가 생기지 않는다고 적는다. 이 보고서는 설계기준 지진이 일으키는 현상을 다른 DBA%%t:DBA%% 평가가 다루지 않는다는 이유로 지진 DBA%%t:DBA%%를 만들었고, 이 DBA%%t:DBA%%는 safe shutdown earthquake의 수평·수직 반응도 시간 이력을 포괄하는 반응도 곡선 범위로 전출력 조건에서 해석한다.
 
