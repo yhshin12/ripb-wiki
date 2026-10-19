@@ -38,7 +38,7 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 
 ## 다음 작업
 0. 2026-10-18 `wiki-lint` 의미 점검(SER 잔여 R1·R2, 계통 묶음 재점검)과 조치 1–8 적용을 마쳤다(`meta/lint/2026-10-18.md`). A6(`Risk_Significant_SSC` 단일 기록처화)도 적용했다.
-1. (완료) 2026-10-19 `wiki-audit` seed 20261019: 노트 오류율 10 %(1/10, 목표 충족), 원문 사실 항목 오류 0/892. 2026-09-16 배치 46노트 요약·해설 점검에서 같은 유형 오류 0건, 과잉 일반화 4건(Natrium_PDC_Development 요약의 "가장 흔한 변경", Natrium_SR_Functions_Retaining_Radionuclides 요약의 "DL3-RR1부터 DL3-RR10까지"(RR9 없음), Natrium_DBE_List·Natrium_BDBE_List 요약의 "원자로 쪽" 범위)은 보고만 하고 고치지 않았다(사용자 결정 대기).
+1. (완료) 2026-10-19 `wiki-audit` seed 20261019: 노트 오류율 10 %(1/10, 목표 충족), 원문 사실 항목 오류 0/892. 2026-09-16 배치 46노트 요약·해설 점검에서 같은 유형 오류 0건, 과잉 일반화 4건(Natrium_PDC_Development 요약의 "가장 흔한 변경", Natrium_SR_Functions_Retaining_Radionuclides 요약의 "DL3-RR1부터 DL3-RR10까지"(RR9 없음), Natrium_DBE_List·Natrium_BDBE_List 요약의 "원자로 쪽" 범위)은 2026-10-19 사용자 승인으로 고쳤다.
 2. 정제 파이프라인 보완 후보: RG_1.247 Table 1 내용 누락, 부록 A 굵은 글씨·취소선 소실, C.1.3.8 쪽 표지 위치; RG_1.253 Table A-2·A-3 표 구조 깨짐; SER §7.3.1.1.9.3 제목이 본문 줄로 남음; 여러 쪽 표 뒤 본문이 범위 쪽 표지 아래에 남아 첫 번호 규칙으로 쪽이 앞당겨짐(PSAR_ch07 p.138-139 등); NEI 18-04 `[^pN]` 각주 정의가 뒤 쪽 표지 아래에 놓임(`verify_quotes.py`는 2026-10-19부터 각주를 쪽 N에 귀속); ACRS 글머리표 분할 2곳(p.5, p.10).
 3. 남은 미정 용어 후보 질문.
 4. `coverage_sections.py`는 절 단위로만 센다. 같은 절 안의 staff 판단 문장이 빠져도 잡지 못한다(2026-10-18 점검에서 약 80문장 확인). 판단 문장 단위 검사가 필요한지 결정한다.

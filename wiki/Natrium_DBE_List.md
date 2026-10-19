@@ -17,7 +17,7 @@ terms_pending: []
 # Natrium DBE 목록 (Natrium Design Basis Events)
 
 > [!abstract] 요약
-> Kemmerer Unit 1의 Design Basis Event%%t:DBE%% 요약표는 스물일곱 사건을 적고, 그중 핵연료 취급 사건 세 건만 risk-significant이다. 원자로 쪽 DBE%%t:DBE%%는 방출 없이 Reactor Air Cooling System이나 Intermediate Air Cooling System이 붕괴열을 제거하는 safe shutdown 또는 safe and stable 상태로 끝나고, 방출이 있는 DBE%%t:DBE%%의 평균 `30-day` 선량은 5.62E-04에서 3.66E-01 rem이다.
+> Kemmerer Unit 1의 Design Basis Event%%t:DBE%% 요약표는 스물일곱 사건을 적고, 그중 핵연료 취급 사건 세 건만 risk-significant이다. local fault 사건 LFF-SAO-BL을 뺀 원자로 쪽 DBE%%t:DBE%%는 방출 없이 Reactor Air Cooling System이나 Intermediate Air Cooling System이 붕괴열을 제거하는 safe shutdown 또는 safe and stable 상태로 끝나고, 방출이 있는 DBE%%t:DBE%%의 평균 `30-day` 선량은 5.62E-04에서 3.66E-01 rem이다.
 
 ## 원문 사실
 | DBE ID | DBE Title | Risk Significant | 출처 |

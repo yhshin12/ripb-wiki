@@ -194,7 +194,7 @@
 - [[Natrium_SRDC_Summary]] — `PSAR` Chapter 6은 Safety-Related Design Criteria를 Safety-Related 기능을 수행하도록 선정된 Structures, Systems, and Components의 Required Functional Design Criteria 충족에 필요한 설계 기준으로 설명하고, SRDC 자체는 `PSAR` Chapter 5의 SR 기능 표에 둔다.
 - [[Natrium_SR_Functions_Heat_Generation]] — controlling heat generation을 뒷받침하는 Safety-Related 기능은 DL3-RC1과 DL3-RC2 두 개이다.
 - [[Natrium_SR_Functions_Heat_Removal]] — controlling heat removal을 뒷받침하는 Safety-Related 기능은 DL3-HR1부터 DL3-HR13까지 열세 개이다.
-- [[Natrium_SR_Functions_Retaining_Radionuclides]] — retaining radionuclides를 뒷받침하는 Safety-Related 기능은 DL3-RR1부터 DL3-RR10까지의 barrier와 격리·압력 방출 기능이다.
+- [[Natrium_SR_Functions_Retaining_Radionuclides]] — retaining radionuclides를 뒷받침하는 Safety-Related 기능은 DL3-RR1–DL3-RR8, DL3-RR5a, DL3-RR10의 barrier와 격리·압력 방출 기능이다.
 - [[Natrium_SSC_Safety_Classification]] — Kemmerer Unit 1의 Structures, Systems, and Components 안전 분류는 regulatory guide 1.233이 승인한 NEI 18-04를 따르며, 계통에 배정된 PRA Safety Function의 safety significance가 그 기능을 수행하는 SSC의 분류를 정한다.
 - [[Natrium_Safety_Significant_Structures]] — `PSAR` §6.4.2는 safety-significant 구조물인 `NCB`, `RXB`, `FHB`, `RAB`가 매립 철근콘크리트 하부구조와 그 위의 강골조 상부구조로 이루어진다고 적고, 하부·상부구조별 안전 분류와 주 설계 코드를 지정한다.
 - [[Natrium_Security_And_Fitness_For_Duty]] — `PSAR` Chapter 11 §11.6은 `RG 5.84`가 승인한 `NEI 06-06`에 따른 fitness-for-duty(`FFD`) 프로그램과 `10 CFR Part 26` 적용 일정, 보안 계획 일정을 적는다.

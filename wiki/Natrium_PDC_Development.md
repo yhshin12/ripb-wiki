@@ -17,7 +17,7 @@ terms_pending: []
 # Natrium PDC 개발 근거와 RG 1.232 대조 (Natrium Principal Design Criteria and RG 1.232)
 
 > [!abstract] 요약
-> Kemmerer Unit 1의 principal design criteria%%t:PDC%%는 regulatory guide%%t:RG%% 1.232 Revision 0의 sodium-cooled fast reactor design criteria를 바탕으로 Natrium 설계 고유 특성을 반영해 개발되었다. 문구 대조에서 가장 흔한 변경은 important to safety를 safety-significant로, 핵연료 설계 한계를 specified acceptable system radionuclide release design limit%%t:SARRDL%%으로 바꾼 것이며, 기준 80–82의 문구는 MHTGR design criteria와 대응한다.
+> Kemmerer Unit 1의 principal design criteria%%t:PDC%%는 regulatory guide%%t:RG%% 1.232 Revision 0의 sodium-cooled fast reactor design criteria를 바탕으로 Natrium 설계 고유 특성을 반영해 개발되었다. 문구 대조에서 가장 흔한 변경은 important to safety를 safety-significant로 바꾼 것이고, 기준 10과 17은 fuel design limits 대신 specified acceptable system radionuclide release design limit%%t:SARRDL%%을 적으며, 기준 80–82의 문구는 MHTGR design criteria와 대응한다.
 
 ## 원문 사실
 - "Principal Design Criteria (PDC) were developed based on the SFR-DC in Regulatory Guide (RG) 1.232, Revision 0, “Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors,” as informed by design features specific to the Natrium reactor." [PSAR_ch05 §5.3 p.21]

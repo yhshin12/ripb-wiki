@@ -17,7 +17,7 @@ terms_pending: []
 # Natrium BDBE 목록 (Natrium Beyond Design Basis Events)
 
 > [!abstract] 요약
-> Kemmerer Unit 1의 Beyond Design Basis Event%%t:BDBE%% 요약표는 마흔일곱 사건을 적는다. 원자로 쪽 BDBE%%t:BDBE%%는 Intermediate Air Cooling System 냉각 실패, scram motor drive-in, alternative shunt trip 같은 추가 고장이나 대체 수단을 가정하며, 그 가운데 방출이 생기는 것은 소외 전원 상실 두 건이다. risk-significant BDBE%%t:BDBE%%는 모두 핵연료 취급 계열 사건이고, Ex-Vessel Handling Machine 관련 두 건이 high-consequence이다.
+> Kemmerer Unit 1의 Beyond Design Basis Event%%t:BDBE%% 요약표는 마흔일곱 사건을 적는다. 원자로 쪽 BDBE%%t:BDBE%%는 Intermediate Air Cooling System 냉각 실패, scram motor drive-in, alternative shunt trip 같은 추가 고장이나 대체 수단을 가정하며, 그 가운데 방출이 생기는 것은 소외 전원 상실 두 건이다. local fault 사건 LFF-SAO-1·LFF-SAO-2와 정지 중 Sodium Cover Gas System 누설 사건 SUD-CGR-1·SUD-CGR-2는 이 원자로 쪽 묶음 밖에 두며, 이들도 방출이 있다. risk-significant BDBE%%t:BDBE%%는 모두 핵연료 취급 계열 사건이고, Ex-Vessel Handling Machine 관련 두 건이 high-consequence이다.
 
 ## 원문 사실
 | BDBE ID | BDBE Title | Risk Significant | 출처 |

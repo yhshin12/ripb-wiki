@@ -14,7 +14,7 @@ terms_pending: []
 # Natrium retaining radionuclides SR 기능 (SR Functions Supporting Retaining Radionuclides)
 
 > [!abstract] 요약
-> retaining radionuclides를 뒷받침하는 Safety-Related%%t:SR%% 기능은 DL3-RR1부터 DL3-RR10까지의 barrier%%t:BARRIER%%와 격리·압력 방출 기능이다. primary coolant boundary와 핵연료 피복, 핵연료 취급 설비의 cask·tank·cell barrier%%t:BARRIER%%, Reactor Enclosure System 압력 방출, failed fuel canister, 커버가스(cover gas)%%t:COVER_GAS%% 계통 격리가 포함되며, 마지막 기능은 construction permit%%t:CP%% 단계에 추가되어 아직 설계와 해석에 반영되지 않았다.
+> retaining radionuclides를 뒷받침하는 Safety-Related%%t:SR%% 기능은 DL3-RR1–DL3-RR8, DL3-RR5a, DL3-RR10의 barrier%%t:BARRIER%%와 격리·압력 방출 기능이다. primary coolant boundary와 핵연료 피복, 핵연료 취급 설비의 cask·tank·cell barrier%%t:BARRIER%%, Reactor Enclosure System 압력 방출, failed fuel canister, 커버가스(cover gas)%%t:COVER_GAS%% 계통 격리가 포함되며, 마지막 기능은 construction permit%%t:CP%% 단계에 추가되어 아직 설계와 해석에 반영되지 않았다.
 
 ## 원문 사실
 | 표 | 제목 | 출처 |

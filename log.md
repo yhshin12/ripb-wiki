@@ -238,3 +238,6 @@
 - 오류 노트 1(10 %, 목표 충족), 원문 사실 항목 오류 0/892, 경미 20
 - Natrium_PDC_Multiple_Barriers 요약의 원문 사실 밖 비교 구절 삭제; 과잉 일반화 2건과 각주 인용 쪽 수정
 - verify_quotes.py: [^pN] 각주를 쪽 N에 귀속; 2026-09-16 배치 46노트 요약 점검에서 같은 유형 0건(과잉 일반화 4건은 보고만)
+
+## [2026-10-19] audit | 2026-09-16 배치 요약의 과잉 일반화 4건 수정
+- Natrium_PDC_Development, Natrium_SR_Functions_Retaining_Radionuclides, Natrium_DBE_List, Natrium_BDBE_List 요약 범위 수정; lint 0, 인용 검증 0
