@@ -56,7 +56,7 @@ terms_pending: []
 - "An LBE is considered within the F-C Target when a point defined by the upper 95th percentile uncertainty on both the LBE frequency and dose is within the F-C Target." [NEI_18-04 §4.2.2 p.47]
 - "In the LMP framework, an SSC is regarded as risk-significant if its PRA Safety Function is: a) required to keep one or more LBEs inside the F-C Target based on mean frequencies and consequences" [NEI_18-04 §6 p.90]
 
-- "Although the SSCs are classified, the resulting performance and special treatment requirements are for the specific functions identified in the LBEs." [NEI_18-04 §4.1 p.42]
+- "Although the SSCs are classified, the resulting performance and special treatment requirements are for the specific functions identified in the LBEs." [NEI_18-04 §4.1 p.39]
 
 - "Non-safety-related SSCs that perform risk-significant functions or perform functions that are necessary for defense-in-depth adequacy" [NEI_18-04 §6 p.90]
 - "Any SSCs that do not meet the risk-significance criteria should be classified as safety-significant only if the integrated decision-making process determines that some form of special treatment is necessary to establish the adequacy of DID." [NEI_18-04 §4.3 p.48]

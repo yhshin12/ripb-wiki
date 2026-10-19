@@ -233,3 +233,8 @@
 - 모순 C74–C79 기록, C34·C37·C54·C66 보강; 노트 약 60개 수정(PDC 정합성 노트 5개에 staff 판단 추가, 낡은 부재 진술 17건, 해설 근거 보강, 링크)
 - A6: SSC risk significance 판정 기준을 Risk_Significant_SSC로 통합
 - 새 검사 check_absence.py(부재 진술 원장), SER 정제 patch 3건; 원문 대조 지적 25건 수정; lint 0, 인용 검증 0
+
+## [2026-10-19] audit | 표본 재검증 seed 20261019(10/198)
+- 오류 노트 1(10 %, 목표 충족), 원문 사실 항목 오류 0/892, 경미 20
+- Natrium_PDC_Multiple_Barriers 요약의 원문 사실 밖 비교 구절 삭제; 과잉 일반화 2건과 각주 인용 쪽 수정
+- verify_quotes.py: [^pN] 각주를 쪽 N에 귀속; 2026-09-16 배치 46노트 요약 점검에서 같은 유형 0건(과잉 일반화 4건은 보고만)

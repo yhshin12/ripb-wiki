@@ -81,3 +81,11 @@ def test_cli_exit_codes(mini_vault, make_note, good_note_body, monkeypatch, caps
     make_note("Bad", good_note_body.replace("p.3]", "p.13]"))
     assert VQ.main(["--all"]) == 1
     assert "wiki/Bad.md" in capsys.readouterr().out
+
+
+def test_page_labelled_footnote_counts_on_its_own_page(mini_vault, make_note):
+    cleaned = ("<!-- page 1 -->\n\nCover.\n\n<!-- page 2 -->\n\nBody text on two[^p2].\n\n<!-- page 5 -->\n\n"
+               "Body text on five.\n\n[^p2]: The footnote sentence belongs to page two.\n")
+    (mini_vault / "references" / "DOC_A_T.md").write_text(cleaned, encoding="utf-8", newline="\n")
+    good = make_note("Fn", body_with('- "The footnote sentence belongs to page two." [DOC_A §3 p.2]'))
+    assert run(mini_vault, good) == []

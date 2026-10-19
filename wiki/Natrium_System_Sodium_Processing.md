@@ -291,6 +291,7 @@ terms_pending: []
 - "Primary sodium may contain radioactive cesium isotopes from failed fuel." [PSAR_ch07 §7.2.4.3.7 p.144]
 - "Cesium is removed from the primary coolant using reticulated vitreous carbon traps as part of the SPS-P process equipment." [PSAR_ch07 §7.2.4.3.7 p.144]
 - "DL3-RR1 — Primary Coolant Boundary including RES Barrier" [PSAR_ch05 Table 5.2-3 p.12]
+- "| Sodium Processing System (SPS) | The primary system boundary shall have low leakage in postulated accident conditions to establish reasonable assurance radionuclide release results in calculated radiological dose under the 10 CFR 50.34 dose criteria at a safe shutdown condition. |" [PSAR_ch05 Table 5.2-3 p.12]
 - "PSAR section 7.2.4.2.2 states that the SPS supports five functions that provide radionuclide retention as part of functional containment." [SER_KU1_CP §7.2.4.1.14.3 p.488]
 - "DL3-RR1b, SPS Primary System Barrier (SR)" [SER_KU1_CP §7.2.4.1.14.3 p.488]
 - "Based on the evaluation above, the staff determined that the preliminary SPS design is consistent with DL3-RR4, DL3-RR1b, DL2-RR7, DL4-RR3, and DL2-RR8." [SER_KU1_CP §7.2.4.1.14.3 p.490]
@@ -308,7 +309,7 @@ regulatory guide%%t:RG%% 부합은 `RG 1.22`, `RG 1.34`, `RG 1.36`, `RG 1.44`, `
 
 `PSAR` Chapter 5 표는 `DL4-RR8`을 `Manual SPS Pump Trip on Leak Indication`으로 적어 Chapter 7의 `Manual SPS Pump Trip on Low Primary Sodium Level`과 다르다. Chapter 1은 `SPS-I`가 `SPS-P`와 `same equipment and function`을 가진다고, Chapter 7은 `similar equipment and functions`를 가진다고 적는다.
 
-**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 기능 표는 `SPS`의 primary coolant boundary 기능을 하위 `ID` `DL3-RR1b`로 적고, Chapter 5 표는 이 기능을 `DL3-RR1`(`Primary Coolant Boundary including RES Barrier`)로 적으며, 인용한 Chapter 5 표 부분에는 `DL3-RR1b`라는 식별자가 없다. `SER`은 `PSAR` §7.2.4.2.2를 따라 `DL3-RR1b`를 `SPS`의 다섯 방사성핵종 보유 기능 가운데 하나로 옮기고, 예비 `SPS` 설계가 `DL3-RR1b`를 포함한 다섯 기능과 일관된다고 판단한다. 판정할 권위 조항은 없으며, 이 노트는 `SER`과 같이 Chapter 7의 하위 `ID`를 쓴다.
+**규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 기능 표는 `SPS`의 primary coolant boundary 기능을 하위 `ID` `DL3-RR1b`로 적고, Chapter 5 표의 `DL3-RR1`(`Primary Coolant Boundary including RES Barrier`) 레코드는 `SPS`를 이 기능을 수행하는 계통으로 적으며, 인용한 Chapter 5 표 부분에는 `DL3-RR1b`라는 식별자가 없다. `SER`은 `PSAR` §7.2.4.2.2를 따라 `DL3-RR1b`를 `SPS`의 다섯 방사성핵종 보유 기능 가운데 하나로 옮기고, 예비 `SPS` 설계가 `DL3-RR1b`를 포함한 다섯 기능과 일관된다고 판단한다. 판정할 권위 조항은 없으며, 이 노트는 `SER`과 같이 Chapter 7의 하위 `ID`를 쓴다.
 
 process radiation monitor는 primary Sodium Processing System에만 해당한다. 주 bypass line과 cesium trap%%t:CESIUM_TRAP%% 하류 귀환 line에 gamma spectrometer를 하나씩 두고, Cs-137 붕괴에 특유한 gamma 에너지로 cesium을 검출하며, 하류 spectrometer로 cesium trap%%t:CESIUM_TRAP%%의 효과를 감시한다. multi purpose sampler는 실험실 분석용 소듐 시료를 채취하며, 그 분석은 `PTI` 감시 자료와 비교할 수 있는 시점별 소듐 화학 특성을 제공한다. cold trap%%t:COLD_TRAP%%은 낮은 온도에서 석출시켜 소듐의 산소와 수소 불순물을 줄이고, 파손 핵연료에서 나온 방사성 cesium 동위원소는 reticulated vitreous carbon trap으로 일차 냉각재에서 제거한다.
 

@@ -5,9 +5,9 @@ Usage:
   python scripts/check_absence.py [--root internal] --accept   record every current statement as reviewed
 
 A statement is a line outside 원문 사실 that matches ABSENCE. The ledger (meta/absence_ledger.json, or
-internal/meta/absence_ledger.json) keeps the reviewed statements and a hash of every note at the last --accept.
+internal/meta/absence_ledger.json) keeps the reviewed statements and the line hashes of every note at the last --accept.
   A1  statement not in the ledger (new or reworded): review it.
-  A2  reviewed statement shares a key token with a note that is new or changed since --accept: re-review it.
+  A2  reviewed statement shares key tokens with the lines added to another note since --accept: re-review it.
 Key tokens of a line are its term markers (%%t:ID%%), link targets and English words or abbreviations, minus
 citations and minus tokens found in more than COMMON of the notes. A shared token weighs ln(notes / notes with it),
 twice when it is in the other note's file name or H1; a note is a hit at score >= THRESHOLD * ln 10.
@@ -49,6 +49,10 @@ def ledger_path(vault, root=None):
 
 def _hash(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12]
+
+
+def _line_hash(line):
+    return hashlib.sha1(line.strip().encode("utf-8")).hexdigest()[:8]
 
 
 def _words(text):
@@ -123,7 +127,16 @@ def check(vault, root=None):
             df[t] = df.get(t, 0) + 1
     total = max(1, len(notes))
     weight = {t: math.log(total / c) for t, c in df.items() if c <= COMMON * total}
-    fresh = [name for name, n in notes.items() if ledger["notes"].get(name) != _hash(n.body)]
+    fresh = {}                                     # note -> tokens of the lines added since --accept
+    for name, n in notes.items():
+        known = ledger["notes"].get(name)
+        if isinstance(known, str):                 # ledger before line hashes: whole note if changed
+            added = [] if known == _hash(n.body) else n.body.split("\n")
+        else:
+            seen = set(known or [])
+            added = [l for l in n.body.split("\n") if l.strip() and _line_hash(l) not in seen]
+        if added:
+            fresh[name] = note_tokens("\n".join(added))
     findings = []
     for name, n in sorted(notes.items()):
         rel = N.relpath(n.path, vault)
@@ -134,7 +147,7 @@ def check(vault, root=None):
             keys = {t for t in line_tokens(text) if t in weight}
             hits = []
             for other in fresh:
-                shared = keys & tokens[other] if other != name else set()
+                shared = keys & fresh[other] if other != name else set()
                 score = sum(weight[t] * (2 if t in titles[other] else 1) for t in shared)
                 if score >= THRESHOLD * math.log(10):
                     hits.append((score, other, sorted(shared, key=lambda t: -weight[t])[:4]))
@@ -149,7 +162,8 @@ def check(vault, root=None):
 def accept(vault, root=None):
     notes = load_vault(vault, root)
     ledger = {"accepted": datetime.date.today().isoformat(),
-              "notes": {name: _hash(n.body) for name, n in sorted(notes.items())},
+              "notes": {name: sorted({_line_hash(l) for l in n.body.split("\n") if l.strip()})
+                        for name, n in sorted(notes.items())},
               "statements": {sid: {"note": name, "line": line, "text": text}
                              for name, n in sorted(notes.items()) for line, text, sid in statements(n)}}
     path = ledger_path(vault, root)

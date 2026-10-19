@@ -16,7 +16,7 @@ terms_pending: []
 # Natrium PDC 10–19 다중 방호 (Natrium PDC Multiple Barriers)
 
 > [!abstract] 요약
-> principal design criteria%%t:PDC%% 10–19는 원자로 설계, 고유 보호, 출력 진동 억제, instrumentation and control, primary coolant boundary, primary coolant system 설계, functional containment 설계, 전력 계통과 그 검사·시험, 제어실을 다룬다. 이 기준들은 핵연료 설계 한계 대신 specified acceptable system radionuclide release design limit%%t:SARRDL%%을, 저누설 격납 구조물 대신 multiple barriers의 functional containment을 쓰며, 이행 요약은 Safety-Related%%t:SR%% 기능이 전력에 의존하지 않는 피동 설계라고 적는다.
+> principal design criteria%%t:PDC%% 10–19는 원자로 설계, 고유 보호, 출력 진동 억제, instrumentation and control, primary coolant boundary, primary coolant system 설계, functional containment 설계, 전력 계통과 그 검사·시험, 제어실을 다룬다. 기준 가운데 일부는 specified acceptable system radionuclide release design limit%%t:SARRDL%%을 기준으로 삼고 functional containment 설계 기준은 multiple barriers로 이루어진 functional containment을 요구하며, 이행 요약은 Safety-Related%%t:SR%% 기능이 전력에 의존하지 않는 피동 설계라고 적는다.
 
 ## 원문 사실
 | Criterion | 출처 |

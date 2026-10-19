@@ -20,6 +20,7 @@ SCRIPTS = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.dirname(SCRIPTS)
 FACTS, COMMENTARY = "원문 사실", "해설"
 MIN_WORDS = 3
+FOOTNOTE = re.compile(r"^\[\^p(\d+)\]: (.*)$", re.M)
 
 
 class Sources:
@@ -39,7 +40,10 @@ class Sources:
                 with open(path, encoding="utf-8") as f:
                     text = f.read()
                 body = text.split("\n---\n", 1)[1] if text.startswith("---\n") and "\n---\n" in text else text
-                pages = {p: C.normalize(t) for p, t in C.page_map(text).items()}
+                raw = C.page_map(text)
+                for m in FOOTNOTE.finditer(text):           # [^p39]: … belongs to page 39 wherever the build put it
+                    raw[int(m.group(1))] = raw.get(int(m.group(1)), "") + "\n" + m.group(2)
+                pages = {p: C.normalize(t) for p, t in raw.items()}
                 self._cache[key] = {"pages": pages, "all": C.normalize(body), "paged": bool(pages),
                                     "n": int(card["fm"].get("pdf_pages") or 0)}
         return self._cache[key]

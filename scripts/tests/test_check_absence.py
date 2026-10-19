@@ -82,3 +82,14 @@ def test_plural_abbreviation_matches_singular():
 def test_assumption_is_not_an_absence_statement():
     assert not CA.ABSENCE.search("누설을 LBE로 가정하지 않으며")
     assert CA.ABSENCE.search("원문은 기준을 정하지 않는다")
+
+
+def test_only_added_lines_count_as_new_evidence(mini_vault, make_note):
+    _filler(make_note)
+    make_note("Crosswalk", BODY.format(line="MHTGR-DC와의 비교는 vault에 없다."))
+    make_note("Other", BODY.format(line="MHTGR 기준을 다룬다.\n\n둘째 문단이다."))
+    CA.accept(str(mini_vault))
+    make_note("Other", BODY.format(line="MHTGR 기준을 다룬다.\n\n고친 둘째 문단이다."))
+    assert CA.check(str(mini_vault)) == []
+    make_note("Other", BODY.format(line="MHTGR 기준을 다룬다.\n\nMHTGR-DC 비교표를 더한다."))
+    assert [f.code for f in CA.check(str(mini_vault))] == ["A2"]
