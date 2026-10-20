@@ -8,12 +8,12 @@ file: references/RG_1.253_Guidance for a Technology-Inclusive Content-of-Applica
 pdf: references/raw/RG_1.253_Guidance for a Technology-Inclusive Content-of-Application
   Methodology for Non-Light-Water Reactors.pdf
 sha256_pdf: a06db94a90e8df2203fab4fa2cb93b9cf36165f5a6291abc260c89bba0df96da
-sha256_md: 3cf2288588ae4426c35cd367d48486d5e6e30019f869757246221c0e5baa22eb
+sha256_md: 60e7695be8f52787261fc0ed391d8e265f6812456031717eb0f4c6e06b0bef54
 pdf_pages: 51
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.16
 ingest: complete
 units:

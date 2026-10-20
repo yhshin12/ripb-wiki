@@ -99,3 +99,20 @@ def test_overlap_warnings_reach_the_report():
     doc = Doc("k", "s", "", "", 1, {}, [El("table", "", 334, table=t)])
     assert len(overlap_warnings(doc)) == 1
     assert doc.meta["table_warnings"][0].startswith("table id=8849 p334 r1c2: kept 'MTS', dropped 'AC PANELBOARD'")
+
+
+def test_text_after_a_multipage_table_reannounces_the_last_page():
+    """A range anchor p a-b covers the table only; text after it gets its own page-b anchor so that the first-number
+    citation rule does not date it back to page a."""
+    from refclean.doc import Doc, El
+    from refclean.emit import render
+    from refclean.tables import Cell, Table
+    t = Table(grid=[[Cell("K", 0, 0)], [Cell("A", 1, 0)]], page=138, pages=[138, 139])
+    doc = Doc("k", "s", "", "", 140, {138: "7.2-46", 139: "7.2-47"},
+              [El("para", "before", 138), El("table", "", 138, table=t), El("para", "after", 139),
+               El("para", "next", 140)])
+    body = render(doc, {}).split("\n")
+    assert [x for x in body if x.startswith("<!-- page")] == [
+        "<!-- page 138 | 7.2-46 -->", "<!-- page 138-139 | 7.2-46..7.2-47 -->", "<!-- page 139 | 7.2-47 -->",
+        "<!-- page 140 -->"]
+    assert body.index("<!-- page 139 | 7.2-47 -->") < body.index("after")

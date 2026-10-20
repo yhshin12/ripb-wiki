@@ -65,12 +65,12 @@ terms_pending: []
 | DL2-RR2 | PIC Radionuclide Boundary (NSRST) | The fueling floor valve, PIC cleaning vessel, PIC Receiver, and the associated processing skid components including piping, filter housing, and HEPA filters form a radionuclide boundary and act as a functional containment between the core assembly and the FHB environment when a core assembly is in the PIC during anticipated operational occurrences. | [PSAR_ch07 §7.3.1.2 p.168] |
 | DL5-PAM1 | Post Accident Monitoring (NSRST) | The FHP system provides instrument signals for use in PAM as described in Section 7.3.1.5. Instrument sensors that have been identified as PAM variables (i.e., SFP water level and temperature) receive additional treatment to ensure they are hardened and reliable. | [PSAR_ch07 §7.3.1.2 p.168] |
 
-- "The intact and failed fuel racks are designed to provide structural support for core assemblies as described in Section 7.3.1.3." [PSAR_ch07 §7.3.1.2 p.168]
-- "The load path from the intact and failed fuel rack continues through the SFP liner and into the SR FHB substructure as described in Section 7.8.2." [PSAR_ch07 §7.3.1.2 p.168]
-- "The failed fuel canister provides support to failed fuel assemblies." [PSAR_ch07 §7.3.1.2 p.168]
-- "The PHM and PIC supports the weight of core assemblies and FFCs during fuel movement activities that are associated with DL3-RR2, DL3-RR5a, DL3-RR8, and DL3-HR13." [PSAR_ch07 §7.3.1.2 p.168]
-- "The PHM and PIC provides structural support for SR SSCs and is described in Section 7.3.1.3." [PSAR_ch07 §7.3.1.2 p.168]
-- "The intact fuel racks and failed fuel rack in conjunction with the SFP water inventory provide protection from wind related missiles for SR core assemblies stored in the SFP." [PSAR_ch07 §7.3.1.2 p.168]
+- "The intact and failed fuel racks are designed to provide structural support for core assemblies as described in Section 7.3.1.3." [PSAR_ch07 §7.3.1.2 p.169]
+- "The load path from the intact and failed fuel rack continues through the SFP liner and into the SR FHB substructure as described in Section 7.8.2." [PSAR_ch07 §7.3.1.2 p.169]
+- "The failed fuel canister provides support to failed fuel assemblies." [PSAR_ch07 §7.3.1.2 p.169]
+- "The PHM and PIC supports the weight of core assemblies and FFCs during fuel movement activities that are associated with DL3-RR2, DL3-RR5a, DL3-RR8, and DL3-HR13." [PSAR_ch07 §7.3.1.2 p.169]
+- "The PHM and PIC provides structural support for SR SSCs and is described in Section 7.3.1.3." [PSAR_ch07 §7.3.1.2 p.169]
+- "The intact fuel racks and failed fuel rack in conjunction with the SFP water inventory provide protection from wind related missiles for SR core assemblies stored in the SFP." [PSAR_ch07 §7.3.1.2 p.169]
 - "Safety classifications for FHP systems and components are listed in Table 7.3.1-1." [PSAR_ch07 §7.3.1.2 p.170]
 - "SR design criteria corresponding to the SR functions applicable to the FHP are derived as described in Section 6.1.2 and identified in Section 5.2." [PSAR_ch07 §7.3.1.2 p.170]
 - "The SR design criteria are incorporated into the design of the FHP as described in Section 7.3.1.3 and Section 7.3.1.1." [PSAR_ch07 §7.3.1.2 p.170]

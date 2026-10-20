@@ -9,12 +9,12 @@ file: references/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, an
 pdf: references/raw/RG_1.233_Guidance for a Technology-Inclusive, Risk-Informed, and
   Performance-Based Methodology for Non-Light-Water Reactors.pdf
 sha256_pdf: 1960692c431f9d32a8bf41df8745ab08d4622ca2925e2c0db90a44f4e46de7a0
-sha256_md: c8435d806a4d34243ef4cfdf278d8205374727ef5f84baacafcdd2492b9ec533
+sha256_md: 7e5d1fa912b7bf23dca2faa448b765384b3a5d9b48e4b3dc42447d64c0326eec
 pdf_pages: 31
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-15
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.2
 ingest: complete
 units:

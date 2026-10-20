@@ -5,12 +5,12 @@ title: Licensing Basis Events
 file: references/TP_Natrium_PSAR2025_ch3_Licensing Basis Events.md
 pdf: references/raw/TP_Natrium_PSAR2025_ch3_Licensing Basis Events.pdf
 sha256_pdf: 9d6bd642a6f3a2229fe20ac119086764e5a0dada09e956b2782a80cd81b3cff0
-sha256_md: 890a5349aeb1ba2c5cad64263b4329973c49811bab492d5d7b47a37b589c3640
+sha256_md: 255bcd0238d7447e7c2022432aa6067909e09990830902f94f3365434b77998c
 pdf_pages: 132
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.14
 ingest: complete
 units:

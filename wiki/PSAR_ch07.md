@@ -5,12 +5,12 @@ title: Descriptions for Safety-Significant SSCs
 file: references/TP_Natrium_PSAR2025_ch7_Descriptions for Safety-Significant SSCs.md
 pdf: references/raw/TP_Natrium_PSAR2025_ch7_Descriptions for Safety-Significant SSCs.pdf
 sha256_pdf: 7fd59ab7ee122f255dbe1c829d059e1ac405e99a07cb59ef235bb7eb66c2b5a2
-sha256_md: f298e04c3d3044d385711d95a6d4ba88607cea362b08f5bcf7bc46b21931234c
+sha256_md: 33007d01896fc23280c6c96e36fe3d54ea23f1761accc7afd61cb4139747636c
 pdf_pages: 372
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.43
 ingest: complete
 units:

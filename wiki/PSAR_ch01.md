@@ -5,12 +5,12 @@ title: General Plant and Site Description
 file: references/TP_Natrium_PSAR2025_ch1_General Plant and Site Description.md
 pdf: references/raw/TP_Natrium_PSAR2025_ch1_General Plant and Site Description.pdf
 sha256_pdf: 6c0ce824a6de3c50d31aeb3257c75e838bfd4edb8263b4e33faae450c217e273
-sha256_md: 2f4da632427a45cca529726111c456d87efac95fa27529365fdbf2571518e64c
+sha256_md: 287bf4c7ef6cba12b3aea015a28de573c954ed57566838cda3fea4c0b252f7f9
 pdf_pages: 115
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 1.66
 ingest: complete
 units:

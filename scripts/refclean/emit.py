@@ -80,7 +80,8 @@ def render(doc, meta):
             a, b = tpages[0], tpages[-1]
             la, lb = doc.page_labels.get(a), doc.page_labels.get(b)
             anchor = f"<!-- page {a}-{b}{' | ' + la + '..' + lb if la and lb else ''} -->"
-            cur_page = b
+            # what follows the table re-announces page b, or citations of it would take the range's first number
+            cur_page = None
         elif e.page and e.page != cur_page:
             cur_page = e.page
             lab = doc.page_labels.get(e.page)

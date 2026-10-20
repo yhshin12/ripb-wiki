@@ -7,12 +7,12 @@ file: references/TP_Natrium_PSAR2025_ch5_Safety Functions, Design Criteria, and 
 pdf: references/raw/TP_Natrium_PSAR2025_ch5_Safety Functions, Design Criteria, and
   SSC Safety Classification.pdf
 sha256_pdf: 0e0f42b385bb440e260044c097beaf103905058a5febea7d550fce051cb502e9
-sha256_md: da2ef398e697540b2933ac648b068692b5ad762e053cdc9192d8672abe3d9800
+sha256_md: ea040e827684ab0dc9383f5c8264f0b1d57e194c4cc4b3fed1964161beeb703e
 pdf_pages: 52
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 1.07
 ingest: complete
 units:

@@ -35,10 +35,10 @@ terms_pending: []
 - "The event sequences are part of the risk-informed evaluation of DID, and the roles of SSCs in prevention and mitigation are the result of the plant capability DID." [NEI_18-04 §5.7 p.72]
 - "The reliabilities and capabilities of the SSCs that prevent and mitigate events are influenced by both the plant capability and programmatic DID elements." [NEI_18-04 §5.7 p.72]
 - "Programmatic DID reduces the uncertainty in the reliability and capability performance of the SSCs responsible for prevention and mitigation." [NEI_18-04 §5.7 p.72]
-- "is used to define a simple model for estimating the risk of radionuclide release" [NEI_18-04 §5.7 p.72]
-- "R<sub>j</sub> = Q × F<sub>IE,j</sub> × P<sub>ASSC,j</sub> × P<sub>PSSC,j</sub> × r<sub>fuel,j</sub> × r<sub>PB,j</sub> × r<sub>cont,j</sub>" [NEI_18-04 §5.7 p.72]
-- "The above model was developed for a reactor having a fuel barrier, reactor pressure boundary barrier, and a reactor building barrier." [NEI_18-04 §5.7 p.72]
-- "This model would need to be revised for applicability to different reactor barrier configurations." [NEI_18-04 §5.7 p.72]
+- "is used to define a simple model for estimating the risk of radionuclide release" [NEI_18-04 §5.7 p.73]
+- "R<sub>j</sub> = Q × F<sub>IE,j</sub> × P<sub>ASSC,j</sub> × P<sub>PSSC,j</sub> × r<sub>fuel,j</sub> × r<sub>PB,j</sub> × r<sub>cont,j</sub>" [NEI_18-04 §5.7 p.73]
+- "The above model was developed for a reactor having a fuel barrier, reactor pressure boundary barrier, and a reactor building barrier." [NEI_18-04 §5.7 p.73]
+- "This model would need to be revised for applicability to different reactor barrier configurations." [NEI_18-04 §5.7 p.73]
 - "Is the selection of IEs and event sequences reflected in the LBEs sufficiently complete?" [NEI_18-04 §5.7.2 p.74]
 - "Are the uncertainties in the estimation of LBE frequency, plant response to events, mechanistic source terms, and dose well characterized?" [NEI_18-04 §5.7.2 p.74]
 - "Are there sources of uncertainty not adequately addressed?" [NEI_18-04 §5.7.2 p.74]
@@ -65,14 +65,14 @@ terms_pending: []
 
 | 기호 | 정의 | 출처 |
 |---|---|---|
-| R<sub>j</sub> | Expected quantity of radioactive material released per plant-year from sequence j | [NEI_18-04 §5.7 p.72] |
-| Q | Quantity of radionuclides (for a given isotope) in the reactor core inventory | [NEI_18-04 §5.7 p.72] |
-| F<sub>IE,j</sub> | Frequency of the Initiating Event associated with sequence j | [NEI_18-04 §5.7 p.72] |
-| P<sub>ASSC,j</sub> | Probability of active SSCs successes and failures along sequence j | [NEI_18-04 §5.7 p.72] |
-| P<sub>PSSC,j</sub> | Probability of passive SSCs successes and failures along sequence j | [NEI_18-04 §5.7 p.72] |
-| r<sub>fuel, j</sub> | Release fraction from the fuel barrier, given system and structure response for sequence j | [NEI_18-04 §5.7 p.72] |
-| r<sub>PB,j</sub> | Release fraction from the coolant pressure boundary for sequence j | [NEI_18-04 §5.7 p.72] |
-| r<sub>cont,j</sub> | Release fraction from the reactor building barrier for sequence j | [NEI_18-04 §5.7 p.72] |
+| R<sub>j</sub> | Expected quantity of radioactive material released per plant-year from sequence j | [NEI_18-04 §5.7 p.73] |
+| Q | Quantity of radionuclides (for a given isotope) in the reactor core inventory | [NEI_18-04 §5.7 p.73] |
+| F<sub>IE,j</sub> | Frequency of the Initiating Event associated with sequence j | [NEI_18-04 §5.7 p.73] |
+| P<sub>ASSC,j</sub> | Probability of active SSCs successes and failures along sequence j | [NEI_18-04 §5.7 p.73] |
+| P<sub>PSSC,j</sub> | Probability of passive SSCs successes and failures along sequence j | [NEI_18-04 §5.7 p.73] |
+| r<sub>fuel, j</sub> | Release fraction from the fuel barrier, given system and structure response for sequence j | [NEI_18-04 §5.7 p.73] |
+| r<sub>PB,j</sub> | Release fraction from the coolant pressure boundary for sequence j | [NEI_18-04 §5.7 p.73] |
+| r<sub>cont,j</sub> | Release fraction from the reactor building barrier for sequence j | [NEI_18-04 §5.7 p.73] |
 
 ## 해설
 심층방어%%t:DID%%의 risk-informed and performance-based%%t:RIPB%% 평가에서 중심 요소 가운데 하나는 LBE%%t:LBE%%를 Layers of Defense%%t:LAYERS_OF_DEFENSE%%와 체계적으로 대조하는 검토이다. IDP%%t:IDP%%가 수행하는 이 검토는 발전소 능력을 평가하고, 적절성 확립에 필요할 수 있는 Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%% 조치를 찾는 데 필요하다. 검토 목표는 다음과 같다. 각 LBE%%t:LBE%%가 부담을 주는 층마다 예방·완화 능력이 배치되었는지 확인하고, Risk-Significant LBE%%t:RS_LBE%%에서 예방과 완화의 균형이 반영되었는지 확인한다. 각 LBE%%t:LBE%%를 따라 예방하거나 완화하는 기능을 하는 Structures, Systems, and Components%%t:SSC%%의 reliability/availability mission%%t:REL_AVAIL_MISSION%%을 식별하고 그것이 달성 가능한지 확인한다. 이 mission은 PRA나 결정론적 해석이 정의한 과업 달성을 적절히 보장하는 SSC%%t:SSC%% 기능의 성능·신뢰도·가용도 요건 집합이다. SSC%%t:SSC%%를 Safety-Related%%t:SR%%나 Non-Safety-Related with Special Treatment%%t:NSRST%%로 분류한 기술적 근거가 있고 Required Safety Function%%t:RSF%% 수행 능력이 정의되었는지, 물리적·기능적 barrier%%t:BARRIER%%가 방출을 막거나 제한하는 효과가 확립되었는지 확인한다. 가장 risk-significant한 LBE%%t:LBE%%와 결말이 비교적 큰 LBE%%t:LBE%%의 중요 특성에 대한 기술적 근거를 검토하며, 빈도는 비교적 높지만 방출이나 방사선학적 결말이 거의 없는 LBE%%t:LBE%%의 근거도 검토 초점이다. 원문 각주는 부지 경계 선량이 EPA Protective Action Guideline의 낮은 값인 1 rem을 넘는 LBE%%t:LBE%%를 이 목적에서 결말이 비교적 큰 것으로 본다. 마지막으로 프로그램 조치나 발전소 능력 조치로 다뤄야 할 빈도·결말 추정의 risk-significant 불확실도 원천이 적절히 다뤄졌는지 확인한다.

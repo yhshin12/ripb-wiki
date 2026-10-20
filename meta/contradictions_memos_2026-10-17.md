@@ -36,7 +36,7 @@
 ## C3 margin 비의 방향 (ch4 목표/사건 대 NEI 사건/목표)
 - 분류: N
 - 관련 문서: PSAR_ch04 (신청자); NEI_18-04, SER_KU1_CP (권위)
-- 기준 조항(N): "In each case, margin is expressed as a ratio of the event’s mean value (frequency and dose) to the corresponding F-C Target value (frequency and dose)." [NEI_18-04 §5.7.1 p.72]
+- 기준 조항(N): "In each case, margin is expressed as a ratio of the event’s mean value (frequency and dose) to the corresponding F-C Target value (frequency and dose)." [NEI_18-04 §5.7.1 p.73]
 - 신청자 문서: "[b] Ratio of the frequency in Note [a] to the LBE mean frequency (Mean Frequency Margin)" [PSAR_ch04 Table 4.2-1 p.12]; "[d] Ratio of the dose in Note [c] to the LBE mean dose (Mean Dose Margin)" [PSAR_ch04 Table 4.2-1 p.12]
 - SER 판단: (새 인용) "Based on this, the staff determined that margin evaluation is consistent with the guidance in NEI 21-07 by demonstrating that risk-significant LBEs maintain margin to the F-C target curve." [SER_KU1_CP §4.2.1.1.1 p.327]
 - 메모(한국어): PSAR은 margin을 F-C Target 값/LBE 값으로 정의해 NEI 18-04 §5.7.1의 LBE 값/F-C Target 값과 역수 관계이다. SER은 margin 평가를 수용했으나 비의 방향은 언급하지 않는다.

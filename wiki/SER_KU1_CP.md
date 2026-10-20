@@ -8,12 +8,12 @@ file: references/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
 pdf: references/raw/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
   1 Construction Permit Application.pdf
 sha256_pdf: e28f1a00966cef387a91437f4bba8bd05a544a9722e404cb486fac1cc5a2f4b2
-sha256_md: 9757b3aa3570a2a10c7b948b3b1f11b0d154aa7742f8f2f164d2f250b175d190
+sha256_md: 413db8f47ddc15d85a0fd372495930899bcf1ed98d96ffa95945f9c49e486882
 pdf_pages: 768
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-18
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.32
 ingest: complete
 units:

@@ -5,12 +5,12 @@ title: Conduct of Operations
 file: references/TP_Natrium_PSAR2025_ch11_Conduct of Operations.md
 pdf: references/raw/TP_Natrium_PSAR2025_ch11_Conduct of Operations.pdf
 sha256_pdf: e41d9e7866716fed4560b3871ffa98f806bd04f354ce4716500080d97fdf20f0
-sha256_md: a2f5a47db04c02778e0bf636c51947014b0d3cee281de4eee7bc70727b99310a
+sha256_md: 93eba0160cdbbe17bbf9215da301c48ab34e7c955eabc7d03ef1c94ca5a66e66
 pdf_pages: 77
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.82
 ingest: complete
 units:

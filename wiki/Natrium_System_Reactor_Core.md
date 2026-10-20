@@ -93,14 +93,14 @@ terms_pending: []
 - "PRA safety functions (PSFs) are determined through the plant-specific PRA described in Section 3.1." [PSAR_ch07 §7.1.1.2 p.14]
 - "The safety-significant PSFs are identified as SR functions or non-safety-related with special treatment (NSRST) functions as defined in Section 5.2." [PSAR_ch07 §7.1.1.2 p.14]
 - "The RCC supports the following safety-significant functions, which are designated as SR or NSRST to indicate the safety classification of RCC components relied upon to perform the function:" [PSAR_ch07 §7.1.1.2 p.14]
-- "The RCC also provides a SR structural support load path function for SR components as described in Section 7.1.1.3." [PSAR_ch07 §7.1.1.2 p.14]
-- "Safety Related Design Criteria corresponding to the SR functions applicable to the RCC are derived as described in Section 6.1.2 and identified in Section 5.2." [PSAR_ch07 §7.1.1.2 p.14]
-- "The Safety Related Design Criteria are incorporated into the design of the RCC as described in Section 7.1.1.3." [PSAR_ch07 §7.1.1.2 p.14]
-- "Seismic classifications for RCC components are determined in accordance with the methods described in Section 6.4.1." [PSAR_ch07 §7.1.1.2 p.14]
-- "Seismic special treatment is applied based on the seismic classification." [PSAR_ch07 §7.1.1.2 p.14]
-- "The SR components of the RCC are classified SCS1." [PSAR_ch07 §7.1.1.2 p.14]
-- "Seismic design, analysis, and qualification is performed as described in Section 6.4." [PSAR_ch07 §7.1.1.2 p.14]
-- "RCC components are qualified to withstand seismic loads associated with the safe shutdown earthquake (described in Section 2.6.2) without loss of the capability to perform safety-significant functions." [PSAR_ch07 §7.1.1.2 p.14]
+- "The RCC also provides a SR structural support load path function for SR components as described in Section 7.1.1.3." [PSAR_ch07 §7.1.1.2 p.15]
+- "Safety Related Design Criteria corresponding to the SR functions applicable to the RCC are derived as described in Section 6.1.2 and identified in Section 5.2." [PSAR_ch07 §7.1.1.2 p.15]
+- "The Safety Related Design Criteria are incorporated into the design of the RCC as described in Section 7.1.1.3." [PSAR_ch07 §7.1.1.2 p.15]
+- "Seismic classifications for RCC components are determined in accordance with the methods described in Section 6.4.1." [PSAR_ch07 §7.1.1.2 p.15]
+- "Seismic special treatment is applied based on the seismic classification." [PSAR_ch07 §7.1.1.2 p.15]
+- "The SR components of the RCC are classified SCS1." [PSAR_ch07 §7.1.1.2 p.15]
+- "Seismic design, analysis, and qualification is performed as described in Section 6.4." [PSAR_ch07 §7.1.1.2 p.15]
+- "RCC components are qualified to withstand seismic loads associated with the safe shutdown earthquake (described in Section 2.6.2) without loss of the capability to perform safety-significant functions." [PSAR_ch07 §7.1.1.2 p.15]
 
 | Function ID | Function Description | RCC Functional Support | 출처 |
 |---|---|---|---|
@@ -115,8 +115,8 @@ terms_pending: []
 | DL3-HR13 | Passive Heat Removal in the Failed Fuel Canister (SR) | The fuel assemblies maintain natural circulation capability and coolable geometry by limiting their structural deformations within acceptable ranges. | [PSAR_ch07 §7.1.1.2 p.14] |
 | DL4-RC3 | Control Rod Drive System Driveline Scram Follow (NSRST) | Movement or deflection of RCC components, relative to CRD components, is maintained within limits required for control rod insertion to provide adequate defense-in-depth capability. | [PSAR_ch07 §7.1.1.2 p.14] |
 
-- "The core assemblies provide design features that include the ability to maintain coolability, retain radionuclides, and control in-core reactivity, ex-core fluence, and activation exposure." [PSAR_ch07 §7.1.1.3 p.14]
-- "This is accomplished by a core design that uses liquid sodium coolant, a metallic uranium fuel system, steel cladding and duct structures, and two independent and diverse sets of control rods (further described in Section 7.1.1.3.1)." [PSAR_ch07 §7.1.1.3 p.14]
+- "The core assemblies provide design features that include the ability to maintain coolability, retain radionuclides, and control in-core reactivity, ex-core fluence, and activation exposure." [PSAR_ch07 §7.1.1.3 p.15]
+- "This is accomplished by a core design that uses liquid sodium coolant, a metallic uranium fuel system, steel cladding and duct structures, and two independent and diverse sets of control rods (further described in Section 7.1.1.3.1)." [PSAR_ch07 §7.1.1.3 p.15]
 - "Reactor power level, start-up, and shut-down is controlled by operator action." [PSAR_ch07 §7.1.1.3 p.16]
 - "However, no operator action is required to perform the DL3 scram functions listed above or to initiate natural circulation of the primary coolant for emergency decay heat removal." [PSAR_ch07 §7.1.1.3 p.16]
 - "Materials of fabrication and construction methods of the core assemblies are selected to be compatible with the operating environment and anticipated structural loading conditions, including consideration of normal operating conditions and Licensing Basis Events." [PSAR_ch07 §7.1.1.3 p.16]

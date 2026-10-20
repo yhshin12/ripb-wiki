@@ -8,12 +8,12 @@ file: references/RG_1.247_Acceptability of Probabilistic Risk Assessment Results
 pdf: references/raw/RG_1.247_Acceptability of Probabilistic Risk Assessment Results
   for Advanced Non-Light Water Reactor Risk-Informed Activities.pdf
 sha256_pdf: 978d02f9a1ae1e4629057cd242e9c05e964c4538b037b8c2ad3c1821becab0d4
-sha256_md: 53d866e420061bdf3bbf7e7b6af8f26494d736067fb6f91fd5b7533649337628
+sha256_md: abf4fdbef4701da85f4a70cc86064ad8fed606314396ee4b1a4f8fc95561f041
 pdf_pages: 165
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-16
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.44
 ingest: complete
 units:

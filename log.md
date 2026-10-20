@@ -241,3 +241,8 @@
 
 ## [2026-10-19] audit | 2026-09-16 배치 요약의 과잉 일반화 4건 수정
 - Natrium_PDC_Development, Natrium_SR_Functions_Retaining_Radionuclides, Natrium_DBE_List, Natrium_BDBE_List 요약 범위 수정; lint 0, 인용 검증 0
+
+## [2026-10-20] fix | 여러 쪽 표 뒤 본문의 쪽 표지 누락 수정
+- refclean emit.py: 범위 쪽 표지 뒤 첫 요소에 마지막 쪽 표지를 다시 붙임; 새 표지 17개(PSAR_ch07 10, SER_KU1_CP 6, NEI_18-04 1), 회귀 테스트 추가
+- 노트 14개 원문 사실 인용 156건의 쪽 정정(±0쪽 대조, PDF 확인); NEI §5.7.1 인용 3곳(PSAR_ch04, contradictions C3, 메모) p.72→73
+- 소스 카드 sha256 갱신, 부재 진술 원장 갱신; lint 0, 인용 검증 0, pytest 428 passed

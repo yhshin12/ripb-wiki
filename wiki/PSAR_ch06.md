@@ -5,12 +5,12 @@ title: Safety-Significant SSC Criteria and Capabilities
 file: references/TP_Natrium_PSAR2025_ch6_Safety-Significant SSC Criteria and Capabilities.md
 pdf: references/raw/TP_Natrium_PSAR2025_ch6_Safety-Significant SSC Criteria and Capabilities.pdf
 sha256_pdf: 466e162310c9a48ed26e76bb469d9529450ec8500e67a7eecb070d1423cc3ae2
-sha256_md: fb7bfee55fb7b6341846c88d4dfc18caed90a0e420aa1113be35c0539f8692c7
+sha256_md: 86d77c10a29a375138d39bbb14982d10fbfc3ce96bdc748510b1d24a969229da
 pdf_pages: 80
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-13
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.13
 ingest: complete
 units:

@@ -7,12 +7,12 @@ file: references/RG_1.232_Guidance for Developing Principal Design Criteria for 
 pdf: references/raw/RG_1.232_Guidance for Developing Principal Design Criteria for
   Non-Light-Water Reactors.pdf
 sha256_pdf: 8eaa6f99f55366d362a8503b20e2190140677fecd8258a4faf9da8adaf04b985
-sha256_md: 833a73cf8cbe62171747948c44a8b6e13ede790c6b04e153867b106f6de59fb1
+sha256_md: 20bdb90917a36e2c25c2dd91b808c4a565e5c3a36c088dbd6b58bf747051bfe6
 pdf_pages: 133
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, detect_strikethrough=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-09-14
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
   missing_pct: 0.74
 ingest: complete
 units:
