@@ -18,6 +18,7 @@
 - [[RG_1.247]] — `RG 1.247`(2022년 3월, 시험 사용)은 비경수형원전 PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다.
 - [[RG_1.253]] — `RG 1.253`(2024년 3월, Revision 0)은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여 비경수형원전 인허가 신청서 `SAR` 앞 여덟 장의 작성 방법으로 승인하고, NRC가 제안한 12장 `SAR` 구조를 제시한다.
 - [[SER_KU1_CP]] — `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다.
+- [[TP-LIC-RPT-0011]] — TerraPower의 `TP-LIC-RPT-0011` Revision 0은 Kemmerer Unit 1 건설허가 신청의 노심 핵설계·열수력·노심 기계 해석 방법을 정리한 기술 보고서로, `PSAR` Chapter 3 §3.12–3.13이 평가 모형과 코드를 이 보고서에 넘긴다.
 
 ## 규제 (regulation)
 

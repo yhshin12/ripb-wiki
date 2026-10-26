@@ -8,8 +8,9 @@ sources:
 - PSAR_ch07
 - ACRS_ML25293A458
 - SER_KU1_CP
+- TP-LIC-RPT-0011
 status: checked
-verified: 2026-10-17
+verified: 2026-10-26
 term: null
 tags:
 - natrium
@@ -119,6 +120,8 @@ terms_pending: []
 - "the reactor vessel, which provides reactivity feedback via thermal expansion, which moves the core relative to the control rods." [SER_KU1_CP §7.1.2.1.5 p.424]
 - "TP-LIC-RPT-0011, “Core Design and Thermal Hydraulic Technical Report,” Rev. 0 (ML24088A085)" [SER_KU1_CP §3.11 p.302]
 - "provided in a supplemental technical report, TP-LIC-RPT-0011, “Core Nuclear and Thermal Hydraulic Design Technical Report” (ML25276A289)" [SER_KU1_CP §7.1.1.1.3 p.411]
+- "Document Number: | TP-LIC-RPT-0011 | Revision: | 0" [TP-LIC-RPT-0011 p.2]
+- "Document Title: | Core Nuclear and Thermal Hydraulic Design Technical Report" [TP-LIC-RPT-0011 p.2]
 
 ## 해설
 `PSAR` Chapter 3 §3.11은 fuel qualification plan과 예비 설계가 `NAT-2806-A`(`TerraPower, LLC (TerraPower) Natrium Topical Report: Fuel and Control Assembly Qualification`, Revision 0)에 있고 이 보고서가 참조로 통합된다고 적는다. 방사성 핵종 보유 요건과 PDC%%t:PDC%% 10 부합을 위한 연료 기준을 포함한 최종 결과는 OL%%t:OL%% 단계에서 제공될 예정이다(`will`).
@@ -139,7 +142,7 @@ terms_pending: []
 
 **규정 대비 메모(C34, 신청자 문서 내부 불일치).** `PSAR` Chapter 3은 prompt feedback 특성으로 고려할 만큼 빠르게 작용하는 계수를 네 개로, Chapter 5는 주요 반응도 되먹임 기구를 네 개로 적는 반면, Chapter 7 §7.1.1.2는 둘째 항목을 금속 연료 부피(fuel density) 대신 fuel axial expansion and contraction으로 적고 control rod driveline axial expansion을 더해 되먹임 기구를 다섯 개로 적는다. Chapter 5 §5.3.2.2는 금속 연료 부피를 "fuel contraction or expansion in the axial direction along the length of the fuel"로 정의하므로, Chapter 7의 둘째 항목은 이름만 다르고 실질 차이는 control rod driveline axial expansion 한 항목이다. `SER`도 세 곳에서 서로 다른 목록을 적는다. §3.11.1.4는 `PSAR` §3.12.1.2를 옮겨 Doppler, fuel density, coolant density, cladding density, structure density, radial expansion을 중요한 반응도 계수로 들고 axial expansion은 과도 해석에 중요한 다른 변수로 둔다. §7.1.1.1.3은 Doppler, 비연료 재료 온도계수, 냉각재 온도계수, 연료 축방향 팽창, fuel bowing을 되먹임 기구로 들고, §7.1.2.1.5는 원자로 용기의 열팽창이 노심을 제어봉에 대해 움직여 반응도 되먹임을 준다고 적는다. `SER`은 어느 목록이 맞는지는 판정하지 않는다. 되먹임 기구의 범위를 정하는 권위 조항은 없다.
 
-**규정 대비 메모(C79(3), 권위 문서 표기 차이(기록만)).** `SER`은 `TP-LIC-RPT-0011`을 §3.11에서 "Core Design and Thermal Hydraulic Technical Report", Rev. 0, ML24088A085로, §7.1.1.1.3에서 "Core Nuclear and Thermal Hydraulic Design Technical Report", ML25276A289로 적는다. 같은 보고서 번호에 제목과 문서 번호가 둘이며, 두 표기가 같은 보고서의 다른 판을 가리키는지는 vault에 없다. 내용 판단의 차이가 아니므로 기록만 한다.
+**규정 대비 메모(C79(3), 권위 문서 표기 차이(기록만)).** `SER`은 `TP-LIC-RPT-0011`을 §3.11에서 "Core Design and Thermal Hydraulic Technical Report", Rev. 0, ML24088A085로, §7.1.1.1.3에서 "Core Nuclear and Thermal Hydraulic Design Technical Report", ML25276A289로 적는다. 같은 보고서 번호에 제목과 문서 번호가 둘이다. vault에 들어온 [[TP-LIC-RPT-0011]] Revision 0의 표지 제목은 이미 "Core Nuclear and Thermal Hydraulic Design Technical Report"이므로, 제목 차이는 판의 차이에서 온 것이 아니다. ML25276A289가 Revision 0과 다른 판인지는 vault에 없다. 내용 판단의 차이가 아니므로 기록만 한다.
 
 **규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 권위 문서끼리 NAT-9393-A의 제목과 문서 번호 표기가 다르다. `ACRS` 발표는 "Reactor Stability Methodology"와 ML25211A275를 적고, `SER`은 §7.1.1.1.3에서 "Stability Methodology Topical Report", §3.11에서 "Reactor Stability Methodology", 토픽 보고서 목록 표에서 "Stability Methodology"를 쓰며 문서 번호는 ML25211A276으로 적는다. `PSAR` Chapter 3의 제목은 `SER` §7.1.1.1.3과 같다. 내용 차이가 아니므로 기록만 한다.
 

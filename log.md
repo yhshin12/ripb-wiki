@@ -250,3 +250,8 @@
 ## [2026-10-26] fix | Natrium_LBE_Evaluation_Methods 종결 기준 표의 적용 조건 명시
 - PSAR_ch03 §3.3.4.3 종결 기준 표에 '적용' 열 추가: 열제거>총 발열 기준은 피동 장기 냉각 과도에만 붙는 추가 기준, safe and stable 기준은 scram 없는 과도에 적용
 - 해설의 safe shutdown 기준 서술 정정; lint 0, 인용 검증 0, 부재 진술 3건 검토(오탐)
+
+## [2026-10-26] ingest | TP-LIC-RPT-0011 hot channel factor 단위(수시 인제스트)
+- 새 노트 1(소스 카드), 고친 노트 4(Natrium_Core_Thermal_Hydraulic_Design, Natrium_Nuclear_Design, Natrium_Topical_Technical_Reports, Terminology); HCF 절·그림·표는 공개본에서 제목만 남음
+- 검사: lint 0, 인용 검증 0, 용어 충돌 0, 서브에이전트 대조 원문 사실 25/25 일치(요약·해설 5건 수정), 부재 진술 4건 검토
+- 미정 용어 0(HCF, V&V 영어 유지); C79(3) 보강; ingest partial

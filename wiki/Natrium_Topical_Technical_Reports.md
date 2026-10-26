@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch01]
 status: checked
-verified: 2026-10-14
+verified: 2026-10-26
 term:
 tags: [natrium]
 terms_pending: []
@@ -58,3 +58,4 @@ terms_pending: []
 - [[Natrium_RG_Conformance]]
 - [[PSAR_ch01]]
 - [[Natrium_SER_Facility_Overview_Review]]
+- [[TP-LIC-RPT-0011]]

@@ -208,6 +208,8 @@ terms_pending: []
 | RELEASE_FRACTION | release fraction |  |  |  |  | [SER_KU1_CP §3.2.1.1 p.193] | 용어 아님 | 2026-10-16 사용자 결정 |
 | CONFIRMATORY_CALCULATION | confirmatory calculation |  |  |  |  | [SER_KU1_CP §2.4.1.4.2 p.92] | 용어 아님 | 2026-10-16 사용자 결정 |
 | TEDE | total effective dose equivalent | TEDE |  | 약어 |  | [SER_KU1_CP §2.5.1.3.2.2 p.107] | 영어 유지 | 2026-10-16 사용자 결정 |
+| HCF | Hot Channel Factor | HCF |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.7] | 영어 유지 | 2026-10-26 사용자 결정 |
+| V_AND_V | Verification and Validation | V&V |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.8] | 영어 유지 | 2026-10-26 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.
