@@ -115,3 +115,14 @@ def test_main_exit_code(mini_vault, monkeypatch, capsys):
     assert CS.main(["--min-chars", "10"]) == 1
     assert "uncited sections" in capsys.readouterr().out
     assert CS.main(["--min-chars", "1000"]) == 0
+
+
+def test_partial_source_is_skipped_unless_named(mini_vault):
+    import notes as N
+    _cleaned(mini_vault)
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"] = "partial"
+    N.write_note(p, fm, body)
+    assert CS.check(str(mini_vault), min_chars=10) == []
+    assert "3.2 Frequency" in _titles(CS.check(str(mini_vault), only="DOC_A", min_chars=10))

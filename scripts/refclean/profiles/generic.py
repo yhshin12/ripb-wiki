@@ -35,6 +35,13 @@ META = {
                   "Kemmerer Power Station, Unit 1 (EPID L-2024-CPS-0000)"),
         "tags": ["reference", "nrc", "safety-evaluation", "natrium"], "aliases": ["Kemmerer Unit 1 CP SER"],
     },
+    "TP-LIC-RPT-0011": {
+        "doc_id": "TP-LIC-RPT-0011", "doc_type": "Technical Report (construction permit application, Enclosure 5)",
+        "issuer": "TerraPower, LLC", "revision": "0", "date": "2024-03-27", "adams_accession": "ML24088A085",
+        "title": "Core Nuclear and Thermal Hydraulic Design Technical Report",
+        "tags": ["reference", "natrium", "technical-report"],
+        "aliases": ["TP-LIC-RPT-0011", "Core Design and Thermal Hydraulic Technical Report"],
+    },
 }
 
 

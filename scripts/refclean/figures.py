@@ -36,8 +36,9 @@ def render_png(pdf_doc, ref, out_path, dpi=200):
     return img.size
 
 
-def figures_step(doc, aux, render=True, fig_dir_rel=None):
-    """Replace each figure's caption with heading + image (or withheld callout); drop debris inside the figure box."""
+def figures_step(doc, aux, render=True, fig_dir_rel=None, fig_txt=FIG_TXT):
+    """Replace each figure's caption with heading + image (or withheld callout); drop debris inside the figure box.
+    fig_txt: caption pattern (number, title) for profiles whose captions differ, e.g. "Figure 4-1: Title"."""
     fig_dir_rel = fig_dir_rel or f"figures/{doc.key}"
     pdf = fitz.open(doc.pdf_path)
     by_page = {}
@@ -51,7 +52,7 @@ def figures_step(doc, aux, render=True, fig_dir_rel=None):
             out.append(e)
             continue
         page = pdf[e.page - 1]
-        m = FIG_TXT.match(" ".join(e.text.split())) if e.kind in ("para", "item", "heading", "caption", "hdr") else None
+        m = fig_txt.match(" ".join(e.text.split())) if e.kind in ("para", "item", "heading", "caption", "hdr") else None
         ref = next((r for r in refs if m and m.group(1) == r.num), None)
         if ref and ref.num not in done:
             done.add(ref.num)

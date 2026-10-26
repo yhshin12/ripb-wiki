@@ -268,3 +268,21 @@ def test_register_detects_duplicate_even_if_card_is_malformed(vault):
     with pytest.raises(source.SourceError, match="duplicate of references/raw/DOC_A_T.pdf"):
         source.register(str(second), key="DOC_B", title="T2", root=None)
     assert second.exists()
+
+
+def test_finish_partial_marks_on_demand_source(vault):
+    make_pdf(vault / "references" / "raw" / "DOC_A_Some Title.pdf")
+    card = source.adopt("DOC_A", root=None)
+    _cleaned(vault, "DOC_A_Some Title")
+    with pytest.raises(source.SourceError, match="no completed unit"):
+        source.finish("DOC_A", root=None, partial=True)
+    fm, body = source.read_note(card)
+    fm["units"] = [{"unit": "§4.1", "status": "in_progress"}]
+    source.write_note(card, fm, body)
+    with pytest.raises(source.SourceError, match="units not complete"):
+        source.finish("DOC_A", root=None, partial=True)
+    fm["units"][0]["status"] = "complete"
+    source.write_note(card, fm, body)
+    source.finish("DOC_A", root=None, partial=True)
+    fm, _ = source.read_note(card)
+    assert fm["ingest"] == "partial" and fm["sha256_md"]

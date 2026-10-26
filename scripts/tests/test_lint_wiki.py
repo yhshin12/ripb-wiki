@@ -183,3 +183,24 @@ def test_index_staleness(mini_vault, make_note, good_note_body):
     assert vault_codes(mini_vault) == []
     make_note("Sample", good_note_body)
     assert ("index.md", "L33", "error") in vault_codes(mini_vault)
+
+
+def test_partial_card_rules(mini_vault):
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"], fm["units"] = "partial", [{"unit": "§1", "status": "complete"}]
+    N.write_note(p, fm, body)
+    got = lint(mini_vault, p)
+    assert ("L04", "error") not in got                      # partial is a valid card state
+    assert ("L07", "error") in got                          # the summary placeholder must be written
+    fm["units"] = [{"unit": "§1", "status": "partial"}]
+    N.write_note(p, fm, body)
+    assert ("L04", "error") in lint(mini_vault, p)          # partial is not a unit state
+
+
+def test_reference_invariants_apply_to_partial_cards(mini_vault):
+    p = str(mini_vault / "wiki" / "DOC_A.md")
+    fm, body = N.read_note(p)
+    fm["ingest"], fm["sha256_md"] = "partial", "0" * 64
+    N.write_note(p, fm, body)
+    assert ("wiki/DOC_A.md", "L34", "error") in vault_codes(mini_vault)

@@ -5,6 +5,7 @@ Usage (run from the vault root with the pykaeri venv python):
   python scripts/source.py adopt KEY [--root internal]        # card for a PDF already in references/raw (DOCS entry)
   python scripts/source.py sync KEY [--root internal] | sync --all   # build fields + structure block from the cleaned file
   python scripts/source.py finish KEY [--root internal]       # sync, then ingest: complete
+  python scripts/source.py finish KEY --partial               # on-demand source: ingest: partial
   python scripts/source.py status [--root internal]
 
 Rules: the PDF is only moved, never modified; nothing under references/raw is written except the PDF itself.
@@ -198,17 +199,20 @@ def sync(key, root=None):
     return path
 
 
-def finish(key, root=None):
+def finish(key, root=None, partial=False):
+    """Close a source: complete, or partial for an on-demand source whose listed units are all ingested."""
     sync(key, root)
     path = card_path(key, root)
     fm, body = read_note(path)
     if not fm["file"]:
         raise SourceError(f"{key}: no cleaned file; cannot finish")
+    if partial and not fm.get("units"):
+        raise SourceError(f"{key}: no completed unit; cannot mark partial")
     if any(u.get("status") != "complete" for u in fm.get("units", [])):
         raise SourceError(f"{key}: units not complete")
-    fm["ingest"] = "complete"
+    fm["ingest"] = "partial" if partial else "complete"
     write_note(path, fm, body)
-    print(f"{key}: ingest complete")
+    print(f"{key}: ingest {fm['ingest']}")
     return path
 
 
@@ -254,7 +258,7 @@ def main():
     p = sub.add_parser("register"); p.add_argument("pdf"); p.add_argument("--key", required=True); p.add_argument("--title", required=True); p.add_argument("--root")
     p = sub.add_parser("adopt"); p.add_argument("key"); p.add_argument("--root")
     p = sub.add_parser("sync"); p.add_argument("key", nargs="?"); p.add_argument("--all", action="store_true"); p.add_argument("--root")
-    p = sub.add_parser("finish"); p.add_argument("key"); p.add_argument("--root")
+    p = sub.add_parser("finish"); p.add_argument("key"); p.add_argument("--root"); p.add_argument("--partial", action="store_true")
     p = sub.add_parser("status"); p.add_argument("--root")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
@@ -272,7 +276,7 @@ def main():
             else:
                 raise SourceError("sync: give KEY or --all")
         elif a.cmd == "finish":
-            finish(a.key, a.root)
+            finish(a.key, a.root, a.partial)
         elif a.cmd == "status":
             status(a.root)
     except SourceError as e:

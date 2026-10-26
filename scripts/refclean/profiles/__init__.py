@@ -28,6 +28,7 @@ DOCS = {
                  "Non-Light-Water Reactors", "generic", None),
     "SER_KU1_CP": ("SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application",
                    "ser", None),
+    "TP-LIC-RPT-0011": ("TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Technical Report", "tp_report", None),
 }
 
 INTERNAL_REGISTRY = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(

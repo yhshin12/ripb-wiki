@@ -8,9 +8,9 @@ description: ripb vault에 원문 1단위(절 묶음 또는 장)를 인제스트
 규칙은 `CLAUDE.md`, 근거는 `meta/design/2026-09-14-vault-rebuild-design.md` §4.2, §5, §6.3, §7.2. 명령은 모두 `C:\Code\Python\pykaeri\.venv12\Scripts\python.exe`로 vault 루트에서 실행한다.
 
 ## 0. 준비
-1. `scripts/source.py status`에서 `in_progress` 원문을 먼저 잇는다. 없으면 설계 부록 A 순서의 첫 `pending`.
+1. `scripts/source.py status`에서 `in_progress` 원문을 먼저 잇는다. 없으면 설계 부록 A 순서의 첫 `pending`. PSAR이 참조하는 topical·technical report 같은 보조 원문은 수시 인제스트(설계 §4.3)이다: 키는 문서 번호, 등록·정제는 전체, 단위는 질의에 필요한 절만.
 2. inbox에 새 파일이 있으면 등록 키·제목을 사용자에게 확인한 뒤: `source.py register <pdf> --key KEY --title "…"`(내부 자료는 `--root internal`) → `convert_references.py` → `scripts/refclean/profiles/__init__.py`의 `DOCS` 등록과 프로파일 → `clean_references.py --only KEY --verify`와 pytest → `source.py sync KEY`. PDF가 아닌 형식은 변환 방식을 사용자에게 묻는다.
-3. 이번 단위를 소스 카드 `units`에 `{unit: "<범위>", status: in_progress}`로 넣고 `ingest: in_progress`로 둔다.
+3. 이번 단위를 소스 카드 `units`에 `{unit: "<범위>", status: in_progress}`로 넣고 `ingest: in_progress`로 둔다(`partial` 원문도 같다).
 
 ## 1. 접점 ① — 계획과 용어 질문 (한 메시지)
 - 절 범위, 만들거나 고칠 노트(파일명, type, 한 줄 내용), 기존 노트와의 관계.
@@ -29,14 +29,14 @@ description: ripb vault에 원문 1단위(절 묶음 또는 장)를 인제스트
 ## 3. 검사
 - 편집마다 PostToolUse hook이 검사 결과를 돌려준다. 오류는 바로 고친다.
 - 단위 끝: `lint_wiki.py --all`, `verify_quotes.py --all`, `sync_terms.py`(충돌 0 확인, 필요하면 `--apply`), `build_index.py`, `check_absence.py`(A2는 새 노트가 기존 노트의 부재 진술을 낡게 했을 후보이다. 판정하여 고치거나 변경 요약에 적는다. `--accept`는 wiki-lint가 한다). 해소하지 못한 항목은 변경 요약에 적는다. 원문의 오기는 고치지 않는다.
-- 원문의 마지막 단위를 닫기 전: `coverage_sections.py --only KEY`로 노트가 인용하지 않은 절을 확인한다. 남은 절은 노트에 넣거나, 반영 대상이 아니면 사유와 함께 `meta/coverage_exclusions.json`에 넣고 변경 요약에 적는다.
+- 원문의 마지막 단위를 닫기 전(수시 인제스트 원문은 해당 없음): `coverage_sections.py --only KEY`로 노트가 인용하지 않은 절을 확인한다. 남은 절은 노트에 넣거나, 반영 대상이 아니면 사유와 함께 `meta/coverage_exclusions.json`에 넣고 변경 요약에 적는다.
 
 ## 4. 접점 ② — 변경 요약 (`templates/change_summary.md`)
 직접 볼 노트 2–3개를 이유와 함께 고른다. 반려되면 고친 뒤 이 단계부터 다시 한다.
 
 ## 5. 승인 뒤 한 번에
 1. 이번 단위의 새·고친 노트: `status: checked`, `verified: <오늘>`.
-2. 소스 카드의 해당 unit `status: complete`; 마지막 단위면 `source.py finish KEY`.
+2. 소스 카드의 해당 unit `status: complete`; 마지막 단위면 `source.py finish KEY`, 수시 인제스트 원문은 단위마다 `source.py finish KEY --partial`.
 3. `append_log.py --type ingest --title "<KEY> <범위>" --item "새 노트 n, 고친 노트 n" --item "검사: …" --item "미정 용어 n"`.
 4. `build_index.py`; `meta/status.md`의 다음 작업·미해결(disputed, 미정 용어, 누락 주제) 갱신.
 5. 바뀐 파일만 `git add` → `git commit`(pre-commit 관문 통과). push는 사용자가 요청할 때만.

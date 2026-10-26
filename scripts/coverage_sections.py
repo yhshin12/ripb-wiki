@@ -13,6 +13,7 @@ Headings whose own body is shorter than --min-chars are skipped. Reference lists
 skipped everywhere; per-source exclusions (with a reason) are in meta/coverage_exclusions.json:
   {"KEY": [{"heading": "<regex>", "reason": "…"}, {"pages": "30-60", "reason": "…"}]}
 Coverage is a lower bound on omissions: a cited section is not checked for completeness.
+Sources with `ingest: partial` (on-demand) are skipped unless named with --only.
 """
 import argparse
 import json
@@ -130,6 +131,8 @@ def check(vault, root=None, only=None, min_chars=150):
     cites = cited(vault, root)
     findings = []
     for key in sorted(cards):
+        if only is None and cards[key]["fm"].get("ingest") == "partial":
+            continue    # on-demand source: coverage is reported only when named with --only
         rel = cards[key]["fm"].get("file")
         path = os.path.join(N.tree(vault, root)["root"], rel) if rel else None
         if not path or not os.path.isfile(path):

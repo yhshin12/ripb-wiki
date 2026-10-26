@@ -20,7 +20,8 @@ VAULT = os.path.dirname(SCRIPTS)
 INTERNAL_PREFIXES = ("HELIOS_", "HSFR_")
 TYPES = {"source", "regulation", "concept", "natrium", "synthesis", "map", "helios"}
 STATUSES = {"draft", "checked", "reviewed", "disputed", "deprecated"}
-INGEST = {"pending", "in_progress", "complete"}
+UNIT_STATUS = {"pending", "in_progress", "complete"}
+INGEST = UNIT_STATUS | {"partial"}   # partial: on-demand source, only listed units ingested
 NOTE_FIELDS = ("type", "aliases", "sources", "status", "verified", "term", "tags", "terms_pending")
 CARD_FIELDS = ("type", "key", "title", "file", "pdf", "sha256_pdf", "sha256_md", "pdf_pages", "build", "ingest", "units")
 SECTIONS = {"full": ["원문 사실", "해설", "관련 문서"], "short": ["관련 문서"],
@@ -74,7 +75,7 @@ def _fields(ctx, note, F):
             F(2, "L04", f"ingest {fm.get('ingest')!r} not in {sorted(INGEST)}")
         for u in fm.get("units") or []:
             if not isinstance(u, dict) or set(u) - {"unit", "status"} or not isinstance(u.get("status"), str) \
-                    or u.get("status") not in INGEST:
+                    or u.get("status") not in UNIT_STATUS:
                 F(2, "L04", f"bad unit {u!r} (fields: unit, status)")
         return
     st = fm.get("status")
@@ -112,7 +113,7 @@ def _structure(note, F):
 
 
 def _placeholders(note, F):
-    pending_card = note.fm.get("type") == "source" and note.fm.get("ingest") != "complete"
+    pending_card = note.fm.get("type") == "source" and note.fm.get("ingest") not in ("complete", "partial")
     for i, l in _body_lines(note):
         for t in CARD_PENDING_TEXT:
             if t in l:
@@ -317,11 +318,11 @@ def lint_vault(ctx, root=None):
             fm, crel = c["fm"], N.relpath(c["path"], v)
             if fm.get("file") and not os.path.isfile(os.path.join(v, fm["file"])):
                 F(crel, 2, "L34", f"cleaned file missing: {fm['file']}")
-            elif fm.get("ingest") == "complete":
+            elif fm.get("ingest") in ("complete", "partial"):
                 for fld, sha in (("file", "sha256_md"), ("pdf", "sha256_pdf")):
                     p = os.path.join(v, fm.get(fld) or "")
                     if not os.path.isfile(p) or _sha256(p) != fm.get(sha):
-                        F(crel, 2, "L34", f"ingest complete but {fld} is missing or its SHA-256 differs from the card")
+                        F(crel, 2, "L34", f"ingest {fm['ingest']} but {fld} is missing or its SHA-256 differs from the card")
 
     if root is None:
         tracked = _tracked(v)

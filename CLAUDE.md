@@ -23,7 +23,9 @@
 | `references/<stem>.md`, `references/figures/` | 정제본 = 인용 대상. 생성물이며 손으로 고치지 않는다 | 제외 |
 | `internal/` | 내부 자료: `references/`, `wiki/`, `meetings/`, `log.md`, `_legacy/`. 별도 로컬 git #2 | 제외 |
 
-원문 흐름: `inbox/` → (`scripts/source.py register`) → `references/raw/` → (`convert_references.py` → `clean_references.py`) → `references/<stem>.md` → (인제스트) → `wiki/`. 인제스트 상태는 소스 카드(`wiki/<KEY>.md`, `type: source`)의 `ingest` 필드가 나타낸다.
+원문 흐름: `inbox/` → (`scripts/source.py register`) → `references/raw/` → (`convert_references.py` → `clean_references.py`) → `references/<stem>.md` → (인제스트) → `wiki/`. 인제스트 상태는 소스 카드(`wiki/<KEY>.md`, `type: source`)의 `ingest` 필드(pending | in_progress | complete | partial)가 나타낸다.
+
+보조 원문(PSAR이 참조하는 topical·technical report 등)은 수시 인제스트로 다룬다(2026-10-26 사용자 결정, 설계 §4.3). 등록·정제는 문서 전체를 하고, 인제스트는 질문에 필요한 절만 단위로 한다. 사실은 기존 주제 노트에 새 인용으로 더하고, 넣을 노트가 없을 때만 새 노트를 만든다. 단위를 마치면 `source.py finish KEY --partial`로 `ingest: partial`을 두며, 전체 coverage 관문은 적용하지 않는다. 키는 문서 번호다(`TP-LIC-RPT-0011`, NRC 승인본은 `NAT-9392-A`처럼 `-A` 포함).
 
 ## 3. 정제 파이프라인 계약 (설계 §4.1)
 
@@ -42,7 +44,7 @@
 - 본문: `# 한국어 제목 (English Title)` → `> [!abstract] 요약`(한국어 2–3문장) → `## 원문 사실` → `## 해설` → `## 관련 문서`. 노트가 대표하는 용어(`term`)가 용어표에서 "영어 유지"이면 H1을 `# English Name (약어)`로 쓴다. 약어가 없으면 `# 한국어 서술 (English Title)` 형식을 쓰되, 용어 자체는 영어로 둔다. 한국어 표기를 지어내지 않기 위해서다.
 - 원문 사실 절은 원문 문장(따옴표)과 표 값만 담고 항목마다 인용을 붙인다. 해설은 한국어로 쓰고 원문 사실 절만 근거로 삼는다.
 - 인용: `[KEY §3.7.3.1 p.45]`, `[KEY Table 5.2-1 p.12]`, `[KEY SFR-DC 4 p.64]`, `[KEY §3.2.1 p.16-17]`. `p.N`은 PDF 쪽(쪽 표지의 첫 번호). 쪽이 없는 원문은 `[KEY §제목경로]`.
-- 원문끼리 모순되면 둘 다 인용하고 `meta/contradictions.md`에 기록한다. 권위 문서는 NRC 문서(SER, NRC staff 발표, RG)와 RG 1.233이 승인한 NEI 18-04이며, RG의 승인 명확화가 NEI 문장보다 우선한다. 권위 문서끼리의 실질 모호·상충만 `status: disputed`로 둔다. 신청자 문서(PSAR)가 권위 문서와 다르거나 신청자 문서끼리 다르면 해설에 `**규정 대비 메모(항목, 갈래).**`를 달고 disputed로 두지 않는다. 권위 문서끼리 표기만 다르면 기록만 한다(2026-10-17 사용자 결정).
+- 원문끼리 모순되면 둘 다 인용하고 `meta/contradictions.md`에 기록한다. 권위 문서는 NRC 문서(SER, NRC staff 발표, RG)와 RG 1.233이 승인한 NEI 18-04이며, RG의 승인 명확화가 NEI 문장보다 우선한다. 권위 문서끼리의 실질 모호·상충만 `status: disputed`로 둔다. 신청자 문서(PSAR, 신청자의 topical·technical report)가 권위 문서와 다르거나 신청자 문서끼리 다르면 해설에 `**규정 대비 메모(항목, 갈래).**`를 달고 disputed로 두지 않는다. 권위 문서끼리 표기만 다르면 기록만 한다(2026-10-17 사용자 결정).
 - 파일명: ASCII `Snake_Case`, vault 전체에서 유일, `references/`의 파일명과 다르게. UTF-8(BOM 없음), LF.
 - 그림은 원문에서 렌더링한 PNG만. vault 루트 `figures/`의 `<KEY>_<name>.png`를 `![[<KEY>_<name>.png]]`로 참조하고, 바로 아래 줄에 그림 번호·제목과 인용(`[KEY Figure 5-3 p.59]`)을 적는다(2026-09-16 결정). 재구성 도식은 `synthesis` 노트에서만, "재구성" 표시와 요소별 출처 필수.
 
