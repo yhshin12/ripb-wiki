@@ -246,3 +246,7 @@
 - refclean emit.py: 범위 쪽 표지 뒤 첫 요소에 마지막 쪽 표지를 다시 붙임; 새 표지 17개(PSAR_ch07 10, SER_KU1_CP 6, NEI_18-04 1), 회귀 테스트 추가
 - 노트 14개 원문 사실 인용 156건의 쪽 정정(±0쪽 대조, PDF 확인); NEI §5.7.1 인용 3곳(PSAR_ch04, contradictions C3, 메모) p.72→73
 - 소스 카드 sha256 갱신, 부재 진술 원장 갱신; lint 0, 인용 검증 0, pytest 428 passed
+
+## [2026-10-26] fix | Natrium_LBE_Evaluation_Methods 종결 기준 표의 적용 조건 명시
+- PSAR_ch03 §3.3.4.3 종결 기준 표에 '적용' 열 추가: 열제거>총 발열 기준은 피동 장기 냉각 과도에만 붙는 추가 기준, safe and stable 기준은 scram 없는 과도에 적용
+- 해설의 safe shutdown 기준 서술 정정; lint 0, 인용 검증 0, 부재 진술 3건 검토(오탐)

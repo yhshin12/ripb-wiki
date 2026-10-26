@@ -90,13 +90,13 @@ terms_pending: []
 | Low Power | 5 | 15 | 309.5 | [PSAR_ch03 §3.3.4.2 p.50] |
 | Full Power | 100 | 100 | 360.1 | [PSAR_ch03 §3.3.4.2 p.50] |
 
-| End state | Termination criterion | 출처 |
-|---|---|---|
-| safe shutdown | Peak Cladding Temperature value below 1157°F (625°C) and is stable or decreasing | [PSAR_ch03 §3.3.4.3 p.50] |
-| safe shutdown | K-effective 1.0 (for BDBE only) or less and core power stable or reducing | [PSAR_ch03 §3.3.4.3 p.50] |
-| safe shutdown | Heat removal exceeds total heat produced (fission, decay, and equipment produced) | [PSAR_ch03 §3.3.4.3 p.50] |
-| safe and stable | K-effective 1.0 | [PSAR_ch03 §3.3.4.3 p.50] |
-| safe and stable | Heat removal is equal to heat production | [PSAR_ch03 §3.3.4.3 p.50] |
+| End state | Termination criterion | 적용 | 출처 |
+|---|---|---|---|
+| safe shutdown | Peak Cladding Temperature value below 1157°F (625°C) and is stable or decreasing | analysis termination criteria | [PSAR_ch03 §3.3.4.3 p.50] |
+| safe shutdown | K-effective 1.0 (for BDBE only) or less and core power stable or reducing | analysis termination criteria | [PSAR_ch03 §3.3.4.3 p.50] |
+| safe shutdown | Heat removal exceeds total heat produced (fission, decay, and equipment produced) | For transients that rely on passive long-term cooling to meet the acceptance criteria (not applicable for short-term transients) | [PSAR_ch03 §3.3.4.3 p.50] |
+| safe and stable | K-effective 1.0 | If the transient does not result in a reactor scram | [PSAR_ch03 §3.3.4.3 p.50] |
+| safe and stable | Heat removal is equal to heat production | If the transient does not result in a reactor scram | [PSAR_ch03 §3.3.4.3 p.50] |
 
 ## 해설
 이 보고서는 이 절의 방법론이 예비적이라고 적는다. DBA%%t:DBA%% 평가에는 예비 민감도 해석으로 보수성을 보인 경계 변수와 가정을 쓰고, 최종 변수와 결과는 operating license%%t:OL%% 단계에서 제공한다. 방사성 방출이 없는 노심 사건, 노심 밖 SSC%%t:SSC%%와 방출 가능성이 있는 사건, 부분 유로 막힘, 방사선 결말에 각각 방법론 보고서가 있다. 부분 유로 막힘은 핵연료봉 간격이 좁고 출력 밀도와 연소도가 높은 sodium-cooled fast reactor%%t:SFR%% 집합체의 설계·운전 특성 때문에 선택된 사건으로, primary sodium 속 부유물 축적, wire-wrap spacer 고장, 핵연료봉 팽윤이나 굽힘으로 시작될 수 있다. DBA%%t:DBA%% 선량은 부지 고유 값을 보수적으로 포괄하는 enveloping atmospheric dispersion factors로 평가한다.
@@ -105,7 +105,7 @@ DBA%%t:DBA%% 해석은 Safety-Related%%t:SR%% SSC%%t:SSC%%만 완화에 고려�
 
 Licensing Basis Event%%t:LBE%%는 비슷한 유형의 Initiating Event%%t:IE%%에 따라 일곱 사건군, 곧 열제거 증가, 열제거 감소, 반응도, primary flow 상실, local fuel fault, 노심 밖 계통 방출, 핵연료 취급으로 묶인다. LBE%%t:LBE%% 기술에서 어떤 기능의 고장을 가정해도 그 고장이 반드시 초기사건 때문이라는 뜻은 아니며, power runback이 끝나 scram setpoint에 이르지 않으면 그 사건은 LBE%%t:LBE%%로 분류되지 않는다. 붕괴열 제거는 Reactor Air Cooling System과 가용한 Intermediate Air Cooling System 모드가 맡고, 피동·비피동 모드가 모두 없으면 중간 소듐 루프의 배관·기기·소듐 열용량이 가용하다고 가정한다. 반응도 군에는 spurious scram과 safe shutdown earthquake에 의한 반응도 삽입도 들어간다. local fuel fault는 핵연료 집합체 하나로 한정된 손상이며 primary sodium 온도를 정상 운전 범위 밖으로 올리지 않고, 집합체 전체 파손 가정은 과도 노심 응답 해석 없는 보수적·결정론적 가정이다. 노심 밖 계통 방출 군은 Sodium Cover Gas System, Sodium Processing System, Gaseous Radwaste Processing System의 방출을 평가하고, 핵연료 취급 군은 자유 체적이 가장 작고 가정 누설률이 보수적인 Ex-Vessel Handling Machine 방출을 경계로 삼는다.
 
-여러 초기 조건에서 일어나는 LBE%%t:LBE%%는 전출력(원자로 출력 100%, 노심 유량 100%, 노심 입구 360.1°C)이나 저출력(5%, 15%, 309.5°C) 조건으로 해석하고, 정지·재장전 조건은 저출력 해석으로 포괄한다. 방출이 있는 LBE%%t:LBE%%는 `30-day` total effective dose equivalent를 얻도록 평가하고, 방출이 없는 LBE%%t:LBE%%는 safe shutdown 또는 safe and stable 조건에서 해석을 끝낸다. safe shutdown의 종료 기준 표에는 최대 피복 온도 1157°F (625°C) 미만이며 안정 또는 감소, `K-effective 1.0 (for BDBE only) or less`이며 노심 출력 안정 또는 감소, 열제거가 총 발열을 넘음이 있고, 피동 장기 냉각에 의존하는 과도에는 추가 기준이 붙는다. safe and stable 기준은 `K-effective 1.0`과 열제거·열생산의 균형이며, scram이 없는 과도에 쓴다. 기준 표의 K-effective 문구에는 관계 기호가 없다.
+여러 초기 조건에서 일어나는 LBE%%t:LBE%%는 전출력(원자로 출력 100%, 노심 유량 100%, 노심 입구 360.1°C)이나 저출력(5%, 15%, 309.5°C) 조건으로 해석하고, 정지·재장전 조건은 저출력 해석으로 포괄한다. 방출이 있는 LBE%%t:LBE%%는 `30-day` total effective dose equivalent를 얻도록 평가하고, 방출이 없는 LBE%%t:LBE%%는 safe shutdown 또는 safe and stable 조건에서 해석을 끝낸다. safe shutdown의 종료 기준은 최대 피복 온도 1157°F (625°C) 미만이며 안정 또는 감소, `K-effective 1.0 (for BDBE only) or less`이며 노심 출력 안정 또는 감소의 두 가지이다. 허용 기준을 충족하려고 피동 장기 냉각에 의존하는 과도에는 열제거가 총 발열(핵분열, 붕괴열, 기기 발열)을 넘어야 한다는 추가 기준이 붙고, 단기 과도에는 이 추가 기준을 적용하지 않는다. safe and stable 기준은 `K-effective 1.0`과 열제거·열생산의 균형이며, scram이 없는 과도에 쓴다. 기준 표의 K-effective 문구에는 관계 기호가 없다.
 
 ## 관련 문서
 - [[Natrium_LBE_Selection]]
