@@ -166,6 +166,21 @@ def test_footnotes_reference_definition_and_ignore_bold_caption():
     assert texts[0].endswith("Adequacy**")            # the '**' of a bold caption is not a footnote marker
 
 
+def test_footnote_definition_stays_on_its_page_and_skips_a_running_paragraph():
+    """The definition goes before the next page's first element, not at the end of a section spanning pages; a
+    paragraph continuing across the break is passed so that join_breaks can still merge it."""
+    body = El("para", "* A note.", 12, (72.0, 72.0, 535.0, 100.0), "Calibri", 9.0)
+    els = [El("para", "The term event sequences* is used. The scope of the", 12), body,
+           El("para", "licensing basis is broad.", 13), El("para", "Next paragraph.", 13),
+           El("heading", "3 NEXT", 14, meta={"numbered": True})]
+    d = _doc(els)
+    P.footnotes(d)
+    P.join_breaks(d)
+    assert [(e.text, e.page) for e in d.els][:3] == [
+        ("The term event sequences[^p12] is used. The scope of the licensing basis is broad.", 12),
+        ("[^p12]: A note.", 0), ("Next paragraph.", 13)]
+
+
 @pytest.mark.refs
 def test_metadata_keys():
     d = _doc([])
@@ -362,6 +377,12 @@ def test_smoke_footnotes(built):
     assert "event sequences[^p10b] that are associated" in text              # the single dagger footnote
     # the footnote body no longer splits the sentence (review F13)
     assert "all non-safety-related SSCs that perform these same functions are assumed to be unavailable" in text
+    page = None                                                          # each definition under its own page anchor
+    for line in text.split("\n"):
+        m = re.match(r"\s*<!-- page (\d+)", line)
+        page = int(m.group(1)) if m else page
+        m = re.match(r"\[\^p(\d+)b?\]: ", line)
+        assert not m or int(m.group(1)) == page, line[:40]
 
 
 @pytest.mark.refs

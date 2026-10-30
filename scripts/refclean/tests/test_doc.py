@@ -116,3 +116,14 @@ def test_text_after_a_multipage_table_reannounces_the_last_page():
         "<!-- page 138 | 7.2-46 -->", "<!-- page 138-139 | 7.2-46..7.2-47 -->", "<!-- page 139 | 7.2-47 -->",
         "<!-- page 140 -->"]
     assert body.index("<!-- page 139 | 7.2-47 -->") < body.index("after")
+
+
+def test_text_block_of_lists_is_body_but_other_text_blocks_are_figure_labels():
+    tree = {"kids": [
+        {"type": "text block", "page number": 18, "kids": [
+            {"type": "list", "page number": 18, "list items": [
+                {"type": "list item", "content": "• seismic PRA", "page number": 18, "kids": []}]}]},
+        {"type": "text block", "page number": 19, "kids": [
+            {"type": "paragraph", "page number": 19, "content": "diagram label"}]}]}
+    els, _ = elements_from_json(tree)
+    assert [(e.kind, e.text, e.page) for e in els] == [("item", "• seismic PRA", 18)]

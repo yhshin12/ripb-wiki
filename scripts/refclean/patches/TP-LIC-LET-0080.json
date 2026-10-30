@@ -1,0 +1,9 @@
+[
+  {
+    "find": " | `[[ ]]`(a)( |",
+    "replace": " | `[[ ]]`(a)(4) |",
+    "page": 54,
+    "count": 3,
+    "evidence": "2026-10-26. Rendered p54 (slide 33): every FFTF-SAR* cell of the coolant HCF table reads '[[ ]](a)(4)'. PyMuPDF find_tables clips the label at the slide edge to '(a)('; completed from the slide image."
+  }
+]

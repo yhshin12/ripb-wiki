@@ -42,6 +42,12 @@ META = {
         "tags": ["reference", "natrium", "technical-report"],
         "aliases": ["TP-LIC-RPT-0011", "Core Design and Thermal Hydraulic Technical Report"],
     },
+    "NAT-3049": {
+        "doc_id": "NAT-3049", "doc_type": "White Paper (pre-application, transmitted by TP-LIC-LET-0064)",
+        "issuer": "TerraPower, LLC", "revision": "0A", "date": "2023-03-15", "adams_accession": "ML23080A013",
+        "title": "Nascent Thermal Hydraulic Model White Paper",
+        "tags": ["reference", "natrium", "white-paper"], "aliases": ["NAT-3049", "Nascent white paper"],
+    },
 }
 
 

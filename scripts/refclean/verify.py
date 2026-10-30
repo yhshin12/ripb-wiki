@@ -40,7 +40,7 @@ ANCHOR = re.compile(r"^<!-- page (\d+)(?:-(\d+))?(?: \| [^>]*)? -->$")
 RESIDUE = {
     "dot_leader": re.compile(r"(?:\.\s){4,}"),
     "html_entity": re.compile(r"&(?:amp|lt|gt|quot);"),
-    "wikilink_open": re.compile(r"\[\["),
+    "wikilink_open": re.compile(r"(?<!`)\[\["),        # a code span (`[[ ]]`) is not an Obsidian link
     "running_header": re.compile(r"^Kemmerer Unit 1 PSAR\s*$", re.M),
     "doe_footer": re.compile(r"SUBJECT TO DOE COOPERATIVE"),
     "sheet_heading": re.compile(r"^#+ \(Sheet \d+ of \d+\)", re.M),

@@ -112,11 +112,13 @@ def elements_from_json(tree, warn=None, flatten_text_blocks=False):
 
     A 'text block' node groups the text of one drawn box. In the reports and guides its text is diagram labelling
     inside a rendered figure and is skipped; a slide profile sets flatten_text_blocks to read it as body content.
+    A box holding nothing but lists is a boxed list table (RG 1.247 Table 1) and is read as body content everywhere.
     """
     els, labels = [], {}
     for node in tree.get("kids", []):
         t = node.get("type")
-        if t == "text block" and flatten_text_blocks:
+        only_lists = t == "text block" and node.get("kids") and all(k.get("type") == "list" for k in node["kids"])
+        if t == "text block" and (flatten_text_blocks or only_lists):
             sub_els, sub_labels = elements_from_json(node, warn, flatten_text_blocks)
             els += sub_els
             labels.update(sub_labels)

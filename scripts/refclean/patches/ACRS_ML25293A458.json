@@ -1,0 +1,16 @@
+[
+  {
+    "find": "  - Secondary assemblies used for fine\n\nreactivity control\n",
+    "replace": "  - Secondary assemblies used for fine reactivity control\n",
+    "page": 5,
+    "count": 1,
+    "evidence": "pipeline backlog 2026-10-20. Rendered slide 5: 'reactivity control' (x0 547) is the second line of the third sub-bullet '• Secondary assemblies used for fine' (bullet x0 529, continuation x0 547 as in the two sub-bullets above). The converter left it as a separate paragraph; joined, wording verbatim."
+  },
+  {
+    "find": "- Staff review was supported by\n\ncontractors from ANL\n",
+    "replace": "- Staff review was supported by contractors from ANL\n",
+    "page": 10,
+    "count": 1,
+    "evidence": "pipeline backlog 2026-10-20. Rendered slide 10: 'contractors from ANL' (x0 511) is the second line of the third bullet '• Staff review was supported by' (bullet x0 493, continuation x0 511 as in the two bullets above). The converter left it as a separate paragraph; joined, wording verbatim."
+  }
+]

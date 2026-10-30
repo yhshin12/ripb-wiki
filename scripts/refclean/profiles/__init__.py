@@ -25,10 +25,12 @@ DOCS = {
     "RG_1.247": ("RG_1.247_Acceptability of Probabilistic Risk Assessment Results for Advanced Non-Light Water "
                  "Reactor Risk-Informed Activities", "rg1247", None),
     "RG_1.253": ("RG_1.253_Guidance for a Technology-Inclusive Content-of-Application Methodology for "
-                 "Non-Light-Water Reactors", "generic", None),
+                 "Non-Light-Water Reactors", "rg1253", None),
     "SER_KU1_CP": ("SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit 1 Construction Permit Application",
                    "ser", None),
     "TP-LIC-RPT-0011": ("TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Technical Report", "tp_report", None),
+    "NAT-3049": ("NAT-3049_Nascent Thermal Hydraulic Model White Paper", "tp_report", None),
+    "TP-LIC-LET-0080": ("TP-LIC-LET-0080_Core Thermal Hydraulic Methods Presentation Material", "tp_slides", None),
 }
 
 INTERNAL_REGISTRY = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(

@@ -75,3 +75,37 @@ def test_only_figure_4_2_is_public(built):
     after = text[text.index("![Figure 4-2"):]
     assert "Due to the heterogenous geometry of the core" in after.split("### 4.2.1", 1)[0]
     assert ver["summary"]["missing_pct"] <= 0.3 and failed == []
+
+
+@pytest.fixture(scope="module")
+def built_nat():
+    import clean_references as CR
+    from refclean.doc import load_doc
+    from refclean.emit import render
+    from refclean.pdfaux import build_aux
+    from refclean.profiles import DOCS, tp_report
+    from refclean.verify import verify
+    stem = DOCS["NAT-3049"][0]
+    if not os.path.exists(os.path.join(RAW, stem + ".json")):
+        pytest.skip("NAT-3049 conversion not available")
+    doc = load_doc("NAT-3049", stem, CR.RAW, CR.OUT)
+    aux = build_aux(doc.pdf_path, chapter=None, exclude=CR.table_regions(doc))
+    aux.meta["render_figures"] = False
+    for step in tp_report.steps():
+        step(doc, aux)
+    text, failed = CR.apply_patches("NAT-3049", render(doc, tp_report.metadata(doc, aux)))
+    return text, failed, verify(doc, aux, text)
+
+
+@pytest.mark.refs
+def test_white_paper_letter_legend_control_table_and_captions(built_nat):
+    text, failed, ver = built_nat
+    body = text.split("\n---\n", 1)[1]
+    # the letter explains the marks: they stay as text (code spans), not callouts
+    assert "identified using `[[ ]]`(a)(4), `[[ ]]`(ECI), or `[[ ]]`(a)(4),(ECI)." in body
+    assert "- Natrium Document No.: NAT-3049 | Rev. No.: 0A | Page: 1 of 21" in body and "<!-- page 6 | 1 -->" in body
+    assert "## 3.4 Relationship Between the Nascent Model and Hot Channel Factors\n\n> [!withheld] (a)(4)\n" in body
+    # a caption glued to the next body line is cut after the caption read from the PDF
+    assert "### Figure 1 Natrium Type 1 Assembly Sketch\n\n> [!withheld] (a)(4)(ECI)\n" in body
+    assert '[2] J. Muraoka, R. E. Peterson, R. G. Brown, W. D. Yule, D. S. Dutt, and J. E. Hanson, “Assessment of FFTF Hot Channel Factors”' in body
+    assert ver["summary"]["missing_pct"] <= 0.5 and ver["summary"]["residue"] == {} and failed == []

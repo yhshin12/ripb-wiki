@@ -847,7 +847,8 @@ def footnotes(doc, aux=None):
         else:
             placed_after[label] = hit
     doc.meta["footnotes_unreferenced"] = missing
-    # definition goes before the next heading after the reference
+    # definition goes before the next heading or the next page after the reference, whichever comes first, so it stays
+    # under its own page anchor; a paragraph running on across the page break is passed (join_breaks merges it back)
     inserts = collections.defaultdict(list)
     for page, sym, text in bodies:
         label = labels[(page, sym)]
@@ -855,7 +856,9 @@ def footnotes(doc, aux=None):
         if i is None:
             continue
         j = i + 1
-        while j < len(doc.els) and doc.els[j].kind != "heading":
+        while j < len(doc.els) and doc.els[j].kind != "heading" and not (doc.els[j].page or 0) > page:
+            j += 1
+        while j < len(doc.els) and doc.els[j].kind != "heading" and _joins(doc.els[j - 1], doc.els[j]):
             j += 1
         inserts[j].append(El("para", f"[^{label}]: {text}", 0, meta={"footnote_def": label}))
     out = []
@@ -886,18 +889,24 @@ def join_breaks(doc, aux=None):
     """Merge paragraph/item fragments split by page breaks or by an interposed footnote; a line-end hyphen is a real
     hyphen in this Word PDF ('all non-' + 'safety-related' -> 'all non-safety-related')."""
     out = []
-    NOJOIN = ("footnote_def", "where_item", "where_head", "equation")
     for e in doc.els:
-        if e.kind in ("para", "item") and not any(e.meta.get(k) for k in NOJOIN) and out:
+        if out and _joins(out[-1], e):
             prev = out[-1]
-            if (prev.kind in ("para", "item") and not any(prev.meta.get(k) for k in NOJOIN)
-                    and not prev.meta.get("figure_caption") and not _bulleted(e.text)
-                    and _continues(prev.text, e.text)):
-                sep = "" if prev.text.rstrip().endswith(("-", "—")) else " "
-                prev.text = prev.text.rstrip() + sep + e.text.lstrip()
-                continue
+            sep = "" if prev.text.rstrip().endswith(("-", "—")) else " "
+            prev.text = prev.text.rstrip() + sep + e.text.lstrip()
+            continue
         out.append(e)
     doc.els = out
+
+
+NOJOIN = ("footnote_def", "where_item", "where_head", "equation")
+
+
+def _joins(prev, e):
+    """True when join_breaks merges fragment e into the element before it."""
+    return (e.kind in ("para", "item") and not any(e.meta.get(k) for k in NOJOIN)
+            and prev.kind in ("para", "item") and not any(prev.meta.get(k) for k in NOJOIN)
+            and not prev.meta.get("figure_caption") and not _bulleted(e.text) and _continues(prev.text, e.text))
 
 
 INLINE_SUB = re.compile(r":\s+o\s+(?=[A-Z])")

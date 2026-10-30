@@ -7,7 +7,7 @@ file: references/TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Techn
 pdf: references/raw/TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Technical
   Report.pdf
 sha256_pdf: 9cd2c27b336251d2c633aa4d82432f016278ff5a4af2f517c27991b29c730e77
-sha256_md: 60b1a8f03b1bfe2bf89b9b24a593a861a8ea970a0549048a7b431e7268904243
+sha256_md: 9b46b0f4c5ea3833de4b5cac45fbe99b749aeb3b00417d5b818108998ba3ce80
 pdf_pages: 94
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
@@ -71,7 +71,7 @@ units:
   - Figure 1-1 Coolant Flow Path through the RES and RCC
   - Figure 2-1 Core Assembly Loading for Cycle 1 (Assembly Pitch in Inches)
   - Figure 2-2 Illustration of Cascade Reloading Sequence
-  - Figure 2-3 Example Fuel Shuffling Cascade with Third Core Symmetry
+  - Figure 2-3 Example Fuel Shuffling Cascade with
   - Figure 2-4 Core Inlet Nozzle Orifice Zone Map
   - Figure 2-5 Illustration of a Universal Stack Nozzle (Dimensions in Inches)
   - Figure 2-6 Vertical Arrangement of Modeled Regions within the Core Assemblies
@@ -81,7 +81,7 @@ units:
   - Figure 2-10 Reflector Assembly Design
   - Figure 2-11 Shield Assembly Design
   - Figure 3-1 
-  - Figure 4-1 Example relative temperature and uncertainty profiles with layered hot channel factor method through to fuel centerline.
+  - Figure 4-1 Example relative temperature and uncertainty profiles with layered hot channel factor
   - Figure 4-3 
   - Figure 8-1 k-effective as a Function of Time
   - Figure 8-2 Maximum Core Assembly Burnup (%FIMA) vs. Time

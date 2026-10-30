@@ -1,5 +1,9 @@
-"""TerraPower technical report profile (TP-LIC-RPT-0011, public version): the generic pipeline with the report's
-page furniture, numbered headings and redaction brackets.
+"""TerraPower report profile (public versions of TP-LIC-RPT-0011 and the NAT-3049 white paper): the generic pipeline
+with TerraPower page furniture, numbered headings and redaction brackets. Per-document differences are in CONFIG.
+
+- NAT-3049: the PDF is the transmittal letter, the withholding affidavit and the enclosure cover (p.1-5) followed by
+  the white paper (p.6-26, "Page N of 21"); its document control table on p.6 survives conversion. Bracket labels
+  also read "(a)(4)(ECI)", and figure captions "Figure 5. Title".
 
 - The document control table on p.2 is lost by the converter and is read from the PDF (control_table).
 - Page 1 is the enclosure cover ("ENCLOSURE 5 … Public") and is dropped. Every later page carries a running header
@@ -26,21 +30,29 @@ from ..levels import assign_levels
 from ..pdfaux import LEADER, FigureRef, HeadingRef, figure_box
 from . import generic, ser
 
-META = {"TP-LIC-RPT-0011": generic.META["TP-LIC-RPT-0011"]}
+META = {k: generic.META[k] for k in ("TP-LIC-RPT-0011", "NAT-3049")}
+CONFIG = {
+    "TP-LIC-RPT-0011": {"drop_pages": {1}, "control_table_page": 2},
+    "NAT-3049": {"drop_pages": set(), "control_table_page": 6},
+}
 
 MAX_CHAPTER = 8
 KEEP_HEADINGS = {"REVISION HISTORY", "ACRONYMS", "END OF DOCUMENT"}
-HEADER_CELL = re.compile(r"^TP-LIC-RPT-\d{4} Rev \d+$")
+HEADER_CELL = re.compile(r"^(?:TP-LIC-RPT-\d{4} Rev \d+|NAT-\d{4})$")
 PAGE_LABEL = re.compile(r"^Page (\d+) of \d+$")
+CONTROL_PAGE = re.compile(r"Page:\s*(\d+) of \d+")
 FURNITURE = re.compile(r"^(?:Not Confidential\s*)?(?:Controlled Document - Verify Current Revision)?$|"
                        r"^SUBJECT TO DOE COOPERATIVE AGREEMENT|^Copyright © \d{4} TerraPower")
 OPEN = r"\[\["
-CLOSE = r"\]\]\s*(\(a\)\(4\)(?:,\s*ECI)?)"
-BARE = re.compile(r"^\s*(\(a\)\(4\)(?:,\s*ECI)?)\s*$")
+LABEL = r"\(a\)\(4\)?(?:,\s*ECI|\(ECI\))?"     # NAT-3049 p.12 prints "]](a)(4" (no closing parenthesis)
+CLOSE = rf"\]\]\s*({LABEL})"
+BARE = re.compile(rf"^\s*({LABEL})\s*$")
 MARK = re.compile(rf"{OPEN}|{CLOSE}")
+LEGEND = re.compile(r"redacted information is identified using")
+EMPTY_PAIR = re.compile(r"\[\[\s*\]\]")
 HEAD = re.compile(r"^(\d(?:\.\d+)*)\s+(\S.*?)\s*$")
-FIG_CAP = re.compile(r"^Figure\s+(\d+-\d+):\s+(\S.*)$")
-FIG_TXT = re.compile(r"^Figure\s+(\d+-\d+):\s*(.*)$")
+FIG_CAP = re.compile(r"^Figure\s+(\d+(?:-\d+)?)[:.]\s+(\S.*)$")
+FIG_TXT = re.compile(r"^Figure\s+(\d+(?:-\d+)?)[:.]\s*(.*)$")
 
 
 def callout(label, page):
@@ -57,7 +69,7 @@ def toc_continuation(doc, aux):
 
 
 def drop_cover(doc, aux=None):
-    S.drop_pages(doc, {1})
+    S.drop_pages(doc, CONFIG[doc.key]["drop_pages"])
 
 
 def page_labels(doc, aux=None):
@@ -70,14 +82,21 @@ def page_labels(doc, aux=None):
                     m = PAGE_LABEL.match(line.strip())
                     if m:
                         doc.page_labels[page.number + 1] = m.group(1)
+        if page.number + 1 not in doc.page_labels:    # a document control table: "Page: 1 of 21"
+            m = CONTROL_PAGE.search(page.get_text())
+            if m:
+                doc.page_labels[page.number + 1] = m.group(1)
     pdf.close()
 
 
 def control_table(doc, aux=None):
-    """PDF p.2 document control table (number, title, dates, approvals), which the converter drops: read with
-    PyMuPDF and emitted as one line per table row, empty cells left out."""
+    """The document control table (number, title, dates, approvals; TP-LIC-RPT-0011 p.2, NAT-3049 p.6), which the
+    converter drops: read with PyMuPDF and emitted as one line per table row, empty cells left out."""
+    cpage = CONFIG[doc.key]["control_table_page"]
+    if cpage is None:
+        return
     pdf = fitz.open(doc.pdf_path)
-    tabs = pdf[1].find_tables().tables
+    tabs = pdf[cpage - 1].find_tables().tables
     pdf.close()
     if not tabs:
         return
@@ -86,17 +105,21 @@ def control_table(doc, aux=None):
         cells = [" ".join(c.split()) for c in row if c]
         if cells:
             rows.append("- " + " | ".join(cells))
-        if cells[-2:] == ["Page:", "1 of 93"]:
-            doc.page_labels[2] = "1"
-    md = "<!-- source: PDF p.2 document control table, read with PyMuPDF (one line per row) -->\n" + "\n".join(rows)
-    i = next((k for k, e in enumerate(doc.els) if e.page > 2), len(doc.els))
-    doc.els.insert(i, El("raw_md", md, 2))
+        m = CONTROL_PAGE.search(" ".join(cells))
+        if m:
+            doc.page_labels[cpage] = m.group(1)
+    md = (f"<!-- source: PDF p.{cpage} document control table, read with PyMuPDF (one line per row) -->\n"
+          + "\n".join(rows))
+    i = next((k for k, e in enumerate(doc.els) if e.page > cpage), len(doc.els))
+    doc.els.insert(i, El("raw_md", md, cpage))
 
 
 def drop_furniture(doc, aux=None):
     out = []
     for e in doc.els:
-        if e.kind == "table" and e.table.grid and HEADER_CELL.match(e.table.grid[0][0].text.strip()):
+        if e.kind == "table" and e.table.grid and (
+                HEADER_CELL.match(e.table.grid[0][0].text.strip())
+                or FURNITURE.match(" ".join(" ".join(c.text for row in e.table.grid for c in row).split()))):
             continue
         if e.kind == "heading" and not e.text.strip():
             continue
@@ -156,6 +179,13 @@ def _cell_withheld(text):
 def withheld(doc, aux=None):
     out = []
     for e in doc.els:
+        if e.kind in ("para", "item") and LEGEND.search(e.text):
+            e.text = EMPTY_PAIR.sub("`[[ ]]`", e.text)    # the transmittal letter explains the marks: keep as text
+            out.append(e)
+            continue
+        if e.kind == "table" and any("`[[" in c.text for r in e.table.grid for c in r):
+            out.append(e)       # cells already rebuilt with the marks as code spans (tp_slides.slide_tables)
+            continue
         if e.kind == "table":
             rows = e.table.grid
             keep = [r for r in rows if not all(_cell_withheld(c.text) for c in r)]
@@ -207,13 +237,34 @@ def figures(doc, aux):
             cap = fitz.Rect(ln.x0, ln.y0, ln.x1, ln.y1)
             x0, y0, x1, y1 = figure_box(pdf[pno - 1], cap)
             box = (x0, max(y0, above), x1, min(y1, cap.y1 + 6))    # a figure ends at its caption
-            held = any(BARE.match(l.text) and above <= l.y0 < ln.y0 for l in lines)
+            labels = [BARE.match(l.text).group(1) for l in lines if BARE.match(l.text) and above <= l.y0 < ln.y0]
             title = " ".join(MARK.sub(" ", m.group(2)).split())
-            refs.append(FigureRef(m.group(1), title, pno, box, withheld=held))
+            refs.append(FigureRef(m.group(1), title, pno, box, withheld=bool(labels)))
+            if labels:
+                aux.meta.setdefault("figure_labels", {})[m.group(1)] = labels[-1]
             above = ln.y1
     pdf.close()
     aux.figures = refs
+    _split_captions(doc, refs)
     figures_step(doc, aux, render=aux.meta.get("render_figures", True), fig_txt=FIG_TXT)
+
+
+def _split_captions(doc, refs):
+    """A caption the converter glued to the next body line ('Figure 1. Natrium Type 1 Assembly Sketch The fuel
+    assemblies include') is cut after the caption text read from the PDF line."""
+    out = []
+    for e in doc.els:
+        t = " ".join(e.text.split()) if e.kind in ("para", "caption") else ""
+        m = FIG_TXT.match(t)
+        ref = next((r for r in refs if m and r.page == e.page and r.num == m.group(1) and r.caption), None)
+        cut = t.find(ref.caption) + len(ref.caption) if ref and ref.caption in t else -1
+        if cut > 0 and t[cut:].strip():
+            out.append(El(e.kind, t[:cut], e.page, e.bbox, e.font, e.size, e.level, e.list_style, id=e.id,
+                          meta=dict(e.meta)))
+            out.append(El("para", t[cut:].strip(), e.page, e.bbox, e.font, e.size, id=e.id, meta={"split_from": e.id}))
+        else:
+            out.append(e)
+    doc.els = out
 
 
 def figure_levels(doc, aux=None):
@@ -233,7 +284,7 @@ def withheld_figure_callouts(doc, aux=None):
     for e in doc.els:
         out.append(e)
         if e.kind == "heading" and e.meta.get("figure") in held:
-            out.append(callout("(a)(4),ECI", e.page))
+            out.append(callout(aux.meta.get("figure_labels", {}).get(e.meta["figure"], "(a)(4)"), e.page))
     doc.els = out
 
 

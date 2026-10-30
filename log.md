@@ -266,3 +266,7 @@
 - 단순 수치·번호 차이는 기준값과 차후 확인 표시로 종결(판정 원칙 6)
 - C14-4 삭제; C59, C61, C66, C68 종결
 - contradictions_memos_2026-10-17.md 삭제, 남은 항목 근거는 contradictions.md 상세 절로 이동
+
+## [2026-10-30] fix | refclean 프로파일 보강과 인용 정정
+- tp_report·nei1804·generic 수정, rg1253·tp_slides 프로파일 추가, 패치 3건; 테스트 442 통과
+- RG_1.253 Table A-2·A-3 표 복원, RG_1247_PRA_Elements_Internal_Events Table 1 항목 표 추가, 인용 쪽 정정 2건, 소스 카드 sha256 갱신

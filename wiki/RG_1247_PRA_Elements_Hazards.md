@@ -15,7 +15,7 @@ terms_pending: []
 
 ## 원문 사실
 - "The internal flood-specific PRA analysis elements are evaluated for all POSs and may have different characteristics across POSs." [RG_1.247 §C.1.3.8 p.24]
-- "Because of its dependence on the internal events model, the internal flood PRA incorporates the elements of Regulatory Positions C.1.3.1 through C.1.3.7 of this RG, as necessary." [RG_1.247 §C.1.3.8 p.24]
+- "Because of its dependence on the internal events model, the internal flood PRA incorporates the elements of Regulatory Positions C.1.3.1 through C.1.3.7 of this RG, as necessary." [RG_1.247 §C.1.3.8 p.25]
 - "Flood areas are defined on the basis of physical barriers, mitigation features, and propagation pathways." [RG_1.247 §C.1.3.8 p.25]
 - "It is recognized that at the design and initial licensing stages, plant walkdowns are not possible." [RG_1.247 §C.1.3.8 p.25]
 - "The internal fire-specific PRA analysis elements are evaluated for all POSs and may have different characteristics for different POSs." [RG_1.247 §C.1.3.9 p.27]

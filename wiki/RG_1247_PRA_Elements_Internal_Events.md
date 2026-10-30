@@ -17,6 +17,27 @@ terms_pending: []
 - "The characteristics and attributes of the PRA elements define specific requirements that should be met to successfully perform those technical analyses and achieve a defined objective." [RG_1.247 §C.1.3 p.18]
 - "Table 1 lists the PRA elements necessary for an acceptable NLWR PRA that addresses all radiological sources, all hazards, all POSs, and all levels of PRA analysis." [RG_1.247 §C.1.3 p.18]
 - "A PRA that is missing one or more of these elements would not be considered complete." [RG_1.247 §C.1.3 p.18]
+
+| Table 1 항목 | 출처 |
+|---|---|
+| plant operating state analysis | [RG_1.247 Table 1 p.18] |
+| initiating event analysis | [RG_1.247 Table 1 p.18] |
+| event sequence analysis | [RG_1.247 Table 1 p.18] |
+| success criteria development | [RG_1.247 Table 1 p.18] |
+| systems analysis | [RG_1.247 Table 1 p.18] |
+| human reliability analysis | [RG_1.247 Table 1 p.18] |
+| data analysis internal flood PRA | [RG_1.247 Table 1 p.18] |
+| internal fire PRA | [RG_1.247 Table 1 p.18] |
+| seismic PRA | [RG_1.247 Table 1 p.18] |
+| hazard screening PRA | [RG_1.247 Table 1 p.18] |
+| high wind PRA | [RG_1.247 Table 1 p.18] |
+| external flooding PRA | [RG_1.247 Table 1 p.18] |
+| other hazards PRA | [RG_1.247 Table 1 p.18] |
+| event sequence quantification | [RG_1.247 Table 1 p.18] |
+| mechanistic source term analysis | [RG_1.247 Table 1 p.18] |
+| radiological consequence analysis | [RG_1.247 Table 1 p.18] |
+| risk integration | [RG_1.247 Table 1 p.18] |
+
 - "The staff did not develop a staff position in RG 1.200 on the risk integration PRA element as it relates to LWR PRA acceptability; however, the staff is promulgating a position in this RG on risk integration as it relates to NLWR PRA acceptability given the scope of the ASME/ANS NLWR PRA standard and to address the needs of regulatory submittals." [RG_1.247 §C.1.3 p.19]
 - "The objectives of the POS analysis PRA element are to identify operating evolutions (e.g., full-power, LPSD types of conditions) important to risk and parse them into distinct operating states in which the plant conditions are assumed to be relatively constant." [RG_1.247 §C.1.3.1 p.19]
 - "The POS safety functions to consider include reactivity control, reactor coolant chemistry control, decay heat removal control, reactor coolant system (RCS) inventory/barrier control, radionuclide transport barrier control, and ex-vessel fission product control (e.g., off-gas tanks/fuel salt storage tanks/spent fuel pools)." [RG_1.247 §C.1.3.1 p.19]
@@ -47,7 +68,7 @@ terms_pending: []
 - "C.1.3.17 (RC) Radiological Consequence Analysis; C.1.3.18 (RI) Risk Integration" [RG_1.253 Table A-1 p.34]
 
 ## 해설
-**요소의 구성.** PRA 요소의 characteristics와 attributes는 각 기술 해석을 수행하고 목적을 달성하려고 충족해야 할 요구를 정한다. Table 1은 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%, 모든 분석 수준을 다루는 PRA에 필요한 요소를 열거하며, 하나라도 빠진 PRA는 완전하지 않다고 본다. 정제본에는 Table 1의 본문이 빠져 있다. 요소 번호와 이름은 C.1.3.x 절과 [[RG_1.253]] Table A-1([[RG_1253_CP_PRA_Acceptability]])에서 확인되며, [[RG_1253_CP_PRA_Acceptability]]의 Table A-1 인용에는 C.1.3.1부터 C.1.3.18 Risk Integration까지의 요소가 있다. staff는 경수로 지침 `RG 1.200`에서는 두지 않았던 risk integration 요소의 입장을 이 지침에서 새로 둔다.
+**요소의 구성.** PRA 요소의 characteristics와 attributes는 각 기술 해석을 수행하고 목적을 달성하려고 충족해야 할 요구를 정한다. Table 1은 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%, 모든 분석 수준을 다루는 PRA에 필요한 요소를 열거하며, 하나라도 빠진 PRA는 완전하지 않다고 본다. Table 1은 열일곱 개 항목을 글머리로 나열한다. 원문은 자료 분석과 내부 침수를 "data analysis internal flood PRA" 한 항목으로 인쇄하지만, 자료 분석 요소는 §C.1.3.7이 따로 다루고 내부 침수 요소는 [[RG_1247_PRA_Elements_Hazards]]가 다루는 별도 절이다. 문서화(§C.1.3.19)는 Table 1의 항목에 없다. [[RG_1253_CP_PRA_Acceptability]]의 Table A-1 인용에는 C.1.3.1부터 C.1.3.18 Risk Integration까지의 요소가 있다. staff는 경수로 지침 `RG 1.200`에서는 두지 않았던 risk integration 요소의 입장을 이 지침에서 새로 둔다.
 
 **내부 사건 요소.**
 - POS%%t:POS%%: 위험에 중요한 운전 변화(전출력, `LPSD`)를 찾아 조건이 비교적 일정한 운전 상태로 나눈다. 고려할 안전 기능에는 반응도 제어, 냉각재 화학 제어, 붕괴열 제거, 냉각재 계통 재고·barrier%%t:BARRIER%% 제어, 방사성핵종 이동 barrier%%t:BARRIER%% 제어, 용기 외 핵분열생성물 제어가 들어간다. 용기 외 원천은 문서화된 기술적 정당화가 없는 한 포함한다.
