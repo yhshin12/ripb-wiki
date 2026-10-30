@@ -8,7 +8,7 @@ sources:
 - SER_KU1_CP
 - TP-LIC-RPT-0011
 status: checked
-verified: 2026-10-26
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -94,7 +94,7 @@ terms_pending: []
 
 사용 코드와 열수력 평가 모형, 코드 Validation and Verification 계획은 `TP-LIC-RPT-0011`에 있다. 시험은 노심 집합체를 지나는 소듐 거동과 Reactor Core System 안 열전달을 추가로 특성화하고 열수력 성능 모형 코드의 validation을 뒷받침하도록 계획되며, 집합체 안 온도 분포, 고압 입구에서 노심 집합체를 지나는 유량 분포, 압력 강하 손실 계수, 노심 집합체 hold-down force의 특성화를 포함한다. 고속 소듐 유동에 대한 orifice plate 수력 성능과 erosion 시험 결과에 기반한 속도 한계를 정하는 장시간 시험도 계획되어 있고, 시험 결과는 OL%%t:OL%% 단계에 반영된다.
 
-**HCF%%t:HCF%%(`TP-LIC-RPT-0011`).** `PSAR`가 평가 모형·코드를 넘긴 `TP-LIC-RPT-0011` 공개본에서 절·그림·표 제목에 HCF%%t:HCF%%가 나오는 곳은 방법 절 §3.2.1.4, 정상상태 노심 설계 절 §4.1.2.4와 Figure 4-1, 예시 결과 절 §8.1.16과 노심 집합체 종류별 표 Table 8-13–8-17(fuel, primary control, secondary control, reflector, shield)이다. 정제본에서 이들은 모두 제목만 남고 본문·그림·표 값은 비공개(`withheld`) 표시로 대체되어 있다. 따라서 HCF%%t:HCF%%의 구성 인자, 결합 방식, 값은 vault에 없다. 공개된 서술로 알 수 있는 것은 보고서 Section 4가 peak inner cladding temperature의 불확도를 HCF%%t:HCF%%로 처리한다는 개요(Table 1-1), §4.1.2.4 안의 Figure 4-1이 연료 중심선까지의 온도·불확도 분포를 layered hot channel factor method로 보인다는 제목, HCF%%t:HCF%% 표가 노심 집합체 종류마다 따로 있다는 점이다.
+**HCF%%t:HCF%%(`TP-LIC-RPT-0011`).** `PSAR`가 평가 모형·코드를 넘긴 `TP-LIC-RPT-0011` 공개본에서 절·그림·표 제목에 HCF%%t:HCF%%가 나오는 곳은 방법 절 §3.2.1.4, 정상상태 노심 설계 절 §4.1.2.4와 Figure 4-1, 예시 결과 절 §8.1.16과 노심 집합체 종류별 표 Table 8-13–8-17(fuel, primary control, secondary control, reflector, shield)이다. 정제본에서 이들은 모두 제목만 남고 본문·그림·표 값은 비공개(`withheld`) 표시로 대체되어 있다. 따라서 이 보고서가 쓰는 HCF%%t:HCF%%의 구성 인자, 결합 방식, 값은 보고서 공개본으로는 확인되지 않는다. 사전 신청 단계 회의 자료(`TP-LIC-LET-0080`) 공개본이 보이는 HCF%%t:HCF%% 분류와 결합식은 [[Natrium_Hot_Channel_Factors]]에 있다. 공개된 서술로 알 수 있는 것은 보고서 Section 4가 peak inner cladding temperature의 불확도를 HCF%%t:HCF%%로 처리한다는 개요(Table 1-1), §4.1.2.4 안의 Figure 4-1이 연료 중심선까지의 온도·불확도 분포를 layered hot channel factor method로 보인다는 제목, HCF%%t:HCF%% 표가 노심 집합체 종류마다 따로 있다는 점이다.
 
 보고서의 열수력 도구는 노심 평균 온도·유량 분포·압력 강하를 다루는 `One dimensional` 방법(§3.2.1), 집합체 안과 duct 온도를 다루는 subchannel 코드(§3.2.2), 집합체 안 열혼합 같은 현상의 세부를 다루는 `CFD`(§3.2.3)의 세 수준이다. §3.2.1의 단순화 계산 방법은 노심의 정상상태 온도·압력 분포를 구하는 데 쓰이고, §4.1.2의 열수력 평가는 정상 운전 조건의 냉각재 유량 분포, 냉각재 온도·압력, 집합체 구성품 온도를 계산해 모든 노심 집합체가 충분히 냉각됨을 설계에서 확인한다. 열수력 방법론의 validation은 개발 중이고 평가는 예비 단계이다(§5.2). 코드의 Verification and Validation%%t:V_AND_V%%은 실험 결과와 다른 코드 해석과의 비교로 하며, 결과의 불확도는 Natrium 운전 경험이 없으므로 산업 경험에 근거해 보수적 편향을 두어 정한다. V&V%%t:V_AND_V%%는 OL%%t:OL%% 신청서 제출 전에 끝낼 계획이고, 어느 신청(`application`)에 쓰는 불확도 값이든 그 신청과 관련된 안전해석 문서에 기록된다(§6).
 
@@ -113,3 +113,4 @@ terms_pending: []
 - [[PSAR_ch03]]
 - [[Natrium_SER_Core_Fuel_Design_Review]]
 - [[TP-LIC-RPT-0011]]
+- [[Natrium_Hot_Channel_Factors]]

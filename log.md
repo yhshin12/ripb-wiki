@@ -270,3 +270,8 @@
 ## [2026-10-30] fix | refclean 프로파일 보강과 인용 정정
 - tp_report·nei1804·generic 수정, rg1253·tp_slides 프로파일 추가, 패치 3건; 테스트 442 통과
 - RG_1.253 Table A-2·A-3 표 복원, RG_1247_PRA_Elements_Internal_Events Table 1 항목 표 추가, 인용 쪽 정정 2건, 소스 카드 sha256 갱신
+
+## [2026-10-30] ingest | NAT-3049, TP-LIC-LET-0080 peak cladding temperature 단위(수시 인제스트)
+- 새 노트 3(소스 카드 2, Natrium_Hot_Channel_Factors), 고친 노트 1(Natrium_Core_Thermal_Hydraulic_Design)
+- 검사: lint 0, 인용 검증 0, 용어 충돌 0; 서브에이전트 대조 36문장 불일치 0, 원문 사실 누락 7건 보강
+- 미정 용어 2(FOM, NASCENT); ingest partial

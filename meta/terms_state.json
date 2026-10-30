@@ -530,6 +530,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "FOM": {
+   "abbr": "FoM",
+   "english": "Figure of Merit",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "미정"
+  },
   "FSF": {
    "abbr": "FSF",
    "english": "Fundamental Safety Function",
@@ -577,6 +585,14 @@
    "korean": "",
    "later": "",
    "state": "용어 아님"
+  },
+  "HCF": {
+   "abbr": "HCF",
+   "english": "Hot Channel Factor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   },
   "HTGR": {
    "abbr": "HTGR",
@@ -868,6 +884,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "NASCENT": {
+   "abbr": "Nascent",
+   "english": "Natrium Simplified Coolant Energy Transport",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "미정"
+  },
   "NEI": {
    "abbr": "NEI",
    "english": "Nuclear Energy Institute",
@@ -971,6 +995,14 @@
    "korean": "",
    "later": "약어",
    "state": "영어 유지"
+  },
+  "PEAK_CLADDING_TEMPERATURE": {
+   "abbr": "PCT",
+   "english": "peak cladding temperature",
+   "forbidden": [],
+   "korean": "첨두피복재온도",
+   "later": "약어",
+   "state": "확정"
   },
   "PHA": {
    "abbr": "PHA",
@@ -1580,6 +1612,14 @@
    "korean": "불확도범위",
    "later": "한국어",
    "state": "확정"
+  },
+  "V_AND_V": {
+   "abbr": "V&V",
+   "english": "Verification and Validation",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
   }
  }
 }
