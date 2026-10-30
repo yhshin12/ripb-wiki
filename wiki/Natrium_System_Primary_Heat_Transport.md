@@ -7,7 +7,7 @@ sources:
 - PSAR_ch01
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -341,6 +341,7 @@ terms_pending: []
 - "Figure 7.1.3-4 Intermediate Heat Exchangers" [PSAR_ch07 Figure 7.1.3-4 p.81]
 
 ![[PSAR_ch07_Fig_7.1.3-4.png]]
+- "During reactor scrams, the PSPs are ramped down using a predefined ramp down curve to minimum flow. However, under certain conditions after a reactor scram, the PSPs can automatically trip resulting in coastdown." [PSAR_ch07 §7.1.3.2.3 p.68]
 
 ## 해설
 Primary Heat Transport System(`PHT`)은 `RES` 안의 Intermediate Heat Exchanger(`IHX`) 두 기, Primary Sodium Pump(`PSP`) 두 기, `RV` 안의 hot pool, cold pool, warm pool로 이루어진다. `PSP`·`IHX` flange와 `PSP` motor는 원자로 헤드 위에, `PSP` isolation circuit breaker는 Nuclear Island Control Building에, `PSP` adjustable speed drive는 Nuclear Island Electrical Building에 있다. 주 기능은 발전을 위해 노심 열을 `IHT`로 운반하는 것이고, safety-significant 기능은 원자로, 핵연료, 원자로 내부 구조물 손상을 막는 설계 한계 안으로 primary sodium 온도를 유지하는 것이다. 정상 운전, 기동, 정지, 재장전과 일부 LBE%%t:LBE%% 동안 두 `PSP`가 유량을 만들고, 일부 LBE%%t:LBE%% 동안에는 자연 순환이 노심 열을 `RV` 벽으로 옮겨 `GV`와 Reactor Air Cooling System(`RAC`)으로 보낸다. 자연 순환 중 유로는 바뀌지 않으며, `IHT`로의 열전달이 없으면 모든 붕괴열이 `RAC`로 간다. `PHT`는 SR%%t:SR%% 계통이고, `PSP`, `IHX`, `PSP` isolation circuit breaker는 SR%%t:SR%% Structures, Systems, and Components%%t:SSC%%이다.
@@ -362,6 +363,8 @@ principal design criteria%%t:PDC%% 3에 따라 `PSP`에는 누설 윤활유를 �
 **규정 대비 메모(C31(c), 신청자 문서 내부 불일치).** Chapter 1은 `PHT` 기능을 "safety function"으로, Chapter 7은 "safety-significant function"으로 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
 
 **규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주하고 `RXB` 안에서 `IHX` nozzle에 연결되는 배관을 `IHT` 배관으로 옮겨 적으므로, 경계를 `IHX` nozzle에 두는 Chapter 1 기술과 어긋나지 않는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없고, `SER`에는 이 경계에 대한 직접 판단이 없다(vault 기준).
+
+scram 뒤 `PSP`의 정상 경로는 정해진 곡선의 ramp down이고, 특정 조건에서는 자동 trip으로 coastdown이 된다. 어느 조건인지는 이 문장에 적혀 있지 않다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Enclosure]]

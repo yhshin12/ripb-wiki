@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch05
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -224,6 +224,7 @@ terms_pending: []
 DL4-DID1(`Intermediate Leak Guard Piping`)은 Intermediate Heat Transport System이 수행하고, DL5-PAM1(`Post Accident Monitoring`)은 Ex-Vessel Fuel Handling System, Water Fuel Pool Handling System, 두 전원 계통, `NI HVAC System`, Reactor Air Cooling System, Reactor Instrumentation System, Radiation Monitoring System, Reactor Protection System, Sodium Cover Gas System, Sodium Processing System, Nuclear Instrumentation System이 수행한다. PSF%%t:PSF%% 번호 앞부분의 뜻은 이 표에 적혀 있지 않다.
 
 ## 관련 문서
+- [[Natrium_Alternative_Shunt_Trip]]
 - [[Natrium_SSC_Safety_Classification]]
 - [[Natrium_SR_Functions_Retaining_Radionuclides]]
 - [[Natrium_Fundamental_Safety_Functions]]

@@ -7,7 +7,7 @@ sources:
 - NEI_18-04
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -101,7 +101,7 @@ DBE%%t:DBE%% 요약표에서 risk-significant로 표시된 것은 원자로 용�
 
 **NRC staff 평가.** NRC staff는 `PSAR` 표에서 risk-significant LBE%%t:LBE%%가 F-C target 곡선에 대해 여유를 유지한다고 확인했다. 또 staff는 Anticipated Operational Occurrence%%t:AOO%%·DBE%%t:DBE%% 평가 절에서 Pool Immersion Cell 세척 사건(RFH-ESWR)에 대해 결합된 cask와 cell을 적절한 방사성핵종 barrier%%t:BARRIER%%로 보지 않는다.
 
-**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다.
+**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다. 이 노트는 `1.31E-04`를 기준으로 쓴다. `Table 4.2-2`의 frequency margin이 이 값과 맞기 때문이다. Chapter 3의 `1.61E-04`는 오기로 보이며 차후 확인이 필요하다.
 
 **규정 대비 메모(C64, 규정 불일치).** `PSAR`은 Pool Immersion Cell 소듐-물 반응 사건을 `PIC`와 `BLTC`가 결합된 상태의 사건으로 적는다. `SER`은 세척 중에는 `BLTC`가 `PIC`와 결합되지 않을 것으로 보아, 결합 barrier인 DL3-RR5a는 낙하 사건에는 적절하나 세척 사건에는 적절하지 않다고 적었다. 그럼에도 `SER`은 `PIC` barrier Structures, Systems, and Components%%t:SSC%%가 DL3-RR5a를 통해 Safety-Related%%t:SR%%로 분류된 점, 추가 예방 조치가 빈도를 낮출 것으로 예상되는 점, 선원항(source term)%%t:SOURCE_TERM%% 해석의 가정이 보수적인 점을 근거로 construction permit%%t:CP%% 단계에는 충분하다고 판단했고, 그 가정은 operating license%%t:OL%% 단계에서 사건별 Mechanistic Source Term%%t:MST%%를 개발하며 조정될 수 있다고 적었다.
 

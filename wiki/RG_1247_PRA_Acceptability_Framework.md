@@ -1,9 +1,9 @@
 ---
 type: regulation
 aliases: []
-sources: [RG_1.247, RG_1.253]
-status: disputed
-verified: 2026-10-17
+sources: [RG_1.247, RG_1.253, SER_KU1_CP]
+status: checked
+verified: 2026-10-30
 term:
 tags: [rg-1247, pra]
 terms_pending: []
@@ -59,6 +59,7 @@ terms_pending: []
 - "justification that the PRA has been performed in such a way that its results are acceptable, commensurate with the level of maturity of the design." [RG_1.247 §C.4.2 p.65]
 - "A.3.3 Regarding PRA acceptability, the minimum scope of the CP PRA logic model should include the internal events hazard group for the reactor in the at-power POS." [RG_1.253 §A.3.3 p.33]
 - "A.3.7 The CP applicant may disposition certain hazards by crediting DBHLs in lieu of explicitly modeling these hazards in the PRA or accounting for them through a risk-informed supplementary evaluation." [RG_1.253 §A.3.7 p.33]
+- "Consistent with RG 1.253, the following PRA elements were not analyzed for the CP application and were therefore excluded from the KU1 PRA self-assessment: internal flood, internal fire, seismic, high wind, external flooding and other external hazards PRAs." [SER_KU1_CP §3.1.3 p.175]
 
 ## 해설
 **지침의 성격.** 이 지침은 시험 사용 지침으로, 설계별·발전소별 PRA가 비경수형원전%%t:NON_LWR%% 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 수용 가능한 한 가지 접근을 제시한다. 여기서 "application"은 최초 인허가 신청과 위험정보 활용 신청을 모두 포함한다. 이 지침은 10 CFR Part 50 신청에도 적용된다. 시험 사용 기간은 경험을 쌓기 위한 것이며, 기간이 끝난 뒤 수용 불가로 판단된 입장은 철회되거나 추가될 수 있다. 최종 입장 채택 전의 변경은 backfit으로 보지 않는다.
@@ -73,9 +74,9 @@ terms_pending: []
 - PRA 요소: 별도 노트에서 다룬다.
 - 발전소 표현과 형상 관리: PRA는 신청에 필요한 범위에서 as-designed·as-to-be-built·as-to-be-operated 또는 as-built·as-operated 발전소를 나타내야 한다. 설계·초기 인허가 단계에는 walkdown이 불가능하므로 이용 가능한 설계·운전 정보를 평가한다. PRA를 upgrade한 뒤에는 peer review를 한다.
 
-**규정 대비 메모(C61, 상위 dispute).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 "with staff exceptions"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이므로 예외 없는 승인이 실효 입장으로 읽힐 수 있으나, 두 서술의 관계를 정하는 문장은 vault에 없다.
+**규정 대비 메모(C61, 권위 문서 표기).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 "with staff exceptions"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이고 §B도 같으므로 예외 없는 승인을 기준으로 쓴다. §A와 C.2 도입의 예외 표현은 표준과 묶은 서술로 보이며, 두 서술의 관계를 정하는 문장이 vault에 없어 차후 확인이 필요하다.
 
-**규정 대비 메모(C66, 상위 dispute).** [[RG_1.247]] C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다루어야 한다고 적는다. [[RG_1.253]]은 CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%의 원자로 내부 사건 hazard group으로 두고, 일부 hazard를 PRA 모델링 대신 design-basis hazard level%%t:DBHL%% credit으로 처리할 수 있게 한다. [[RG_1.247]] C.4.2는 제출 문서에 PRA 결과가 설계 성숙도에 상응하여 수용 가능하다는 정당화를 담게 하지만, 이는 문서화 요건으로서 범위 요건(C.1.1)을 직접 완화하지 않으며 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 두 문서 어디에도 없다. 적용 단계의 차이로 읽힐 수 있으나 원문이 그렇게 명시하지 않는다.
+**규정 대비 메모(C66, 적용 단계 차이).** [[RG_1.247]] C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다루어야 한다고 적는다. [[RG_1.253]]은 CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%의 원자로 내부 사건 hazard group으로 두고, 일부 hazard를 PRA 모델링 대신 design-basis hazard level%%t:DBHL%% credit으로 처리할 수 있게 한다. [[RG_1.247]] C.4.2는 제출 문서에 PRA 결과가 설계 성숙도에 상응하여 수용 가능하다는 정당화를 담게 하지만, 이는 문서화 요건으로서 범위 요건(C.1.1)을 직접 완화하지 않으며 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 두 문서 어디에도 없다. `SER`은 [[RG_1.253]]에 따라 해당 PRA 요소를 CP%%t:CP%% 신청에서 분석하지 않았다고 적으므로, [[RG_1.247]] C.1.1은 일반 요건이고 [[RG_1.253]]은 CP%%t:CP%% 단계의 최소 범위라는 적용 단계 차이로 읽어 종결한다. 두 지침이 이를 직접 명시하지는 않아 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[RG_1.247]]

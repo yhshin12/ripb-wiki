@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch04, PSAR_ch03, NEI_18-04, SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term:
 tags: [natrium]
 terms_pending: []
@@ -76,7 +76,7 @@ margin을 구하는 범위에 대해 NEI 18-04는 세 LBE%%t:LBE%% 범주 각각
 
 `RFH-ESWR-2`의 95th percentile 빈도는 `Table 4.2-2`에서 `1.31E-04`, `PSAR` Chapter 3 `§3.8.5.4.3`의 불확실도 표에서 `1.61E-04`이며, 두 `PDF`의 글자열도 각각 이 값이다. `Table 4.2-2`의 frequency margin `7.53`은 F-C Target%%t:FC_TARGET%% 빈도 `9.87E-04`를 `1.31E-04`로 나눈 값과 맞는다. 같은 LBE%%t:LBE%%의 같은 양을 두 장이 다르게 적는다.
 
-**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다.
+**규정 대비 메모(C1, 신청자 문서 내부 불일치).** `PSAR` Chapter 3과 Chapter 4는 `RFH-ESWR-2`의 95th percentile 빈도를 각각 `1.61E-04`와 `1.31E-04`로 다르게 적는다. `SER`은 이 사건을 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 연장되는 BDBE%%t:BDBE%%로만 적어 어느 값도 배제하지 않으므로, 판정할 권위 조항이 없다. 이 노트는 `1.31E-04`를 기준으로 쓴다. `Table 4.2-2`의 frequency margin이 이 값과 맞기 때문이다. Chapter 3의 `1.61E-04`는 오기로 보이며 차후 확인이 필요하다.
 
 **규정 대비 메모(C3, 규정 불일치).** `PSAR` 두 표의 주석은 margin을 F-C Target%%t:FC_TARGET%% 값을 LBE%%t:LBE%% 값으로 나눈 비로 정의하고, NEI 18-04 §5.7.1은 margin을 사건의 평균값을 대응하는 F-C Target%%t:FC_TARGET%% 값에 대한 비로 표현한다고 적어 두 정의는 역수 관계이다. `SER`은 이 margin 평가가 risk-significant LBE%%t:LBE%%의 F-C Target%%t:FC_TARGET%% 곡선까지의 margin 유지를 보여 NEI 21-07 지침과 일관된다고 판단했으나, 그 판단 문장은 비의 방향을 다루지 않는다.
 

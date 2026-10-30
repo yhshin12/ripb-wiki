@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP, PSAR_ch05]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term:
 tags: [natrium, lbe, nrc-review]
 terms_pending: []
@@ -58,6 +58,13 @@ terms_pending: []
 - "DL3-RR2 — Cladding barrier" [PSAR_ch05 Table 5.2-3 p.13]
 - "AOO: DHP-L1PP-BL, DHP-LOOP-BL, DHS-ISTL-BL, OTH-LMAC-BL, RFH-LSPC-BL, RFH-LTCA-BL, RPD-CW1ACS-BL, RPD-SS-BL, SUD-IACA-BL, SUD-LOOP-BL" [PSAR_ch05 Table 5.2-3 p.13]
 - "BDBE: DHP-L1PP-1, DHP-L1PP-3, DHP-L1PP-4, DHP-LAPP-BL, DHP-LOOP-2, DHS-ISTL-3, DHS-ISTL-4, DHS-RNBK-2, IPI-IHEL-1, IPI-IHEL-2, OTH-LMAC-1, OTH-LMAC-2, OTH-LMAC-3, OTH-LMAC-4, RFH-FDET-BL, RFH-LSPC-1, RPD-CW1ACS-1" [PSAR_ch05 Table 5.2-3 p.13]
+- "The LOOP causes the PSPs and ISPs to trip and coast down, and appropriately no pump trip is credited in the analysis because they occur due to the loss of offsite power." [SER_KU1_CP §3.5.1.1 p.233]
+- "the analysis assumes an appropriate delay between the loss of offsite power and startup of the non-passive IAC, which will be further confirmed at the OL against the design and operational procedures." [SER_KU1_CP §3.5.1.1 p.233]
+- "A pump trip is not credited; the unaffected PSP avoids tripping by ramping down, which is an NST function performed automatically following a scram, as discussed briefly in PSAR section 7.1.3.1.2." [SER_KU1_CP §3.5.1.1 p.233]
+- "In these LBEs, which are intended to bound events that result in a runback demand, the runback is not completed prior to an assumed reactor scram, which shuts down the reactor." [SER_KU1_CP §3.6.1.2 p.244]
+- "The scram signal is not specified in the PSAR, which the staff finds to be reasonable because the scram is assumed to occur as part of the analysis." [SER_KU1_CP §3.6.1.2 p.244]
+- "The staff notes that the HVAC flow rate and filtration prior to the isolation reflects normal initial conditions, but no justification was provided in the PSAR for the timing of the isolation function." [SER_KU1_CP §3.6.1.3 p.246]
+- "The staff will review further justification for the isolation timing at the OL stage." [SER_KU1_CP §3.6.1.3 p.246]
 
 ## 해설
 **AOO%%t:AOO%%.** 용기 외 계통 방출이나 기타 유형의 과도는 AOO%%t:AOO%%로 식별되지 않았다. 국부 연료 결함은 빈도가 1E-03/year로 지정되어 AOO%%t:AOO%% 빈도 범위 아래에 있다. 방출이 있는 AOO%%t:AOO%%는 F-C Target%%t:FC_TARGET%% 곡선 안에 머문다.
@@ -77,7 +84,9 @@ staff는 DBE%%t:DBE%% 결과가 10 CFR 50.34를 충족하고 NEI 18-04와 일치
 
 **열제거 증감 AOO%%t:AOO%%와 사건별 기능 표(보강).** DHS-ISTL-BL은 전출력에서 intermediate sodium loop 하나의 열제거 상실로 시작해 high high cold pool temperature로 scram한다. SUD-IACA-BL은 저출력·정지 중에만 일어나며, staff는 audit에서 제한 저출력 경우가 원자로 트립 없이 약간 높은 온도와 약간 낮은 출력에서 안정됨을 확인했다. 두 사건은 평균 빈도가 1E-02 per year보다 커서 AOO%%t:AOO%%로 분류되고, 5th percentile 빈도도 1E-02보다 커서 DBA%%t:DBA%%가 필요 없다. `SER` Table 3.5-1과 Table 3.6-1은 각각 `PSAR`의 AOO%%t:AOO%%와 DBE%%t:DBE%%를 요약하며, 인용한 행은 사건마다 credit한 기능과 그 기능 `ID`를 적는다. Table 3.6-1은 RRS-ISPL-BL을 `RAB` barrier%%t:BARRIER%%가 방출을 가두는 사건으로 적는다(C75, `PSAR` 안의 이름 차이는 [[Natrium_DBE_List]] 참조).
 
-**규정 대비 메모(C76, 권위 문서 표기 차이(기록만)).** `SER` Table 3.5-1의 RFH-LSPC-BL 행과 Table 3.7-1의 RFH-LSPC-1 행은 방사성핵종 보유 barrier%%t:BARRIER%%를 Fuel cladding으로 두고 그 기능 `ID`를 DL3-RC2로 적는다. 그러나 `SER` Table 6.1-1에서 DL3-RC2는 Reactor Scram on Loss of Power이고, 다른 사건 행의 Fuel cladding 기능 `ID`는 DL3-RR2이다. `PSAR` Chapter 5 Table 5.2-3은 RFH-LSPC-BL을 AOO%%t:AOO%%로, RFH-LSPC-1을 Beyond Design Basis Event%%t:BDBE%%로 하여 두 사건을 DL3-RR2(Cladding barrier)의 연관 Licensing Basis Event%%t:LBE%%로 적는다. 따라서 두 행의 DL3-RC2는 DL3-RR2를 가리키는 표기 차이로 읽히며, 기능 `ID` 표기만의 차이이므로 기록만 한다.
+**규정 대비 메모(C76, 권위 문서 표기 차이(기록만)).** `SER` Table 3.5-1의 RFH-LSPC-BL 행과 Table 3.7-1의 RFH-LSPC-1 행은 방사성핵종 보유 barrier%%t:BARRIER%%를 Fuel cladding으로 두고 그 기능 `ID`를 DL3-RC2로 적는다. 그러나 `SER` Table 6.1-1에서 DL3-RC2는 Reactor Scram on Loss of Power이고, 다른 사건 행의 Fuel cladding 기능 `ID`는 DL3-RR2이다. `PSAR` Chapter 5 Table 5.2-3은 RFH-LSPC-BL을 AOO%%t:AOO%%로, RFH-LSPC-1을 Beyond Design Basis Event%%t:BDBE%%로 하여 두 사건을 DL3-RR2(Cladding barrier)의 연관 Licensing Basis Event%%t:LBE%%로 적는다. 따라서 두 행의 DL3-RC2는 DL3-RR2를 가리키는 표기 차이로 읽히며, 기능 `ID` 표기만의 차이이므로 기록만 한다. 이 노트는 다른 사건 행과 `PSAR` Table 5.2-3을 따라 DL3-RR2를 기준으로 쓴다. 두 표의 DL3-RC2는 오기로 보이며 차후 확인이 필요하다.
+
+**펌프 기능과 runback 가정(보강).** 소외 전원 상실 사건에서 펌프 정지는 사건 자체의 결과이므로 trip을 credit하지 않으며, 능동 `IAC` 기동 지연의 가정은 OL%%t:OL%%에서 다시 확인된다. OTH-LMAC-BL의 영향받지 않은 `PSP`는 Non-Safety-Related with No Special Treatment%%t:NST%% 기능인 ramp down으로 trip을 피한다. DHS-RNBK 사건은 runback 요구가 없는 사건이 아니라 runback이 끝나기 전에 scram을 가정하는 사건이며, scram 신호는 `PSAR`에 특정되어 있지 않다. Head Access Area 사건의 격리 시점 근거는 `PSAR`에 없어 staff가 OL%%t:OL%% 단계에서 검토한다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

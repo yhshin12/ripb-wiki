@@ -1,9 +1,9 @@
 ---
 type: regulation
 aliases: []
-sources: [RG_1.253, RG_1.247]
-status: disputed
-verified: 2026-10-17
+sources: [RG_1.253, RG_1.247, SER_KU1_CP]
+status: checked
+verified: 2026-10-30
 term:
 tags: [rg-1253, pra, construction-permit]
 terms_pending: []
@@ -51,6 +51,7 @@ terms_pending: []
 |---|---|---|
 | Minimally Acceptable PRA | C.1.3.2 (IE) Initiating Event Analysis; C.1.3.3 (ES) Event Sequence Analysis; C.1.3.4 (SC) Success Criteria Development; C.1.3.5 (SY) Systems Analysis; C.1.3.6 (HR) Human Reliability Analysis; C.1.3.7 (DA) Data Analysis C.1.3.11 (HS) Hazard Screening Analysis; C.1.3.15 (ESQ) Event Sequence Quantification; C.1.3.16 (MS) Mechanistic Source Term Analysis; C.1.3.17 (RC) Radiological Consequence Analysis; C.1.3.18 (RI) Risk Integration | [RG_1.253 Table A-1 p.34] |
 | Additional PRA Elements | C.1.3.1 (POS) Plant Operating State Analysis; C.1.3.8 (IF) Internal Flood PRA; C.1.3.9 (F) Internal Fire PRA; C.1.3.10 (S) Seismic PRA; C.1.3.12 (W) High Wind PRA; C.1.3.13 (XF) External Flooding PRA; C.1.3.14 (O) Other Hazards PRA | [RG_1.253 Table A-1 p.34] |
+- "Consistent with RG 1.253, the following PRA elements were not analyzed for the CP application and were therefore excluded from the KU1 PRA self-assessment: internal flood, internal fire, seismic, high wind, external flooding and other external hazards PRAs." [SER_KU1_CP §3.1.3 p.175]
 
 ## 해설
 **목적과 수용성의 정의.** 이 부록은 LMP%%t:LMP%% 방법론에 근거한 비경수형원전%%t:NON_LWR%% CP%%t:CP%% 신청의 PRA를 준비하는 수용 가능한 한 가지 접근을 제시한다. 신청서가 보여야 할 사항 가운데 하나는 설계가 진전되어 operating license%%t:OL%% 신청에 이르기까지 PRA를 유지·고도화하는 절차를 신청자가 갖추었다는 것이다. "PRA acceptability"는 `RG 1.247` Section C의 직원 입장 충족으로 정의된다. 다른 접근도 정당화가 있으면 staff가 사안별로 검토한다.
@@ -65,7 +66,7 @@ terms_pending: []
 
 **`RG 1.247` C.1.1과의 관계.** 이 부록은 PRA 수용성을 `RG 1.247` Section C의 regulatory position 충족으로 정의하면서도, CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%에서 원자로의 내부 사건 hazard group으로 두고 일부 hazard를 DBHL%%t:DBHL%% credit으로 처리할 수 있게 한다. `RG 1.247` C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다뤄야 한다고 적는다. 이 부록은 OL%%t:OL%% 신청을 뒷받침하는 PRA가 모든 방사성 원천, 모든 hazard, 모든 POS%%t:POS%%를 다루도록 형상 관리 계획을 설명하게 하므로, 두 지침의 차이는 CP%%t:CP%% 단계와 OL%%t:OL%% 단계의 범위 차이로 읽힌다. 다만 `RG 1.247`의 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 vault에 없다. 또 이 부록의 각주는 진행 중인 rulemaking이 Part 50 CP%%t:CP%%·OL%%t:OL%% 신청에 Part 52와 비슷한 PRA 관련 요건을 제안한다고 적는다.
 
-**규정 대비 메모(C66, 상위 dispute).** [[RG_1.247]] C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다루어야 한다고 적는다. [[RG_1.253]]은 CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%의 원자로 내부 사건 hazard group으로 두고, 일부 hazard를 PRA 모델링 대신 DBHL%%t:DBHL%% credit으로 처리할 수 있게 한다. [[RG_1.247]] C.4.2는 제출 문서에 PRA 결과가 설계 성숙도에 상응하여 수용 가능하다는 정당화를 담게 하지만, 이는 문서화 요건으로서 범위 요건(C.1.1)을 직접 완화하지 않으며 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 두 문서 어디에도 없다. 적용 단계의 차이로 읽힐 수 있으나 원문이 그렇게 명시하지 않는다.
+**규정 대비 메모(C66, 적용 단계 차이).** [[RG_1.247]] C.1.1은 인허가 활동에서 지진 hazard group PRA를 항상 개발해야 하고 모든 POS%%t:POS%%를 다루어야 한다고 적는다. [[RG_1.253]]은 CP%%t:CP%% PRA logic model의 최소 범위를 출력 운전 POS%%t:POS%%의 원자로 내부 사건 hazard group으로 두고, 일부 hazard를 PRA 모델링 대신 DBHL%%t:DBHL%% credit으로 처리할 수 있게 한다. [[RG_1.247]] C.4.2는 제출 문서에 PRA 결과가 설계 성숙도에 상응하여 수용 가능하다는 정당화를 담게 하지만, 이는 문서화 요건으로서 범위 요건(C.1.1)을 직접 완화하지 않으며 "must always"를 CP%%t:CP%% 단계에 맞추어 조정하는 문장은 두 문서 어디에도 없다. `SER`은 [[RG_1.253]]에 따라 해당 PRA 요소를 CP%%t:CP%% 신청에서 분석하지 않았다고 적으므로, [[RG_1.247]] C.1.1은 일반 요건이고 [[RG_1.253]]은 CP%%t:CP%% 단계의 최소 범위라는 적용 단계 차이로 읽어 종결한다. 두 지침이 이를 직접 명시하지는 않아 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[RG_1.253]]

@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch01
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -64,6 +64,7 @@ terms_pending: []
 - "During a loss of offsite power event, the SDGs are automatically started and provide backup power to NMV for plant-specific loads and the EMV for plant-specific loads for investment protection." [PSAR_ch01 §1.1.4.3.14 p.34]
 - "SDGs also supply power to NI and EI battery chargers, and heat tracing to avoid freezing." [PSAR_ch01 §1.1.4.3.14 p.34]
 - "The SDGs are part of the ESP." [PSAR_ch01 §1.1.4.3.14 p.34]
+- "which transport heat to the Energy Island (EI) hot salt storage tank for thermal energy storage." [PSAR_ch01 §1.1.3 p.19]
 
 ## 해설
 열은 원자로에서 1차 나트륨과 중간 나트륨 루프를 거쳐 `NSS`로, 다시 `ESS`와 `TSS` hot tank로 간다. `TSS` hot tank의 염은 증기발생기를 지나 cold tank로 돌아오고, 증기발생기 설비는 뜨거운 염을 economizer(급수 예열기), evaporator, superheater, reheater로 통과시켜 물을 증기로 바꾼다. `NSS`의 격리밸브가 Reactor Auxiliary Building 밖에서 `NSS`와 `ESS`의 경계를 이룬다. 원문은 뒤따르는 절들에서 서술하는 Energy Island 계통과 기능이 모두 NST%%t:NST%%라고 적고, Nuclear Island 경계조건이 Energy Island와의 접속이 Kemmerer Unit 1 안전해석에 영향을 주지 않도록 의도적으로 설계되었다고 적는다. 용융염 저장탱크 덕분에 증기 생산과 열에너지 저장의 운전은 원자로 출력 운전과 독립이다.
@@ -73,6 +74,8 @@ terms_pending: []
 Main Power는 세 하위 계통이다. 230 kilovolt 계통은 Kemmerer Unit 1과 송전선 사이에서 전력을 주고받고, 정상 주전원 공급 계통은 발전기 전력을 230 kV 스위치야드로 보내면서 unit auxiliary transformer로 소내 보조부하를 공급하며, 대체 주전원 공급 계통은 정상 계통이 정지했을 때 reserve auxiliary transformer로 스위치야드에서 보조부하에 공급한다. 소내 보조 전력은 isolated phase bus의 분기에서 unit auxiliary transformer를 거쳐 6.9 kV 배전계통으로 간다. 기동·정지 때는 발전기 차단기를 연 채 main step-up transformer를 통해 역송전으로 보조부하에 공급한다.
 
 Energy Island 보조 전력계통은 정상 운전 조건에서 기동·운전·정지에 필요한 Energy Island 기기에 전력을 준다. loss of offsite power 때에는 Standby Diesel Generator가 자동 기동해 투자 보호 목적으로 `NMV`와 `EMV`의 특정 부하에, 그리고 Nuclear Island와 Energy Island의 축전지 충전기와 동결 방지 heat tracing에 전력을 준다. 이 발전기는 `ESP`에 속한다.
+
+**규정 대비 메모(C56, 규정 불일치).** `PSAR` §1.1.3은 열이 `NSS`에서 Energy Island hot salt storage tank로 간다고 적고, §1.1.4.2는 그 사이에 `ESS`를 둔다. 이 노트는 계통 설명인 §1.1.4.2를 기준으로 쓴다.
 
 ## 관련 문서
 - [[Natrium_NI_EI_Interface]]

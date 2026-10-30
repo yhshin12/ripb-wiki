@@ -5,7 +5,7 @@ sources:
 - PSAR_ch07
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -159,9 +159,9 @@ Fuel Handling Building 상부구조는 가장 높은 지점이 지상 약 76 fee
 
 하중은 `ASCE 7-16`에 따라 크레인, 바람, 눈, 지진 하중을 만들고, 지진 분류는 SCN1이다. 상부구조가 SR%%t:SR%% 하부구조 위에 있으므로 risk targeted maximum considered earthquake로 구조물 내 응답 스펙트럼을 쓰고, seismic risk category `IV`와 importance factor 1.5를 적용하며, 건물 구조로 보아 `ASCE 7-16` Chapter 12의 요건을 쓴다. 해석은 `AISC 360-16` Chapter C의 direct analysis method를 따르고, 크레인 바퀴 하중은 원격 운전 크레인을 고려해 25 percent의 충격 계수로 늘린다.
 
-**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다.
+**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다. 이 노트는 `SER`도 옮긴 하부구조 간 40 feet를 기준으로 쓴다. 28 feet는 건물 기준점이 달라서 생긴 값일 수 있으나 원문으로 확인되지 않으므로 차후 확인이 필요하다.
 
-**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.2.1.3은 `FHB` 철근콘크리트 구조물과 `SFP`의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 2"로 수정한 `ACI` 349-13 한계에 따른다고 적고, `NCB` 절(§7.8.4.1.3)은 같은 문장에 "Revision 3"을 적는다. `SER`은 `FHB`와 `NCB`의 평가 모두에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼다. 따라서 `FHB` 절의 Revision 2는 `SER` 기준과 다르고 `NCB` 절의 Revision 3은 같다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다.
+**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.2.1.3은 `FHB` 철근콘크리트 구조물과 `SFP`의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 2"로 수정한 `ACI` 349-13 한계에 따른다고 적고, `NCB` 절(§7.8.4.1.3)은 같은 문장에 "Revision 3"을 적는다. `SER`은 `FHB`와 `NCB`의 평가 모두에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼다. 따라서 `FHB` 절의 Revision 2는 `SER` 기준과 다르고 `NCB` 절의 Revision 3은 같다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다. 이 노트는 `SER`을 따라 Revision 3을 기준으로 쓴다. `FHB` 절의 Revision 2는 오기로 보이며 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_System_Water_Pool_Fuel_Handling]]

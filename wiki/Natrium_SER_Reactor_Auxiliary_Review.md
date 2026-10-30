@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term:
 tags: [natrium, systems, decay-heat-removal, nrc-review]
 terms_pending: []
@@ -60,6 +60,8 @@ terms_pending: []
 - "the staff determined it is reasonable to leave for later consideration the development of a detailed design and analysis methodology for alloy 718 under ASME BPVC III-5 for its use in the final CRD driveline assembly design." [SER_KU1_CP §7.2.5.1.1 p.492]
 - "The staff will review further details on the applicant’s approach to the design and construction of the CRD driveline assembly using alloy 718 consistent with ASME BPVC III-5 at the OL stage." [SER_KU1_CP §7.2.5.1.1 p.492]
 - "and there are no other credible sources of significant amounts of hydrogen." [SER_KU1_CP §7.2.4.1.8 p.485]
+- "From there, air flows through a single common flow path into the riser annulus, which then splits into four separate paths after exiting the vicinity of the reactor." [SER_KU1_CP §7.2.1.1.6 p.458]
+- "The staff is aware of experience at Argonne National Laboratory Natural Convection Shutdown Heat Removal Test Facility (NSTF), which showed that wind conditions can significantly impact natural convection flow in natural convection heat removal systems, resulting in flow reversal and substantially reduced performance (Lisowski, Darius D., et al.)." [SER_KU1_CP §7.2.1.1.6 p.458]
 
 ## 해설
 staff는 다섯 계통 각각의 `PSAR` 정보가 construction permit%%t:CP%% 발급에 충분하다고 결론지었다. 계통별 요점은 다음과 같다.
@@ -69,6 +71,8 @@ staff는 다섯 계통 각각의 `PSAR` 정보가 construction permit%%t:CP%% �
 - **소듐 커버가스%%t:COVER_GAS%%(`SCG`):** 1차 `SCG`에는 SR%%t:SR%%, NSRST%%t:NSRST%%, Non-Safety-Related with No Special Treatment%%t:NST%% 기기가, 중간 `SCG`에는 NSRST%%t:NSRST%%와 NST%%t:NST%% 기기가 있다. `PSAR`에 따르면 원자로 용기에서 첫 격리 밸브까지는 SR%%t:SR%%이며 1차 냉각재 경계의 일부이다. staff는 `SCG`에도 specified acceptable system radionuclide release design limit%%t:SARRDL%%이 있을 것으로 보며, `SCG` 격리 기능(DL3-RR10)을 SR%%t:SR%%로 두는 것이 적절하다고 판단했다. 다만 `PSAR` 표 5.2-3 주석에 따르면 이 격리 기능은 아직 설계와 해석에 통합되지 않았고, staff는 그 통합을 OL%%t:OL%% 검토에서 확인한다. `PSAR`는 방사성핵종 보유 기능을 "seven functions"라 적는다. 사업자는 audit 논의에서 1차 과압 사건의 원인이 예비 설계 단계에서 정의되지 않았다고 밝혔다. 누설률 정당화는 OL%%t:OL%% 단계에서 검토한다.
 - **소듐 정화(`SPS`):** 냉각 트랩으로 불순물을, 1차 `SPS`에서는 세슘 트랩으로 세슘을 제거한다. 산소 목표는 2 ppmw 미만이다. 연속 소듐 방출을 막는 SR%%t:SR%% 수단은 `SPS` 펌프 트립과 사이펀 차단이며, 1차 `SPS` 누설을 멈추는 SR%%t:SR%% 수단은 격리 밸브가 아니라 펌프 정지(DL3-HR11)이다. 이 트립의 설정값은 아직 정해지지 않았으며, staff는 OL%%t:OL%% 검토에서 설정값이 자연순환 형성을 뒷받침하는지 평가한다. 소듐은 연료나 피복과 반응해 수소를 만들지 않고 다른 유의한 수소 원천도 없으므로 기능적 격납 공간의 수소 축적은 credible하지 않다.
 - **제어봉 구동(`CRD`):** 구동기 열세 개가 `HAA` 안 원자로 헤드 위에 있다. 중력 scram과 모터 삽입 기능을 분리하고 1차·2차 제어봉 설계를 달리해 공통원인 고장에 대응하므로 `PDC 26`과 정합한다고 보았다. 다만 지진이나 덕트 변형에 따른 제어봉-덕트 고착은 잠재적 공통원인 기제이다. DBA%%t:DBA%%는 중력 scram에만 의존한다. 다만 여러 Beyond Design Basis Event%%t:BDBE%%는 모터 구동 scram에 의존하며, 그 가운데 소외전원 상실과 모터 삽입 scram 사건 하나만 연료 성능 수용 기준을 넘고 원천항 해석에서 연료의 two-thirds가 크리프 파열로 파손된다. staff는 이 해석이 예상 사건 경위를 bounding하는 보수적 가정에 근거함을 audit로 확인했다. 합금 718은 `ASME BPVC III-5`에서 볼트 용도로만 승인되어 있으며, staff는 구동축 설계 방법론 개발을 나중으로 미루는 것이 합리적이라고 보고 OL%%t:OL%% 단계에서 검토한다.
+
+**`RAC` 유로(보강).** 입구와 출구 stack은 각각 네 개이지만 그 사이의 공기는 단일 공통 유로를 지난다. staff는 바람이 자연대류 열제거 계통의 유동을 역전시킨 시험 경험을 인지하고 있다고 적고, 불리한 바람 조건 해석을 감사했다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

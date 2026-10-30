@@ -2,8 +2,8 @@
 type: regulation
 aliases: []
 sources: [RG_1.247]
-status: disputed
-verified: 2026-10-17
+status: checked
+verified: 2026-10-30
 term:
 tags: [rg-1247, pra, peer-review]
 terms_pending: []
@@ -62,7 +62,7 @@ terms_pending: []
 
 **문서화(C.4).** PRA 문서는 staff가 PRA와 결과의 수용성을 판단할 수 있을 만큼 충분해야 하며, archival 문서와 submittal 문서로 이루어진다. archival 문서에는 PRA 수용성 판단 과정의 기술로서 national consensus 표준 사용 여부와 그 요건 충족 여부를 밝힌다. submittal 문서는 응용별 지침이 없을 때에는 일반 characteristics와 attributes를 갖추어야 하며, supporting requirement를 충족하지 못하거나 요구보다 낮은 capability category를 충족하는 부분에 대해 그 적절성을 정당화해야 한다.
 
-**규정 대비 메모(C61, 상위 dispute).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 "with staff exceptions"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이므로 예외 없는 승인이 실효 입장으로 읽힐 수 있으나, 두 서술의 관계를 정하는 문장은 vault에 없다.
+**규정 대비 메모(C61, 권위 문서 표기).** [[RG_1.247]] C.2 도입은 산업계 peer review 지침을 staff 예외와 함께 승인한다고 적고, §A는 표준과 peer review 지침을 한 문장에서 "with staff exceptions"로 묶으며, §B와 C.2.2는 NEI 20-09 Revision 1을 예외 없이 승인한다고 적는다. §A 문장의 "with staff exceptions"가 표준에만 걸리는지 peer review 지침까지 걸리는지는 문장 구조로는 분명하지 않다. C.2.2가 NEI 20-09를 실제로 승인하는 조항이고 §B도 같으므로 예외 없는 승인을 기준으로 쓴다. §A와 C.2 도입의 예외 표현은 표준과 묶은 서술로 보이며, 두 서술의 관계를 정하는 문장이 vault에 없어 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[RG_1.247]]

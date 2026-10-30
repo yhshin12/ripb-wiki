@@ -8,7 +8,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch01
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -140,7 +140,7 @@ principal design criteria%%t:PDC%% 2와 4에 따라 하부구조는 Section 6.4.
 
 **규정 대비 메모(C9, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 `RXB` 하부구조를 SR%%t:SR%%, 상부구조를 NST%%t:NST%%로 분류하고 Chapter 7은 하부구조가 NSRST%%t:NSRST%% 기능 DL4-RR1과 그 하위 기능 DL4-RR1a를 지원한다고 적는 반면, Chapter 5 표는 Ex-RES Functional Containment Barrier의 SSC%%t:SSC%%로 건물 단위의 Reactor Building을 적는다. `SER`은 상부구조를 NST%%t:NST%%로 분류한 신청자 판단을 기록하고, DL4-RR1을 `HAA` barrier, Guard Vessel%%t:GV%%, `HAA` `HVAC` isolation이 이루는 기능적 격납 경계로, DL4-RR1a를 그 `HAA` 부분으로 기술하여 Chapter 6·7의 구분과 같다. 따라서 차이는 Chapter 5만 SSC%%t:SSC%%를 건물 단위로 적은 신청자 문서 안의 표기 단위 차이이며, `SER` 기준과 충돌하지는 않는다.
 
-**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다.
+**규정 대비 메모(C26(a), 신청자 문서 내부 불일치).** Chapter 7은 `FHB` 하부구조가 `RXB` 하부구조에서 약 40 feet 떨어져 있다고 적는 한편 `FHB` 건물이 `RXB`에서 약 28 feet 떨어져 있다고 적는다. 두 기준점의 관계는 vault에 없고, `SER`은 하부구조 간 40 ft만 옮겨 적는다. 이 노트는 `SER`도 옮긴 하부구조 간 40 feet를 기준으로 쓴다. 28 feet는 건물 기준점이 달라서 생긴 값일 수 있으나 원문으로 확인되지 않으므로 차후 확인이 필요하다.
 
 **규정 대비 메모(C28, 신청자 문서 내부 불일치).** `PSAR` Chapter 5는 DL4-RR1, DL4-RR1a와 별도로 DL4-RR1b "Guard Vessel Leak Prevention Function"을 적는다. Chapter 7의 `RES` 기능 표는 DL4-RR1 한 행의 이름에 `HAA` barrier와 GV%%t:GV%% 누설 방지 기능을 함께 담고, `RXB` 기능 표는 DL4-RR1(Ex-RES Functional Containment Barrier)과 DL4-RR1a(`HAA` barrier)를 따로 쓴다. `SER`은 `RES` 절에서 DL4-RR1을 Chapter 7 `RES` 표의 이름 그대로 옮겨 적고, `RXB` 절에서는 DL4-RR1을 기능적 격납 경계로, DL4-RR1a를 그 `HAA` 부분으로 기술한다. 하위 `ID` 체계를 정하는 권위 조항은 vault에 없고, `SER`에는 두 표기 가운데 어느 쪽이 맞는지에 대한 판단이 없다(vault 기준).
 

@@ -5,7 +5,7 @@ sources:
 - PSAR_ch07
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -153,7 +153,7 @@ principal design criteria%%t:PDC%% 2에 따라 하부구조는 Section 6.1.1의 
 
 modal response spectrum analysis는 고유진동수 100 hertz 미만의 모든 모드에 대해 수행하고 직교 수평 방향마다 90 percent를 넘는 질량 참여를 얻으며, 모드 응답은 Complete Quadratic Combination Method로 조합한다. 토네이도 비산물 해석은 `RG 1.76`에 따라 지상 30 feet 아래의 모든 높이에서 자동차 비산물 충격을 고려하므로 지상 21 feet의 지붕 골조도 평가하며, 에너지 균형법으로 탄소성 응답의 상한을 추정한다.
 
-**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.4.1.3은 `NCB` 철근콘크리트 구조물·기기의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 3"으로 수정한 `ACI` 349-13 한계에 따른다고 적고, `SER`은 `NCB` 평가에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼으므로 `NCB` 절은 `SER` 기준과 같다. 같은 Chapter 7의 `FHB` 절(§7.8.2.1.3)은 같은 문장에 "Revision 2"를 적어, `FHB` 평가에도 RG%%t:RG%% 1.142 Rev. 3을 쓴 `SER` 기준과 다르다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다.
+**규정 대비 메모(C38, 규정 불일치).** `PSAR` Chapter 7 §7.8.4.1.3은 `NCB` 철근콘크리트 구조물·기기의 허용 기준을 regulatory guide%%t:RG%% 1.142 "Revision 3"으로 수정한 `ACI` 349-13 한계에 따른다고 적고, `SER`은 `NCB` 평가에 RG%%t:RG%% 1.142 Rev. 3을 지침으로 썼으므로 `NCB` 절은 `SER` 기준과 같다. 같은 Chapter 7의 `FHB` 절(§7.8.2.1.3)은 같은 문장에 "Revision 2"를 적어, `FHB` 평가에도 RG%%t:RG%% 1.142 Rev. 3을 쓴 `SER` 기준과 다르다. `SER`은 `FHB` 절의 개정판 차이를 지적하지 않는다. 이 노트는 `SER`을 따라 Revision 3을 기준으로 쓴다. `FHB` 절의 Revision 2는 오기로 보이며 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_System_Control_Room_Indications]]

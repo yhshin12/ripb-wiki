@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term:
 tags: [natrium, exemptions, regulation, nrc-review]
 terms_pending: []
@@ -31,6 +31,8 @@ terms_pending: []
 - "This exemption request superseded an exemption USO had requested in enclosure 4 of the CP application, section 4, “Financial qualifications.”" [SER_KU1_CP §14.1 p.724]
 - "The staff has determined that the exemption does not present an undue risk to the public health and safety and is consistent with the common defense and security. The staff further concludes that special circumstances are present in accordance with 10 CFR 50.12(a)(2)(ii). Based on this discussion, staff finds that this exemption request should be granted." [SER_KU1_CP §14.1.2 p.728]
 - "The requested exemption would allow an alternate scope of SSCs included in the monitoring program required by 10 CFR 50" [SER_KU1_CP §B.4.2 p.741]
+- "10 CFR 50.10, “License required; limited work authorization,” paragraphs (a)(1)(i), (iii), and (iv) define construction activities in terms of safety-related SSCs, SSCs whose failure could prevent safety-related SSCs from fulfilling their safety-related function, and SSCs whose failure could cause a reactor scram or actuation of a safety-related SSC." [SER_KU1_CP §APPENDIX B p.744]
+- "This exemption would allow USO to conduct certain activities defined in 10 CFR 50.10(a)(1) for certain SSCs identified as non-SR (i.e., NSRST or NST) following the NEI 18-04 process prior to complying with this condition." [SER_KU1_CP §APPENDIX B p.749]
 
 ## 해설
 면제별 결과는 다음과 같다.
@@ -46,6 +48,8 @@ terms_pending: []
 ECCS%%t:ECCS%% 면제에서 staff는 `PSAR` 해석이 10 CFR 50.46 statements of consideration이 말하는 매우 일어나기 어려운 사고를 포함한다고 결론지었다.
 
 SR%%t:SR%% 정의 면제는 사업자가 NEI 18-04를 쓰기 때문에 staff가 필요성을 식별했다. 대체 정의는 NEI 18-04 Revision 1에 따라 safety-related로 분류된 SSC%%t:SSC%%를 Safety-Related SSC%%t:SSC%%로 본다. staff는 NEI 18-04 과정이 10 CFR 50.2 정의의 핵심 요소, 특히 사고 결과를 적절히 고려한다고 판단했다. 10 CFR 50.49, 50.65, 73.54, 73.77도 10 CFR 50.2 정의의 SR%%t:SR%% SSC%%t:SSC%%를 참조하지만 CP%%t:CP%% 신청자에게 적용되지 않는다. Part 73에는 대체 문안이 필요하지 않다.
+
+**10 CFR 50.10 관련 서술(보강).** 부록 B는 construction 활동의 정의를 적고, 품질보증 조건과 관련해 NEI 18-04 절차로 non-SR%%t:SR%%로 식별된 SSC%%t:SSC%%의 일부 활동을 허용하는 면제를 다룬다. Energy Island 설비 선행 시공에 관한 별도 면제 결정문은 vault에 없다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

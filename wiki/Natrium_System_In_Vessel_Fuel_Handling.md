@@ -7,7 +7,7 @@ sources:
 - PSAR_ch06
 - SER_KU1_CP
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -182,7 +182,7 @@ principal design criteria%%t:PDC%% 2 적용에서 `FHI`는 `Section 7.8.1.1`의 
 
 `FHI` 기능 표의 safety-significant 기능은 SR%%t:SR%% 기능 `DL3-RR1f`(`FHI Seal`) 하나이며, 원자로 헤드와의 `FHI` seal이 primary coolant boundary barrier%%t:BARRIER%% 기능의 일부를 수행한다. `IVTM`과 `FTL`의 functional containment 경계 구성품은 SR%%t:SR%%이고, 정적·동적 seal과 구조 housing으로 경계를 유지하며, 모든 seal은 primary·secondary의 중복 배치이다. 두 seal 사이 공간에는 `SCG`의 가압 argon barrier gas가 공급되어 원자로 커버가스(cover gas)%%t:COVER_GAS%%보다 약간 높은 압력으로 유지되므로 seal이 파손되어도 방사성 핵종이 새지 않게 하고, barrier gas는 `FHC`와 `IVDC`가 감시한다. `SR seismic risk significant`(`SRS`) `FHI` 구성품은 Safe Shutdown Earthquake%%t:SSE%%의 지진 하중을 SR%%t:SR%% 기능 상실 없이 견디도록 검증되며, `Table 7.3.3-1`에서 `IVTM`·`FTL` functional containment 구성품과 `FTLSP`는 SR%%t:SR%%·`SCS1`, `IVTM`·`FTL` 임시 하중 경로 구성품과 Rotatable Plug Jack(chocks)은 Non-Safety-Related with Special Treatment%%t:NSRST%%·`SCN3`이다. `FTLSP`는 core assembly transfer tube와 fueling floor valve가 설치되지 않은 상태에서 `FTL`을 설치·제거하는 동안 `FTL` bore에 삽입되어 functional containment 경계의 일부가 되며, 중복 static seal 한 쌍 사이에 argon barrier gas를 공급한다. `RG 1.100`은 부분 부합, `RG 1.244`와 `RG 1.87`은 완전 부합이다.
 
-`PSAR` Chapter 5 표는 `FHI`를 `DL3-RR1`(`Primary Coolant Boundary including RES Barrier`)의 SSC%%t:SSC%% 가운데 하나로 적고, 인용한 Chapter 5 표 부분에는 `DL3-RR1f`라는 식별자가 없다. 이 차이는 `meta/contradictions.md` C18에 모았다. Chapter 6은 `SCS1`을 SR%%t:SR%% seismic risk significant SSC%%t:SSC%%에 부여한다고 적는다.
+`PSAR` Chapter 5 표는 `FHI`를 `DL3-RR1`(`Primary Coolant Boundary including RES Barrier`)의 SSC%%t:SSC%% 가운데 하나로 적고, 인용한 Chapter 5 표 부분에는 `DL3-RR1f`라는 식별자가 없다. Chapter 6은 `SCS1`을 SR%%t:SR%% seismic risk significant SSC%%t:SSC%%에 부여한다고 적는다.
 
 **규정 대비 메모(C18, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `FHI` 기능을 하위 `ID` `DL3-RR1f`(`FHI Seal`)로, Chapter 5 표는 `FHI`를 `DL3-RR1`의 SSC%%t:SSC%%로 적는다. `SER`은 두 표기를 모두 쓴다. PDC%%t:PDC%% 16 절(§7.3.3.1.6)에서는 `FHI` 구성품이 `RES` 격리 기능 `DL3-RR1`에 기여한다는 이유로 PDC%%t:PDC%% 16과 일관된다고 판단하고, 안전 기능 절(§7.3.3.1.9)에서는 Chapter 7을 따라 `DL3-RR1f`를 `FHI`의 유일한 SR%%t:SR%% 기능으로 옮겨 같은 이유로 이 기능과 일관된다고 판단한다. 두 판단의 근거가 같으므로 `SER`은 `DL3-RR1f`를 `DL3-RR1`의 `FHI` 부분으로 다루는 것으로 읽히며, 판정할 권위 조항은 없다.
 

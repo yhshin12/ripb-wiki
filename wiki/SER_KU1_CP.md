@@ -8,7 +8,7 @@ file: references/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
 pdf: references/raw/SER_KU1_CP_Safety Evaluation of the Kemmerer Power Station Unit
   1 Construction Permit Application.pdf
 sha256_pdf: e28f1a00966cef387a91437f4bba8bd05a544a9722e404cb486fac1cc5a2f4b2
-sha256_md: 413db8f47ddc15d85a0fd372495930899bcf1ed98d96ffa95945f9c49e486882
+sha256_md: 557065925ad74c79223a7918f1906033e163e57f09dd429152cf49ef6d7658dc
 pdf_pages: 768
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
@@ -59,8 +59,11 @@ units:
 <!-- sync:end -->
 
 ## 알려진 모순
-- C59: §3.7.1.1의 `AST` 표기와 alternative shunt trip(DL4-RC6)의 불일치
-- C60: §7.2.3.1.15.1의 "seven functions"와 여섯 항목 목록(`meta/contradictions.md`)
+- C59: §3.7.1.1 사건 서술의 `AST` 전개와 alternative shunt trip(DL4-RC6)의 불일치. 표와 사건 목록의 alternative shunt trip을 기준으로 쓴다. 사건 서술의 전개는 오기로 보이며 차후 확인이 필요하다.
+- C60: §7.2.3.1.15.1의 "seven functions"와 여섯 항목 목록. 열거된 여섯 항목을 기준으로 쓴다. 숫자 seven은 오기로 보이며 차후 확인이 필요하다.
+- C68: §2.2.2의 소유 관계 서술이 §1.7·§8.2.1과 반대이다. §1.7·§8.2.1을 기준으로 쓴다. §2.2.2는 오기로 보이며 차후 확인이 필요하다.
+- C69: §3.7.1이 같은 분류 기준을 mean과 50th percentile로 함께 적는다. 신청자가 mean을 쓴다는 문장을 기준으로 쓴다. 50th percentile은 오기로 보이며 차후 확인이 필요하다.
+- C73: Table 1.8-3에 `10 CFR 50.34(f)(2)(xvii)` 행이 두 번 나온다. 둘째 행의 내용은 In-plant Radiation Monitoring이다. 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_SER_MST_Methodology_Review]]

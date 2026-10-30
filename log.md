@@ -255,3 +255,14 @@
 - 새 노트 1(소스 카드), 고친 노트 4(Natrium_Core_Thermal_Hydraulic_Design, Natrium_Nuclear_Design, Natrium_Topical_Technical_Reports, Terminology); HCF 절·그림·표는 공개본에서 제목만 남음
 - 검사: lint 0, 인용 검증 0, 용어 충돌 0, 서브에이전트 대조 원문 사실 25/25 일치(요약·해설 5건 수정), 부재 진술 4건 검토
 - 미정 용어 0(HCF, V&V 영어 유지); C79(3) 보강; ingest partial
+
+## [2026-10-30] ingest | Natrium_Alternative_Shunt_Trip 와 보호계통 노트 보강
+- 새 노트 1(Natrium_Alternative_Shunt_Trip), 공개 노트 12개 보강, 용어 8개 영어 유지(HCDA 약어 포함)
+- C80, C81 판정 기록; C81은 OL까지 disputed
+- 검사: lint 0, 인용 검증 0, 용어 충돌 0; 작성 뒤 대조 1회
+
+## [2026-10-30] docs | contradictions 정리: 미결 항목만 유지
+- 종결 항목은 노트 메모와 소스 카드로 옮기고 contradictions.md에는 미결 4건(C14-1, C14-6, C67, C81)만 둠; disputed 노트 8개에서 4개로
+- 단순 수치·번호 차이는 기준값과 차후 확인 표시로 종결(판정 원칙 6)
+- C14-4 삭제; C59, C61, C66, C68 종결
+- contradictions_memos_2026-10-17.md 삭제, 남은 항목 근거는 contradictions.md 상세 절로 이동

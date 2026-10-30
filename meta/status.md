@@ -33,15 +33,17 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 | PSAR_ch07 | complete | §7.1–§7.8 전체 | 없음 |
 | PSAR_ch11 | in_progress | §11.1, §11.2, §11.3, §11.5, §11.6 | §11.4(withheld만 남음) |
 | SER_KU1_CP | complete | 1, 3–7, 11, 13장, 부록 A–B, 잔여 R1·R2(노트 30개) | 없음(2, 8–10, 12, 14장은 대응 PSAR 장이 vault에 없어 제외; 나머지 제외 절은 `meta/coverage_exclusions.json`) |
-| RG_1.253 | complete | 전체 | 없음(Table A-2·A-3은 정제본 표가 깨져 주석 문단만 인용) |
+| RG_1.253 | complete | 전체 | 없음(Table A-2·A-3은 주석 문단만 인용; 2026-10-20 정제본에서 표 복원, 행 단위 미인제스트) |
 | RG_1.247 | complete | 전체(본문 C.1–C.4, 부록 A의 qualification·주요 clarification, 부록 B) | 없음(부록 A "No objection" 레코드는 개별 노트로 옮기지 않음) |
 | TP-LIC-RPT-0011 | partial | hot channel factor 단위(§1.1 Table 1-1, §3.2–3.2.1.4, §4.1.2–4.1.2.4, Figure 4-1, §5.2, §6, §8.1.16) | 수시 인제스트(설계 §4.3): 질의가 생길 때 단위로 |
 
 ## 다음 작업
 0. 2026-10-18 `wiki-lint` 의미 점검(SER 잔여 R1·R2, 계통 묶음 재점검)과 조치 1–8 적용을 마쳤다(`meta/lint/2026-10-18.md`). A6(`Risk_Significant_SSC` 단일 기록처화)도 적용했다.
 1. (완료) 2026-10-19 `wiki-audit` seed 20261019: 노트 오류율 10 %(1/10, 목표 충족), 원문 사실 항목 오류 0/892. 2026-09-16 배치 46노트 요약·해설 점검에서 같은 유형 오류 0건, 과잉 일반화 4건(Natrium_PDC_Development 요약의 "가장 흔한 변경", Natrium_SR_Functions_Retaining_Radionuclides 요약의 "DL3-RR1부터 DL3-RR10까지"(RR9 없음), Natrium_DBE_List·Natrium_BDBE_List 요약의 "원자로 쪽" 범위)은 2026-10-19 사용자 승인으로 고쳤다.
-2. 정제 파이프라인 보완 후보: RG_1.247 Table 1 내용 누락, 부록 A 굵은 글씨·취소선 소실, C.1.3.8 쪽 표지 위치; RG_1.253 Table A-2·A-3 표 구조 깨짐; SER §7.3.1.1.9.3 제목이 본문 줄로 남음; NEI 18-04 `[^pN]` 각주 정의가 뒤 쪽 표지 아래에 놓임(`verify_quotes.py`는 2026-10-19부터 각주를 쪽 N에 귀속); ACRS 글머리표 분할 2곳(p.5, p.10). (2026-10-20 완료: 여러 쪽 표 뒤 본문의 쪽 표지 누락을 `emit.py`에서 고치고 원문 사실 인용 156건과 meta·해설 3건의 쪽을 정정했다.)
-   - 관찰: ±0쪽 엄격 대조에서 원문 사실 인용 178건이 인용 쪽에서 문장을 찾지 못한다(±1쪽 안에서는 찾음, 2026-10-20 수정 전후 같은 수). 쪽 경계를 넘는 문단으로 추정되나 확인하지 않았다. 점검 여부를 정한다.
+2. 정제 파이프라인 보완: 2026-10-20에 여러 쪽 표 뒤 쪽 표지, NEI 18-04 각주 정의 위치, SER §7.3.1.1.9.3 제목, ACRS 글머리표 분할 2곳, RG_1.247 Table 1(상자 안 목록), RG_1.253 Table A-2·A-3(신문식 4단 → 시트별 요건 표)을 고쳤다. 남은 후보:
+   - RG_1.247 부록 A의 굵은 글씨(staff 추가 문구, 84쪽 313 span)·취소선(삭제 문구) 소실. 복원하려면 정제본 형식 계약(CLAUDE.md §3 강조 허용 범위)을 넓혀야 하므로 사용자 결정이 필요하다.
+   - RG_1.247 Figure 1(p.11 이미지): `figures.py`의 `FIG_TXT`가 `Figure 1.` 형식 캡션을 인식하지 않아 그림이 렌더링되지 않는다.
+   - 쪽 경계를 넘는 문단: 문단이 시작 쪽 표지 아래에 통째로 놓여, 다음 쪽 문장도 시작 쪽으로 인용된다(예: RG_1.247 §C.1.3.8 p.24-25, 2026-10-20 인용 1건 정정). ±0쪽 엄격 대조에서 원문 사실 인용 175건이 인용 쪽에서 문장을 찾지 못한다(±1쪽 안에서는 찾음). 처리 방식(문단 안 쪽 표지 또는 인용 정정)을 정한다.
 3. 남은 미정 용어 후보 질문.
 4. `coverage_sections.py`는 절 단위로만 센다. 같은 절 안의 staff 판단 문장이 빠져도 잡지 못한다(2026-10-18 점검에서 약 80문장 확인). 판단 문장 단위 검사가 필요한지 결정한다.
 
@@ -52,11 +54,12 @@ Phase 3 인제스트 완료(커밋 `67437bc`), 모순 57건 판정 완료(커밋
 - 약어가 있는 영어 유지 용어의 이후 표기는 약어.
 - 긴 장은 추출을 읽기 전용 서브에이전트에 맡기고(`extract/*.md`, 인용 ±1쪽 재검증), 노트는 생성 스크립트로 쓰고, 작성 뒤 읽기 전용 서브에이전트로 해설을 원문과 대조한다. 2026-09-16 배치에서 오류 10, 수정 권고 53건을 잡았다.
 - 해설 규칙: 수치는 원문 사실 절에 있어야 한다(V5, 백틱 안의 수도 검사됨, `Chapter`/`Section`/`§` 뒤 번호는 제외). 인용 조각 3단어 이상. `1차`처럼 숫자가 든 한국어도 V5에 걸린다.
+- 단순 수치·번호 차이(2026-10-30 사용자 결정): 더 적합한 값을 기준으로 쓰고 노트에 오기로 보이며 차후 확인이 필요하다고 적어 종결한다.
 - 모순 판정 원칙(2026-10-17 사용자 결정): 권위 문서(NRC 문서, RG 1.233이 승인한 NEI 18-04)끼리의 실질 상충만 disputed. PSAR과 권위 문서의 차이, PSAR 내부 차이는 해설의 "규정 대비 메모"로 해소. 권위 문서끼리 표기 차이는 기록만. RG 명확화가 NEI 문장보다 우선하고, SER의 해석은 해소·SER의 문언 밖 확장은 dispute. 새 모순은 `meta/contradictions.md`에 모은다.
 
 ## 미해결
-- 모순 C1–C73 판정(2026-10-17), C74–C79 추가(2026-10-18, 모두 메모 또는 기록만): 상위 dispute 7건(C14-1, C14-6, C59, C61, C66, C67, C68), disputed 노트 7개. 상세 메모 `meta/contradictions_memos_2026-10-17.md`.
-- 누락 주제(2026-10-16 의미 점검): alternative shunt trip(DL4-RC6a–d), other quantified events(OQE), Pin Removal Cell, Pool Immersion Cell과 ESWR 사건군, SHX(허가 조건 대상), RIM 프로그램, D-RAP, 항공기 충돌 평가, complementary design criteria, Prevention Function의 분류 처리, 피동 NSRST 저하 성능의 DBA credit, PRA 형상 관리·self-assessment·peer review, 사용후연료 PRA, DG-1404와 RG 1.253의 관계, 10 CFR 50.34(f)의 비경수형원전 적용성, SER의 "seventeen AOOs and BDBEs" 목록. vault에 원문이 없는 문서: NEI 21-07, NEI 20-09, ASME/ANS RA-S-1.4-2021 본문, NUREG-1855.
+- 모순: 2026-10-30 사용자 결정으로 `meta/contradictions.md`에는 미결 항목만 둔다. 종결 항목은 노트의 규정 대비 메모와 소스 카드에 있고, 남은 항목의 근거는 같은 파일의 상세 절에 있다. 2026-10-17 재분류 메모는 삭제했으며 git 이력에서 볼 수 있다. 남은 항목 4건: C14-1, C14-6, C67, C81. disputed 노트 4개.
+- 누락 주제(2026-10-16 의미 점검): other quantified events(OQE), Pin Removal Cell, Pool Immersion Cell과 ESWR 사건군, SHX(허가 조건 대상), RIM 프로그램, D-RAP, 항공기 충돌 평가, complementary design criteria, Prevention Function의 분류 처리, 피동 NSRST 저하 성능의 DBA credit, PRA 형상 관리·self-assessment·peer review, 사용후연료 PRA, DG-1404와 RG 1.253의 관계, 10 CFR 50.34(f)의 비경수형원전 적용성, SER의 "seventeen AOOs and BDBEs" 목록. vault에 원문이 없는 문서: NEI 21-07, NEI 20-09, ASME/ANS RA-S-1.4-2021 본문, NUREG-1855.
 - 누락 주제(2026-10-18 의미 점검, 원문이 vault에 없음): PSAR ch2 부지 주제(기상탑, 5 miles 안 산업시설, 교통 hazard, 화산 평가), compressive assembly R&D(PSAR ch13), 10 CFR 50.155의 OL 이연, NAT-4770, ANSI/ANS-3.2와 RG 1.33의 관계, "Cold Shutdown"·"Hot Standby"와 Mode 3·4의 대응.
 - 누락 주제(2026-10-26 TP-LIC-RPT-0011 인제스트): HCF 산정 방법·값(§3.2.1.4, §4.1.2.4, §8.1.16, Table 8-13–8-17)은 공개본에서 비공개; SER이 인용한 ML25276A289의 판(NRC 서버 403); 보고서 참고문헌 [17]–[44] 비공개. 정제 한계: 콜론 형식 표 캡션("Table 1-1: …")이 표에 붙지 않음(공용 `CAPTION_RE` 변경은 SER·PSAR ch7에 영향).
 - 첫 `wiki-audit`(2026-10-14, seed 20261014): 노트 오류율 20 % (2/10), 원문 사실 항목 오류 0/417. 목표 노트 오류율 ≤ 10 %. 오류 2건은 해설의 원문 사실 근거 누락과 문서 구조 배타 진술; `wiki-ingest` 대조 지시를 보완함. `meta/metrics.md`.

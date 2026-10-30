@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term:
 tags: [natrium, did, risk, nrc-review]
 terms_pending: []
@@ -45,6 +45,8 @@ terms_pending: []
 - "The defense layer evaluation discussed in PSAR section 4.2.1.3 and provided in NAT-4770 was used to identify preventative and mitigative functions available for each LBE." [SER_KU1_CP §4.2.1.1.4 p.330]
 - "The applicant stated that prevention-mitigation balance was generally confirmed by ensuring DL1 features are available to prevent events, and that functions are identified for each fundamental safety function for each risk-significant LBE." [SER_KU1_CP §4.2.1.1.4 p.330]
 - "The staff determined that this is an acceptable approach to preventative-mitigative balance because it ensures that features are available to prevent initiating events from occurring in the first place, and also ensures functions are available across multiple DLs to prevent LBEs from progressing to more severe accidents." [SER_KU1_CP §4.2.1.1.4 p.330]
+- "The applicant performed a detailed evaluation of the layers of defense for all LBEs (not just risk-significant ones) in NAT-4770." [SER_KU1_CP §4.2.1.1.2 p.329]
+- "Since different events in an LBE family credit different combinations of SSCs to prevent or mitigate the transient, the evaluation considered layers of defense across the LBE family." [SER_KU1_CP §4.2.1.1.2 p.329]
 
 ## 해설
 **누적 위험도.** 판정 기준은 다음 세 가지이다.
@@ -59,6 +61,8 @@ staff는 `PSAR` 지표가 NEI 18-04와 일치한다고 보았다. 다만 Licensi
 **IDP%%t:IDP%%.** staff는 panel이 빈도, 결과, 설계 특성을 고려했고 빈도는 낮지만 결과가 클 수 있는 사건을 적절히 LBE%%t:LBE%% 집합에 남겼다고 확인했다. 또 `OL` 신청 전에 사업자가 설계의 안전해석·위험도 평가·심층방어%%t:DID%% 적정성 승인을 위한 panel을 소집하면 30일 이내에 NRC에 알리도록 하는 허가 조건을 CP%%t:CP%%에 넣을 것을 권고했다.
 
 **예방·완화 균형(보강).** 사업자는 NAT-4770의 defense layer 평가로 risk-significant LBE%%t:LBE%%와 DBA%%t:DBA%%마다 예방·완화 Defense Line%%t:DL%% 기능을 식별했고, DL1 feature가 있는지와 risk-significant LBE%%t:LBE%%마다 Fundamental Safety Function%%t:FSF%%별 기능이 식별되는지로 균형을 대체로 확인했다. staff는 이 접근이 기시사건을 처음부터 막는 feature와 여러 DL%%t:DL%%에 걸친 기능을 모두 보장하므로 수용 가능하다고 판단했다.
+
+**방어계층 평가 범위(보강).** 신청자의 방어계층 평가는 risk-significant 사건에 한정되지 않고 모든 LBE%%t:LBE%%를 대상으로 하며, LBE%%t:LBE%% family 단위로 살핀다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

@@ -5,6 +5,7 @@
 ## 원문 (source)
 
 - [[ACRS_ML25293A458]] — NRC 직원이 2025년 10월 ACRS 소위원회에서 발표한 Kemmerer Unit 1 construction permit 신청의 controlling heat generation 검토 슬라이드 22쪽이다.
+- [[NAT-3049]] — TerraPower의 `NAT-3049` Rev.
 - [[NEI_18-04]] — NEI 18-04는 비경수로의 Licensing Basis Event 선정(3장), Structures, Systems, and Components 안전 분류와 special treatment(4장), 심층방어(Defense-in-Depth) 적절성 평가(5장)를 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시하는 지침이며, 6장은 용어집이다.
 - [[PSAR_ch01]] — Kemmerer Unit 1 `PSAR` 1장은 발전소와 부지를 개관한다.
 - [[PSAR_ch03]] — Kemmerer Unit 1 `PSAR` 3장은 Licensing Basis Event 선정과 평가 방법을 제시하고, Anticipated Operational Occurrence·Design Basis Event·Beyond Design Basis Event·Design Basis Accident 목록과 각 사건의 해석 결과를 담는다.
@@ -18,6 +19,7 @@
 - [[RG_1.247]] — `RG 1.247`(2022년 3월, 시험 사용)은 비경수형원전 PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다.
 - [[RG_1.253]] — `RG 1.253`(2024년 3월, Revision 0)은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여 비경수형원전 인허가 신청서 `SAR` 앞 여덟 장의 작성 방법으로 승인하고, NRC가 제안한 12장 `SAR` 구조를 제시한다.
 - [[SER_KU1_CP]] — `SER_KU1_CP`는 NRC staff가 Kemmerer Power Station Unit 1의 construction permit 신청(`PSAR`)을 검토한 안전성 평가 보고서이다.
+- [[TP-LIC-LET-0080]] — TerraPower의 `TP-LIC-LET-0080`은 사전 신청 단계 `Core Thermal Hydraulic Methods` 회의의 발표 자료를 NRC에 낸 송부 서한이며, 서한, 비공개 요청 affidavit, 공개 회의 자료, 비공개 회의 자료의 공개본으로 이루어진다.
 - [[TP-LIC-RPT-0011]] — TerraPower의 `TP-LIC-RPT-0011` Revision 0은 Kemmerer Unit 1 건설허가 신청의 노심 핵설계·열수력·노심 기계 해석 방법을 정리한 기술 보고서로, `PSAR` Chapter 3 §3.12–3.13이 평가 모형과 코드를 이 보고서에 넘긴다.
 
 ## 규제 (regulation)
@@ -42,11 +44,11 @@
 - [[RG_1233_SSC_Classification_Staff_Position]] — 직원 입장 C.2는 NEI 18-04가 비경수형원전(non-light-water reactor)의 Structures, Systems, and Components를 Safety-Related, Non-Safety-Related with Special Treatment, special treatment가 없는 비안전 등급으로 분류하는 수용 가능한 방법이라고 본다.
 - [[RG_1247_Appendix_A_Staff_Positions]] — `RG 1.247` 부록 A는 `ASME/ANS RA-S-1.4-2021`의 요건마다 "no objection", "no objection with clarification", "no objection subject to the following qualification" 가운데 하나로 staff 입장을 정하고, 표준의 nonmandatory appendix는 승인하지 않는다.
 - [[RG_1247_Hazard_List]] — `RG 1.247` 부록 B는 PRA가 넓은 범위의 hazard를 체계적으로 조사해 중요한 위험 기여 요인이 빠지지 않게 하도록, 고려할 hazard 목록(Table B-1)과 hazard의 원인·조건 목록(Table B-2)을 제시한다.
-- [[RG_1247_PRA_Acceptability_Framework]] — 시험 사용 지침인 `RG 1.247`은 신청을 뒷받침하는 비경수형원전(non-light-water reactor) PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 한 가지 수용 가능한 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다(원문 일부는 peer review 지침을 예외와 함께 승인한다고 적는다). (disputed)
+- [[RG_1247_PRA_Acceptability_Framework]] — 시험 사용 지침인 `RG 1.247`은 신청을 뒷받침하는 비경수형원전(non-light-water reactor) PRA가 규제 의사결정에 쓰일 만큼 결과에 확신을 주는지 판단하는 한 가지 수용 가능한 접근을 제시하고, `ASME/ANS RA-S-1.4-2021`을 예외와 함께, `NEI 20-09` Revision 1을 예외 없이 승인한다(원문 일부는 peer review 지침을 예외와 함께 승인한다고 적는다).
 - [[RG_1247_PRA_Elements_Hazards]] — `RG 1.247` C.1.3.8–C.1.3.14는 내부 침수, 내부 화재, 지진, hazard 스크리닝, 강풍, 외부 침수, other hazards PRA 요소의 목적과 특성을 정한다.
 - [[RG_1247_PRA_Elements_Internal_Events]] — `RG 1.247` C.1.3은 모든 방사성 원천, hazard, Plant Operating State, 분석 수준을 다루는 비경수형원전(non-light-water reactor) PRA에 필요한 요소를 정하고, 하나라도 빠진 PRA는 완전하지 않다고 본다.
-- [[RG_1247_Standards_Peer_Review_Documentation]] — 직원 입장 C.2–C.4는 NRC가 승인한 national consensus PRA 표준을 쓰고 승인된 절차로 peer review를 받는 것을 PRA 수용성을 보이는 한 가지 방법으로 두고, capability category, peer review 팀 구성과 판정, newly developed method의 처리, 신청서의 PRA 정보와 문서화 요건을 정한다. (disputed)
-- [[RG_1253_CP_PRA_Acceptability]] — `RG 1.253` 부록 A는 Licensing Modernization Project 방법론에 근거한 비경수형원전(non-light-water reactor) construction permit 신청에서 PRA(`CP PRA`)에 대해, 수용 가능한 한 가지 접근으로서 범위, 요소, 상세도, 발전소 표현과 형상 관리, 문서화, 수용성 입증 방법을 제시한다. (disputed)
+- [[RG_1247_Standards_Peer_Review_Documentation]] — 직원 입장 C.2–C.4는 NRC가 승인한 national consensus PRA 표준을 쓰고 승인된 절차로 peer review를 받는 것을 PRA 수용성을 보이는 한 가지 방법으로 두고, capability category, peer review 팀 구성과 판정, newly developed method의 처리, 신청서의 PRA 정보와 문서화 요건을 정한다.
+- [[RG_1253_CP_PRA_Acceptability]] — `RG 1.253` 부록 A는 Licensing Modernization Project 방법론에 근거한 비경수형원전(non-light-water reactor) construction permit 신청에서 PRA(`CP PRA`)에 대해, 수용 가능한 한 가지 접근으로서 범위, 요소, 상세도, 발전소 표현과 형상 관리, 문서화, 수용성 입증 방법을 제시한다.
 - [[RG_1253_Integrated_Evaluation_And_SSC_Positions]] — 직원 입장 C.5–C.9는 NEI 21-07의 `SAR` 4–8장 지침을 통합 평가, 안전 기능과 설계 기준, Safety-Related과 Non-Safety-Related with Special Treatment Structures, Systems, and Components, 발전소 프로그램의 작성 방법으로 승인한다.
 - [[RG_1253_Methodology_And_LBE_Positions]] — 직원 입장 C.2–C.4는 NEI 21-07의 `SAR` 1–3장 지침을 승인하면서 명확화와 추가 사항을 붙인다.
 - [[RG_1253_SAR_Content_Endorsement]] — `RG 1.253`은 NEI 21-07 Revision 1을 명확화와 추가 사항을 붙여, 비경수형원전(non-light-water reactor) 인허가 신청서 `SAR` 일부를 작성하는 수용 가능한 방법으로 승인한다.
@@ -104,6 +106,7 @@
 - [[Natrium_AOO_List]] — Kemmerer Unit 1의 Anticipated Operational Occurrence 요약표는 열한 사건을 적으며 모두 risk-significant가 아니다.
 - [[Natrium_ASME_Component_Loads_And_Limits]] — `PSAR` §6.4.3은 `ASME` Code `Section III`, Division 5 기기·지지물·노심지지구조물의 구조 건전성을 정해진 하중과 하중조합에 대한 service stress limit 만족으로 보증한다고 적는다.
 - [[Natrium_ASME_Design_Transients]] — `PSAR` §6.4.3.1.1은 `ASME` Code `Section III`, Division 5 기기 설계에 쓰는 과도를 Licensing Basis Event에서 도출하고, Level A–D Service Loading과 Testing Loading의 정의를 옮긴다.
+- [[Natrium_Alternative_Shunt_Trip]] — alternative shunt trip은 정상 scram이 실패한 Beyond Design Basis Event에서 reactor trip breaker를 shunt trip feature로 열어 중력 scram을 시작하는 Non-Safety-Related with Special Treatment 기능이다. (disputed)
 - [[Natrium_BDBE_List]] — Kemmerer Unit 1의 Beyond Design Basis Event 요약표는 마흔일곱 사건을 적는다.
 - [[Natrium_Building_Fuel_Handling]] — Fuel Handling Building(`FHB`)은 핵연료 반입, 재장전, 저장, 방사성폐기물 계통과 Spent Fuel Pool(`SFP`)을 수용한다.
 - [[Natrium_Building_NI_Control]] — Nuclear Island Control Building(`NCB`)의 지표 아래 하부구조는 `RPS`, Primary Sodium Pump·Intermediate Sodium Pump breaker, Non-Safety-Related with Special Treatment 전기 장비, Remote Shutdown Complex를 수용하는 Safety-Related 구조물(`SCS1`)이다.
@@ -129,6 +132,7 @@
 - [[Natrium_HFE_Safety_Function_Review]] — `PSAR` Chapter 11 §11.2.3–§11.2.4는 `HFE`를 safety function 검토, human reliability analysis, Task Analysis와 연결하고 important human action(`HA`)의 처리를 기술 요소로 둔다.
 - [[Natrium_Hazard_Interaction_Requirements]] — `PSAR` Chapter 6은 Non-Safety-Related with Special Treatment와 Non-Safety-Related with No Special Treatment Structures, Systems, and Components의 고장이 design-basis hazard level 조건에서 Safety-Related SSC의 기능 수행을 해치지 않도록 세 기준 가운데 적어도 하나를 적용한다.
 - [[Natrium_Hazard_Screening]] — Kemmerer Unit 1의 재해 선별은 `RG 1.247`의 재해 목록을 포함한 적용 재해 전체를 대상으로 `ASME/ANS RA-S-1.4-2021`의 일반 선별 기준을 쓰고 공존 재해와 cliff edge effects를 검토한다.
+- [[Natrium_Hot_Channel_Factors]] — TerraPower의 사전 신청 단계 회의 자료는 Natrium의 첨두피복재온도(peak cladding temperature) 해석에서 불확도를 Hot Channel Factor로 반영하며, HCF를 direct와 statistical로 나누고 다섯 불확도 범주로 분류한다고 적는다.
 - [[Natrium_IC_Systems]] — `PSAR` 1장의 계통 개요는 Natrium Instrumentation and Control 계통이 Licensing Basis Event와 Design Basis Accident의 예방과 결과 완화로 원자로, 발전소, 인원, 공중을 불안전한 운전으로부터 보호하고 안전 정지를 보장한다고 적는다.
 - [[Natrium_Integrated_Risk_Results]] — `PSAR` Chapter 4는 `PSAR`용 PRA 범위의 발전소 통합 위험을 NEI 18-04의 세 cumulative risk target과 비교하고, 현재 PRA 결과의 불확실도 없는 평균값으로 site boundary 선량 초과 빈도 `3.12E-03 per plant-year`, `early fatality` 위험 `0 per plant-year`, `latent cancer` 위험 `3.86E-09 per plant-year`를 보고한다.
 - [[Natrium_Kemmerer_Site]] — `PSAR` §1.2는 Kemmerer Unit 1 부지가 Wyoming주 Lincoln County의 Elkol 7.5-minute quadrangle Zone 12T 안에 있다고 적는다.
@@ -163,7 +167,7 @@
 - [[Natrium_Reliability_Capability_Targets]] — `PSAR` Chapter 6은 Structures, Systems, and Components가 PRA Safety Function을 수행한다는 보증을 PRA에서 평가한 reliability와 capability의 달성·감시로 얻는다고 적고, reliability target을 SSC가 지정된 기능을 완수할 확률에 대한 성능 목표로, capability target을 적절한 margin을 두고 PSF를 수행하는 능력에 초점을 둔 성능 목표로 정의하며, 정량 reliability target은 Design Reliability Assurance Program이 산출하고 정량 capability target은 해석 모델에 기반한다.
 - [[Natrium_Risk_Significant_LBEs]] — 이 보고서는 부지 경계 선량이 `30-day` 동안 2.5 mrem을 넘고 그 선량의 빈도가 Frequency-Consequence Target의 one percent 안에 있는 Licensing Basis Event를 risk-significant로, 선량이 10 CFR 50.34 기준을 넘는 Beyond Design Basis Event를 high-consequence로 분류한다.
 - [[Natrium_SER_AOO_DBE_Review]] — NRC staff는 Kemmerer Unit 1의 Anticipated Operational Occurrence와 Design Basis Event 해석이 construction permit 발급을 뒷받침한다고 판단했다.
-- [[Natrium_SER_BDBE_DBA_Review]] — NRC staff는 Kemmerer Unit 1의 Beyond Design Basis Event와 Design Basis Accident 결과가 10 CFR 50.34를 충족한다고 판단했고, DBA는 보수적 결정론 해석으로 적절히 식별·해석되었다고 보았다. (disputed)
+- [[Natrium_SER_BDBE_DBA_Review]] — NRC staff는 Kemmerer Unit 1의 Beyond Design Basis Event와 Design Basis Accident 결과가 10 CFR 50.34를 충족한다고 판단했고, DBA는 보수적 결정론 해석으로 적절히 식별·해석되었다고 보았다.
 - [[Natrium_SER_Conduct_Of_Operations_Review]] — NRC staff는 조직, 인간공학, 비상계획, 기술지침서, 직무적합성과 보안에 관한 `PSAR` 정보가 construction permit 발급에 관련된 규제 요건을 충족한다고 결론지었고(조직은 "relevant portions"), 항공기 충돌 평가는 10 CFR 50.150(a)·(b)를 충족한다고 보았다.
 - [[Natrium_SER_Core_Fuel_Design_Review]] — NRC staff는 연료 인증 `TR` NAT-2806-A의 L&C가 construction permit 단계에서 적용되지 않거나 적절히 다루어졌다고 보고 참조 포함을 수용했다.
 - [[Natrium_SER_DBHL_Review]] — NRC staff는 Kemmerer Unit 1이 정한 design-basis hazard level 집합이 `RG 1.233`과 일치한다고 판단했다.

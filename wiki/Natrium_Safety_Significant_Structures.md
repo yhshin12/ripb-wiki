@@ -7,7 +7,7 @@ sources:
 - PSAR_ch01
 - PSAR_ch07
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -254,7 +254,7 @@ NSRST%%t:NSRST%% 상부구조는 강구조이며 `AISC 325-17`의 Load and Resis
 
 재료는 `ACI 301-16`에 따른 구조용 콘크리트로 28일 압축강도 5,000 pounds per square inch, 철근은 `ASTM A615-09b` 또는 `ASTM A706-09b`의 Grade 60, Fuel Handling Building의 SR%%t:SR%% Spent Fuel Pool 라이너는 `ASTM A240-16a`를 쓴다. 품질관리는 Quality Assurance Program Description을 따르고, 특수 시공기법은 쓰지 않는다.
 
-**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다.
+**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다. 이 노트는 `SER`과 §6.4.2.4.1을 따라 `ACI` 301-16을 기준으로 쓴다. Table 6.4-3의 SR%%t:SR%% 열 표시는 오기로 보이며 차후 확인이 필요하다.
 
 **규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 7은 `FHB` 하부구조에 대해서는 `SFP` liner와 leak chase system에 관련된 구조용 강재 부분을 `AISC` N690-18로 설계한다고 적어 하부구조 강재의 한 예를 든다. 그러나 `RXB` 하부구조에 대한 Chapter 1·7의 "steel"이 무엇을 가리키는지, 곧 Chapter 6이 적는 stay-in-place formwork나 steel embedment인지는 vault에 없다.
 

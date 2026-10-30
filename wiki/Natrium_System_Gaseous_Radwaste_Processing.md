@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch07, PSAR_ch05, SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -134,7 +134,7 @@ principal design criteria%%t:PDC%% 적용에서 `RWG` 설비는 Fuel Handling Bu
 
 `RWG`는 `FHB` 지하의 `once-through` 상온 `charcoal adsorber delay system`이다. 모든 원자로 운전 모드에서 운전할 수 있지만 Design Basis Event%%t:DBE%%나 Design Basis Accident%%t:DBA%%의 결과를 완화할 필요는 없고, 정상 운전과 AOO%%t:AOO%% 중 운전하도록 설계된다. `RG 1.110`은 `Full Conformance`로 적혀 있으나 cost-benefit analysis는 operating license%%t:OL%% 단계에서 수행될 예정이고(`will`), `RG 1.143` 부합은 부분 부합이며 `Section 5.1`과 `Section 6.1.3`의 방법이 `Regulatory Positions C.5 and C.6`을 대체한다. 자동 방출 종료에 쓰는 밸브는 fail closed로 설계되고, `RWG` 제어는 중복성, `Class 1E`, harsh environment qualification이 필요 없지만 지진 검증된다.
 
-`PSAR` Chapter 5는 `DL2-RR4`를 `Gaseous Radwaste Barrier`로 적어 Chapter 7의 기능 이름(`Retain Radionuclide - RWG Radionuclide Boundary`)과 다르다(`meta/contradictions.md` C19). Chapter 5의 PDC%%t:PDC%% 60 구현 요약은 `SCG`가 원자로 용기와 guard vessel에서 `RWG`로 가는 배기 기체를 제어·여과한다고 적고, Chapter 7은 primary Sodium Cover Gas System과 exhaust distribution cabinet의 기체를 처리한다고 적는다.
+`PSAR` Chapter 5는 `DL2-RR4`를 `Gaseous Radwaste Barrier`로 적어 Chapter 7의 기능 이름(`Retain Radionuclide - RWG Radionuclide Boundary`)과 다르다(C19). Chapter 5의 PDC%%t:PDC%% 60 구현 요약은 `SCG`가 원자로 용기와 guard vessel에서 `RWG`로 가는 배기 기체를 제어·여과한다고 적고, Chapter 7은 primary Sodium Cover Gas System과 exhaust distribution cabinet의 기체를 처리한다고 적는다.
 
 **규정 대비 메모(C19, 신청자 문서 내부 불일치).** `DL2-RR4`의 이름은 Chapter 7에서 `Retain Radionuclide - RWG Radionuclide Boundary`, Chapter 5에서 `Gaseous Radwaste Barrier`이다. `SER`은 `PSAR` §7.4.1.2를 옮기면서 Chapter 7의 이름(`Retain Radionuclide – RWG Radionuclide Boundary`)을 쓴다. 분류(NSRST%%t:NSRST%%)와 계통은 두 장에서 같고, 판정할 권위 조항은 없으므로 이 노트는 `SER`과 같이 Chapter 7의 이름을 쓴다.
 

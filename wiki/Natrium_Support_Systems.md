@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch01
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -155,6 +155,7 @@ terms_pending: []
 | 항목 | 출처 |
 |---|---|
 | Peak acceleration | [PSAR_ch01 §1.1.4.3.16 p.35] |
+- "The DCS is the primary subsystem of the NIC" [PSAR_ch01 §1.1.4.3.5 p.31]
 
 ## 해설
 핵연료 취급은 세 계통으로 나뉜다. `FHI`는 `IVTM`, `IVDC`, `RPD`, `RPJ`, `FTL`, `FTLSP`의 여섯 주요 기기로 이루어져 재장전 중 노심 집합체의 위치를 조작하고, 기기가 설치된 모든 원자로 모드에서 1차 functional containment 경계를 유지한다. `FTL`과 `IVTM`은 재장전 때에만 설치하고 출력 운전 중에는 떼어 둔다. `FHE`는 노심 집합체의 수령, 조정, 저장, 장전, 인출을 맡고 모든 취급 기기에 불활성 argon 환경이나 나트륨 냉각을 둔다. 재장전 정지 뒤에는 `EVST`의 조사된 집합체를 `PIC`로 처리해 사용후연료 저장조로 보낸다. `FHP`는 수냉 저장조 계통으로, `FPC`가 저장조에 든 연료의 붕괴열 제거를 지원하고 `FPP`가 여과재와 이온교환기로 수질을 유지하며 `PIC`의 화학처리 계통이 저장조 진입 전에 집합체의 잔류 나트륨을 제거한다. `SFP`는 지하 저장조이며 콘크리트 구조에 스테인리스 강 라이너를 대고, 연료랙 차폐에 필요한 최저 수위 아래로는 관통부나 배관이 없다.
@@ -168,6 +169,8 @@ Nuclear Island 보조 전력은 `NMV`가 unit auxiliary transformer나 reserve a
 `NHV`는 건물별로 온도 제어와 동결 보호, 기기 운전성을 맡고 유해 환경의 환기와 radiologically controlled area의 상대 부압 유지, 고효율 미립자 필터 배기를 수행한다. Reactor Building에서는 probabilistic risk assessment defense line 네 번째 준위 기능의 하나로 방사성핵종 보유 기능을 맡고, `NCB`에서는 Principal Design Criterion 19의 제어실 거주성을 보장한다. `PCO`의 Nuclear Island 부분은 정상·비상 운전 중 소내외 통신을 주며 안전 기능은 인정받지 않는다. `NCH`는 Reactor Building, Fuel Handling Building, Reactor Auxiliary Building의 bridge crane과 monorail hoist로 이루어지고, 앞의 두 건물의 bridge crane은 `ASME NOG-1-2020`에 따라 single failure proof이다. `NGS`는 나트륨 계통의 cover gas인 argon의 분배·저장을 맡는다.
 
 `SMS`는 지반운동과 구조물 응답을 감시해 지진 뒤 신속한 조치를 돕고 `RG 1.12` Revision 3에 완전 부합한다. 가속도 센서는 3축이며 `NCB`, Reactor Building, Fuel Handling Building, Nuclear Island 야드에 두고, 중앙 제어함에서 `UMC`로 경보를 배선한다. 자료는 가속도 시간이력, 최대 가속도, 유도된 속도·변위 시간이력, 응답스펙트럼 값, 지정값 초과 표시, standardized cumulative absolute velocity로 제공된다. `NFP`는 `RG 1.189` Revision 5에 부합하며, 이 지침은 `10 CFR 50.48(a)`의 규제 요건을 만족한다. `NME` 설비는 `IVTM`과 `FTL`의 설치·인출에 쓰이며, 원문은 cask, transfer adapter, transfer adapter closure valve, cask gas control system, component lift system, grapple을 열거하되 이에 한정되지 않는다고 적는다.
+
+**규정 대비 메모(C49, 규정 불일치).** `PSAR` Chapter 1 §1.1.4.1.15의 `NIC` 하위 계통 열거에는 `DCS`가 없으나 §1.1.4.3.5는 `DCS`를 `NIC`의 주 하위 계통으로 적는다.
 
 ## 관련 문서
 - [[Natrium_IC_Systems]]

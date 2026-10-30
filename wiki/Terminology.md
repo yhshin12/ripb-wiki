@@ -210,6 +210,17 @@ terms_pending: []
 | TEDE | total effective dose equivalent | TEDE |  | 약어 |  | [SER_KU1_CP §2.5.1.3.2.2 p.107] | 영어 유지 | 2026-10-16 사용자 결정 |
 | HCF | Hot Channel Factor | HCF |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.7] | 영어 유지 | 2026-10-26 사용자 결정 |
 | V_AND_V | Verification and Validation | V&V |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.8] | 영어 유지 | 2026-10-26 사용자 결정 |
+| FOM | Figure of Merit | FoM |  | 약어 |  | [NAT-3049 §ACRONYMS p.9] | 미정 | 2026-10-26 NAT-3049 인제스트 |
+| NASCENT | Natrium Simplified Coolant Energy Transport | Nascent |  | 약어 |  | [NAT-3049 §2 p.11] | 미정 | 2026-10-26 NAT-3049 인제스트 |
+| PEAK_CLADDING_TEMPERATURE | peak cladding temperature | PCT | 첨두피복재온도 | 약어 |  | [NAT-3049 §3.1 p.12] | 확정 | 2026-10-26 사용자 결정 |
+| REACTOR_TRIP_BREAKER | reactor trip breaker | RTB |  | 약어 |  | [ACRS_ML25293A458 Gravity scram functions p.15] | 영어 유지 | 2026-10-30 사용자 결정 |
+| UNDERVOLTAGE_TRIP | undervoltage trip |  |  |  |  | [PSAR_ch05 §5.3.3.4 p.32] | 영어 유지 | 2026-10-30 사용자 결정 |
+| SHUNT_TRIP | shunt trip |  |  |  |  | [PSAR_ch05 §5.3.3.4 p.32] | 영어 유지 | 2026-10-30 사용자 결정 |
+| DRIVELINE_SCRAM_FOLLOW | driveline scram follow |  |  |  |  | [SER_KU1_CP §1.3.3.3.2 p.43] | 영어 유지 | 2026-10-30 사용자 결정 |
+| INHERENT_REACTIVITY_FEEDBACK | inherent reactivity feedback |  |  |  |  | [SER_KU1_CP §1.3.3.3.2 p.43] | 영어 유지 | 2026-10-30 사용자 결정 |
+| REACTOR_RUNBACK | reactor runback |  |  |  |  | [SER_KU1_CP §Salt and Power Cycle Systems p.38] | 영어 유지 | 2026-10-30 사용자 결정 |
+| ATWS | anticipated transient without scram | ATWS |  | 약어 |  | [SER_KU1_CP §GL 85-06 and Regulatory Guide 1.155 p.624] | 영어 유지 | 2026-10-30 사용자 결정 |
+| HYPOTHETICAL_CDA | hypothetical core disruptive accident | HCDA |  | 약어 |  | [SER_KU1_CP §1.5 p.48] | 영어 유지 | 2026-10-30 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

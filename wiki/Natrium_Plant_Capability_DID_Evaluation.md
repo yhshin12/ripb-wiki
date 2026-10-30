@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04, SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term:
 tags: [natrium]
 terms_pending: []
@@ -158,7 +158,7 @@ single feature reliance 평가는 risk-significant LBE%%t:LBE%%나 Design Basis 
 
 **NRC staff 평가.** 사업자 평가는 intermediate Sodium Processing System 방출 DBA%%t:DBA%%인 RRS-ISPL-CN이 방출을 피하는 데 하나의 DL%%t:DL%%에 의존한다고 확인했다. 의존 기능은 이 DBA%%t:DBA%%에서 기시사건으로 실패를 가정하는 `DL2-RR8`(intermediate cold trap barrier)이다. NRC staff는 DBE%%t:DBE%%가 F-C target을, DBA%%t:DBA%%가 선량 기준을 만족하므로 이 기능을 심층방어%%t:DID%% 적절성 평가 목적의 의존 대상으로 보지 않고, 사업자의 단일 feature 의존 평가를 수용했다.
 
-**규정 대비 메모(C2, 신청자 문서 내부 불일치).** `PSAR` Chapter 4 본문은 risk-significant LBE%%t:LBE%%를 여덟 건으로 적지만, 같은 장 `Table 4.2-2`는 모든 risk-significant LBE%%t:LBE%%를 싣는다고 하면서 열한 건을 싣고 Chapter 3 요약표도 같은 열한 건을 risk-significant로 표시한다. `SER`은 risk-significant DBE%%t:DBE%%와 BDBE%%t:BDBE%%가 "several" 식별되었다고만 적으므로, 개수를 판정할 권위 조항이 없다.
+**규정 대비 메모(C2, 신청자 문서 내부 불일치).** `PSAR` Chapter 4 본문은 risk-significant LBE%%t:LBE%%를 여덟 건으로 적지만, 같은 장 `Table 4.2-2`는 모든 risk-significant LBE%%t:LBE%%를 싣는다고 하면서 열한 건을 싣고 Chapter 3 요약표도 같은 열한 건을 risk-significant로 표시한다. `SER`은 risk-significant DBE%%t:DBE%%와 BDBE%%t:BDBE%%가 "several" 식별되었다고만 적으므로, 개수를 판정할 권위 조항이 없다. 이 노트는 표와 Chapter 3 요약표가 같은 열한 건을 기준으로 쓴다. 본문의 여덟 건은 오기로 보이며 차후 확인이 필요하다.
 
 **규정 대비 메모(C4, 신청자 문서 내부 불일치).** `PSAR` Chapter 4 표와 Chapter 5 표는 `DL3-RR1`의 이름을 각각 "Primary System Boundary"와 "Primary Coolant Boundary"로 시작해 다르게 적고, Chapter 4 표가 쓰는 `DL3-RR3a`("Ex-Vessel Handling Machine to Head Barrier Function")는 인용한 Chapter 5 표 부분에 없다. `SER`은 한 절에서 `DL3-RR3a`를 transfer barrier로, 다른 절에서 head barrier로 적어 어느 한 장의 이름을 기준으로 삼지 않으므로, 판정할 권위 조항이 없다.
 

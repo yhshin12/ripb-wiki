@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch11
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -99,6 +99,8 @@ terms_pending: []
 Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다고 확인된 항목은 없었다고 적는다. Table 1.4-4의 Section 칸에는 절 번호가 적힌 행과 `Not Applicable`이 적힌 행이 있다. §1.4.3에는 이 칸의 의미를 설명하는 문장이 없다. 절 제목은 unresolved safety issue를 포함하나 §1.4.3 본문에는 이를 따로 다루는 서술이 없다. `SER`은 신청자가 §1.4.3에서 `NUREG-0933` Appendix B의 Three Mile Island 외 항목 가운데 KU1에 적용되는 것이 없다고 판단했다고 기술하고, `10 CFR Part 50`에는 `10 CFR Part 52`와 달리 `USI`와 `GSI`를 다루라는 요건이 없다고 적는다. 그 위에서 staff는 `USI`와 `GSI`가 construction permit%%t:CP%% 신청에 대해 적절히 다루어졌다고 판단했다.
 
 **규정 대비 메모(C54, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(3)(ii)`(QA list에 important to safety SSC%%t:SSC%% 포함)의 Section 칸을 `11.4`로 두나, Chapter 11 §11.4의 제목은 Aircraft Impact Assessment이고, 같은 표의 `50.34(f)(3)(iii)` 행은 QA 프로그램을 `8.1`로 적는다. 권위 문서인 `SER` Table 1.8-3은 QA list가 `PSAR`에 참조 포함된 `TP-QA-PD-0001` section 2에서 다루어지고 그 목록이 모든 Safety-Related%%t:SR%% 및 Non-Safety-Related with Special Treatment%%t:NSRST%% SSC%%t:SSC%%를 포함한다고 적으며, 이를 근거로 `50.34(f)(3)(ii)`가 충족된다고 판단했다. 따라서 이 요건의 소재는 `PSAR` 표의 `11.4`가 아니라 `SER`이 가리키는 QA 토픽 보고서로 읽는다.
+
+**규정 대비 메모(C55, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(2)(xvii)`의 Section 칸을 `11.2`로 두나, Chapter 11 §11.2 본문에는 격납 계측에 관한 서술이 없다.
 
 ## 관련 문서
 - [[Natrium_Licensing_Basis_Methodology]]

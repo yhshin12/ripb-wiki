@@ -45,8 +45,8 @@ units:
 <!-- sync:end -->
 
 ## 알려진 모순
-- risk-significant LBE 개수: §4.2.1.2는 "Eight"라고 적으나 Table 4.2-2는 11행을 싣고 PSAR_ch03 요약표도 11건이다 [PSAR_ch04 §4.2.1.2 p.8] [PSAR_ch04 Table 4.2-2 p.13]. [[Natrium_Plant_Capability_DID_Evaluation]]. 판정은 `meta/contradictions.md` C2.
-- `RFH-ESWR-2` 95th percentile 빈도: Table 4.2-2는 1.31E-04, PSAR_ch03 §3.8.5.4.3은 1.61E-04 (두 PDF 글자열 확인) [PSAR_ch04 Table 4.2-2 p.13] [PSAR_ch03 §3.8.5.4.3 p.97]. [[Natrium_LBE_Risk_Margins]], [[Natrium_Risk_Significant_LBEs]]. 판정은 `meta/contradictions.md` C1.
+- risk-significant LBE 개수: §4.2.1.2는 "Eight"라고 적으나 Table 4.2-2는 11행을 싣고 PSAR_ch03 요약표도 11건이다 [PSAR_ch04 §4.2.1.2 p.8] [PSAR_ch04 Table 4.2-2 p.13]. [[Natrium_Plant_Capability_DID_Evaluation]]. 판정은 C2.
+- `RFH-ESWR-2` 95th percentile 빈도: Table 4.2-2는 1.31E-04, PSAR_ch03 §3.8.5.4.3은 1.61E-04 (두 PDF 글자열 확인) [PSAR_ch04 Table 4.2-2 p.13] [PSAR_ch03 §3.8.5.4.3 p.97]. [[Natrium_LBE_Risk_Margins]], [[Natrium_Risk_Significant_LBEs]]. 판정은 C1.
 - DL function 표기: Table 4.2-3의 `DL3-RR1` "Primary System Boundary including RES Barrier"와 `DL3-RR3a`는 PSAR_ch05 Table 5.2-3의 "Primary Coolant Boundary including RES Barrier", `DL3-RR3` "EVHM Cask barrier"와 다르다 [PSAR_ch04 Table 4.2-3 p.14] [PSAR_ch05 Table 5.2-3 p.12].
 - margin 비의 방향: 표 주석은 목표 값/사건 값, NEI 18-04 §5.7.1은 사건 값/목표 값 [PSAR_ch04 Table 4.2-1 p.12] [NEI_18-04 §5.7.1 p.73].
 - Programmatic DID: §4.2.2 "are evaluated and included"와 §4.2.1.2 "will be provided at the OL stage" (PSAR 내부 문언) [PSAR_ch04 §4.2.2 p.9] [PSAR_ch04 §4.2.1.2 p.8].

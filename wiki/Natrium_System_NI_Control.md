@@ -6,7 +6,7 @@ sources:
 - PSAR_ch01
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -211,7 +211,7 @@ principal design criteria%%t:PDC%% 2에 따라 NSRST%%t:NSRST%% `NIC` Structures
 
 **규정 대비 메모(C25(d), 신청자 문서 내부 불일치).** `CTC` 이름이 `PSAR` Chapter 1과 Chapter 7 §7.6.2.1에서는 Coolant Temperature Monitoring and Control System, Chapter 7 Table 7.6.1-1에서는 Nuclear Island Coolant Temperature Control System이다. `SER` 약어표는 Chapter 1과 같은 이름을 쓰지만, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다.
 
-**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.2.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준).
+**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.2.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준). 이 노트는 `SER`과 같은 절의 문장을 따라 Revision 2를 기준으로 쓴다. Revision 4는 오기로 보이며 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_System_IC_Architecture]]

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP, PSAR_ch03]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term:
 tags: [natrium, dba, siting, nrc-review]
 terms_pending: []
@@ -42,7 +42,7 @@ terms_pending: []
 
 staff는 선정된 사고의 부지 외 선량이 출력운전 중 용기 내 DBA%%t:DBA%%를 bound하지만, 용기 외 사건과 연료취급 DBA%%t:DBA%%는 bound하지 못한다고 명시했다. 따라서 과거 원자로 인허가 선례처럼 모든 DBA%%t:DBA%%를 bound하지는 않으며, `RG 1.253` Option 1의 각주 10에 따른 추가 정당화가 필요하다고 보았다. 그럼에도 LBE%%t:LBE%% 평가가 뒷받침하는 `PSAR` DBA%%t:DBA%% 집합이 안전·부지 해석의 선량 요건을 포괄적으로 다룬다고 판단해 선정을 수용했다. 방출이 있는 모든 DBA%%t:DBA%%는 여유를 두고 선량 기준을 충족한다.
 
-`meta/contradictions.md` C58과의 관계는 다음과 같다. `PSAR` §3.3.3은 선정 사고가 다른 어떤 "in-vessel" DBA%%t:DBA%%에도 넘어서지 않는다고 적는다. 그러나 용기 내 연료취급 DBA%%t:DBA%%인 RFH-FDIV-CN의 low-population zone%%t:LPZ%% 선량(3.19E+00 rem)은 선정 사고(9.60E-01 rem)보다 크다. staff는 bound 범위를 "at-power in-vessel" DBA%%t:DBA%%로 한정하고, 연료취급 DBA%%t:DBA%%는 bound되지 않는다고 따로 적었다. 다만 `SER`은 `PSAR` §3.3.3 문장의 범위 자체를 판정하지 않는다. `PSAR`이 함께 든 "maximum core damage" 기준이 이 차이를 해소하는지도 원문에서 판단할 수 없으므로, C58은 기록된 상태로 둔다.
+C58과의 관계는 다음과 같다. `PSAR` §3.3.3은 선정 사고가 다른 어떤 "in-vessel" DBA%%t:DBA%%에도 넘어서지 않는다고 적는다. 그러나 용기 내 연료취급 DBA%%t:DBA%%인 RFH-FDIV-CN의 low-population zone%%t:LPZ%% 선량(3.19E+00 rem)은 선정 사고(9.60E-01 rem)보다 크다. staff는 bound 범위를 "at-power in-vessel" DBA%%t:DBA%%로 한정하고, 연료취급 DBA%%t:DBA%%는 bound되지 않는다고 따로 적었다. 다만 `SER`은 `PSAR` §3.3.3 문장의 범위 자체를 판정하지 않는다. `PSAR`이 함께 든 "maximum core damage" 기준이 이 차이를 해소하는지도 원문에서 판단할 수 없으므로, C58은 기록된 상태로 둔다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

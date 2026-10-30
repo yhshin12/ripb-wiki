@@ -10,7 +10,7 @@ sources:
 - SER_KU1_CP
 - TP-LIC-RPT-0011
 status: checked
-verified: 2026-10-26
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -144,7 +144,7 @@ terms_pending: []
 
 **규정 대비 메모(C79(3), 권위 문서 표기 차이(기록만)).** `SER`은 `TP-LIC-RPT-0011`을 §3.11에서 "Core Design and Thermal Hydraulic Technical Report", Rev. 0, ML24088A085로, §7.1.1.1.3에서 "Core Nuclear and Thermal Hydraulic Design Technical Report", ML25276A289로 적는다. 같은 보고서 번호에 제목과 문서 번호가 둘이다. vault에 들어온 [[TP-LIC-RPT-0011]] Revision 0의 표지 제목은 이미 "Core Nuclear and Thermal Hydraulic Design Technical Report"이므로, 제목 차이는 판의 차이에서 온 것이 아니다. ML25276A289가 Revision 0과 다른 판인지는 vault에 없다. 내용 판단의 차이가 아니므로 기록만 한다.
 
-**규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 권위 문서끼리 NAT-9393-A의 제목과 문서 번호 표기가 다르다. `ACRS` 발표는 "Reactor Stability Methodology"와 ML25211A275를 적고, `SER`은 §7.1.1.1.3에서 "Stability Methodology Topical Report", §3.11에서 "Reactor Stability Methodology", 토픽 보고서 목록 표에서 "Stability Methodology"를 쓰며 문서 번호는 ML25211A276으로 적는다. `PSAR` Chapter 3의 제목은 `SER` §7.1.1.1.3과 같다. 내용 차이가 아니므로 기록만 한다.
+**규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 권위 문서끼리 NAT-9393-A의 제목과 문서 번호 표기가 다르다. `ACRS` 발표는 "Reactor Stability Methodology"와 ML25211A275를 적고, `SER`은 §7.1.1.1.3에서 "Stability Methodology Topical Report", §3.11에서 "Reactor Stability Methodology", 토픽 보고서 목록 표에서 "Stability Methodology"를 쓰며 문서 번호는 ML25211A276으로 적는다. `PSAR` Chapter 3의 제목은 `SER` §7.1.1.1.3과 같다. 내용 차이가 아니므로 기록만 한다. 이 노트는 `SER`을 따라 ML25211A276을 기준으로 쓴다. 발표의 ML25211A275는 오기로 보이며 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_System_Reactor_Core]]

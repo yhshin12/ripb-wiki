@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [SER_KU1_CP]
-status: disputed
-verified: 2026-10-17
+sources: [SER_KU1_CP, PSAR_ch03, PSAR_ch05]
+status: checked
+verified: 2026-10-30
 term:
 tags: [natrium, lbe, dba, nrc-review]
 terms_pending: []
@@ -78,13 +78,33 @@ terms_pending: []
 - "The staff reviewed PSAR section 3.10, which states that mitigation of beyond design basis events will be addressed at the OL stage in accordance with 10 CFR 50.155." [SER_KU1_CP §3.9.1 p.299]
 - "Table 1 of Appendix B of DANU-ISG-2022-01 states that 10 CFR 50.155 requirements only apply to 10 CFR Part 50 OLs." [SER_KU1_CP §3.9.1 p.299]
 - "the staff finds that it is acceptable to defer addressing the requirements in 10 CFR 50.155 to the operating licensing phase of the KU1 review." [SER_KU1_CP §3.9.1 p.299]
-- "IPI-IHEL-1 and 2 and SUD-IHEL-1 credit this trip to prevent the overfill" [SER_KU1_CP §3.7.1.2 p.266]
+- "IPI-IHEL-1 and 2 and SUD-IHEL-1 credit this trip to prevent the overfill as discussed in PSAR sections 3.8.2.5.1 and 3.8.2.6.1 and PSAR table 5.22, and indicated in SE table 3.7-1, below." [SER_KU1_CP §3.7.1.2 p.266]
 - "As described in PSAR section 3.8.7.1, RFH-LSPC-1 represents a loss of SFP cooling." [SER_KU1_CP §3.7.1.7 p.275]
 - "The discussion in section 3.6.1.5 of this SE for the DBE LFF-SAO-BL is also relevant to the DBA analysis." [SER_KU1_CP §3.8.1.6 p.298]
 
 | PSAR Section | Name of the Transient | Alphanumeric Identifier | Functions Responsible for Controlling Heat Generation | PSF of Heat Generation Control Functions | 출처 |
 |---|---|---|---|---|---|
 | 3.8.1.3 | Loss of One Primary Sodium Pump with Alternative Shunt Trip | DHP-L1PP-4 | Reactor scram on high high power-to-flow ratio (fails), alternative shunt trip | DL3-RC1, DL4-RC6 | [SER_KU1_CP Table 3.7-1 p.276] |
+- "IPI-IHEL-1 and SUD-IHEL-1 credit passive IAC for decay heat removal, with appropriate pump trips for the PSPs and PSP coastdown credited in addition to the ISP trip on high high primary sodium level." [SER_KU1_CP §3.7.1.2 p.266]
+- "DL3-HR12 is associated with one DBE (IPI-IHEL-BL), and two BDBEs (IPI-IHEL-1 and IPI-IHEL-2)." [SER_KU1_CP §7.6.3.1.11.5 p.563]
+- "Intermediate Heat Exchanger Secondary-to-Primary Leak While Shutdown with Passive IAC" [SER_KU1_CP Table 3.7-1 p.279]
+- "Reactor scram on high high primary sodium level" [SER_KU1_CP Table 3.7-1 p.279]
+- "DL3-HR12 — ISP Pump Trip on High High Primary Sodium Level" [PSAR_ch05 Table 5.2-2 p.11]
+- "BDBE: IPI-IHEL-1, IPI-IHEL-2, SUD-IHEL-1" [PSAR_ch05 Table 5.2-2 p.11]
+- "BDBE: DHP-L1PP-1, DHS-RNBK-2, IPI-IHEL-1, IPI-IHEL-2, OTH-LMAC-1, OTH-LMAC-2, RPD-CW1ACS-1, RPD-CW1ACS-2, RPD-SS-1, RPD-SS-2" [PSAR_ch05 Table 5.2-2 p.8]
+- "ISPs trip on high high primary sodium level." [PSAR_ch03 §3.8.2.7.1 p.90]
+- "The scram signal is not specified in the PSAR, which the staff finds to be reasonable because the scram is assumed to occur as part of the analysis." [SER_KU1_CP §3.7.1.2 p.265]
+- "Pump trips are not credited." [SER_KU1_CP §3.7.1.2 p.265]
+- "In RPD-CW1ACS-1 and -2, the normal gravity scram is successful." [SER_KU1_CP §3.7.1.3 p.267]
+- "In RPD-CW1ACS-3, the control rod insertion by gravity is assumed to fail and the rods are pushed in with the NSRST control rod drive follow function." [SER_KU1_CP §3.7.1.3 p.267]
+- "In RPD-CW1ACS-4, the normal protection system is assumed to fail to function and the scram breakers are tripped by AST, causing the control rods to fall into the core by gravity." [SER_KU1_CP §3.7.1.3 p.267]
+- "DBE: IPI-IHEL-BL, SUD-IHEL-BL" [PSAR_ch05 Table 5.2-2 p.11]
+
+| 사건 | 표의 칸 | 출처 |
+|---|---|---|
+| SUD-IHEL-1 | DL3-RC1c | [SER_KU1_CP Table 3.7-1 p.279] |
+| SUD-IHEL-1 | IAC passive mode | [SER_KU1_CP Table 3.7-1 p.279] |
+| SUD-IHEL-1 | DL4-HR1 | [SER_KU1_CP Table 3.7-1 p.279] |
 
 ## 해설
 **BDBE%%t:BDBE%%.** staff는 사업자가 BDBE%%t:BDBE%% 하한 판정에 mean 빈도를 썼다는 점을 다시 적고, OL%%t:OL%% 검토에서는 계속 95th percentile로 평가하겠다고 밝혔다. 95th percentile 빈도가 DBE%%t:DBE%% 영역으로 들어가는 BDBE%%t:BDBE%%(DHP-L1PP-1, DHP-L1PP-4, OTH-LMAC-1 등)에는 NEI 21-07에 따라 DBA%%t:DBA%%가 식별되어야 한다고 지적했다.
@@ -108,7 +128,11 @@ DHP-L1PP-4는 출력-유량비 정지가 실패하는 사건이어서 기존 DHP
 
 **용기 외 방출·기타 BDBE%%t:BDBE%%와 DBA%%t:DBA%%(보강).** SUD-CGR-1은 `SCG` 재고 전량이 `HAA`로 순간 방출되어 `NHV` 여과를 거쳐 400 cfm으로 배기된다고 가정하고, SUD-CGR-2는 방출 위치가 `VTC`인 점만 달라 SUD-CGR-1의 결과를 적용한다. Spent Fuel Pool 냉각 상실 사건 RFH-LSPC-1에서는 `SFP` 정상 냉각이 복구되지 않지만 끓기 전에 비상 보충이 이루어진다. DHS-ISTL-1의 DBA%%t:DBA%%에서는 이 사건이 의존하는 피동 `IAC` 한 계열을 non-SR이므로 실패로 가정하되 남은 loop의 열용량은 쓸 수 있다고 보며, DHS-RNBK-CN은 DBE%%t:DBE%% 영역에 걸치는 DHS-RNBK-2도 포괄한다. 국부 핵연료 결함 DBA%%t:DBA%%는 집합체 하나의 고장을 가정하고, DBE%%t:DBE%% LFF-SAO-BL과의 주된 차이는 `HAA`가 `RXB`의 지연이나 붕괴 credit 없이 하루 100 percent로 환경에 직접 누설된다는 선원항%%t:SOURCE_TERM%% 가정이다. staff는 방법론의 완전한 검증이 construction permit%%t:CP%% 단계에 기대되지 않고 해석이 집합체 전체 고장을 가정해 결과를 보수적으로 포괄하므로 남은 문제를 `FSAR` 검토로 미룰 수 있다고 보았다. 10 CFR 50.155에 따른 설계기준 초과 사건 완화는 그 요건이 Part 50 OL%%t:OL%%에만 적용되므로 OL%%t:OL%% 단계로 미루는 것이 수용되었다.
 
-**규정 대비 메모(C59, 상위 dispute).** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 alternative shunt trip 사건으로 적고, Table 3.7-1은 이 사건이 credit하는 기능을 DL3-RC1과 DL4-RC6으로 적으며, 같은 절의 다른 문장도 이 사건이 alternative shunt trip을 credit한다고 적는다. 그러나 같은 절의 사건 서술은 정지 차단기를 `AST`가 트립한다고 적고, `SER` §7.6.3.1.11.4는 `AST`의 지진 트립 신호로 차단기를 여는 기능을 DL4-RC4 "Automatic seismic trip"으로 다룬다. 따라서 이 사건에서 어느 기능이 credit되는지가 권위 문서인 `SER` 안에서 모호하다. 자동 지진 트립 기능은 [[Natrium_System_Anticipatory_Seismic_Trip]]에 정리되어 있다.
+**규정 대비 메모(C59, 권위 문서 표기).** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 alternative shunt trip 사건으로 적고, Table 3.7-1은 이 사건이 credit하는 기능을 DL3-RC1과 DL4-RC6으로 적으며, 같은 절의 다른 문장도 이 사건이 alternative shunt trip을 credit한다고 적는다. 그러나 같은 절의 사건 서술은 정지 차단기를 `AST`가 트립한다고 적고, `SER` §7.6.3.1.11.4는 `AST`의 지진 트립 신호로 차단기를 여는 기능을 DL4-RC4 "Automatic seismic trip"으로 다룬다. 표와 사건 목록, credit 기능 문장이 모두 alternative shunt trip을 가리키므로 이를 기준으로 쓴다. 사건 서술의 `AST` 전개는 오기로 보이며 차후 확인이 필요하다. 자동 지진 트립 기능은 [[Natrium_System_Anticipatory_Seismic_Trip]]에 정리되어 있다.
+
+**규정 대비 메모(C80-a, 권위 문서 표기 차이(기록만)).** `SER` §3.7.1.2 본문은 SUD-IHEL-1이 `DL3-HR12`를 credit하며 이것이 Table 3.7-1에 나타나 있다고 적지만, 그 표의 SUD-IHEL-1 행에는 `DL3-HR12`가 없다. §7.6.3.1.11.5의 `DL3-HR12` 연관 사건 문장에는 SUD-IHEL-1도 SUD-IHEL-BL도 없다. `PSAR` Table 5.2-2는 이 두 사건을 `DL3-HR12`의 연관 사건으로 적으므로 기능의 credit 자체는 `PSAR`과 본문이 같다. 요건 내용이 같으므로 기록만 한다. NRC의 정정 여부는 vault에 없다.
+
+**규정 대비 메모(C80-b, 규정 불일치).** `SER` §3.7.1.2 본문은 SUD-IHEL-1이 `PSP` trip과 coastdown도 credit한다고 적지만, `PSAR` Table 5.2-2의 `DL3-HR1`·`DL3-HR2` 연관 BDBE%%t:BDBE%% 목록에는 SUD-IHEL-1이 없고 §3.8.2.7.1의 사건 서술도 `ISP` trip만 적는다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

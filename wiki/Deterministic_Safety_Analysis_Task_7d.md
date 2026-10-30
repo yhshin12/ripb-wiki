@@ -4,7 +4,7 @@ aliases: []
 sources:
 - NEI_18-04
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - nei-18-04
@@ -35,7 +35,7 @@ terms_pending: []
 
 설계 개발과 해석 과업은 결정론적 DBA%%t:DBA%% 선정에 Safety-Related%%t:SR%% Structures, Systems, and Components%%t:SSC%% 선정이 필요하므로, 이 과정이 `Task 7d`의 결정론적 안전해석에 필요한 SR%%t:SR%% SSC%%t:SSC%%도 선정한다고 적는다. `Task 7e`는 Licensing Basis Event%%t:LBE%%의 정의와 평가를 risk-informed and performance-based%%t:RIPB%% 심층방어%%t:DID%% 평가를 뒷받침하는 데 써야 하는(`should`) 과업이며, 그 결과에는 결정론적 안전해석의 보수적 가정 수립이 포함된다.
 
-`Task 7a`는 Design Basis Event%%t:DBE%% 선량을 결과의 평균 추정으로 Frequency-Consequence Target%%t:FC_TARGET%%과 비교한다고 적고, 그 근거로 보수적 선량 평가는 결정론적 안전해석에는 적절하지만 일반적인 risk-informed decision-making의 불확실도 처리 방식과 맞지 않는다고 설명한다. 이 문장은 결정론적 안전해석을 `Task 7a`에 있다고 적고, 같은 과업의 다른 문장은 설계별 PRA 결과와 F-C Target%%t:FC_TARGET%% 사이의 safety margin%%t:SAFETY_MARGIN%%이 `Task 7d`의 심층방어%%t:DID%% 적절성 평가에도 쓸모 있다고 적는다. 과업 제목상 결정론적 안전해석은 `Task 7d`, 심층방어%%t:DID%% 평가는 `Task 7e`이므로 번호가 서로 어긋난다. 이 차이는 `meta/contradictions.md` C17에 모아 두었다. Natrium `PSAR`의 DBA%%t:DBA%% 목록은 [[Natrium_DBA_List]]에 있다.
+`Task 7a`는 Design Basis Event%%t:DBE%% 선량을 결과의 평균 추정으로 Frequency-Consequence Target%%t:FC_TARGET%%과 비교한다고 적고, 그 근거로 보수적 선량 평가는 결정론적 안전해석에는 적절하지만 일반적인 risk-informed decision-making의 불확실도 처리 방식과 맞지 않는다고 설명한다. 이 문장은 결정론적 안전해석을 `Task 7a`에 있다고 적고, 같은 과업의 다른 문장은 설계별 PRA 결과와 F-C Target%%t:FC_TARGET%% 사이의 safety margin%%t:SAFETY_MARGIN%%이 `Task 7d`의 심층방어%%t:DID%% 적절성 평가에도 쓸모 있다고 적는다. 과업 제목상 결정론적 안전해석은 `Task 7d`, 심층방어%%t:DID%% 평가는 `Task 7e`이므로 번호가 서로 어긋난다. 이 노트는 과업 제목을 기준으로 쓴다. 본문의 번호는 오기로 보이며 차후 확인이 필요하다(C17). Natrium `PSAR`의 DBA%%t:DBA%% 목록은 [[Natrium_DBA_List]]에 있다.
 
 ## 관련 문서
 - [[LBE_Selection_Process]]

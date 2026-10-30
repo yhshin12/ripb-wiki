@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch03
 status: checked
-verified: 2026-09-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -59,7 +59,7 @@ terms_pending: []
 - "Addressed by TR, safety analysis, and core design" [ACRS_ML25293A458 Review of RCC (PSAR section 7.1.1) p.9]
 - "Described in PSAR sections 3.12 and 3.13 and TP-LIC-RPT-0011, “Core Design and Thermal Hydraulic Technical Report”" [ACRS_ML25293A458 Core Design p.10]
 - "Staff’s review at CP stage focused on ensuring core design supports applicable PDCs and that associated analytical methods are appropriate" [ACRS_ML25293A458 Core Design p.10]
-- "Staff review was supported by ... contractors from ANL" [ACRS_ML25293A458 Core Design p.10]
+- "Staff review was supported by contractors from ANL" [ACRS_ML25293A458 Core Design p.10]
 
 ![[ACRS_ML25293A458_Slide_10.png]]
 
@@ -97,7 +97,7 @@ terms_pending: []
 
 중성자 해석은 `ANL` 원자로 모사 도구와 TerraPower 고유 도구를 섞어 쓰고, 열수력은 TerraPower 고유 도구로 문헌의 적절한 상관식을 쓰는 기존 subchannel 코드와 일관되게 모델링하며, hot channel factor는 과거 sodium-cooled fast reactor%%t:SFR%% 신청의 사용과 일관된다. 직원은 코드와 모델링 선택이 예비 해석에 적절하다고 결론지었지만, 코드 verification and validation은 OL%%t:OL%% 신청에서 입증되어야 하고, 불확실도 정량화 접근은 합리적이나 해석은 OL%%t:OL%%에서 다듬고 추가로 확인해야 한다. 직원은 `NRC/RES`, `ANL`, `ORNL`과 함께 핵심 노심 설계 변수에 대한 확인 해석을 수행했고, 그 결과는 `KU1` 예비 해석과 일관되며 예비 kinetics 변수와 반응도 계수는 운전되었거나 설계된 다른 원자로의 공개 자료와 비교해 합리적이며, 이 비교는 `SE`에 기록되어 있다. `HALEU` 핵연료 등은 과거 `HEU`나 `U-Pu` 노심에 비해 핵심 노심 변수에 이점을 줄 수 있다고 적는다.
 
-**규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 발표는 `NAT-9393-A`를 "Reactor Stability Methodology"와 ML25211A275로 적고, `SER` §3.11은 같은 제목에 ML25211A276을 적는다. `PSAR` Chapter 3은 제목을 "Stability Methodology Topical Report"로 적는다. 발표와 `SER` §3.11 사이에는 문서 번호만, 권위 문서와 `PSAR` 사이에는 제목 표기만 다르고 내용 차이가 아니므로 기록만 한다. `SER` 안의 다른 제목 표기는 [[Natrium_Nuclear_Design]]에 정리되어 있다.
+**규정 대비 메모(C37, 권위 문서 표기 차이(기록만)).** 발표는 `NAT-9393-A`를 "Reactor Stability Methodology"와 ML25211A275로 적고, `SER` §3.11은 같은 제목에 ML25211A276을 적는다. `PSAR` Chapter 3은 제목을 "Stability Methodology Topical Report"로 적는다. 발표와 `SER` §3.11 사이에는 문서 번호만, 권위 문서와 `PSAR` 사이에는 제목 표기만 다르고 내용 차이가 아니므로 기록만 한다. `SER` 안의 다른 제목 표기는 [[Natrium_Nuclear_Design]]에 정리되어 있다. 이 노트는 `SER`을 따라 ML25211A276을 기준으로 쓴다. 발표의 ML25211A275는 오기로 보이며 차후 확인이 필요하다.
 
 ## 관련 문서
 - [[Natrium_NRC_Review_Reactivity_Control]]

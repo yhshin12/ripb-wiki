@@ -7,7 +7,7 @@ sources:
 - PSAR_ch11
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -309,6 +309,7 @@ principal design criteria%%t:PDC%% 2에 따라 SR%%t:SR%% 부분은 SR%%t:SR%% `
 **규정 대비 메모(C24, 신청자 문서 내부 불일치).** `PSAR` Chapter 11 Table 11.5-1의 계측 `LCO` 기능 목록(reactor scram, `PSP` trip, `ISP` trip)은 Chapter 7 `RPS`의 SR%%t:SR%% 기능 `DL3-HR11`(`SPS` pump trip)을 빠뜨린다. 판정할 권위 조항이 없다. `SER` §11.5.1은 `TS` 대상이 예비 안전해석의 중요 변수와 일관된다고 판단하고 `LCO`를 포함한 상세 평가를 OL%%t:OL%% 단계로 넘기며, 이 누락은 다루지 않는다.
 
 ## 관련 문서
+- [[Natrium_Alternative_Shunt_Trip]]
 - [[Natrium_System_IC_Architecture]]
 - [[Natrium_SR_Functions_Heat_Generation]]
 - [[Natrium_SR_Functions_Heat_Removal]]

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP, PSAR_ch05, PSAR_ch07]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term:
 tags: [natrium, pdc, nrc-review, instrumentation-and-control]
 terms_pending: []
@@ -192,7 +192,7 @@ terms_pending: []
 - "IEEE 384-2018 is applied as a special treatment to the AST to meet independence requirements." [SER_KU1_CP §7.6.8.1.1 p.582]
 
 ## 해설
-**`NIC`.** `NIC`는 Non-Safety-Related with Special Treatment%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% 기능을 모두 수행한다. `SER`은 `NIC`의 지진 분류를 SCN3으로 적으며 `PSAR`은 이를 `AMC`·`CTC`·`UMC` 구성품으로 한정한다(`meta/contradictions.md` C79). `RPS`에서 `NIC`로의 통신은 단방향 data diode나 격리 장치를 거치고, `NIC`에서 `RPS`로의 직접 통신은 없다. staff는 인용된 하위 계통 기능(`DL4-RR3a`, `DL4-RR3b`, `DL4-RR4a`, `DL4-HR2`, `DL4-HR3`, `DL4-RR1c`)과 `IHT` expansion tank level 신호를 쓰는 `CTC`의 `DL2-HR2`에 대해 예비 설계가 정합한다고 판단했다. reliability and capability target, `RMS` 관련 RG%%t:RG%% 1.21 적용과 RG%%t:RG%% 1.97 정합 범위는 operating license%%t:OL%% 단계에서 정한다.
+**`NIC`.** `NIC`는 Non-Safety-Related with Special Treatment%%t:NSRST%%와 Non-Safety-Related with No Special Treatment%%t:NST%% 기능을 모두 수행한다. `SER`은 `NIC`의 지진 분류를 SCN3으로 적으며 `PSAR`은 이를 `AMC`·`CTC`·`UMC` 구성품으로 한정한다(C79). `RPS`에서 `NIC`로의 통신은 단방향 data diode나 격리 장치를 거치고, `NIC`에서 `RPS`로의 직접 통신은 없다. staff는 인용된 하위 계통 기능(`DL4-RR3a`, `DL4-RR3b`, `DL4-RR4a`, `DL4-HR2`, `DL4-HR3`, `DL4-RR1c`)과 `IHT` expansion tank level 신호를 쓰는 `CTC`의 `DL2-HR2`에 대해 예비 설계가 정합한다고 판단했다. reliability and capability target, `RMS` 관련 RG%%t:RG%% 1.21 적용과 RG%%t:RG%% 1.97 정합 범위는 operating license%%t:OL%% 단계에서 정한다.
 
 **`RPS`.** RadICS platform 범위 밖의 safety-significant, application-specific `RPS` 설비에는 `IEEE` 603-2018 등이 적용되며, RadICS platform 사용 자체는 [[Natrium_SER_IC_Electrical_Structures_Review]]에서 다룬다. PDC%%t:PDC%% 23과 관련하여, `RPS` 입력 전원이 상실되면 undervoltage release mechanism이 reactor trip breaker를 열어 scram 회로는 "de-energize to trip"으로 설계된다. staff는 `DL4-RC3`에 대해 관련 `LBE` 여섯 건 가운데 다섯 건이 핵연료 건전성을 유지하고 나머지 한 건(DHP-LOOP-3)의 선량도 요구 한계 아래라는 근거로, `DL3-HR11`에 대해 관련 사건의 선량이 요구 한계 아래라는 근거로 정합성을 판단했다. RadICS `TR`의 application-specific 요건 평가, reliability and capability target, RG%%t:RG%% 1.97 정합 범위와 선정된 `PAM` 변수, RG%%t:RG%% 1.105 기반 setpoint 방법론 평가는 OL%%t:OL%% 단계에서 한다.
 
@@ -211,7 +211,7 @@ terms_pending: []
 
 **규정 대비 메모(C78, 규정 불일치).** `SER`은 `RMS` 예비 설계가 PDC%%t:PDC%% 60, 63, 64와 정합한다고 판단하지만, `PSAR` Chapter 5의 PDC%%t:PDC%% 63 적용 계통 목록(`FHE`, `FHP`, `NIC`, `SPS`, `SCG`, `RWS`, `RWL`, `RWG`)에는 `RMS`가 없다. 같은 절의 implementation summary는 `RMS`를 `NIC`, `SCG`, `SPS`와 함께 정상 운전 방사선 준위와 off-normal 조건을 감시하는 계통으로 적지만, 대상 계통 목록에는 넣지 않는다. 권위 문서인 `SER`의 판단을 기준으로 두며, `SER`에는 이 목록 차이에 대한 언급이 없다(vault 기준).
 
-**기록 메모(`meta/contradictions.md` C77).** `SER`은 `AST`의 PDC%%t:PDC%% 2 판단에서 기기가 `RXB`에 있다고 적고, PDC%%t:PDC%% 4 판단에서는 `PSAR` 서술을 따라 `AST` processing cabinet이 `NCB` 안에 있다고 적는다. `PSAR`은 가속도계를 `RXB` 둘레의 borehole에, 신호 처리 cabinet을 Nuclear Island Control Building 하부구조에 둔다고 적으므로, PDC%%t:PDC%% 2 판단의 "equipment"와 PDC%%t:PDC%% 4 판단의 cabinet은 같은 계통의 다른 기기일 수 있다. 판단 내용(PDC%%t:PDC%% 2, 4 정합)은 같으므로 기록만 한다.
+**기록 메모(C77).** `SER`은 `AST`의 PDC%%t:PDC%% 2 판단에서 기기가 `RXB`에 있다고 적고, PDC%%t:PDC%% 4 판단에서는 `PSAR` 서술을 따라 `AST` processing cabinet이 `NCB` 안에 있다고 적는다. `PSAR`은 가속도계를 `RXB` 둘레의 borehole에, 신호 처리 cabinet을 Nuclear Island Control Building 하부구조에 둔다고 적으므로, PDC%%t:PDC%% 2 판단의 "equipment"와 PDC%%t:PDC%% 4 판단의 cabinet은 같은 계통의 다른 기기일 수 있다. 판단 내용(PDC%%t:PDC%% 2, 4 정합)은 같으므로 기록만 한다.
 
 ## 관련 문서
 - [[Natrium_SER_IC_Electrical_Structures_Review]]

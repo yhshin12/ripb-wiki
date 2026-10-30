@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch05
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -326,9 +326,10 @@ terms_pending: []
 - "The reactor head fails to perform its radionuclide retention function, the RXB successfully performs its radionuclide function, and a radionuclide release occurs." [PSAR_ch03 §3.8.6.2.1 p.106]
 - "The dose consequences do not include radionuclide release from SCG pathways mitigated by DL3-RR10 as described in Table 5.2-3." [PSAR_ch03 §3.8.6.2.3 p.107]
 - "LBE analyses will evaluate radionuclide release from these pathways, including mitigation provided by DL3-RR10, at the OL stage." [PSAR_ch03 §3.8.6.2.3 p.107]
+- "A reactor power runback may be initiated, but a reactor scram occurs before the reactor power runback is complete." [PSAR_ch03 §3.8.2.3.1 p.88]
 
 ## 해설
-원자로 쪽 BDBE%%t:BDBE%%는 primary sodium pump 하나 또는 전부 상실, 소외 전원 상실, 열침원 상실, power runback 없는 Energy Island 과도, 중간 열교환기 누설(운전·정지), medium voltage 모선 하나 상실, 제어봉에 의한 과출력 과도, scram 또는 spurious scram, 정지 중 Intermediate Air Cooling System 한 계열 상실을 Initiating Event%%t:IE%%로 둔다. 각 사건은 passive Intermediate Air Cooling System만 가용한 경우, Reactor Air Cooling System만 가용한 경우, scram 신호 뒤 reactor trip breaker 고장이나 제어봉 불완전 삽입으로 삽입이 부족한 scram motor drive-in 경우, 정상 scram이 실패한 alternative shunt trip 경우로 나뉜다. 방출이 없는 원자로 쪽 BDBE%%t:BDBE%%의 최종 조건은 Intermediate Air Cooling System의 passive 또는 non-passive 모드나 Reactor Air Cooling System이 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실은 저출력 safe and stable 또는 safe shutdown으로 끝난다. 중간 열교환기 누설에서 영향받지 않은 계열의 passive와 non-passive 냉각이 모두 실패하면 그 중간 소듐 루프의 배관·기기·소듐 열용량이 가용하다고 가정한다.
+원자로 쪽 BDBE%%t:BDBE%%는 primary sodium pump 하나 또는 전부 상실, 소외 전원 상실, 열침원 상실, reactor power runback이 완료되기 전에 scram이 나는 Energy Island 과도, 중간 열교환기 누설(운전·정지), medium voltage 모선 하나 상실, 제어봉에 의한 과출력 과도, scram 또는 spurious scram, 정지 중 Intermediate Air Cooling System 한 계열 상실을 Initiating Event%%t:IE%%로 둔다. 각 사건은 passive Intermediate Air Cooling System만 가용한 경우, Reactor Air Cooling System만 가용한 경우, scram 신호 뒤 reactor trip breaker 고장이나 제어봉 불완전 삽입으로 삽입이 부족한 scram motor drive-in 경우, 정상 scram이 실패한 alternative shunt trip 경우로 나뉜다. 방출이 없는 원자로 쪽 BDBE%%t:BDBE%%의 최종 조건은 Intermediate Air Cooling System의 passive 또는 non-passive 모드나 Reactor Air Cooling System이 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실은 저출력 safe and stable 또는 safe shutdown으로 끝난다. 중간 열교환기 누설에서 영향받지 않은 계열의 passive와 non-passive 냉각이 모두 실패하면 그 중간 소듐 루프의 배관·기기·소듐 열용량이 가용하다고 가정한다.
 
 제어봉 삽입 부족과 정상 scram 실패를 가정한 소외 전원 상실 두 건은 핵연료 성능 수용 기준을 만족하지 못해 피복이 파손되고 방출이 생긴다. Mechanistic Source Term%%t:MST%%은 핵연료 용융 없이 노심 `two-thirds`의 creep rupture로 생긴 재고의 즉시 방출이며, primary functional containment 경계에서 head access area로 하루 커버가스(cover gas)%%t:COVER_GAS%% 영역 체적의 one percent, head access area에서 환경으로 하루 체적의 10 percent가 누설된다고 가정한다. 두 사건의 평균 `30-day` Exclusion Area Boundary%%t:EAB%% 선량은 1.62E-01 rem이고 평균 빈도는 2.26E-06과 1.52E-06이다. 정지 중 Sodium Cover Gas System 누설 두 건은 functional containment barrier%%t:BARRIER%%가 방출을 가두지 못하는 사건으로, 원자로 용기 커버가스%%t:COVER_GAS%% 체적의 재고가 head access area로 즉시 방출되어 여과를 거쳐 분당 400 cubic feet로 배기되며, 평균 선량은 1.77E-02 rem, 평균 빈도는 1.83E-05와 1.10E-05이다.
 
@@ -351,6 +352,7 @@ Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%
 **규정 대비 메모(C64, 규정 불일치).** `PSAR`은 Pool Immersion Cell 소듐-물 반응 사건을 `PIC`와 `BLTC`가 결합된 상태의 사건으로 적는다. `SER`은 세척 중에는 `BLTC`가 `PIC`와 결합되지 않을 것으로 보아, 결합 barrier인 DL3-RR5a는 낙하 사건에는 적절하나 세척 사건에는 적절하지 않다고 적었다. 그럼에도 `SER`은 `PIC` barrier Structures, Systems, and Components%%t:SSC%%가 DL3-RR5a를 통해 SR%%t:SR%%로 분류된 점, 추가 예방 조치가 빈도를 낮출 것으로 예상되는 점, 선원항%%t:SOURCE_TERM%% 해석의 가정이 보수적인 점을 근거로 construction permit%%t:CP%% 단계에는 충분하다고 판단했고, 그 가정은 OL%%t:OL%% 단계에서 사건별 MST%%t:MST%%를 개발하며 조정될 수 있다고 적었다.
 
 ## 관련 문서
+- [[Natrium_Alternative_Shunt_Trip]]
 - [[Natrium_LBE_Selection]]
 - [[Natrium_Risk_Significant_LBEs]]
 - [[Natrium_DBA_List]]

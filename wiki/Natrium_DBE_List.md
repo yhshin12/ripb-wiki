@@ -6,7 +6,7 @@ sources:
 - NEI_18-04
 - SER_KU1_CP
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -217,9 +217,10 @@ terms_pending: []
 - "The table provides a mapping of DBEs to DBAs and the dose consequence of each DBA." [PSAR_ch03 §3.5.2 p.53]
 - "SPS Leak at the Cold Trap with RAB Barrier Successfully Retains Release (RRS-ISPL-BL)" [PSAR_ch03 §3.7.3.3 p.73]
 - "SPS leak at the cold trap with RAB barrier successfully retains release (RRS-ISPL-BL)" [SER_KU1_CP §3.6.1.3 p.245]
+- "A reactor power runback may be initiated, but a reactor scram occurs before the reactor power runback is complete." [PSAR_ch03 §3.7.2.3.1 p.69]
 
 ## 해설
-원자로 쪽 DBE%%t:DBE%%는 primary sodium pump 하나 상실, 소외 전원 상실(전출력·저출력), 열침원 상실, 원자로 power runback 없는 Energy Island 과도, 중간 열교환기의 이차측에서 일차측으로의 누설(운전·정지), 정지 중 Intermediate Air Cooling System 한 계열 상실이다. 이 사건들은 Intermediate Air Cooling System의 non-passive 냉각, 또는 non-passive와 passive 냉각이 두 계열 모두에서 실패한다고 가정하며, 최종 조건은 Reactor Air Cooling System이나 Intermediate Air Cooling System의 passive 또는 non-passive 모드가 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실만 저출력 safe and stable 또는 safe shutdown으로 끝난다. 중간 열교환기 누설 사건에서는 Primary Heat Transport System으로 흘러들 수 있는 중간 소듐 양이 Intermediate Heat Transport System 배치로 제한되어 원자로 용기가 넘치지 않는다. 빈도 표가 있는 원자로 쪽 DBE%%t:DBE%%의 평균 빈도는 1.11E-04에서 3.02E-03이다.
+원자로 쪽 DBE%%t:DBE%%는 primary sodium pump 하나 상실, 소외 전원 상실(전출력·저출력), 열침원 상실, reactor power runback이 완료되기 전에 scram이 나는 Energy Island 과도, 중간 열교환기의 이차측에서 일차측으로의 누설(운전·정지), 정지 중 Intermediate Air Cooling System 한 계열 상실이다. 이 사건들은 Intermediate Air Cooling System의 non-passive 냉각, 또는 non-passive와 passive 냉각이 두 계열 모두에서 실패한다고 가정하며, 최종 조건은 Reactor Air Cooling System이나 Intermediate Air Cooling System의 passive 또는 non-passive 모드가 붕괴열을 제거하는 safe shutdown이고, 정지 중 한 계열 상실만 저출력 safe and stable 또는 safe shutdown으로 끝난다. 중간 열교환기 누설 사건에서는 Primary Heat Transport System으로 흘러들 수 있는 중간 소듐 양이 Intermediate Heat Transport System 배치로 제한되어 원자로 용기가 넘치지 않는다. 빈도 표가 있는 원자로 쪽 DBE%%t:DBE%%의 평균 빈도는 1.11E-04에서 3.02E-03이다.
 
 노심 밖 계통 방출 DBE%%t:DBE%%는 Sodium Cover Gas System 누설 두 건, intermediate Sodium Processing System cold trap 누설, primary Sodium Processing System 누설 두 건, Gaseous Radwaste Processing System 누설 두 건이다. Sodium Cover Gas System 누설은 원자로 용기 커버가스(cover gas)%%t:COVER_GAS%% 체적의 방사성 핵종 재고가 사건 시작 때 head access area로 즉시 방출되고, 처음 30분 동안 head access area가 여과를 거쳐 400 cfm으로 배기되며, 30분에 환기가 격리되어 원자로 건물로 하루 체적의 10 percent가 누설되고, 원자로 건물은 여과를 거쳐 1500 cfm으로 배기된다고 모델링한다. cold trap 누설은 침전된 삼중수소가 24시간에 걸쳐 방출되고 Reactor Auxiliary Building 체적이 즉시 환경으로 방출된다고 보수적으로 가정하며, 요약표 제목은 이 사건을 Reactor Auxiliary Building barrier%%t:BARRIER%%가 방출을 가두지 못하는 사건으로 적는다. primary Sodium Processing System 누설은 cold trap으로 가는 배관 파단으로, 계통 유체 20 gallon에 해당하는 공기 중 방사화 소듐을 평가하고, cell에서 Reactor Auxiliary Building으로 하루 체적의 10 percent가 누설되며 건물이 두 시간에 걸쳐 배기된다고 가정한다. 원자로 건물 안 누설 사건은 head access area 구획의 누설률이 비슷하고 체적이 더 크므로 Reactor Auxiliary Building 사건의 결과를 적용한다. Gaseous Radwaste Processing System 누설은 holdup tank 내용물이 tank vault로 방출되어 여과를 거쳐 500 cfm으로 배기되거나, 하류 배관으로 방출되어 vent stack으로 10분에 걸쳐 여과 방출된다고 가정한다.
 

@@ -7,7 +7,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch05
 status: checked
-verified: 2026-10-17
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -174,7 +174,7 @@ Radiation Monitoring System(`RMS`)은 NSRST%%t:NSRST%%와 NST%%t:NST%% 기능을
 
 **규정 대비 메모(C25(c), 신청자 문서 내부 불일치).** `ERM` 목적 문장은 Chapter 1에서 off-site exposure, Chapter 7에서 personnel exposure를 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
 
-**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.6.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준).
+**규정 대비 메모(C26(d), 규정 불일치).** `PSAR`은 `NIC`·`RMS`의 NSRST%%t:NSRST%% 구성품이 RG%%t:RG%% 1.180 Revision 4에 완전 부합한다고 적지만, `SER`은 `NIC`(§7.6.2)와 `RMS`(§7.6.6) 평가 지침으로 RG%%t:RG%% 1.180 Rev. 2를 든다. `PSAR` 같은 절(§7.6.6.2)도 Revision 2를 지침으로 적는다. `SER`에는 이 개정판 차이에 대한 판단이 없다(vault 기준). 이 노트는 `SER`과 같은 절의 문장을 따라 Revision 2를 기준으로 쓴다. Revision 4는 오기로 보이며 차후 확인이 필요하다.
 
 **규정 대비 메모(C39, 신청자 문서 내부 불일치).** `PSAR` §7.6.6.2.2는 `RMS`가 변수를 운전 범위 안에 유지하는 제어를 제공한다고 적고, §7.6.6.3은 `RMS`에 자동 제어 동작이 없다고 적는다. 판정 기준이 되는 권위 조항은 없다. `SER`은 두 문장을 모두 옮겨 적되 그 차이에 대한 판단은 없고(vault 기준), §7.6.6.1.3은 제어 주체에 `NIC`(Nuclear Island Control System, [[Natrium_System_NI_Control]])를 더해 적으며, PDC%%t:PDC%% 13 부합 판단은 감시 기능만 근거로 한다.
 

@@ -5,7 +5,7 @@ sources:
 - PSAR_ch03
 - SER_KU1_CP
 status: checked
-verified: 2026-10-16
+verified: 2026-10-30
 term: null
 tags:
 - natrium
@@ -136,6 +136,7 @@ terms_pending: []
 | Different geometry for the two groups of Control Rod Assemblies (CRA) | Primary CRAs have a different geometry from secondary CRAs. Therefore, the two groups of CRAs are considered as different common cause failure groups for failure to insert on scram. This assumption is consistent with the best available design information. | [PSAR_ch03 Table 3.1-1 p.15-16] |
 | Assumed leak rate from vessel head | Assumed leak rate from reactor head to containment (i.e., the Head Access Area [HAA]) is 1% volume per day when the head is successfully isolated. Failure of head isolation results in a leakage rate of 100% volume per day. | [PSAR_ch03 Table 3.1-1 p.15-16] |
 | Assumed leak rate from containment (i.e., the HAA). | Assumed leak rate from containment (i.e., the HAA) to the environment is 10% volume per day when the containment is successfully isolated. Failure of containment isolation results in a leakage rate of 100% volume per day. | [PSAR_ch03 Table 3.1-1 p.15-16] |
+- "Determination of whether an IE could be caused by specific human errors is evaluated in the system review performed as part of the IE analysis discussed below." [PSAR_ch03 §3.1.1.7 p.10]
 
 ## 해설
 이 보고서는 NEI 18-04 틀을 구현하려면 기술적으로 적정한 PRA가 필요하다고 적고, PRA를 `ASME/ANS RA-S-1.4-2021`의 해당 요건에 따라, regulatory guide%%t:RG%% 1.233 Revision 0이 승인한 NEI 18-04 틀을 구현하도록 개발한다. CP%%t:CP%% 신청의 PRA Technical Adequacy%%t:PRA_TECH_ADEQUACY%%는 `NEI 20-09` 지침에 따라 내부 사건 출력 운전·저출력 정지 PRA를 자체 평가하고, 그 결과를 초안 지침의 supporting requirements와 비교해 확립했다. PRA 문서와 소프트웨어는 품질보증 프로그램을 따르는 형상 관리 과정에서 유지되고, 결과에 more-than-minor 영향이 있을 수 있는 가정은 따로 표로 정리되며, 평가 결과 CP%%t:CP%% 단계 PRA는 CP%%t:CP%% 단계 설계를 합리적으로 반영하고 차이의 영향은 작다고 판단했다. `Model Change Tracking` 과정은 PRA 기술, 입력 자료, 산업 경험, 발전소 성능의 변화도 감시한다. RG%%t:RG%% 1.247에 따라 OL%%t:OL%% 신청 전에 OL%%t:OL%% 설계를 반영한 full-scope peer review를 같은 표준과 `NEI 20-09`에 따라 수행할 것이다.
@@ -151,6 +152,8 @@ ES%%t:ES%%의 끝은 안전·안정 상태이거나 방사성 핵종 방출이�
 systems analysis는 ES%%t:ES%% 분석에서 event tree 정량화에 필요한 fault tree를 만들며, event tree의 각 top event에 필요한 frontline system과 그 기능을 뒷받침하는 support system을 다룬다. Human Reliability Analysis는 ES%%t:ES%%에 관여하는 인적 상호작용을 평가하고 그에 대응하는 human failure event의 확률을 추정한다.
 
 **NRC staff 평가.** NRC staff는 사업자의 PRA 자체 평가를 PRA 품질을 평가하는 유용한 초기 도구로 보지만, "Met"로 평가된 supporting requirement에 대해서도 PRA의 적정성이나 수용성을 판단하는 데 자체 평가에만 의존하지 않는다고 적는다.
+
+IE%%t:IE%%가 특정 인적오류로 생길 수 있는지는 IE%%t:IE%% 분석의 일부인 system review에서 평가한다.
 
 ## 관련 문서
 - [[Non_LWR_PRA_Scope]]
