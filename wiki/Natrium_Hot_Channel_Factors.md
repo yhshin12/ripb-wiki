@@ -12,9 +12,7 @@ term: HCF
 tags:
 - natrium
 - thermal-hydraulics
-terms_pending:
-- FOM
-- NASCENT
+terms_pending: []
 ---
 
 # Hot Channel Factor (HCF)
@@ -89,17 +87,17 @@ terms_pending:
 - "Application of Hot Channel Factors" [TP-LIC-LET-0080 Application of Hot Channel Factors p.55]
 
 ## 해설
-**출처와 시점.** 이 노트의 방법 서술은 TerraPower가 건설허가 신청 전 사전 신청 단계에 NRC에 낸 `Core Thermal Hydraulic Methods` 회의 자료(`TP-LIC-LET-0080`)와 Natrium Simplified Coolant Energy Transport%%t:NASCENT%% 백서(`NAT-3049`)의 공개본에서 왔다. 건설허가 신청의 [[TP-LIC-RPT-0011]]은 HCF%%t:HCF%%를 다루는 절·그림·표의 본문과 값이 공개본에서 비공개여서([[Natrium_Core_Thermal_Hydraulic_Design]]), 그 보고서가 이 노트의 방법과 같은지는 vault에 없다. `ACRS` 발표는 HCF%%t:HCF%%가 과거 sodium-cooled fast reactor 적용과 일관된다고 적으나, 이 문장이 같은 방법임을 보이지는 않는다.
+**출처와 시점.** 이 노트의 방법 서술은 TerraPower가 건설허가 신청 전 사전 신청 단계에 NRC에 낸 `Core Thermal Hydraulic Methods` 회의 자료(`TP-LIC-LET-0080`)와 Natrium Simplified Coolant Energy Transport 백서(`NAT-3049`)의 공개본에서 왔다. 건설허가 신청의 [[TP-LIC-RPT-0011]]은 HCF%%t:HCF%%를 다루는 절·그림·표의 본문과 값이 공개본에서 비공개여서([[Natrium_Core_Thermal_Hydraulic_Design]]), 그 보고서가 이 노트의 방법과 같은지는 vault에 없다. `ACRS` 발표는 HCF%%t:HCF%%가 과거 sodium-cooled fast reactor 적용과 일관된다고 적으나, 이 문장이 같은 방법임을 보이지는 않는다.
 
-**PCT%%t:PEAK_CLADDING_TEMPERATURE%%와 해석 위치.** 회의 자료는 피복재 온도를 중요한 Figure of Merit%%t:FOM%%로 두며, creep와 `Fuel-Cladding Chemical Interaction` 한계에 영향을 주고 연료·냉각재 온도 제약보다 대개 더 제한적이라고 적는다. sodium-cooled fast reactor에서 정상상태 PCT%%t:PEAK_CLADDING_TEMPERATURE%%는 가열 길이 상단 부근에 생긴다. 백서도 PCT%%t:PEAK_CLADDING_TEMPERATURE%%를 Natrium 핵연료 집합체 해석의 핵심 FoM%%t:FOM%%으로 두고, 그 이유를 thermal creep와 `FCCI` 같은 온도 의존 현상으로 든다. Core Cooling Hydraulics 방법은 노심의 `1D` 열수력 모형으로 유량·압력 손실, 소듐 비등 여유, 첨두 피복재·연료 온도를 평가하고, 첨두 유체 온도는 Nascent%%t:NASCENT%% 모형으로 계산하며, 정격·비정격 정상상태에서 HCF%%t:HCF%%로 불확도를 반영해 온도 한계를 만족시킨다. Nascent%%t:NASCENT%%의 범위는 핵연료 집합체의 첨두 유체 온도이다.
+**PCT%%t:PEAK_CLADDING_TEMPERATURE%%와 해석 위치.** 회의 자료는 피복재 온도를 중요한 Figure of Merit%%t:FOM%%로 두며, creep와 `Fuel-Cladding Chemical Interaction` 한계에 영향을 주고 연료·냉각재 온도 제약보다 대개 더 제한적이라고 적는다. sodium-cooled fast reactor에서 정상상태 PCT%%t:PEAK_CLADDING_TEMPERATURE%%는 가열 길이 상단 부근에 생긴다. 백서도 PCT%%t:PEAK_CLADDING_TEMPERATURE%%를 Natrium 핵연료 집합체 해석의 핵심 FoM%%t:FOM%%으로 두고, 그 이유를 thermal creep와 `FCCI` 같은 온도 의존 현상으로 든다. Core Cooling Hydraulics 방법은 노심의 `1D` 열수력 모형으로 유량·압력 손실, 소듐 비등 여유, 첨두 피복재·연료 온도를 평가하고, 첨두 유체 온도는 Nascent 모형으로 계산하며, 정격·비정격 정상상태에서 HCF%%t:HCF%%로 불확도를 반영해 온도 한계를 만족시킨다. Nascent의 범위는 핵연료 집합체의 첨두 유체 온도이다.
 
-**HCF%%t:HCF%%의 두 종류와 다섯 범주.** Nascent%%t:NASCENT%% 예측의 불확도는 HCF%%t:HCF%%로 반영한다. statistical HCF%%t:HCF%%는 구성 모형 불확도로 인한 첨두 온도 민감도를, direct HCF%%t:HCF%%는 wire 방위각 위치에 따른 국부 온도 첨두와 `OSU` 대비 보수적 예측을 낳는 편향(뒤 문구 일부 비공개)을 맡는다. HCF%%t:HCF%%는 control/measurement, manufacturing, material property, nuclear, thermal hydraulic 불확도의 다섯 범주로 나뉜다. 개념·예비 설계에서는 Natrium 고유 값을 정하거나 과거 값이 보수적임을 개발 계획과 함께 보이고, 최종 설계에서는 Natrium 고유 값을 정한다. 같은 슬라이드(`Detailed HCFs`)의 나머지 내용은 비공개이다.
+**HCF%%t:HCF%%의 두 종류와 다섯 범주.** Nascent 예측의 불확도는 HCF%%t:HCF%%로 반영한다. statistical HCF%%t:HCF%%는 구성 모형 불확도로 인한 첨두 온도 민감도를, direct HCF%%t:HCF%%는 wire 방위각 위치에 따른 국부 온도 첨두와 `OSU` 대비 보수적 예측을 낳는 편향(뒤 문구 일부 비공개)을 맡는다. HCF%%t:HCF%%는 control/measurement, manufacturing, material property, nuclear, thermal hydraulic 불확도의 다섯 범주로 나뉜다. 개념·예비 설계에서는 Natrium 고유 값을 정하거나 과거 값이 보수적임을 개발 계획과 함께 보이고, 최종 설계에서는 Natrium 고유 값을 정한다. 같은 슬라이드(`Detailed HCFs`)의 나머지 내용은 비공개이다.
 
 **결합식.** `Application of Hot Channel Factors` 슬라이드(위 그림)는 `2-sigma` 피복재 내면 온도를 구하는 식 세 개를 보인다. direct HCF%%t:HCF%%는 냉각재·막·피복재 온도 상승에 각각 곱해 선형으로 더한다. statistical 기여는 첨자 `j`마다 direct HCF%%t:HCF%%를 곱한 세 온도 상승에 statistical HCF%%t:HCF%%에서 1을 뺀 값을 가중해 구하고, 그 제곱합 제곱근에 계수를 곱해 입구 온도와 direct 항에 더한다. 계수와 각 항의 시그마 수준은 그림의 식에 있으며, 정제본은 식을 슬라이드 이미지에서 LaTeX로 옮긴 전사로 싣는다. 이 식은 피복재 내면까지를 다루며, 연료 중심선까지의 확장은 이 자료의 공개본에 없다(식 아래 영역은 비공개).
 
 **냉각재 HCF%%t:HCF%% 비교.** 회의 자료는 현재 Natrium Type 1 HCF%%t:HCF%%가 과거 설계와 비슷하다고 적지만 Natrium 열의 값은 비공개이다. 공개된 조합 값은 `EBR-II`, `FFTF-Metal`, `FFTF-SAR`의 direct, statistical, overall 조합 값이며, direct와 overall 조합에서는 `FFTF-SAR` 값이 가장 크고, statistical 조합에서는 가장 작다. 별표 열(`FFTF-SAR*`)은 유량 분포의 direct bias를 statistical 불확도로 바꾸고 입구 유량 분포 불확도를 statistical로 다룬 경우이며 그 값도 비공개이다.
 
-**과거 문헌.** 백서의 참고문헌에는 `FFTF` HCF%%t:HCF%% 평가(`HEDL-TI-75226`), `CRBRP` 노심 집합체 HCF%%t:HCF%% 예비 해석(`WARD-D-0050` Rev. 3), `LMFBR` 열해석 문헌이 있다. 백서 §3.4(Nascent%%t:NASCENT%%와 HCF%%t:HCF%%의 관계)와 회의 자료의 `Peak Clad Temperature Overview`, `Hot Channel Factor Overview` 슬라이드 본문은 비공개이다.
+**과거 문헌.** 백서의 참고문헌에는 `FFTF` HCF%%t:HCF%% 평가(`HEDL-TI-75226`), `CRBRP` 노심 집합체 HCF%%t:HCF%% 예비 해석(`WARD-D-0050` Rev. 3), `LMFBR` 열해석 문헌이 있다. 백서 §3.4(Nascent와 HCF%%t:HCF%%의 관계)와 회의 자료의 `Peak Clad Temperature Overview`, `Hot Channel Factor Overview` 슬라이드 본문은 비공개이다.
 
 ## 관련 문서
 - [[Natrium_Core_Thermal_Hydraulic_Design]]

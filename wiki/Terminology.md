@@ -210,8 +210,8 @@ terms_pending: []
 | TEDE | total effective dose equivalent | TEDE |  | 약어 |  | [SER_KU1_CP §2.5.1.3.2.2 p.107] | 영어 유지 | 2026-10-16 사용자 결정 |
 | HCF | Hot Channel Factor | HCF |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.7] | 영어 유지 | 2026-10-26 사용자 결정 |
 | V_AND_V | Verification and Validation | V&V |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.8] | 영어 유지 | 2026-10-26 사용자 결정 |
-| FOM | Figure of Merit | FoM |  | 약어 |  | [NAT-3049 §ACRONYMS p.9] | 미정 | 2026-10-26 NAT-3049 인제스트 |
-| NASCENT | Natrium Simplified Coolant Energy Transport | Nascent |  | 약어 |  | [NAT-3049 §2 p.11] | 미정 | 2026-10-26 NAT-3049 인제스트 |
+| FOM | Figure of Merit | FoM |  | 약어 |  | [NAT-3049 §ACRONYMS p.9] | 영어 유지 | 2026-10-30 사용자 결정 |
+| NASCENT | Natrium Simplified Coolant Energy Transport | Nascent |  |  |  | [NAT-3049 §2 p.11] | 용어 아님 | 모형 이름, 2026-10-30 사용자 결정 |
 | PEAK_CLADDING_TEMPERATURE | peak cladding temperature | PCT | 첨두피복재온도 | 약어 |  | [NAT-3049 §3.1 p.12] | 확정 | 2026-10-26 사용자 결정 |
 | REACTOR_TRIP_BREAKER | reactor trip breaker | RTB |  | 약어 |  | [ACRS_ML25293A458 Gravity scram functions p.15] | 영어 유지 | 2026-10-30 사용자 결정 |
 | UNDERVOLTAGE_TRIP | undervoltage trip |  |  |  |  | [PSAR_ch05 §5.3.3.4 p.32] | 영어 유지 | 2026-10-30 사용자 결정 |

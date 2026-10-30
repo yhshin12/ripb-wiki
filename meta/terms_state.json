@@ -48,6 +48,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "ATWS": {
+   "abbr": "ATWS",
+   "english": "anticipated transient without scram",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "BARRIER": {
    "abbr": "",
    "english": "barrier",
@@ -349,6 +357,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "DRIVELINE_SCRAM_FOLLOW": {
+   "abbr": "",
+   "english": "driveline scram follow",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "EAB": {
    "abbr": "EAB",
    "english": "Exclusion Area Boundary",
@@ -536,7 +552,7 @@
    "forbidden": [],
    "korean": "",
    "later": "약어",
-   "state": "미정"
+   "state": "영어 유지"
   },
   "FSF": {
    "abbr": "FSF",
@@ -597,6 +613,14 @@
   "HTGR": {
    "abbr": "HTGR",
    "english": "high-temperature gas-cooled reactor",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "HYPOTHETICAL_CDA": {
+   "abbr": "HCDA",
+   "english": "hypothetical core disruptive accident",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -663,6 +687,14 @@
   "INGESTION_PATHWAY": {
    "abbr": "",
    "english": "ingestion pathway",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "INHERENT_REACTIVITY_FEEDBACK": {
+   "abbr": "",
+   "english": "inherent reactivity feedback",
    "forbidden": [],
    "korean": "",
    "later": "",
@@ -889,8 +921,8 @@
    "english": "Natrium Simplified Coolant Energy Transport",
    "forbidden": [],
    "korean": "",
-   "later": "약어",
-   "state": "미정"
+   "later": "",
+   "state": "용어 아님"
   },
   "NEI": {
    "abbr": "NEI",
@@ -1190,6 +1222,22 @@
    "later": "",
    "state": "용어 아님"
   },
+  "REACTOR_RUNBACK": {
+   "abbr": "",
+   "english": "reactor runback",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
+  "REACTOR_TRIP_BREAKER": {
+   "abbr": "RTB",
+   "english": "reactor trip breaker",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "RELEASE_FRACTION": {
    "abbr": "",
    "english": "release fraction",
@@ -1432,6 +1480,14 @@
    "later": "",
    "state": "용어 아님"
   },
+  "SHUNT_TRIP": {
+   "abbr": "",
+   "english": "shunt trip",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
+  },
   "SINGLE_FAILURE_CRITERION": {
    "abbr": "",
    "english": "single-failure criterion",
@@ -1612,6 +1668,14 @@
    "korean": "불확도범위",
    "later": "한국어",
    "state": "확정"
+  },
+  "UNDERVOLTAGE_TRIP": {
+   "abbr": "",
+   "english": "undervoltage trip",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "영어 유지"
   },
   "V_AND_V": {
    "abbr": "V&V",

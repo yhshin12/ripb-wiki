@@ -275,3 +275,8 @@
 - 새 노트 3(소스 카드 2, Natrium_Hot_Channel_Factors), 고친 노트 1(Natrium_Core_Thermal_Hydraulic_Design)
 - 검사: lint 0, 인용 검증 0, 용어 충돌 0; 서브에이전트 대조 36문장 불일치 0, 원문 사실 누락 7건 보강
 - 미정 용어 2(FOM, NASCENT); ingest partial
+
+## [2026-10-30] terms | 용어 반영
+- FOM 영어 유지(약어 FoM), NASCENT 용어 아님(모형 이름)
+- 표지 제거: Natrium_Hot_Channel_Factors 4곳, NAT-3049 1곳
+- 검사: lint 0, verify_quotes 0, 용어 충돌 0
