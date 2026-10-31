@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch03
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -108,3 +108,4 @@ terms_pending: []
 - [[ACRS_ML25293A458]]
 - [[Natrium_SER_Core_Fuel_Design_Review]]
 - [[Natrium_SER_NHS_PDC_Conformance]]
+- [[Natrium_Hot_Channel_Factors]]

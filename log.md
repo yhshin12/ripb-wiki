@@ -280,3 +280,9 @@
 - FOM 영어 유지(약어 FoM), NASCENT 용어 아님(모형 이름)
 - 표지 제거: Natrium_Hot_Channel_Factors 4곳, NAT-3049 1곳
 - 검사: lint 0, verify_quotes 0, 용어 충돌 0
+
+## [2026-10-31] lint | 의미 점검 2026-10-31
+- 부재 진술 55건: 낡음 5, 보완 가능 25, 참 25
+- 조치 1–8 적용: 40개 노트, RG_1.247 Figure 1 렌더링, C67 근거 보강
+- 작성 뒤 대조 일치가 아닌 항목 6건 수정
+- 검사: lint 0, verify_quotes 0, 용어 충돌 0, pytest 443 통과

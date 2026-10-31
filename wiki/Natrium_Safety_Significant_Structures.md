@@ -7,7 +7,7 @@ sources:
 - PSAR_ch01
 - PSAR_ch07
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -242,6 +242,9 @@ terms_pending: []
 - "No special construction techniques are used for the construction of safety-significant structures." [PSAR_ch06 §6.4.2.4.3 p.37]
 - "There are three ways to define inertia: 1) automatic computation, 2) direct definition, and 3) definition based on static loading conditions." [PSAR_ch06 §6.4.2.3.2 p.32]
 - "The element is a stretching and bending quadrilateral element with six degrees-of-freedom at each of the four corner nodes." [PSAR_ch06 §6.4.2.3.2 p.33]
+- "At an approximate elevation of 6,758 feet, a slab with an integral steel plate located on its underside covers the HAA and represents the top of the RXB substructure." [PSAR_ch07 §7.8.1.1.1 p.337]
+- "The removable concrete planks are supported by steel box girders." [PSAR_ch07 §7.8.1.1.1 p.337]
+- "Mass includes self-weight of structural elements, including steel liners, stay in place form work and consideration of permanent equipment loads and the appropriate part of the live load." [PSAR_ch07 §7.8.1 p.341]
 
 ## 해설
 safety-significant 구조물의 안전 분류는 하부구조와 상부구조가 다르다. Reactor Building, Fuel Handling Building, `NCB`의 하부구조는 Safety-Related%%t:SR%%, Reactor Auxiliary Building 하부구조와 세 건물의 상부구조는 Non-Safety-Related with Special Treatment%%t:NSRST%%, Reactor Building 상부구조는 Non-Safety-Related with No Special Treatment%%t:NST%%이다. 주 설계 코드도 이 분류를 따라 갈린다. SR%%t:SR%% 하부구조는 콘크리트에 `ACI 349-13`, 강재에 `ANSI/AISC N690-18`을, NSRST%%t:NSRST%% Reactor Auxiliary Building 하부구조와 상부구조는 `ACI 318-19`와 `ANSI/AISC 360-16`을 쓴다. RG%%t:RG%% 부합 표에서 여덟 건 가운데 여섯 건은 Full이고, `RG 1.13`과 `RG 1.143`은 Partial이며 두 경우 모두 Fuel Handling Building 상부구조와 관련된다.
@@ -254,9 +257,9 @@ NSRST%%t:NSRST%% 상부구조는 강구조이며 `AISC 325-17`의 Load and Resis
 
 재료는 `ACI 301-16`에 따른 구조용 콘크리트로 28일 압축강도 5,000 pounds per square inch, 철근은 `ASTM A615-09b` 또는 `ASTM A706-09b`의 Grade 60, Fuel Handling Building의 SR%%t:SR%% Spent Fuel Pool 라이너는 `ASTM A240-16a`를 쓴다. 품질관리는 Quality Assurance Program Description을 따르고, 특수 시공기법은 쓰지 않는다.
 
-**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다. 이 노트는 `SER`과 §6.4.2.4.1을 따라 `ACI` 301-16을 기준으로 쓴다. Table 6.4-3의 SR%%t:SR%% 열 표시는 오기로 보이며 차후 확인이 필요하다.
+**규정 대비 메모(C40, 규정 불일치).** `PSAR` §6.4.2.4.1은 safety-significant 구조물의 구조 콘크리트 공사를 `ACI` 301-16에 따라 수행한다고 적으나, Table 6.4-3은 `ACI` 301-05를 SR%%t:SR%% 열에, `ACI` 301-16을 NSRST%%t:NSRST%% 열에 표시한다. `SER`은 콘크리트 공사가 `ACI` 301-16을 따른다고 기술하고, 콘크리트·강재 재료 정보가 적용 설계 코드와 `ASTM` 표준에 부합하므로 수용 가능하다고 판단했다. 따라서 Table 6.4-3이 SR%%t:SR%%에 `ACI` 301-05를 표시한 것은 `SER` 기준과 다르다. `SER`은 이 표 표시를 따로 다루지 않고, 최종 설계에 쓰인 재료를 operating license%%t:OL%% 단계에서 확인하겠다고 적는다. 이 노트는 `SER`과 §6.4.2.4.1을 따라 `ACI` 301-16을 기준으로 쓴다. 다만 같은 표의 `ACI` 318-08 행도 SR%%t:SR%% 열에서 `ACI` 301-05를 함께 적으므로 Table 6.4-3의 SR%%t:SR%% 열 표시를 단순 오기로 단정할 수 없으며, 표기 의도는 차후 확인이 필요하다.
 
-**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 7은 `FHB` 하부구조에 대해서는 `SFP` liner와 leak chase system에 관련된 구조용 강재 부분을 `AISC` N690-18로 설계한다고 적어 하부구조 강재의 한 예를 든다. 그러나 `RXB` 하부구조에 대한 Chapter 1·7의 "steel"이 무엇을 가리키는지, 곧 Chapter 6이 적는 stay-in-place formwork나 steel embedment인지는 vault에 없다.
+**규정 대비 메모(C41, 신청자 문서 내부 불일치).** `PSAR` Chapter 6은 구조용 강재 형강을 SR%%t:SR%%·NSRST%%t:NSRST%% 하부구조의 주 부재로 쓰지 않는다고 적고, Chapter 1과 Chapter 7은 `RXB` 하부구조를 "reinforced concrete and steel"로 적는다. `SER`은 `RXB`를 매립된 콘크리트 하부구조와 지상 강골조 상부구조로 기술하면서, SR%%t:SR%% 하부구조의 설계 코드로 철근콘크리트에 `ACI` 349-13, 구조용 강재에 `ANSI`/`AISC` N690-18을 든다. 이 기술은 주 부재 문제를 판정하지 않으며, 이를 판정할 권위 조항도 없다. Chapter 7은 `FHB` 하부구조에 대해서는 `SFP` liner와 leak chase system에 관련된 구조용 강재 부분을 `AISC` N690-18로 설계한다고 적어 하부구조 강재의 한 예를 든다. Chapter 7은 `RXB` 하부구조의 강재 요소로 슬래브 아래면의 integral steel plate, removable concrete plank를 받치는 steel box girder, 구조 요소 질량에 포함되는 steel liner와 stay in place form work를 적는다. 다만 "reinforced concrete and steel"의 steel이 이 요소들을 가리킨다는 문장과, steel box girder가 Chapter 6이 말하는 주 부재에 해당하는지에 대한 서술은 vault에 없다.
 
 ## 관련 문서
 - [[Natrium_SSC_Safety_Classification]]

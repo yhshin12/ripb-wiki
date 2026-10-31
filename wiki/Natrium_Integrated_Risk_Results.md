@@ -6,7 +6,7 @@ sources:
 - NEI_18-04
 - SER_KU1_CP
 status: checked
-verified: 2026-09-16
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -57,6 +57,16 @@ terms_pending: []
 - "Event sequences with frequencies less than 5E-07/plant-year are retained in the PRA results and used to confirm there are no cliff edge effects." [NEI_18-04 §3.2.1 p.17]
 - "LBEs include AOOs, DBEs, BDBEs, and DBAs." [NEI_18-04 Table 3-1 p.14]
 - "In this task, the integrated risk of all the LBEs, is evaluated against three cumulative risk targets:" [NEI_18-04 §3.2.2 Task 7b p.24]
+- "Event sequences with upper 95th percentile frequencies less than 5E-07/plant-year are retained in the PRA results and used to confirm that there are no cliff-edge effects." [NEI_18-04 §3.2.2 Task 4 p.21]
+- "An event sequence family with a mean frequency less than 5E-07/plant year but with a 95%tile frequency estimate above 5E-07/plant-year is evaluated as a BDBE." [NEI_18-04 §3.2.2 Task 7a p.22]
+
+- "the staff noted that there are two events that the LMP methodology as outlined in NEI 18-04 and RG 1.233 would have categorized as BDBEs based on the 95th percentile frequency that USO did not include in the PSAR." [SER_KU1_CP §3.7.1 p.261]
+- "This is because USO used the mean frequency when categorizing events as BDBEs against the 5E-07 lower bound." [SER_KU1_CP §3.7.1 p.261]
+
+| LBE | Mean Frequency | 95th Percentile Frequency | 출처 |
+|---|---|---|---|
+| RFH-OERC-EX1 | 3.30E-07 | 1.19E-06 | [SER_KU1_CP Table 3.4-1 p.229] |
+| IPI-IHEL-EX1 | 1.57E-07 | 5.28E-07 | [SER_KU1_CP Table 3.4-1 p.229] |
 
 ## 해설
 이 절은 `PSAR`용 PRA 범위 안에서 발전소의 통합 위험 성능을 NEI 18-04 `Task 7b`의 세 cumulative risk target%%t:CUM_RISK_TARGET%%과 비교한다. 첫째 지표는 site boundary 선량 `100 mrem`을 넘는 총 평균 빈도가 `10 CFR 20`의 `annual cumulative exposure limits`를 지키도록 `one per plant-year`를 넘지 않아야 한다는 것이다. 둘째는 Exclusion Area Boundary%%t:EAB%%에서 `1 mile` 안의 `early fatality`의 `average individual risk`이 빈도와 결과의 평균 추정으로 `5E-07 per plant-year`를 넘지 않아 NRC safety goal의 Quantitative Health Objective%%t:QHO%%를 만족하는 것이고, 셋째는 EAB%%t:EAB%%에서 `10 miles` 안의 `latent cancer` 사망의 `average individual risk`이 `2E-06 per plant-year`를 넘지 않는 것이다. `PSAR`은 세 지표 모두의 합산 대상을 모든 LBE%%t:LBE%%와 OQE%%t:OQE%%로 적는다.
@@ -67,7 +77,7 @@ terms_pending: []
 
 현재 PRA 결과로, 모든 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%%, OQE%%t:OQE%%에서 site boundary 선량 `100 mrem (1 mSv)`을 넘는 총 평균 빈도는 불확실도 없이 `3.12E-03 per plant-year`이다. EAB%%t:EAB%%에서 `1 mile` 안 `early fatality`의 누적 `average individual risk`은 `0 per plant-year`, `10 miles` 안 `latent cancer`의 누적 `average individual risk`은 `3.86E-09 per plant-year`이며, `PSAR`은 세 지표가 모두 `satisfied with margin`이라고 적는다. 결과 문장은 위험 값을 `the mean frequency ... of the cumulative average individual risk`로, 목표 문장은 `average individual risk`로 적는다.
 
-NEI 18-04 `Task 7b`의 site boundary 목표 문장은 합산 대상을 모든 LBE%%t:LBE%%로 적고, NEI 18-04 `§4.2.2`는 Structures, Systems, and Components%%t:SSC%% 분류 과정의 cumulative risk limit 기준을 평가할 때 지원 PRA 범위 안의 모든 LBE%%t:LBE%%를 포함해야 한다고 적는다. NEI 18-04의 LBE%%t:LBE%% 정의에는 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%%와 함께 DBA%%t:DBA%%가 들어 있다. 따라서 `PSAR`의 합산 범위는 OQE%%t:OQE%%를 더하고 DBA%%t:DBA%%를 뺀 점에서 NEI 18-04 문언과 다르다. NEI 18-04는 빈도가 `5E-07/plant-year`보다 낮은 Event Sequence%%t:ES%%를 PRA 결과에 남겨 cliff edge 효과가 없음을 확인하는 데 쓴다고 적는다. NRC staff가 옮긴 신청자 진술에 따르면 OQE%%t:OQE%%는 평균 빈도가 `5E-07 per plant-year`보다 낮아 LBE%%t:LBE%% 빈도 cutoff 밖에 있으면서 결과가 정량화된 사건이다. NEI 18-04 문장은 이 빈도가 평균값인지 적지 않으므로, 두 사건 범위가 같은지는 vault에 없다.
+NEI 18-04 `Task 7b`의 site boundary 목표 문장은 합산 대상을 모든 LBE%%t:LBE%%로 적고, NEI 18-04 `§4.2.2`는 Structures, Systems, and Components%%t:SSC%% 분류 과정의 cumulative risk limit 기준을 평가할 때 지원 PRA 범위 안의 모든 LBE%%t:LBE%%를 포함해야 한다고 적는다. NEI 18-04의 LBE%%t:LBE%% 정의에는 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%%와 함께 DBA%%t:DBA%%가 들어 있다. 따라서 `PSAR`의 합산 범위는 OQE%%t:OQE%%를 더하고 DBA%%t:DBA%%를 뺀 점에서 NEI 18-04 문언과 다르다. NEI 18-04는 빈도가 `5E-07/plant-year`보다 낮은 Event Sequence%%t:ES%%를 PRA 결과에 남겨 cliff edge 효과가 없음을 확인하는 데 쓴다고 적는다. NRC staff가 옮긴 신청자 진술에 따르면 OQE%%t:OQE%%는 평균 빈도가 `5E-07 per plant-year`보다 낮아 LBE%%t:LBE%% 빈도 cutoff 밖에 있으면서 결과가 정량화된 사건이다. NEI 18-04 §3.2.2는 이 경계를 95th percentile 빈도로 적고, Task 7a는 평균 빈도가 이 값보다 낮아도 95th percentile이 더 높으면 BDBE%%t:BDBE%%로 평가한다고 적는다. 따라서 평균 빈도로 정한 OQE%%t:OQE%%의 범위는 NEI 18-04의 범위와 같지 않다. `SER`이 평균 빈도 사용 때문에 `PSAR`에 BDBE%%t:BDBE%%로 들어가지 않았다고 적은 RFH-OERC-EX1과 IPI-IHEL-EX1은 평균이 5E-07보다 낮고 95th percentile이 그보다 높아, 그 차이의 예이다. 두 사건이 `PSAR`의 합산에 들어갔는지는 vault에서 확인되지 않는다.
 
 **NRC staff 평가.** NRC staff는 누적 위험 지표가 NEI 18-04 지침과 일치하되, Licensing Modernization Project%%t:LMP%% 방법론이 요구하는 LBE%%t:LBE%% 외에 PRA의 OQE%%t:OQE%%를 통합 성능 평가에 포함한 점이 예외라고 판단했다. staff는 이 일탈이 `RG 1.253`이 승인한 NEI 21-07 C.4.1의 construction permit%%t:CP%% 신청 내용 지침과 맞고 OQE%%t:OQE%%가 정보를 더하므로 수용 가능하다고 보았다. staff는 또 `PSAR` §4.1이 DBA%%t:DBA%%를 제외한 시설의 잠재적 방사성 방출 사건 전 범위를 포함하는 해석에 근거하므로 통합 위험 평가 정보가 `RG 1.233`·`RG 1.253`과 일치한다고 판단했다. 따라서 위의 판단 가운데 OQE%%t:OQE%% 포함과 DBA%%t:DBA%% 제외는 모두 staff가 기술한 범위와 같다.
 

@@ -7,7 +7,7 @@ sources:
 - PSAR_ch01
 - SER_KU1_CP
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -342,6 +342,9 @@ terms_pending: []
 
 ![[PSAR_ch07_Fig_7.1.3-4.png]]
 - "During reactor scrams, the PSPs are ramped down using a predefined ramp down curve to minimum flow. However, under certain conditions after a reactor scram, the PSPs can automatically trip resulting in coastdown." [PSAR_ch07 §7.1.3.2.3 p.68]
+- "IHX coaxial intermediate sodium supply and return piping within the reactor" [PSAR_ch07 §7.1.3.1 p.64]
+- "IHX Nozzle Clamshell & Guard Enclosure" [PSAR_ch07 Table 7.5.2-2 p.245]
+- "Clamshell enclosures are used for intermediate sodium SSCs located within the HAA" [PSAR_ch07 §7.5.2.3.4 p.240]
 
 ## 해설
 Primary Heat Transport System(`PHT`)은 `RES` 안의 Intermediate Heat Exchanger(`IHX`) 두 기, Primary Sodium Pump(`PSP`) 두 기, `RV` 안의 hot pool, cold pool, warm pool로 이루어진다. `PSP`·`IHX` flange와 `PSP` motor는 원자로 헤드 위에, `PSP` isolation circuit breaker는 Nuclear Island Control Building에, `PSP` adjustable speed drive는 Nuclear Island Electrical Building에 있다. 주 기능은 발전을 위해 노심 열을 `IHT`로 운반하는 것이고, safety-significant 기능은 원자로, 핵연료, 원자로 내부 구조물 손상을 막는 설계 한계 안으로 primary sodium 온도를 유지하는 것이다. 정상 운전, 기동, 정지, 재장전과 일부 LBE%%t:LBE%% 동안 두 `PSP`가 유량을 만들고, 일부 LBE%%t:LBE%% 동안에는 자연 순환이 노심 열을 `RV` 벽으로 옮겨 `GV`와 Reactor Air Cooling System(`RAC`)으로 보낸다. 자연 순환 중 유로는 바뀌지 않으며, `IHT`로의 열전달이 없으면 모든 붕괴열이 `RAC`로 간다. `PHT`는 SR%%t:SR%% 계통이고, `PSP`, `IHX`, `PSP` isolation circuit breaker는 SR%%t:SR%% Structures, Systems, and Components%%t:SSC%%이다.
@@ -354,7 +357,7 @@ principal design criteria%%t:PDC%% 3에 따라 `PSP`에는 누설 윤활유를 �
 
 `PSP`는 SR%%t:SR%%이고 lube oil system, motor, adjustable speed drive는 Non-Safety-Related with No Special Treatment%%t:NST%%이다. shaft seal 장비 검증은 `ASME QME-1`로 수행될 예정이고, `PSP` 전체 지진 분류는 `SCS1`이며, isolation circuit breaker 지진 검증에는 `IEEE 344-2013`이 쓰인다. `Table 7.1.3-3`의 예비 성능 값은 전출력 유량 `40,000 gpm (150 m3/s)`, coastdown halving time `3.5 - 5 s`, 설계 온도 `1,050°F (566 °C)`이다. `IHX`는 SR%%t:SR%%이고 `Table 7.1.3-4`의 주요 구성품은 SR%%t:SR%%·`SCS1`이며, 정격 용량은 `1,450 MBtu/hr (425 MWth)`이다. `IHX` 누설은 intermediate sodium에서 primary sodium 쪽으로 일어나고 `IHT` expansion tank 수위 감소와 `PHT` hot pool 수위 증가로 탐지되며, `IHX` SR%%t:SR%% 기능은 피동이어서 제어·표시·계기가 필요 없다.
 
-`PSAR` Chapter 5 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier` 한 레코드로 적어 Chapter 7의 하위 식별자 `DL3-RR1a`·`DL3-RR1d`와 다르다. Chapter 5는 `DL3-HR2` 기준을 고온 한계와 low flux 신호로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한다. Chapter 1은 `The PHT safety function`, Chapter 7은 `A safety-significant function`이라고 적으며, Chapter 1은 `IHT`–`PHT` 경계를 `IHX` nozzle–`IHT` 배관 용접부로 적는 반면 Chapter 7은 원자로 안 `IHX` coaxial 배관을 `PHT` primary coolant boundary 구성품으로 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주한다고 적고, `IHT` 루프 배관이 주로 `RAB`에 있되 `RXB` 안에서 `IHX` nozzle에 연결되는 배관은 예외라는 `PSAR` 기술을 옮겨 적는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없다.
+`PSAR` Chapter 5 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier` 한 레코드로 적어 Chapter 7의 하위 식별자 `DL3-RR1a`·`DL3-RR1d`와 다르다. Chapter 5는 `DL3-HR2` 기준을 고온 한계와 low flux 신호로 적고, Chapter 7은 여기에 scram 신호 존재와 cold pool 온도를 더한다. Chapter 1은 `The PHT safety function`, Chapter 7은 `A safety-significant function`이라고 적으며, Chapter 1은 `IHT`–`PHT` 경계를 `IHX` nozzle–`IHT` 배관 용접부로 적는 반면 Chapter 7은 원자로 안 `IHX` coaxial 배관을 `PHT` primary coolant boundary 구성품으로 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주한다고 적고, `IHT` 루프 배관이 주로 `RAB`에 있되 `RXB` 안에서 `IHX` nozzle에 연결되는 배관은 예외라는 `PSAR` 기술을 옮겨 적는다. Chapter 1의 nozzle 경계와 coaxial 배관의 접합 위치를 직접 적은 문장은 vault에 없다. Chapter 7은 coaxial 배관을 원자로 안에 두고 `IHX` nozzle의 clamshell enclosure를 `HAA` 쪽에 두므로, nozzle은 `HAA` 쪽으로 읽히나 이것은 추론이다.
 
 **규정 대비 메모(C29, 신청자 문서 내부 불일치).** Chapter 7 `PHT` 기능 표는 `DL3-RR1a`와 `DL3-RR1d`를 적지만, Chapter 5 Table 5.2-3에는 `DL3-RR1` 한 레코드만 있고 하위 `ID`가 없다. `SER` §7.1.3.1.17.3은 Chapter 7의 하위 `ID`를 그대로 써서 `PHT`를 평가하고, `SER` Table 6.1-1은 `PHT`의 `DL3-RR1`을 한 레코드로 적는다. `SER`은 두 표기를 모두 쓰며 그 차이를 판단하지 않는다. 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 5 표의 누락에 대한 판단이 없다(vault 기준).
 
@@ -362,7 +365,7 @@ principal design criteria%%t:PDC%% 3에 따라 `PSP`에는 누설 윤활유를 �
 
 **규정 대비 메모(C31(c), 신청자 문서 내부 불일치).** Chapter 1은 `PHT` 기능을 "safety function"으로, Chapter 7은 "safety-significant function"으로 적는다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
 
-**규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주하고 `RXB` 안에서 `IHX` nozzle에 연결되는 배관을 `IHT` 배관으로 옮겨 적으므로, 경계를 `IHX` nozzle에 두는 Chapter 1 기술과 어긋나지 않는다. Chapter 1의 nozzle 경계와 coaxial 배관의 위치 관계는 vault에 없고, `SER`에는 이 경계에 대한 직접 판단이 없다(vault 기준).
+**규정 대비 메모(C31(d), 신청자 문서 내부 불일치).** Chapter 1은 `IHT`와 `PHT`의 경계를 `IHX` nozzle과 `IHT` 배관 용접부로 적고, Chapter 7은 `IHX` 구성품을 열거한다. `SER`은 `IHX`를 `PHT`의 일부로 간주하고 `RXB` 안에서 `IHX` nozzle에 연결되는 배관을 `IHT` 배관으로 옮겨 적으므로, 경계를 `IHX` nozzle에 두는 Chapter 1 기술과 어긋나지 않는다. Chapter 1의 nozzle 경계와 coaxial 배관의 접합 위치를 직접 적은 문장은 vault에 없다. Chapter 7은 coaxial 배관을 원자로 안에 두고 `IHX` nozzle의 clamshell enclosure를 `HAA` 쪽에 두므로, nozzle은 `HAA` 쪽으로 읽히나 이것은 추론이다. `SER`에는 이 경계에 대한 직접 판단이 없다(vault 기준).
 
 scram 뒤 `PSP`의 정상 경로는 정해진 곡선의 ramp down이고, 특정 조건에서는 자동 trip으로 coastdown이 된다. 어느 조건인지는 이 문장에 적혀 있지 않다.
 

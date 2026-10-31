@@ -5,7 +5,7 @@ sources:
 - PSAR_ch06
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -314,7 +314,7 @@ SR%%t:SR%% 하부구조의 콘크리트·강재 조합은 Table 6.4-11과 Table 
 
 **규정 대비 메모(C43, 규정과 일치).** `PSAR` §6.4.2.1은 NSRST%%t:NSRST%% `RAB` 하부구조와 NSRST%%t:NSRST%% 상부구조의 주 설계 코드를 `ACI` 318-19로 적고, NSRST%%t:NSRST%% 하부구조와 상부구조의 extraordinary events 조합 표(Table 6.4-7, Table 6.4-11) 머리 칸은 `ACI` 349-13의 식 번호를 쓴다. `SER`은 extraordinary events에 콘크리트는 `ACI` 349-13, 강재는 `ANSI`/`AISC` N690의 조합과 계수를 쓰며 그 내용이 Table 6.4-7, 6.4-8, 6.4-11, 6.4-12에 있다고 기술한다. 따라서 머리 칸의 `ACI` 349-13은 `SER` 기준과 같고 주 설계 코드 기술과 충돌하지 않는다.
 
-**규정 대비 메모(C44, 규정 불일치).** `PSAR` §6.4.3.3.1(기계 기기)은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적고, SR%%t:SR%% 하부구조 조합 표(Table 6.4-5)는 Operating Earthquake 하중 행을, Table 6.4-9 주석은 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. 구조물 표의 OBE%%t:OBE%% 행과 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 SR%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
+**규정 대비 메모(C44, 규정 불일치).** `PSAR` §6.4.3.3.1(기계 기기)은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적고, SR%%t:SR%% 하부구조 조합 표(Table 6.4-5)는 Operating Earthquake 하중 행을, Table 6.4-9 주석은 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. 구조물 표의 OBE%%t:OBE%% 행과 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 SR%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 절 §6.4.2.2.2도 OBE%%t:OBE%% 지진 하중을 Appendix S에 따라 평가한다고 적으나, 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
 
 **규정 대비 메모(C48, 신청자 문서 내부 불일치).** Table 6.4-6은 S-17(6) 조합(NB2-6 식)을 "Normal and Severe" 범주에 두고, Table 6.4-5는 주석 번호 (6)이 붙은 C-9(6) 조합(9-6 식)을 "Extreme and Abnormal" 범주에 둔다. 또 Table 6.4-6의 Accident Pressure 계수 1.4는 주석 (11)을 가리키는데, 주석 (11)은 계수를 1.6으로 정하는 주석이고 계수를 1.4로 정하는 주석은 따로 있다. 하중 범주 표기를 정하는 권위 조항은 vault에 없고, `SER`은 두 표의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 일괄 판단했으며, `SER`에는 범주 표기와 주석 번호에 대한 판단이 없다(vault 기준).
 

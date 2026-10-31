@@ -6,7 +6,7 @@ sources:
 - PSAR_ch01
 - NEI_18-04
 status: checked
-verified: 2026-09-16
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -67,3 +67,4 @@ technical specifications에 포함할 design feature와 administrative control�
 - [[Natrium_DID_Approach]]
 - [[PSAR_ch11]]
 - [[Natrium_SER_Conduct_Of_Operations_Review]]
+- [[Natrium_Hot_Channel_Factors]]

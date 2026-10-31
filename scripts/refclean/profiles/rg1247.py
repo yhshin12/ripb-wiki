@@ -21,6 +21,9 @@ becomes a record that stays on its own page:
   restored from the line breaks of the same PDF page (restore_hyphens).
 - Cells holding only a dash rule ("-----") are layout placeholders in the source and are not rendered.
 Appendix B tables (hazard lists, three columns) go through the generic table path.
+
+Figure 1 has a bare number ("Figure 1. Title") that the shared caption pattern and figure search do not read, so
+figures() takes the box from the converter's image element right before the caption.
 """
 import re
 
@@ -28,13 +31,15 @@ import fitz
 
 from .. import structure as S
 from ..doc import El
-from ..figures import figures_step
+from ..figures import figures_step, odl_to_visible
 from ..levels import assign_levels
+from ..pdfaux import FigureRef
 from . import generic
 
 META = {"RG_1.247": generic.META["RG_1.247"]}
 
 CAPTION_RE = re.compile(r"^Table A-\d+\.\s")
+FIG_TXT = re.compile(r"^Figure\s+(\d+)\.\s+(.*)$")
 DASHES = re.compile(r"^-{3,}$")
 HEADER = ["Index No.", "Issue", "Position", "Resolution"]
 
@@ -115,11 +120,33 @@ def appendix_a_records(doc, aux=None):
     doc.meta["appendix_a_hyphens_restored"] = n_hyph
 
 
+def figures(doc, aux):
+    """Each 'Figure N. Title' caption takes its box from the image element directly before it."""
+    pdf = fitz.open(doc.pdf_path)
+    refs, last = [], None
+    for e in doc.els:
+        m = FIG_TXT.match(" ".join(e.text.split())) if e.kind in ("para", "heading", "caption") else None
+        if m and last is not None and last.page == e.page:
+            box = odl_to_visible(last.bbox, pdf[e.page - 1])
+            refs.append(FigureRef(m.group(1), " ".join(m.group(2).split()), e.page, tuple(box)))
+        last = e if e.kind == "image" else None
+    pdf.close()
+    aux.figures = refs
+    figures_step(doc, aux, render=aux.meta.get("render_figures", True), fig_txt=FIG_TXT)
+
+
+def figure_levels(doc, aux=None):
+    """A bare figure number has no owner section, so its heading keeps the converter's level and does not split §B."""
+    for e in doc.els:
+        if e.kind == "heading" and e.meta.get("figure"):
+            e.level = 5
+
+
 def steps():
     return [
         S.drop_toc,
         S.withheld_callouts,
-        lambda d, a: figures_step(d, a, render=a.meta.get("render_figures", True)),
+        figures,
         appendix_a_records,
         S.promote_headings,
         S.insert_subheads,
@@ -131,6 +158,7 @@ def steps():
         S.references_as_items,
         S.normalise_item_levels,
         assign_levels,
+        figure_levels,
     ]
 
 

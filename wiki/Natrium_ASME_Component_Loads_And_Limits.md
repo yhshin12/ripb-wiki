@@ -6,7 +6,7 @@ sources:
 - PSAR_ch07
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -102,6 +102,8 @@ terms_pending: []
 - "Vibration loads are only applicable for fatigue analysis." [PSAR_ch06 Table 6.4-18 Note 2 p.80]
 - "The PT conditions for seismic events (SSE and OBE) are steady state 100% power." [PSAR_ch06 Table 6.4-18 Note 3 p.80]
 - "OBE loads are only applicable for fatigue analysis when OBE is less than or equal to one-third of SSE." [PSAR_ch06 Table 6.4-18 Note 4 p.80]
+- "Earthquake loads from the operating basis earthquake are evaluated in accordance with Appendix S of 10 CFR Part 50." [PSAR_ch06 §6.4.2.2.2 p.27]
+- "This short-duration high temperature event will be evaluated per ASME BPVC III-5, nonmandatory appendix HBB-T, or ASME code case 2843-3, as discussed in PSAR section 6.4.5.1." [SER_KU1_CP §7.1.2.1.4 p.419]
 
 ## 해설
 구조 건전성은 정해진 하중과 하중조합에 대해 `ASME` `Section III`, Division 5의 service stress limit을 만족하는 것으로 보증하고, 응력은 같은 코드의 방법과 식으로 계산한다. 적용 하중은 설계온도와 설계압력, 플랜트 과도의 온도·압력·유량, Safe Shutdown Earthquake%%t:SSE%%와 OBE%%t:OBE%%, 자중과 내용물 무게, 부력, 볼트 preload, 연결 배관, 배관 외 기기의 기계적 반력, 유동유발 진동과 펌프 같은 기기에서 전달되는 진동, 정압시험, 지지물의 열이동에 따른 support motion이다. 노심지지구조물에는 설계 압력차와 Service Level A–D의 운전 압력차를 고려한다.
@@ -112,9 +114,9 @@ OBE%%t:OBE%%는 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 설정되므�
 
 압력 방출 장치의 방출 반력은 `ASME` Code `Section III` Appendix O의 지침으로 해석하고, 더 낮은 값의 정당화나 동적해석이 없으면 dynamic load factor 2.0의 정적해석으로 반력과 모멘트를 정한다. 정적·동적 해석에 쓰는 프로그램에는 유한요소 해석의 `ANSYS`, 설계 과도의 열수력 조건을 만드는 `TP RELAP5-3D`, 상세 열수력 해석의 `STAR-CCM+`가 있다.
 
-**규정 대비 메모(C44, 규정 불일치).** `PSAR` Chapter 6은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적으면서도, Table 6.4-9 주석에는 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. Table 6.4-9 주석의 OBE%%t:OBE%% 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 Safety-Related%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
+**규정 대비 메모(C44, 규정 불일치).** `PSAR` Chapter 6은 OBE%%t:OBE%%를 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1로 두어 명시적 응답·설계 해석이 필요 없다고 적으면서도, Table 6.4-9 주석에는 OBE%%t:OBE%%를 쓸 때의 전도·활동·부상 안전율 1.5를 둔다. `SER`은 신청자가 OBE%%t:OBE%%가 Safe Shutdown Earthquake%%t:SSE%%의 3분의 1이므로 별도의 OBE%%t:OBE%% 지진해석을 하지 않았다고 기술하고, regulatory guide%%t:RG%% 1.61 지침에 따라 Safe Shutdown Earthquake%%t:SSE%%로 OBE%%t:OBE%%를 정한 설계 지반운동을 타당하다고 판단했다. Table 6.4-9 주석의 OBE%%t:OBE%% 안전율은 이 기준과 문언상 맞지 않으나, `SER`은 Safety-Related%%t:SR%% 구조물의 하중조합과 하중계수가 `ACI` 349-13, RG%%t:RG%% 1.142, `ANSI`/`AISC` N690-18, RG%%t:RG%% 1.243과 부합한다고 보고 그 적용 검토를 operating license%%t:OL%% 단계로 넘겼다. 구조물 절도 OBE%%t:OBE%% 지진 하중을 Appendix S에 따라 평가한다고 적으나, 구조물 OBE%%t:OBE%% 행의 실제 적용 여부는 vault에 없다.
 
-**규정 대비 메모(C47, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `ASME` `BPVC` Section `VIII`, Division 1로 설계하는 Guard Vessel%%t:GV%%의 응력해석 방법과 하중·하중조합을 §6.4.3에서 기술한다고 적고, `CRDM`의 하중·하중조합·응력 한계 개발 방법을 §6.4.4에서 기술한다고 적는다. Chapter 6 §6.4.3은 `ASME` Code Section `III`, Division 5 기기를 다룬다고 적고, `SER`은 §6.4.4가 `ASME` `BPVC` Section `III`를 설계 코드로 고른 배관과 배관 지지물에만 적용된다는 신청자 설명을 기록한다. 이 교차참조의 적부를 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 7 참조의 적부에 대한 판단이 없다(vault 기준).
+**규정 대비 메모(C47, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `ASME` `BPVC` Section `VIII`, Division 1로 설계하는 Guard Vessel%%t:GV%%의 응력해석 방법과 하중·하중조합을 §6.4.3에서 기술한다고 적고, `CRDM`의 하중·하중조합·응력 한계 개발 방법을 §6.4.4에서 기술한다고 적는다. Chapter 6 §6.4.3은 `ASME` Code Section `III`, Division 5 기기를 다룬다고 적고, `SER`은 §6.4.4가 `ASME` `BPVC` Section `III`를 설계 코드로 고른 배관과 배관 지지물에만 적용된다는 신청자 설명을 기록한다. `SER`은 GV%%t:GV%% 고온 사건의 평가를 §6.4.5.1에 연결한다. 이 교차참조의 적부를 판정할 권위 조항은 vault에 없고, `SER`에는 Chapter 7 참조의 적부에 대한 판단이 없다(vault 기준).
 
 ## 관련 문서
 - [[Natrium_ASME_Design_Transients]]

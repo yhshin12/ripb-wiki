@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term:
 tags: [natrium, fuel, core, nrc-review]
 terms_pending: []
@@ -86,6 +86,10 @@ terms_pending: []
 - "The staff expects the Whisper USL to be treated as a baseline, with additional margin added by an applicant to ensure conservatism, if needed." [SER_KU1_CP §3.13.1.2.2 p.317]
 - "applicants should evaluate new directly applicable benchmarks" [SER_KU1_CP §3.13.1.2.2 p.317]
 - "The staff audited preliminary calculations using this method and found them to be consistent with staff expectations regarding fluence on structural components for this kind of reactor." [SER_KU1_CP §3.11.1.6 p.309]
+- "The staff’s feedback (ML23229A541) on NAT-3049 generally identified it as reasonable for simplified analyses, though there were questions regarding the calibration and V&V of the model." [SER_KU1_CP §3.12.1.1.1 p.312]
+- "the staff determined that the use of the simplified model is reasonable for preliminary analyses." [SER_KU1_CP §3.12.1.1.1 p.312]
+- "proposed for steady-state operation in NUREG/CR-7305, the purpose of which is to minimize thermal creep of the cladding and fuel-cladding chemical interaction." [SER_KU1_CP §3.12.1.2 p.314]
+- "Table 8-12 of TP-LIC-RPT-0011 shows the peak cladding inner diameter temperature" [SER_KU1_CP §3.12.1.2 p.314]
 
 ## 해설
 **연료 설계.** 연료 인증 `TR` NAT-2806-A에는 L&C 다섯 개가 붙어 있다. staff는 각 L&C가 CP%%t:CP%% 단계에 적용되지 않거나 CP%%t:CP%% 신청에서 적절히 다루어졌다고 보고 참조 포함을 수용했다. 이 `TR`은 Type 1 연료와 제어집합체를 인증하는 수용 가능한 접근법이지만, 그 자체로 인증을 입증하지는 않는다. 연료 인증 활동은 CP%%t:CP%% 발급 전에 완료될 필요가 없다는 근거로 L&C 1은 적용되지 않는 것으로 보았다. 연료 인증 완료와 방사성핵종 보유 요건은 OL%%t:OL%% 단계에서 검토된다.
@@ -93,6 +97,8 @@ terms_pending: []
 **연료 파손 기준.** 연료 피복은 기능적 격납 전략에서 첫 번째 Safety-Related%%t:SR%% barrier%%t:BARRIER%%이다. time-at-temperature no-failure%%t:TATNF%% 기준은 여러 변수를 하나의 수용 기준으로 묶어, 그 아래에서는 피복 파손이 배제된다. 이 기준을 넘으면 손상 여부와 범위를 더 상세히 해석한다. 낙하 집합체와 국부 결함을 겪는 집합체는 전부 파손된다고 가정한다.
 
 **핵설계와 열수력 설계.** staff는 두 방법론이 각각 해당 principal design criteria%%t:PDC%%(핵설계: `PDC 10, 11, 12, 26` / 열수력: `PDC 10, 15, 34`)과의 정합을 보이는 예비 해석에 적절하다고 판단했다. 노심 전체 반응도 계수는 음이지만, 국부 과열 시나리오에서 국부 양의 반응도 계수는 OL%%t:OL%% 단계에서 계속 확인한다. 붕괴열 계산의 실험적 근거와 최종 노심 설계 제한값도 OL%%t:OL%% 단계 과제이다. 정상 운전 시 냉각재 입구 온도는 360°C, 출구 평균 온도는 510°C이다.
+
+**Nascent와 피복재 온도.** staff는 `NAT-3049`에 대한 사전 의견(ML23229A541)에서 Nascent를 단순화 해석에 대체로 타당하다고 보되 조율과 V&V에 질문을 남겼고, 단순화 모형의 사용은 예비 해석에 타당하다고 판단했다. 모형은 [[Natrium_Hot_Channel_Factors]]에 있다. `SER`은 `NUREG/CR-7305`가 정상 운전에 제안한 항목(이름은 공개본에서 비공개)의 목적이 피복재 thermal creep과 fuel-cladding chemical interaction을 줄이는 것이라고 적고, `TP-LIC-RPT-0011` Table 8-12는 피복재 내면 첨두 온도를 보인다.
 
 **임계 안전.** `MCNP 6.2` 사용은 수용되었고, 예비 계산의 최대 keff는 적용 `USL`보다 낮았다. 금속 연료계에 맞는 benchmark가 적은데도 적용 영역(AoA) 한계를 위한 추가 여유를 두지 않았으므로, 그렇게 한 근거를 OL%%t:OL%% 단계에서 정당화해야 한다.
 
@@ -107,3 +113,4 @@ terms_pending: []
 - [[Natrium_NRC_Review_Reactivity_Control]]
 - [[Natrium_System_Nuclear_Instrumentation]]
 - [[Natrium_SER_NHS_PDC_Conformance]]
+- [[Natrium_Hot_Channel_Factors]]

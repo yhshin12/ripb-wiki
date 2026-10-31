@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch06
 status: checked
-verified: 2026-09-16
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -106,7 +106,7 @@ terms_pending: []
 ## 해설
 `ASME` `BPVC` `Section III` Division 1 배관은 `10 CFR 50.55a`의 사용 조건에 따라 Class 1·2·3을 각각 `NB-3600`, `NC-3600`, `ND-3600`으로, 지지물을 `NF`로 설계한다. 금속 온도가 Division 1의 온도 한계를 넘으면 Division 5로 넘어가 Class A 배관에 `HBB-3600`, Class B 배관에 `HCB-3600`, 저온 영역의 금속 지지물에 `HF`를 적용한다. Code Case는 `RG 1.84` Revision 39에서 조건부로든 무조건으로든 승인된 경우에 쓸 수 있다. Design Specification은 최종 설계 중에 작성하고 부합은 Design Report로 문서화하며, Division 5가 적용되는 경우에는 기계하중, stress intensification 감소, 항복강도 감소를 다룬다. 배관 유연성은 가능한 한 자연스러운 경로 설정으로 얻고 필요하면 expansion loop를 넣는다. 배관 설계 자체는 예비 단계로서 기기 배치와 건물 배치를 정하는 데 쓰인다.
 
-산업 코드 쪽에서는 `Section VIII` Division 1이 design-by-rule로 복잡하지 않은 용기에, Division 2가 design-by-analysis로 상세 해석에 쓰인다. 고려 하중은 Division 1의 `UG-22`나 Division 2의 4.1.5.3에 열거된 것을 최소로 하고, 조합은 `UG-23`과 Table 4.1.2를 따른다. 다만 `Section VIII`은 하중을 service level과 연결하지 않고 분석해야 할 비정상 조건도 규정하지 않는다. 그래서 원자로 열수송 경로에 있는 Structures, Systems, and Components%%t:SSC%%처럼 `Section III` 과도의 영향을 받는 대상에는 그 과도에서 나온 설계하중을 `Section VIII` 기기 설계의 하중 입력으로 넣는다. `B31.1`과 `B31.3` 배관도 마찬가지로 원자로 용기와 같은 과도를 겪는 계통에 `Section III` 과도를 반영한다.
+산업 코드 쪽에서는 `Section VIII` Division 1이 design-by-rule로 복잡하지 않은 용기에, Division 2가 design-by-analysis로 상세 해석에 쓰인다. 고려 하중은 Division 1의 `UG-22`나 Division 2의 4.1.5.3에 열거된 것을 최소로 하고, 조합은 `UG-23`과 Table 4.1.2를 따른다. 다만 `Section VIII`은 하중을 service level과 연결하지 않고, `UG-22`와 Table 4.1.2의 목록 외에는 분석해야 할 비정상 조건도 규정하지 않는다. 그래서 원자로 열수송 경로에 있는 Structures, Systems, and Components%%t:SSC%%처럼 `Section III` 과도의 영향을 받는 대상에는 그 과도에서 나온 설계하중을 `Section VIII` 기기 설계의 하중 입력으로 넣는다. `B31.1`과 `B31.3` 배관도 마찬가지로 원자로 용기와 같은 과도를 겪는 계통에 `Section III` 과도를 반영한다.
 
 `Section VIII` Division 1과 Division 2는 creep 영역의 고온 사용과 creep rupture·creep-fatigue interaction·creep buckling 같은 시간의존 파손 모드를 명시적으로 다루지 않는다. `B31.1`·`B31.3`도 시간의존 재료 물성과 고온 사용 영향에 관련된 허용응력 적용에 한계가 있다. `Section VIII`에서는 `Section III` Division 5의 Nonmandatory Appendix `HBB-T`가 Class A 금속 압력경계 기기의 creep-fatigue interaction 설계규칙을 주고, Code Case 2843-3이 creep과 creep-fatigue의 유의성 판정과 평가 방법을 준다. creep이 무시할 만하면 Division 2의 피로해석으로 충분하다. `B31.1`·`B31.3`에서는 Appendix `HCB-III`로 creep 효과의 무시 가능 여부를 판정하고, 무시할 수 없으면 `HCB-3634`가 허용응력을 낮추는 방법을 준다. 과압보호는 `Section VIII` SSC%%t:SSC%%에 대해서는 `Section VIII`이 허용하는 방법으로, `B31.1`·`B31.3` SSC%%t:SSC%%에 대해서는 각 코드의 요건으로 제공한다. `Section VIII`에서는 안전 분류가 다른 SSC%%t:SSC%%와의 접속부를 특별히 고려하며, 코드 분류가 다른 둘 이상의 SSC%%t:SSC%%가 연결되어 과압 사건이 양쪽에 영향을 주는 경우에는 더 엄격한 과압 요건을 따른다. 지진해석은 두 경우 모두 §6.4.1의 방법론을 따른다.
 

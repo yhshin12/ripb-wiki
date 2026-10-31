@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term:
 tags: [natrium, pdc, ssc-classification, nrc-review]
 terms_pending: []
@@ -62,6 +62,8 @@ barrier%%t:BARRIER%% 성능은 상세 설계에 크게 좌우되므로, staff는
 
 **NSRST%%t:NSRST%% 기능.** 위험도 중요 NSRST%%t:NSRST%% 기능은 95th percentile Licensing Basis Event%%t:LBE%% 결과를 Frequency-Consequence Target%%t:FC_TARGET%% 아래로 유지하는 데 필요하거나 누적 위험도 지표에 1 percent 넘게 영향을 주는 기능이다. SR%%t:SR%% 정지 기능의 백업인 alternative shunt trip%%t:ALTERNATIVE_SHUNT_TRIP%%류는 위험도 중요 NSRST%%t:NSRST%% 분류가 적절하거나 보수적일 것으로 보았다. 표에서 보듯 material at risk%%t:MATERIAL_AT_RISK%%가 가장 큰 사건(운전 중 연료 방출)은 연료 피복 외에 SR%%t:SR%% barrier%%t:BARRIER%% 하나와 NSRST%%t:NSRST%% barrier%%t:BARRIER%% 하나가 필요하다. 보조 계통 방출은 대체로 공정 barrier%%t:BARRIER%% 외에 NSRST%%t:NSRST%% barrier%%t:BARRIER%% 하나로 충분하다. 모든 NSRST%%t:NSRST%% 기능의 위험도 중요 여부는 OL%%t:OL%% 단계에서 검토한다.
 
+**alternative shunt trip의 최종 분류.** §5.5의 분류 판단과 `SER` §3.7.1.1의 다른 예상은 [[Natrium_Alternative_Shunt_Trip]]의 C81 메모에 있다.
+
 **Safety-Related Design Criteria%%t:SRDC%%의 위치와 7장 구성.** `PSAR` 6.1.2절은 SRDC%%t:SRDC%%를 Table 5.2-1–5.2-3에 두어 SR%%t:SR%% 기능과 연결하고, SR%%t:SR%% 기능과 SRDC%%t:SRDC%%에 대한 staff 평가는 `SE` 7장의 해당 절에 있다. 이 평가는 계통군별로 [[Natrium_SER_NHS_PDC_Conformance]], [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]], [[Natrium_SER_Fuel_Handling_Ancillary_PDC_Conformance]], [[Natrium_SER_IC_PDC_Conformance]], [[Natrium_SER_Electrical_Buildings_PDC_Conformance]]에 정리되어 있다. `PSAR` 7장은 SR%%t:SR%%과 NSRST%%t:NSRST%% Structures, Systems, and Components%%t:SSC%% 서술을 한 장에 묶어 신청서 내용 지침과 조금 다르지만, staff는 이것이 내용이 아니라 정보 구성의 차이이므로 행정적 차이라고 보았다. staff는 SRDC%%t:SRDC%%가 관련 안전 기능과 SSC%%t:SSC%% 예비 설계와 일치한다고 판단했고, OL%%t:OL%% 단계에서 최종 설계와 다시 대조한다.
 
 ## 관련 문서
@@ -75,3 +77,4 @@ barrier%%t:BARRIER%% 성능은 상세 설계에 크게 좌우되므로, staff는
 - [[Natrium_SER_IC_PDC_Conformance]]
 - [[Natrium_SER_Electrical_Buildings_PDC_Conformance]]
 - [[Natrium_SRDC_Summary]]
+- [[Natrium_Alternative_Shunt_Trip]]

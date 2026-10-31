@@ -7,7 +7,7 @@ sources:
 - PSAR_ch05
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -196,6 +196,7 @@ terms_pending: []
 - "PSP Current Detector | 8 | SR" [PSAR_ch07 Table 7.6.5-1 p.303]
 
 - "Figure 7.6.5-1 Reactor Instrumentation System Block Diagram" [PSAR_ch07 Figure 7.6.5-1 p.304]
+- "Manual Sodium Processing System Pump Trip on Leak Indication" [PSAR_ch07 §7.7.1.2 p.328]
 
 ![[PSAR_ch07_Fig_7.6.5-1.png]]
 
@@ -214,7 +215,7 @@ principal design criteria%%t:PDC%% 2와 4에 따라 safety-significant 부분은
 
 **규정 대비 메모(C22-a, 신청자 문서 내부 불일치).** `PSAR` Chapter 7은 `DL3-RC1`을 `DL3-RC1a`–`DL3-RC1j`로 나누어 적으나, Chapter 5 Table 5.2-1에는 `DL3-RC1` 한 레코드만 있고 하위 `ID`가 없다. `SER`은 Chapter 7 하위 `ID`를 그대로 쓴다. 하위 `ID` 체계를 정하는 권위 조항은 없다.
 
-**규정 대비 메모(C22-b, 신청자 문서 내부 불일치).** `DL4-RR8`의 이름이 `PSAR` Chapter 5에서는 Manual `SPS` Pump Trip on Leak Indication, Chapter 7 기능 표에서는 Manual `SPS` pump trip on low primary sodium level이다. `SER`도 §7.7.1.7에서는 앞의 이름을, §7.2.4.1.14.1에서는 뒤의 이름을 옮겨 적을 뿐이며, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다.
+**규정 대비 메모(C22-b, 신청자 문서 내부 불일치).** `DL4-RR8`의 이름이 `PSAR` Chapter 5와 Chapter 7 §7.7.1.2에서는 Manual `SPS` Pump Trip on Leak Indication, Chapter 7 기능 표에서는 Manual `SPS` pump trip on low primary sodium level이다. `SER`도 §7.7.1.7에서는 앞의 이름을, §7.2.4.1.14.1에서는 뒤의 이름을 옮겨 적을 뿐이며, `SER`에는 이름 차이에 대한 판단이 없고(vault 기준) 판정할 권위 조항도 vault에 없다.
 
 **규정 대비 메모(C25(a), 신청자 문서 내부 불일치).** `PSAR` Chapter 1은 `RIS`가 RV-GV annulus 액체 소듐 누설 탐지 변수를 `RPS` 입력으로 준다고 적으나, Chapter 7은 이 변수를 NSRST%%t:NSRST%% 변수로 두고 `RIS` 기능 표에는 이 변수를 쓰는 기능이 없다. 판정할 권위 조항은 vault에 없고, `SER`에는 이 차이에 대한 판단이 없다(vault 기준).
 

@@ -60,3 +60,10 @@ def test_line_end_hyphens_match_pdf(built):
         assert text.count(word) == n, word
     for joined in ("HRE4", "SFRE1", "HSA2", "tooperate", "postinitiator", "plantyear"):
         assert not re.search(rf"\b{joined}\b", text), joined
+
+
+@pytest.mark.refs
+def test_figure_1_is_rendered(built):
+    text, _, _, doc = built
+    assert "![Figure 1 NRC general framework for achieving PRA acceptability](figures/RG_1.247/Fig_1.png)" in text
+    assert doc.meta["figures_without_caption_element"] == []

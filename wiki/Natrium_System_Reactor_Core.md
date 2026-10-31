@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch07, ACRS_ML25293A458, PSAR_ch03, PSAR_ch05, SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term:
 tags: [natrium, psar-ch7]
 terms_pending: []
@@ -204,3 +204,5 @@ principal design criteria%%t:PDC%% 2에 따라 `RCC`는 `RXB` 하부구조 안�
 - [[PSAR_ch07]]
 - [[Natrium_SER_NHS_PDC_Conformance]]
 - [[Natrium_SER_RD_And_Permit_Conditions]]
+- [[Natrium_Core_Thermal_Hydraulic_Design]]
+- [[Natrium_Nuclear_Design]]

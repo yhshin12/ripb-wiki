@@ -3,7 +3,7 @@ type: regulation
 aliases: []
 sources: [RG_1.247, RG_1.253]
 status: checked
-verified: 2026-10-16
+verified: 2026-10-31
 term:
 tags: [rg-1247, pra, pra-elements]
 terms_pending: []
@@ -11,7 +11,7 @@ terms_pending: []
 # 비경수형원전 PRA의 내부 사건·정량화 요소 (RG 1.247 PRA Elements: Internal Events, Quantification, Consequence, and Risk Integration)
 
 > [!abstract] 요약
-> `RG 1.247` C.1.3은 모든 방사성 원천, hazard, Plant Operating State%%t:POS%%, 분석 수준을 다루는 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA에 필요한 요소를 정하고, 하나라도 빠진 PRA는 완전하지 않다고 본다. 이 노트는 내부 사건 요소(POS%%t:POS%%, 기시사건, 사건 경위, 성공 기준, 계통, 인간 신뢰도, 자료)와 정량화·결과 요소(사건 경위 정량화, mechanistic source term, 방사선 결과, risk integration, 문서화)의 목적과 주요 특성을 정리한다. risk integration 요소에 대한 입장은 경수로 지침 `RG 1.200`에는 없던 것이다.
+> `RG 1.247` C.1.3은 모든 방사성 원천, hazard, Plant Operating State%%t:POS%%, 분석 수준을 다루는 비경수형원전(non-light-water reactor)%%t:NON_LWR%% PRA에 필요한 요소를 정하고, 하나라도 빠진 PRA는 완전하지 않다고 본다. 이 노트는 내부 사건 요소(POS%%t:POS%%, 기시사건, 사건 경위, 성공 기준, 계통, 인간 신뢰도, 자료)와 정량화·결과 요소(사건 경위 정량화, mechanistic source term, 방사선 결과, risk integration)와 §C.1.3.19 문서화의 목적과 주요 특성을 정리한다. risk integration 요소에 대한 입장은 경수로 지침 `RG 1.200`에는 없던 것이다.
 
 ## 원문 사실
 - "The characteristics and attributes of the PRA elements define specific requirements that should be met to successfully perform those technical analyses and achieve a defined objective." [RG_1.247 §C.1.3 p.18]
@@ -84,7 +84,8 @@ terms_pending: []
 - mechanistic source term: 방출에 이르는 각 사건 경위의 환경 방출을 특성화하고, 대표 원천항이나 방출 범주로 묶는다.
 - 방사선 결과: 대기 방출에 의한 피폭이 지배 경로라고 가정하며, 시설 내 원천의 직접 방사선과 지표수·지하수 경로는 다루지 않는다. 부지의 장기 기상을 대표하는 최소 한 해 분량의 시간별 기상 자료를 쓴다.
 - risk integration: risk significance 기준을 정하고, 전체 위험을 적절한 척도로 나타내며, 그 불확실성을 정량화한다. 달리 정당화하지 않는 한 최소한 Fussell-Vesely나 Birnbaum 같은 상대 중요도 기준을 써야 하며, 위험 척도는 여러 원자로와 다른 방사성 원천의 기여를 통합하는 수단이다.
-- 문서화: 결과를 재현하고 정당화할 수 있어야 하며, 모델 불확실성 원천은 합의된 접근이나 모델이 없는 쟁점과 관련된 것으로 정의된다.
+
+**문서화(§C.1.3.19).** Table 1의 항목은 아니나 같은 C.1.3에 있는 절로, 결과를 재현하고 정당화할 수 있어야 하며, 모델 불확실성 원천은 합의된 접근이나 모델이 없는 쟁점과 관련된 것으로 정의된다.
 
 ## 관련 문서
 - [[RG_1.247]]

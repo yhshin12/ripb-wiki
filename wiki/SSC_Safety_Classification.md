@@ -3,7 +3,7 @@ type: concept
 aliases: []
 sources: [NEI_18-04, SER_KU1_CP, RG_1.233]
 status: disputed
-verified: 2026-10-17
+verified: 2026-10-31
 term:
 tags: []
 terms_pending: []
@@ -57,6 +57,9 @@ terms_pending: []
 | Task 7 | Determine SSC Specific Design Criteria and Special Treatment Requirements | [NEI_18-04 §4.1 p.46] |
 
 - "Figure 4-1. SSC Function Safety Classification Process" [NEI_18-04 Figure 4-1 p.40]
+- "they are derived from the set of DBEs and AOOs and BDBEs with frequency bands extending into the DBE region by deterministically assuming that only safety-related SSCs are available to respond to the event." [SER_KU1_CP §3.4.1 p.225]
+- "when only SR controls are available" [SER_KU1_CP §3.4.1 p.226]
+- "Conservative consequences evaluation in which only available SR SSCs perform their function" [SER_KU1_CP Table 5.1-1 p.342]
 
 ![[NEI_18-04_Fig_4-1.png]]
 
@@ -73,7 +76,7 @@ Task 1은 두 경우의 초점을 구분한다. Initiating Event%%t:IE%%의 결�
 
 **Natrium 심사 사례.** 원문은 Task 5A에서 SR%%t:SR%%로 분류한 SSC%%t:SSC%%만 DBA%%t:DBA%% 해석에 포함된다고 적는다. Natrium 건설허가 심사에서 사업자는 일부 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%를 저하된 성능으로 DBA%%t:DBA%% 선원항(source term)%%t:SOURCE_TERM%% 해석에 포함했고, NRC staff는 이 접근을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단했다. 이 credit은 Task 5A 문장과 문언상 다르지만, `SER`은 이를 원문 §5.3·§5.6.2의 두 문장, 곧 DBA%%t:DBA%%에서 SR%%t:SR%% SSC%%t:SSC%%만 RSF%%t:RSF%%를 수행한다고 가정한다는 문장과 피동 기능은 완전 고장 대신 성능 저하를 고려한다는 문장에 대한 사업자 해석으로 본다.
 
-**규정 대비 메모(C67, 상위 dispute).** NEI 18-04 §5.3 Task 10은 DBA%%t:DBA%%를 구성할 때 SR%%t:SR%% SSC%%t:SSC%%만 연계된 RSF%%t:RSF%%를 수행한다고 가정한다고 적고, [[RG_1.233]] C.1도 DBA%%t:DBA%% 해석은 RSF%%t:RSF%%를 SR%%t:SR%% SSC%%t:SSC%%가 수행한다는 가정으로 한다고 적어, 비SR%%t:SR%% SSC%%t:SSC%%의 비RSF%%t:RSF%% 기능을 배제하지 않는 것으로 읽힐 여지가 있다. `SER`은 이 읽기와 §5.6.2의 피동 기능 저하 문장에 근거한 사업자 해석, 곧 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%의 저하 성능 credit을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단하고, 최종 판단을 operating license%%t:OL%% 단계로 미루었다. 그러나 NEI 18-04 §4.1과 표 3-1, 그리고 [[RG_1.233]] C.1의 DBA%%t:DBA%% 도출 문장은 DBA%%t:DBA%% 완화에 동원되는 SSC%%t:SSC%%를 SR%%t:SR%% SSC%%t:SSC%%로만 한정하며, `SER`은 이 문장들을 언급하지 않는다. 또 §5.6.2의 저하 문장은 Table 5-2 심층방어%%t:DID%% 지침의 맥락에 있고 DBA%%t:DBA%% 해석을 지칭하지 않으므로, 권위 문서 사이의 해석 차이가 남는다.
+**규정 대비 메모(C67, 상위 dispute).** NEI 18-04 §5.3 Task 10은 DBA%%t:DBA%%를 구성할 때 SR%%t:SR%% SSC%%t:SSC%%만 연계된 RSF%%t:RSF%%를 수행한다고 가정한다고 적고, [[RG_1.233]] C.1도 DBA%%t:DBA%% 해석은 RSF%%t:RSF%%를 SR%%t:SR%% SSC%%t:SSC%%가 수행한다는 가정으로 한다고 적어, 비SR%%t:SR%% SSC%%t:SSC%%의 비RSF%%t:RSF%% 기능을 배제하지 않는 것으로 읽힐 여지가 있다. `SER`은 이 읽기와 §5.6.2의 피동 기능 저하 문장에 근거한 사업자 해석, 곧 피동 NSRST%%t:NSRST%% SSC%%t:SSC%%의 저하 성능 credit을 합리적이라고 보되 수용성은 SSC%%t:SSC%% 설계와 credit한 저하 수준에 달려 있다고 판단하고, 최종 판단을 operating license%%t:OL%% 단계로 미루었다. 그러나 NEI 18-04 §4.1과 표 3-1, 그리고 [[RG_1.233]] C.1의 DBA%%t:DBA%% 도출 문장은 DBA%%t:DBA%% 완화에 동원되는 SSC%%t:SSC%%를 SR%%t:SR%% SSC%%t:SSC%%로만 한정하며, `SER` §5.1의 해당 소절은 이 문장들을 다루지 않는다. `SER` §3.4.1과 Table 5.1-1은 같은 SR%%t:SR%% 한정 규칙을 적지만, 이 규칙과 §5.1 판단의 관계는 설명하지 않는다. 또 §5.6.2의 저하 문장은 Table 5-2 심층방어%%t:DID%% 지침의 맥락에 있고 DBA%%t:DBA%% 해석을 지칭하지 않으므로, 권위 문서 사이의 해석 차이가 남는다.
 
 ## 관련 문서
 - [[Safety_Significant_SSC]]

@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04, SER_KU1_CP]
+sources: [PSAR_ch04, PSAR_ch03, PSAR_ch05, NEI_18-04, SER_KU1_CP, PSAR_ch07]
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term:
 tags: [natrium]
 terms_pending: []
@@ -139,6 +139,9 @@ terms_pending: []
 | RFH-FDEM-2 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
 | RFH-FDPI-1 | BDBE | [PSAR_ch04 Table 4.2-2 p.13] |
 
+- "The EVHM extends the functional containment boundary when mated to reactor head, EVST and PRC." [PSAR_ch07 §7.3.2.2 p.188]
+- "Portions of the EVST, EVHM, CATT, FFV, and FTA form the temporary contain function during core assembly transfers." [PSAR_ch07 §7.3.2.2 p.188]
+
 ## 해설
 `PSAR` Chapter 4의 심층방어(Defense-in-Depth)%%t:DID%% 적절성 평가는 NEI 18-04 `Chapter 5`의 지침을 따르며, Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%, Programmatic Defense-in-Depth%%t:PROGRAMMATIC_DID%%, 통합 평가의 세 요소를 `Section 4.2.1`, `Section 4.2.2`, `Section 4.2.3`에 나누어 싣는다. 이 장에서 다루지 않는 나머지 평가는 `Chapters 3, 5, 6, 7, and 8`에 있다. Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%는 안전 적절성을 보장하는 기능, Structures, Systems, and Components%%t:SSC%%, 그 bounding 설계 능력을 고르는 데 쓰이며, 요약은 LBE%%t:LBE%% margin, Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가, single feature reliance 평가, prevention-mitigation balance 평가로 이루어진다.
 
@@ -150,7 +153,7 @@ Layers of Defense%%t:LAYERS_OF_DEFENSE%% 평가 절은 NEI 18-04 `Table 5-2`의 
 
 `Table 4.2-3`은 risk-significant DBE%%t:DBE%%마다 모든 BDBE%%t:BDBE%%의 빈도를 `1E-04 per plant-year` 아래로 유지하는 DL%%t:DL%% 기능을 적는다. `RFH-FDIV-1`과 `RFH-FDIV-3`에는 `DL3-RR1`(`Primary System Boundary including RES Barrier`)과 `DL3-RR3a`(`Ex-Vessel Handling Machine to Head Barrier Function`)가 적히고, `RFH-FDSP-1`은 `None.`이며 BDBE%%t:BDBE%% `RFH-FDSP-2`와는 추가 핵연료 집합체 파손 여부만 다르고, 같은 DL%%t:DL%% 기능 집합에 의존하되 결과가 다르다고 설명된다. `Table 4.2-4`는 risk-significant BDBE%%t:BDBE%%의 개별 위험을 QHO%%t:QHO%% 아래로 유지하는 기능을 적는데, `RFH-ESWR-2`에만 `DL4-RR7`(`Fuel Handling Building Barrier`)이 있고 나머지 일곱 건은 `None.`과 `All available functions are failed for this LBE.`이다. 두 표의 모든 행은 단일 설계·운전 특성에 의존하지 않는다고 판정하며, 판정 문장의 단위는 `LBE family`이다.
 
-`PSAR` Chapter 5의 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier`로, `DL3-RR3`을 `EVHM Cask barrier`로 적으며, 인용한 Chapter 5 표 부분에는 `DL3-RR3a`가 없다. Chapter 5의 `DL3-RR3` 기준은 `EVHM`이 원자로 헤드와 결합했을 때와 `EVST`와 결합했을 때 각각 결합된 barrier%%t:BARRIER%%가 핵연료의 방사성 핵종을 담아야 한다고 적는다. `SER`은 `DL3-RR3a`를 `EVHM`이 원자로 용기, `EVST`, `PRC` 위의 `FFV`에 결합되고 `FFV`가 열린 상태에서 형성되는 barrier%%t:BARRIER%%로 설명하므로, `DL3-RR3a`는 이 결합 상태의 barrier%%t:BARRIER%%에 해당한다. 다만 Chapter 5 기준이 원자로 헤드와 `EVST`와의 결합을 적는 반면 `SER` 설명은 `PRC` 결합을 더하며, 두 기술의 대응을 직접 적은 원문은 vault에 없다. `DL4-RR7`은 두 장에서 이름이 같고 Chapter 5에서 `Required for DID Adequacy`로 표시된다.
+`PSAR` Chapter 5의 표는 `DL3-RR1`을 `Primary Coolant Boundary including RES Barrier`로, `DL3-RR3`을 `EVHM Cask barrier`로 적으며, 인용한 Chapter 5 표 부분에는 `DL3-RR3a`가 없다. Chapter 5의 `DL3-RR3` 기준은 `EVHM`이 원자로 헤드와 결합했을 때와 `EVST`와 결합했을 때 각각 결합된 barrier%%t:BARRIER%%가 핵연료의 방사성 핵종을 담아야 한다고 적는다. `SER`은 `DL3-RR3a`를 `EVHM`이 원자로 용기, `EVST`, `PRC` 위의 `FFV`에 결합되고 `FFV`가 열린 상태에서 형성되는 barrier%%t:BARRIER%%로 설명하므로, `DL3-RR3a`는 이 결합 상태의 barrier%%t:BARRIER%%에 해당한다. 다만 Chapter 5 기준이 원자로 헤드와 `EVST`와의 결합을 적는 반면 `SER` 설명과 `PSAR` Chapter 7은 `PRC` 결합을 더하며, Chapter 5 기준과 `DL3-RR3a`의 대응을 직접 적은 원문은 vault에 없다. `DL4-RR7`은 두 장에서 이름이 같고 Chapter 5에서 `Required for DID Adequacy`로 표시된다.
 
 single feature reliance 평가는 risk-significant LBE%%t:LBE%%나 Design Basis Accident%%t:DBA%%가 있는 `LBE family`마다 단일 설계·운전 특성이 다섯 layer 모두에서 의존되는지를 체계적으로 검토한다. `LBE family`의 모든 LBE%%t:LBE%%와 DBA%%t:DBA%%를 알맞은 layer에 배정하고 credit된 기능과 실패한 기능을 적은 뒤, 각 기능에 다섯 layer가 모두 의존하는지 검토하고, 모든 layer가 의존하면 다음 가용 기능을 적어 심층방어%%t:DID%%를 보인다. 검토 결과 risk-significant LBE%%t:LBE%%에는 layer를 가로지르는 단일 특성 의존이 없고 layer 사이 독립성이 충분하지만, DBA%%t:DBA%% 하나는 단일 barrier%%t:BARRIER%%에 의존한다. `Table 4.2-5`는 그 DBA%%t:DBA%%를 `RRS-ISPL-CN`으로 적고, PRA 평가가 `containment` credit 없이 40년간 누적된 삼중수소가 방출되는 최악 시나리오에 기반하며, Intermediate Sodium Processing System이 Reactor Auxiliary Building의 지상에 있고, 최악의 경우에도 누적 삼중수소가 DBA%%t:DBA%% 선량을 넘을 수 없다고 설명한다. CP%%t:CP%% 단계에서 과도한 의존을 막으려고 risk-significant LBE%%t:LBE%%에 추가한 special treatment%%t:SPECIAL_TREATMENT%%는 없다. NEI 18-04 `Table 5-2`는 어떤 단일 설계·운전 특성도, 아무리 견고하더라도, 다섯 layer를 만족하는 데 배타적으로 의존되지 않는다고 적는다.
 

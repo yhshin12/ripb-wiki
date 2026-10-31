@@ -5,7 +5,7 @@ sources:
 - PSAR_ch01
 - SER_KU1_CP
 status: checked
-verified: 2026-09-16
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -56,3 +56,4 @@ driveline scram follow 기능은 scram 기능에 대한 심층방어(Defense-in-
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
 - [[Natrium_NRC_Review_Reactivity_Control]]
 - [[Natrium_SER_Facility_Overview_Review]]
+- [[Natrium_Alternative_Shunt_Trip]]

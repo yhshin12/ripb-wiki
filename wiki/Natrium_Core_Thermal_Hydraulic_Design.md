@@ -8,7 +8,7 @@ sources:
 - SER_KU1_CP
 - TP-LIC-RPT-0011
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -67,6 +67,9 @@ terms_pending: []
 - "Validation of the thermal hydraulic methodologies using the codes and methods in Section 3.2 is in development." [TP-LIC-RPT-0011 §5.2 p.59]
 - "Thermal hydraulic validation assessments are preliminary at this phase of the design." [TP-LIC-RPT-0011 §5.2 p.59]
 - "V&V of the core neutronics and thermal hydraulics codes is performed through comparisons with experimental results and to analyses from other codes." [TP-LIC-RPT-0011 §6 p.61]
+- "Nascent is used as an intermediate step in the calculation of the peak cladding temperature of the reactor fuel assemblies." [TP-LIC-RPT-0011 §3.2.1.3 p.36]
+- "Nascent [16] is an acronym for Natrium Simplified Coolant ENergy Transport and is a simple and fast-running tool for evaluating the peak coolant temperature in fuel assemblies under steady-state conditions." [TP-LIC-RPT-0011 §3.2.1.3 p.36]
+- "Mongoose++ is a core thermal hydraulics subchannel analysis code developed internally by TerraPower" [TP-LIC-RPT-0011 §3.2.2 p.38]
 - "The uncertainty in the results from these codes is established based on industry experience and with a conservative bias due to the lack of operating experience with a Natrium reactor." [TP-LIC-RPT-0011 §6 p.61]
 - "The completion of the V&V of the codes and methodology is part of ongoing work, and is planned to be complete prior to the submittal of an operating license application." [TP-LIC-RPT-0011 §6 p.61]
 - "In addition, the values of the uncertainties used in any applications will be documented as part of the safety analysis documents associated with the application." [TP-LIC-RPT-0011 §6 p.61]
@@ -79,6 +82,7 @@ terms_pending: []
 | 4.1.2.4 | Hot Channel Factors | [TP-LIC-RPT-0011 §4.1.2.4 p.50] |
 | Figure 4-1 | Example relative temperature and uncertainty profiles with layered hot channel factor method through to fuel centerline. | [TP-LIC-RPT-0011 Figure 4-1 p.51] |
 | 8.1.16 | Hot Channel Factors | [TP-LIC-RPT-0011 §8.1.16 p.88] |
+| Table 8-12 | Peak Cladding Inner Diameter Temperature at BOL | [TP-LIC-RPT-0011 Table 8-12 p.87] |
 | Table 8-13 | Hot Channel Factors for Fuel Assemblies | [TP-LIC-RPT-0011 Table 8-13 p.89] |
 | Table 8-14 | Hot Channel Factors for Primary Control Assemblies | [TP-LIC-RPT-0011 Table 8-14 p.90] |
 | Table 8-15 | Hot Channel Factors for Secondary Control Assemblies | [TP-LIC-RPT-0011 Table 8-15 p.91] |
@@ -98,9 +102,9 @@ terms_pending: []
 
 보고서의 열수력 도구는 노심 평균 온도·유량 분포·압력 강하를 다루는 `One dimensional` 방법(§3.2.1), 집합체 안과 duct 온도를 다루는 subchannel 코드(§3.2.2), 집합체 안 열혼합 같은 현상의 세부를 다루는 `CFD`(§3.2.3)의 세 수준이다. §3.2.1의 단순화 계산 방법은 노심의 정상상태 온도·압력 분포를 구하는 데 쓰이고, §4.1.2의 열수력 평가는 정상 운전 조건의 냉각재 유량 분포, 냉각재 온도·압력, 집합체 구성품 온도를 계산해 모든 노심 집합체가 충분히 냉각됨을 설계에서 확인한다. 열수력 방법론의 validation은 개발 중이고 평가는 예비 단계이다(§5.2). 코드의 Verification and Validation%%t:V_AND_V%%은 실험 결과와 다른 코드 해석과의 비교로 하며, 결과의 불확도는 Natrium 운전 경험이 없으므로 산업 경험에 근거해 보수적 편향을 두어 정한다. V&V%%t:V_AND_V%%는 OL%%t:OL%% 신청서 제출 전에 끝낼 계획이고, 어느 신청(`application`)에 쓰는 불확도 값이든 그 신청과 관련된 안전해석 문서에 기록된다(§6).
 
-`PSAR`는 이 보고서를 "Core Design and Thermal Hydraulic Technical Report"로 인용하고, 보고서 표지 제목은 "Core Nuclear and Thermal Hydraulic Design Technical Report"이다([[TP-LIC-RPT-0011]]).
+§3.2.1의 단순화 방법 가운데 Nascent는 집합체 첨두 냉각재 온도를 정상상태에서 평가하는 도구로, 피복재 첨두 온도 계산의 중간 단계에 쓰인다. 사전 신청 자료의 같은 모형은 [[Natrium_Hot_Channel_Factors]]에 있고, staff의 판단은 [[Natrium_SER_Core_Fuel_Design_Review]]에 있다. §3.2.2의 subchannel 코드는 TerraPower가 자체 개발한 Mongoose++이다.
 
-`PSAR` Chapter 5의 PDC%%t:PDC%% 10은 적용 범위를 `any condition of normal operation, including the effects of anticipated operational occurrences`로, PDC%%t:PDC%% 15는 대상을 `design conditions`로 적는 반면, 이 절은 각각 `unplanned transients`와 `critical parameters`로 적는다.
+`PSAR`는 이 보고서를 "Core Design and Thermal Hydraulic Technical Report"로 인용하고, 보고서 표지 제목은 "Core Nuclear and Thermal Hydraulic Design Technical Report"이다([[TP-LIC-RPT-0011]]).
 
 **규정 대비 메모(C33, 규정 불일치).** `PSAR` Chapter 3 §3.13.2는 PDC%%t:PDC%% 10의 적용 범위를 "unplanned transients"로, PDC%%t:PDC%% 15의 대상을 "critical parameters"로 적는 반면, Chapter 5는 PDC%%t:PDC%% 10의 범위를 AOO%%t:AOO%%를 포함한 정상 운전으로, PDC%%t:PDC%% 15의 대상을 design conditions로 적는다. 권위 문서인 [[RG_1.232]] SFR-DC 10·15와 `SER`의 PDC%%t:PDC%% 기술은 Chapter 5와 같이 AOO%%t:AOO%%와 design conditions를 쓰며, `SER`은 Natrium PDC%%t:PDC%%를 승인된 토픽 보고서를 통해 수용했다. SFR-DC 10의 specified acceptable fuel design limits%%t:SAFDL%%이 Natrium PDC%%t:PDC%% 10에서 SARRDL%%t:SARRDL%%로 바뀐 것은 `SER`이 수용한 PDC%%t:PDC%%의 문언이므로 차이가 아니다. 따라서 Chapter 3 §3.13.2의 두 표현만 `SER`이 수용한 PDC%%t:PDC%% 문언과 다르다.
 

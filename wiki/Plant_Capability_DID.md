@@ -4,7 +4,7 @@ aliases: []
 sources:
 - NEI_18-04
 status: checked
-verified: 2026-09-15
+verified: 2026-10-31
 term: PLANT_CAPABILITY_DID
 tags: []
 terms_pending: []
@@ -80,7 +80,7 @@ terms_pending: []
 ## 해설
 원문은 설계·PRA 갱신 주기와 함께 반복되는 평가가, compensatory action%%t:COMPENSATORY_ACTION%%으로 LBE%%t:LBE%% 위험 프로파일을 실질적으로 크게 개선하거나 빈도·결말 불확실도를 risk-significant 수준으로 줄일 수 있는 risk-significant 취약점을 더는 찾지 못할 때 심층방어%%t:DID%%의 risk-informed and performance-based%%t:RIPB%% 평가가 끝난다고 적는다. 적절성이 달성되었다는 의도적·확정적 결정은 integrated decision-making process%%t:IDP%%가 내리며, 결정과 그 근거는 형상 관리 문서에 명확히 기록해야 한다. 그 시점에 운영 단계를 뒷받침할 심층방어%%t:DID%% baseline을 확정한다.
 
-Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%의 확립은 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%% 개발에서 시작해 LBE%%t:LBE%% 선정·평가로 이어지는 반복 과업 속에서 이루어지고, Structures, Systems, and Components%%t:SSC%% 안전 분류의 영향도 받는다. 원문은 LBE%%t:LBE%% 평가에서 발전소 능력을 평가하는 과업을 Task 7로 적되 어느 절차의 과업 번호인지는 밝히지 않는다. §3.2.2의 LBE%%t:LBE%% 선정 절차에서는 Task 7e가 심층방어%%t:DID%%의 risk-informed 평가이고, §5.3의 통합 절차에서는 Task 7이 LBE%%t:LBE%% 위험과 Frequency-Consequence Target%%t:FC_TARGET%%의 비교, Task 12가 발전소 능력 적절성의 확인이다. 원문은 원자력 발전소 인허가나 운전에서 심층방어%%t:DID%% 충분성을 판단할 명확한 규제 수용 기준이 없다고 보고, 표 5-2의 지침을 초기 평가의 기초로 제시하며, 이 지침이 적절하고 충분한지는 규제 검토에서 확인된다고 적는다.
+Plant Capability Defense-in-Depth%%t:PLANT_CAPABILITY_DID%%의 확립은 Safety Design Approach%%t:SAFETY_DESIGN_APPROACH%% 개발에서 시작해 LBE%%t:LBE%% 선정·평가로 이어지는 반복 과업 속에서 이루어지고, Structures, Systems, and Components%%t:SSC%% 안전 분류의 영향도 받는다. 원문은 LBE%%t:LBE%% 평가에서 발전소 능력을 평가하는 과업을 Task 7로 적되 어느 절차의 과업 번호인지는 밝히지 않는다. §3.2.2의 LBE%%t:LBE%% 선정 절차에서는 Task 7이 LBE%%t:LBE%% 평가 전체이고 하위 Task 7e가 심층방어%%t:DID%%의 risk-informed 평가이며, §5.3의 통합 절차에서는 Task 7이 LBE%%t:LBE%% 위험과 Frequency-Consequence Target%%t:FC_TARGET%%의 비교, Task 12가 발전소 능력 적절성의 확인이다. 원문은 원자력 발전소 인허가나 운전에서 심층방어%%t:DID%% 충분성을 판단할 명확한 규제 수용 기준이 없다고 보고, 표 5-2의 지침을 초기 평가의 기초로 제시하며, 이 지침이 적절하고 충분한지는 규제 검토에서 확인된다고 적는다.
 
 표 5-2는 다섯 층마다 정량·정성 지침을 둔다. 첫째 층은 이상 운전과 Anticipated Operational Occurrence%%t:AOO%%를 막는 층으로, 발전소 과도 빈도를 설계 주기 안에 유지하고 소유자의 신뢰도·가용도 요건을 만족하는 것이 지침이다. 둘째 층은 이상 운전을 제어하고 고장을 탐지하며 Design Basis Event%%t:DBE%%를 막는 층으로, 모든 DBE%%t:DBE%% 빈도를 1E-02/plant-year 미만으로 유지하고 Safety-Related%%t:SR%% SSC%%t:SSC%%에 대한 부담 빈도를 최소화한다. 셋째 층은 DBE%%t:DBE%%를 해석된 설계기준 조건 안에서 제어하고 Beyond Design Basis Event%%t:BDBE%%를 막는 층으로, 모든 BDBE%%t:BDBE%% 빈도를 1E-04/plant-year 미만으로 유지하며 모든 DBE%%t:DBE%%의 정량 목표를 설계·운전 특성 하나에 의존해 만족하지 않는다. 넷째 층(심각한 발전소 조건 제어와 BDBE%%t:BDBE%% 결말 완화)과 다섯째 층(적절한 부지 밖 방호 조치 수행과 공중 보건·안전에 대한 악영향 방지)은 같은 지침을 쓴다. 모든 LBE%%t:LBE%%의 개인 위험을 충분한 여유를 두고 Quantitative Health Objective%%t:QHO%% 미만으로 유지하고, 모든 BDBE%%t:BDBE%%의 정량 목표 달성에서 방출 제한을 barrier%%t:BARRIER%%나 발전소 특성 하나에 의존하지 않는 것이다. 전체 지침은 모든 LBE%%t:LBE%%에 대해 F-C Target%%t:FC_TARGET%%과 누적 위험 지표 목표를 충분한 여유로 만족하고, 아무리 견고한 설계·운전 특성이라도 하나에만 의존해 다섯 층을 만족하지 않는 것이다.
 

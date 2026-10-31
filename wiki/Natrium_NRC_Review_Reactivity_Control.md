@@ -7,7 +7,7 @@ sources:
 - PSAR_ch07
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -99,6 +99,8 @@ terms_pending: []
 - "The AST is used during seismic beyond design basis events greater than the safe shutdown earthquake to scram the reactor before the peak seismic wave reaches the facility." [PSAR_ch07 §7.6.8.1 p.320]
 - "If the signal processing unit output exceeds the bi-stable unit setpoint, then the bi-stable unit ouputs an isolated signal to the shunt trip feature in the RTB." [PSAR_ch07 §7.6.8.1.1 p.320]
 - "The AST is designed to perform a non-safety-related with special treatment (NSRST) function." [PSAR_ch07 §7.6.8.2 p.320]
+- "are not described in detail within the PSAR due to the timing of when USO added them to the PRA relative to the submittal of the PSAR" [SER_KU1_CP §5.5 p.354]
+- "The adequacy of the protection and control systems to perform these functions is addressed in SE section 7.6." [SER_KU1_CP §7.2.5.1.8 p.496]
 
 ## 해설
 Control Rod Drive System은 제어봉을 노심 안팎으로 움직이고 scram 기능을 제공하며, 핵심 기기로는 control rod drive mechanism, motor drive assembly와 controller, control rod driveline assembly, scram valve와 cylinder assembly가 있다. safety-significant 기능은 원자로 scram(DL3-RC1), 전력 상실 시 scram(DL3-RC2), driveline scram follow(DL4-RC3), primary coolant boundary(DL3-RR1)이다.
@@ -111,7 +113,7 @@ PDC%%t:PDC%% 26은 최소 두 반응도 제어 계통 또는 수단이 네 가�
 
 PDC%%t:PDC%% 28에 대해서는 인출 가능한 제어봉 가치가 노심 설계와 rod insertion limit으로 제한되며, rod insertion limit은 construction permit%%t:CP%%에서 식별되지 않았고 OL%%t:OL%%에서 식별될 예정이다. 인출 속도 한계는 구동 모터의 물리적 설계와 한 번에 한 제어봉만 인출하게 하는 interlock이 제공한다. primary coolant boundary 관련 PDC%%t:PDC%%에 대해서는 구동 기구 housing이 원자로 헤드의 rotatable plug assembly에 붙어 경계의 일부를 이루고, `III-5`에 맞게 설계되며 Sodium Cover Gas System이 과압 보호를 제공한다.
 
-이 발표의 약어표는 `AST`를 Alternative Shunt Trip으로 풀이한다. `PSAR` 5장의 Non-Safety-Related with Special Treatment 기능 표는 자동 지진 trip(DL4-RC4)의 Structures, Systems, and Components%%t:SSC%% 칸 네 항목 가운데 하나를 Anticipatory Automatic Seismic Trip System(`AST`)으로 적고, alternative shunt trip(DL4-RC6)의 SSC%%t:SSC%% 칸은 주석으로 넘긴다. 그 주석은 alternative shunt trip 계열이 최신 PRA 개정에서 defense line 기능으로 식별되었지만 요건이 아직 설계에 반영되지 않아 CP%%t:CP%% 신청에서 더 다루지 않는다고 적는다. `PSAR` Chapter 7도 `AST`를 Anticipatory Automatic Seismic Trip System으로 적으며, 이 계통은 지반 운동을 측정해 Safe Shutdown Earthquake%%t:SSE%%를 넘는 지진 Beyond Design Basis Event%%t:BDBE%%에서 최대 지진파가 도달하기 전에 원자로를 정지시키고, signal processing unit 출력이 bi-stable unit setpoint를 넘으면 bi-stable unit이 reactor trip breaker의 shunt trip 기능으로 신호를 보내며, NSRST%%t:NSRST%% 기능을 수행하도록 설계된다. 따라서 발표 약어표의 `AST`는 기능(alternative shunt trip)을, `PSAR`의 `AST`는 계통을 가리키며, 원문상 두 기능 모두 reactor trip breaker의 shunt trip을 거친다. 직원의 PDC%%t:PDC%% 26 판단은 `AST` 사용을 근거의 하나로 드는데, 이 판단과 `PSAR` 5장 주석의 설계 반영 상태 사이의 관계는 원문만으로 판정되지 않는다.
+이 발표의 약어표는 `AST`를 Alternative Shunt Trip으로 풀이한다. `PSAR` 5장의 Non-Safety-Related with Special Treatment 기능 표는 자동 지진 trip(DL4-RC4)의 Structures, Systems, and Components%%t:SSC%% 칸 네 항목 가운데 하나를 Anticipatory Automatic Seismic Trip System(`AST`)으로 적고, alternative shunt trip(DL4-RC6)의 SSC%%t:SSC%% 칸은 주석으로 넘긴다. 그 주석은 alternative shunt trip 계열이 최신 PRA 개정에서 defense line 기능으로 식별되었지만 요건이 아직 설계에 반영되지 않아 CP%%t:CP%% 신청에서 더 다루지 않는다고 적는다. `PSAR` Chapter 7도 `AST`를 Anticipatory Automatic Seismic Trip System으로 적으며, 이 계통은 지반 운동을 측정해 Safe Shutdown Earthquake%%t:SSE%%를 넘는 지진 Beyond Design Basis Event%%t:BDBE%%에서 최대 지진파가 도달하기 전에 원자로를 정지시키고, signal processing unit 출력이 bi-stable unit setpoint를 넘으면 bi-stable unit이 reactor trip breaker의 shunt trip 기능으로 신호를 보내며, NSRST%%t:NSRST%% 기능을 수행하도록 설계된다. 따라서 발표 약어표의 `AST`는 기능(alternative shunt trip)을, `PSAR`의 `AST`는 계통을 가리키며, 원문상 두 기능 모두 reactor trip breaker의 shunt trip을 거친다. 직원의 PDC%%t:PDC%% 26 판단은 `AST` 사용을 근거의 하나로 드는데, 이 판단과 `PSAR` 5장 주석의 설계 반영 상태 사이의 관계는 원문만으로 판정되지 않는다. 다만 `SER` §5.5는 alternative shunt trip 계열이 PRA 추가 시점 때문에 `PSAR`에 상세히 기술되지 않았다고 적고 설계 확정을 OL%%t:OL%% 단계로 넘긴다. §7.2.5.1.8은 보호·제어 계통의 적절성을 `SE` §7.6으로 넘기나, `SER` §7.6에는 DL4-RC6가 나오지 않는다. 기능의 분류 쟁점은 [[Natrium_Alternative_Shunt_Trip]]에 있다.
 
 **규정 대비 메모(C7-a, 권위 문서 표기 차이(기록만)).** 두 권위 문서가 같은 약어를 다른 기능에 쓴다: `ACRS` 발표는 `AST`를 alternative shunt trip(DL4-RC6)으로, `SER`은 anticipatory automatic seismic trip system(DL4-RC4)으로 정의하고, `PSAR` Chapter 7은 `SER`과 같다. 그러나 PDC%%t:PDC%% 26 판단의 내용은 같다: `ACRS`가 근거로 드는 `AST` 사용의 `AST`는 alternative shunt trip이고, `SER` §7.2.5.1.8도 alternative shunt trip(DL4-RC6)을 reactor trip breaker를 여는 대체 수단으로 든다. 요건 내용이 같으므로 기록만 한다.
 
@@ -132,3 +134,4 @@ PDC%%t:PDC%% 28에 대해서는 인출 가능한 제어봉 가치가 노심 설�
 - [[Natrium_SER_Reactor_Auxiliary_Review]]
 - [[Natrium_SER_Reactor_Auxiliary_PDC_Conformance]]
 - [[Natrium_SER_NHS_PDC_Conformance]]
+- [[Natrium_Alternative_Shunt_Trip]]

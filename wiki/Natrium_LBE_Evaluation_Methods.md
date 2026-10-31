@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch03]
 status: checked
-verified: 2026-09-16
+verified: 2026-10-31
 term:
 tags: [natrium, lbe]
 terms_pending: []
@@ -114,3 +114,4 @@ Licensing Basis Event%%t:LBE%%는 비슷한 유형의 Initiating Event%%t:IE%%�
 - [[Required_Safety_Function]]
 - [[PSAR_ch03]]
 - [[Natrium_SER_LBE_Methodologies_Review]]
+- [[Natrium_Hot_Channel_Factors]]

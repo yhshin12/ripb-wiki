@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch11
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -92,6 +92,8 @@ terms_pending: []
 - "Regarding GSIs and USIs, the applicant determined in PSAR section 1.4.3 that none of the non-TMI items provided in appendix B of NUREG-0933, Resolution of Generic Safety Issues (formerly titled “A Prioritization of Generic Safety Issues”) applied to the KU1 facility." [SER_KU1_CP §1.3.3.4 p.46]
 - "The staff notes that there is no requirement in 10 CFR Part 50, similar to the 10 CFR Part 52 requirements, to address USIs and GSIs in NUREG-0933." [SER_KU1_CP §1.3.3.4 p.46]
 - "As such, the staff determined that the USIs and GSIs are appropriately addressed for the CP application." [SER_KU1_CP §1.3.3.4 p.46]
+- "PSAR table 1.4-4 notes that portions of this item (i.e., those related to containment pressure, containment radiation intensity, and providing for effluent monitoring) are applicable." [SER_KU1_CP §1.8 p.51]
+- "Section 11.2 of the PSAR incorporates by reference, in its entirety, NAT-2965-A." [SER_KU1_CP §11.2.1.3 p.669]
 
 ## 해설
 평가 대상은 `10 CFR 50` 신청의 generic issue 검토를 뒷받침하기 위해 `NUREG-0933`에서 가져왔다. Three Mile Island Action Item은 `NUREG-0933` Appendix B Section 1에 있으나, 이 항목들이 `10 CFR 50.34(f)`에 성문화되어 있으므로 그 조문을 통해 다룬다. 준수 상태의 정의는 세 가지다. Full Compliance는 규정이 관련·적용 가능하고 설계가 완전히 준수하는 경우이며 선택지가 있으면 선택한 쪽을 완전히 준수한다는 뜻이다. Partial Compliance는 규정이 관련·적용 가능하고 취지도 설계에 관련되나 문언 그대로 적용할 수 없는 경우다. Not Applicable은 규정을 적용하는 것이 적절하지 않아 준수가 요구되지 않는 경우로, light water reactor 설계에만 해당하거나 이 설계에 없는 Structures, Systems, and Components%%t:SSC%%에 해당하거나 `10 CFR Part 52` 같은 다른 종류의 신청에만 해당하는 경우를 예로 든다.
@@ -100,7 +102,7 @@ Appendix B의 나머지 generic issue도 평가했으며 설계에 적용된다�
 
 **규정 대비 메모(C54, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(3)(ii)`(QA list에 important to safety SSC%%t:SSC%% 포함)의 Section 칸을 `11.4`로 두나, Chapter 11 §11.4의 제목은 Aircraft Impact Assessment이고, 같은 표의 `50.34(f)(3)(iii)` 행은 QA 프로그램을 `8.1`로 적는다. 권위 문서인 `SER` Table 1.8-3은 QA list가 `PSAR`에 참조 포함된 `TP-QA-PD-0001` section 2에서 다루어지고 그 목록이 모든 Safety-Related%%t:SR%% 및 Non-Safety-Related with Special Treatment%%t:NSRST%% SSC%%t:SSC%%를 포함한다고 적으며, 이를 근거로 `50.34(f)(3)(ii)`가 충족된다고 판단했다. 따라서 이 요건의 소재는 `PSAR` 표의 `11.4`가 아니라 `SER`이 가리키는 QA 토픽 보고서로 읽는다.
 
-**규정 대비 메모(C55, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(2)(xvii)`의 Section 칸을 `11.2`로 두나, Chapter 11 §11.2 본문에는 격납 계측에 관한 서술이 없다.
+**규정 대비 메모(C55, 규정 불일치).** `PSAR` Table 1.4-4는 `50.34(f)(2)(xvii)`의 Section 칸을 `11.2`로 두나, Chapter 11 §11.2 본문에는 격납 계측에 관한 서술이 없다. `SER`은 이 항목의 해당 부분이 격납 압력, 격납 방사선 강도, 유출물 감시에 관한 것이라고 적고 §11.2로 넘기며, `PSAR` §11.2가 `NAT-2965-A`를 전체 참조 포함한다고 적는다. 그 내용이 `NAT-2965-A`에 있는지는 이 문서가 vault에 없어 확인되지 않는다.
 
 ## 관련 문서
 - [[Natrium_Licensing_Basis_Methodology]]

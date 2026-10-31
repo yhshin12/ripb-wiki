@@ -105,3 +105,4 @@ units:
 - [[Natrium_Core_Thermal_Hydraulic_Design]]
 - [[Natrium_Topical_Technical_Reports]]
 - [[PSAR_ch03]]
+- [[Natrium_Hot_Channel_Factors]]

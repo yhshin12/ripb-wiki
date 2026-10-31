@@ -6,8 +6,10 @@ sources:
 - NAT-3049
 - TP-LIC-RPT-0011
 - ACRS_ML25293A458
+- SER_KU1_CP
+- PSAR_ch11
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: HCF
 tags:
 - natrium
@@ -20,7 +22,7 @@ terms_pending: []
 > [!abstract] 요약
 > TerraPower의 사전 신청 단계 회의 자료는 Natrium의 첨두피복재온도(peak cladding temperature)%%t:PEAK_CLADDING_TEMPERATURE%% 해석에서 불확도를 Hot Channel Factor%%t:HCF%%로 반영하며, HCF%%t:HCF%%를 direct와 statistical로 나누고 다섯 불확도 범주로 분류한다고 적는다.
 > 같은 자료는 냉각재·막·피복재 온도 상승에 direct HCF%%t:HCF%%를 곱해 더하고 statistical HCF%%t:HCF%%의 기여를 제곱합 제곱근으로 결합해 `2-sigma` 피복재 내면 온도를 구하는 식을 보이며, Natrium 값은 비공개이고 `EBR-II`·`FFTF`의 냉각재 HCF%%t:HCF%% 조합 값만 공개한다.
-> 이 방법은 사전 신청 단계 자료의 것이며, 건설허가 신청의 `TP-LIC-RPT-0011`이 같은 방법을 쓰는지는 그 보고서의 해당 절이 비공개여서 vault에 없다.
+> 이 방법은 사전 신청 단계 자료의 것이며, 건설허가 신청의 `TP-LIC-RPT-0011`이 같은 방법을 쓰는지는 vault의 Revision 0 공개본에서 해당 절이 비공개이고 Revision 1이 vault에 없어 확인되지 않는다.
 
 ## 원문 사실
 - "pre-application engagement meeting" [TP-LIC-LET-0080 p.1]
@@ -70,6 +72,13 @@ terms_pending: []
 | Statistical combination --2σ | (a)(4) | 1.089 | 1.087 | 1.067 | (a)(4) | [TP-LIC-LET-0080 Coolant HCF Comparison p.54] |
 | Overall combined --2σ | (a)(4) | 1.111 | 1.164 | 1.302 | (a)(4) | [TP-LIC-LET-0080 Coolant HCF Comparison p.54] |
 
+- "Nascent is used as an intermediate step in the calculation of the peak cladding temperature of the reactor fuel assemblies." [TP-LIC-RPT-0011 §3.2.1.3 p.36]
+- "Nascent [16] is an acronym for Natrium Simplified Coolant ENergy Transport" [TP-LIC-RPT-0011 §3.2.1.3 p.36]
+- "[16] NAT-3049 Rev. 0A," [TP-LIC-RPT-0011 §References p.62]
+- "Analysis methodologies for evaluating key nuclear and thermal hydraulics figures of merit with uncertainty treatment of peak inner cladding temperature with hot channel factors." [TP-LIC-RPT-0011 Table 1-1 p.9]
+- "Thermal Hydraulic Technical Report,” Rev. 1, (ML25276A289), which is evaluated in sections 3.11 and 3.12 of this SE" [SER_KU1_CP §13.1.1.6 p.720]
+- "The probable subject of LCOs are hot channel factors that are identified during core design." [PSAR_ch11 Table 11.5-1 p.67]
+
 | 본문의 전부 또는 일부가 비공개인 절·슬라이드·그림·표 제목 | 출처 |
 |---|---|
 | Relationship Between the Nascent Model and Hot Channel Factors | [NAT-3049 §3.4 p.13] |
@@ -79,15 +88,19 @@ terms_pending: []
 | Detailed HCFs | [TP-LIC-LET-0080 Detailed HCFs p.53] |
 | 3.2.1.4 Hot Channel Factors | [TP-LIC-RPT-0011 §3.2.1.4 p.37] |
 | 4.1.2.4 Hot Channel Factors | [TP-LIC-RPT-0011 §4.1.2.4 p.50] |
-| Figure 4-1 Example relative temperature and uncertainty profiles with layered hot channel factor | [TP-LIC-RPT-0011 Figure 4-1 p.51] |
+| Figure 4-1 Example relative temperature and uncertainty profiles with layered hot channel factor method through to fuel centerline. | [TP-LIC-RPT-0011 Figure 4-1 p.51] |
 | 8.1.16 Hot Channel Factors | [TP-LIC-RPT-0011 §8.1.16 p.88] |
 | Table 8-13: Hot Channel Factors for Fuel Assemblies | [TP-LIC-RPT-0011 Table 8-13 p.89] |
+| Table 8-14: Hot Channel Factors for Primary Control Assemblies | [TP-LIC-RPT-0011 Table 8-14 p.90] |
+| Table 8-15: Hot Channel Factors for Secondary Control Assemblies | [TP-LIC-RPT-0011 Table 8-15 p.91] |
+| Table 8-16: Hot Channel Factors for Reflector Assemblies | [TP-LIC-RPT-0011 Table 8-16 p.92] |
+| Table 8-17: Hot Channel Factors for Shield Assemblies | [TP-LIC-RPT-0011 Table 8-17 p.93] |
 
 ![[TP-LIC-LET-0080_Slide_p55.png]]
 - "Application of Hot Channel Factors" [TP-LIC-LET-0080 Application of Hot Channel Factors p.55]
 
 ## 해설
-**출처와 시점.** 이 노트의 방법 서술은 TerraPower가 건설허가 신청 전 사전 신청 단계에 NRC에 낸 `Core Thermal Hydraulic Methods` 회의 자료(`TP-LIC-LET-0080`)와 Natrium Simplified Coolant Energy Transport 백서(`NAT-3049`)의 공개본에서 왔다. 건설허가 신청의 [[TP-LIC-RPT-0011]]은 HCF%%t:HCF%%를 다루는 절·그림·표의 본문과 값이 공개본에서 비공개여서([[Natrium_Core_Thermal_Hydraulic_Design]]), 그 보고서가 이 노트의 방법과 같은지는 vault에 없다. `ACRS` 발표는 HCF%%t:HCF%%가 과거 sodium-cooled fast reactor 적용과 일관된다고 적으나, 이 문장이 같은 방법임을 보이지는 않는다.
+**출처와 시점.** 이 노트의 방법 서술은 TerraPower가 건설허가 신청 전 사전 신청 단계에 NRC에 낸 `Core Thermal Hydraulic Methods` 회의 자료(`TP-LIC-LET-0080`)와 Natrium Simplified Coolant Energy Transport 백서(`NAT-3049`)의 공개본에서 왔다. 건설허가 신청의 [[TP-LIC-RPT-0011]]은 HCF%%t:HCF%%를 다루는 절·그림·표의 본문과 값이 공개본에서 비공개여서([[Natrium_Core_Thermal_Hydraulic_Design]]), 그 보고서가 이 노트의 방법과 같은지는 vault에 없다. 보고서의 공개 문장은 Nascent가 피복재 첨두 온도 계산의 중간 단계로 쓰인다고 적고, Table 1-1은 HCF%%t:HCF%%를 쓴 불확도 처리의 대상을 피복재 내면 첨두 온도로 적으며, Figure 4-1의 공개 제목은 layered HCF%%t:HCF%% method로 연료 중심선까지의 온도·불확도 profile을 보이는 예시 그림임을 적는다. 보고서가 `NAT-3049` Rev. 0A를 Nascent의 참고문헌으로 적으므로 모형은 건설허가 보고서로 이어지지만, 회의 자료의 결합식과 같은 식인지는 확인되지 않는다. `SER` §13.1.1.6은 이 보고서의 Rev. 1을 적으나 그 판은 vault에 없다. Nascent에 대한 staff의 판단은 [[Natrium_SER_Core_Fuel_Design_Review]]에 있다. `PSAR` Table 11.5-1은 노심 설계에서 정해지는 HCF%%t:HCF%%를 `LCO`의 유력한 대상으로 적는다([[Natrium_Technical_Specifications_Scope]]). `ACRS` 발표는 HCF%%t:HCF%%가 과거 sodium-cooled fast reactor 적용과 일관된다고 적으나, 이 문장이 같은 방법임을 보이지는 않는다.
 
 **PCT%%t:PEAK_CLADDING_TEMPERATURE%%와 해석 위치.** 회의 자료는 피복재 온도를 중요한 Figure of Merit%%t:FOM%%로 두며, creep와 `Fuel-Cladding Chemical Interaction` 한계에 영향을 주고 연료·냉각재 온도 제약보다 대개 더 제한적이라고 적는다. sodium-cooled fast reactor에서 정상상태 PCT%%t:PEAK_CLADDING_TEMPERATURE%%는 가열 길이 상단 부근에 생긴다. 백서도 PCT%%t:PEAK_CLADDING_TEMPERATURE%%를 Natrium 핵연료 집합체 해석의 핵심 FoM%%t:FOM%%으로 두고, 그 이유를 thermal creep와 `FCCI` 같은 온도 의존 현상으로 든다. Core Cooling Hydraulics 방법은 노심의 `1D` 열수력 모형으로 유량·압력 손실, 소듐 비등 여유, 첨두 피복재·연료 온도를 평가하고, 첨두 유체 온도는 Nascent 모형으로 계산하며, 정격·비정격 정상상태에서 HCF%%t:HCF%%로 불확도를 반영해 온도 한계를 만족시킨다. Nascent의 범위는 핵연료 집합체의 첨두 유체 온도이다.
 
@@ -106,3 +119,5 @@ terms_pending: []
 - [[NAT-3049]]
 - [[Natrium_LBE_Evaluation_Methods]]
 - [[Natrium_NRC_Review_Core_Design]]
+- [[Natrium_SER_Core_Fuel_Design_Review]]
+- [[Natrium_Technical_Specifications_Scope]]

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP, PSAR_ch03, PSAR_ch05]
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term:
 tags: [natrium, lbe, dba, nrc-review]
 terms_pending: []
@@ -97,6 +97,8 @@ terms_pending: []
 - "Pump trips are not credited." [SER_KU1_CP §3.7.1.2 p.265]
 - "In RPD-CW1ACS-1 and -2, the normal gravity scram is successful." [SER_KU1_CP §3.7.1.3 p.267]
 - "In RPD-CW1ACS-3, the control rod insertion by gravity is assumed to fail and the rods are pushed in with the NSRST control rod drive follow function." [SER_KU1_CP §3.7.1.3 p.267]
+- "As discussed in PSAR sections 3.8.2.1 and 3.8.2.3, DHS-ISTL-3 and -4 result from a loss of heat removal from one intermediate sodium loop." [SER_KU1_CP §3.7.1.2 p.265]
+- "in DHS-ISTL-4 the normal scram system fails to function and the scram breakers are tripped by AST, causing the control rods to fall into the core by gravity." [SER_KU1_CP §3.7.1.2 p.265]
 - "In RPD-CW1ACS-4, the normal protection system is assumed to fail to function and the scram breakers are tripped by AST, causing the control rods to fall into the core by gravity." [SER_KU1_CP §3.7.1.3 p.267]
 - "DBE: IPI-IHEL-BL, SUD-IHEL-BL" [PSAR_ch05 Table 5.2-2 p.11]
 
@@ -128,7 +130,9 @@ DHP-L1PP-4는 출력-유량비 정지가 실패하는 사건이어서 기존 DHP
 
 **용기 외 방출·기타 BDBE%%t:BDBE%%와 DBA%%t:DBA%%(보강).** SUD-CGR-1은 `SCG` 재고 전량이 `HAA`로 순간 방출되어 `NHV` 여과를 거쳐 400 cfm으로 배기된다고 가정하고, SUD-CGR-2는 방출 위치가 `VTC`인 점만 달라 SUD-CGR-1의 결과를 적용한다. Spent Fuel Pool 냉각 상실 사건 RFH-LSPC-1에서는 `SFP` 정상 냉각이 복구되지 않지만 끓기 전에 비상 보충이 이루어진다. DHS-ISTL-1의 DBA%%t:DBA%%에서는 이 사건이 의존하는 피동 `IAC` 한 계열을 non-SR이므로 실패로 가정하되 남은 loop의 열용량은 쓸 수 있다고 보며, DHS-RNBK-CN은 DBE%%t:DBE%% 영역에 걸치는 DHS-RNBK-2도 포괄한다. 국부 핵연료 결함 DBA%%t:DBA%%는 집합체 하나의 고장을 가정하고, DBE%%t:DBE%% LFF-SAO-BL과의 주된 차이는 `HAA`가 `RXB`의 지연이나 붕괴 credit 없이 하루 100 percent로 환경에 직접 누설된다는 선원항%%t:SOURCE_TERM%% 가정이다. staff는 방법론의 완전한 검증이 construction permit%%t:CP%% 단계에 기대되지 않고 해석이 집합체 전체 고장을 가정해 결과를 보수적으로 포괄하므로 남은 문제를 `FSAR` 검토로 미룰 수 있다고 보았다. 10 CFR 50.155에 따른 설계기준 초과 사건 완화는 그 요건이 Part 50 OL%%t:OL%%에만 적용되므로 OL%%t:OL%% 단계로 미루는 것이 수용되었다.
 
-**규정 대비 메모(C59, 권위 문서 표기).** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 alternative shunt trip 사건으로 적고, Table 3.7-1은 이 사건이 credit하는 기능을 DL3-RC1과 DL4-RC6으로 적으며, 같은 절의 다른 문장도 이 사건이 alternative shunt trip을 credit한다고 적는다. 그러나 같은 절의 사건 서술은 정지 차단기를 `AST`가 트립한다고 적고, `SER` §7.6.3.1.11.4는 `AST`의 지진 트립 신호로 차단기를 여는 기능을 DL4-RC4 "Automatic seismic trip"으로 다룬다. 표와 사건 목록, credit 기능 문장이 모두 alternative shunt trip을 가리키므로 이를 기준으로 쓴다. 사건 서술의 `AST` 전개는 오기로 보이며 차후 확인이 필요하다. 자동 지진 트립 기능은 [[Natrium_System_Anticipatory_Seismic_Trip]]에 정리되어 있다.
+**최종 분류.** DHP-L1PP-4가 credit하는 alternative shunt trip의 최종 분류에 대해 `SER` §5.5는 다른 방향의 예상을 적으며, 이 쟁점은 [[Natrium_Alternative_Shunt_Trip]]의 C81 메모에 있다.
+
+**규정 대비 메모(C59, 권위 문서 표기).** `SER` §3.7.1.1은 DHP-L1PP-4를 Table 3.7-1과 사건 목록에서 alternative shunt trip 사건으로 적고, Table 3.7-1은 이 사건이 credit하는 기능을 DL3-RC1과 DL4-RC6으로 적으며, 같은 절의 다른 문장도 이 사건이 alternative shunt trip을 credit한다고 적는다. 그러나 같은 절의 사건 서술은 정지 차단기를 `AST`가 트립한다고 적고, `SER` §7.6.3.1.11.4는 `AST`의 지진 트립 신호로 차단기를 여는 기능을 DL4-RC4 "Automatic seismic trip"으로 다룬다. 표와 사건 목록, credit 기능 문장이 모두 alternative shunt trip을 가리키므로 이를 기준으로 쓴다. 사건 서술의 `AST` 전개는 오기로 보이며 차후 확인이 필요하다. §3.7.1.2의 DHS-ISTL-4와 §3.7.1.3의 RPD-CW1ACS-4 서술도 정지 차단기를 `AST`가 트립한다고 적으나, 이 두 곳은 약어를 전개하지 않으며 같은 기준으로 읽는다. §3.7.1.2는 DHS-ISTL-3·-4를 `PSAR` §3.8.2.1·§3.8.2.3으로 적는데, 후자는 단순 번호 오기로 보이며 차후 확인이 필요하다. 자동 지진 트립 기능은 [[Natrium_System_Anticipatory_Seismic_Trip]]에 정리되어 있다.
 
 **규정 대비 메모(C80-a, 권위 문서 표기 차이(기록만)).** `SER` §3.7.1.2 본문은 SUD-IHEL-1이 `DL3-HR12`를 credit하며 이것이 Table 3.7-1에 나타나 있다고 적지만, 그 표의 SUD-IHEL-1 행에는 `DL3-HR12`가 없다. §7.6.3.1.11.5의 `DL3-HR12` 연관 사건 문장에는 SUD-IHEL-1도 SUD-IHEL-BL도 없다. `PSAR` Table 5.2-2는 이 두 사건을 `DL3-HR12`의 연관 사건으로 적으므로 기능의 credit 자체는 `PSAR`과 본문이 같다. 요건 내용이 같으므로 기록만 한다. NRC의 정정 여부는 vault에 없다.
 
@@ -141,3 +145,4 @@ DHP-L1PP-4는 출력-유량비 정지가 실패하는 사건이어서 기존 DHP
 - [[Natrium_SER_AOO_DBE_Review]]
 - [[Natrium_SER_LBE_Summary_Review]]
 - [[Natrium_SER_Major_Accident_Review]]
+- [[Natrium_Alternative_Shunt_Trip]]

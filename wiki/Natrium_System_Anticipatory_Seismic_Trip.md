@@ -8,7 +8,7 @@ sources:
 - ACRS_ML25293A458
 - SER_KU1_CP
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -160,3 +160,4 @@ PDC%%t:PDC%% 2에 따라 `AST`는 가상 지진에 대해 지진 검증을 받�
 - [[PSAR_ch07]]
 - [[Natrium_SER_IC_Electrical_Structures_Review]]
 - [[Natrium_SER_IC_PDC_Conformance]]
+- [[Natrium_Alternative_Shunt_Trip]]

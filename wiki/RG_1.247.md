@@ -8,13 +8,13 @@ file: references/RG_1.247_Acceptability of Probabilistic Risk Assessment Results
 pdf: references/raw/RG_1.247_Acceptability of Probabilistic Risk Assessment Results
   for Advanced Non-Light Water Reactor Risk-Informed Activities.pdf
 sha256_pdf: 978d02f9a1ae1e4629057cd242e9c05e964c4538b037b8c2ad3c1821becab0d4
-sha256_md: b06dbaf0d3bdcc4f5db713530e3ae2417f3b070ee22bbac9b40a18681363fe8a
+sha256_md: 651c0ccc45921ffdf53db816d0ddb5e31124f3990bd30e4cb9271509f1b91c2b
 pdf_pages: 165
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page, include_header_footer=True)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-20
-  missing_pct: 0.36
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-31
+  missing_pct: 0.35
 ingest: complete
 units:
 - unit: A-D, C.1-C.4, Appendix A (qualifications, clarifications), Appendix B
@@ -35,12 +35,13 @@ units:
 - PDF 쪽 수: 165
 - 인쇄 쪽: p2-70 = 2..70; p71-155 = A-1..A-85; p157-165 = B-1..B-9
 - 표 (0):
-- 그림 (0):
+- 그림 (1):
+  - 1 NRC general framework for achieving PRA acceptability
 - 비공개 (0):
 <!-- sync:end -->
 
 ## 알려진 모순
-- C61: `NEI 20-09` 승인 범위를 §C.2 도입 문단은 "with exceptions", §B·§C.2.2는 "without exception"으로 적는다. 승인 조항인 §C.2.2의 예외 없는 승인을 기준으로 쓰며, 차후 확인이 필요하다.
+- C61: `NEI 20-09` 승인 범위를 §C.2 도입 문단은 "with exceptions", §B는 "with no exceptions", §C.2.2는 "without exception"으로 적는다. 승인 조항인 §C.2.2의 예외 없는 승인을 기준값으로 쓴다. [[RG_1.253]] §C.3 p.13도 같다.
 
 ## 관련 문서
 - [[RG_1247_PRA_Acceptability_Framework]]

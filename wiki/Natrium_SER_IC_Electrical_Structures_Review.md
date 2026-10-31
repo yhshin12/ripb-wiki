@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-17
+verified: 2026-10-31
 term:
 tags: [natrium, instrumentation-control, electrical, structures, nrc-review]
 terms_pending: []
@@ -101,3 +101,4 @@ terms_pending: []
 - [[Natrium_SER_SSC_Design_Review]]
 - [[Natrium_SER_IC_PDC_Conformance]]
 - [[Natrium_SER_Electrical_Buildings_PDC_Conformance]]
+- [[Natrium_Alternative_Shunt_Trip]]

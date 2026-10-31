@@ -6,7 +6,7 @@ sources:
 - SER_KU1_CP
 - PSAR_ch05
 status: checked
-verified: 2026-10-30
+verified: 2026-10-31
 term: null
 tags:
 - natrium
@@ -345,7 +345,7 @@ Ex-Vessel Handling Machine의 능동·피동 냉각이 모두 상실되는 BDBE%
 
 **`PSAR` 목록 밖의 사건.** `SER`은 95th percentile 빈도를 분류에 썼다면 BDBE%%t:BDBE%%가 되었을 추가 사건을 Table 3.4-1로 제시하며, 그 표 제목의 기준은 5E-07/plant-year이다. 또 staff는 원자로 용기에서 RV-GV annulus로의 소듐 누설을 `PSAR`에서 Licensing Basis Event%%t:LBE%%로 식별했어야 할 사건으로 보고, OL%%t:OL%% 단계에서 LBE%%t:LBE%%로 추가될 수 있다고 적는다.
 
-**규정 대비 메모(C12-d, 규정 불일치).** `PSAR` Chapter 3의 alternative shunt trip BDBE%%t:BDBE%%는 이 기능을 credit하고 Chapter 5도 DL4-RC6의 연관 BDBE%%t:BDBE%%로 같은 사건들을 적지만, Chapter 5 표 주석은 DL4-RC6(a-d)가 최신 PRA의 방어선 기능일 뿐 아직 설계에 반영되지 않았다고 적는다. `SER`은 DHP-L1PP-4의 DBA%%t:DBA%%를 평가하면 이 기능이 NSRST%%t:NSRST%%에서 SR%%t:SR%%로 올라갈 것으로 예상하고, 이 평가의 검토를 OL%%t:OL%% 단계로 미루었으며, 설계 확정도 OL%%t:OL%% 단계에 맡길 수 있다고 판단했다.
+**규정 대비 메모(C12-d, 규정 불일치).** `PSAR` Chapter 3의 alternative shunt trip BDBE%%t:BDBE%%는 이 기능을 credit하고 Chapter 5도 DL4-RC6의 연관 BDBE%%t:BDBE%%로 같은 사건들을 적지만, Chapter 5 표 주석은 DL4-RC6(a-d)가 최신 PRA의 방어선 기능일 뿐 아직 설계에 반영되지 않았다고 적는다. `SER`은 DHP-L1PP-4의 DBA%%t:DBA%%를 평가하면 이 기능이 NSRST%%t:NSRST%%에서 SR%%t:SR%%로 올라갈 것으로 예상하고, 이 평가의 검토를 OL%%t:OL%% 단계로 미루었으며, 설계 확정도 OL%%t:OL%% 단계에 맡길 수 있다고 판단했다. 최종 분류에 대한 `SER`의 다른 예상은 [[Natrium_Alternative_Shunt_Trip]]의 C81 메모에 있다.
 
 **규정 대비 메모(C63, 규정 불일치).** `PSAR` MST%%t:MST%% 서술(일차 경계 건전·`HAA` 실패)은 `SER`이 확인한 사건 의도(일차 functional containment 실패·`HAA` 성공)와 반대이며, 신청자도 audit에서 오류로 인정했다. `SER`은 BDBE%%t:BDBE%% 분류를 유지하고 서술 정정을 OL%%t:OL%%로 이연했다.
 
