@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-31
+verified: 2026-11-01
 term:
 tags: [natrium, exemptions, regulation, nrc-review]
 terms_pending: []
@@ -24,15 +24,16 @@ terms_pending: []
 - "The staff is not granting the requested exemption because the requirements of 10 CFR 50.65 do not apply to an applicant for or holder of a construction permit. As appropriate, the staff would consider a future request for an exemption from 10 CFR 50.65 for KU1, if requested." [SER_KU1_CP §B.4.3 p.741]
 - "Therefore, the staff identified and concluded that granting an exemption from certain requirements related to the 10 CFR 50.2 definition of SR components was warranted." [SER_KU1_CP §B.5.1 p.741]
 - "The staff also identified that 10 CFR 50.49, 10 CFR 50.65, 10 CFR 73.54, and 10 CFR 73.77 refer to SR SSCs under the 10 CFR 50.2 definition, but are not applicable to an applicant for a construction permit." [SER_KU1_CP §B.5.1 p.742]
-- "Safety-related structures, systems and components means those structures, systems and components classified as safety-related in accordance with NEI 18-04, “Risk-Informed Performance-Based Technology Inclusive Guidance for Non-Light Water Reactor Licensing Basis Development,” Revision 1" [SER_KU1_CP §B.5.2.2.2 p.745]
+- "Safety-related structures, systems and components means those structures, systems and components classified as safety-related in accordance with NEI 18-04, “Risk-Informed Performance-Based Technology Inclusive Guidance for Non-Light Water Reactor Licensing Basis Development,” Revision 1, as endorsed by Regulatory Guide 1.233, “Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light-Water Reactors,” Revision 0." [SER_KU1_CP §B.5.2.2.2 p.745]
 - "No alternate text is needed for the regulations in 10 CFR Part 73 to implement the exemption." [SER_KU1_CP §B.5.2.3.2 p.747]
 - "Based on this, the staff determined that the NEI 18-04 process includes appropriate consideration of the key elements of the 10 CFR 50.2 definition of safety-related, particularly including the consequences of accidents." [SER_KU1_CP §B.5.3.2.2 p.749]
 - "Finally, the staff also determined that, in accordance with 10 CFR 73.5, the exemption is authorized by law, will not endanger life or property or the common defense and security, and is otherwise in the public interest. Therefore, the staff hereby grants USO the exemption as described above." [SER_KU1_CP §B.5.4 p.752]
 - "This exemption request superseded an exemption USO had requested in enclosure 4 of the CP application, section 4, “Financial qualifications.”" [SER_KU1_CP §14.1 p.724]
 - "The staff has determined that the exemption does not present an undue risk to the public health and safety and is consistent with the common defense and security. The staff further concludes that special circumstances are present in accordance with 10 CFR 50.12(a)(2)(ii). Based on this discussion, staff finds that this exemption request should be granted." [SER_KU1_CP §14.1.2 p.728]
-- "The requested exemption would allow an alternate scope of SSCs included in the monitoring program required by 10 CFR 50" [SER_KU1_CP §B.4.2 p.741]
-- "10 CFR 50.10, “License required; limited work authorization,” paragraphs (a)(1)(i), (iii), and (iv) define construction activities in terms of safety-related SSCs, SSCs whose failure could prevent safety-related SSCs from fulfilling their safety-related function, and SSCs whose failure could cause a reactor scram or actuation of a safety-related SSC." [SER_KU1_CP §APPENDIX B p.744]
-- "This exemption would allow USO to conduct certain activities defined in 10 CFR 50.10(a)(1) for certain SSCs identified as non-SR (i.e., NSRST or NST) following the NEI 18-04 process prior to complying with this condition." [SER_KU1_CP §APPENDIX B p.749]
+- "The requested exemption would allow an alternate scope of SSCs included in the monitoring program required by 10 CFR 50.65 to those SSCs classified as SR or NSRST using the process identified in NEI 18-04, as endorsed by RG 1.233." [SER_KU1_CP §B.4.2 p.741]
+- "10 CFR 50.10, “License required; limited work authorization,” paragraphs (a)(1)(i), (iii), and (iv) define construction activities in terms of safety-related SSCs, SSCs whose failure could prevent safety-related SSCs from fulfilling their safety-related function, and SSCs whose failure could cause a reactor scram or actuation of a safety-related SSC." [SER_KU1_CP §B.5.2.2.1 p.744]
+- "The staff notes that the KU1 SE recommends inclusion of a permit condition that would require USO to establish and document within the PSAR a dedicated position responsible for overseeing the execution of the QAPD prior to the start of construction as defined by 50.10." [SER_KU1_CP §B.5.3.2.2 p.749]
+- "This exemption would allow USO to conduct certain activities defined in 10 CFR 50.10(a)(1) for certain SSCs identified as non-SR (i.e., NSRST or NST) following the NEI 18-04 process prior to complying with this condition." [SER_KU1_CP §B.5.3.2.2 p.749]
 - "the NRC has issued an exemption to USO excluding certain NST EI SSCs from the definition of construction (ML25119A331)." [SER_KU1_CP §1.3.1 p.35]
 
 ## 해설
@@ -50,7 +51,7 @@ ECCS%%t:ECCS%% 면제에서 staff는 `PSAR` 해석이 10 CFR 50.46 statements of
 
 SR%%t:SR%% 정의 면제는 사업자가 NEI 18-04를 쓰기 때문에 staff가 필요성을 식별했다. 대체 정의는 NEI 18-04 Revision 1에 따라 safety-related로 분류된 SSC%%t:SSC%%를 Safety-Related SSC%%t:SSC%%로 본다. staff는 NEI 18-04 과정이 10 CFR 50.2 정의의 핵심 요소, 특히 사고 결과를 적절히 고려한다고 판단했다. 10 CFR 50.49, 50.65, 73.54, 73.77도 10 CFR 50.2 정의의 SR%%t:SR%% SSC%%t:SSC%%를 참조하지만 CP%%t:CP%% 신청자에게 적용되지 않는다. Part 73에는 대체 문안이 필요하지 않다.
 
-**10 CFR 50.10 관련 서술(보강).** 부록 B는 construction 활동의 정의를 적고, 품질보증 조건과 관련해 NEI 18-04 절차로 non-SR%%t:SR%%로 식별된 SSC%%t:SSC%%의 일부 활동을 허용하는 면제를 다룬다. 이와 별도로 NRC는 일부 `NST` Energy Island SSC%%t:SSC%%를 construction 정의에서 제외하는 면제를 발급했다(ML25119A331). 이 면제는 부록 B의 평가 대상이 아니며 결정문 원문은 vault에 없다.
+**10 CFR 50.10 관련 서술(보강).** 부록 B는 construction 활동의 정의를 적고, `SER`이 construction 시작 전에 `QAPD` 실행을 감독하는 전담 직위를 `PSAR`에 두도록 요구하는 permit condition을 권고한다고 적는다. 이어서 이 조건을 따르기 전에 NEI 18-04 절차로 non-SR%%t:SR%%로 식별된 SSC%%t:SSC%%의 일부 활동을 허용하는 면제를 다룬다. 이와 별도로 NRC는 일부 `NST` Energy Island SSC%%t:SSC%%를 construction 정의에서 제외하는 면제를 발급했다(ML25119A331). 이 면제는 부록 B의 평가 대상이 아니며 결정문 원문은 vault에 없다.
 
 ## 관련 문서
 - [[SER_KU1_CP]]

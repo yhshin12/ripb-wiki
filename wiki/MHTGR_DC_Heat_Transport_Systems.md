@@ -4,7 +4,7 @@ aliases: []
 sources:
 - RG_1.232
 status: checked
-verified: 2026-09-16
+verified: 2026-11-01
 term: null
 tags:
 - mhtgr-dc
@@ -16,16 +16,18 @@ terms_pending: []
 > [!abstract] 요약
 > Criteria 30–46은 reactor helium pressure boundary의 품질·파괴 방지·점검, 피동 잔열제거와 그 점검·시험, 구조물과 기기 냉각을 다룬다.
 > 기준 33(냉각재 보충), 35(비상 노심 냉각), 38–43(격납 열제거와 격납 분위기 정화)은 MHTGR에 적용되지 않는다.
-> 부록 A·B의 `Section IV` 제목이 Fluid Systems인 데 비해 부록 C는 Heat Transport Systems이다.
+> `Section IV`의 제목은 ARDC와 SFR-DC에서 Fluid Systems이고 MHTGR-DC에서 Heat Transport Systems이다.
 
 ## 원문 사실
+- "Section IV—Fluid Systems (Criteria 30–46) for ARDCs, and SFR-DC" [RG_1.232 §C Non-LWR Crosswalk Table p.12]
+- "Section IV —Heat Transport Systems (Criteria 30-46) for MHTGR-DC" [RG_1.232 §C Non-LWR Crosswalk Table p.12]
 - "Components that are part of the reactor helium pressure boundary shall be designed, fabricated, erected, and tested to the highest quality standards practical. Means shall be provided for detecting and, to the extent practical, identifying the location of the source of reactor helium leakage. Means shall be provided for detecting ingress of moisture, air, secondary coolant, or other fluids to within the reactor helium pressure boundary." [RG_1.232 MHTGR-DC 30 p.123]
 - "“Reactor coolant pressure boundary” has been relabeled as “reactor helium pressure boundary” to conform to standard terms used for MHTGRs." [RG_1.232 MHTGR-DC 30 p.123]
 - "The MHTGR-DC 14 addresses the need to consider leakage of contaminants into the helium used to transport heat from the reactor to the heat exchangers for power production, residual heat removal, and process heat." [RG_1.232 MHTGR-DC 30 p.123]
 - "The phrase “reactor helium pressure boundary” encompasses the entire volume containing helium used to cool the reactor, not just the volume within the reactor vessel." [RG_1.232 MHTGR-DC 30 p.123]
 - "For consistency, a specific requirement is appended to MHTGR-DC 30 for a means of detecting ingress of moisture, air, secondary coolant, or other fluids." [RG_1.232 MHTGR-DC 30 p.123]
 - "Although “other fluids” could be interpreted as including water and steam, for emphasis, the word “moisture” is included in the list of contaminants in both MHTGR-DC 14 and MHTGR-DC 30." [RG_1.232 MHTGR-DC 30 p.123]
-- "The reactor helium pressure boundary shall be designed with sufficient margin to ensure that, when stressed under operating, maintenance, testing, and postulated accident conditions, (1) the boundary behaves in a nonbrittle manner and (2) the probability of rapidly propagating fracture is minimized. The design shall reflect consideration of service temperatures, service degradation of material properties, creep, fatigue, stress rupture, and other conditions of the boundary material under operating, maintenance, testing, and postulated accident conditions and the uncertainties in determining (1) material properties, (2) the effects of irradiation and helium composition, including contaminants and reaction products, on material properties, (3) residual, steady-state, and transient stresses, and (4) size of flaws." [RG_1.232 MHTGR-DC 31 p.123]
+- "The reactor helium pressure boundary shall be designed with sufficient margin to ensure that, when stressed under operating, maintenance, testing, and postulated accident conditions, (1) the boundary behaves in a nonbrittle manner and (2) the probability of rapidly propagating fracture is minimized. The design shall reflect consideration of service temperatures, service degradation of material properties, creep, fatigue, stress rupture, and other conditions of the boundary material under operating, maintenance, testing, and postulated accident conditions and the uncertainties in determining (1) material properties, (2) the effects of irradiation and helium composition, including contaminants and reaction products, on material properties, (3) residual, steady-state, and transient stresses, and (4) size of flaws." [RG_1.232 MHTGR-DC 31 p.123-124]
 - "“Reactor coolant pressure boundary” has been relabeled as “reactor helium pressure boundary” to conform to standard terms used for MHTGRs." [RG_1.232 MHTGR-DC 31 p.123]
 - "Specific examples are added to the MHTGR DC to account for the high design and operating temperatures, helium coolant, contaminants, and reaction products." [RG_1.232 MHTGR-DC 31 p.123]
 - "Components that are part of the reactor helium pressure boundary shall be designed to permit (1) periodic inspection and functional testing of important areas and features to assess their structural and leaktight integrity, and (2) an appropriate material surveillance program for the reactor vessel." [RG_1.232 MHTGR-DC 32 p.124]
@@ -87,7 +89,7 @@ terms_pending: []
 - "The MHTGR designs do not have a “pressure retaining reactor containment structure” but instead rely on a multibarrier functional containment configuration to control the release of radionuclides." [RG_1.232 MHTGR-DC 43 p.128]
 - "See the MHTGR-DC 16 rationale." [RG_1.232 MHTGR-DC 43 p.128]
 - "In addition to the heat rejection capability of the passive residual heat removal system, systems to transfer heat from structures, systems, and components important to safety to an ultimate heat sink shall be provided, as necessary, to transfer the combined heat load of these structures, systems, and components under normal operating and accident conditions." [RG_1.232 MHTGR-DC 44 p.128]
-- "Suitable redundancy in components and features and suitable interconnections leak detection, and isolation capabilities shall be provided to ensure that the system safety function can be accomplished, assuming a single failure." [RG_1.232 MHTGR-DC 44 p.128]
+- "Suitable redundancy in components and features and suitable interconnections leak detection, and isolation capabilities shall be provided to ensure that the system safety function can be accomplished, assuming a single failure." [RG_1.232 MHTGR-DC 44 p.128-129]
 - "This renamed MHTGR-DC accounts for advanced reactor system design differences to include cooling requirements for SSCs important to safety, if applicable; this MHTGR-DC does not address the residual heat removal system required under MHTGR-DC 34." [RG_1.232 MHTGR-DC 44 p.128]
 - "The staff inserted “passive” based on the system design for residual heat removal. If a specific MHTGR design can demonstrate that the reactor cavity cooling system (RCCS) provides indefinite core cooling capability, then structural and equipment cooling systems would not be needed." [RG_1.232 MHTGR-DC 44 p.128]
 - "The GDC reference to electric power was removed." [RG_1.232 MHTGR-DC 44 p.129]
@@ -96,7 +98,7 @@ terms_pending: []
 - "This renamed MHTGR-DC accounts for advanced reactor system design differences to include possible cooling requirements for SSCs important to safety." [RG_1.232 MHTGR-DC 45 p.129]
 - "The structural and equipment cooling systems shall be designed to permit appropriate periodic functional testing to assure (1) the structural and leaktight integrity of their components, (2) the operability and the performance of the system components, and (3) the operability of the systems as a whole and, under conditions as close to design as practical, the performance of the full operational sequences that bring the systems into operation for reactor shutdown and postulated accidents, including operation of associated systems." [RG_1.232 MHTGR-DC 46 p.129]
 - "This renamed MHTGR-DC accounts for advanced reactor system design differences to include possible cooling requirements for SSCs important to safety." [RG_1.232 MHTGR-DC 46 p.129]
-- "Specific mention of “pressure” testing has been removed yet remains a potential requirement should it be necessary as a component of “ … appropriate periodic functional testing … ” of cooling systems." [RG_1.232 MHTGR-DC 46 p.129]
+- "Specific mention of “pressure” testing has been removed yet remains a potential requirement should it be necessary as a component of “…appropriate periodic functional testing...” of cooling systems." [RG_1.232 MHTGR-DC 46 p.129]
 - "Functional testing is testing that assesses component and system operational readiness such as required in the ASME OM Code as incorporated by reference in 10 CFR 50.55a and in Plant Technical Specifications." [RG_1.232 MHTGR-DC 46 p.129]
 - "“Active” has been deleted in item (2) because appropriate operability and performance tests of system components are required regardless of their active or passive nature." [RG_1.232 MHTGR-DC 46 p.129]
 - "The LOCA reference has been removed to provide for any postulated accident that might affect subject SSCs." [RG_1.232 MHTGR-DC 46 p.129]
@@ -123,9 +125,9 @@ terms_pending: []
 | 46 |  | Same as ARDC | [RG_1.232 Table 1 p.13-20] |
 
 ## 해설
-이 절에서 냉각재 이름의 변경이 가장 뚜렷하다. 기준 30, 31, 32의 제목은 모두 `reactor coolant pressure boundary`에서 `reactor helium pressure boundary`로 바뀌었고 표 1의 제목 칸이 그 삽입·삭제를 보인다. 기준 34는 `Residual heat removal`이라는 제목으로 수정되었고, 그 점검과 시험을 다루는 기준 36과 37의 제목은 `emergency core cooling`에서 `passive residual heat removal`로 바뀌었다. 기준 44는 `Cooling water`에서 `Structural and equipment cooling`으로 바뀌었으며 그 점검과 시험을 다루는 기준 45, 46은 ARDC와 같다.
+기준 30, 31, 32의 제목은 모두 `reactor coolant pressure boundary`에서 `reactor helium pressure boundary`로 바뀌었고 표 1의 제목 칸이 그 삽입·삭제를 보인다. 기준 34는 `Residual heat removal`이라는 제목으로 수정되었고, 그 점검과 시험을 다루는 기준 36과 37의 제목은 `emergency core cooling`에서 `passive residual heat removal`로 바뀌었다. 기준 44는 `Cooling water`에서 `Structural and equipment cooling`으로 바뀌었으며 그 점검과 시험을 다루는 기준 45, 46은 ARDC와 같다.
 
-적용 제외가 여섯 항목이다. 냉각재 보충을 다루는 기준 33과 비상 노심 냉각을 다루는 기준 35, 그리고 격납 열제거와 격납 분위기 정화 계통의 설계·점검·시험을 다루는 기준 38부터 43까지가 `Not applicable to MHTGR.`이다. 이는 기준 16의 근거가 적은 대로, MHTGR이 압력유지 격납구조물 대신 다중 장벽 functional containment를 쓰기 때문이다. 같은 번호에서 SFR-DC는 기준 33을 수정하고 기준 35와 38–43을 ARDC나 general design criteria%%t:GDC%%와 같게 두므로, 두 기준 집합의 차이가 이 구간에서 가장 크다.
+적용 제외는 여덟 기준이다. 냉각재 보충을 다루는 기준 33과 비상 노심 냉각을 다루는 기준 35, 그리고 격납 열제거와 격납 분위기 정화 계통의 설계·점검·시험을 다루는 기준 38부터 43까지가 `Not applicable to MHTGR.`이다. 이유는 기준마다 다르다. 기준 33은 소량 누설에 대한 냉각재 inventory 유지가 `SARRDL`을 만족하는 데 필요하지 않기 때문이고, 기준 35는 유효 냉각에 헬륨 inventory 유지가 필요하지 않고 가정 사고의 열제거를 기준 34의 잔열제거 계통이 맡기 때문이다. 기준 38–43은 MHTGR 설계에 압력유지 격납구조물이 없고 다중 장벽 functional containment로 방사성 핵종 방출을 제어하기 때문이며, 각 기준의 근거는 기준 16의 근거를 참조하게 한다.
 
 ## 관련 문서
 - [[Principal_Design_Criteria_Non_LWR]]

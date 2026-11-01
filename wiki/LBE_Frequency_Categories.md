@@ -3,7 +3,7 @@ type: concept
 aliases: []
 sources: [NEI_18-04, SER_KU1_CP, RG_1.233]
 status: checked
-verified: 2026-10-17
+verified: 2026-11-01
 term:
 tags: []
 terms_pending: []
@@ -54,9 +54,9 @@ terms_pending: []
 ## 해설
 표 3-1에서 세 범주는 평균 빈도로 갈린다. AOO%%t:AOO%%는 1E-02/plant-year 이상, DBE%%t:DBE%%는 1E-04/plant-year에서 1E-02/plant-year 사이, BDBE%%t:BDBE%%는 5E-07/plant-year에서 1E-04/plant-year 사이이다. Task 7a는 5th percentile과 95th percentile로 정한 불확실도 구간이 범주 경계에 걸치면 그 Licensing Basis Event%%t:LBE%%를 두 범주에서 모두 평가하고, 평균이 5E-07/plant-year보다 낮아도 95th percentile이 그 위이면 BDBE%%t:BDBE%%로 평가한다고 적는다. 경계 규칙 전체는 [[LBE_Risk_Significance]]에 있다.
 
-범주를 가르는 빈도는 안전 등급과 무관하게 발전소 안의 모든 SSC%%t:SSC%%의 예상 응답을 반영한 값이다. 표 3-1과 용어집은 모두 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%% 정의에 이 문장을 둔다. 따라서 빈도는 안전 등급이 있는 설비만으로 계산한 값이 아니다.
+표 3-1과 용어집은 AOO%%t:AOO%%, DBE%%t:DBE%%, BDBE%%t:BDBE%% 정의에 모두, 이 범주들이 안전 등급과 무관하게 발전소 안의 모든 SSC%%t:SSC%%의 예상 응답을 고려한다는 문장을 둔다.
 
-DBA%%t:DBA%%는 성격이 다르다. 빈도 구간으로 정의되지 않고 DBE%%t:DBE%%에서 유도되며, 완화에 동원되는 설비를 Safety-Related SSC%%t:SSC%%로 한정한다고 가정한다. 즉 같은 ES%%t:ES%%를 보수적으로 다시 평가한 것이 DBA%%t:DBA%%이고, 그 목적은 설계 기준과 성능 목표를 정하는 데 있다.
+DBA%%t:DBA%%는 성격이 다르다. 빈도 구간으로 정의되지 않고 DBE%%t:DBE%%에서 유도되며, 완화에 동원되는 설비를 Safety-Related SSC%%t:SSC%%로 한정한다고 가정한다. DBA%%t:DBA%%의 목적은 Safety-Related SSC%%t:SSC%%의 설계 기준과 성능 목표를 정하는 데 있다.
 
 §6 용어집의 정의는 표 3-1과 대체로 같지만 세 곳에서 표현이 다르다. DBE%%t:DBE%% 정의에는 DBE%%t:DBE%%의 목적과 범위가 발전소의 안전 설계기준을 이룬다는 문장이 더 있다. BDBE%%t:BDBE%% 정의는 구간을 5E-07/plant-year에서 1E-04/plant-year로 같게 적되, 표 3-1의 mean이라는 한정어 없이 frequencies로만 적는다. DBA%%t:DBA%% 정의는 표 3-1의 event sequences 대신 accidents라는 말을 쓴다. 구간 수치는 두 곳이 같다.
 

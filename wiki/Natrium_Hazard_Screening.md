@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [PSAR_ch03, RG_1.253, PSAR_ch06]
 status: checked
-verified: 2026-09-16
+verified: 2026-11-01
 term:
 tags: [natrium, lbe]
 terms_pending: []
@@ -18,11 +18,11 @@ terms_pending: []
 - "The hazard screening for at-power operation and low-power shutdown uses the generic screening criteria specified in ASME/ANS RA-S-1.4-2021 and examines coexistent hazards and cliff-edge effects." [PSAR_ch03 §3.1.1.5 p.9]
 - "Table 3.1-2 summarizes the hazards that screened out of the at-power operation PRA and low-power shutdown PRA." [PSAR_ch03 §3.1.1.5 p.9]
 - "Table 3.1-3 summarizes the hazards that are addressed by detailed PRA or design basis hazard levels (DBHLs)." [PSAR_ch03 §3.1.1.5 p.9]
-- "No adjustments are made to the PRA and uncertainty assessments to address the bounding site characterizations and structure, system, or component (SSC) fragilities based on the DBHLs described in Section 6.1.1" [PSAR_ch03 §3.1.1.15 p.13]
+- "No adjustments are made to the PRA and uncertainty assessments to address the bounding site characterizations and structure, system, or component (SSC) fragilities based on the DBHLs described in Section 6.1.1 as the PRA at the CP stage is internal events at-power and low-power shutdown only." [PSAR_ch03 §3.1.1.15 p.13]
 - "Determination of whether an IE can be caused by chemical hazards is considered in the internal and external hazards screening discussed in Section 3.1.1.5." [PSAR_ch03 §3.1.1.7 p.11]
 - "NEI 21‑07, Revision 1, Section 6.1.1 clarified NEI 18‑04 by defining and using the term DBHL rather than DBEHL." [RG_1.253 §A.3.7 p.34]
 - "DBHLs are a design specification of the level of severity or intensity of hazards for which the SR SSCs are designed to withstand with no adverse impact on their capability to perform their SR functions." [PSAR_ch06 §6.1.1 p.4]
-- "These DBHLs are selected in accordance with existing NRC approved methods and are consistent with the DBHLs described in Section 6.1.1 and Table 6-1 of NEI 21-07 (Reference 6.1-1)" [PSAR_ch06 §6.1.1 p.4]
+- "These DBHLs are selected in accordance with existing NRC approved methods and are consistent with the DBHLs described in Section 6.1.1 and Table 6-1 of NEI 21-07 (Reference 6.1-1) and with the guidance on the scope of hazards found in Chapter 3 of NUREG-0800, “Standard Review Plan for the Review of Safety Analysis Reports for Nuclear Power Plants: LWR Edition.”" [PSAR_ch06 §6.1.1 p.4]
 - "Specifically, DBHLs address both traditional external hazards (e.g., seismic events, external floods, high winds) and internal hazards (e.g., internal fires, internal floods, turbine missiles, and high energy line breaks)." [RG_1.253 §A.3.7 p.34]
 
 | Hazard | Analysis | 출처 |

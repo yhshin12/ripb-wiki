@@ -65,7 +65,7 @@
 - [[SFR_DC_Reactor_Design_And_Coolant_Boundary]] — 기준 10–16은 원자로 설계, 원자로 고유 보호, 출력 진동 억제, 계측·제어, primary coolant boundary, primary coolant system 설계, 격납 설계를 다룬다.
 - [[SFR_DC_Residual_Heat_Removal_And_ECC]] — 기준 34–37은 잔열 제거, 비상 노심 냉각, 비상 노심 냉각 계통의 검사와 시험을 다룬다. (disputed)
 - [[SFR_DC_Sodium_Specific_Criteria]] — 기준 72–74는 general design criteria에 대응 조문이 없는 추가 기준으로, 소듐 가열 계통, 소듐 누설 탐지와 소듐-공기·소듐-콘크리트 반응의 방지·완화, 소듐-물 반응의 방지·완화를 다룬다.
-- [[SFR_DC_Structural_And_Equipment_Cooling]] — 기준 44–46은 경수로의 cooling water 기준을 structural and equipment cooling으로 바꾼 기준으로, important to safety 구조물·계통·기기의 열을 최종 열침원으로 전달하는 계통과 그 검사·시험을 다룬다.
+- [[SFR_DC_Structural_And_Equipment_Cooling]] — 기준 44–46은 general design criteria의 cooling water 기준을 structural and equipment cooling으로 바꾼 기준으로, important to safety 구조물·계통·기기의 열을 최종 열침원으로 전달하는 계통과 그 검사·시험을 다룬다.
 - [[Single_Failure_Criterion_Non_LWR]] — NEI 18-04는 신형 비경수형원전(non-light-water reactor)이 고유·피동·능동 설계 특성의 다양한 조합과 심층방어(Defense-in-Depth) 적절성 평가를 거치므로 single-failure criterion 적용이 필요 없다고 설명한다.
 
 ## 개념 (concept)
@@ -139,7 +139,7 @@
 - [[Natrium_LBE_Evaluation_Methods]] — Design Basis Accident는 보수적 경계 변수와 네 방법론 보고서로 평가하고, Anticipated Operational Occurrence·Design Basis Event·Beyond Design Basis Event는 모든 Structures, Systems, and Components의 예상 응답을 고려해 같은 보수적 방법이나 best-estimate plus uncertainty 방법으로 평가한다.
 - [[Natrium_LBE_Risk_Margins]] — `PSAR` Chapter 4의 두 표는 risk-significant Licensing Basis Event의 빈도와 선량이 Frequency-Consequence Target에서 얼마나 떨어져 있는지를 예비(preliminary) 값으로 평균값 기준 세 건과 95th percentile 기준 열한 건에 대해 비로 보인다.
 - [[Natrium_LBE_Selection]] — 이 보고서는 regulatory guide 1.233이 승인한 NEI 18-04 방법론을 Licensing Basis Event 선정·평가에 일탈 없이 적용한다고 적는다.
-- [[Natrium_Licensing_Basis_Methodology]] — Kemmerer Unit 1은 10 CFR Part 50에 따른 construction permit 신청이며, 보고서 구성은 regulatory guide 1.233과 content-of-application 방법론 초안 지침을 따른다.
+- [[Natrium_Licensing_Basis_Methodology]] — Kemmerer Unit 1은 10 CFR Part 50에 따른 construction permit 신청이며, 보고서 구성은 대체로 regulatory guide 1.233과 content-of-application 방법론 초안 지침을 따른다.
 - [[Natrium_MST_Methodology]] — 이 보고서는 Mechanistic Source Term을 특정 위치에서의 방사성 핵종 방출 특성으로 정의하고, 방출을 release categories로 묶어 시점, 위치, 방출량, 이동 barrier와 메커니즘을 고려해 평가한다.
 - [[Natrium_Major_Structures]] — `PSAR` §1.1.4.4는 Nuclear Island의 다섯 주요 건물(`RXB`, `FHB`, `RAB`, `NCB`, `FAB`)과 지원 시설(E-Module, Energy Island 시설)을 서술하고 건물마다 수용 계통 목록을 적는다.
 - [[Natrium_NI_EI_Interface]] — Kemmerer Unit 1의 Nuclear Island와 Energy Island는 가능한 한 서로 독립적으로 기능하도록 설계되고, 두 island는 열을 옮기고 저장하는 Nuclear Island Salt System으로 물리적으로 연결된다.

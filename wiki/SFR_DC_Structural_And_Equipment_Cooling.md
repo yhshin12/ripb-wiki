@@ -4,7 +4,7 @@ aliases: []
 sources:
 - RG_1.232
 status: checked
-verified: 2026-09-16
+verified: 2026-11-01
 term: null
 tags:
 - sfr-dc
@@ -14,7 +14,7 @@ terms_pending: []
 # SFR-DC 구조물·기기 냉각 (SFR-DC Structural and Equipment Cooling, Criteria 44–46)
 
 > [!abstract] 요약
-> 기준 44–46은 경수로의 cooling water 기준을 structural and equipment cooling으로 바꾼 기준으로, important to safety 구조물·계통·기기의 열을 최종 열침원으로 전달하는 계통과 그 검사·시험을 다룬다. 세 기준은 advanced reactor design criteria와 같다.
+> 기준 44–46은 general design criteria%%t:GDC%%의 cooling water 기준을 structural and equipment cooling으로 바꾼 기준으로, important to safety 구조물·계통·기기의 열을 최종 열침원으로 전달하는 계통과 그 검사·시험을 다룬다. 세 기준은 advanced reactor design criteria와 같다.
 
 ## 원문 사실
 - "A system to transfer heat from structures, systems, and components important to safety to an ultimate heat sink shall be provided, as necessary, to transfer the combined heat load of these structures, systems, and components under normal operating and accident conditions." [RG_1.232 SFR-DC 44 p.88]

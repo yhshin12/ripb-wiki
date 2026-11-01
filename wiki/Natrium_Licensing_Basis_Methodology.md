@@ -5,7 +5,7 @@ sources:
 - PSAR_ch01
 - SER_KU1_CP
 status: checked
-verified: 2026-09-16
+verified: 2026-11-01
 term: null
 tags:
 - natrium
@@ -15,7 +15,7 @@ terms_pending: []
 # Natrium의 인허가 기준 방법론 (Natrium Licensing Basis Methodology)
 
 > [!abstract] 요약
-> Kemmerer Unit 1은 10 CFR Part 50에 따른 construction permit%%t:CP%% 신청이며, 보고서 구성은 regulatory guide%%t:RG%% 1.233과 content-of-application 방법론 초안 지침을 따른다. Licensing Basis Event%%t:LBE%% 선정, Structures, Systems, and Components%%t:SSC%% 안전 분류와 special treatment%%t:SPECIAL_TREATMENT%%, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 결정은 NEI 18-04 Revision 1 방법론에 따라 integrated decision-making process%%t:IDP%%로 수행했고, 승인된 방법론과 지침의 staff position에서 벗어난 점이 없다고 적는다.
+> Kemmerer Unit 1은 10 CFR Part 50에 따른 construction permit%%t:CP%% 신청이며, 보고서 구성은 대체로 regulatory guide%%t:RG%% 1.233과 content-of-application 방법론 초안 지침을 따른다. Licensing Basis Event%%t:LBE%% 선정, Structures, Systems, and Components%%t:SSC%% 안전 분류와 special treatment%%t:SPECIAL_TREATMENT%%, 심층방어(Defense-in-Depth)%%t:DID%% 적절성 결정은 NEI 18-04 Revision 1 방법론에 따라 integrated decision-making process%%t:IDP%%로 수행했고, 승인된 방법론과 지침의 staff position에서 벗어난 점이 없다고 적는다.
 
 ## 원문 사실
 - "Kemmerer Unit 1 is being licensed under Title 10 of the Code of Federal Regulations (10 CFR) Part 50, “Domestic Licensing of Production and Utilization Facilities.”" [PSAR_ch01 §1.1 p.19]

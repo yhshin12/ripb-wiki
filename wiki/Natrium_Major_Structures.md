@@ -4,7 +4,7 @@ aliases: []
 sources:
 - PSAR_ch01
 status: checked
-verified: 2026-10-30
+verified: 2026-11-01
 term: null
 tags:
 - natrium
@@ -16,7 +16,7 @@ terms_pending: []
 > [!abstract] 요약
 > `PSAR` §1.1.4.4는 Nuclear Island의 다섯 주요 건물(`RXB`, `FHB`, `RAB`, `NCB`, `FAB`)과 지원 시설(E-Module, Energy Island 시설)을 서술하고 건물마다 수용 계통 목록을 적는다.
 > `RXB`는 상부구조와 하부구조가 서로 독립한 두 구조물로 나뉘고, `RES`가 하부구조 안에서 원자로와 safety-significant 계통을 감싼다.
-> 건물 단면도 Figure 1.1-5–1.1-17은 정제본에서 비공개 블록으로 처리되어 이 노트는 그림 제목만 담는다.
+> 건물 일반 배치도 Figure 1.1-5–1.1-17의 도면 내용은 vault에 없어(정제본의 `withheld` 블록) 이 노트는 그림 제목만 담는다.
 
 ## 원문 사실
 - "The Kemmerer Unit 1 plant arrangement includes five major buildings on the NI and other supporting facilities as shown on the site layout plan in Figure 1.2-1." [PSAR_ch01 §1.1.4.4.1 p.37]
@@ -113,13 +113,13 @@ terms_pending: []
 - "The primary systems located in the RAB include:" [PSAR_ch01 §1.1.4.4.4 p.38]
 
 ## 해설
-Nuclear Island의 중심은 `RXB`이며 원자로와 운전을 지원하는 Structures, Systems, and Components%%t:SSC%%를 수용하고 passive `RAC`의 덕트와 굴뚝을 받친다. `RXB`는 두 독립 구조물로 나뉜다. 지상의 상부구조는 원자로를 중심으로 대칭인 단일 실 배치의 강골조 구조물이고, 그 기초는 지하 철근콘크리트·강 하부구조와 분리되어 있다. 재장전 접근층 바닥은 상부구조의 지표면 높이에 있고 운전 데크는 하부구조의 지하에 있다. `HAA` 아래의 `RES`가 원자로와 safety-significant 계통을 감싸며 외부 재해 방호를 준다. `RXB`에는 핵열공급 계통 `RCC`·`RES`·`PHT`·`IHT`, 원자로 보조 계통 `RAC`·`SCG`·`CRD`, 핵연료 취급 계통 `FHE`·`FHI`, 전력 계통, 지원 계통이 들어간다.
+Nuclear Island의 중심은 `RXB`이며 원자로와 운전을 지원하는 Structures, Systems, and Components%%t:SSC%%를 수용하고 passive `RAC`의 덕트와 굴뚝을 받친다. `RXB`는 두 독립 구조물로 나뉜다. 지상의 상부구조는 원자로를 중심으로 대칭인 단일 실 배치의 강골조 구조물이고, 그 기초는 지하 철근콘크리트·강 하부구조와 분리되어 있다. 재장전 접근층 바닥은 상부구조의 지표면 높이에 있고 운전 데크는 하부구조의 지하에 있다. 외부 재해 방호를 주는 지하 `RXB` 하부구조 안에서 `HAA` 아래의 `RES`가 원자로와 safety-significant 계통을 감싼다. `RXB`에는 핵열공급 계통 `RCC`·`RES`·`PHT`·`IHT`, 원자로 보조 계통 `RAC`·`SCG`·`CRD`, 핵연료 취급 계통 `FHE`·`FHI`, 전력 계통, 지원 계통이 들어간다.
 
 `FHB`는 지상 강골조 상부구조와 지하 철근콘크리트 하부구조로 이루어지고 연료 수령, 재장전, 저장, `SFP`와 방사성폐기물 계통 `RWG`·`RWL`·`RWS`를 수용한다. `FHB` 안에서 시작하는 지상 궤도가 `EVHM`으로 연료를 옮기도록 `FHB`와 `RXB`를 잇는다. `RAB`는 철근콘크리트 하부구조 두 층과 강골조 상부구조로 이루어져 `IHT`, `SHX`, `ISP`, `SPS`를 지원하는 기능과 공정을 수용하고, `NSS`와 `IHT` 배수탱크를 하부구조에 둔다. `IAC`의 `AHX`는 `RAB` 밖에 있으면서 건물 안 기능을 지원한다.
 
 `NCB`는 Nuclear Island의 주 제어 중심으로 Main Control Room과 관련 기기를 수용한다. 지상은 강골조 1층 상부구조, 지하는 철근콘크리트·강 하부구조이며 하부구조에 `RSC`가 있다. Main Control Room은 외부 재해 방호와 방사선 차폐, 화재 방호를 주는 보강 격벽으로 둘러싸인 envelope 안에 있다. `FAB`는 콘크리트 grade slab 위의 강 가새골조로 방사선관리구역 출입의 주 통로가 되고 인원 감시, 방사선 관리, 제염, 이동형 오염 기기 정비를 맡으며, 지하 소형 피트에 제염 샤워·세탁 관련 `RWL` 설비를 둔다.
 
-지원 시설은 Nuclear Island의 전기 기기 모듈과 Energy Island 시설이다. 전기 기기 모듈은 조립식으로 Nuclear Island 구역에 두고 바람·눈·비 같은 외부 기상 조건을 견디도록 설계한다. Energy Island 시설은 `TSS` 덕분에 원자로 출력 운전과 독립인 열에너지 저장과 증기 생산 운전을 지원하며, 원문은 Energy Island SSC%%t:SSC%%와 Nuclear Island SSC%%t:SSC%% 사이의 운전 독립성이 발전소 설계 철학의 핵심이라고 적고, Nuclear Island 경계조건은 Energy Island와의 상호관계가 Nuclear Island 안전해석에 영향을 주지 않도록 의도적으로 설계되었다고 적는다. 건물 단면도 Figure 1.1-5부터 Figure 1.1-17까지는 정제본에서 비공개 블록으로 처리되어 인용할 수 있는 본문이 없다.
+지원 시설은 Nuclear Island의 전기 기기 모듈과 Energy Island 시설이다. 전기 기기 모듈은 조립식으로 Nuclear Island 구역에 두고 바람·눈·비 같은 외부 기상 조건을 견디도록 설계한다. Energy Island 시설은 `TSS` 덕분에 원자로 출력 운전과 독립인 열에너지 저장과 증기 생산 운전을 지원하며, 원문은 Energy Island SSC%%t:SSC%%와 Nuclear Island SSC%%t:SSC%% 사이의 운전 독립성이 발전소 설계 철학의 핵심이라고 적고, Nuclear Island 경계조건은 Energy Island와의 상호관계가 Nuclear Island 안전해석에 영향을 주지 않도록 의도적으로 설계되었다고 적는다. 건물 일반 배치도 Figure 1.1-5부터 Figure 1.1-17까지의 도면 내용은 vault에 없다(정제본의 `withheld` 블록).
 
 **규정 대비 메모(C50, 규정 불일치).** `PHT`와 `IHT`가 `RXB` 수용 계통 목록과 `RAB` 수용 계통 목록에 모두 들어 있다. `RXB` 목록은 계통의 일부를 포함한다고 적고 `RAB` 목록은 주요 계통이라고 적어 두 목록의 범위 기준이 다르다.
 
