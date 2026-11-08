@@ -7,12 +7,12 @@ file: references/TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Techn
 pdf: references/raw/TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Technical
   Report.pdf
 sha256_pdf: 9cd2c27b336251d2c633aa4d82432f016278ff5a4af2f517c27991b29c730e77
-sha256_md: 9b46b0f4c5ea3833de4b5cac45fbe99b749aeb3b00417d5b818108998ba3ce80
+sha256_md: 611b165280df63deada9acd7424ea3f67329bbddacdb68abb9656eadf4ef0583
 pdf_pages: 94
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-26
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-11-08
   missing_pct: 0.27
 ingest: partial
 units:

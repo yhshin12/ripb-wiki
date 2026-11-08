@@ -31,6 +31,11 @@ DOCS = {
     "TP-LIC-RPT-0011": ("TP-LIC-RPT-0011_Core Nuclear and Thermal Hydraulic Design Technical Report", "tp_report", None),
     "NAT-3049": ("NAT-3049_Nascent Thermal Hydraulic Model White Paper", "tp_report", None),
     "TP-LIC-LET-0080": ("TP-LIC-LET-0080_Core Thermal Hydraulic Methods Presentation Material", "tp_slides", None),
+    "NAT-9390-A": ("NAT-9390-A_Design Basis Accident Methodology for In-Vessel Events without Radiological Release",
+                   "nat_topical", None),
+    "NAT-9394-A": ("NAT-9394-A_Design Basis Accident Methodology for Events with Radiological Release",
+                   "nat_topical", None),
+    "NAT-9395-A": ("NAT-9395-A_Partial Flow Blockage Methodology", "nat_topical", None),
 }
 
 INTERNAL_REGISTRY = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(

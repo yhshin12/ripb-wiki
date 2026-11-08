@@ -1,9 +1,9 @@
 ---
 type: natrium
 aliases: []
-sources: [PSAR_ch01]
+sources: [PSAR_ch01, NAT-9390-A, NAT-9394-A, NAT-9395-A]
 status: checked
-verified: 2026-10-26
+verified: 2026-11-08
 term:
 tags: [natrium]
 terms_pending: []
@@ -20,6 +20,14 @@ terms_pending: []
 - "If a topical report has received a safety evaluation report, Table 1.4-2 indicates the safety evaluation report accession number." [PSAR_ch01 §1.4.2 p.66]
 - "Technical reports identified in Table 1.4-3 are reviewed as part of the application." [PSAR_ch01 §1.4.2 p.66]
 - "The referenced section provides additional discussion, including information being incorporated by reference." [PSAR_ch01 §1.4.2 p.66]
+- "Final Safety Evaluation of Topical Report NAT-9390, Design Basis Accident Methodology for In-Vessel Events without Radiological Release, Revision 2 (ML25106A040)" [NAT-9390-A transmittal letter p.1]
+- "Final Safety Evaluation of NAT-9394, Design Basis Accident Methodology for Events with Radiological Release, Revision 0 (ML25189A085)" [NAT-9394-A transmittal letter p.1]
+- "Final Safety Evaluation of NAT-9395, Partial Flow Blockage Methodology, Revision 0 (ML25210A206)" [NAT-9395-A transmittal letter p.1]
+- "Radiological Source Term Methodology Report,” Revision 0 (ML24261B944), and evaluated by the NRC staff in ML25063A323." [NAT-9394-A SE §1.1 p.12]
+- "and evaluated by the NRC staff in ML25106A262" [NAT-9394-A SE §1.1 p.13]
+- "ADAMS Accession Nos.: Pkg: ML25106A038 Letter: ML25106A040 Public Enclosure: ML25106A043" [NAT-9390-A NRC distribution list p.9]
+- "ADAMS Accession Nos.: Package: ML25189A082 Letter: ML25189A085 Enclosure (Public): ML25212A054" [NAT-9394-A NRC distribution list p.9]
+- "ADAMS Accession Nos.: Pkg: ML25210A192 Letter: ML25210A204 Enclosure (Public): ML25210A206" [NAT-9395-A NRC distribution list p.9]
 
 | Topical Report Number | Submittal Accession Number | Topical Report Title | Section(s) | 출처 |
 |---|---|---|---|---|
@@ -48,7 +56,9 @@ terms_pending: []
 ## 해설
 §1.4.2는 두 표의 성격을 가른다. Table 1.4-2의 topical report는 `NRC`에 제출되어 검토되며 safety evaluation report를 받은 것은 그 accession number가 표에 적힌다. Table 1.4-3의 technical report는 신청서의 일부로 검토된다. 두 표의 referenced section 칸은 해당 보고서를 더 다루는 `PSAR` 절을 가리키며, 참조로 포함되는 정보도 그 절에 있다.
 
-이 노트는 표의 목록 자체를 담는다. 보고서 원문은 vault에 없으므로 제목과 문서번호, accession number, 참조 절만 확인할 수 있다. 본문은 이 칸을 safety evaluation report의 accession number로 설명하나 표 머리는 `Submittal Accession Number`로 적는다. 원문이 두 가지로 부르므로 어느 쪽인지는 §1.4.2만으로 판정할 수 없다.
+이 노트는 표의 목록 자체를 담는다. Table 1.4-2의 보고서 가운데 `NAT-9390-A`, `NAT-9394-A`, `NAT-9395-A`는 원문이 vault에 있고, 나머지 보고서는 원문이 없어 제목과 문서번호, accession number, 참조 절만 확인할 수 있다.
+
+**규정 대비 메모(accession number, 표 설명과 표 머리).** 본문은 이 칸을 safety evaluation report의 accession number로 설명하나 표 머리는 `Submittal Accession Number`로 적는다. 세 보고서의 제출 서한이 적은 최종 safety evaluation 번호(ML25106A040, ML25189A085, ML25210A206)와 NRC 배포 목록의 package·letter·public enclosure 번호(ML25106A038, ML25106A043, ML25189A082, ML25212A054, ML25210A192, ML25210A204) 어느 것도 표의 값(ML25211A127, ML25251A090, ML25251A084)과 같지 않으므로, 이 세 건의 표 값은 safety evaluation의 번호가 아니다. `NAT-9392`와 `NAT-9391`의 평가 문서 번호(ML25063A323, ML25106A262)도 표의 값(ML25211A271, ML25211A267)과 다르다. 그 밖의 보고서는 vault에서 평가 번호를 확인하지 못했다.
 
 ## 관련 문서
 - [[Natrium_Licensing_Basis_Methodology]]
@@ -59,3 +69,6 @@ terms_pending: []
 - [[PSAR_ch01]]
 - [[Natrium_SER_Facility_Overview_Review]]
 - [[TP-LIC-RPT-0011]]
+- [[NAT-9390-A]]
+- [[NAT-9394-A]]
+- [[NAT-9395-A]]

@@ -3,7 +3,7 @@ type: natrium
 aliases: []
 sources: [SER_KU1_CP]
 status: checked
-verified: 2026-10-16
+verified: 2026-11-08
 term:
 tags: [natrium, lbe, dba, nrc-review]
 terms_pending: []
@@ -52,6 +52,8 @@ staff가 검토한 방법론 `TR`의 역할은 다음과 같다.
 - NAT-9391-A: 방사선 영향(선량) 계산. 선원항(source term)%%t:SOURCE_TERM%% 방법론의 출력이 이 방법론의 입력이 된다.
 - NAT-9392-A의 L&C 검토는 이 절이 아니라 `SE` §3.2에 있다.
 
+세 방법론의 `L&C` 전문과 승인 근거는 각 topical report의 NRC `SE`에 있다([[Natrium_DBA_No_Release_Methodology_SE]], [[Natrium_DBA_Release_Methodology_SE]], [[Natrium_Partial_Flow_Blockage_Methodology_SE]]).
+
 평가 결과는 다음과 같다.
 - NAT-9390-A와 NAT-9395-A: 아직 끝나지 않은 평가모델 단계는 검증·확인 작업이다. 이는 연구개발 성격이라 CP%%t:CP%% 신청에서 완료될 필요가 없다는 이유로 해당 L&C가 다루어졌다고 보았다. 부분 유로 폐쇄 사건은 고연소도 집합체 하나의 모든 핀이 파손된다고 보수적으로 가정해 `TR`의 사건을 bound한다.
 - NAT-9394-A: 사건별 평가모델이 없는 `PIC` 소듐-물 반응, `EVST` 냉각 상실, `RWG` 누설은 이 방법론을 쓰지 않았다. 이 가운데 `ESWR`과 `RWG`는 선원항%%t:SOURCE_TERM%%·선량 방법론을 직접 적용했고, `EVST` 냉각 상실은 사건별 가열 해석으로 다루었다. staff는 이를 L&C 2 충족으로 판단했다. 이 평가모델로 해석한 DBA%%t:DBA%%에는 중대사고 현상이 없다는 점도 audit으로 확인했다.
@@ -67,3 +69,6 @@ LBE%%t:LBE%% 선정에 대해 `PSAR`은 NEI 18-04를 이탈 없이 따랐다고 
 - [[Natrium_SER_MST_Methodology_Review]]
 - [[Natrium_SER_Major_Accident_Review]]
 - [[Natrium_SER_LBE_Summary_Review]]
+- [[Natrium_DBA_No_Release_Methodology_SE]]
+- [[Natrium_DBA_Release_Methodology_SE]]
+- [[Natrium_Partial_Flow_Blockage_Methodology_SE]]

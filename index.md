@@ -6,6 +6,9 @@
 
 - [[ACRS_ML25293A458]] — NRC 직원이 2025년 10월 ACRS 소위원회에서 발표한 Kemmerer Unit 1 construction permit 신청의 controlling heat generation 검토 슬라이드 22쪽이다.
 - [[NAT-3049]] — TerraPower의 `NAT-3049` Rev.
+- [[NAT-9390-A]] — TerraPower의 승인 topical report로, 방사성 방출 없는 용기 내 Design Basis Accident 평가 방법과 NRC 최종 safety evaluation을 한 PDF에 담는다.
+- [[NAT-9394-A]] — TerraPower의 승인 topical report로, 방사성 방출 가능성이 있는 Design Basis Accident의 다섯 평가모델과 NRC 최종 safety evaluation을 한 PDF에 담는다.
+- [[NAT-9395-A]] — TerraPower의 승인 topical report로, 부분 유로 폐쇄 평가모델과 NRC 최종 safety evaluation을 한 PDF에 담는다.
 - [[NEI_18-04]] — NEI 18-04는 비경수로의 Licensing Basis Event 선정(3장), Structures, Systems, and Components 안전 분류와 special treatment(4장), 심층방어(Defense-in-Depth) 적절성 평가(5장)를 위한 technology-inclusive, risk-informed, and performance-based 절차를 제시하는 지침이며, 6장은 용어집이다.
 - [[PSAR_ch01]] — Kemmerer Unit 1 `PSAR` 1장은 발전소와 부지를 개관한다.
 - [[PSAR_ch03]] — Kemmerer Unit 1 `PSAR` 3장은 Licensing Basis Event 선정과 평가 방법을 제시하고, Anticipated Operational Occurrence·Design Basis Event·Beyond Design Basis Event·Design Basis Accident 목록과 각 사건의 해석 결과를 담는다.
@@ -117,6 +120,8 @@
 - [[Natrium_Control_Heat_Removal]] — Fundamental Safety Function인 controlling heat removal은 Defense Line에 걸쳐 능동, 피동, 고유 수단을 가지며, 서로 다른 두 잔열 제거 계통인 Intermediate Air Cooling System과 Reactor Air Cooling System이 수행한다.
 - [[Natrium_Core_Thermal_Hydraulic_Design]] — `PSAR` Chapter 3 §3.13은 노심 열수력 설계의 범위를 노심에서 primary sodium으로의 열수송으로 한정하고, 평가 모형·코드·해석은 `TP-LIC-RPT-0011`에 넘긴다.
 - [[Natrium_DBA_List]] — Kemmerer Unit 1의 Design Basis Accident 요약표는 Design Basis Event에서 대응된 DBA와, DBE 없이 추가된 지진 DBA를 적는다.
+- [[Natrium_DBA_No_Release_Methodology_SE]] — NRC staff는 `NAT-9390` Revision 2가 Natrium Type 1 fuel 설계에서 방사성 방출이 없는 용기 내 Design Basis Accident를 평가하는 방법론을 개발하는 acceptable한 접근이라고 L&C 아래 판단했고, 근거는 `RG 1.203` 부합이다.
+- [[Natrium_DBA_Release_Methodology_SE]] — NRC staff는 `NAT-9394` Revision 0이 방사성 방출 가능성이 있는 Design Basis Accident를 평가하는 방법론을 개발하는 acceptable한 접근이라고 일곱 가지 L&C 아래 판단했다.
 - [[Natrium_DBE_List]] — Kemmerer Unit 1의 Design Basis Event 요약표는 스물일곱 사건을 적고, 그중 핵연료 취급 사건 세 건만 risk-significant이다.
 - [[Natrium_DID_Approach]] — 이 보고서는 심층방어(Defense-in-Depth)를 인허가 기준과 적절한 보호의 합리적 보증 입증의 핵심 요소로 두고, plant capability, programmatic capability, 통합 적절성 평가의 세 요소가 baseline을 확립한다고 적는다.
 - [[Natrium_Defense_Lines]] — `PSAR` Chapter 4는 NEI 18-04의 다섯 Layers of Defense를 Defense Line `DL1`–`DL5`로 정의하고, DL 사이의 독립성을 보장하는 다섯 항목 전략을 둔다.
@@ -157,6 +162,7 @@
 - [[Natrium_PDC_Overall_Requirements]] — principal design criteria 1–5는 safety-significant Structures, Systems, and Components의 품질 기준과 기록, 자연 현상 방호, 화재 방호, 환경·동적 영향, 호기 간 공유를 다룬다.
 - [[Natrium_PDC_Reactivity_Control]] — principal design criteria 20–29는 보호 계통의 기능, 신뢰도와 시험 가능성, 독립성, 고장 모드, 제어 계통과의 분리, 반응도 제어 오작동 대응, 반응도 제어 계통, 반응도 한계, Anticipated Operational Occurrence 방호를 다룬다.
 - [[Natrium_PRA_Scope]] — Kemmerer Unit 1 PRA는 NEI 18-04 틀을 구현하도록 `ASME/ANS RA-S-1.4-2021`의 해당 요건에 따라 개발되며, construction permit 단계의 PRA Technical Adequacy는 내부 사건 출력 운전·저출력 정지 PRA의 자체 평가로 확립되었다.
+- [[Natrium_Partial_Flow_Blockage_Methodology_SE]] — NRC staff는 `NAT-9395` Revision 0이 부분 유로 폐쇄를 평가하는 방법론을 개발하는 acceptable한 접근이라고 `RG 1.203` 부합을 근거로 세 가지 L&C 아래 판단했다.
 - [[Natrium_Piping_And_Industrial_Codes]] — `PSAR` §6.4.4는 `ASME` `BPVC` `Section III` Division 1·5 배관과 지지물의 설계 근거를 적되, 배관 설계가 아직 예비 단계이며 상세는 operating license 단계에 제공한다고 밝힌다.
 - [[Natrium_Plant_Capability_DID_Evaluation]] — `PSAR` Chapter 4는 NEI 18-04 `Chapter 5`에 따라 Plant Capability Defense-in-Depth를 평가하고, risk-significant Licensing Basis Event에는 한 layer나 한 특성에 대한 과도한 의존이 없으며 Design Basis Accident 하나가 단일 barrier에 의존한다고 적는다.
 - [[Natrium_Plant_Overview]] — Kemmerer Unit 1은 TerraPower가 공급하는 `840 MWt` pool-type sodium-cooled fast reactor인 Natrium 원자로이며, 신청자는 `10 CFR Part 50`에 따른 construction permit을 신청한다.
@@ -239,6 +245,7 @@
 
 ## 종합 (synthesis)
 
+- [[LBE_Evaluation_By_Category]] — NEI 18-04의 과업 구조에서 결정론적 안전해석 과업은 Design Basis Accident를 대상으로 하며, Safety-Related Structures, Systems, and Components만의 credit으로 10 CFR 50.34 선량 한계를 보인다.
 - [[Uncertainty_Treatment]] — NEI 18-04는 불확실도를 Licensing Basis Event 범주 지정, F-C Target 비교, 결정론적 안전해석, 심층방어(Defense-in-Depth) 적절성 평가에 걸쳐 다룬다.
 
 ## 지도 (map)

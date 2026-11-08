@@ -48,6 +48,27 @@ META = {
         "title": "Nascent Thermal Hydraulic Model White Paper",
         "tags": ["reference", "natrium", "white-paper"], "aliases": ["NAT-3049", "Nascent white paper"],
     },
+    "NAT-9390-A": {
+        "doc_id": "NAT-9390-A", "doc_type": "Approved Topical Report with NRC final safety evaluation (TP-LIC-LET-0433)",
+        "issuer": "TerraPower, LLC", "revision": "2", "date": "2025-07-25", "adams_accession": "ML25211A127",
+        "se_accession": "ML25106A040",
+        "title": "Design Basis Accident Methodology for In-Vessel Events without Radiological Release",
+        "tags": ["reference", "natrium", "topical-report"], "aliases": ["NAT-9390-A", "NAT-9390"],
+    },
+    "NAT-9394-A": {
+        "doc_id": "NAT-9394-A", "doc_type": "Approved Topical Report with NRC final safety evaluation (TP-LIC-LET-0455)",
+        "issuer": "TerraPower, LLC", "revision": "0", "date": "2025-09-05", "adams_accession": "ML25251A090",
+        "se_accession": "ML25189A085",
+        "title": "Design Basis Accident Methodology for Events with Radiological Release",
+        "tags": ["reference", "natrium", "topical-report"], "aliases": ["NAT-9394-A", "NAT-9394"],
+    },
+    "NAT-9395-A": {
+        "doc_id": "NAT-9395-A", "doc_type": "Approved Topical Report with NRC final safety evaluation (TP-LIC-LET-0453)",
+        "issuer": "TerraPower, LLC", "revision": "0", "date": "2025-09-05", "adams_accession": "ML25251A084",
+        "se_accession": "ML25210A206",
+        "title": "Partial Flow Blockage Methodology",
+        "tags": ["reference", "natrium", "topical-report"], "aliases": ["NAT-9395-A", "NAT-9395"],
+    },
 }
 
 

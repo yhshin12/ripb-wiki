@@ -1,0 +1,16 @@
+[
+  {
+    "find": ". As such, TR section\n\n### 5.1.4\n\n, “EM Description,” states that",
+    "replace": ". As such, TR section 5.1.4, “EM Description,” states that",
+    "page": 19,
+    "count": 1,
+    "evidence": "2026-11-02. PDF p19 reads 'As such, TR section 5.1.4, “EM Description,” states that' in one sentence of the SE's §5.1.3; the line break after 'section' made the number look like a heading."
+  },
+  {
+    "find": "limitation and condition 5.\n\n5.1.4\n\n> [!withheld] (no label)\n",
+    "replace": "limitation and condition 5.\n\n### 5.1.4\n\n> [!withheld] (no label)\n",
+    "page": 20,
+    "count": 1,
+    "evidence": "2026-11-02. PDF p20 sets '5.1.4' as the SE section heading; its title is withheld."
+  }
+]

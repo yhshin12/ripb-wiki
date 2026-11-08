@@ -221,6 +221,16 @@ terms_pending: []
 | REACTOR_RUNBACK | reactor runback |  |  |  |  | [SER_KU1_CP §Salt and Power Cycle Systems p.38] | 영어 유지 | 2026-10-30 사용자 결정 |
 | ATWS | anticipated transient without scram | ATWS |  | 약어 |  | [SER_KU1_CP §GL 85-06 and Regulatory Guide 1.155 p.624] | 영어 유지 | 2026-10-30 사용자 결정 |
 | HYPOTHETICAL_CDA | hypothetical core disruptive accident | HCDA |  | 약어 |  | [SER_KU1_CP §1.5 p.48] | 영어 유지 | 2026-10-30 사용자 결정 |
+| INTEGRAL_EFFECTS_TEST | Integral Effects Test | IET |  | 약어 |  | [NAT-9390-A §ACRONYMS p.60] | 영어 유지 | 2026-11-02 사용자 결정 |
+| SEPARATE_EFFECTS_TEST | Separate Effects Test | SET |  | 약어 |  | [NAT-9390-A §ACRONYMS p.60] | 영어 유지 | 2026-11-02 사용자 결정 |
+| ULOF | Unprotected Loss of Flow | ULOF |  | 약어 |  | [NAT-9394-A §ACRONYMS p.34] | 영어 유지 | 2026-11-02 사용자 결정 |
+| ULOHS | Unprotected Loss of Heat Sink | ULOHS |  | 약어 |  | [NAT-9394-A §ACRONYMS p.34] | 영어 유지 | 2026-11-02 사용자 결정 |
+| UTOP | Unprotected Transient Over Power | UTOP |  | 약어 |  | [NAT-9394-A §ACRONYMS p.34] | 영어 유지 | 2026-11-02 사용자 결정 |
+| LOHS | Loss of Heat Sink | LOHS |  | 약어 |  | [NAT-9390-A §ACRONYMS p.60] | 영어 유지 | 2026-11-02 사용자 결정 |
+| LOOP | Loss of Offsite Power | LOOP |  | 약어 |  | [NAT-9390-A §ACRONYMS p.60] | 영어 유지 | 2026-11-02 사용자 결정 |
+| RWAP | Rod Withdrawal at Power | RWAP |  | 약어 |  | [NAT-9390-A §ACRONYMS p.60] | 영어 유지 | 2026-11-02 사용자 결정 |
+| FUEL_HANDLING_ACCIDENT | Fuel Handling Accident | FHA |  | 약어 |  | [NAT-9394-A §ACRONYMS p.33] | 영어 유지 | 2026-11-02 사용자 결정 |
+| DSAW | Detailed Safety Analysis Workflow | DSAW |  |  |  | [NAT-9394-A §ACRONYMS p.33] | 용어 아님 | 2026-11-02 사용자 결정 |
 
 ## 표기 규칙
 - 상태: 미정 / 확정 / 영어 유지 / 용어 아님. 이후 표기: 약어 / 한국어. 금지 표기는 `; `로 구분한다.

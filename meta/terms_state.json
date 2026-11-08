@@ -365,6 +365,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "DSAW": {
+   "abbr": "DSAW",
+   "english": "Detailed Safety Analysis Workflow",
+   "forbidden": [],
+   "korean": "",
+   "later": "",
+   "state": "용어 아님"
+  },
   "EAB": {
    "abbr": "EAB",
    "english": "Exclusion Area Boundary",
@@ -562,6 +570,14 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "FUEL_HANDLING_ACCIDENT": {
+   "abbr": "FHA",
+   "english": "Fuel Handling Accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "FUNCTIONAL_CONTAINMENT": {
    "abbr": "",
    "english": "functional containment",
@@ -700,6 +716,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "INTEGRAL_EFFECTS_TEST": {
+   "abbr": "IET",
+   "english": "Integral Effects Test",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "INTERMEDIATE_COOLANT_BOUNDARY": {
    "abbr": "",
    "english": "intermediate coolant boundary",
@@ -805,6 +829,22 @@
   "LOCA": {
    "abbr": "LOCA",
    "english": "loss of coolant accident",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LOHS": {
+   "abbr": "LOHS",
+   "english": "Loss of Heat Sink",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "LOOP": {
+   "abbr": "LOOP",
+   "english": "Loss of Offsite Power",
    "forbidden": [],
    "korean": "",
    "later": "약어",
@@ -1387,6 +1427,14 @@
    "later": "",
    "state": "영어 유지"
   },
+  "RWAP": {
+   "abbr": "RWAP",
+   "english": "Rod Withdrawal at Power",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "SAFDL": {
    "abbr": "SAFDL",
    "english": "specified acceptable fuel design limits",
@@ -1446,6 +1494,14 @@
    "forbidden": [],
    "korean": "",
    "later": "",
+   "state": "영어 유지"
+  },
+  "SEPARATE_EFFECTS_TEST": {
+   "abbr": "SET",
+   "english": "Separate Effects Test",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
    "state": "영어 유지"
   },
   "SERVICE_LOADING": {
@@ -1661,6 +1717,22 @@
    "later": "약어",
    "state": "영어 유지"
   },
+  "ULOF": {
+   "abbr": "ULOF",
+   "english": "Unprotected Loss of Flow",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
+  "ULOHS": {
+   "abbr": "ULOHS",
+   "english": "Unprotected Loss of Heat Sink",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
+   "state": "영어 유지"
+  },
   "UNCERTAINTY_BAND": {
    "abbr": "",
    "english": "uncertainty band",
@@ -1675,6 +1747,14 @@
    "forbidden": [],
    "korean": "",
    "later": "",
+   "state": "영어 유지"
+  },
+  "UTOP": {
+   "abbr": "UTOP",
+   "english": "Unprotected Transient Over Power",
+   "forbidden": [],
+   "korean": "",
+   "later": "약어",
    "state": "영어 유지"
   },
   "V_AND_V": {

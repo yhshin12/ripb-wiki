@@ -5,12 +5,12 @@ title: Core Thermal Hydraulic Methods Presentation Material
 file: references/TP-LIC-LET-0080_Core Thermal Hydraulic Methods Presentation Material.md
 pdf: references/raw/TP-LIC-LET-0080_Core Thermal Hydraulic Methods Presentation Material.pdf
 sha256_pdf: f8ef92f58b6e0c01f09f1899927507c6adcd715940e98a99b7d7456035948e62
-sha256_md: eb079b398fa9e929d5b319114de756702f5f2e88198dcf53bc6d178a7ec2ea60
+sha256_md: aebc83db33faa03c70071aa1a3b935868818f2a2a6419f3214245c6d7a51b0a4
 pdf_pages: 95
 build:
   converter: opendataloader-pdf 2.5.7 (markdown_page_separator=<!-- page %page-number%
     -->, image_output=external, image_format=png, content_safety_off=off-page)
-  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-10-30
+  cleaned: scripts/clean_references.py (refclean 0.1.0) 2026-11-08
   missing_pct: 0.85
 ingest: partial
 units:

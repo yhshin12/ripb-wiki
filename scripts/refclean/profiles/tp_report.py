@@ -38,7 +38,7 @@ CONFIG = {
 
 MAX_CHAPTER = 8
 KEEP_HEADINGS = {"REVISION HISTORY", "ACRONYMS", "END OF DOCUMENT"}
-HEADER_CELL = re.compile(r"^(?:TP-LIC-RPT-\d{4} Rev \d+|NAT-\d{4})$")
+HEADER_CELL = re.compile(r"^(?:TP-LIC-RPT-\d{4} Rev \d+|NAT-\d{4}(?: Rev \d+)?)$")
 PAGE_LABEL = re.compile(r"^Page (\d+) of \d+$")
 CONTROL_PAGE = re.compile(r"Page:\s*(\d+) of \d+")
 FURNITURE = re.compile(r"^(?:Not Confidential\s*)?(?:Controlled Document - Verify Current Revision)?$|"
@@ -131,7 +131,7 @@ def drop_furniture(doc, aux=None):
     doc.els = out
 
 
-def headings(doc, aux):
+def headings(doc, aux, max_chapter=MAX_CHAPTER):
     """Numbered headings of chapters 1-8 from the PDF lines: '1 INTRODUCTION' (chapter, capitals) and
     '4.1.2.4 Hot Channel Factors'. Each depth has its own indent (x 25, 47, 101, 119 pt) and the heading line shares
     a text block with the body below it, so pdfaux.numbered_headings (body margin, block-wrap rule) does not fit.
@@ -142,7 +142,7 @@ def headings(doc, aux):
             continue
         for ln in lines:
             m = HEAD.match(ln.text)
-            if not m or LEADER.search(ln.text) or int(m.group(1).split(".")[0]) > MAX_CHAPTER:
+            if not m or LEADER.search(ln.text) or int(m.group(1).split(".")[0]) > max_chapter:
                 continue
             num, title = m.group(1), m.group(2).split("[[")[0].strip()
             if "." not in num and not title.isupper():
@@ -194,7 +194,8 @@ def withheld(doc, aux=None):
                     for c in r:
                         c.text = MARK.sub(" ", c.text).strip()
                 e.table.grid = keep
-                out.append(e)
+                if keep:            # an emptied table must not take the caption above it with it
+                    out.append(e)
                 out.append(callout("(a)(4)", e.page))
             else:
                 out.append(e)
@@ -221,7 +222,7 @@ def withheld(doc, aux=None):
     doc.els = out
 
 
-def figures(doc, aux):
+def figures(doc, aux, fig_cap=FIG_CAP, fig_txt=FIG_TXT, is_caption=lambda ln, page: True):
     """Figure refs for colon captions. A withheld figure is an empty frame with a bracket label ('(a)(4)' alone on a
     line) at its right edge, between the previous caption on the page and its own caption."""
     pdf = fitz.open(doc.pdf_path)
@@ -231,8 +232,8 @@ def figures(doc, aux):
             continue
         above = 0.0
         for ln in sorted(lines, key=lambda l: l.y0):
-            m = FIG_CAP.match(ln.text)
-            if not m:
+            m = fig_cap.match(ln.text)
+            if not m or not is_caption(ln, pdf[pno - 1]):
                 continue    # body sentences cite figures without the colon ('Figure 2-1 provides …')
             cap = fitz.Rect(ln.x0, ln.y0, ln.x1, ln.y1)
             x0, y0, x1, y1 = figure_box(pdf[pno - 1], cap)
@@ -245,17 +246,17 @@ def figures(doc, aux):
             above = ln.y1
     pdf.close()
     aux.figures = refs
-    _split_captions(doc, refs)
-    figures_step(doc, aux, render=aux.meta.get("render_figures", True), fig_txt=FIG_TXT)
+    _split_captions(doc, refs, fig_txt)
+    figures_step(doc, aux, render=aux.meta.get("render_figures", True), fig_txt=fig_txt)
 
 
-def _split_captions(doc, refs):
+def _split_captions(doc, refs, fig_txt=FIG_TXT):
     """A caption the converter glued to the next body line ('Figure 1. Natrium Type 1 Assembly Sketch The fuel
     assemblies include') is cut after the caption text read from the PDF line."""
     out = []
     for e in doc.els:
         t = " ".join(e.text.split()) if e.kind in ("para", "caption") else ""
-        m = FIG_TXT.match(t)
+        m = fig_txt.match(t)
         ref = next((r for r in refs if m and r.page == e.page and r.num == m.group(1) and r.caption), None)
         cut = t.find(ref.caption) + len(ref.caption) if ref and ref.caption in t else -1
         if cut > 0 and t[cut:].strip():

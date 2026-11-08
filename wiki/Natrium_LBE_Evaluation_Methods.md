@@ -115,3 +115,6 @@ Licensing Basis Event%%t:LBE%%는 비슷한 유형의 Initiating Event%%t:IE%%�
 - [[PSAR_ch03]]
 - [[Natrium_SER_LBE_Methodologies_Review]]
 - [[Natrium_Hot_Channel_Factors]]
+- [[Natrium_DBA_No_Release_Methodology_SE]]
+- [[Natrium_DBA_Release_Methodology_SE]]
+- [[Natrium_Partial_Flow_Blockage_Methodology_SE]]

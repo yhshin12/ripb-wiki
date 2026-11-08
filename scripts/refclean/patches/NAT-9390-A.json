@@ -1,0 +1,9 @@
+[
+  {
+    "find": "\n3.5 Existing Data and SET/IET Needed to Complete Data Base: EM Code Assessment Matrix—EMDAP Step 7\n",
+    "replace": "\n## 3.5 Existing Data and SET/IET Needed to Complete Data Base: EM Code Assessment Matrix—EMDAP Step 7\n",
+    "page": 105,
+    "count": 1,
+    "evidence": "2026-11-02. PDF p105 sets this line as the §3.5 section heading, and the report's table of contents (p56) lists it. The heading wraps at the dash, so the single-line heading finder does not match it."
+  }
+]
