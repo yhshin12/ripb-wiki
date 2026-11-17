@@ -212,6 +212,8 @@ terms_pending: []
 | V_AND_V | Verification and Validation | V&V |  | 약어 |  | [TP-LIC-RPT-0011 §ACRONYMS p.8] | 영어 유지 | 2026-10-26 사용자 결정 |
 | FOM | Figure of Merit | FoM |  | 약어 |  | [NAT-3049 §ACRONYMS p.9] | 영어 유지 | 2026-10-30 사용자 결정 |
 | NASCENT | Natrium Simplified Coolant Energy Transport | Nascent |  |  |  | [NAT-3049 §2 p.11] | 용어 아님 | 모형 이름, 2026-10-30 사용자 결정 |
+| CONSEQUENTIAL_FAILURE | consequential failure |  |  |  |  | [NEI_18-04 §3.3.5 p.34] | 영어 유지 | 원문 정의 없음(쓰임 위치), 2026-11-17 사용자 결정 |
+| INDEPENDENT_FAILURE | independent failure |  |  |  |  | [NEI_18-04 §3.3.5 p.34] | 영어 유지 | 원문 정의 없음(쓰임 위치), 2026-11-17 사용자 결정 |
 | PEAK_CLADDING_TEMPERATURE | peak cladding temperature | PCT | 첨두피복재온도 | 약어 |  | [NAT-3049 §3.1 p.12] | 확정 | 2026-10-26 사용자 결정 |
 | REACTOR_TRIP_BREAKER | reactor trip breaker | RTB |  | 약어 |  | [ACRS_ML25293A458 Gravity scram functions p.15] | 영어 유지 | 2026-10-30 사용자 결정 |
 | UNDERVOLTAGE_TRIP | undervoltage trip |  |  |  |  | [PSAR_ch05 §5.3.3.4 p.32] | 영어 유지 | 2026-10-30 사용자 결정 |

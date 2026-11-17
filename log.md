@@ -297,3 +297,6 @@
 - 새 노트 7(소스 카드 3, SE 노트 3, synthesis 1), 고친 노트 11
 - 검사: lint 0, verify_quotes 0, sync_terms 충돌 0, 정제 누락률 0.31–0.55 %, pytest 450 통과; 원문 대조 서브에이전트 4개, 원문 사실 불일치 0·경미 4, 과잉 일반화 9 수정; check_absence A2 31건 무관
 - 미정 용어 0(용어 10건 2026-11-02 결정 반영)
+
+## [2026-11-17] terms | 용어 반영
+- CONSEQUENTIAL_FAILURE(consequential failure), INDEPENDENT_FAILURE(independent failure): 영어 유지, 출처 [NEI_18-04 §3.3.5 p.34]. 갱신 노트 0
